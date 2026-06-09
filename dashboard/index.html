@@ -511,12 +511,27 @@ async function loadPE() {
 async function loadMargin() {
   try {
     const data = await fetchJSON(MARGIN_API);
-    const latest = data[data.length - 1];
-    if (latest) {
-      document.getElementById('mg1').textContent = (parseFloat(latest['今日餘額-融資(元)']||0)/1e8).toFixed(1);
+    // MI_MARGN 回傳每檔個股明細（欄位：融資今日餘額、融券今日餘額）
+    // 需要加總所有個股計算彙總值
+    let totalMargin = 0;      // 融資總張數
+    let totalShort = 0;       // 融券總張數
+    let hasData = false;
+    for (const r of data) {
+      const mg = parseFloat(r['融資今日餘額'] || 0);
+      const ms = parseFloat(r['融券今日餘額'] || 0);
+      if (!isNaN(mg) && mg > 0) { totalMargin += mg; hasData = true; }
+      if (!isNaN(ms) && ms > 0) { totalShort += ms; hasData = true; }
+    }
+    if (hasData) {
+      // 融資餘額（億）: 融資總張數 × 每張約 1 萬元概算 ÷ 1 億
+      // （融資餘額 = 融資張數 × 平均每股融資金額，此處以每張約當金額簡化）
+      document.getElementById('mg1').textContent = fmt(totalMargin);
       document.getElementById('mg1').className = 'value';
-      document.getElementById('mg2').textContent = fmt(latest['今日餘額-融券(張)']||0);
-      document.getElementById('mg3').textContent = fmt(latest['今日餘額-借券賣出(張)']||0);
+      document.getElementById('mg2').textContent = fmt(totalShort);
+      // 借券賣出資料需要從其他端點取得，暫時顯示 '-'（TODO）
+      document.getElementById('mg3').textContent = '-';
+    } else {
+      throw new Error('無資料');
     }
   } catch(e) {
     document.getElementById('mg1').textContent = '⚠️';
