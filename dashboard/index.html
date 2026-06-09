@@ -493,7 +493,7 @@ async function loadPE() {
     </table>`;
     
     // Low PE
-    const byPE = [...data].filter(r => r['PE'] && parseFloat(String(r["PE"]).replace(/,g,'')) > 0 && parseFloat(String(r["PE"]).replace(/,g,'')) < 100)
+    const byPE = [...data].filter(r => r['PE'] && parseFloat(r['PE']) > 0 && parseFloat(r['PE']) < 100)
       .sort((a,b) => parseFloat(a['PE']) - parseFloat(b['PE']))
       .slice(0,20);
     
