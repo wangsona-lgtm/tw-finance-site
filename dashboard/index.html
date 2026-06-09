@@ -289,15 +289,20 @@ async function loadOverview() {
     const ctx = document.getElementById('indexChart').getContext('2d');
     if (indexChart) indexChart.destroy();
     try {
+      // 日期轉換：1150608 → 2026-06-08
+      const ds = DATA_DATE;
+      const dY = +ds.slice(0,3);          // ROC 年
+      const dM = ds.slice(3,5);            // 月
+      const dD = ds.slice(5,7);            // 日
+      const yyyy = 1911 + dY;
+      const dStr = yyyy+'-'+dM+'-'+dD;
+
       // 從 TWSE 抓取每 5 秒大盤指數（access-control-allow-origin: *）
-      const resp = await fetch('https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date=20260609');
+      const dateStr = String(yyyy)+dM+dD;
+      const resp = await fetch('https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date='+dateStr);
       if (!resp.ok) throw new Error('HTTP '+resp.status);
       const tickData = await resp.json();
       if (!tickData.data || tickData.data.length === 0) throw new Error('無 Tick 資料');
-
-      // 日期轉換：1150608 → 2026-06-09
-      const ds = DATA_DATE;
-      const dStr = '20'+ds.slice(0,2)+'-'+ds.slice(2,4)+'-'+ds.slice(4,6);
 
       // 將 5 秒 Tick 聚合為 15 分鐘 K棒
       const buckets = new Map();
