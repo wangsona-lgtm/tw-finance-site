@@ -54,6 +54,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 .lecture-card .tag.finance { background:rgba(0,100,0,.1); color:var(--accent2); }
 .lecture-card .tag.codex { background:rgba(27,54,93,.1); color:var(--accent3); }
 .lecture-card .tag.r { background:rgba(139,0,0,.1); color:var(--accent); }
+.lecture-card .tag.strategy { background:rgba(27,54,93,.15); color:var(--accent3); }
 .lecture-card h3 { font-size:20px; margin-bottom:8px; color:var(--accent3); }
 .lecture-card p { font-size:14px; color:var(--text2); line-height:1.6; margin-bottom:16px; }
 .lecture-card .meta { font-size:12px; color:var(--text2); display:flex; gap:16px; }
@@ -135,7 +136,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 <div id="lecture-list" class="active">
   <div class="hero">
     <h2>R 程式碼 × 金融資料 × Codex 實戰</h2>
-    <p>從 ggplot2 視覺化基礎到 Codex 領域學習，三份實戰講義一次收錄。</p>
+    <p>從 ggplot2 視覺化基礎到產業戰略分析，四份實戰講義一次收錄。</p>
   </div>
 
   <div class="container">
@@ -194,6 +195,22 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
           <a href="./Codex_五大核心能力_講義.docx" onclick="event.stopPropagation()" download>📄 DOCX</a>
         </div>
         <div class="corner" style="background:var(--accent2)"></div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="lecture-card" onclick="showLecture(3)">
+        <span class="tag strategy">產業戰略</span>
+        <h3>輝達東亞雙軸戰略</h3>
+        <p>解構黃仁勳台韓半導體與實體人工智慧布局。NotebookLM 生成之戰略情報分析報告，論證 NVIDIA 的「三角形雙軸戰略」。</p>
+        <div class="meta">
+          <span>📄 15 頁</span>
+          <span>📅 2026-06</span>
+          <span>🏷️ NVIDIA · 半導體 · AI</span>
+        </div>
+        <div class="actions">
+          <a href="./NVIDIA_東亞雙軸戰略_講義.pdf" onclick="event.stopPropagation()" download>📥 PDF</a>
+        </div>
+        <div class="corner" style="background:var(--accent3)"></div>
       </div>
     </div>
   </div>
@@ -267,6 +284,18 @@ const lectures = [
       '在反饋中持續迭代'
     ],
     summary: '改寫自 @thinkszyg 的分享與 OpenAI Codex 官方 60 個 Use Cases。解析 Codex 從工具進化為 AI 隊友的五大關鍵能力。'
+  },
+  {
+    title: '輝達東亞雙軸戰略',
+    subtitle: '解構黃仁勳台韓半導體與實體人工智慧布局',
+    chapters: [
+      '超越「二選一」：輝達的三角形雙軸戰略',
+      '台灣樞紐：超越代工的「軟硬雙鎖」製造生態',
+      '韓國樞紐：記憶體霸權與「實體 AI」基礎建設',
+      '雙軸整合：互補不互斥的產業鏈分工',
+      '戰略目的：最大化全球算力產出，最小化東亞供應鏈內部競爭'
+    ],
+    summary: 'Google NotebookLM 生成之戰略情報分析報告。核心論點：NVIDIA 並非在台灣與韓國之間「二選一」，而是建構以 NVIDIA 為頂點、台韓為兩軸的「三角雙軸戰略」— 台灣 = 製造之手（半導體生態），韓國 = 算力之腦（AI 基礎建設/記憶體），NVIDIA = 下棋之人。'
   }
 ];
 
