@@ -13,16 +13,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; }
 :root {
-  --bg: #0f0f1a;
-  --surface: #1a1a2e;
-  --surface2: #16213e;
-  --accent: #00d4aa;
-  --accent2: #0f3460;
-  --red: #ff4757;
-  --green: #2ed573;
-  --text: #e0e0e0;
-  --text2: #8888aa;
-  --border: #2a2a4a;
+  --bg: #f5f6fa;
+  --surface: #ffffff;
+  --surface2: #f0f1f7;
+  --accent: #0052cc;
+  --accent2: #e8f0fe;
+  --red: #e74c3c;
+  --green: #27ae60;
+  --text: #1a1a2e;
+  --text2: #6b7280;
+  --border: #e0e3eb;
 }
 body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); }
 .header {
@@ -48,7 +48,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
   background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px;
   transition:transform .2s, box-shadow .2s;
 }
-.card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,212,170,.1); }
+.card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,82,204,.08); }
 .card h3 { font-size:14px; font-weight:400; color:var(--text2); margin-bottom:8px; }
 .card .value { font-size:28px; font-weight:700; }
 .card .value.green { color:var(--green); }
@@ -72,7 +72,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 @keyframes spin { to { transform:rotate(360deg); } }
 
 .alert { 
-  background:rgba(255,71,87,.1); border:1px solid var(--red); border-radius:8px; padding:12px 16px;
+  background:rgba(231,76,60,.08); border:1px solid var(--red); border-radius:8px; padding:12px 16px;
   color:var(--red); font-size:13px; margin-bottom:16px;
 }
 
@@ -91,7 +91,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
 <div class="header">
   <h1>📊 TWSE <span>金融儀表板</span></h1>
   <time id="updateTime">載入中...</time>
-<span id="verInfo" style="margin-left:1rem;font-size:0.65rem;color:#888;"></span>
+<span id="verInfo" style="margin-left:1rem;font-size:0.65rem;color:#6b7280;"></span>
 </div>
 
 <div class="nav">
@@ -128,7 +128,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
       <h3>🔍 查詢個股</h3>
       <div style="display:flex;gap:8px;margin:12px 0;">
         <input id="stockInput" placeholder="輸入股號或名稱（如 2330）" style="flex:1;padding:10px 14px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:14px;">
-        <button onclick="searchStock()" style="padding:10px 20px;background:var(--accent);color:#000;border:none;border-radius:8px;font-weight:700;cursor:pointer;">查詢</button>
+        <button onclick="searchStock()" style="padding:10px 20px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer;">查詢</button>
       </div>
       <div id="stockResult" class="scroll-x" style="max-height:400px;overflow-y:auto;"></div>
     </div>
@@ -408,7 +408,7 @@ async function loadOverview() {
           function fillBand(upper, lower) {
             if (!upper || !lower || upper.length === 0) return;
             ctx.beginPath();
-            ctx.fillStyle = 'rgba(0,212,170,0.06)';
+            ctx.fillStyle = 'rgba(0,82,204,0.06)';
             let started = false;
             for (const p of upper) {
               if (p.y === undefined || p.y === null) continue;
@@ -428,9 +428,9 @@ async function loadOverview() {
 
           // 布林通道頻帶（先填再畫線）
           if (opts.bbUpper && opts.bbLower) fillBand(opts.bbUpper, opts.bbLower);
-          drawLine(opts.bbUpper, 'rgba(0,212,170,0.4)', 1);
-          drawLine(opts.bbMid, 'rgba(0,212,170,0.6)', 1, [4, 4]);
-          drawLine(opts.bbLower, 'rgba(0,212,170,0.4)', 1);
+          drawLine(opts.bbUpper, 'rgba(0,82,204,0.4)', 1);
+          drawLine(opts.bbMid, 'rgba(0,82,204,0.6)', 1, [4, 4]);
+          drawLine(opts.bbLower, 'rgba(0,82,204,0.4)', 1);
           drawLine(opts.ma60, '#ffa500', 2);
         }
       };
@@ -441,15 +441,15 @@ async function loadOverview() {
           datasets: [{
             label: '加權指數',
             data: candles,
-            color: { up:'#ff4757', down:'#00d4aa', unchanged:'#8888aa' },
-            borderColor: '#8888aa'
+            color: { up:'#ff4757', down:'#0052cc', unchanged:'#6b7280' },
+            borderColor: '#6b7280'
           }]
         },
         options: {
           responsive: true, maintainAspectRatio: false,
           interaction: { mode: 'index', intersect: false },
           plugins: {
-            legend: { labels: { color:'#8888aa' } },
+            legend: { labels: { color:'#6b7280' } },
             indicators: {
               ma60: ma60Data,
               bbUpper: bbUpper,
@@ -486,14 +486,14 @@ async function loadOverview() {
             x: {
               type: 'linear',
               ticks: {
-                color: '#8888aa', maxRotation: 0,
+                color: '#6b7280', maxRotation: 0,
                 callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
               },
-              grid: { color: '#2a2a4a' }
+              grid: { color: '#e0e3eb' }
             },
             y: {
-              ticks: { color: '#8888aa' },
-              grid: { color: '#2a2a4a' }
+              ticks: { color: '#6b7280' },
+              grid: { color: '#e0e3eb' }
             }
           }
         },
@@ -549,8 +549,8 @@ window.macdChart = new Chart(macdCtx, {
               type: 'bar',
               label: '柱狀',
               data: macdTimestamps.map((t, i) => ({ x: t, y: hist[i] })),
-              backgroundColor: hist.map(v => v >= 0 ? 'rgba(0,212,170,0.6)' : 'rgba(255,71,87,0.6)'),
-              borderColor: hist.map(v => v >= 0 ? '#00d4aa' : '#ff4757'),
+              backgroundColor: hist.map(v => v >= 0 ? 'rgba(0,82,204,0.6)' : 'rgba(255,71,87,0.6)'),
+              borderColor: hist.map(v => v >= 0 ? '#0052cc' : '#ff4757'),
               borderWidth: 1
             }
           ]
@@ -558,7 +558,7 @@ window.macdChart = new Chart(macdCtx, {
         options: {
           responsive: true, maintainAspectRatio: false,
           plugins: {
-            legend: { labels: { color:'#8888aa', font:{size:10} } },
+            legend: { labels: { color:'#6b7280', font:{size:10} } },
             tooltip: {
               callbacks: {
                 title: items => {
@@ -576,11 +576,11 @@ window.macdChart = new Chart(macdCtx, {
                 color: '#666', maxRotation: 0,
                 callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
               },
-              grid: { color: '#2a2a4a' }
+              grid: { color: '#e0e3eb' }
             },
             y: {
-              ticks: { color: '#8888aa', font:{size:9} },
-              grid: { color: '#2a2a4a' }
+              ticks: { color: '#6b7280', font:{size:9} },
+              grid: { color: '#e0e3eb' }
             }
           }
         }
@@ -597,16 +597,16 @@ window.macdChart = new Chart(macdCtx, {
           datasets: [{
             label: '加權指數',
             data: [43500, 43480, 43450, 43470, 43500, 43502],
-            borderColor: '#00d4aa', backgroundColor: 'rgba(0,212,170,0.1)',
+            borderColor: '#0052cc', backgroundColor: 'rgba(0,82,204,0.1)',
             fill: true, tension: .4, pointRadius: 3
           }]
         },
         options: {
           responsive: true, maintainAspectRatio: false,
-          plugins: { legend: { labels: { color:'#8888aa' } } },
+          plugins: { legend: { labels: { color:'#6b7280' } } },
           scales: {
-            x: { ticks: { color:'#8888aa' }, grid: { color:'#2a2a4a' } },
-            y: { ticks: { color:'#8888aa' }, grid: { color:'#2a2a4a' } }
+            x: { ticks: { color:'#6b7280' }, grid: { color:'#e0e3eb' } },
+            y: { ticks: { color:'#6b7280' }, grid: { color:'#e0e3eb' } }
           }
         }
       });
