@@ -62,8 +62,8 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 
 .chart-container { position:relative; height:380px; }
 .macd-container { position:relative; height:120px; margin-top:6px; border-top:1px solid var(--border); padding-top:6px; }
-.chart-card { padding:16px 12px 12px; }
-.chart-card h3 { margin-bottom:4px; }
+.chart-card { padding:16px 12px 12px; background:#f5f6f8; }
+.chart-card h3 { margin-bottom:4px; color:#495057; }
 .mt-16 { margin-top:16px; }
 
 /* Loading */
@@ -441,15 +441,15 @@ async function loadOverview() {
           datasets: [{
             label: '加權指數',
             data: candles,
-            color: { up:'#f85149', down:'#3fb950', unchanged:'#8b949e' },
-            borderColor: '#8b949e'
+            color: { up:'#dc3545', down:'#28a745', unchanged:'#adb5bd' },
+            borderColor: '#adb5bd'
           }]
         },
         options: {
           responsive: true, maintainAspectRatio: false,
           interaction: { mode: 'index', intersect: false },
           plugins: {
-            legend: { labels: { color:'#8b949e' } },
+            legend: { labels: { color:'#6c757d' } },
             indicators: {
               ma60: ma60Data,
               bbUpper: bbUpper,
@@ -486,14 +486,14 @@ async function loadOverview() {
             x: {
               type: 'linear',
               ticks: {
-                color: '#8b949e', maxRotation: 0, font:{size:10},
+                color: '#6c757d', maxRotation: 0, font:{size:10},
                 callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
               },
-              grid: { color: 'rgba(139,148,158,0.15)' }
+              grid: { color: 'rgba(140,150,165,0.20)' }
             },
             y: {
-              ticks: { color: '#8b949e', font:{size:10} },
-              grid: { color: 'rgba(139,148,158,0.15)' }
+              ticks: { color: '#6c757d', font:{size:10} },
+              grid: { color: 'rgba(140,150,165,0.20)' }
             }
           }
         },
@@ -558,7 +558,7 @@ window.macdChart = new Chart(macdCtx, {
         options: {
           responsive: true, maintainAspectRatio: false,
           plugins: {
-            legend: { labels: { color:'#8b949e', font:{size:10} } },
+            legend: { labels: { color:'#6c757d', font:{size:10} } },
             tooltip: {
               callbacks: {
                 title: items => {
@@ -573,14 +573,14 @@ window.macdChart = new Chart(macdCtx, {
             x: {
               type: 'linear',
               ticks: {
-                color: '#8b949e', maxRotation: 0, font:{size:9},
+                color: '#6c757d', maxRotation: 0, font:{size:9},
                 callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
               },
-              grid: { color: 'rgba(139,148,158,0.1)' }
+              grid: { color: 'rgba(140,150,165,0.15)' }
             },
             y: {
-              ticks: { color: '#8b949e', font:{size:9} },
-              grid: { color: 'rgba(139,148,158,0.1)' }
+              ticks: { color: '#6c757d', font:{size:9} },
+              grid: { color: 'rgba(140,150,165,0.15)' }
             }
           }
         }
@@ -603,10 +603,10 @@ window.macdChart = new Chart(macdCtx, {
         },
         options: {
           responsive: true, maintainAspectRatio: false,
-          plugins: { legend: { labels: { color:'#8b949e' } } },
+          plugins: { legend: { labels: { color:'#6c757d' } } },
           scales: {
-            x: { ticks: { color:'#8b949e' }, grid: { color:'rgba(139,148,158,0.15)' } },
-            y: { ticks: { color:'#8b949e' }, grid: { color:'rgba(139,148,158,0.15)' } }
+            x: { ticks: { color:'#6c757d' }, grid: { color:'rgba(140,150,165,0.2)' } },
+            y: { ticks: { color:'#6c757d' }, grid: { color:'rgba(140,150,165,0.2)' } }
           }
         }
       });
