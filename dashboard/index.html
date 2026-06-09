@@ -290,39 +290,38 @@ async function loadOverview() {
       }
     }
 
-    // 大盤走勢 K棒圖（15分鐘一根，CORS 全開的即時資料）
+    // 大盤走勢 K棒圖
     const ctx = document.getElementById('indexChart').getContext('2d');
     if (indexChart) indexChart.destroy();
     try {
       // 日期轉換：1150608 → 2026-06-08
       const ds = DATA_DATE;
-      const dY = +ds.slice(0,3);          // ROC 年
-      const dM = ds.slice(3,5);            // 月
-      const dD = ds.slice(5,7);            // 日
+      const dY = +ds.slice(0,3);
+      const dM = ds.slice(3,5);
+      const dD = ds.slice(5,7);
       const yyyy = 1911 + dY;
       const dStr = yyyy+'-'+dM+'-'+dD;
-
-      // 從 TWSE 抓取每 5 秒大盤指數（access-control-allow-origin: *）
       const dateStr = String(yyyy)+dM+dD;
+
+      // 從 TWSE 抓取每 5 秒大盤指數
       const resp = await fetch('https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date='+dateStr);
-      if (!resp.ok) throw new Error('HTTP '+resp.status);
+      if (!resp.ok) throw new Error('TWSE HTTP '+resp.status);
       const tickData = await resp.json();
       if (!tickData.data || tickData.data.length === 0) throw new Error('無 Tick 資料');
 
-      // 將 5 秒 Tick 聚合為 1 分鐘 K棒（才有足夠資料點算 MA60 / 布林通道）
+      // 將 5 秒 Tick 聚合為 1 分鐘 K棒
       const buckets = new Map();
       for (const [timeStr, valStr] of tickData.data) {
         const val = parseFloat(valStr.replace(/,/g,''));
         if (isNaN(val) || val === 0) continue;
         const [h, m] = timeStr.split(':').map(Number);
-        const key = h*60 + m;  // 1 分鐘為一根
+        const key = h*60 + m;
         if (!buckets.has(key)) buckets.set(key, { o:val, h:val, l:val, c:val });
         else { const b = buckets.get(key); b.h = Math.max(b.h,val); b.l = Math.min(b.l,val); b.c = val; }
       }
 
-      // 轉陣列，過濾盤前空桶，排序
       const candles = [...buckets.entries()]
-        .filter(([k]) => k >= 540) // 只取 >= 09:00
+        .filter(([k]) => k >= 540)
         .map(([key, ohlc]) => ({
           x: new Date(dStr+'T'+String(Math.floor(key/60)).padStart(2,'0')+':'+String(key%60).padStart(2,'0')+':00+08:00').getTime(),
           o: ohlc.o, h: ohlc.h, l: ohlc.l, c: ohlc.c
@@ -331,25 +330,29 @@ async function loadOverview() {
 
       // ===== 技術指標計算 =====
       const closes = candles.map(c => c.c);
-
-      // SMA (N 期簡單移動平均)
-
+      function sma(data, period) {
+        const result = [];
+        for (let i = 0; i < data.length; i++) {
+          if (i < period - 1) { result.push(null); continue; }
+          let sum = 0;
+          for (let j = 0; j < period; j++) sum += data[i - j];
+          result.push(sum / period);
+        }
+        return result;
+      }
       const ma5 = sma(closes, 5);
       const ma10 = sma(closes, 10);
       const ma20 = sma(closes, 20);
       const ma60 = sma(closes, 60);
       const ma100 = sma(closes, 100);
 
-      // 轉成 Chart.js 資料格式
-      const ma60Data = candles.map((c, i) => ({
-        x: c.x, y: ma60[i] !== null ? ma60[i] : undefined
-      }));
       const ma5Data = candles.map((c, i) => ({ x: c.x, y: ma5[i] !== null ? ma5[i] : undefined }));
       const ma10Data = candles.map((c, i) => ({ x: c.x, y: ma10[i] !== null ? ma10[i] : undefined }));
       const ma20Data = candles.map((c, i) => ({ x: c.x, y: ma20[i] !== null ? ma20[i] : undefined }));
+      const ma60Data = candles.map((c, i) => ({ x: c.x, y: ma60[i] !== null ? ma60[i] : undefined }));
       const ma100Data = candles.map((c, i) => ({ x: c.x, y: ma100[i] !== null ? ma100[i] : undefined }));
 
-      // ===== 自訂 plugin：在 canvas 上手動畫 MA60、布林通道 =====
+      // ===== 建立 K 棒圖 =====
       const indicatorPlugin = {
         id: 'indicators',
         afterDraw(chart) {
@@ -358,7 +361,6 @@ async function loadOverview() {
           const { ctx, scales } = chart;
           const xs = scales.x, ys = scales.y;
           if (!xs || !ys) return;
-
           function drawLine(data, color, w, dash) {
             if (!data || data.length === 0) return;
             ctx.beginPath();
@@ -376,77 +378,41 @@ async function loadOverview() {
             ctx.stroke();
             ctx.setLineDash([]);
           }
-
-          drawLine(opts.ma5, '#6c5ce7', 1.5);  // 紫
-          drawLine(opts.ma10, '#e67e22', 1.5); // 橘
-          drawLine(opts.ma20, '#3498db', 1.5); // 藍
-          drawLine(opts.ma60, '#e74c3c', 2.5); // 紅加粗
-          drawLine(opts.ma100, '#95a5a6', 1.5); // 灰
+          drawLine(opts.ma5, '#6c5ce7', 1.5);
+          drawLine(opts.ma10, '#e67e22', 1.5);
+          drawLine(opts.ma20, '#3498db', 1.5);
+          drawLine(opts.ma60, '#e74c3c', 2.5);
+          drawLine(opts.ma100, '#95a5a6', 1.5);
         }
       };
 
       indexChart = new Chart(ctx, {
         type: 'candlestick',
-        data: {
-          datasets: [{
-            label: '加權指數',
-            data: candles,
-            color: { up:'#dc3545', down:'#28a745', unchanged:'#adb5bd' },
-            borderColor: '#adb5bd'
-          }]
-        },
+        data: { datasets: [{ label:'加權指數', data:candles, color:{ up:'#dc3545', down:'#28a745', unchanged:'#adb5bd' }, borderColor:'#adb5bd' }] },
         options: {
           responsive: true, maintainAspectRatio: false,
           interaction: { mode: 'index', intersect: false },
           plugins: {
             legend: { labels: { color:'#868e96' } },
-            indicators: {
-              ma5: ma5Data,
-              ma10: ma10Data,
-              ma20: ma20Data,
-              ma60: ma60Data,
-              ma100: ma100Data
-            },
+            indicators: { ma5:ma5Data, ma10:ma10Data, ma20:ma20Data, ma60:ma60Data, ma100:ma100Data },
             tooltip: {
               callbacks: {
-                title: items => {
-                  if (!items.length) return '';
-                  const d = new Date(items[0].parsed.x);
-                  return d.toLocaleTimeString('zh-TW', {hour:'2-digit',minute:'2-digit'});
-                },
-                label: ctx => {
-                  const d = ctx.dataset.data[ctx.dataIndex];
-                  return ` 開: ${d.o.toLocaleString()}  高: ${d.h.toLocaleString()}\n 低: ${d.l.toLocaleString()}  收: ${d.c.toLocaleString()}`;
-                },
+                title: items => { if(!items.length)return''; return new Date(items[0].parsed.x).toLocaleTimeString('zh-TW',{hour:'2-digit',minute:'2-digit'}); },
+                label: ctx => { const d=ctx.dataset.data[ctx.dataIndex]; return ' 開:'+d.o.toLocaleString()+' 高:'+d.h.toLocaleString()+' 低:'+d.l.toLocaleString()+' 收:'+d.c.toLocaleString(); },
                 afterBody: items => {
-                  const chart = items[0].chart;
-                  const opts = chart.options.plugins?.indicators;
-                  if (!opts) return null;
-                  const idx = items[0].dataIndex;
-                  const lines = [];
-                  ['ma5','ma10','ma20','ma60','ma100'].forEach((k,i) => {
-                    const label = ['MA5','MA10','MA20','MA60','MA100'][i];
-                    if (opts[k] && opts[k][idx] && opts[k][idx].y !== undefined)
-                      lines.push(label + ': ' + Number(opts[k][idx].y).toLocaleString());
-                  });
-                  return lines.length ? '\n' + lines.join('\n') : null;
+                  const idx=items[0].dataIndex, opts=items[0].chart.options.plugins?.indicators;
+                  if(!opts)return null;
+                  const labels=['MA5','MA10','MA20','MA60','MA100'], keys=['ma5','ma10','ma20','ma60','ma100'];
+                  const lines=[];
+                  keys.forEach((k,i)=>{ if(opts[k]&&opts[k][idx]&&opts[k][idx].y!==undefined) lines.push(labels[i]+': '+Number(opts[k][idx].y).toLocaleString()); });
+                  return lines.length ? '\n'+lines.join('\n') : null;
                 }
               }
             }
           },
           scales: {
-            x: {
-              type: 'linear',
-              ticks: {
-                color: '#868e96', maxRotation: 0, font:{size:10},
-                callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
-              },
-              grid: { color: 'rgba(0,0,0,0.08)' }
-            },
-            y: {
-              ticks: { color: '#868e96', font:{size:10} },
-              grid: { color: 'rgba(0,0,0,0.08)' }
-            }
+            x: { type:'linear', ticks:{ color:'#868e96', maxRotation:0, font:{size:10}, callback:v=>{const d=new Date(v);return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');} }, grid:{ color:'rgba(0,0,0,0.08)' } },
+            y: { ticks:{ color:'#868e96', font:{size:10} }, grid:{ color:'rgba(0,0,0,0.08)' } }
           }
         },
         plugins: [indicatorPlugin]
@@ -481,6 +447,7 @@ async function loadOverview() {
       const rsiCtx = document.getElementById('rsiChart').getContext('2d');
       if (window.rsiChart && typeof window.rsiChart.destroy === 'function') window.rsiChart.destroy();
 
+      try {
       window.rsiChart = new Chart(rsiCtx, {
         type: 'line',
         data: {
@@ -539,8 +506,7 @@ async function loadOverview() {
           }
         }
       });
-
-      
+      } catch(_) { console.warn('RSI chart error:', _); }
 
     } catch(e) {
       console.warn('K線讀取失敗，改用折線圖', e);
