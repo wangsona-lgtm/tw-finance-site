@@ -13,15 +13,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; }
 :root {
-  --bg: #f1f3f5;
-  --surface: #ffffff;
-  --surface2: #f8f9fa;
-  --accent: #1a73e8;
-  --red: #e74c3c;
-  --green: #1a73e8;
-  --text: #1e293b;
-  --text2: #6c7a89;
-  --border: #dee2e6;
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface2: #1c2333;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --green: #3fb950;
+  --text: #e6edf3;
+  --text2: #8b949e;
+  --border: #30363d;
 }
 body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); }
 .header {
@@ -408,7 +408,7 @@ async function loadOverview() {
           function fillBand(upper, lower) {
             if (!upper || !lower || upper.length === 0) return;
             ctx.beginPath();
-            ctx.fillStyle = 'rgba(0,82,204,0.10)';
+            ctx.fillStyle = 'rgba(88,166,255,0.08)';
             let started = false;
             for (const p of upper) {
               if (p.y === undefined || p.y === null) continue;
@@ -428,9 +428,9 @@ async function loadOverview() {
 
           // 布林通道頻帶（先填再畫線）
           if (opts.bbUpper && opts.bbLower) fillBand(opts.bbUpper, opts.bbLower);
-          drawLine(opts.bbUpper, 'rgba(0,82,204,0.5)', 2);
-          drawLine(opts.bbMid, 'rgba(0,82,204,0.7)', 2, [5, 5]);
-          drawLine(opts.bbLower, 'rgba(0,82,204,0.5)', 2);
+          drawLine(opts.bbUpper, 'rgba(88,166,255,0.5)', 2);
+          drawLine(opts.bbMid, 'rgba(88,166,255,0.7)', 2, [5, 5]);
+          drawLine(opts.bbLower, 'rgba(88,166,255,0.5)', 2);
           drawLine(opts.ma60, '#e67e22', 3);
         }
       };
@@ -441,15 +441,15 @@ async function loadOverview() {
           datasets: [{
             label: '加權指數',
             data: candles,
-            color: { up:'#e74c3c', down:'#1a73e8', unchanged:'#909090' },
-            borderColor: '#909090'
+            color: { up:'#f85149', down:'#3fb950', unchanged:'#8b949e' },
+            borderColor: '#8b949e'
           }]
         },
         options: {
           responsive: true, maintainAspectRatio: false,
           interaction: { mode: 'index', intersect: false },
           plugins: {
-            legend: { labels: { color:'#6c7a89' } },
+            legend: { labels: { color:'#8b949e' } },
             indicators: {
               ma60: ma60Data,
               bbUpper: bbUpper,
@@ -486,14 +486,14 @@ async function loadOverview() {
             x: {
               type: 'linear',
               ticks: {
-                color: '#6c7a89', maxRotation: 0, font:{size:10},
+                color: '#8b949e', maxRotation: 0, font:{size:10},
                 callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
               },
-              grid: { color: 'rgba(108,122,137,0.12)' }
+              grid: { color: 'rgba(139,148,158,0.15)' }
             },
             y: {
-              ticks: { color: '#6c7a89', font:{size:10} },
-              grid: { color: 'rgba(108,122,137,0.12)' }
+              ticks: { color: '#8b949e', font:{size:10} },
+              grid: { color: 'rgba(139,148,158,0.15)' }
             }
           }
         },
@@ -540,7 +540,7 @@ window.macdChart = new Chart(macdCtx, {
               type: 'line',
               label: '訊號',
               data: macdTimestamps.map((t, i) => ({ x: t, y: signal[i] })),
-              borderColor: '#e74c3c',
+              borderColor: '#f85149',
               borderWidth: 2,
               pointRadius: 0,
               fill: false
@@ -549,8 +549,8 @@ window.macdChart = new Chart(macdCtx, {
               type: 'bar',
               label: '柱狀',
               data: macdTimestamps.map((t, i) => ({ x: t, y: hist[i] })),
-              backgroundColor: hist.map(v => v >= 0 ? 'rgba(0,82,204,0.7)' : 'rgba(231,76,60,0.7)'),
-              borderColor: hist.map(v => v >= 0 ? '#0052cc' : '#e74c3c'),
+              backgroundColor: hist.map(v => v >= 0 ? 'rgba(88,166,255,0.7)' : 'rgba(248,81,73,0.7)'),
+              borderColor: hist.map(v => v >= 0 ? '#58a6ff' : '#f85149'),
               borderWidth: 1
             }
           ]
@@ -558,7 +558,7 @@ window.macdChart = new Chart(macdCtx, {
         options: {
           responsive: true, maintainAspectRatio: false,
           plugins: {
-            legend: { labels: { color:'#6c7a89', font:{size:10} } },
+            legend: { labels: { color:'#8b949e', font:{size:10} } },
             tooltip: {
               callbacks: {
                 title: items => {
@@ -573,14 +573,14 @@ window.macdChart = new Chart(macdCtx, {
             x: {
               type: 'linear',
               ticks: {
-                color: '#6c7a89', maxRotation: 0, font:{size:9},
+                color: '#8b949e', maxRotation: 0, font:{size:9},
                 callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
               },
-              grid: { color: 'rgba(108,122,137,0.08)' }
+              grid: { color: 'rgba(139,148,158,0.1)' }
             },
             y: {
-              ticks: { color: '#6c7a89', font:{size:9} },
-              grid: { color: 'rgba(108,122,137,0.08)' }
+              ticks: { color: '#8b949e', font:{size:9} },
+              grid: { color: 'rgba(139,148,158,0.1)' }
             }
           }
         }
@@ -597,16 +597,16 @@ window.macdChart = new Chart(macdCtx, {
           datasets: [{
             label: '加權指數',
             data: [43500, 43480, 43450, 43470, 43500, 43502],
-            borderColor: '#0052cc', backgroundColor: 'rgba(0,82,204,0.1)',
+            borderColor: '#58a6ff', backgroundColor: 'rgba(88,166,255,0.12)',
             fill: true, tension: .4, pointRadius: 3
           }]
         },
         options: {
           responsive: true, maintainAspectRatio: false,
-          plugins: { legend: { labels: { color:'#6c7a89' } } },
+          plugins: { legend: { labels: { color:'#8b949e' } } },
           scales: {
-            x: { ticks: { color:'#6c7a89' }, grid: { color:'rgba(108,122,137,0.12)' } },
-            y: { ticks: { color:'#6c7a89' }, grid: { color:'rgba(108,122,137,0.12)' } }
+            x: { ticks: { color:'#8b949e' }, grid: { color:'rgba(139,148,158,0.15)' } },
+            y: { ticks: { color:'#8b949e' }, grid: { color:'rgba(139,148,158,0.15)' } }
           }
         }
       });
