@@ -487,10 +487,10 @@ async function loadOverview() {
 
       // 建立 MACD 圖表（下方子圖）
       const macdCtx = document.getElementById('macdChart').getContext('2d');
-      if (window.macdChart) window.macdChart.destroy();
+try { if (window.macdChart && typeof window.macdChart.destroy === 'function') window.macdChart.destroy(); } catch(_){}
 
-      const macdTimestamps = candles.map(c => c.x);
-      window.macdChart = new Chart(macdCtx, {
+const macdTimestamps = candles.map(c => c.x);
+window.macdChart = new Chart(macdCtx, {
         type: 'bar',
         data: {
           datasets: [
@@ -555,8 +555,8 @@ async function loadOverview() {
 
     } catch(e) {
       console.warn('K線讀取失敗，改用折線圖', e);
-      if (indexChart) indexChart.destroy();
-      if (window.macdChart) window.macdChart.destroy();
+      try { if (indexChart && typeof indexChart.destroy === 'function') indexChart.destroy(); } catch(_){}
+      try { if (window.macdChart && typeof window.macdChart.destroy === 'function') window.macdChart.destroy(); } catch(_){}
       indexChart = new Chart(ctx, {
         type: 'line',
         data: {
