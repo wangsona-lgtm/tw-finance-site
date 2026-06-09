@@ -16,20 +16,20 @@
   --bg: #f5f6fa;
   --surface: #ffffff;
   --surface2: #f0f1f7;
-  --accent: #0052cc;
+  --accent: #1a73e8;
   --accent2: #e8f0fe;
   --red: #e74c3c;
-  --green: #27ae60;
-  --text: #1a1a2e;
-  --text2: #6b7280;
-  --border: #e0e3eb;
+  --green: #1a73e8;
+  --text: #1e293b;
+  --text2: #64748b;
+  --border: #e2e8f0;
 }
 body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); }
 .header {
   background:var(--surface); border-bottom:1px solid var(--border);
-  padding:16px 24px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100;
+  padding:14px 24px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100;
 }
-.header h1 { font-size:20px; font-weight:700; color:var(--accent); }
+.header h1 { font-size:18px; font-weight:700; color:var(--accent); }
 .header h1 span { color:var(--text); font-weight:300; }
 .header time { color:var(--text2); font-size:13px; }
 .nav { display:flex; gap:4px; background:var(--surface); padding:0 24px; border-bottom:1px solid var(--border); }
@@ -45,8 +45,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 .grid-3 { grid-template-columns:1fr 1fr 1fr; }
 .grid-4 { grid-template-columns:1fr 1fr 1fr 1fr; }
 .card {
-  background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px;
-  transition:transform .2s, box-shadow .2s;
+  background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:20px;
 }
 .card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,82,204,.08); }
 .card h3 { font-size:14px; font-weight:400; color:var(--text2); margin-bottom:8px; }
@@ -408,7 +407,7 @@ async function loadOverview() {
           function fillBand(upper, lower) {
             if (!upper || !lower || upper.length === 0) return;
             ctx.beginPath();
-            ctx.fillStyle = 'rgba(0,82,204,0.06)';
+            ctx.fillStyle = 'rgba(0,82,204,0.10)';
             let started = false;
             for (const p of upper) {
               if (p.y === undefined || p.y === null) continue;
@@ -428,10 +427,10 @@ async function loadOverview() {
 
           // 布林通道頻帶（先填再畫線）
           if (opts.bbUpper && opts.bbLower) fillBand(opts.bbUpper, opts.bbLower);
-          drawLine(opts.bbUpper, 'rgba(0,82,204,0.4)', 1);
-          drawLine(opts.bbMid, 'rgba(0,82,204,0.6)', 1, [4, 4]);
-          drawLine(opts.bbLower, 'rgba(0,82,204,0.4)', 1);
-          drawLine(opts.ma60, '#ffa500', 2);
+          drawLine(opts.bbUpper, 'rgba(0,82,204,0.5)', 2);
+          drawLine(opts.bbMid, 'rgba(0,82,204,0.7)', 2, [5, 5]);
+          drawLine(opts.bbLower, 'rgba(0,82,204,0.5)', 2);
+          drawLine(opts.ma60, '#e67e22', 3);
         }
       };
 
@@ -441,8 +440,8 @@ async function loadOverview() {
           datasets: [{
             label: '加權指數',
             data: candles,
-            color: { up:'#ff4757', down:'#0052cc', unchanged:'#6b7280' },
-            borderColor: '#6b7280'
+            color: { up:'#e74c3c', down:'#1a73e8', unchanged:'#909090' },
+            borderColor: '#909090'
           }]
         },
         options: {
@@ -531,8 +530,8 @@ window.macdChart = new Chart(macdCtx, {
               type: 'line',
               label: 'MACD',
               data: macdTimestamps.map((t, i) => ({ x: t, y: macdLine[i] })),
-              borderColor: '#ffa502',
-              borderWidth: 1.5,
+              borderColor: '#e67e22',
+              borderWidth: 2,
               pointRadius: 0,
               fill: false
             },
@@ -540,8 +539,8 @@ window.macdChart = new Chart(macdCtx, {
               type: 'line',
               label: '訊號',
               data: macdTimestamps.map((t, i) => ({ x: t, y: signal[i] })),
-              borderColor: '#ff6b81',
-              borderWidth: 1.5,
+              borderColor: '#e74c3c',
+              borderWidth: 2,
               pointRadius: 0,
               fill: false
             },
@@ -549,8 +548,8 @@ window.macdChart = new Chart(macdCtx, {
               type: 'bar',
               label: '柱狀',
               data: macdTimestamps.map((t, i) => ({ x: t, y: hist[i] })),
-              backgroundColor: hist.map(v => v >= 0 ? 'rgba(0,82,204,0.6)' : 'rgba(255,71,87,0.6)'),
-              borderColor: hist.map(v => v >= 0 ? '#0052cc' : '#ff4757'),
+              backgroundColor: hist.map(v => v >= 0 ? 'rgba(0,82,204,0.7)' : 'rgba(231,76,60,0.7)'),
+              borderColor: hist.map(v => v >= 0 ? '#0052cc' : '#e74c3c'),
               borderWidth: 1
             }
           ]
