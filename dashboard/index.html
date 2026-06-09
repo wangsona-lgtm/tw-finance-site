@@ -234,25 +234,6 @@ const INDEX_API = `${API}/exchangeReport/MI_INDEX`;
 const PE_API = `${API}/exchangeReport/BWIBBU_ALL`;
 const MARGIN_API = `${API}/exchangeReport/MI_MARGN`;
 
-async function fetchJSON(url) {
-  try {
-    const r = await fetch(url);
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    return await r.json();
-  } catch(e) {
-    console.warn(`Fetch failed for ${url}:`, e);
-    // Try with a public CORS proxy as fallback
-    const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(url)}`;
-    try {
-      const r2 = await fetch(proxyUrl);
-      if (!r2.ok) throw new Error(`Proxy HTTP ${r2.status}`);
-      return await r2.json();
-    } catch(e2) {
-      throw new Error(`API and proxy both failed: ${e.message}`);
-    }
-  }
-}
-
 function fmt(n) { return Number(n).toLocaleString('zh-TW'); }
 function fmtP(n) { return Number(n).toFixed(2); }
 
