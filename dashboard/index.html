@@ -308,43 +308,127 @@ async function loadOverview() {
       const tickData = await resp.json();
       if (!tickData.data || tickData.data.length === 0) throw new Error('無 Tick 資料');
 
-      // 將 5 秒 Tick 聚合為 15 分鐘 K棒
+      // 將 5 秒 Tick 聚合為 1 分鐘 K棒（才有足夠資料點算 MA60 / 布林通道）
       const buckets = new Map();
       for (const [timeStr, valStr] of tickData.data) {
         const val = parseFloat(valStr.replace(/,/g,''));
         if (isNaN(val) || val === 0) continue;
         const [h, m] = timeStr.split(':').map(Number);
-        const bucketM = Math.floor((h*60 + m) / 15) * 15;
-        const key = String(bucketM).padStart(4,'0');
+        const key = h*60 + m;  // 1 分鐘為一根
         if (!buckets.has(key)) buckets.set(key, { o:val, h:val, l:val, c:val });
         else { const b = buckets.get(key); b.h = Math.max(b.h,val); b.l = Math.min(b.l,val); b.c = val; }
       }
 
       // 轉陣列，過濾盤前空桶，排序
       const candles = [...buckets.entries()]
-        .filter(([k]) => +k >= 540) // 只取 >= 09:00
-        .map(([key, ohlc]) => {
-          const hh = String(Math.floor(+key/60)).padStart(2,'0');
-          const mm = String(+key%60).padStart(2,'0');
-          return {
-            x: new Date(dStr+'T'+hh+':'+mm+':00+08:00').getTime(),
-            o: ohlc.o, h: ohlc.h, l: ohlc.l, c: ohlc.c
-          };
-        })
+        .filter(([k]) => k >= 540) // 只取 >= 09:00
+        .map(([key, ohlc]) => ({
+          x: new Date(dStr+'T'+String(Math.floor(key/60)).padStart(2,'0')+':'+String(key%60).padStart(2,'0')+':00+08:00').getTime(),
+          o: ohlc.o, h: ohlc.h, l: ohlc.l, c: ohlc.c
+        }))
         .sort((a, b) => a.x - b.x);
 
+      // ===== 技術指標計算 =====
+      const closes = candles.map(c => c.c);
+
+      // SMA (N 期簡單移動平均)
+      function sma(data, period) {
+        const result = [];
+        for (let i = 0; i < data.length; i++) {
+          if (i < period - 1) { result.push(null); continue; }
+          let sum = 0;
+          for (let j = 0; j < period; j++) sum += data[i - j];
+          result.push(sum / period);
+        }
+        return result;
+      }
+
+      // Bollinger Bands（20期 SMA ± 2σ）
+      function bollinger(data, period = 20, multiplier = 2) {
+        const middle = sma(data, period);
+        const upper = [];
+        const lower = [];
+        for (let i = 0; i < data.length; i++) {
+          if (i < period - 1) { upper.push(null); lower.push(null); continue; }
+          let sumSq = 0;
+          for (let j = 0; j < period; j++) sumSq += (data[i - j] - middle[i]) ** 2;
+          const std = Math.sqrt(sumSq / period);
+          upper.push(middle[i] + multiplier * std);
+          lower.push(middle[i] - multiplier * std);
+        }
+        return { upper, middle, lower };
+      }
+
+      const ma60 = sma(closes, 60);
+      const bb = bollinger(closes, 20, 2);
+
+      // 轉成 Chart.js 資料格式
+      const ma60Data = candles.map((c, i) => ({
+        x: c.x, y: ma60[i] !== null ? ma60[i] : undefined
+      }));
+      const bbUpper = candles.map((c, i) => ({
+        x: c.x, y: bb.upper[i] !== null ? bb.upper[i] : undefined
+      }));
+      const bbMid = candles.map((c, i) => ({
+        x: c.x, y: bb.middle[i] !== null ? bb.middle[i] : undefined
+      }));
+      const bbLower = candles.map((c, i) => ({
+        x: c.x, y: bb.lower[i] !== null ? bb.lower[i] : undefined
+      }));
+
       indexChart = new Chart(ctx, {
-        type: 'candlestick',
         data: {
-          datasets: [{
-            label: '加權指數',
-            data: candles,
-            color: { up:'#ff4757', down:'#00d4aa', unchanged:'#8888aa' },
-            borderColor: '#8888aa'
-          }]
+          datasets: [
+            {
+              type: 'candlestick',
+              label: '加權指數',
+              data: candles,
+              color: { up:'#ff4757', down:'#00d4aa', unchanged:'#8888aa' },
+              borderColor: '#8888aa'
+            },
+            {
+              type: 'line',
+              label: 'MA60',
+              data: ma60Data,
+              borderColor: '#ffa500',
+              borderWidth: 2,
+              pointRadius: 0,
+              tension: 0.3,
+              fill: false
+            },
+            {
+              type: 'line',
+              label: '布林上',
+              data: bbUpper,
+              borderColor: 'rgba(0, 212, 170, 0.4)',
+              borderWidth: 1,
+              pointRadius: 0,
+              fill: false
+            },
+            {
+              type: 'line',
+              label: '布林中',
+              data: bbMid,
+              borderColor: 'rgba(0, 212, 170, 0.6)',
+              borderWidth: 1,
+              borderDash: [4, 4],
+              pointRadius: 0,
+              fill: false
+            },
+            {
+              type: 'line',
+              label: '布林下',
+              data: bbLower,
+              borderColor: 'rgba(0, 212, 170, 0.4)',
+              borderWidth: 1,
+              pointRadius: 0,
+              fill: '+3'  // fill between upper (index 2) and lower (index 4)
+            }
+          ]
         },
         options: {
           responsive: true, maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
           plugins: {
             legend: { labels: { color:'#8888aa' } },
             tooltip: {
@@ -356,7 +440,10 @@ async function loadOverview() {
                 },
                 label: ctx => {
                   const d = ctx.dataset.data[ctx.dataIndex];
-                  return ` 開: ${d.o.toLocaleString()}  高: ${d.h.toLocaleString()}\n 低: ${d.l.toLocaleString()}  收: ${d.c.toLocaleString()}`;
+                  if (ctx.dataset.type === 'candlestick') {
+                    return ` 開: ${d.o.toLocaleString()}  高: ${d.h.toLocaleString()}\n 低: ${d.l.toLocaleString()}  收: ${d.c.toLocaleString()}`;
+                  }
+                  return ctx.dataset.label + ': ' + Number(ctx.parsed.y).toLocaleString();
                 }
               }
             }
