@@ -238,8 +238,8 @@ const INDEX_API = `${API}/exchangeReport/MI_INDEX`;
 const PE_API = `${API}/exchangeReport/BWIBBU_ALL`;
 const MARGIN_API = `${API}/exchangeReport/MI_MARGN`;
 
-function fmt(n) { return Number(n).toLocaleString('zh-TW'); }
-function fmtP(n) { return Number(n).toFixed(2); }
+function fmt(n) { const v = parseFloat(String(n).replace(/,/g,'')); return isNaN(v) ? '-' : v.toLocaleString('zh-TW'); }
+function fmtP(n) { const v = parseFloat(String(n).replace(/,/g,'')); return isNaN(v) ? '-' : v.toFixed(2); }
 
 // ===== Tabs =====
 function showTab(name) {
@@ -488,21 +488,21 @@ async function loadPE() {
       ${byYield.map((r,i) => `<tr>
         <td>${i+1}</td><td>${r['Code']}</td><td class="name">${r['Name']}</td>
         <td style="color:var(--accent);font-weight:700;">${fmtP(r['DividendYield'])}%</td>
-        <td>${r['PEratio']||'-'}</td><td>${r['PBratio']||'-'}</td>
+        <td>${r['PE']||'-'}</td><td>${r['PBR']||'-'}</td>
       </tr>`).join('')}
     </table>`;
     
     // Low PE
-    const byPE = [...data].filter(r => r['PEratio'] && parseFloat(r['PEratio']) > 0 && parseFloat(r['PEratio']) < 100)
-      .sort((a,b) => parseFloat(a['PEratio']) - parseFloat(b['PEratio']))
+    const byPE = [...data].filter(r => r['PE'] && parseFloat(String(r["PE"]).replace(/,g,'')) > 0 && parseFloat(String(r["PE"]).replace(/,g,'')) < 100)
+      .sort((a,b) => parseFloat(a['PE']) - parseFloat(b['PE']))
       .slice(0,20);
     
     document.getElementById('peLow').innerHTML = `<table>
       <tr><th>排名</th><th>代碼</th><th>名稱</th><th>本益比</th><th>殖利率(%)</th><th>淨值比</th></tr>
       ${byPE.map((r,i) => `<tr>
         <td>${i+1}</td><td>${r['Code']}</td><td class="name">${r['Name']}</td>
-        <td style="color:var(--green);font-weight:700;">${fmtP(r['PEratio'])}</td>
-        <td>${r['DividendYield']||'-'}%</td><td>${r['PBratio']||'-'}</td>
+        <td style="color:var(--green);font-weight:700;">${fmtP(r['PE'])}</td>
+        <td>${r['DividendYield']||'-'}%</td><td>${r['PBR']||'-'}</td>
       </tr>`).join('')}
     </table>`;
   } catch(e) {
