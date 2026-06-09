@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王美智 · 講義資料庫</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@400;700&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg: #f5f0e8;
+  --surface: #ffffff;
+  --text: #1a1714;
+  --text2: #6b5f55;
+  --accent: #8B0000;
+  --accent2: #006400;
+  --accent3: #1B365D;
+  --border: #d4c9b8;
+}
+body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); }
+
+/* Header */
+.header {
+  background:var(--surface); border-bottom:2px solid var(--border);
+  padding:20px 32px; display:flex; justify-content:space-between; align-items:center;
+}
+.header h1 { font-size:22px; font-weight:700; color:var(--accent3); }
+.header h1 span { color:var(--accent); font-weight:400; }
+.header nav a { margin-left:20px; text-decoration:none; color:var(--text2); font-size:14px; }
+.header nav a:hover { color:var(--accent); }
+
+/* Hero */
+.hero {
+  background: var(--accent3); color:#fff; padding:60px 32px; text-align:center;
+  background-image: radial-gradient(circle at 10% 20%, rgba(139,0,0,.15) 0%, transparent 50%);
+}
+.hero h2 { font-size:36px; font-weight:900; margin-bottom:12px; }
+.hero p { font-size:16px; opacity:.8; max-width:600px; margin:0 auto; line-height:1.8; }
+
+.container { max-width:1200px; margin:0 auto; padding:40px 20px; }
+
+/* Lecture cards */
+.lecture-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px; }
+.lecture-card {
+  background:var(--surface); border:2px solid var(--border); border-radius:12px; padding:28px;
+  transition:all .2s; cursor:pointer; position:relative; overflow:hidden;
+}
+.lecture-card:hover { transform:translateY(-4px); border-color:var(--accent); box-shadow:0 12px 32px rgba(139,0,0,.1); }
+.lecture-card .tag {
+  display:inline-block; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:700; margin-bottom:12px;
+}
+.lecture-card .tag.finance { background:rgba(0,100,0,.1); color:var(--accent2); }
+.lecture-card .tag.codex { background:rgba(27,54,93,.1); color:var(--accent3); }
+.lecture-card .tag.r { background:rgba(139,0,0,.1); color:var(--accent); }
+.lecture-card h3 { font-size:20px; margin-bottom:8px; color:var(--accent3); }
+.lecture-card p { font-size:14px; color:var(--text2); line-height:1.6; margin-bottom:16px; }
+.lecture-card .meta { font-size:12px; color:var(--text2); display:flex; gap:16px; }
+.lecture-card .meta span { display:flex; align-items:center; gap:4px; }
+.lecture-card .actions { margin-top:16px; display:flex; gap:8px; }
+.lecture-card .actions a {
+  padding:8px 16px; border-radius:6px; font-size:13px; font-weight:500; text-decoration:none; cursor:pointer;
+  border:1px solid var(--border); color:var(--text); background:var(--bg); transition:all .2s;
+}
+.lecture-card .actions a:hover { border-color:var(--accent); color:var(--accent); background:#fff; }
+.lecture-card .corner {
+  position:absolute; top:-20px; right:-20px; width:80px; height:80px; border-radius:50%;
+  opacity:.05; pointer-events:none;
+}
+
+/* Section title */
+.section-title { text-align:center; margin-bottom:40px; }
+.section-title h2 { font-size:28px; font-weight:700; color:var(--accent3); }
+.section-title p { color:var(--text2); margin-top:8px; }
+
+/* Lecture page (hidden by default) */
+#lecture-content { display:none; }
+#lecture-content.active { display:block; }
+#lecture-list.active { display:block; }
+#lecture-list { display:block; }
+
+.back-btn {
+  display:inline-flex; align-items:center; gap:8px; padding:10px 20px;
+  background:var(--surface); border:1px solid var(--border); border-radius:8px;
+  text-decoration:none; color:var(--text); font-size:14px; margin-bottom:24px; cursor:pointer;
+  transition:all .2s;
+}
+.back-btn:hover { border-color:var(--accent); color:var(--accent); }
+
+/* Footer */
+.footer {
+  border-top:1px solid var(--border); padding:24px 32px; text-align:center;
+  font-size:13px; color:var(--text2);
+}
+
+/* Article styling */
+.article-body { max-width:800px; margin:0 auto; }
+.article-body h2 { font-size:22px; color:var(--accent3); margin:32px 0 12px; border-bottom:2px solid var(--border); padding-bottom:8px; }
+.article-body h3 { font-size:17px; color:var(--accent); margin:24px 0 8px; }
+.article-body p { line-height:1.9; margin-bottom:12px; font-size:15px; }
+.article-body ul { margin:8px 0 16px 20px; }
+.article-body li { line-height:1.8; margin-bottom:4px; font-size:15px; }
+.article-body .key-points {
+  background:rgba(139,0,0,.05); border-left:4px solid var(--accent); padding:16px 20px; margin:16px 0; border-radius:0 8px 8px 0;
+}
+.article-body .key-points h4 { color:var(--accent); margin-bottom:8px; }
+.article-body .discussion {
+  background:rgba(0,100,0,.05); border-left:4px solid var(--accent2); padding:16px 20px; margin:16px 0; border-radius:0 8px 8px 0; font-style:italic;
+}
+.code-block {
+  background:#1a1a2e; color:#e0e0e0; padding:16px; border-radius:8px; overflow-x:auto; font-size:13px; margin:12px 0; line-height:1.6;
+}
+
+@media(max-width:600px) {
+  .header { flex-direction:column; gap:12px; text-align:center; }
+  .header nav a { margin:0 8px; }
+  .hero h2 { font-size:26px; }
+  .lecture-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📚 王美智 <span>· 講義資料庫</span></h1>
+  <nav>
+    <a href="#" onclick="showHome()">首頁</a>
+    <a href="dashboard/" target="_blank">📊 金融儀表板</a>
+  </nav>
+</div>
+
+<!-- ===== Home ===== -->
+<div id="lecture-list" class="active">
+  <div class="hero">
+    <h2>R 程式碼 × 金融資料 × Codex 實戰</h2>
+    <p>從 ggplot2 視覺化基礎到 Codex 領域學習，三份實戰講義一次收錄。</p>
+  </div>
+
+  <div class="container">
+    <div class="section-title">
+      <h2>📖 所有講義</h2>
+      <p>點擊閱讀全文，或直接下載 PDF/DOCX</p>
+    </div>
+
+    <div class="lecture-grid">
+      <!-- Card 1 -->
+      <div class="lecture-card" onclick="showLecture(0)">
+        <span class="tag r">R 程式碼</span>
+        <h3>R 金融視覺化講義</h3>
+        <p>ggplot2 × yfinance × pixel 復古風。從基礎語法到金融實戰的完整圖表設計指南，共 18 章。</p>
+        <div class="meta">
+          <span>📄 23 頁</span>
+          <span>📅 2026-06</span>
+          <span>🏷️ 基礎 · 進階 · 金融</span>
+        </div>
+        <div class="actions">
+          <a href="./R_金融視覺化講義_ggplot2×yfinance×pixel復古風.pdf" onclick="event.stopPropagation()" download>📥 PDF</a>
+          <a href="./R_金融視覺化講義_ggplot2×yfinance×pixel復古風.docx" onclick="event.stopPropagation()" download>📄 DOCX</a>
+        </div>
+        <div class="corner" style="background:var(--accent)"></div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="lecture-card" onclick="showLecture(1)">
+        <span class="tag codex">Codex</span>
+        <h3>如何用 Codex 快速入門任何一個領域</h3>
+        <p>打造可迭代的領域學習系統。11 個章節完整拆解用 Codex 建立學習專案的方法論。</p>
+        <div class="meta">
+          <span>📄 17 頁</span>
+          <span>📅 2026-06</span>
+          <span>🏷️ 學習方法 · AI</span>
+        </div>
+        <div class="actions">
+          <a href="./Codex_領域學習_講義.pdf" onclick="event.stopPropagation()" download>📥 PDF</a>
+          <a href="./Codex_領域學習_講義.docx" onclick="event.stopPropagation()" download>📄 DOCX</a>
+        </div>
+        <div class="corner" style="background:var(--accent3)"></div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="lecture-card" onclick="showLecture(2)">
+        <span class="tag codex">Codex</span>
+        <h3>Codex 五大核心能力</h3>
+        <p>官方 60 個 Use Cases 深度解讀。理解真實上下文、拆解目標、呼叫工具、產出審查、迭代反饋。</p>
+        <div class="meta">
+          <span>📄 10 頁</span>
+          <span>📅 2026-06</span>
+          <span>🏷️ AI · 生產力</span>
+        </div>
+        <div class="actions">
+          <a href="./Codex_五大核心能力_講義.pdf" onclick="event.stopPropagation()" download>📥 PDF</a>
+          <a href="./Codex_五大核心能力_講義.docx" onclick="event.stopPropagation()" download>📄 DOCX</a>
+        </div>
+        <div class="corner" style="background:var(--accent2)"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Lecture Content ===== -->
+<div id="lecture-content">
+  <div class="container">
+    <a class="back-btn" onclick="showHome()">← 回到講義列表</a>
+    <div class="article-body" id="lecture-body"></div>
+  </div>
+</div>
+
+<div class="footer">
+  國立臺中科技大學 王美智 · 2026
+</div>
+
+<script>
+const lectures = [
+  {
+    title: 'R 金融視覺化講義',
+    subtitle: 'ggplot2 × yfinance × pixel 復古風',
+    chapters: [
+      '為什麼我們需要視覺化？',
+      '視覺通道（Visual Channels）',
+      '資料類型與圖表選擇',
+      '顏色理論與 pixel 復古配色',
+      '構圖、留白、標註與註解',
+      'ggplot2 的三要素（data + aes + geom）',
+      '客製化主題與 pixel 復古風格',
+      '多圖層與統計轉換',
+      '分面與多圖排版',
+      '視覺化倫理與常見陷阱',
+      '時間序列視覺化',
+      '相關性與多變量視覺化',
+      '台灣縣市數值地圖',
+      '互動式儀表板',
+      '文字視覺化與詞雲',
+      'K 線圖與成交量',
+      '投資組合視覺化',
+      '事件研究與情緒分析'
+    ],
+    summary: '從 ggplot2 基礎語法到 R 語言金融實戰，涵蓋視覺通道、顏色理論、時間序列、K 線圖、事件研究等 18 個主題。每章包含核心概念、程式碼範例、常見錯誤提醒與課堂練習。'
+  },
+  {
+    title: '如何用 Codex 快速入門任何一個領域',
+    subtitle: '打造可迭代的領域學習系統',
+    chapters: [
+      '一句話方法',
+      '第一步：建立領域學習倉庫',
+      '第二步：先建立知識地圖',
+      '第三步：讓 Codex 生成「學習 Skill」',
+      '第四步：每天用「輸入—輸出」方式學習',
+      '第五步：每個領域都必須做一個小專案',
+      '第六步：讓 Codex 扮演考官',
+      '第七步：用領域壓縮卡快速複習',
+      '最強通用提示詞模板',
+      '推薦的 30 天學習節奏',
+      '最重要的心法'
+    ],
+    summary: '改寫自 @GeekCatX 的長文教學。將 Codex 從寫程式碼工具升級為「領域學習工程師」，用 AGENTS.md 建立可迭代的學習專案倉庫。'
+  },
+  {
+    title: 'Codex 五大核心能力',
+    subtitle: '官方 60 個 Use Cases 深度解讀',
+    chapters: [
+      '理解真實上下文',
+      '拆解複雜目標',
+      '呼叫正確工具',
+      '產出可審查的結果',
+      '在反饋中持續迭代'
+    ],
+    summary: '改寫自 @thinkszyg 的分享與 OpenAI Codex 官方 60 個 Use Cases。解析 Codex 從工具進化為 AI 隊友的五大關鍵能力。'
+  }
+];
+
+function showHome() {
+  document.getElementById('lecture-list').classList.add('active');
+  document.getElementById('lecture-content').classList.remove('active');
+  window.scrollTo(0,0);
+}
+
+function showLecture(idx) {
+  const l = lectures[idx];
+  const body = document.getElementById('lecture-body');
+  
+  let html = `
+    <h2>${l.title}</h2>
+    <p style="color:var(--text2);font-size:14px;margin-bottom:12px;">${l.subtitle}</p>
+    <p style="line-height:1.8;margin-bottom:24px;">${l.summary}</p>
+    <h3>📑 章節目錄</h3>
+    <ol style="margin:8px 0 24px 20px;line-height:2;">
+      ${l.chapters.map((ch, i) => `<li>${ch}</li>`).join('')}
+    </ol>
+    <div class="key-points">
+      <h4>📥 下載講義</h4>
+      <p style="margin:0;">完整 PDF 與 DOCX 檔案請點擊首頁卡片上的下載按鈕。</p>
+    </div>
+  `;
+  
+  body.innerHTML = html;
+  document.getElementById('lecture-list').classList.remove('active');
+  document.getElementById('lecture-content').classList.add('active');
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>

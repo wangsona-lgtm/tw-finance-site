@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TWSE 金融儀表板</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg: #0f0f1a;
+  --surface: #1a1a2e;
+  --surface2: #16213e;
+  --accent: #00d4aa;
+  --accent2: #0f3460;
+  --red: #ff4757;
+  --green: #2ed573;
+  --text: #e0e0e0;
+  --text2: #8888aa;
+  --border: #2a2a4a;
+}
+body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); }
+.header {
+  background:var(--surface); border-bottom:1px solid var(--border);
+  padding:16px 24px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100;
+}
+.header h1 { font-size:20px; font-weight:700; color:var(--accent); }
+.header h1 span { color:var(--text); font-weight:300; }
+.header time { color:var(--text2); font-size:13px; }
+.nav { display:flex; gap:4px; background:var(--surface); padding:0 24px; border-bottom:1px solid var(--border); }
+.nav a { padding:12px 20px; text-decoration:none; color:var(--text2); font-size:14px; border-bottom:2px solid transparent; transition:all .2s; }
+.nav a:hover { color:var(--accent); border-color:var(--accent); }
+.nav a.active { color:var(--accent); border-color:var(--accent); font-weight:500; }
+.container { max-width:1400px; margin:0 auto; padding:20px; display:none; }
+.container.active { display:block; }
+
+/* Cards */
+.grid { display:grid; gap:16px; }
+.grid-2 { grid-template-columns:1fr 1fr; }
+.grid-3 { grid-template-columns:1fr 1fr 1fr; }
+.grid-4 { grid-template-columns:1fr 1fr 1fr 1fr; }
+.card {
+  background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px;
+  transition:transform .2s, box-shadow .2s;
+}
+.card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,212,170,.1); }
+.card h3 { font-size:14px; font-weight:400; color:var(--text2); margin-bottom:8px; }
+.card .value { font-size:28px; font-weight:700; }
+.card .value.green { color:var(--green); }
+.card .value.red { color:var(--red); }
+.card .sub { font-size:13px; color:var(--text2); margin-top:4px; }
+.card table { width:100%; border-collapse:collapse; font-size:13px; }
+.card th, .card td { padding:8px 6px; text-align:right; border-bottom:1px solid var(--border); }
+.card th { color:var(--text2); font-weight:400; text-align:right; }
+.card td:first-child, .card th:first-child { text-align:left; }
+.card .name { font-weight:500; }
+.card .positive { color:var(--green); }
+.card .negative { color:var(--red); }
+
+.chart-container { position:relative; height:300px; }
+.mt-16 { margin-top:16px; }
+
+/* Loading */
+.loading { text-align:center; padding:60px; color:var(--text2); }
+.spinner { display:inline-block; width:40px; height:40px; border:3px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin .8s linear infinite; margin-bottom:16px; }
+@keyframes spin { to { transform:rotate(360deg); } }
+
+.alert { 
+  background:rgba(255,71,87,.1); border:1px solid var(--red); border-radius:8px; padding:12px 16px;
+  color:var(--red); font-size:13px; margin-bottom:16px;
+}
+
+/* Scrollable table */
+.scroll-x { overflow-x:auto; }
+table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
+
+@media(max-width:900px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns:1fr; }
+  .nav { overflow-x:auto; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📊 TWSE <span>金融儀表板</span></h1>
+  <time id="updateTime">載入中...</time>
+</div>
+
+<div class="nav">
+  <a href="#overview" class="active" onclick="showTab('overview')">📈 大盤總覽</a>
+  <a href="#stocks" onclick="showTab('stocks')">📋 個股成交</a>
+  <a href="#pe" onclick="showTab('pe')">💰 本益比/殖利率</a>
+  <a href="#margin" onclick="showTab('margin')">🏦 融資融券</a>
+</div>
+
+<!-- ===== Overview ===== -->
+<div id="tab-overview" class="container active">
+  <div class="alert">⚠️ 資料來源：臺灣證券交易所 OpenAPI（約延遲 20 分鐘）</div>
+  <div class="grid grid-4" id="indexCards">
+    <div class="card"><h3>加權股價指數</h3><div class="value" id="idx1">-</div><div class="sub" id="idx1sub"></div></div>
+    <div class="card"><h3>寶島股價指數</h3><div class="value" id="idx2">-</div><div class="sub" id="idx2sub"></div></div>
+    <div class="card"><h3>成交金額（億）</h3><div class="value" id="idx3">-</div><div class="sub">今日累計</div></div>
+    <div class="card"><h3>成交張數（萬）</h3><div class="value" id="idx4">-</div><div class="sub">今日累計</div></div>
+  </div>
+  <div class="grid grid-2 mt-16">
+    <div class="card"><h3>大盤走勢</h3><div class="chart-container"><canvas id="indexChart"></canvas></div></div>
+    <div class="card">
+      <h3>成交量前 20 名</h3>
+      <div id="top20List" class="scroll-x" style="max-height:320px;overflow-y:auto;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Stocks ===== -->
+<div id="tab-stocks" class="container">
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>🔍 查詢個股</h3>
+      <div style="display:flex;gap:8px;margin:12px 0;">
+        <input id="stockInput" placeholder="輸入股號或名稱（如 2330）" style="flex:1;padding:10px 14px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:14px;">
+        <button onclick="searchStock()" style="padding:10px 20px;background:var(--accent);color:#000;border:none;border-radius:8px;font-weight:700;cursor:pointer;">查詢</button>
+      </div>
+      <div id="stockResult" class="scroll-x" style="max-height:400px;overflow-y:auto;"></div>
+    </div>
+    <div class="card">
+      <h3>📊 大盤即時行情 Top 10</h3>
+      <div id="marketTop10" class="scroll-x" style="max-height:400px;overflow-y:auto;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PE / Yield ===== -->
+<div id="tab-pe" class="container">
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>🏆 殖利率最高 20 檔</h3>
+      <div id="yieldTop" class="scroll-x" style="max-height:500px;overflow-y:auto;"></div>
+    </div>
+    <div class="card">
+      <h3>📉 本益比最低 20 檔</h3>
+      <div id="peLow" class="scroll-x" style="max-height:500px;overflow-y:auto;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Margin ===== -->
+<div id="tab-margin" class="container">
+  <div class="grid grid-3" id="marginCards">
+    <div class="card"><h3>融資餘額（億）</h3><div class="value" id="mg1">-</div></div>
+    <div class="card"><h3>融券餘額（張）</h3><div class="value" id="mg2">-</div></div>
+    <div class="card"><h3>借券餘額（張）</h3><div class="value" id="mg3">-</div></div>
+  </div>
+</div>
+
+<script>
+const PROXY = ''; // 留空直接調用，不支援 CORS 時需代理
+const API = 'https://openapi.twse.com.tw/v1';
+const ALL_STOCKS_API = `${API}/exchangeReport/STOCK_DAY_ALL`;
+const INDEX_API = `${API}/exchangeReport/MI_INDEX`;
+const PE_API = `${API}/exchangeReport/BWIBBU_ALL`;
+const MARGIN_API = `${API}/exchangeReport/MI_MARGN`;
+
+async function fetchJSON(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return await r.json();
+  } catch(e) {
+    console.warn(`Fetch failed for ${url}:`, e);
+    // Try with a public CORS proxy as fallback
+    const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(url)}`;
+    try {
+      const r2 = await fetch(proxyUrl);
+      if (!r2.ok) throw new Error(`Proxy HTTP ${r2.status}`);
+      return await r2.json();
+    } catch(e2) {
+      throw new Error(`API and proxy both failed: ${e.message}`);
+    }
+  }
+}
+
+function fmt(n) { return Number(n).toLocaleString('zh-TW'); }
+function fmtP(n) { return Number(n).toFixed(2); }
+
+// ===== Tabs =====
+function showTab(name) {
+  document.querySelectorAll('.container').forEach(e => e.classList.remove('active'));
+  document.querySelectorAll('.nav a').forEach(e => e.classList.remove('active'));
+  document.getElementById(`tab-${name}`).classList.add('active');
+  document.querySelector(`.nav a[href="#${name}"]`).classList.add('active');
+}
+
+// ===== Overview =====
+let indexChart = null;
+async function loadOverview() {
+  try {
+    const data = await fetchJSON(INDEX_API);
+    const rows = Array.isArray(data) ? data : [data];
+    
+    for (const row of rows) {
+      if (row['指數'] === '發行量加權股價指數') {
+        document.getElementById('idx1').textContent = fmt(row['收盤指數']);
+        const chg = parseFloat(row['漲跌點數'].replace(/,/g,''));
+        const el = document.getElementById('idx1');
+        el.className = 'value ' + (chg >= 0 ? 'green' : 'red');
+        document.getElementById('idx1sub').textContent = 
+          `${chg >= 0 ? '▲' : '▼'} ${Math.abs(chg).toFixed(2)} 點（${row['漲跌百分比']}%）`;
+      }
+      if (row['指數'] === '寶島股價指數') {
+        document.getElementById('idx2').textContent = fmt(row['收盤指數']);
+        const chg2 = parseFloat(row['漲跌點數'].replace(/,/g,''));
+        const el2 = document.getElementById('idx2');
+        el2.className = 'value ' + (chg2 >= 0 ? 'green' : 'red');
+      }
+      if (row['指數'] === '發行量加權股價指數') {
+        const amt = parseFloat(row['成交金額'] || '0') / 1e8;
+        document.getElementById('idx3').textContent = amt.toFixed(1);
+        const vol = parseFloat(row['成交股數'] || '0') / 1e6;
+        document.getElementById('idx4').textContent = vol.toFixed(1);
+      }
+    }
+
+    // Mini chart - sample data (in production use historical API)
+    const ctx = document.getElementById('indexChart').getContext('2d');
+    if (indexChart) indexChart.destroy();
+    indexChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['09:00','10:00','11:00','12:00','13:00','13:30'],
+        datasets: [{
+          label: '加權指數',
+          data: [43500, 43480, 43450, 43470, 43500, 43502],
+          borderColor: '#00d4aa', backgroundColor: 'rgba(0,212,170,0.1)',
+          fill: true, tension: .4, pointRadius: 3
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { labels: { color:'#8888aa' } } },
+        scales: {
+          x: { ticks: { color:'#8888aa' }, grid: { color:'#2a2a4a' } },
+          y: { ticks: { color:'#8888aa' }, grid: { color:'#2a2a4a' } }
+        }
+      }
+    });
+  } catch(e) {
+    document.getElementById('idx1').textContent = '⚠️';
+    document.getElementById('idx1sub').textContent = e.message;
+  }
+}
+
+async function loadTop20() {
+  try {
+    const data = await fetchJSON(INDEX_API + '20');
+    const html = `<table class="compact">
+      <tr><th>排名</th><th>代碼</th><th>名稱</th><th>成交金額</th><th>收盤價</th></tr>
+      ${data.slice(0,20).map((r,i) => 
+        `<tr><td>${i+1}</td><td>${r['Code']}</td><td class="name">${r['Name']}</td>
+        <td>${fmt(r['TradeValue'])}</td><td>${r['ClosingPrice']||'-'}</td></tr>`
+      ).join('')}
+    </table>`;
+    document.getElementById('top20List').innerHTML = html;
+  } catch(e) {
+    document.getElementById('top20List').innerHTML = `<p style="color:var(--text2)">⚠️ ${e.message}</p>`;
+  }
+}
+
+// ===== Stocks =====
+async function loadAllStocks() {
+  try {
+    const data = await fetchJSON(ALL_STOCKS_API);
+    const top10 = data.slice(0,10);
+    const html = `<table>
+      <tr><th>代碼</th><th>名稱</th><th>收盤價</th><th>漲跌</th><th>成交量</th></tr>
+      ${top10.map(r => {
+        const chg = parseFloat(r['Change'] || 0);
+        return `<tr><td>${r['Code']}</td><td class="name">${r['Name']}</td>
+        <td>${r['ClosingPrice']||'-'}</td>
+        <td class="${chg>0?'positive':chg<0?'negative':''}">${chg>0?'▲':chg<0?'▼':''} ${r['Change']||'-'}</td>
+        <td>${fmt(r['TradeVolume'])}</td></tr>`;
+      }).join('')}
+    </table>`;
+    document.getElementById('marketTop10').innerHTML = html;
+    
+    // Store for search
+    window._allStocks = data;
+  } catch(e) {
+    document.getElementById('marketTop10').innerHTML = `<p style="color:var(--text2)">⚠️ ${e.message}</p>`;
+  }
+}
+
+function searchStock() {
+  const q = document.getElementById('stockInput').value.trim().toUpperCase();
+  if (!q || !window._allStocks) return;
+  
+  const data = window._allStocks;
+  const results = data.filter(r => r['Code'].includes(q) || r['Name'].includes(q));
+  
+  if (results.length === 0) {
+    document.getElementById('stockResult').innerHTML = '<p style="color:var(--text2)">找不到符合的股票</p>';
+    return;
+  }
+  
+  const html = `<table>
+    <tr><th>代碼</th><th>名稱</th><th>開盤</th><th>最高</th><th>最低</th><th>收盤</th><th>漲跌</th><th>成交量</th></tr>
+    ${results.slice(0,20).map(r => {
+      const chg = parseFloat(r['Change'] || 0);
+      return `<tr><td>${r['Code']}</td><td class="name">${r['Name']}</td>
+      <td>${r['OpeningPrice']||'-'}</td><td>${r['HighestPrice']||'-'}</td>
+      <td>${r['LowestPrice']||'-'}</td><td>${r['ClosingPrice']||'-'}</td>
+      <td class="${chg>0?'positive':chg<0?'negative':''}">${r['Change']||'-'}</td>
+      <td>${fmt(r['TradeVolume'])}</td></tr>`;
+    }).join('')}
+  </table>`;
+  document.getElementById('stockResult').innerHTML = html;
+}
+document.getElementById('stockInput').addEventListener('keyup', e => { if(e.key==='Enter') searchStock(); });
+
+// ===== PE / Yield =====
+async function loadPE() {
+  try {
+    const data = await fetchJSON(PE_API);
+    
+    // Top yield
+    const byYield = [...data].filter(r => r['DividendYield'] && parseFloat(r['DividendYield']) > 0)
+      .sort((a,b) => parseFloat(b['DividendYield']) - parseFloat(a['DividendYield']))
+      .slice(0,20);
+    
+    document.getElementById('yieldTop').innerHTML = `<table>
+      <tr><th>排名</th><th>代碼</th><th>名稱</th><th>殖利率(%)</th><th>本益比</th><th>淨值比</th></tr>
+      ${byYield.map((r,i) => `<tr>
+        <td>${i+1}</td><td>${r['Code']}</td><td class="name">${r['Name']}</td>
+        <td style="color:var(--accent);font-weight:700;">${fmtP(r['DividendYield'])}%</td>
+        <td>${r['PEratio']||'-'}</td><td>${r['PBratio']||'-'}</td>
+      </tr>`).join('')}
+    </table>`;
+    
+    // Low PE
+    const byPE = [...data].filter(r => r['PEratio'] && parseFloat(r['PEratio']) > 0 && parseFloat(r['PEratio']) < 100)
+      .sort((a,b) => parseFloat(a['PEratio']) - parseFloat(b['PEratio']))
+      .slice(0,20);
+    
+    document.getElementById('peLow').innerHTML = `<table>
+      <tr><th>排名</th><th>代碼</th><th>名稱</th><th>本益比</th><th>殖利率(%)</th><th>淨值比</th></tr>
+      ${byPE.map((r,i) => `<tr>
+        <td>${i+1}</td><td>${r['Code']}</td><td class="name">${r['Name']}</td>
+        <td style="color:var(--green);font-weight:700;">${fmtP(r['PEratio'])}</td>
+        <td>${r['DividendYield']||'-'}%</td><td>${r['PBratio']||'-'}</td>
+      </tr>`).join('')}
+    </table>`;
+  } catch(e) {
+    document.getElementById('yieldTop').innerHTML = `<p style="color:var(--text2)">⚠️ ${e.message}</p>`;
+    document.getElementById('peLow').innerHTML = '';
+  }
+}
+
+// ===== Margin =====
+async function loadMargin() {
+  try {
+    const data = await fetchJSON(MARGIN_API);
+    const latest = data[data.length - 1];
+    if (latest) {
+      document.getElementById('mg1').textContent = (parseFloat(latest['今日餘額-融資(元)']||0)/1e8).toFixed(1);
+      document.getElementById('mg1').className = 'value';
+      document.getElementById('mg2').textContent = fmt(latest['今日餘額-融券(張)']||0);
+      document.getElementById('mg3').textContent = fmt(latest['今日餘額-借券賣出(張)']||0);
+    }
+  } catch(e) {
+    document.getElementById('mg1').textContent = '⚠️';
+  }
+}
+
+// ===== Init =====
+async function init() {
+  document.getElementById('updateTime').textContent = new Date().toLocaleString('zh-TW', {timeZone:'Asia/Taipei'});
+  
+  await Promise.allSettled([
+    loadOverview(), loadTop20(), loadAllStocks(), loadPE(), loadMargin()
+  ]);
+  
+  document.getElementById('updateTime').textContent = '更新: ' + new Date().toLocaleString('zh-TW', {timeZone:'Asia/Taipei'});
+}
+init();
+
+// Auto refresh every 5 minutes
+setInterval(init, 300000);
+</script>
+</body>
+</html>
