@@ -283,105 +283,182 @@ async function selectReport(date) {
 
 // ═══ Render full report ═══
 function renderReport(data) {
-  const { market, recommendations, momentum } = data;
   let html = '';
 
-  // === 大盤概況 ===
-  html += `<div class="section">
-    <div class="section-title">🟢 大盤概況：${market.direction}</div>
-    <div class="market-card">
-      <div class="market-item">
-        <div class="label">加權指數</div>
-        <div class="value ${market.change.startsWith('+')?'green':'red'}">${market.index}</div>
-      </div>
-      <div class="market-item">
-        <div class="label">漲跌點</div>
-        <div class="value ${market.change.startsWith('+')?'green':'red'}">${market.change} (${market.changePct})</div>
-      </div>
-      <div class="market-item">
-        <div class="label">昨日收盤</div>
-        <div class="value red">${market.prevClose}</div>
-        <div class="sub">${market.prevChange}</div>
-      </div>
-    </div>
-    <div class="market-summary">${market.summary}</div>
-  </div>`;
+  // 支援兩種格式：舊版 {market, recommendations, momentum} 或新版 {sections: [...]}
+  if (data.sections) {
+    // ═══ 新版：section-based ═══
+    data.sections.forEach(sec => {
+      html += `<div class="section">`;
 
-  // === 推薦檢討 ===
-  html += `<div class="section">
-    <div class="section-title">📋 第一部分：今日推薦檢討</div>`;
+      if (sec.title) {
+        html += `<div class="section-title">${sec.icon||'📊'} ${sec.title}</div>`;
+      }
 
-  recommendations.stocks.forEach(s => {
-    const isHit = s.result === '✅';
-    html += `<div class="stock-card ${isHit?'hit':'miss'}">
-      <div class="header" onclick="this.parentElement.classList.toggle('open')">
-        <span class="result">${s.result}</span>
-        <span class="code">${s.code}</span>
-        <span class="name">${s.name}</span>
-        <div class="price">
-          <div class="val ${s.changePct.startsWith('+')?'green':'red'}">${s.close}</div>
-          <div class="chg ${s.changePct.startsWith('+')?'green':'red'}">${s.changePct}</div>
+      // Stats cards
+      if (sec.stats) {
+        html += `<div class="market-card">`;
+        sec.stats.forEach(st => {
+          const chg = st.change || '';
+          const isPos = chg.startsWith('+');
+          const isNeg = chg.startsWith('-');
+          html += `<div class="market-item">
+            <div class="label">${st.label}</div>
+            <div class="value ${isPos?'green':isNeg?'red':''}">${st.value}</div>
+            ${st.change ? `<div class="sub ${isPos?'green':isNeg?'red':''}">${st.change}</div>` : ''}
+          </div>`;
+        });
+        html += `</div>`;
+      }
+
+      // Text content
+      if (sec.content) {
+        html += `<div class="market-summary">${sec.content.replace(/\n/g,'<br>')}</div>`;
+      }
+
+      // Table
+      if (sec.type === 'table' && sec.rows) {
+        html += `<div class="scroll-x"><table class="compact" style="margin:12px 0;width:100%;">
+          <tr>${sec.headers.map(h=>'<th>'+h+'</th>').join('')}</tr>
+          ${sec.rows.map(r => '<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')}
+        </table></div>`;
+        if (sec.analysis) html += `<div class="market-summary" style="font-size:13px;">📌 ${sec.analysis}</div>`;
+      }
+
+      // Stock groups
+      if (sec.type === 'stocks' && sec.groups) {
+        sec.groups.forEach(g => {
+          html += `<div class="industry-section">
+            <div class="industry-title"><span>${g.name}</span></div>
+            <div class="stock-grid">
+              ${g.stocks.map(s => `
+                <div class="stock-chip">
+                  <div>
+                    <div class="scode">${s.code||''}</div>
+                    <div class="sname">${s.name||''}</div>
+                  </div>
+                  <div>
+                    <div class="sclose">${s.change||''}</div>
+                    <div class="sstreak">${s.note||''}</div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>`;
+        });
+        if (sec.analysis) html += `<div class="market-summary" style="font-size:13px;margin-top:8px;">📌 ${sec.analysis}</div>`;
+      }
+
+      // Signal summary
+      if (sec.type === 'summary' && sec.signals) {
+        html += `<div class="summary-card" style="margin:12px 0;">`;
+        sec.signals.forEach(sg => {
+          html += `<div class="item">
+            <div class="label">${sg.aspect}</div>
+            <div class="value" style="font-size:13px;">${sg.signal}</div>
+            <div class="value">${sg.direction}</div>
+          </div>`;
+        });
+        html += `</div>`;
+        if (sec.conclusion) html += `<div class="watch-box" style="margin-top:8px;"><strong>💡 結論：</strong>${sec.conclusion}</div>`;
+      }
+
+      html += `</div>`;
+    });
+  } else {
+    // ═══ 舊版：{market, recommendations, momentum} ═══
+    const { market, recommendations, momentum } = data;
+
+    // === 大盤概況 ===
+    html += `<div class="section">
+      <div class="section-title">🟢 大盤概況：${market.direction}</div>
+      <div class="market-card">
+        <div class="market-item">
+          <div class="label">加權指數</div>
+          <div class="value ${market.change.startsWith('+')?'green':'red'}">${market.index}</div>
         </div>
-        <span style="font-size:16px;color:var(--text2);">▾</span>
-      </div>
-      <div class="body">
-        <div class="stock-detail">
-          ${s.analysis.map(a => `<div class="item"><div class="q">${a.q}</div><div class="a">${a.a}</div></div>`).join('')}
+        <div class="market-item">
+          <div class="label">漲跌點</div>
+          <div class="value ${market.change.startsWith('+')?'green':'red'}">${market.change} (${market.changePct})</div>
         </div>
-        <div class="review-box">💡 檢討：${s.review}</div>
+        <div class="market-item">
+          <div class="label">昨日收盤</div>
+          <div class="value red">${market.prevClose}</div>
+          <div class="sub">${market.prevChange}</div>
+        </div>
       </div>
+      <div class="market-summary">${market.summary}</div>
     </div>`;
-  });
 
-  // Summary
-  html += `<div class="summary-card" style="margin-top:16px;">
-    <div class="item"><div class="label">推薦檔數</div><div class="value">${recommendations.total}</div></div>
-    <div class="item"><div class="label">✅ 命中</div><div class="value" style="color:var(--green);">${recommendations.hits}</div></div>
-    <div class="item"><div class="label">❌ 失誤</div><div class="value" style="color:var(--red);">${recommendations.misses}</div></div>
-    <div class="item"><div class="label">命中率</div><div class="value">${recommendations.hitRate}</div></div>
-    <div class="item"><div class="label">平均報酬</div><div class="value" style="color:var(--green);">${recommendations.avgReturn}</div></div>
-  </div>`;
+    // === 推薦檢討 ===
+    html += `<div class="section">
+      <div class="section-title">📋 第一部分：今日推薦檢討</div>`;
 
-  html += `</div>`;
-
-  // === 盤面動能 ===
-  html += `<div class="section">
-    <div class="section-title">🔥 第二部分：今日盤面動能掃描</div>
-    <div style="font-size:13px;color:var(--text2);margin-bottom:16px;">漲停排行榜（掃描223檔｜今日漲停${momentum.totalLimitUp}檔）</div>`;
-
-  momentum.industries.forEach(ind => {
-    html += `<div class="industry-section">
-      <div class="industry-title">
-        <span>🔥 ${ind.name}</span>
-        <span class="count">${ind.count}</span>
-        <span class="streak">最長連續：${ind.streak}</span>
-      </div>
-      <div class="stock-grid">
-        ${ind.stocks.map(s => `
-          <div class="stock-chip">
-            <div>
-              <div class="scode">${s.code}</div>
-              <div class="sname">${s.name}</div>
-            </div>
-            <div>
-              <div class="sclose">${s.close}</div>
-              <div class="sstreak">${s.streak}</div>
-            </div>
+    recommendations.stocks.forEach(s => {
+      const isHit = s.result === '✅';
+      html += `<div class="stock-card ${isHit?'hit':'miss'}">
+        <div class="header" onclick="this.parentElement.classList.toggle('open')">
+          <span class="result">${s.result}</span>
+          <span class="code">${s.code}</span>
+          <span class="name">${s.name}</span>
+          <div class="price">
+            <div class="val ${s.changePct.startsWith('+')?'green':'red'}">${s.close}</div>
+            <div class="chg ${s.changePct.startsWith('+')?'green':'red'}">${s.changePct}</div>
           </div>
-        `).join('')}
-      </div>
-    </div>`;
-  });
+          <span style="font-size:16px;color:var(--text2);">▾</span>
+        </div>
+        <div class="body">
+          <div class="stock-detail">
+            ${s.analysis.map(a => `<div class="item"><div class="q">${a.q}</div><div class="a">${a.a}</div></div>`).join('')}
+          </div>
+          <div class="review-box">💡 檢討：${s.review}</div>
+        </div>
+      </div>`;
+    });
 
-  html += `<div class="watch-box">
-    <strong>🔮 明天觀察重點：</strong> ${momentum.watchTomorrow}
-  </div>`;
+    html += `<div class="summary-card" style="margin-top:16px;">
+      <div class="item"><div class="label">推薦檔數</div><div class="value">${recommendations.total}</div></div>
+      <div class="item"><div class="label">✅ 命中</div><div class="value" style="color:var(--green);">${recommendations.hits}</div></div>
+      <div class="item"><div class="label">❌ 失誤</div><div class="value" style="color:var(--red);">${recommendations.misses}</div></div>
+      <div class="item"><div class="label">命中率</div><div class="value">${recommendations.hitRate}</div></div>
+      <div class="item"><div class="label">平均報酬</div><div class="value" style="color:var(--green);">${recommendations.avgReturn}</div></div>
+    </div></div>`;
 
-  if (momentum.note) {
-    html += `<div style="margin-top:8px;font-size:12px;color:var(--text3);">🧹 ${momentum.note}</div>`;
+    // === 盤面動能 ===
+    html += `<div class="section">
+      <div class="section-title">🔥 第二部分：今日盤面動能掃描</div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:16px;">漲停排行榜（掃描223檔｜今日漲停${momentum.totalLimitUp}檔）</div>`;
+
+    momentum.industries.forEach(ind => {
+      html += `<div class="industry-section">
+        <div class="industry-title">
+          <span>🔥 ${ind.name}</span>
+          <span class="count">${ind.count}</span>
+          <span class="streak">最長連續：${ind.streak}</span>
+        </div>
+        <div class="stock-grid">
+          ${ind.stocks.map(s => `
+            <div class="stock-chip">
+              <div>
+                <div class="scode">${s.code}</div>
+                <div class="sname">${s.name}</div>
+              </div>
+              <div>
+                <div class="sclose">${s.close}</div>
+                <div class="sstreak">${s.streak}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>`;
+    });
+
+    html += `<div class="watch-box"><strong>🔮 明天觀察重點：</strong> ${momentum.watchTomorrow}</div>`;
+    if (momentum.note) {
+      html += `<div style="margin-top:8px;font-size:12px;color:var(--text3);">🧹 ${momentum.note}</div>`;
+    }
+    html += `</div>`;
   }
-
-  html += `</div>`;
 
   document.getElementById('reportInner').innerHTML = html;
 }
