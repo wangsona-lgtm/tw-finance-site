@@ -350,6 +350,23 @@ function renderReport(data) {
         if (sec.analysis) html += `<div class="market-summary" style="font-size:13px;margin-top:8px;">📌 ${sec.analysis}</div>`;
       }
 
+      // News items
+      if (sec.type === 'news' && sec.items) {
+        sec.items.forEach(item => {
+          html += `<div class="stock-card" style="margin-bottom:12px;">
+            <div class="header" onclick="this.parentElement.classList.toggle('open')">
+              <span style="font-size:13px;font-weight:500;flex:1;color:var(--accent);">📰 ${item.headline}</span>
+              <span style="font-size:16px;color:var(--text2);">▾</span>
+            </div>
+            <div class="body">
+              <div style="font-size:13px;line-height:1.7;color:var(--text);padding:8px 12px;">${item.content}</div>
+              ${item.tags ? `<div style="padding:0 12px 8px;display:flex;gap:4px;flex-wrap:wrap;">${item.tags.map(t=>'<span style="font-size:11px;background:var(--surface2);color:var(--text2);padding:2px 8px;border-radius:10px;">#'+t+'</span>').join('')}</div>` : ''}
+              ${item.url ? `<div style="padding:0 12px 8px;"><a href="${item.url}" target="_blank" style="font-size:12px;color:var(--accent);">🔗 閱讀全文 ↗</a></div>` : ''}
+            </div>
+          </div>`;
+        });
+      }
+
       // Signal summary
       if (sec.type === 'summary' && sec.signals) {
         html += `<div class="summary-card" style="margin:12px 0;">`;

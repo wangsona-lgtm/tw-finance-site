@@ -1,0 +1,50 @@
+{
+  "date": "2026-06-09",
+  "source": "@sona1115_bot ZeroHedge 每日導讀",
+  "sections": [
+    {
+      "title": "🌍 地緣政治",
+      "icon": "🌍",
+      "type": "news",
+      "items": [
+        {
+          "headline": "Netanyahu 證實以色列「暫緩開火」— 拒絕伊朗不得攻擊黎巴嫩的紅線",
+          "url": "https://www.zerohedge.com/geopolitical/trump-urges-immediate-halt-iran-israel-trade-strikes-massive-iranian-petrochemical",
+          "content": "以色列總理 Netanyahu 證實，在川普要求「停止射擊」後，以色列暫停對伊朗的攻擊行動，但強調只是「暫時」停止。伊朗外交部指控美國與以色列「完全協調」，並警告若 IDF 繼續攻擊黎巴嫩南部將面臨「嚴厲回應」。以色列國防部長 Katz 明確表示，若真主黨攻擊以色列北部社區，將直接轟炸貝魯特 Dahieh 地區。葉門胡塞武裝宣布對紅海以色列相關船隻實施「全面航行禁令」。Polymarket 顯示市場對美伊在 6/30 前達成永久和平協議的信心僅 17%。",
+          "tags": ["以色列", "伊朗", "黎巴嫩", "胡塞", "地緣政治"]
+        }
+      ]
+    },
+    {
+      "title": "📈 市場/財經",
+      "icon": "📈",
+      "type": "news",
+      "items": [
+        {
+          "headline": "死貓反彈還是抄底良機？比特幣領漲，但歷史顯示上週五低點將再次測試",
+          "url": "https://www.zerohedge.com/markets/stocks-dead-cat-bounce-history-shows-fridays-low-gets-re-tested",
+          "content": "經歷上週五的無量暴跌後，週一市場出現反彈。比特幣和大型科技股領漲，債券持平。川普的「口頭干預」成功壓低油價，加上通膨預期小幅回落，為風險資產提供支撐。ZeroHedge 引用歷史模式警告，這種反彈更像是「死貓反彈」——上週五的低點通常會再次被測試。",
+          "tags": ["美股", "反彈", "比特幣", "油價"]
+        },
+        {
+          "headline": "BofA 警告「紅旗太多」，建議客戶在泡沫相似度飆升之際獲利了結",
+          "url": "https://www.zerohedge.com/markets/too-many-red-flags-bofa-tells-clients-take-profits-amid-spike-dot-com-bubble-similarities",
+          "content": "費城半導體指數（SOX）上週五暴跌超過 10%，創下 2020 年 3 月以來最大單日跌幅。華爾街分析師出現明顯分歧。美國銀行 BofA 明確建議「獲利了結」，指出當前的泡沫特徵與 2000 年網路泡沫相似度正在急劇升溫。",
+          "tags": ["半導體", "SOX", "BofA", "泡沫"]
+        },
+        {
+          "headline": "Campbell's CEO 發出警告：居家烹飪趨勢衝擊餐廳業",
+          "url": "https://www.zerohedge.com/markets/campbells-ceo-serves-warning-restaurants-resilient-home-cooking-trend-gains-steam",
+          "content": "罐頭湯巨頭 Campbell's Q3 營收年減 4.4%。管理層透露家庭烹飪時間正在大幅增加，餐廳消費可能進一步受壓。BNP Paribas 分析師指出兩大擔憂：零食部門有機銷售的穩定性與高通膨壓力。",
+          "tags": ["消費", "通膨", "Campbell"]
+        },
+        {
+          "headline": "OpenAI 從聊天機器人轉型為「超級應用」的 IPO 前大改造",
+          "url": "https://www.zerohedge.com/markets/chat-dead-openais-pre-ipo-makeover-superapp",
+          "content": "OpenAI 高層表示「Chat is dead」，正從聊天機器人轉型為跨生活與工作的個人 AI 代理。已提交機密 S-1，目標 9 月上市，估值 7300-8500 億。OpenAI 年燒 140 億、營收剛破 200 億。SpaceX（含 xAI）和 Anthropic 也將在 2026 下半年 IPO，將是公開市場對 AI 估值的第一場真正考驗。",
+          "tags": ["AI", "IPO", "OpenAI", "SpaceX", "Anthropic"]
+        }
+      ]
+    }
+  ]
+}
