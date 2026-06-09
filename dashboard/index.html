@@ -377,62 +377,85 @@ async function loadOverview() {
         x: c.x, y: bb.lower[i] !== null ? bb.lower[i] : undefined
       }));
 
+      // ===== 自訂 plugin：在 canvas 上手動畫 MA60、布林通道 =====
+      const indicatorPlugin = {
+        id: 'indicators',
+        afterDraw(chart) {
+          const opts = chart.options.plugins?.indicators;
+          if (!opts) return;
+          const { ctx, scales } = chart;
+          const xs = scales.x, ys = scales.y;
+          if (!xs || !ys) return;
+
+          function drawLine(data, color, w, dash) {
+            if (!data || data.length === 0) return;
+            ctx.beginPath();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = w || 1;
+            ctx.setLineDash(dash || []);
+            let started = false;
+            for (const p of data) {
+              if (p.y === undefined || p.y === null) { started = false; continue; }
+              const px = xs.getPixelForValue(p.x);
+              const py = ys.getPixelForValue(p.y);
+              if (!started) { ctx.moveTo(px, py); started = true; }
+              else ctx.lineTo(px, py);
+            }
+            ctx.stroke();
+            ctx.setLineDash([]);
+          }
+
+          function fillBand(upper, lower) {
+            if (!upper || !lower || upper.length === 0) return;
+            ctx.beginPath();
+            ctx.fillStyle = 'rgba(0,212,170,0.06)';
+            let started = false;
+            for (const p of upper) {
+              if (p.y === undefined || p.y === null) continue;
+              const px = xs.getPixelForValue(p.x);
+              const py = ys.getPixelForValue(p.y);
+              if (!started) { ctx.moveTo(px, py); started = true; }
+              else ctx.lineTo(px, py);
+            }
+            for (let i = lower.length - 1; i >= 0; i--) {
+              const p = lower[i];
+              if (p.y === undefined || p.y === null) continue;
+              ctx.lineTo(xs.getPixelForValue(p.x), ys.getPixelForValue(p.y));
+            }
+            ctx.closePath();
+            ctx.fill();
+          }
+
+          // 布林通道頻帶（先填再畫線）
+          if (opts.bbUpper && opts.bbLower) fillBand(opts.bbUpper, opts.bbLower);
+          drawLine(opts.bbUpper, 'rgba(0,212,170,0.4)', 1);
+          drawLine(opts.bbMid, 'rgba(0,212,170,0.6)', 1, [4, 4]);
+          drawLine(opts.bbLower, 'rgba(0,212,170,0.4)', 1);
+          drawLine(opts.ma60, '#ffa500', 2);
+        }
+      };
+
       indexChart = new Chart(ctx, {
         type: 'candlestick',
         data: {
-          datasets: [
-            {
-              type: 'candlestick',
-              label: '加權指數',
-              data: candles,
-              color: { up:'#ff4757', down:'#00d4aa', unchanged:'#8888aa' },
-              borderColor: '#8888aa'
-            },
-            {
-              type: 'line',
-              label: 'MA60',
-              data: ma60Data,
-              borderColor: '#ffa500',
-              borderWidth: 2,
-              pointRadius: 0,
-              tension: 0.3,
-              fill: false
-            },
-            {
-              type: 'line',
-              label: '布林上',
-              data: bbUpper,
-              borderColor: 'rgba(0, 212, 170, 0.4)',
-              borderWidth: 1,
-              pointRadius: 0,
-              fill: false
-            },
-            {
-              type: 'line',
-              label: '布林中',
-              data: bbMid,
-              borderColor: 'rgba(0, 212, 170, 0.6)',
-              borderWidth: 1,
-              borderDash: [4, 4],
-              pointRadius: 0,
-              fill: false
-            },
-            {
-              type: 'line',
-              label: '布林下',
-              data: bbLower,
-              borderColor: 'rgba(0, 212, 170, 0.4)',
-              borderWidth: 1,
-              pointRadius: 0,
-              fill: '+3'  // fill between upper (index 2) and lower (index 4)
-            }
-          ]
+          datasets: [{
+            label: '加權指數',
+            data: candles,
+            color: { up:'#ff4757', down:'#00d4aa', unchanged:'#8888aa' },
+            borderColor: '#8888aa'
+          }]
         },
         options: {
           responsive: true, maintainAspectRatio: false,
           interaction: { mode: 'index', intersect: false },
           plugins: {
             legend: { labels: { color:'#8888aa' } },
+            indicators: {
+              ma60: ma60Data,
+              bbUpper: bbUpper,
+              bbMid: bbMid,
+              bbLower: bbLower
+            },
             tooltip: {
               callbacks: {
                 title: items => {
@@ -442,10 +465,19 @@ async function loadOverview() {
                 },
                 label: ctx => {
                   const d = ctx.dataset.data[ctx.dataIndex];
-                  if (ctx.dataset.type === 'candlestick') {
-                    return ` 開: ${d.o.toLocaleString()}  高: ${d.h.toLocaleString()}\n 低: ${d.l.toLocaleString()}  收: ${d.c.toLocaleString()}`;
-                  }
-                  return ctx.dataset.label + ': ' + Number(ctx.parsed.y).toLocaleString();
+                  return ` 開: ${d.o.toLocaleString()}  高: ${d.h.toLocaleString()}\n 低: ${d.l.toLocaleString()}  收: ${d.c.toLocaleString()}`;
+                },
+                afterBody: items => {
+                  const chart = items[0].chart;
+                  const opts = chart.options.plugins?.indicators;
+                  if (!opts) return null;
+                  const idx = items[0].dataIndex;
+                  const lines = [];
+                  if (opts.ma60 && opts.ma60[idx] && opts.ma60[idx].y !== undefined)
+                    lines.push('MA60: ' + Number(opts.ma60[idx].y).toLocaleString());
+                  if (opts.bbMid && opts.bbMid[idx] && opts.bbMid[idx].y !== undefined)
+                    lines.push('布林中: ' + Number(opts.bbMid[idx].y).toLocaleString());
+                  return lines.length ? '\n' + lines.join('\n') : null;
                 }
               }
             }
@@ -464,7 +496,8 @@ async function loadOverview() {
               grid: { color: '#2a2a4a' }
             }
           }
-        }
+        },
+        plugins: [indicatorPlugin]
       });
 
       // ===== EMA 指數移動平均 =====
