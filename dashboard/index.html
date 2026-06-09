@@ -63,6 +63,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 .card .negative { color:var(--red); }
 
 .chart-container { position:relative; height:300px; }
+.macd-container { position:relative; height:100px; margin-top:4px; border-top:1px solid var(--border); padding-top:4px; }
 .mt-16 { margin-top:16px; }
 
 /* Loading */
@@ -112,7 +113,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
     <div class="card"><h3>成交張數（萬）</h3><div class="value" id="idx4">-</div><div class="sub">今日累計</div></div>
   </div>
   <div class="grid grid-2 mt-16">
-    <div class="card"><h3>大盤走勢</h3><div class="chart-container"><canvas id="indexChart"></canvas></div></div>
+    <div class="card"><h3>大盤走勢</h3><div class="chart-container"><canvas id="indexChart"></canvas></div><div class="macd-container"><canvas id="macdChart"></canvas></div></div>
     <div class="card">
       <h3>成交量前 20 名</h3>
       <div id="top20List" class="scroll-x" style="max-height:320px;overflow-y:auto;"></div>
@@ -465,6 +466,93 @@ async function loadOverview() {
           }
         }
       });
+
+      // ===== EMA 指數移動平均 =====
+      function ema(data, period) {
+        const result = [];
+        const k = 2 / (period + 1);
+        for (let i = 0; i < data.length; i++) {
+          if (i === 0) { result.push(data[0]); continue; }
+          result.push(data[i] * k + result[i-1] * (1 - k));
+        }
+        return result;
+      }
+
+      // ===== MACD =====
+      const ema12 = ema(closes, 12);
+      const ema26 = ema(closes, 26);
+      const macdLine = closes.map((_, i) => ema12[i] - ema26[i]);
+      const signal = ema(macdLine, 9);
+      const hist = closes.map((_, i) => macdLine[i] - signal[i]);
+
+      // 建立 MACD 圖表（下方子圖）
+      const macdCtx = document.getElementById('macdChart').getContext('2d');
+      if (window.macdChart) window.macdChart.destroy();
+
+      const macdTimestamps = candles.map(c => c.x);
+      window.macdChart = new Chart(macdCtx, {
+        type: 'bar',
+        data: {
+          datasets: [
+            {
+              type: 'line',
+              label: 'MACD',
+              data: macdTimestamps.map((t, i) => ({ x: t, y: macdLine[i] })),
+              borderColor: '#ffa502',
+              borderWidth: 1.5,
+              pointRadius: 0,
+              fill: false
+            },
+            {
+              type: 'line',
+              label: '訊號',
+              data: macdTimestamps.map((t, i) => ({ x: t, y: signal[i] })),
+              borderColor: '#ff6b81',
+              borderWidth: 1.5,
+              pointRadius: 0,
+              fill: false
+            },
+            {
+              type: 'bar',
+              label: '柱狀',
+              data: macdTimestamps.map((t, i) => ({ x: t, y: hist[i] })),
+              backgroundColor: hist.map(v => v >= 0 ? 'rgba(0,212,170,0.6)' : 'rgba(255,71,87,0.6)'),
+              borderColor: hist.map(v => v >= 0 ? '#00d4aa' : '#ff4757'),
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: {
+            legend: { labels: { color:'#8888aa', font:{size:10} } },
+            tooltip: {
+              callbacks: {
+                title: items => {
+                  if (!items.length) return '';
+                  const d = new Date(items[0].parsed.x);
+                  return d.toLocaleTimeString('zh-TW', {hour:'2-digit',minute:'2-digit'});
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              type: 'linear',
+              ticks: {
+                color: '#666', maxRotation: 0,
+                callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
+              },
+              grid: { color: '#2a2a4a' }
+            },
+            y: {
+              ticks: { color: '#8888aa', font:{size:9} },
+              grid: { color: '#2a2a4a' }
+            }
+          }
+        }
+      });
+
     } catch(e) {
       console.warn('K線讀取失敗，改用折線圖', e);
       indexChart = new Chart(ctx, {
