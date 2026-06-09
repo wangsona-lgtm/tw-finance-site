@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TWSE 金融儀表板</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -284,29 +285,112 @@ async function loadOverview() {
       }
     }
 
-    // Mini chart - sample data (in production use historical API)
+    // 大盤走勢 K棒圖（15分鐘一根，CORS 全開的即時資料）
     const ctx = document.getElementById('indexChart').getContext('2d');
     if (indexChart) indexChart.destroy();
-    indexChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['09:00','10:00','11:00','12:00','13:00','13:30'],
-        datasets: [{
-          label: '加權指數',
-          data: [43500, 43480, 43450, 43470, 43500, 43502],
-          borderColor: '#00d4aa', backgroundColor: 'rgba(0,212,170,0.1)',
-          fill: true, tension: .4, pointRadius: 3
-        }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { labels: { color:'#8888aa' } } },
-        scales: {
-          x: { ticks: { color:'#8888aa' }, grid: { color:'#2a2a4a' } },
-          y: { ticks: { color:'#8888aa' }, grid: { color:'#2a2a4a' } }
-        }
+    try {
+      // 從 TWSE 抓取每 5 秒大盤指數（access-control-allow-origin: *）
+      const resp = await fetch('https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date=20260609');
+      if (!resp.ok) throw new Error('HTTP '+resp.status);
+      const tickData = await resp.json();
+      if (!tickData.data || tickData.data.length === 0) throw new Error('無 Tick 資料');
+
+      // 日期轉換：1150608 → 2026-06-09
+      const ds = DATA_DATE;
+      const dStr = '20'+ds.slice(0,2)+'-'+ds.slice(2,4)+'-'+ds.slice(4,6);
+
+      // 將 5 秒 Tick 聚合為 15 分鐘 K棒
+      const buckets = new Map();
+      for (const [timeStr, valStr] of tickData.data) {
+        const val = parseFloat(valStr.replace(/,/g,''));
+        if (isNaN(val) || val === 0) continue;
+        const [h, m] = timeStr.split(':').map(Number);
+        const bucketM = Math.floor((h*60 + m) / 15) * 15;
+        const key = String(bucketM).padStart(4,'0');
+        if (!buckets.has(key)) buckets.set(key, { o:val, h:val, l:val, c:val });
+        else { const b = buckets.get(key); b.h = Math.max(b.h,val); b.l = Math.min(b.l,val); b.c = val; }
       }
-    });
+
+      // 轉陣列，過濾盤前空桶，排序
+      const candles = [...buckets.entries()]
+        .filter(([k]) => +k >= 540) // 只取 >= 09:00
+        .map(([key, ohlc]) => {
+          const hh = String(Math.floor(+key/60)).padStart(2,'0');
+          const mm = String(+key%60).padStart(2,'0');
+          return {
+            x: new Date(dStr+'T'+hh+':'+mm+':00+08:00').getTime(),
+            o: ohlc.o, h: ohlc.h, l: ohlc.l, c: ohlc.c
+          };
+        })
+        .sort((a, b) => a.x - b.x);
+
+      indexChart = new Chart(ctx, {
+        type: 'candlestick',
+        data: {
+          datasets: [{
+            label: '加權指數',
+            data: candles,
+            color: { up:'#ff4757', down:'#00d4aa', unchanged:'#8888aa' },
+            borderColor: '#8888aa'
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: {
+            legend: { labels: { color:'#8888aa' } },
+            tooltip: {
+              callbacks: {
+                title: items => {
+                  if (!items.length) return '';
+                  const d = new Date(items[0].parsed.x);
+                  return d.toLocaleTimeString('zh-TW', {hour:'2-digit',minute:'2-digit'});
+                },
+                label: ctx => {
+                  const d = ctx.dataset.data[ctx.dataIndex];
+                  return ` 開: ${d.o.toLocaleString()}  高: ${d.h.toLocaleString()}\n 低: ${d.l.toLocaleString()}  收: ${d.c.toLocaleString()}`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              type: 'linear',
+              ticks: {
+                color: '#8888aa', maxRotation: 0,
+                callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
+              },
+              grid: { color: '#2a2a4a' }
+            },
+            y: {
+              ticks: { color: '#8888aa' },
+              grid: { color: '#2a2a4a' }
+            }
+          }
+        }
+      });
+    } catch(e) {
+      console.warn('K線讀取失敗，改用折線圖', e);
+      indexChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['09:00','10:00','11:00','12:00','13:00','13:30'],
+          datasets: [{
+            label: '加權指數',
+            data: [43500, 43480, 43450, 43470, 43500, 43502],
+            borderColor: '#00d4aa', backgroundColor: 'rgba(0,212,170,0.1)',
+            fill: true, tension: .4, pointRadius: 3
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { labels: { color:'#8888aa' } } },
+          scales: {
+            x: { ticks: { color:'#8888aa' }, grid: { color:'#2a2a4a' } },
+            y: { ticks: { color:'#8888aa' }, grid: { color:'#2a2a4a' } }
+          }
+        }
+      });
+    }
   } catch(e) {
     document.getElementById('idx1').textContent = '⚠️';
     document.getElementById('idx1sub').textContent = e.message;
