@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TWSE 金融儀表板</title>
+<title>TWSE 金融儀表板 v3</title>
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
 <style>
@@ -87,6 +90,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
 <div class="header">
   <h1>📊 TWSE <span>金融儀表板</span></h1>
   <time id="updateTime">載入中...</time>
+<span id="verInfo" style="margin-left:1rem;font-size:0.65rem;color:#888;"></span>
 </div>
 
 <div class="nav">
@@ -619,6 +623,7 @@ async function init() {
   ]);
   
   document.getElementById('updateTime').textContent = '更新: ' + new Date().toLocaleString('zh-TW', {timeZone:'Asia/Taipei'});
+  document.getElementById('verInfo').textContent = 'v3 · ' + new Date().toISOString().slice(0,16).replace('T',' ');
 }
 init();
 
