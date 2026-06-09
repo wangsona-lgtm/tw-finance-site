@@ -555,6 +555,8 @@ async function loadOverview() {
 
     } catch(e) {
       console.warn('K線讀取失敗，改用折線圖', e);
+      if (indexChart) indexChart.destroy();
+      if (window.macdChart) window.macdChart.destroy();
       indexChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -801,10 +803,18 @@ async function init() {
   document.getElementById('updateTime').textContent = '更新: ' + new Date().toLocaleString('zh-TW', {timeZone:'Asia/Taipei'});
   document.getElementById('verInfo').textContent = 'v3 · ' + new Date().toISOString().slice(0,16).replace('T',' ');
 }
-init();
 
-// Auto refresh every 5 minutes
-setInterval(init, 300000);
+// 避免併發 race condition：等前一次跑完再排下一次
+let _busy = false;
+async function safeInit() {
+  if (_busy) return;
+  _busy = true;
+  try { await init(); } catch(e) { console.warn('safeInit error:', e); }
+  _busy = false;
+  // 紀錄上次成功時間，5 分鐘後再跑
+  setTimeout(safeInit, 300000);
+}
+safeInit();
 </script>
 </body>
 </html>
