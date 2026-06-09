@@ -124,6 +124,7 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
 .stock-card .miss { border-left:3px solid var(--red); }
 .stock-card .body { padding:0 16px 16px; display:none; }
 .stock-card.open .body { display:block; }
+.stock-card.news-card .body { display:block; }
 
 .stock-detail { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0; }
 .stock-detail .item {
@@ -353,7 +354,7 @@ function renderReport(data) {
       // News items
       if (sec.type === 'news' && sec.items) {
         sec.items.forEach(item => {
-          html += `<div class="stock-card" style="margin-bottom:12px;">
+          html += `<div class="stock-card news-card" style="margin-bottom:12px;">
             <div class="header" onclick="this.parentElement.classList.toggle('open')">
               <span style="font-size:13px;font-weight:500;flex:1;color:var(--accent);">📰 ${item.headline}</span>
               <span style="font-size:16px;color:var(--text2);">▾</span>
