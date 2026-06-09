@@ -13,16 +13,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; }
 :root {
-  --bg: #f5f6fa;
+  --bg: #f1f3f5;
   --surface: #ffffff;
-  --surface2: #f0f1f7;
+  --surface2: #f8f9fa;
   --accent: #1a73e8;
-  --accent2: #e8f0fe;
   --red: #e74c3c;
   --green: #1a73e8;
   --text: #1e293b;
-  --text2: #64748b;
-  --border: #e2e8f0;
+  --text2: #6c7a89;
+  --border: #dee2e6;
 }
 body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); }
 .header {
@@ -61,8 +60,10 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 .card .positive { color:var(--green); }
 .card .negative { color:var(--red); }
 
-.chart-container { position:relative; height:300px; }
-.macd-container { position:relative; height:100px; margin-top:4px; border-top:1px solid var(--border); padding-top:4px; }
+.chart-container { position:relative; height:380px; }
+.macd-container { position:relative; height:120px; margin-top:6px; border-top:1px solid var(--border); padding-top:6px; }
+.chart-card { padding:16px 12px 12px; }
+.chart-card h3 { margin-bottom:4px; }
 .mt-16 { margin-top:16px; }
 
 /* Loading */
@@ -112,7 +113,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
     <div class="card"><h3>成交張數（萬）</h3><div class="value" id="idx4">-</div><div class="sub">今日累計</div></div>
   </div>
   <div class="grid grid-2 mt-16">
-    <div class="card"><h3>大盤走勢</h3><div class="chart-container"><canvas id="indexChart"></canvas></div><div class="macd-container"><canvas id="macdChart"></canvas></div></div>
+    <div class="card chart-card"><h3>大盤走勢</h3><div class="chart-container"><canvas id="indexChart"></canvas></div><div class="macd-container"><canvas id="macdChart"></canvas></div></div>
     <div class="card">
       <h3>成交量前 20 名</h3>
       <div id="top20List" class="scroll-x" style="max-height:320px;overflow-y:auto;"></div>
@@ -448,7 +449,7 @@ async function loadOverview() {
           responsive: true, maintainAspectRatio: false,
           interaction: { mode: 'index', intersect: false },
           plugins: {
-            legend: { labels: { color:'#6b7280' } },
+            legend: { labels: { color:'#6c7a89' } },
             indicators: {
               ma60: ma60Data,
               bbUpper: bbUpper,
@@ -485,14 +486,14 @@ async function loadOverview() {
             x: {
               type: 'linear',
               ticks: {
-                color: '#6b7280', maxRotation: 0,
+                color: '#6c7a89', maxRotation: 0, font:{size:10},
                 callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
               },
-              grid: { color: '#e0e3eb' }
+              grid: { color: 'rgba(108,122,137,0.12)' }
             },
             y: {
-              ticks: { color: '#6b7280' },
-              grid: { color: '#e0e3eb' }
+              ticks: { color: '#6c7a89', font:{size:10} },
+              grid: { color: 'rgba(108,122,137,0.12)' }
             }
           }
         },
@@ -557,7 +558,7 @@ window.macdChart = new Chart(macdCtx, {
         options: {
           responsive: true, maintainAspectRatio: false,
           plugins: {
-            legend: { labels: { color:'#6b7280', font:{size:10} } },
+            legend: { labels: { color:'#6c7a89', font:{size:10} } },
             tooltip: {
               callbacks: {
                 title: items => {
@@ -572,14 +573,14 @@ window.macdChart = new Chart(macdCtx, {
             x: {
               type: 'linear',
               ticks: {
-                color: '#666', maxRotation: 0,
+                color: '#6c7a89', maxRotation: 0, font:{size:9},
                 callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
               },
-              grid: { color: '#e0e3eb' }
+              grid: { color: 'rgba(108,122,137,0.08)' }
             },
             y: {
-              ticks: { color: '#6b7280', font:{size:9} },
-              grid: { color: '#e0e3eb' }
+              ticks: { color: '#6c7a89', font:{size:9} },
+              grid: { color: 'rgba(108,122,137,0.08)' }
             }
           }
         }
@@ -602,10 +603,10 @@ window.macdChart = new Chart(macdCtx, {
         },
         options: {
           responsive: true, maintainAspectRatio: false,
-          plugins: { legend: { labels: { color:'#6b7280' } } },
+          plugins: { legend: { labels: { color:'#6c7a89' } } },
           scales: {
-            x: { ticks: { color:'#6b7280' }, grid: { color:'#e0e3eb' } },
-            y: { ticks: { color:'#6b7280' }, grid: { color:'#e0e3eb' } }
+            x: { ticks: { color:'#6c7a89' }, grid: { color:'rgba(108,122,137,0.12)' } },
+            y: { ticks: { color:'#6c7a89' }, grid: { color:'rgba(108,122,137,0.12)' } }
           }
         }
       });
