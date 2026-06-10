@@ -128,6 +128,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
       <h3>🔍 查詢個股</h3>
       <div style="display:flex;gap:8px;margin:12px 0;">
         <input id="stockInput" placeholder="輸入股號或名稱（如 2330）" style="flex:1;padding:10px 14px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:14px;">
+          <a id="techBtn" href="../stock-viewer/" style="padding:8px 14px;background:#6c5ce7;color:#fff;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;">📈 技術分析</a>
         <button onclick="searchStock()" style="padding:10px 20px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer;">查詢</button>
       </div>
       <div id="stockResult" class="scroll-x" style="max-height:400px;overflow-y:auto;"></div>
@@ -779,7 +780,15 @@ function searchStock() {
   </table>`;
   document.getElementById('stockResult').innerHTML = html;
 }
-document.getElementById('stockInput').addEventListener('keyup', e => { if(e.key==='Enter') searchStock(); });
+document.getElementById('stockInput').addEventListener('keyup', e => { if(e.key==='Enter') searchStock(); const v=e.target.value.trim(); if(v.length>=4) document.getElementById('techBtn').href='../stock-viewer/?code='+v; });
+document.getElementById('stockInput').addEventListener('keyup', e => {
+  if(e.key==='Enter') {
+    const val = e.target.value.trim();
+    if (val.length >= 4) {
+      document.getElementById('techBtn').href = '../stock-viewer/?code='+val;
+    }
+  }
+});
 
 // ===== PE / Yield =====
 async function loadPE() {
