@@ -5,14 +5,14 @@
   "index": {
     "name": "TAIEX 加權指數",
     "close": 43225.54,
-    "change": -277.24,
-    "changePercent": -0.64,
-    "open": 44581,
-    "high": 44676.49,
+    "change": -1478.9000000000015,
+    "changePercent": -3.31,
+    "open": 44704.44,
+    "high": 44704.44,
     "low": 43225.54,
-    "prevClose": 43502.78,
+    "prevClose": 44704.44,
     "intradayDrop": -3.04,
-    "feature": "開高倒貨、收最低 — 空方完全控盤"
+    "feature": "開高走低收最低、日內跌 3.31% — 空方主導"
   },
   "stocks": [
     {
