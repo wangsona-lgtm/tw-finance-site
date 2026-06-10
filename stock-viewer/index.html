@@ -72,7 +72,7 @@ body { font-family: 'Segoe UI', -apple-system, sans-serif; background:var(--bg);
 
 <div id="analysisText" class="card" style="display:none;margin-bottom:16px;">
   <h3>📋 技術分析摘要</h3>
-    <div style="font-size:11px;color:var(--text2);margin-bottom:6px;">📡 股價資料：TWSE 交易所</div>
+    <div style="font-size:11px;color:var(--text2);margin-bottom:6px;">📡 TWSE 交易所</div>
   <div id="analysisSummary" style="font-size:14px;line-height:1.8;"></div>
 </div>
 <div id="analysis" class="analysis-section">
@@ -94,7 +94,7 @@ body { font-family: 'Segoe UI', -apple-system, sans-serif; background:var(--bg);
 
   <div class="card" style="margin-top:16px;">
     <h3>🏛️ 三大法人買賣超</h3>
-    <div style="font-size:11px;color:var(--text2);margin-bottom:8px;">📡 TWSE 基金／T86</div>
+    <div style="font-size:11px;color:var(--text2);margin-bottom:8px;">📡 TWSE T86</div>
     <div id="instLoader" class="loading">載入中...</div>
     <div id="instTable"></div>
   </div>
@@ -635,7 +635,7 @@ function renderOwnership(data, last) {
       });
       
       ownEl.innerHTML = values.map((v,i) => `<div><span class="dot" style="background:${colors[i]}"></span> ${labels[i]} ${(v*100).toFixed(2)}%</div>`).join('') +
-        '<div style="font-size:11px;color:var(--text2);margin-top:8px;">📡 當日法人成交佔比（TWSE T86）</div>';
+        '<div style="font-size:11px;color:var(--text2);margin-top:8px;">📡 TWSE T86 當日法人成交佔比</div>';
       return;
     }
   }
