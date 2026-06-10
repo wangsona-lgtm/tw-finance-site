@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>個股技術分析 — TW Finance</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js@3.6.0/dist/plotly.min.js"></script>
 
 <style>
 :root {
@@ -78,7 +79,7 @@ body { font-family: 'Segoe UI', -apple-system, sans-serif; background:var(--bg);
 <div id="analysis" class="analysis-section">
   <div class="grid">
     <div class="card" style="grid-column:1/-1;padding:2px;overflow:hidden;">
-      <iframe id="plotlyChart" src="charts/2330.html" style="width:100%;height:820px;border:none;border-radius:6px;" onerror="this.style.display='none'"></iframe>
+      <div id="plotlyChart" style="width:100%;height:820px;"></div>
       <div style="padding:4px 10px;font-size:12px;color:var(--text2);display:flex;justify-content:space-between;">
         <span>📈 技術圖表 · K線 + BB + MA60 + 成交量 + MACD + RSI</span>
         <span id="chartDate" style="font-weight:600;"></span>
@@ -184,12 +185,8 @@ async function loadStock() {
     
     // Render charts
     renderAnalysisText(parsed, code);
-    document.getElementById("plotlyChart").src = "charts/" + code + ".html";
     document.getElementById("chartDate").textContent = "更新: " + new Date().toLocaleDateString("zh-TW") + " | " + code;
-    // Charts removed - using plotly iframe
-    // Charts removed - using plotly iframe
-    // Charts removed - using plotly iframe
-    // Charts removed - using plotly iframe
+    renderPlotlyChart(parsed, code);
     renderOwnership(parsed, last);
     loadInstitutional(code);
     
@@ -270,6 +267,184 @@ function calcRSI2(data, period) {
     result.push(100 - 100/(1+rs));
   }
   return result;
+}
+
+function calcSMA(arr, period) {
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (i < period - 1) { result.push(null); continue; }
+    let sum = 0;
+    for (let j = i - period + 1; j <= i; j++) sum += arr[j];
+    result.push(sum / period);
+  }
+  return result;
+}
+
+function calcBB(arr, period, mult) {
+  const sma = calcSMA(arr, period);
+  const upper = [], lower = [], mid = [];
+  for (let i = 0; i < arr.length; i++) {
+    mid.push(sma[i]);
+    if (i < period - 1) { upper.push(null); lower.push(null); continue; }
+    let sqSum = 0, count = 0;
+    for (let j = i - period + 1; j <= i; j++) { sqSum += (arr[j] - sma[i]) ** 2; count++; }
+    const std = Math.sqrt(sqSum / count);
+    upper.push(sma[i] + mult * std);
+    lower.push(sma[i] - mult * std);
+  }
+  return { upper, mid, lower };
+}
+
+function calcMACD(data, fast, slow, sig) {
+  const emaFast = [data[0]], emaSlow = [data[0]];
+  const kf = 2 / (fast + 1), ks = 2 / (slow + 1);
+  for (let i = 1; i < data.length; i++) {
+    emaFast.push(data[i] * kf + emaFast[i-1] * (1 - kf));
+    emaSlow.push(data[i] * ks + emaSlow[i-1] * (1 - ks));
+  }
+  const macd = emaFast.map((v,i) => v - emaSlow[i]);
+  const signal = [macd[0]];
+  const ksig = 2 / (sig + 1);
+  for (let i = 1; i < macd.length; i++) signal.push(macd[i] * ksig + signal[i-1] * (1 - ksig));
+  const hist = macd.map((v,i) => v - signal[i]);
+  return { macd, signal, hist };
+}
+
+function calcRSI(data, period) {
+  const rsi = [null];
+  let gain = 0, loss = 0;
+  for (let i = 1; i <= period; i++) {
+    const diff = data[i] - data[i-1];
+    if (diff >= 0) gain += diff; else loss -= diff;
+  }
+  let avgGain = gain / period, avgLoss = loss / period;
+  rsi.push(avgLoss === 0 ? 100 : 100 - 100 / (1 + avgGain / avgLoss));
+  for (let i = period + 1; i < data.length; i++) {
+    const diff = data[i] - data[i-1];
+    avgGain = (avgGain * (period - 1) + (diff > 0 ? diff : 0)) / period;
+    avgLoss = (avgLoss * (period - 1) + (diff < 0 ? -diff : 0)) / period;
+    rsi.push(avgLoss === 0 ? 100 : 100 - 100 / (1 + avgGain / avgLoss));
+  }
+  while (rsi.length < data.length) rsi.unshift(null);
+  return rsi;
+}
+
+function renderPlotlyChart(data, code) {
+  if (!data || data.length < 20) return;
+  const dates = data.map(d => new Date(d.t));
+  const closes = data.map(d => d.c);
+  const volColors = data.map(d => d.c >= d.o ? '#d32f2f' : '#1b5e20');
+  
+  // Calculate indicators
+  const bb = calcBB(closes, 20, 2);
+  const sma60 = calcSMA(closes, 60);
+  const macd = calcMACD(closes, 12, 26, 9);
+  const rsi = calcRSI(closes, 14);
+  
+  // Create subplots
+  const traces = [];
+  
+  // Candlestick
+  traces.push({
+    type: 'candlestick', x: dates, open: data.map(d=>d.o), high: data.map(d=>d.h),
+    low: data.map(d=>d.l), close: closes,
+    increasing: {line:{color:'#d32f2f'}, fillcolor:'#d32f2f'},
+    decreasing: {line:{color:'#1b5e20'}, fillcolor:'#1b5e20'},
+    xaxis: 'x', yaxis: 'y', showlegend: false,
+  });
+  
+  // BB upper
+  traces.push({
+    type: 'scatter', x: dates, y: bb.upper, name: 'BB上軌',
+    line: {color:'rgba(88,166,255,0.35)', width:1, dash:'dash'},
+    showlegend: false, xaxis: 'x', yaxis: 'y',
+  });
+  // BB lower (with fill)
+  traces.push({
+    type: 'scatter', x: dates, y: bb.lower, name: 'BB下軌',
+    line: {color:'rgba(88,166,255,0.35)', width:1, dash:'dash'},
+    fill: 'tonexty', fillcolor: 'rgba(88,166,255,0.06)',
+    showlegend: false, xaxis: 'x', yaxis: 'y',
+  });
+  // BB mid
+  traces.push({
+    type: 'scatter', x: dates, y: bb.mid, name: 'BB中線',
+    line: {color:'rgba(88,166,255,0.5)', width:1, dash:'dot'},
+    showlegend: false, xaxis: 'x', yaxis: 'y',
+  });
+  // MA60
+  traces.push({
+    type: 'scatter', x: dates, y: sma60, name: 'MA60',
+    line: {color:'#1565c0', width:2},
+    showlegend: false, xaxis: 'x', yaxis: 'y',
+  });
+  
+  // Volume
+  traces.push({
+    type: 'bar', x: dates, y: data.map(d=>d.vol), name: '成交量',
+    marker: {color: volColors}, showlegend: false,
+    xaxis: 'x2', yaxis: 'y2',
+  });
+  
+  // MACD
+  traces.push({
+    type: 'scatter', x: dates, y: macd.macd, name: 'DIF',
+    line: {color:'#6c5ce7', width:1.5}, showlegend: false,
+    xaxis: 'x3', yaxis: 'y3',
+  });
+  traces.push({
+    type: 'scatter', x: dates, y: macd.signal, name: '信號線',
+    line: {color:'#e65100', width:1.5}, showlegend: false,
+    xaxis: 'x3', yaxis: 'y3',
+  });
+  const histColors = macd.hist.map(v => v >= 0 ? '#d32f2f' : '#1b5e20');
+  traces.push({
+    type: 'bar', x: dates, y: macd.hist, name: '柱狀',
+    marker: {color: histColors}, showlegend: false,
+    xaxis: 'x3', yaxis: 'y3',
+  });
+  
+  // RSI
+  traces.push({
+    type: 'scatter', x: dates, y: dates.map(() => 70), name: '超買',
+    line: {color:'rgba(248,81,73,0.3)', width:1, dash:'dash'},
+    showlegend: false, xaxis: 'x4', yaxis: 'y4',
+  });
+  traces.push({
+    type: 'scatter', x: dates, y: dates.map(() => 30), name: '超賣',
+    line: {color:'rgba(63,185,80,0.3)', width:1, dash:'dash'},
+    showlegend: false, xaxis: 'x4', yaxis: 'y4',
+  });
+  traces.push({
+    type: 'scatter', x: dates, y: rsi, name: 'RSI(14)',
+    line: {color:'#1565c0', width:1.5}, showlegend: false,
+    xaxis: 'x4', yaxis: 'y4',
+  });
+  
+  const layout = {
+    grid: {rows: 4, columns: 1, pattern: 'independent'},
+    paper_bgcolor: '#ffffff', plot_bgcolor: '#ffffff',
+    font: {family: 'Geist, Inter, sans-serif', size: 11, color: '#202124'},
+    margin: {l: 40, r: 40, t: 30, b: 35},
+    height: 800,
+    annotations: [{
+      text: '📡 臺灣證券交易所 (TWSE)',
+      xref: 'paper', yref: 'paper', x: 0, y: -0.02,
+      showarrow: false, font: {size: 10, color: '#202124'},
+    }],
+    hovermode: 'x unified',
+    xaxis: {showgrid: true, gridcolor: '#e8eaed', rangeslider: {visible: false}},
+    yaxis: {gridcolor: '#e8eaed', side: 'right'},
+    xaxis2: {showgrid: true, gridcolor: '#e8eaed'},
+    yaxis2: {gridcolor: '#e8eaed', side: 'right'},
+    xaxis3: {showgrid: true, gridcolor: '#e8eaed'},
+    yaxis3: {gridcolor: '#e8eaed', side: 'right'},
+    xaxis4: {showgrid: true, gridcolor: '#e8eaed'},
+    yaxis4: {gridcolor: '#e8eaed', range: [0, 100], side: 'right'},
+    dragmode: 'pan',
+  };
+  
+  Plotly.newPlot('plotlyChart', traces, layout, {responsive: true, displayModeBar: false});
 }
 
 function renderAnalysisText(data, code) {
