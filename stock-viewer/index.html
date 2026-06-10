@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>個股技術分析 — TW Finance</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.1/dist/chartjs-chart-financial.min.js"></script>
 <style>
 :root {
   --bg: #f8f9fa; --card: #fff; --text: #1a1a2e; --text2: #6c757d;
@@ -130,7 +130,8 @@ async function fetchTWSE(url) {
 async function loadStock() {
   const code = document.getElementById('stockInput').value.trim();
   if (!code || code.length < 4) { alert('請輸入股票代碼（如 2330）'); return; }
-  document.getElementById('statusMsg').textContent = '🔄 載入中...';
+  console.log('🔍 Loading stock:', code);
+  document.getElementById('statusMsg').innerHTML = '🔄 載入中...<br><span style="font-size:12px;color:var(--text2);'>正在從 TWSE 抓取資料，請稍候</span>';
   document.getElementById('analysis').style.display = 'none';
   document.getElementById('stockInfo').style.display = 'none';
   
@@ -284,7 +285,42 @@ function renderMainChart(data) {
   const ctx = document.getElementById('mainChart');
   if (mainChart) mainChart.destroy();
   
-  // Draw candlestick + overlays using custom canvas
+  // Check if candlestick controller is available
+  const canCandlestick = typeof Chart.registry === 'object' && Chart.registry.getController && (() => { try { Chart.registry.getController('candlestick'); return true; } catch(e) { return false; } })();
+  
+  if (!canCandlestick) {
+    console.warn('Candlestick controller not available, falling back to line');
+    mainChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: '收盤價',
+          data: closes,
+          borderColor: '#58a6ff', borderWidth: 2, pointRadius: 0, fill: false
+        }, {
+          label: 'MA60',
+          data: sma60,
+          borderColor: '#79c0ff', borderWidth: 1.5, pointRadius: 0, borderDash: [5,5], fill: false
+        }, {
+          label: 'BB上軌',
+          data: bb.upper,
+          borderColor: 'rgba(88,166,255,0.3)', borderWidth: 1, pointRadius: 0, fill: false
+        }, {
+          label: 'BB下軌',
+          data: bb.lower,
+          borderColor: 'rgba(88,166,255,0.3)', borderWidth: 1, pointRadius: 0, fill: '-', backgroundColor: 'rgba(88,166,255,0.08)'
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { x: { type: 'linear', ticks: { color:'#868e96', maxTicksLimit:10, callback:v=>{const d=new Date(v);return `${d.getMonth()+1}/${d.getDate()}`} }, grid:{color:'rgba(0,0,0,0.06)'} }, y: { position:'right', ticks:{color:'#868e96'}, grid:{color:'rgba(0,0,0,0.06)'} } }
+      }
+    });
+    return;
+  }
+  
   mainChart = new Chart(ctx, {
     type: 'candlestick',
     data: {
