@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>台股盤後分析報告</title>
+<title>台股盤前晨報</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -212,8 +212,16 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
   <!-- Sidebar -->
   <div class="sidebar">
     <div class="sidebar-header">
-      <h2>📁 報告</h2>
-      <a href="index.html">🏠 回首頁</a>
+      <div>
+        <h2>📋 盤前晨報</h2>
+        <div class="sub" style="font-size:11px;color:var(--text3);margin-top:2px;">每日市場動態總匯</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:4px;">
+        <a href="expert-viewer/" style="font-size:11px;color:var(--text2);text-decoration:none;">🎙️ 專家</a>
+        <a href="postmarket-viewer/" style="font-size:11px;color:var(--text2);text-decoration:none;">🔍 盤後</a>
+        <a href="closing-viewer/" style="font-size:11px;color:var(--text2);text-decoration:none;">📉 收盤</a>
+        <a href="index.html" style="font-size:11px;color:var(--text2);text-decoration:none;">🏠 首頁</a>
+      </div>
     </div>
     <div class="sidebar-list" id="reportList">
       <div class="loading" style="text-align:center;padding:40px;color:var(--text2);font-size:13px;">載入中...</div>
@@ -224,8 +232,8 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
   <div class="content" id="reportContent">
     <div class="empty-state" id="emptyState">
       <div class="big-icon">📊</div>
-      <h3>選取一份報告</h3>
-      <p>左側列表選擇日期，即可檢視<br>完整的台股盤後分析報告</p>
+      <h3>選取一份晨報</h3>
+      <p>左側列表選擇日期，即可檢視<br>盤前市場動態與事件總覽</p>
     </div>
     <div class="content-inner" id="reportInner" style="display:none;"></div>
   </div>
