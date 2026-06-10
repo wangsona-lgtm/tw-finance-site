@@ -1,0 +1,61 @@
+{
+  "date": "2026-06-10",
+  "dayOfWeek": "三",
+  "marketStatus": "closed",
+  "index": {
+    "name": "TAIEX 加權指數",
+    "close": 43225.54,
+    "change": -277.24,
+    "changePercent": -0.64,
+    "open": 44581,
+    "high": 44676.49,
+    "low": 43225.54,
+    "prevClose": 43502.78,
+    "intradayDrop": -3.04,
+    "feature": "開高倒貨、收最低 — 空方完全控盤"
+  },
+  "stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "close": 2255,
+      "change": -50,
+      "changePercent": -2.17
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "close": 4155,
+      "change": -320,
+      "changePercent": -7.15
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "close": 263,
+      "change": -14.5,
+      "changePercent": -5.23
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "close": 2200,
+      "change": -215,
+      "changePercent": -8.9
+    },
+    {
+      "code": "2382",
+      "name": "廣達",
+      "close": 380.5,
+      "change": 5.5,
+      "changePercent": 1.47
+    }
+  ],
+  "fx": {
+    "pair": "USD/TWD",
+    "rate": 31.621,
+    "change": 0.039,
+    "changePercent": 0.1235,
+    "direction": "台幣貶值"
+  }
+}
