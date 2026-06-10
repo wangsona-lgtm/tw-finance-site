@@ -1,0 +1,1217 @@
+{
+  "total": 71,
+  "updated": "2026-06-11 06:03:38",
+  "papers": [
+    {
+      "id": "2026-06-10-9",
+      "title": "Tác động lan truyền của A.I và sự bất ổn trên thị trường năng lượng: Một phân tích bằng mô hình vectơ tự hồi quy phân vị (QVAR)",
+      "search_date": "2026-06-10",
+      "authors": "Anh Bùi Thị Minh; Hà Lê Thanh",
+      "year": "2025",
+      "journal": "Tạp chí Kinh tế và Phát triển",
+      "doi": "//doi.org/10.33301/jed.vi.2672",
+      "citations": "1",
+      "openalex_url": "//openalex.org/W7120003481",
+      "abstract": "-  使用 QVAR 模型評估 AI 與能源市場不確定性之間的風險外溢，發現 COVID-19 與俄烏戰爭期間風險外溢的時變特性。",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-8",
+      "title": "Dynamic Connectedness of Oil Market Shocks, Global Risk Factors and ASEAN Financial Markets: QVAR and Partial Wavelet Coherence Approaches",
+      "search_date": "2026-06-10",
+      "authors": "Mohammad Enamul Hoque; Akther Uddin; Faik Bilgili; LainTze Tee; Mohammad Sahabuddin",
+      "year": "2026",
+      "journal": "SSRN Electronic Journal",
+      "doi": "//doi.org/10.2139/ssrn.6732294",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7160611413",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-7",
+      "title": "Dynamic spillover effect among Islamic stock indices amidst global financial crises: evidence from QVAR network and frequency connectedness",
+      "search_date": "2026-06-10",
+      "authors": "Samuel Duku Yeboah; John Gartchie Gatsi; David Korsah; Thomas Adjei Kuffour; Michael Provide Fumey; Vincent Adela",
+      "year": "2026",
+      "journal": "Future Business Journal",
+      "doi": "//doi.org/10.1186/s4309302600730y",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7125420008",
+      "abstract": "-  使用 QVAR 頻率連結度方法分析伊斯蘭股票指數在 COVID-19 與俄烏戰爭期間的外溢效應。",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-6",
+      "title": "Time-varying extreme risk spillovers and asymmetric effects in green bonds, new energy vehicles, and clean energy markets: A TVP-VAR and QVAR network approach",
+      "search_date": "2026-06-10",
+      "authors": "Chunyan Jiang; Yayun Wang; Wanqi Li; Runze Ding",
+      "year": "2026",
+      "journal": "Environment Development and Sustainability",
+      "doi": "//doi.org/10.1007/s1066802507287w",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7129031413",
+      "abstract": "",
+      "tags": [
+        "QVAR",
+        "TVP-VAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-50",
+      "title": "Estimation and Inference of Quantile Impulse Response Functions by Local Projections: With Applications to VaR Dynamics",
+      "search_date": "2026-06-10",
+      "authors": "Heejoon Han; Whayoung Jung; Ji Hyung Lee",
+      "year": "2022",
+      "journal": "Journal of Financial Econometrics",
+      "doi": "//doi.org/10.1093/jjfinec/nbac026",
+      "citations": "7",
+      "openalex_url": "//openalex.org/W4286697221",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-5",
+      "title": "Cross-Market Risk Transmission and Marginal Contribution Differentiation in Global Systemic Financial Risk: A Study Based on the TVP-QVAR Model",
+      "search_date": "2026-06-10",
+      "authors": "Lin Zhang; Xuhui Ding; Zhenhua Zhang",
+      "year": "2026",
+      "journal": "Emerging Markets Finance and Trade",
+      "doi": "//doi.org/10.1080/1540496x.2026.2626335",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7133649766",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-49",
+      "title": "Quantile Impulse Response Analysis with Applications in Macroeconomics and Finance",
+      "search_date": "2026-06-10",
+      "authors": "Whayoung Jung; Ji Hyung Lee",
+      "year": "2023",
+      "journal": "",
+      "doi": "//doi.org/10.1108/s073190532023000045b004",
+      "citations": "6",
+      "openalex_url": "//openalex.org/W4364370007",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-48",
+      "title": "Dynamic linkages in agricultural and energy markets: A quantile impulse response approach",
+      "search_date": "2026-06-10",
+      "authors": "Linjie Wang; Jean‐Paul Chavas; Jian Li",
+      "year": "2024",
+      "journal": "Agricultural Economics",
+      "doi": "//doi.org/10.1111/agec.12837",
+      "citations": "4",
+      "openalex_url": "//openalex.org/W4396776954",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-47",
+      "title": "Unravelling the impact of clean energy on the tourism sector of the stock market: Evidence from quantile granger causality and wavelet coherence analysis",
+      "search_date": "2026-06-10",
+      "authors": "Yiwei Wang; Zhaoyang Sun; Chao Feng; Ran Wu; Jiale Yan",
+      "year": "2024",
+      "journal": "International Review of Economics & Finance",
+      "doi": "//doi.org/10.1016/j.iref.2024.103832",
+      "citations": "14",
+      "openalex_url": "//openalex.org/W4405531812",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-46",
+      "title": "Load Forecasting Using BiLSTM with Quantile Granger Causality: Insights from Geographic–Climatic Coupling Mechanisms",
+      "search_date": "2026-06-10",
+      "authors": "Xianan Huang; Lin Liu; Nuo Xu; Yantao Chen; Xiaofei Wang; Zhenzhi Lin",
+      "year": "2025",
+      "journal": "Applied Sciences",
+      "doi": "//doi.org/10.3390/app15115912",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W4410721465",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-45",
+      "title": "How effective are trade policy and monetary policy in achieving a pathway to sustainable development? Evidence from a wavelet quantile-on-quantile Granger causality analysis",
+      "search_date": "2026-06-10",
+      "authors": "Tomiwa Sunday Adebayo; Victoria Olushola Olanrewaju",
+      "year": "2024",
+      "journal": "Sustainable Development",
+      "doi": "//doi.org/10.1002/sd.3157",
+      "citations": "16",
+      "openalex_url": "//openalex.org/W4401569771",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-44",
+      "title": "Untangling Carbon–Clean Energy Dynamics: A Quantile Granger-Causality Perspective",
+      "search_date": "2026-06-10",
+      "authors": "Wei Jiang; Jingang Jiang; Sonia ChienI Chen",
+      "year": "2025",
+      "journal": "Sustainability",
+      "doi": "//doi.org/10.3390/su17073118",
+      "citations": "3",
+      "openalex_url": "//openalex.org/W4409061410",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-43",
+      "title": "Quantile Granger causality in the presence of instability",
+      "search_date": "2026-06-10",
+      "authors": "Alexander Mayer; Dominik Wied; Victor Troster",
+      "year": "2025",
+      "journal": "Journal of Econometrics",
+      "doi": "//doi.org/10.1016/j.jeconom.2025.105992",
+      "citations": "5",
+      "openalex_url": "//openalex.org/W4408747143",
+      "abstract": "-  提出在不穩定環境下評估分位數 Granger 因果的新框架，檢定統計量對固定替代假設具有一致性。",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-42",
+      "title": "Role of fourth industrial revolution on dirty and clean energy under bearish, neutral and bullish market conditions: A quantile-on-quantile Granger causality approach",
+      "search_date": "2026-06-10",
+      "authors": "Ojonugwa Usman; Blend Ibrahim; Oktay Özkan; George N. Ike",
+      "year": "2025",
+      "journal": "Energy",
+      "doi": "//doi.org/10.1016/j.energy.2025.135582",
+      "citations": "5",
+      "openalex_url": "//openalex.org/W4408379112",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-41",
+      "title": "Quantile granger causality between clean energy and tourism stock indices: Evidence from regional markets",
+      "search_date": "2026-06-10",
+      "authors": "Özge Demirkale; Naime İrem Duran",
+      "year": "2025",
+      "journal": "PLoS ONE",
+      "doi": "//doi.org/10.1371/journal.pone.0326256",
+      "citations": "4",
+      "openalex_url": "//openalex.org/W4411553930",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-40",
+      "title": "Cryptocurrency meets U.S. trade policy uncertainty in the Trump era: A quantile Granger causality test",
+      "search_date": "2026-06-10",
+      "authors": "Xinxin Yi; Yijuan Shen; Yifei Cai",
+      "year": "2025",
+      "journal": "Finance research letters",
+      "doi": "//doi.org/10.1016/j.frl.2025.107999",
+      "citations": "5",
+      "openalex_url": "//openalex.org/W4412731170",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-4",
+      "title": "Quantile Spillover and Portfolio Shielding: Analyzing ESG Stocks and Commodity Markets Through the QVAR",
+      "search_date": "2026-06-10",
+      "authors": "Susovon Jana; Megha Agarwalla; B Tejesvee; Tarak Nath Sahu",
+      "year": "2026",
+      "journal": "Studies in Microeconomics",
+      "doi": "//doi.org/10.1177/23210222261424096",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7131356773",
+      "abstract": "-  使用 QVAR 分析全球 ESG 股票與大宗商品之間的分位數連結度，發現極端分位數下報酬外溢較高。",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-39",
+      "title": "Retraction notice to \"Evaluating the role of financial globalization and oil consumption on ecological quality: A new perspective from quantile-on-quantile granger causality\"",
+      "search_date": "2026-06-10",
+      "authors": "Tomiwa Sunday Adebayo; Oktay Özkan",
+      "year": "2026",
+      "journal": "Heliyon",
+      "doi": "//doi.org/10.1016/j.heliyon.2026.e44647",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7131673598",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-38",
+      "title": "mqqcause: Multivariate Quantile-on-Quantile Granger Causality (R package)",
+      "search_date": "2026-06-10",
+      "authors": "Merwan Roudane",
+      "year": "2026",
+      "journal": "",
+      "doi": "//doi.org/10.32614/cran.package.mqqcause",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7163008043",
+      "abstract": "-  實作雙變量與多變量 Q-on-Q Granger 因果檢定 R 套件。",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-37",
+      "title": "Inverse-Weighted Quantile Regression With Partially Interval-Censored Data",
+      "search_date": "2026-06-10",
+      "authors": "Yeji Kim; Taehwa Choi; Seohyeon Park; Sangbum Choi; Dipankar Bandyopadhyay",
+      "year": "2024",
+      "journal": "Biometrical Journal",
+      "doi": "//doi.org/10.1002/bimj.70001",
+      "citations": "1",
+      "openalex_url": "//openalex.org/W4404378734",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-36",
+      "title": "Smoothed Weighted Quantile Regression for Censored Data in Survival Analysis",
+      "search_date": "2026-06-10",
+      "authors": "Kaida Cai; Hanwen Liu; Wenzhi Fu; Xin Zhao",
+      "year": "2024",
+      "journal": "Axioms",
+      "doi": "//doi.org/10.3390/axioms13120831",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W4404756893",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-35",
+      "title": "Weighted Quantile Regression-based Probabilistic Forecasting for Solar Photovoltaic Systems",
+      "search_date": "2026-06-10",
+      "authors": "Yuan‐Kang Wu; Quoc‐Thang Phan; HsinYen Lo; KaiCheng Zhan; Wen‐Shan Tan",
+      "year": "2025",
+      "journal": "IEEE Transactions on Industry Applications",
+      "doi": "//doi.org/10.1109/tia.2025.3645156",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W4417439125",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-34",
+      "title": "Digital Finance and the Synergy of Pollution Control and Carbon Reduction From Dual Heterogeneity Perspective: A Geographically Weighted Quantile Regression Model",
+      "search_date": "2026-06-10",
+      "authors": "Mengyang Hou; Xuehua Cui; Yingxu Shen; Feifan Rong; Yalin Xie; Weinan Lu; Zenglei Xi",
+      "year": "2025",
+      "journal": "SSRN Electronic Journal",
+      "doi": "//doi.org/10.2139/ssrn.5407127",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W4413953544",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-33",
+      "title": "Geographically weighted quantile regression for count Data",
+      "search_date": "2026-06-10",
+      "authors": "Vivian YiJu Chen; ShiTing Wang",
+      "year": "2025",
+      "journal": "Statistics and Computing",
+      "doi": "//doi.org/10.1007/s1122202510568z",
+      "citations": "2",
+      "openalex_url": "//openalex.org/W4406744106",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-32",
+      "title": "Multiscale geographically weighted quantile regression",
+      "search_date": "2026-06-10",
+      "authors": "Allaa H. Elkady; AbdElnaser S. AbdRabou; Amira Elayouty",
+      "year": "2025",
+      "journal": "Spatial Economic Analysis",
+      "doi": "//doi.org/10.1080/17421772.2024.2445506",
+      "citations": "4",
+      "openalex_url": "//openalex.org/W4407040152",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-31",
+      "title": "Colorful Pinball: Density-Weighted Quantile Regression for Conditional Guarantee of Conformal Prediction",
+      "search_date": "2026-06-10",
+      "authors": "Qianyi Chen; Bo Li",
+      "year": "2025",
+      "journal": "Open MIND",
+      "doi": "//doi.org/10.48550/arxiv.2512.24139",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7118017025",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-30",
+      "title": "Robust Mendelian Randomization Estimation using Weighted Quantile Regression",
+      "search_date": "2026-06-10",
+      "authors": "Julien St.Pierre; Archer Y. Yang; Mireille E. Schnitzer; Marc‐André Legault",
+      "year": "2026",
+      "journal": "arXiv",
+      "doi": "//doi.org/10.48550/arxiv.2604.07566",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7153269768",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-3",
+      "title": "Dynamic resilience assessment of the shipping market to extreme carbon trading price tail shocks: A scenario-based QVAR approach",
+      "search_date": "2026-06-10",
+      "authors": "Meng Wan; Cong Sui",
+      "year": "2026",
+      "journal": "Finance research letters",
+      "doi": "//doi.org/10.1016/j.frl.2026.109720",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7132843361",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-29",
+      "title": "Testing the Safe-Haven Properties of Green Bonds, Gold, and Bitcoin for Traditional Bonds: A Wavelet Quantile Correlation Approach",
+      "search_date": "2026-06-10",
+      "authors": "Chi‐Wei Su; Yu‐Mei Ding; Kai‐Hua Wang; Xiaoqing Wang",
+      "year": "2025",
+      "journal": "Australian Economic Papers",
+      "doi": "//doi.org/10.1111/14678454.70007",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W4414190763",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-28",
+      "title": "Does Market Fear Forecast U.S. Economic Activity During the COVID-19 Crisis? Evidence from Time-Varying Asymmetric Causality and Wavelet Quantile Correlation Models",
+      "search_date": "2026-06-10",
+      "authors": "Walid Bakry",
+      "year": "2026",
+      "journal": "Journal of Statistical Theory and Applications",
+      "doi": "//doi.org/10.1007/s44199025001494",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7118990194",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-27",
+      "title": "Energy Efficiency, Solar Energy and R&D in the United States' Path to Carbon Neutrality by 2050: Evidence From Rolling Window Wavelet Quantile Correlation",
+      "search_date": "2026-06-10",
+      "authors": "Babatunde Sunday Eweade",
+      "year": "2026",
+      "journal": "Geological Journal",
+      "doi": "//doi.org/10.1002/gj.70217",
+      "citations": "3",
+      "openalex_url": "//openalex.org/W7125706286",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-26",
+      "title": "From crude to green: Exploring energy indicators and sustainability nexus through wavelet quantile correlation",
+      "search_date": "2026-06-10",
+      "authors": "Ummara Razi; Calvin W.H. Cheong; Arshian Sharif; Sahar Afshan",
+      "year": "2026",
+      "journal": "Energy",
+      "doi": "//doi.org/10.1016/j.energy.2026.140223",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7125932415",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-25",
+      "title": "Pathways to ecological sustainability in the United States: assessing the role of policy stringency and green energy using wavelet quantile correlation",
+      "search_date": "2026-06-10",
+      "authors": "Solomon Prince Nathaniel; Emmanuel Uche; Mamello Nchake; Magdalena Radulescu",
+      "year": "2026",
+      "journal": "Environmental Sciences Europe",
+      "doi": "//doi.org/10.1186/s12302026013516",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7131825446",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-24",
+      "title": "Investigating the Relationship Between Income Inequality, Institutional Quality, Trade Openness, and Ecological Footprint in Nigeria: A Quantile-on-Quantile and Wavelet Quantile Correlation Analysis",
+      "search_date": "2026-06-10",
+      "authors": "Oliver Chika Ike; Oluwatoyin Abidemi Somoye; Huseyin Ozdeser; Muhammad Mar'I",
+      "year": "2026",
+      "journal": "Sustainability",
+      "doi": "//doi.org/10.3390/su18062871",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7136342200",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-23",
+      "title": "Is Hydrogen a diversifier? Insights from Wavelet Quantile Correlation",
+      "search_date": "2026-06-10",
+      "authors": "Georgios Angelopoulos; Dimitrios Dimitriou; Dimitris Kenourgios; Alexandros Tsioutsios",
+      "year": "2026",
+      "journal": "Zenodo",
+      "doi": "//doi.org/10.5281/zenodo.19108099",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7139124233",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-22",
+      "title": "Are defense stocks sensitive to Reddit sentiments on Middle East conflicts? Insights from Google's TabNet and Wavelet Quantile correlation",
+      "search_date": "2026-06-10",
+      "authors": "Indranil Ghosh; Esteban Alfaro; Matías Gámez; Noelia GarcíaRubio",
+      "year": "2026",
+      "journal": "Finance research letters",
+      "doi": "//doi.org/10.1016/j.frl.2026.109887",
+      "citations": "1",
+      "openalex_url": "//openalex.org/W7140322262",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-21",
+      "title": "The effect of the exchange rate on Russian stock returns: a wavelet quantile correlation analysis of the pandemic and Russia–Ukraine conflict",
+      "search_date": "2026-06-10",
+      "authors": "Tsangyao Chang; Alexey Mikhaylov; MeiChih Wang",
+      "year": "2026",
+      "journal": "Applied Economics Letters",
+      "doi": "//doi.org/10.1080/13504851.2026.2661873",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7159667990",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-20",
+      "title": "Impact of Distinct Uncertainty Types on the Returns of G20 Stock Indices Across Different Market Conditions: Evidence from Two-step Panel QARDL Approach",
+      "search_date": "2026-06-10",
+      "authors": "Khujan Singh; K R Dhariwal",
+      "year": "2025",
+      "journal": "Journal of International Commerce Economics and Policy",
+      "doi": "//doi.org/10.1142/s1793993325500322",
+      "citations": "2",
+      "openalex_url": "//openalex.org/W4417257910",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-2",
+      "title": "Time-varying, frequency-domain, and quantile spillovers across energy and financial markets under climate policy uncertainty: evidence from TVP-VAR-SV, BK, and QVAR models",
+      "search_date": "2026-06-10",
+      "authors": "Md Qamruzzaman; Abdulrahman Alomair; Mohammed Alomair; Sylvia Kor",
+      "year": "2026",
+      "journal": "Quality & Quantity",
+      "doi": "//doi.org/10.1007/s11135026026683",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7140109798",
+      "abstract": "-  研究氣候政策不確定性對能源與金融市場波動外溢的影響，結合 TVP-VAR-SV、BK 頻率連結度與 QVAR 模型。",
+      "tags": [
+        "QVAR",
+        "TVP-VAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-19",
+      "title": "A QARDL and Granger Causality Approach to Understanding the Renewable Energy-Economic Growth Nexus: Evidence from G7 Panel Data",
+      "search_date": "2026-06-10",
+      "authors": "Yu Chen",
+      "year": "2026",
+      "journal": "SSRN Electronic Journal",
+      "doi": "//doi.org/10.2139/ssrn.6878972",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7163570050",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-18",
+      "title": "Crescimento Econômico e Política Fiscal no Brasil: Assimetria Cíclica, Qualidade do Gasto e Evidências via QARDL",
+      "search_date": "2026-06-10",
+      "authors": "Heitor Teixeira Rosa da Silva; Daiane dos Santos",
+      "year": "2026",
+      "journal": "Anais do ... Simpósio de Engenharia de Produção",
+      "doi": "//doi.org/10.29327/23189258.1449978",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7160622116",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-17",
+      "title": "Asymmetric link between PPP investment and transport CO2 emissions in india: A QARDL perspective",
+      "search_date": "2026-06-10",
+      "authors": "Ashok Kumar; Sushila Soriya",
+      "year": "2026",
+      "journal": "SN Business & Economics",
+      "doi": "//doi.org/10.1007/s43546025010321",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7118132868",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-16",
+      "title": "Impact of financial development, trade, and energy consumption on environmental footprint in India: evidence from QARDL and wavelet coherence approach",
+      "search_date": "2026-06-10",
+      "authors": "Jianxiong Wang; Jayabharathi S.; Manigandan P.; Pachiyappan D.",
+      "year": "2026",
+      "journal": "Journal of Environmental Engineering and Landscape Management",
+      "doi": "//doi.org/10.3846/jeelm.2026.25785",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7128723332",
+      "abstract": "-  使用 QARDL 和小波相干性方法分析印度金融發展、貿易、能源消費對 CO₂ 排放的影響。",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-15",
+      "title": "The moderating role of institutional quality in the debt stock-financial development-economic growth nexus: evidence from the panel QARDL model",
+      "search_date": "2026-06-10",
+      "authors": "Busra Agan Celik; Kingsley Okiwelu; Stephen Obinozie Ogwu; Gabriel Chukwuka Nzeadachie",
+      "year": "2026",
+      "journal": "SN Business & Economics",
+      "doi": "//doi.org/10.1007/s4354602601093w",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7134263291",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-14",
+      "title": "Exploring Fintech, Energy and Environmental Sustainability Nexus: A QARDL Approach",
+      "search_date": "2026-06-10",
+      "authors": "Mohammad Kashif; Ashulekha Gupta; Veethika Gupta; ShivamKrishn Agrawal",
+      "year": "2026",
+      "journal": "Circular Economy and Sustainability",
+      "doi": "//doi.org/10.1007/s43615026008270",
+      "citations": "1",
+      "openalex_url": "//openalex.org/W7135189148",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-13",
+      "title": "The moderating role of disaggregated ICT diffusion in green energy–ecological footprint nexus in Saudi Arabia: An application of a QARDL approach",
+      "search_date": "2026-06-10",
+      "authors": "Mehdi Abid; Mona Elshaabany; Hanane Abdelli; Zouheyr Gheraia; Mohamed Ghandri",
+      "year": "2026",
+      "journal": "Green Technologies and Sustainability",
+      "doi": "//doi.org/10.1016/j.grets.2026.100398",
+      "citations": "1",
+      "openalex_url": "//openalex.org/W7154696312",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-12",
+      "title": "Fintech and the sustainability nexus: empirical insights from FDI, urbanization and economic growth using QARDL analysis",
+      "search_date": "2026-06-10",
+      "authors": "Mohammad Kashif; Sanjay Taneja; Syed Noorul Shajar; Zelhuda Shamsuddin",
+      "year": "2026",
+      "journal": "Global Knowledge Memory and Communication",
+      "doi": "//doi.org/10.1108/gkmc1020240664",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7161782732",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-11",
+      "title": "Quantitative assessment of the link between economic uncertainty and cryptocurrency sentiment: evidence from QARDL modeling",
+      "search_date": "2026-06-10",
+      "authors": "Kashif Abbass; Muhammad Tahir Suleman; Huaming Song; Arshian Sharif",
+      "year": "2026",
+      "journal": "Financial Innovation",
+      "doi": "//doi.org/10.1186/s40854025008599",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7163065221",
+      "abstract": "-  使用 QARDL-ECM 分析經濟政策不確定性、油價波動、黃金價格對比特幣情緒的長短期影響。",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-10",
+      "title": "Biodiversity risk as a financial threat: Evidence from AFHF sectors using QVAR networks",
+      "search_date": "2026-06-10",
+      "authors": "Jinglin Liu; Xiaoyun Xing; Guo‐Rong Chen; Yang Zhang",
+      "year": "2025",
+      "journal": "Finance research letters",
+      "doi": "//doi.org/10.1016/j.frl.2025.109035",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W4416512143",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-10-1",
+      "title": "Nonlinear information spillovers between geopolitical risk, critical rare earth minerals, and defense stocks: A transfer entropy and time-frequency QVAR approach",
+      "search_date": "2026-06-10",
+      "authors": "Kwame Ofori Asomaning; Hamayoon Shah; Frederick Boamah; Emmanuel Uche; Anis Mnif",
+      "year": "2026",
+      "journal": "Resources Policy",
+      "doi": "//doi.org/10.1016/j.resourpol.2026.105916",
+      "citations": "0",
+      "openalex_url": "//openalex.org/W7147035673",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-9",
+      "title": "匯率 × 俄羅斯股票 — WQC（作者包含 Mei-Chih Wang！）",
+      "search_date": "2026-06-07",
+      "authors": "Tsangyao Chang, MeiChih Wang, Alexey Mikhaylov",
+      "year": "",
+      "journal": "Applied Economics Letters (2026)",
+      "doi": "//doi.org/10.1080/13504851.2026.2661873",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "This study examines the effect of the exchange rate on Russian stock returns using a wavelet quantile correlation analysis during the pandemic and Russia-Ukraine conflict periods.",
+      "tags": [
+        "WQC"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-8",
+      "title": "石油衝擊 × ASEAN 金融市場 — QVAR + Partial Wavelet Coherence",
+      "search_date": "2026-06-07",
+      "authors": "Mohammad Enamul Hoque, Akther Uddin, Faik Bilgili, LainTze Tee",
+      "year": "",
+      "journal": "SSRN Electronic Journal (2026)",
+      "doi": "//doi.org/10.2139/ssrn.6732294",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "(SSRN preprint)",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-7",
+      "title": "伊斯蘭股票指數 — QVAR Network + Frequency Connectedness",
+      "search_date": "2026-06-07",
+      "authors": "Samuel Duku Yeboah, John Gartchie Gatsi, David Korsah, Thomas Adjei Kuffour",
+      "year": "",
+      "journal": "Future Business Journal (2026)",
+      "doi": "//doi.org/10.1186/s4309302600730y",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "This study investigates dynamic spillover effects among Islamic stock indices during global financial crises using QVAR network and frequency connectedness approaches.",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-6",
+      "title": "綠債 × 新能源車 × 清潔能源 — TVP-VAR + QVAR Network",
+      "search_date": "2026-06-07",
+      "authors": "Chunyan Jiang, Yayun Wang, Wanqi Li, Runze Ding",
+      "year": "",
+      "journal": "Environment, Development and Sustainability (2026)",
+      "doi": "//doi.org/10.1007/s1066802507287w",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "This paper examines time-varying extreme risk spillovers and asymmetric effects in green bonds, new energy vehicles, and clean energy markets using a TVP-VAR and QVAR network approach.",
+      "tags": [
+        "QVAR",
+        "TVP-VAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-5",
+      "title": "全球系統性金融風險 — TVP-QVAR",
+      "search_date": "2026-06-07",
+      "authors": "Lin Zhang, Xuhui Ding, Zhenhua Zhang",
+      "year": "",
+      "journal": "Emerging Markets Finance and Trade (2026)",
+      "doi": "//doi.org/10.1080/1540496x.2026.2626335",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "This study examines cross-market risk transmission and marginal contribution differentiation in global systemic financial risk using the TVP-QVAR model. Results show time-varying risk spillover patterns across different market regimes.",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-4",
+      "title": "ESG 股票 × 商品市場 — QVAR Portfolio Shielding",
+      "search_date": "2026-06-07",
+      "authors": "Susovon Jana, Megha Agarwalla, B Tejesvee, Tarak Nath Sahu",
+      "year": "",
+      "journal": "Studies in Microeconomics (2026)",
+      "doi": "//doi.org/10.1177/23210222261424096",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "This study analyzes quantile spillovers and portfolio shielding effects between ESG stocks and commodity markets using the QVAR framework. Findings suggest ESG assets provide hedging benefits during extreme market conditions.",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-3",
+      "title": "碳交易價格極端尾端衝擊 — Scenario-based QVAR",
+      "search_date": "2026-06-07",
+      "authors": "Meng Wan, Cong Sui",
+      "year": "",
+      "journal": "Finance Research Letters (2026)",
+      "doi": "//doi.org/10.1016/j.frl.2026.109720",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "This paper develops a scenario-based QVAR approach to assess the dynamic resilience of the shipping market to extreme carbon trading price tail shocks. The model captures asymmetric responses across different quantiles.",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-21",
+      "title": "金融發展 × 貿易 × 能源 × 環境足跡 — QARDL + Wavelet Coherence",
+      "search_date": "2026-06-07",
+      "authors": "Jianxiong Wang, Jayabharathi S., Manigandan P., Pachiyappan D.",
+      "year": "",
+      "journal": "Journal of Environmental Engineering and Landscape Management (2026)",
+      "doi": "//doi.org/10.3846/jeelm.2026.25785",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-20",
+      "title": "ICT 擴散 × 綠色能源-生態足跡 — QARDL",
+      "search_date": "2026-06-07",
+      "authors": "Mehdi Abid, Mona Elshaabany, Hanane Abdelli, Zouheyr Gheraia",
+      "year": "",
+      "journal": "1",
+      "doi": "//doi.org/10.1016/j.grets.2026.100398",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-2",
+      "title": "能源 × 金融市場 × 氣候政策不確定性 — TVP-VAR-SV, BK, QVAR",
+      "search_date": "2026-06-07",
+      "authors": "Md Qamruzzaman, Abdulrahman Alomair, Mohammed Alomair, Sylvia Kor",
+      "year": "",
+      "journal": "Quality & Quantity (2026)",
+      "doi": "//doi.org/10.1007/s11135026026683",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "This study investigates time-varying, frequency-domain, and quantile spillovers across energy and financial markets under climate policy uncertainty using TVP-VAR-SV, BK, and QVAR models. Results show asymmetric spillover intensities across different market conditions.",
+      "tags": [
+        "QVAR",
+        "TVP-VAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-19",
+      "title": "經濟不確定性 × 加密貨幣情緒 — QARDL",
+      "search_date": "2026-06-07",
+      "authors": "Kashif Abbass, Muhammad Tahir Suleman, Huaming Song, Arshian Sharif",
+      "year": "",
+      "journal": "Financial Innovation (2026)",
+      "doi": "//doi.org/10.1186/s40854025008599",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "QARDL"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-18",
+      "title": "貿易政策 × 貨幣政策 × 永續發展 — Wavelet QQGC",
+      "search_date": "2026-06-07",
+      "authors": "Tomiwa Sunday Adebayo, Victoria Olushola Olanrewaju",
+      "year": "",
+      "journal": "16",
+      "doi": "//doi.org/10.1002/sd.3157",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "QQGC"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-17",
+      "title": "第四次工業革命 × 髒/潔淨能源 — QQGC",
+      "search_date": "2026-06-07",
+      "authors": "Ojonugwa Usman, Blend Ibrahim, Oktay Özkan, George N. Ike",
+      "year": "",
+      "journal": "5",
+      "doi": "//doi.org/10.1016/j.energy.2025.135582",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "QQGC"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-16",
+      "title": "mqqcause: Multivariate Quantile-on-Quantile Granger Causality（R 套件）",
+      "search_date": "2026-06-07",
+      "authors": "Merwan Roudane",
+      "year": "",
+      "journal": "CRAN Package (2026)",
+      "doi": "//doi.org/10.32614/cran.package.mqqcause",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-15",
+      "title": "美國能源效率 × 碳中和 — Rolling Window WQC",
+      "search_date": "2026-06-07",
+      "authors": "Babatunde Sunday Eweade",
+      "year": "",
+      "journal": "2",
+      "doi": "//doi.org/10.1002/gj.70217",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "WQC"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-14",
+      "title": "原油 → 綠色能源 — WQC",
+      "search_date": "2026-06-07",
+      "authors": "Ummara Razi, Calvin W.H. Cheong, Arshian Sharif, Sahar Afshan",
+      "year": "",
+      "journal": "Energy (2026)",
+      "doi": "//doi.org/10.1016/j.energy.2026.140223",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "WQC"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-13",
+      "title": "美國生態永續路徑 — WQC",
+      "search_date": "2026-06-07",
+      "authors": "Solomon Prince Nathaniel, Emmanuel Uche, Mamello Nchake, Magdalena Radulescu",
+      "year": "",
+      "journal": "Environmental Sciences Europe (2026)",
+      "doi": "//doi.org/10.1186/s12302026013516",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "WQC"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-12",
+      "title": "所得不平等 × 制度品質 × 生態足跡 — QQ + WQC",
+      "search_date": "2026-06-07",
+      "authors": "Oliver Chika Ike, Oluwatoyin Abidemi Somoye, Huseyin Ozdeser, Muhammad Mar'I",
+      "year": "",
+      "journal": "Sustainability (2026)",
+      "doi": "//doi.org/10.3390/su18062871",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "WQC"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-11",
+      "title": "氫能作為分散工具？— WQC",
+      "search_date": "2026-06-07",
+      "authors": "Georgios Angelopoulos, Dimitrios Dimitriou, Dimitris Kenourgios, Alexandros Tsioutsios",
+      "year": "",
+      "journal": "Zenodo (CERN European Organization for Nuclear Research) (2026)",
+      "doi": "//doi.org/10.5281/zenodo.19108099",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "WQC"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-10",
+      "title": "國防股 × Reddit 中東衝突情緒 — TabNet + WQC",
+      "search_date": "2026-06-07",
+      "authors": "Indranil Ghosh, Esteban Alfaro, Matías Gámez, Noelia GarcíaRubio",
+      "year": "",
+      "journal": "Finance Research Letters (2026)",
+      "doi": "1",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "",
+      "tags": [
+        "WQC"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "2026-06-07-1",
+      "title": "地緣政治 × 關鍵稀土 × 國防股 — Nonlinear QVAR",
+      "search_date": "2026-06-07",
+      "authors": "Kwame Ofori Asomaning, Hamayoon Shah, Frederick Boamah, Emmanuel Uche",
+      "year": "",
+      "journal": "Resources Policy (2026)",
+      "doi": "//doi.org/10.1016/j.resourpol.2026.105916",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "This study examines the nonlinear information spillovers between geopolitical risk, critical rare earth minerals, and defense stocks using a transfer entropy and time-frequency QVAR approach. The findings reveal significant tail-dependent spillover effects during geopolitical turmoil.",
+      "tags": [
+        "QVAR"
+      ],
+      "type": "search",
+      "notes": []
+    }
+  ]
+}
