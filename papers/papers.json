@@ -1,6 +1,21 @@
 {
   "total": 71,
-  "updated": "2026-06-11 06:03:38",
+  "updated": "2026-06-11 06:08:48",
+  "topics": [
+    "AI/科技",
+    "其他",
+    "加密貨幣/數位金融",
+    "原物料/商品",
+    "地緣政治/國防",
+    "宏觀總體",
+    "方法論",
+    "氣候風險/政策",
+    "潔淨能源",
+    "碳市場/碳交易",
+    "綠債/ESG",
+    "能源市場",
+    "金融市場"
+  ],
   "papers": [
     {
       "id": "2026-06-10-9",
@@ -15,6 +30,11 @@
       "abstract": "-  使用 QVAR 模型評估 AI 與能源市場不確定性之間的風險外溢，發現 COVID-19 與俄烏戰爭期間風險外溢的時變特性。",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "能源市場",
+        "宏觀總體",
+        "AI/科技"
       ],
       "type": "search",
       "notes": []
@@ -33,6 +53,10 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "能源市場",
+        "金融市場"
+      ],
       "type": "search",
       "notes": []
     },
@@ -49,6 +73,9 @@
       "abstract": "-  使用 QVAR 頻率連結度方法分析伊斯蘭股票指數在 COVID-19 與俄烏戰爭期間的外溢效應。",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "金融市場"
       ],
       "type": "search",
       "notes": []
@@ -68,6 +95,11 @@
         "QVAR",
         "TVP-VAR"
       ],
+      "topics": [
+        "綠債/ESG",
+        "潔淨能源",
+        "能源市場"
+      ],
       "type": "search",
       "notes": []
     },
@@ -84,6 +116,9 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -102,6 +137,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "金融市場"
+      ],
       "type": "search",
       "notes": []
     },
@@ -118,6 +156,9 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -136,6 +177,11 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "能源市場",
+        "原物料/商品",
+        "方法論"
+      ],
       "type": "search",
       "notes": []
     },
@@ -152,6 +198,11 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "潔淨能源",
+        "金融市場",
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -170,6 +221,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "方法論"
+      ],
       "type": "search",
       "notes": []
     },
@@ -186,6 +240,11 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "綠債/ESG",
+        "宏觀總體",
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -204,6 +263,11 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "潔淨能源",
+        "碳市場/碳交易",
+        "方法論"
+      ],
       "type": "search",
       "notes": []
     },
@@ -220,6 +284,9 @@
       "abstract": "-  提出在不穩定環境下評估分位數 Granger 因果的新框架，檢定統計量對固定替代假設具有一致性。",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -238,6 +305,11 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "潔淨能源",
+        "方法論",
+        "AI/科技"
+      ],
       "type": "search",
       "notes": []
     },
@@ -254,6 +326,11 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "潔淨能源",
+        "金融市場",
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -272,6 +349,11 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "加密貨幣/數位金融",
+        "宏觀總體",
+        "方法論"
+      ],
       "type": "search",
       "notes": []
     },
@@ -288,6 +370,12 @@
       "abstract": "-  使用 QVAR 分析全球 ESG 股票與大宗商品之間的分位數連結度，發現極端分位數下報酬外溢較高。",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "綠債/ESG",
+        "金融市場",
+        "原物料/商品",
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -306,6 +394,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "方法論"
+      ],
       "type": "search",
       "notes": []
     },
@@ -322,6 +413,9 @@
       "abstract": "-  實作雙變量與多變量 Q-on-Q Granger 因果檢定 R 套件。",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -340,6 +434,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "方法論"
+      ],
       "type": "search",
       "notes": []
     },
@@ -356,6 +453,9 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -374,6 +474,10 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "潔淨能源",
+        "方法論"
+      ],
       "type": "search",
       "notes": []
     },
@@ -390,6 +494,12 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "碳市場/碳交易",
+        "加密貨幣/數位金融",
+        "方法論",
+        "AI/科技"
       ],
       "type": "search",
       "notes": []
@@ -408,6 +518,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "方法論"
+      ],
       "type": "search",
       "notes": []
     },
@@ -424,6 +537,9 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -442,6 +558,10 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "方法論",
+        "AI/科技"
+      ],
       "type": "search",
       "notes": []
     },
@@ -458,6 +578,9 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "方法論"
       ],
       "type": "search",
       "notes": []
@@ -476,6 +599,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "碳市場/碳交易"
+      ],
       "type": "search",
       "notes": []
     },
@@ -492,6 +618,11 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "綠債/ESG",
+        "加密貨幣/數位金融",
+        "原物料/商品"
       ],
       "type": "search",
       "notes": []
@@ -510,6 +641,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "宏觀總體"
+      ],
       "type": "search",
       "notes": []
     },
@@ -526,6 +660,10 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "潔淨能源",
+        "碳市場/碳交易"
       ],
       "type": "search",
       "notes": []
@@ -544,6 +682,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "能源市場"
+      ],
       "type": "search",
       "notes": []
     },
@@ -560,6 +701,9 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "氣候風險/政策"
       ],
       "type": "search",
       "notes": []
@@ -578,6 +722,10 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "碳市場/碳交易",
+        "宏觀總體"
+      ],
       "type": "search",
       "notes": []
     },
@@ -594,6 +742,9 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "潔淨能源"
       ],
       "type": "search",
       "notes": []
@@ -612,6 +763,10 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "地緣政治/國防",
+        "AI/科技"
+      ],
       "type": "search",
       "notes": []
     },
@@ -629,6 +784,10 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "金融市場",
+        "AI/科技"
+      ],
       "type": "search",
       "notes": []
     },
@@ -645,6 +804,10 @@
       "abstract": "",
       "tags": [
         "QARDL"
+      ],
+      "topics": [
+        "金融市場",
+        "宏觀總體"
       ],
       "type": "search",
       "notes": []
@@ -664,6 +827,11 @@
         "QVAR",
         "TVP-VAR"
       ],
+      "topics": [
+        "氣候風險/政策",
+        "金融市場",
+        "宏觀總體"
+      ],
       "type": "search",
       "notes": []
     },
@@ -680,6 +848,10 @@
       "abstract": "",
       "tags": [
         "QARDL"
+      ],
+      "topics": [
+        "潔淨能源",
+        "宏觀總體"
       ],
       "type": "search",
       "notes": []
@@ -698,6 +870,9 @@
       "tags": [
         "QARDL"
       ],
+      "topics": [
+        "其他"
+      ],
       "type": "search",
       "notes": []
     },
@@ -714,6 +889,9 @@
       "abstract": "",
       "tags": [
         "QARDL"
+      ],
+      "topics": [
+        "碳市場/碳交易"
       ],
       "type": "search",
       "notes": []
@@ -732,6 +910,9 @@
       "tags": [
         "QARDL"
       ],
+      "topics": [
+        "其他"
+      ],
       "type": "search",
       "notes": []
     },
@@ -748,6 +929,9 @@
       "abstract": "",
       "tags": [
         "QARDL"
+      ],
+      "topics": [
+        "宏觀總體"
       ],
       "type": "search",
       "notes": []
@@ -766,6 +950,9 @@
       "tags": [
         "QARDL"
       ],
+      "topics": [
+        "加密貨幣/數位金融"
+      ],
       "type": "search",
       "notes": []
     },
@@ -782,6 +969,10 @@
       "abstract": "",
       "tags": [
         "QARDL"
+      ],
+      "topics": [
+        "碳市場/碳交易",
+        "AI/科技"
       ],
       "type": "search",
       "notes": []
@@ -800,6 +991,10 @@
       "tags": [
         "QARDL"
       ],
+      "topics": [
+        "加密貨幣/數位金融",
+        "宏觀總體"
+      ],
       "type": "search",
       "notes": []
     },
@@ -816,6 +1011,10 @@
       "abstract": "-  使用 QARDL-ECM 分析經濟政策不確定性、油價波動、黃金價格對比特幣情緒的長短期影響。",
       "tags": [
         "QARDL"
+      ],
+      "topics": [
+        "加密貨幣/數位金融",
+        "宏觀總體"
       ],
       "type": "search",
       "notes": []
@@ -834,6 +1033,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "綠債/ESG"
+      ],
       "type": "search",
       "notes": []
     },
@@ -850,6 +1052,10 @@
       "abstract": "",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "地緣政治/國防",
+        "原物料/商品"
       ],
       "type": "search",
       "notes": []
@@ -868,6 +1074,11 @@
       "tags": [
         "WQC"
       ],
+      "topics": [
+        "金融市場",
+        "宏觀總體",
+        "AI/科技"
+      ],
       "type": "search",
       "notes": []
     },
@@ -885,6 +1096,10 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "能源市場",
+        "金融市場"
+      ],
       "type": "search",
       "notes": []
     },
@@ -901,6 +1116,9 @@
       "abstract": "This study investigates dynamic spillover effects among Islamic stock indices during global financial crises using QVAR network and frequency connectedness approaches.",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "金融市場"
       ],
       "type": "search",
       "notes": []
@@ -920,6 +1138,11 @@
         "QVAR",
         "TVP-VAR"
       ],
+      "topics": [
+        "綠債/ESG",
+        "潔淨能源",
+        "能源市場"
+      ],
       "type": "search",
       "notes": []
     },
@@ -936,6 +1159,9 @@
       "abstract": "This study examines cross-market risk transmission and marginal contribution differentiation in global systemic financial risk using the TVP-QVAR model. Results show time-varying risk spillover patterns across different market regimes.",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "金融市場"
       ],
       "type": "search",
       "notes": []
@@ -954,6 +1180,11 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "綠債/ESG",
+        "金融市場",
+        "原物料/商品"
+      ],
       "type": "search",
       "notes": []
     },
@@ -970,6 +1201,9 @@
       "abstract": "This paper develops a scenario-based QVAR approach to assess the dynamic resilience of the shipping market to extreme carbon trading price tail shocks. The model captures asymmetric responses across different quantiles.",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "碳市場/碳交易"
       ],
       "type": "search",
       "notes": []
@@ -988,6 +1222,9 @@
       "tags": [
         "QARDL"
       ],
+      "topics": [
+        "碳市場/碳交易"
+      ],
       "type": "search",
       "notes": []
     },
@@ -1004,6 +1241,10 @@
       "abstract": "",
       "tags": [
         "QARDL"
+      ],
+      "topics": [
+        "潔淨能源",
+        "AI/科技"
       ],
       "type": "search",
       "notes": []
@@ -1023,6 +1264,11 @@
         "QVAR",
         "TVP-VAR"
       ],
+      "topics": [
+        "氣候風險/政策",
+        "金融市場",
+        "宏觀總體"
+      ],
       "type": "search",
       "notes": []
     },
@@ -1039,6 +1285,10 @@
       "abstract": "",
       "tags": [
         "QARDL"
+      ],
+      "topics": [
+        "加密貨幣/數位金融",
+        "宏觀總體"
       ],
       "type": "search",
       "notes": []
@@ -1057,6 +1307,9 @@
       "tags": [
         "QQGC"
       ],
+      "topics": [
+        "宏觀總體"
+      ],
       "type": "search",
       "notes": []
     },
@@ -1073,6 +1326,10 @@
       "abstract": "",
       "tags": [
         "QQGC"
+      ],
+      "topics": [
+        "潔淨能源",
+        "AI/科技"
       ],
       "type": "search",
       "notes": []
@@ -1091,6 +1348,9 @@
       "tags": [
         "QVAR"
       ],
+      "topics": [
+        "方法論"
+      ],
       "type": "search",
       "notes": []
     },
@@ -1107,6 +1367,9 @@
       "abstract": "",
       "tags": [
         "WQC"
+      ],
+      "topics": [
+        "潔淨能源"
       ],
       "type": "search",
       "notes": []
@@ -1125,6 +1388,10 @@
       "tags": [
         "WQC"
       ],
+      "topics": [
+        "潔淨能源",
+        "能源市場"
+      ],
       "type": "search",
       "notes": []
     },
@@ -1141,6 +1408,9 @@
       "abstract": "",
       "tags": [
         "WQC"
+      ],
+      "topics": [
+        "氣候風險/政策"
       ],
       "type": "search",
       "notes": []
@@ -1159,6 +1429,9 @@
       "tags": [
         "WQC"
       ],
+      "topics": [
+        "其他"
+      ],
       "type": "search",
       "notes": []
     },
@@ -1175,6 +1448,9 @@
       "abstract": "",
       "tags": [
         "WQC"
+      ],
+      "topics": [
+        "潔淨能源"
       ],
       "type": "search",
       "notes": []
@@ -1193,6 +1469,9 @@
       "tags": [
         "WQC"
       ],
+      "topics": [
+        "地緣政治/國防"
+      ],
       "type": "search",
       "notes": []
     },
@@ -1209,6 +1488,10 @@
       "abstract": "This study examines the nonlinear information spillovers between geopolitical risk, critical rare earth minerals, and defense stocks using a transfer entropy and time-frequency QVAR approach. The findings reveal significant tail-dependent spillover effects during geopolitical turmoil.",
       "tags": [
         "QVAR"
+      ],
+      "topics": [
+        "地緣政治/國防",
+        "原物料/商品"
       ],
       "type": "search",
       "notes": []

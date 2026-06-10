@@ -1,4 +1,4 @@
-/* ===== 論文文獻庫 — 乾淨學術風 ===== */
+/* ===== 學術論文資料庫 — 乾淨學術風 ===== */
 
 :root {
   --bg: #f8f9fa;
@@ -60,28 +60,48 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto
 }
 .search-box input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-light); }
 
-.filter-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+/* 分類篩選 */
+.filter-section { margin-top: 12px; }
+.filter-label {
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .5px; margin-bottom: 6px;
+}
+.filter-tags { display: flex; flex-wrap: wrap; gap: 5px; }
 .filter-tags .tag {
-  padding: 5px 14px; border-radius: 20px; border: 1px solid var(--border);
-  background: var(--card-bg); font-size: 13px; cursor: pointer; transition: .15s;
-  color: var(--muted);
+  padding: 4px 12px; border-radius: 16px; border: 1px solid var(--border);
+  background: var(--card-bg); font-size: 12px; cursor: pointer; transition: .15s;
+  color: var(--muted); white-space: nowrap;
 }
 .filter-tags .tag:hover { border-color: var(--accent); color: var(--accent); }
 .filter-tags .tag.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 .filter-tags .tag[data-tag="upload"].active { background: var(--tag-upload); border-color: var(--tag-upload); }
 
+/* 主題標籤特殊色 */
+#topicTags .tag[data-topic="綠債/ESG"].active { background: #059669; border-color: #059669; }
+#topicTags .tag[data-topic="潔淨能源"].active { background: #0ea5e9; border-color: #0ea5e9; }
+#topicTags .tag[data-topic="碳市場/碳交易"].active { background: #1e293b; border-color: #1e293b; }
+#topicTags .tag[data-topic="氣候風險/政策"].active { background: #d97706; border-color: #d97706; }
+#topicTags .tag[data-topic="能源市場"].active { background: #dc2626; border-color: #dc2626; }
+#topicTags .tag[data-topic="金融市場"].active { background: #7c3aed; border-color: #7c3aed; }
+#topicTags .tag[data-topic="地緣政治/國防"].active { background: #be185d; border-color: #be185d; }
+#topicTags .tag[data-topic="加密貨幣/數位金融"].active { background: #f59e0b; border-color: #f59e0b; }
+#topicTags .tag[data-topic="原物料/商品"].active { background: #84cc16; border-color: #84cc16; }
+#topicTags .tag[data-topic="宏觀總體"].active { background: #0891b2; border-color: #0891b2; }
+#topicTags .tag[data-topic="AI/科技"].active { background: #6366f1; border-color: #6366f1; }
+#topicTags .tag[data-topic="方法論"].active { background: #64748b; border-color: #64748b; }
+
 /* 論文卡片 */
-.paper-list { display: flex; flex-direction: column; gap: 12px; }
+.paper-list { display: flex; flex-direction: column; gap: 10px; }
 
 .paper-card {
-  background: var(--card-bg); border-radius: var(--radius); padding: 18px 20px;
+  background: var(--card-bg); border-radius: var(--radius); padding: 16px 20px;
   border: 1px solid var(--border); cursor: pointer; transition: .15s;
 }
 .paper-card:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(37,99,235,.1); }
 
 .paper-card .paper-meta {
-  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
-  font-size: 12px; color: var(--muted); margin-bottom: 6px;
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  font-size: 12px; color: var(--muted); margin-bottom: 5px;
 }
 .paper-card .paper-date { font-weight: 600; color: var(--accent); }
 .paper-card .paper-badge {
@@ -90,12 +110,17 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto
 }
 .paper-card .paper-badge.upload { background: #d1fae5; color: #059669; }
 
-.paper-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; line-height: 1.4; }
-.paper-card .paper-authors { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
-.paper-card .paper-journal { font-size: 13px; color: var(--muted); font-style: italic; }
-.paper-card .paper-tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+.paper-card .topic-badge {
+  padding: 1px 7px; border-radius: 8px; font-size: 11px;
+  background: #fef3c7; color: #92400e;
+}
+
+.paper-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 3px; line-height: 1.4; }
+.paper-card .paper-authors { font-size: 13px; color: var(--muted); margin-bottom: 3px; }
+.paper-card .paper-journal { font-size: 12px; color: var(--muted); font-style: italic; }
+.paper-card .paper-tags { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 3px; }
 .paper-card .paper-tags span {
-  padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 500;
+  padding: 2px 7px; border-radius: 8px; font-size: 11px; font-weight: 500;
   background: var(--tag-bg); color: var(--muted);
 }
 
@@ -119,6 +144,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto
   background: var(--card-bg); border-radius: var(--radius); max-width: 700px;
   width: 100%; padding: 30px; position: relative;
   box-shadow: 0 10px 40px rgba(0,0,0,.15);
+  margin-bottom: 60px;
 }
 .modal-close {
   position: absolute; top: 12px; right: 16px; background: none; border: none;
@@ -135,6 +161,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto
 #modalBody .section a:hover { text-decoration: underline; }
 #modalBody .tags { margin-top: 12px; display: flex; gap: 4px; flex-wrap: wrap; }
 #modalBody .tags span { padding: 3px 10px; border-radius: 12px; font-size: 12px; background: var(--tag-bg); }
+#modalBody .tags .topic-tag { background: #fef3c7; color: #92400e; }
 
 /* 上傳區 */
 .upload-section {
@@ -154,7 +181,7 @@ footer {
 @media (max-width: 600px) {
   .hero h1 { font-size: 22px; }
   .nav-links a { font-size: 12px; padding: 4px 10px; }
-  .paper-card { padding: 14px; }
+  .paper-card { padding: 12px; }
   .paper-card h3 { font-size: 14px; }
   .modal-content { padding: 20px; }
 }

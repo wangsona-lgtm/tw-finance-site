@@ -1,8 +1,10 @@
 /* ===== papers/js/app.js — 論文文獻庫前端邏輯 ===== */
 
 let allPapers = [];
+let allTopics = [];
 let filteredPapers = [];
 let currentTag = 'all';
+let currentTopic = 'all';
 let currentPage = 1;
 const PER_PAGE = 20;
 
@@ -11,19 +13,59 @@ async function loadPapers() {
     const res = await fetch('papers.json?_=' + Date.now());
     const data = await res.json();
     allPapers = data.papers || [];
+    allTopics = data.topics || [];
     document.getElementById('stat-total').textContent = allPapers.length;
     document.getElementById('stat-date').textContent = data.updated || '—';
+    buildTopicTabs();
     applyFilters();
   } catch (e) {
     document.getElementById('paperList').innerHTML = '<p style="text-align:center;color:var(--muted);padding:40px">⚠️ 論文資料載入失敗</p>';
   }
 }
 
+function buildTopicTabs() {
+  const container = document.getElementById('topicTags');
+  container.innerHTML = '<button class="tag active" data-topic="all">🌐 全部</button>';
+  
+  // Preferred order for topics
+  const preferred = [
+    "綠債/ESG", "潔淨能源", "碳市場/碳交易", "氣候風險/政策", "能源市場",
+    "金融市場", "地緣政治/國防", "加密貨幣/數位金融", "原物料/商品",
+    "宏觀總體", "AI/科技", "方法論", "其他"
+  ];
+  
+  const ordered = [];
+  for (const t of preferred) {
+    if (allTopics.includes(t)) ordered.push(t);
+  }
+  for (const t of allTopics) {
+    if (!ordered.includes(t)) ordered.push(t);
+  }
+  
+  for (const topic of ordered) {
+    const btn = document.createElement('button');
+    btn.className = 'tag';
+    btn.dataset.topic = topic;
+    btn.textContent = topic;
+    container.appendChild(btn);
+  }
+  
+  container.querySelectorAll('.tag').forEach(btn => {
+    btn.addEventListener('click', () => {
+      container.querySelectorAll('.tag').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentTopic = btn.dataset.topic;
+      currentPage = 1;
+      applyFilters();
+    });
+  });
+}
+
 function applyFilters() {
   const q = document.getElementById('searchInput').value.toLowerCase().trim();
   
   filteredPapers = allPapers.filter(p => {
-    // Tag filter
+    // Method tag filter
     if (currentTag !== 'all') {
       if (currentTag === 'upload') {
         if (p.type !== 'upload') return false;
@@ -32,9 +74,14 @@ function applyFilters() {
       }
     }
     
+    // Topic filter
+    if (currentTopic !== 'all') {
+      if (!p.topics || !p.topics.includes(currentTopic)) return false;
+    }
+    
     // Search text
     if (q) {
-      const text = (p.title + ' ' + p.authors + ' ' + p.journal + ' ' + p.abstract + ' ' + (p.tags||[]).join(' ')).toLowerCase();
+      const text = (p.title + ' ' + p.authors + ' ' + p.journal + ' ' + (p.abstract||'') + ' ' + (p.tags||[]).join(' ') + ' ' + (p.topics||[]).join(' ')).toLowerCase();
       if (!text.includes(q)) return false;
     }
     
@@ -59,21 +106,26 @@ function render() {
     return;
   }
   
-  list.innerHTML = pagePapers.map(p => `
-    <div class="paper-card" onclick="openModal('${p.id}')">
+  list.innerHTML = pagePapers.map(p => {
+    const tags = (p.tags||[]).slice(0, 3);
+    const topics = (p.topics||[]).slice(0, 2);
+    return `
+    <div class="paper-card" onclick="openModal('${escapeHtml(p.id)}')">
       <div class="paper-meta">
         <span class="paper-date">${p.search_date || p.date || ''}</span>
         ${p.type === 'upload' ? '<span class="paper-badge upload">📁 上傳</span>' : ''}
         ${p.year ? `<span>(${p.year})</span>` : ''}
+        ${topics.map(t => `<span class="topic-badge">${t}</span>`).join('')}
       </div>
       <h3>${escapeHtml(p.title)}</h3>
       ${p.authors ? `<div class="paper-authors">${escapeHtml(p.authors)}</div>` : ''}
       ${p.journal ? `<div class="paper-journal">${escapeHtml(p.journal)}</div>` : ''}
       <div class="paper-tags">
-        ${(p.tags||[]).map(t => `<span>${t}</span>`).join('')}
+        ${tags.map(t => `<span>${t}</span>`).join('')}
+        ${tags.length < (p.tags||[]).length ? `<span>+${(p.tags||[]).length - tags.length}</span>` : ''}
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
   
   // Pagination
   if (totalPages <= 1) {
@@ -112,7 +164,10 @@ function openModal(id) {
     ${p.search_date ? `<div class="meta-line"><strong>搜尋日期</strong> ${p.search_date}</div>` : ''}
     ${p.date ? `<div class="meta-line"><strong>上傳日期</strong> ${p.date}</div>` : ''}
     ${p.citations ? `<div class="meta-line"><strong>被引次數</strong> ${p.citations}</div>` : ''}
-    <div class="tags">${(p.tags||[]).map(t => `<span>${t}</span>`).join('')}</div>
+    <div class="tags">
+      ${(p.tags||[]).map(t => `<span>${t}</span>`).join('')}
+      ${(p.topics||[]).map(t => `<span class="topic-tag">${t}</span>`).join('')}
+    </div>
     ${p.abstract ? `
       <div class="section">
         <h4>📄 摘要</h4>
@@ -122,7 +177,7 @@ function openModal(id) {
     ${p.doi ? `
       <div class="section">
         <h4>🔗 連結</h4>
-        <p><a href="https://doi.org/${p.doi.replace('https://doi.org/','')}" target="_blank" rel="noopener">${p.doi}</a></p>
+        <p><a href="https://doi.org/${p.doi.replace('https://doi.org/','').replace(/^\//,'')}" target="_blank" rel="noopener">${p.doi}</a></p>
       </div>
     ` : ''}
     ${p.openalex_url ? `
@@ -169,6 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.filter-tags .tag').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentTag = btn.dataset.tag;
+      currentPage = 1;
       applyFilters();
     });
   });
