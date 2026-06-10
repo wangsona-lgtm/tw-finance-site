@@ -263,8 +263,9 @@ async function loadOverview() {
         const chg = parseFloat(row['漲跌點數'].replace(/,/g,''));
         const el = document.getElementById('idx1');
         el.className = 'value ' + (chg >= 0 ? 'green' : 'red');
+        const pctRaw = parseFloat(String(row['漲跌百分比']||'0').replace(/[+%]/g,''));
         document.getElementById('idx1sub').textContent = 
-          `${chg >= 0 ? '▲' : '▼'} ${Math.abs(chg).toFixed(2)} 點（${row['漲跌百分比']}%）`;
+          `${chg >= 0 ? '▲' : '▼'} ${Math.abs(chg).toFixed(2)} 點（${chg >= 0 ? '+' : '-'}${Math.abs(pctRaw || 0).toFixed(2)}%）`;
       }
       if (row['指數'] === '寶島股價指數') {
         document.getElementById('idx2').textContent = fmt(row['收盤指數']);
