@@ -591,6 +591,7 @@ function renderOwnership(data, last) {
  }
  ownEl.innerHTML = '<span style="color:var(--text2)">📡 三大法人資料更新中…</span>';
 }
+}
 
 /* ════════════════════════════════════════
  Institutional buy/sell (T86)
@@ -671,7 +672,6 @@ const urlCode = new URLSearchParams(window.location.search).get('code');
 if (urlCode && urlCode.length >= 4) {
  document.getElementById('stockInput').value = urlCode;
  loadStock();
-}
 }
 </script>
 </body>
