@@ -5,582 +5,673 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light only">
 <title>個股技術分析 — TW Finance</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<script src="https://cdn.jsdelivr.net/npm/plotly.js@3.6.0/dist/plotly.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js@2.35.2/dist/plotly.min.js">}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js">}
+</script>
 
 <style>
 :root {
-  --bg: #f8f9fa; --card: #fff; --text: #1a1a2e; --text2: #6c757d;
-  --accent: #007bff; --green: #3fb950; --red: #f85149;
-  --border: #dee2e6;
+ --bg: #f8f9fa;
+ --card: #fff;
+ --text: #1a1a2e;
+ --text2: #6c757d;
+ --accent: #007bff;
+ --green: #3fb950;
+ --red: #f85149;
+ --border: #dee2e6;
 }
-html { background: #f8f9fa !important; }
-body { background: #f8f9fa !important; }
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: 'Segoe UI', -apple-system, sans-serif; background:var(--bg); color:var(--text); padding:20px; }
-.header { display:flex; align-items:center; gap:16px; margin-bottom:24px; flex-wrap:wrap; }
-.header h1 { font-size:22px; font-weight:700; }
-.nav { display:flex; gap:8px; margin-left:auto; }
-.nav a { color:var(--text2); text-decoration:none; font-size:13px; padding:6px 12px; border-radius:6px; }
-.nav a:hover { background:#e9ecef; color:var(--text); }
-.search-box { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
-.search-box input { width:120px; padding:10px 14px; border:2px solid var(--border); border-radius:8px; font-size:16px; font-weight:600; }
-.search-box input:focus { border-color:var(--accent); outline:none; }
-.search-box button { padding:10px 20px; background:var(--accent); color:#fff; border:none; border-radius:8px; cursor:pointer; font-size:15px; font-weight:600; }
-.search-box button:hover { filter:brightness(1.1); }
-.stock-info { background:var(--card); border-radius:12px; padding:20px; margin-bottom:16px; border:1px solid var(--border); display:none; }
-.stock-info h2 { font-size:28px; }
-.stock-info .price { font-size:42px; font-weight:700; }
-.stock-info .change { font-size:20px; margin-left:12px; }
-.positive { color:var(--red) !important; } .negative { color:var(--green) !important; }
-.grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
-@media(max-width:900px){ .grid { grid-template-columns:1fr; } }
-.card { background:var(--card); border-radius:12px; padding:16px; border:1px solid var(--border); }
-.card h3 { font-size:14px; color:var(--text2); margin-bottom:12px; }
-.chart-container { position:relative; width:100%; }
-.chart-container canvas { width:100% !important; }
-.sub-charts { display:flex; flex-direction:column; gap:12px; }
-.sub-chart-box { background:var(--card); border-radius:10px; padding:12px; border:1px solid var(--border); }
-.sub-chart-box h4 { font-size:12px; color:var(--text2); margin-bottom:6px; }
-.inst-table { width:100%; border-collapse:collapse; font-size:13px; }
-.inst-table th { background:#f1f3f5; padding:8px 10px; text-align:left; border-bottom:2px solid var(--border); font-weight:600; }
-.inst-table td { padding:8px 10px; border-bottom:1px solid #f1f3f5; }
-.inst-table .num { text-align:right; font-family:monospace; }
-.inst-table .total { font-weight:700; background:#f8f9fa; }
-.analysis-section { display:none; }
-.loading { color:var(--text2); padding:20px; text-align:center; }
-.error { color:var(--red); padding:10px; }
-.pie-container { display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
-.pie-legend { font-size:14px; line-height:2; }
-.pie-legend .dot { display:inline-block; width:12px; height:12px; border-radius:50%; margin-right:6px; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: var(--bg); }
+body { font-family: 'Segoe UI', -apple-system, sans-serif; color: var(--text); padding: 20px; }
+
+/* ── Header ── */
+.header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+.header h1 { font-size: 22px; font-weight: 700; }
+.nav { display: flex; gap: 8px; margin-left: auto; flex-wrap: wrap; }
+.nav a { color: var(--text2); text-decoration: none; font-size: 13px; padding: 6px 12px; border-radius: 6px; }
+.nav a:hover { background: #e9ecef; color: var(--text); }
+.search-box { display: flex; gap: 8px; align-items: center; }
+.search-box input { width: 120px; padding: 10px 14px; border: 2px solid var(--border); border-radius: 8px; font-size: 16px; font-weight: 600; }
+.search-box input:focus { border-color: var(--accent); outline: none; }
+.search-box button { padding: 10px 20px; background: var(--accent); color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; font-weight: 600; }
+.search-box button:hover { filter: brightness(1.1); }
+
+/* ── Cards ── */
+.stock-info { background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 16px; border: 1px solid var(--border); display: none; }
+.stock-info .price { font-size: 42px; font-weight: 700; }
+.stock-info .change { font-size: 20px; margin-left: 12px; }
+.positive { color: var(--red) !important; }
+.negative { color: var(--green) !important; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+.card { background: var(--card); border-radius: 12px; padding: 16px; border: 1px solid var(--border); }
+.card h3 { font-size: 14px; color: var(--text2); margin-bottom: 12px; }
+
+/* ── Institutional table ── */
+.inst-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.inst-table th { background: #f1f3f5; padding: 8px 10px; text-align: left; border-bottom: 2px solid var(--border); font-weight: 600; }
+.inst-table td { padding: 8px 10px; border-bottom: 1px solid #f1f3f5; }
+.inst-table .num { text-align: right; font-family: monospace; }
+
+/* ── Misc ── */
+.pie-container { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.pie-legend { font-size: 14px; line-height: 2; }
+.pie-legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 6px; }
+.loading { color: var(--text2); padding: 20px; text-align: center; }
 </style>
 </head>
 <body>
+
+<!-- ── Header ── -->
 <div class="header">
-  <h1>📈 個股技術分析</h1>
-  <div class="search-box">
-    <input type="text" id="stockInput" placeholder="2330" maxlength="6" onkeyup="if(event.key==='Enter') loadStock()">
-    <button onclick="loadStock()">分析</button>
-  </div>
-  <div class="nav">
-    <a href="../">🏠 首頁</a>
-    <a href="../dashboard/">📊 大盤</a>
-    <a href="../daily-reports.html">📰 晨報</a>
-    <a href="../postmarket-viewer/">📋 盤後</a>
-    <a href="../expert-viewer/">🎙️ 專家</a>
-    <a href="../closing-viewer/">📁 收盤</a>
-  </div>
+ <h1>📈 個股技術分析</h1>
+ <div class="search-box">
+ <input type="text" id="stockInput" placeholder="2330" maxlength="6"
+ onkeyup="if(event.key==='Enter') loadStock()">
+ <button onclick="loadStock()">分析</button>
+ </div>
+ <div class="nav">
+ <a href="../">🏠 首頁</a>
+ <a href="../dashboard/">📊 大盤</a>
+ <a href="../daily-reports.html">📰 晨報</a>
+ <a href="../postmarket-viewer/">📋 盤後</a>
+ <a href="../expert-viewer/">🎙️ 專家</a>
+ <a href="../closing-viewer/">📁 收盤</a>
+ </div>
 </div>
 
+<!-- ── Stock info banner ── -->
 <div id="stockInfo" class="stock-info"></div>
 
-<div id="analysisText" class="card" style="display:none;margin-bottom:16px;">
-  <h3>📋 技術分析摘要</h3>
-    <div style="font-size:11px;color:var(--text2);margin-bottom:6px;">📡 TWSE 交易所</div>
-  <div id="analysisSummary" style="font-size:14px;line-height:1.8;"></div>
-</div>
-<div id="analysis" class="analysis-section">
-  <div class="grid">
-    <div class="card" style="grid-column:1/-1;padding:2px;overflow:hidden;">
-      <div id="plotlyChart" style="width:100%;height:820px;background:#ffffff!important;"></div>
-      <div style="padding:4px 10px;font-size:12px;color:var(--text2);display:flex;justify-content:space-between;">
-        <span>📈 技術圖表 · K線 + BB + MA60 + 成交量 + MACD + RSI</span>
-        <span id="chartDate" style="font-weight:600;"></span>
-      </div>
-    </div>
-    <div class="card">
-      <h3>🧩 法人成交佔比（T86）</h3>
-      <div class="pie-container">
-        <div style="width:200px;height:200px;"><canvas id="ownershipChart"></canvas></div>
-        <div id="ownershipLegend" class="pie-legend"></div>
-      </div>
-    </div>
-
-  <div class="card" style="margin-top:16px;">
-    <h3>🏛️ 三大法人買賣超</h3>
-    <div style="font-size:11px;color:var(--text2);margin-bottom:8px;">📡 TWSE T86</div>
-    <div id="instLoader" class="loading">載入中...</div>
-    <div id="instTable"></div>
-  </div>
+<!-- ── Analysis summary table ── -->
+<div id="analysisText" class="card" style="display:none; margin-bottom:16px;">
+ <h3>📋 技術分析摘要</h3>
+ <div style="font-size:11px; color:var(--text2); margin-bottom:6px;">📡 TWSE 交易所</div>
+ <div id="analysisSummary" style="font-size:14px; line-height:1.8; overflow-x:auto;"></div>
 </div>
 
+<!-- ── Charts + institutional data ── -->
+<div id="analysis" style="display:none;">
+
+ <!-- Plotly 4-pane chart -->
+ <div class="card" style="padding:2px; overflow:hidden; margin-bottom:16px;">
+ <div id="plotlyChart" style="width:100%; height:820px; background:#fff;"></div>
+ <div style="padding:4px 10px; font-size:12px; color:var(--text2); display:flex; justify-content:space-between;">
+ <span>📈 K線 · BB(20,2) · MA60 · 成交量 · MACD(12,26,9) · RSI(14)</span>
+ <span id="chartDate" style="font-weight:600;"></span>
+ </div>
+ </div>
+
+ <div class="grid">
+ <!-- Ownership pie -->
+ <div class="card">
+ <h3>🧩 法人成交佔比（T86）</h3>
+ <div class="pie-container">
+ <div style="width:200px; height:200px;"><canvas id="ownershipChart"></canvas></div>
+ <div id="ownershipLegend" class="pie-legend"></div>
+ </div>
+ </div>
+
+ <!-- Institutional buy/sell -->
+ <div class="card">
+ <h3>🏛️ 三大法人買賣超</h3>
+ <div style="font-size:11px; color:var(--text2); margin-bottom:8px;">📡 TWSE T86</div>
+ <div id="instLoader" class="loading">載入中...</div>
+ <div id="instTable"></div>
+ </div>
+ </div>
+
+</div>
+
+<!-- ── Status message ── -->
 <div id="statusMsg" class="loading">請輸入股票代碼開始分析</div>
 
-<script>
-let allData = [];
 
+<script>
+/* ════════════════════════════════════════
+ State
+ ════════════════════════════════════════ */
+let allData = [];
+let _ownChart = null;
+let _instTradingData = null;
+
+/* ════════════════════════════════════════
+ Utilities
+ ════════════════════════════════════════ */
 function fmt(n) {
-  if (n === null || n === undefined || n === '-') return '-';
-  const v = parseFloat(String(n).replace(/,/g,''));
-  return isNaN(v) ? n : v.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+ if (n === null || n === undefined || n === '-') return '-';
+ const v = parseFloat(String(n).replace(/,/g, ''));
+ return isNaN(v) ? n : v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 async function fetchTWSE(url) {
-  const resp = await fetch(url);
-  const json = await resp.json();
-  if (json.stat !== 'OK') throw new Error(json.errcode || json.stat || 'API錯誤');
-  return json;
+ const resp = await fetch(url);
+ const json = await resp.json();
+ if (json.stat !== 'OK') throw new Error(json.errcode || json.stat || 'API 錯誤');
+ return json;
 }
 
-async function loadStock() {
-  const code = document.getElementById('stockInput').value.trim();
-  if (!code || code.length < 4) { alert('請輸入股票代碼（如 2330）'); return; }
-  console.log('🔍 Loading stock:', code);
-  document.getElementById('statusMsg').innerHTML = "🔄 載入中...<br><span style='font-size:12px;color:var(--text2);'>正在從 TWSE 抓取資料，請稍候</span>";
-  document.getElementById('analysis').style.display = 'none';
-  document.getElementById('stockInfo').style.display = 'none';
-  
-  try {
-    // Fetch historical data (last 6 months)
-    const now = new Date();
-    let allDays = [];
-    for (let m = 0; m < 6; m++) {
-      const d = new Date(now.getFullYear(), now.getMonth() - m, 1);
-      const y = d.getFullYear(); const mon = String(d.getMonth()+1).padStart(2,'0');
-      try {
-        const dayData = await fetchTWSE(`https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=${y}${mon}01&stockNo=${code}`);
-        allDays = [...dayData.data, ...allDays];
-      } catch(e) { /* month might be empty */ }
-    }
-    
-    if (allDays.length === 0) throw new Error('無資料');
-    
-    // Parse TWSE date format (113/01/02 → 2024/01/02)
-    function twDate(t) {
-      const parts = t.split('/');
-      const y = parseInt(parts[0]) + 1911;
-      return new Date(`${y}/${parts[1]}/${parts[2]}`).getTime();
-    }
-    
-    // Parse data - TWSE format: [date, volume, amount, open, high, low, close, change, transCount]
-    const parsed = allDays.map(r => ({
-      t: twDate(r[0]), vol: parseInt(r[1].replace(/,/g,'')), amount: parseFloat(r[2].replace(/,/g,'')),
-      o: parseFloat(r[3].replace(/,/g,'')), h: parseFloat(r[4].replace(/,/g,'')),
-      l: parseFloat(r[5].replace(/,/g,'')), c: parseFloat(r[6].replace(/,/g,''))
-    })).filter(d => d.c > 0).sort((a,b) => a.t - b.t);
-    
-    allData = parsed;
-    
-    // Today's info from latest data
-    const last = parsed[parsed.length-1];
-    const prev = parsed.length > 1 ? parsed[parsed.length-2] : null;
-    const change = prev ? last.c - prev.c : 0;
-    const pct = prev && prev.c > 0 ? (change/prev.c*100) : 0;
-    
-    document.getElementById('stockInfo').innerHTML = `
-      <div style="display:flex;align-items:baseline;gap:8px;">
-        <h2>${code}</h2>
-        <span style="color:var(--text2);font-size:14px;" id="stockName">...</span>
-      </div>
-      <div>
-        <span class="price ${change>=0?'positive':'negative'}">${fmt(last.c)}</span>
-        <span class="change ${change>=0?'positive':'negative'}">${change>=0?'+':''}${fmt(change)} (${pct>=0?'+':''}${pct.toFixed(2)}%)</span>
-        <span style="color:var(--text2);font-size:14px;margin-left:16px;">高 ${fmt(last.h)} 低 ${fmt(last.l)} 開 ${fmt(last.o)}</span>
-        <span style="color:var(--text2);font-size:14px;margin-left:16px;">量 ${fmt(last.vol)} 張</span>
-      </div>
-    `;
-    document.getElementById('stockInfo').style.display = 'block';
-    
-    // Get stock name from close
-    document.getElementById('stockName').textContent = await getStockName(code);
-    
-    // Render charts
-    renderAnalysisText(parsed, code);
-    document.getElementById("chartDate").textContent = "更新: " + new Date().toLocaleDateString("zh-TW") + " | " + code;
-    renderPlotlyChart(parsed, code);
-    renderOwnership(parsed, last);
-    loadInstitutional(code);
-    
-    document.getElementById('analysis').style.display = 'block';
-    document.getElementById('statusMsg').style.display = 'none';
-    
-  } catch(e) {
-    document.getElementById('statusMsg').textContent = `⚠️ ${e.message}`;
-  }
-}
+/* ════════════════════════════════════════
+ Technical Indicators
+ ════════════════════════════════════════ */
 
-async function getStockName(code) {
-  try {
-    // Try from embedded name lookup
-    const resp = await fetch(`https://www.twse.com.tw/exchangeReport/STOCK_DAY_ALL?response=json&date=${new Date().toISOString().slice(0,10).replace(/-/g,'')}`);
-    const json = await resp.json();
-    if (json.stat === 'OK') {
-      const found = json.data.find(r => r[0] === code);
-      if (found) return found[1];
-    }
-  } catch(_) {}
-  return '';
-}
-
+/** Simple Moving Average */
 function calcSMA(arr, period) {
-  const result = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (i < period - 1) { result.push(null); continue; }
-    let sum = 0;
-    for (let j = i - period + 1; j <= i; j++) sum += arr[j];
-    result.push(sum / period);
-  }
-  return result;
+ const result = [];
+ for (let i = 0; i < arr.length; i++) {
+ if (i < period - 1) { result.push(null); continue; }
+ let sum = 0;
+ for (let j = i - period + 1; j <= i; j++) sum += arr[j];
+ result.push(sum / period);
+ }
+ return result;
 }
 
+/** Bollinger Bands */
 function calcBB(arr, period, mult) {
-  const sma = calcSMA(arr, period);
-  const upper = [], lower = [], mid = [];
-  for (let i = 0; i < arr.length; i++) {
-    mid.push(sma[i]);
-    if (i < period - 1) { upper.push(null); lower.push(null); continue; }
-    let sqSum = 0, count = 0;
-    for (let j = i - period + 1; j <= i; j++) { sqSum += (arr[j] - sma[i]) ** 2; count++; }
-    const std = Math.sqrt(sqSum / count);
-    upper.push(sma[i] + mult * std);
-    lower.push(sma[i] - mult * std);
-  }
-  return { upper, mid, lower };
+ const sma = calcSMA(arr, period);
+ const upper = [], lower = [], mid = [];
+ for (let i = 0; i < arr.length; i++) {
+ mid.push(sma[i]);
+ if (i < period - 1) { upper.push(null); lower.push(null); continue; }
+ let sqSum = 0;
+ for (let j = i - period + 1; j <= i; j++) sqSum += (arr[j] - sma[i]) ** 2;
+ const std = Math.sqrt(sqSum / period);
+ upper.push(sma[i] + mult * std);
+ lower.push(sma[i] - mult * std);
+ }
+ return { upper, mid, lower };
 }
 
+/** MACD (EMA-based) */
 function calcMACD(data, fast, slow, sig) {
-  const emaFast = [data[0]], emaSlow = [data[0]];
-  const kf = 2 / (fast + 1), ks = 2 / (slow + 1);
-  for (let i = 1; i < data.length; i++) {
-    emaFast.push(data[i] * kf + emaFast[i-1] * (1 - kf));
-    emaSlow.push(data[i] * ks + emaSlow[i-1] * (1 - ks));
-  }
-  const macd = emaFast.map((v,i) => v - emaSlow[i]);
-  const signal = [macd[0]];
-  const ksig = 2 / (sig + 1);
-  for (let i = 1; i < macd.length; i++) signal.push(macd[i] * ksig + signal[i-1] * (1 - ksig));
-  const hist = macd.map((v,i) => v - signal[i]);
-  return { macd, signal, hist };
+ const emaFast = [data[0]], emaSlow = [data[0]];
+ const kf = 2 / (fast + 1), ks = 2 / (slow + 1);
+ for (let i = 1; i < data.length; i++) {
+ emaFast.push(data[i] * kf + emaFast[i - 1] * (1 - kf));
+ emaSlow.push(data[i] * ks + emaSlow[i - 1] * (1 - ks));
+ }
+ const macd = emaFast.map((v, i) => v - emaSlow[i]);
+ const signal = [macd[0]];
+ const ksig = 2 / (sig + 1);
+ for (let i = 1; i < macd.length; i++) signal.push(macd[i] * ksig + signal[i - 1] * (1 - ksig));
+ const hist = macd.map((v, i) => v - signal[i]);
+ return { macd, signal, hist };
 }
 
+/** RSI — Wilder smoothing (standard method) */
 function calcRSI(data, period) {
-  const rsi = [null];
-  let gain = 0, loss = 0;
-  for (let i = 1; i <= period; i++) {
-    const diff = data[i] - data[i-1];
-    if (diff >= 0) gain += diff; else loss -= diff;
-  }
-  let avgGain = gain / period, avgLoss = loss / period;
-  rsi.push(avgLoss === 0 ? 100 : 100 - 100 / (1 + avgGain / avgLoss));
-  for (let i = period + 1; i < data.length; i++) {
-    const diff = data[i] - data[i-1];
-    avgGain = (avgGain * (period - 1) + (diff > 0 ? diff : 0)) / period;
-    avgLoss = (avgLoss * (period - 1) + (diff < 0 ? -diff : 0)) / period;
-    rsi.push(avgLoss === 0 ? 100 : 100 - 100 / (1 + avgGain / avgLoss));
-  }
-  while (rsi.length < data.length) rsi.unshift(null);
-  return rsi;
+ const rsi = [];
+ // Seed: simple average of first `period` changes
+ let gain = 0, loss = 0;
+ for (let i = 1; i <= period; i++) {
+ const diff = data[i] - data[i - 1];
+ if (diff >= 0) gain += diff; else loss -= diff;
+ }
+ let avgGain = gain / period, avgLoss = loss / period;
+ // Pad leading nulls
+ for (let i = 0; i < period; i++) rsi.push(null);
+ rsi.push(avgLoss === 0 ? 100 : 100 - 100 / (1 + avgGain / avgLoss));
+ // Wilder smoothing for remaining values
+ for (let i = period + 1; i < data.length; i++) {
+ const diff = data[i] - data[i - 1];
+ avgGain = (avgGain * (period - 1) + (diff > 0 ? diff : 0)) / period;
+ avgLoss = (avgLoss * (period - 1) + (diff < 0 ? -diff : 0)) / period;
+ rsi.push(avgLoss === 0 ? 100 : 100 - 100 / (1 + avgGain / avgLoss));
+ }
+ return rsi;
 }
 
-function renderPlotlyChart(data, code) {
-  if (!data || data.length < 20) return;
-  const dates = data.map(d => new Date(d.t));
-  const closes = data.map(d => d.c);
-  const volColors = data.map(d => d.c >= d.o ? '#d32f2f' : '#1b5e20');
-  
-  // Calculate indicators
-  const bb = calcBB(closes, 20, 2);
-  const sma60 = calcSMA(closes, 60);
-  const macd = calcMACD(closes, 12, 26, 9);
-  const rsi = calcRSI(closes, 14);
-  
-  // Create subplots
-  const traces = [];
-  
-  // Candlestick
-  traces.push({
-    type: 'candlestick', x: dates, open: data.map(d=>d.o), high: data.map(d=>d.h),
-    low: data.map(d=>d.l), close: closes,
-    increasing: {line:{color:'#d32f2f'}, fillcolor:'#d32f2f'},
-    decreasing: {line:{color:'#1b5e20'}, fillcolor:'#1b5e20'},
-    xaxis: 'x', yaxis: 'y', showlegend: false,
-  });
-  
-  // BB upper
-  traces.push({
-    type: 'scatter', x: dates, y: bb.upper, name: 'BB上軌',
-    line: {color:'rgba(88,166,255,0.35)', width:1, dash:'dash'},
-    showlegend: false, xaxis: 'x', yaxis: 'y',
-  });
-  // BB lower (with fill)
-  traces.push({
-    type: 'scatter', x: dates, y: bb.lower, name: 'BB下軌',
-    line: {color:'rgba(88,166,255,0.35)', width:1, dash:'dash'},
-    fill: 'tonexty', fillcolor: 'rgba(88,166,255,0.06)',
-    showlegend: false, xaxis: 'x', yaxis: 'y',
-  });
-  // BB mid
-  traces.push({
-    type: 'scatter', x: dates, y: bb.mid, name: 'BB中線',
-    line: {color:'rgba(88,166,255,0.5)', width:1, dash:'dot'},
-    showlegend: false, xaxis: 'x', yaxis: 'y',
-  });
-  // MA60
-  traces.push({
-    type: 'scatter', x: dates, y: sma60, name: 'MA60',
-    line: {color:'#1565c0', width:2},
-    showlegend: false, xaxis: 'x', yaxis: 'y',
-  });
-  
-  // Volume
-  traces.push({
-    type: 'bar', x: dates, y: data.map(d=>d.vol), name: '成交量',
-    marker: {color: volColors}, showlegend: false,
-    xaxis: 'x2', yaxis: 'y2',
-  });
-  
-  // MACD
-  traces.push({
-    type: 'scatter', x: dates, y: macd.macd, name: 'DIF',
-    line: {color:'#6c5ce7', width:1.5}, showlegend: false,
-    xaxis: 'x3', yaxis: 'y3',
-  });
-  traces.push({
-    type: 'scatter', x: dates, y: macd.signal, name: '信號線',
-    line: {color:'#e65100', width:1.5}, showlegend: false,
-    xaxis: 'x3', yaxis: 'y3',
-  });
-  const histColors = macd.hist.map(v => v >= 0 ? '#d32f2f' : '#1b5e20');
-  traces.push({
-    type: 'bar', x: dates, y: macd.hist, name: '柱狀',
-    marker: {color: histColors}, showlegend: false,
-    xaxis: 'x3', yaxis: 'y3',
-  });
-  
-  // RSI
-  traces.push({
-    type: 'scatter', x: dates, y: dates.map(() => 70), name: '超買',
-    line: {color:'rgba(248,81,73,0.3)', width:1, dash:'dash'},
-    showlegend: false, xaxis: 'x4', yaxis: 'y4',
-  });
-  traces.push({
-    type: 'scatter', x: dates, y: dates.map(() => 30), name: '超賣',
-    line: {color:'rgba(63,185,80,0.3)', width:1, dash:'dash'},
-    showlegend: false, xaxis: 'x4', yaxis: 'y4',
-  });
-  traces.push({
-    type: 'scatter', x: dates, y: rsi, name: 'RSI(14)',
-    line: {color:'#1565c0', width:1.5}, showlegend: false,
-    xaxis: 'x4', yaxis: 'y4',
-  });
-  
-  const layout = {
-    grid: {rows: 4, columns: 1, pattern: 'independent'},
-    paper_bgcolor: '#ffffff', plot_bgcolor: '#ffffff',
-    font: {family: 'Geist, Inter, sans-serif', size: 11, color: '#202124'},
-    margin: {l: 40, r: 40, t: 30, b: 35},
-    height: 800,
-    annotations: [{
-      text: '📡 臺灣證券交易所 (TWSE)',
-      xref: 'paper', yref: 'paper', x: 0, y: -0.02,
-      showarrow: false, font: {size: 10, color: '#202124'},
-    }],
-    hovermode: 'x unified',
-    xaxis: {showgrid: true, gridcolor: '#e8eaed', rangeslider: {visible: false}},
-    yaxis: {gridcolor: '#e8eaed', side: 'right'},
-    xaxis2: {showgrid: true, gridcolor: '#e8eaed'},
-    yaxis2: {gridcolor: '#e8eaed', side: 'right'},
-    xaxis3: {showgrid: true, gridcolor: '#e8eaed'},
-    yaxis3: {gridcolor: '#e8eaed', side: 'right'},
-    xaxis4: {showgrid: true, gridcolor: '#e8eaed'},
-    yaxis4: {gridcolor: '#e8eaed', range: [0, 100], side: 'right'},
-    dragmode: 'pan',
-  };
-  
-  Plotly.newPlot('plotlyChart', traces, layout, {responsive: true, displayModeBar: false});
+/* ════════════════════════════════════════
+ Main load function
+ ════════════════════════════════════════ */
+async function loadStock() {
+ const code = document.getElementById('stockInput').value.trim();
+ if (!code || code.length < 4) { alert('請輸入股票代碼（如 2330）'); return; }
+
+ document.getElementById('statusMsg').innerHTML =
+ "🔄 載入中…<br><span style='font-size:12px;color:var(--text2);'>正在從 TWSE 抓取資料，請稍候</span>";
+ document.getElementById('statusMsg').style.display = 'block';
+ document.getElementById('analysis').style.display = 'none';
+ document.getElementById('stockInfo').style.display = 'none';
+ document.getElementById('analysisText').style.display = 'none';
+ _instTradingData = null;
+
+ try {
+ /* Fetch last 6 months of daily data */
+ const now = new Date();
+ let allDays = [];
+ for (let m = 0; m < 6; m++) {
+ const d = new Date(now.getFullYear(), now.getMonth() - m, 1);
+ const y = d.getFullYear();
+ const mon = String(d.getMonth() + 1).padStart(2, '0');
+ try {
+ const res = await fetchTWSE(
+ `https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=${y}${mon}01&stockNo=${code}`
+ );
+ allDays = [...res.data, ...allDays];
+ } catch (_) { /* month may be empty */ }
+ }
+ if (allDays.length === 0) throw new Error('無資料，請確認股票代碼');
+
+ /* Parse TWSE date format: 113/01/02 → timestamp */
+ function twDate(t) {
+ const [yr, mo, da] = t.split('/');
+ return new Date(`${parseInt(yr) + 1911}/${mo}/${da}`).getTime();
+ }
+
+ /* Columns: [date, vol, amount, open, high, low, close, change, txCount] */
+ const parsed = allDays
+ .map(r => ({
+ t: twDate(r[0]),
+ vol: parseInt(r[1].replace(/,/g, '')),
+ o: parseFloat(r[3].replace(/,/g, '')),
+ h: parseFloat(r[4].replace(/,/g, '')),
+ l: parseFloat(r[5].replace(/,/g, '')),
+ c: parseFloat(r[6].replace(/,/g, ''))
+ }))
+ .filter(d => d.c > 0)
+ .sort((a, b) => a.t - b.t);
+
+ allData = parsed;
+
+ /* Price banner */
+ const last = parsed[parsed.length - 1];
+ const prev = parsed.length > 1 ? parsed[parsed.length - 2] : null;
+ const change = prev ? last.c - prev.c : 0;
+ const pct = prev && prev.c > 0 ? (change / prev.c * 100) : 0;
+ const upClass = change >= 0 ? 'positive' : 'negative';
+
+ document.getElementById('stockInfo').innerHTML = `
+ <div style="display:flex;align-items:baseline;gap:8px;">
+ <h2>${code}</h2>
+ <span style="color:var(--text2);font-size:14px;" id="stockName">…</span>
+ </div>
+ <div>
+ <span class="price ${upClass}">${fmt(last.c)}</span>
+ <span class="change ${upClass}">${change >= 0 ? '+' : ''}${fmt(change)} (${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%)</span>
+ <span style="color:var(--text2);font-size:14px;margin-left:16px;">高 ${fmt(last.h)} 低 ${fmt(last.l)} 開 ${fmt(last.o)}</span>
+ <span style="color:var(--text2);font-size:14px;margin-left:16px;">量 ${last.vol.toLocaleString()} 張</span>
+ </div>`;
+ document.getElementById('stockInfo').style.display = 'block';
+
+ /* Stock name (async, non-blocking) */
+ getStockName(code).then(name => {
+ const el = document.getElementById('stockName');
+ if (el) el.textContent = name;
+ });
+
+ /* Render everything */
+ renderAnalysisText(parsed);
+ document.getElementById('chartDate').textContent =
+ '更新: ' + new Date().toLocaleDateString('zh-TW') + ' | ' + code;
+ renderPlotlyChart(parsed);
+ loadInstitutional(code); // also triggers renderOwnership on completion
+
+ document.getElementById('analysis').style.display = 'block';
+ document.getElementById('statusMsg').style.display = 'none';
+
+ } catch (e) {
+ document.getElementById('statusMsg').textContent = `⚠️ ${e.message}`;
+ }
 }
 
-function renderAnalysisText(data, code) {
-  if (data.length === 0) return;
-  const last = data[data.length-1];
-  const prev = data.length > 1 ? data[data.length-2] : null;
-  const change = prev ? last.c - prev.c : 0;
-  const pct = prev && prev.c > 0 ? (change/prev.c*100) : 0;
-  const closes = data.map(d => d.c);
-  const highs = data.map(d => d.h);
-  const lows = data.map(d => d.l);
-  const vols = data.map(d => d.vol);
-  
-  // Basic stats
-  const avgVol = vols.slice(-20).reduce((s,v) => s+v, 0) / Math.min(20, vols.length);
-  const high20 = Math.max(...highs.slice(-20));
-  const low20 = Math.min(...lows.slice(-20));
-  const range20 = ((high20 - low20) / low20 * 100);
-  
-  // MA60
-  const sma60 = calcSMA(closes, 60);
-  const ma60 = sma60[sma60.length-1];
-  const ma60Div = ma60 !== null ? ((last.c - ma60) / ma60 * 100) : null;
-  
-  // BB
-  const bb = calcBB(closes, 20, 2);
-  const bbUpper = bb.upper[bb.upper.length-1];
-  const bbLower = bb.lower[bb.lower.length-1];
-  const bbMid = bb.mid[bb.mid.length-1];
-  const bbPos = bbMid ? ((last.c - bbMid) / (bbUpper - bbMid) * 100) : null;
-  
-  // RSI
-  const rsi = calcRSI(closes, 14);
-  const rsiVal = rsi[rsi.length-1];
-  
-  // MACD
-  const macd = calcMACD(closes, 12, 26, 9);
-  const lastMacd = macd.macdLine[macd.macdLine.length-1];
-  const lastSig = macd.signalLine[macd.signalLine.length-1];
-  const lastHist = macd.hist[macd.hist.length-1];
-  
-  // Volume
-  const vol5Avg = vols.slice(-5).reduce((s,v) => s+v, 0) / Math.min(5, vols.length);
-  const volRatio = avgVol > 0 ? (last.vol / vol5Avg) : 0;
-  
-  const dirIcon = change >= 0 ? '📈' : '📉';
-  const rsiStatus = rsiVal > 70 ? '超買 🟠' : rsiVal < 30 ? '超賣 🟢' : '中性 ⚪';
-  const macdStatus = lastMacd > lastSig ? '多頭 🟢' : '空頭 🔴';
-  const bbStatus = bbPos > 80 ? '上緣 🟠' : bbPos < 20 ? '下緣 🟢' : '中段 ⚪';
-  const maStatus = ma60Div > 5 ? '乖離過大 🟠' : ma60Div < -5 ? '乖離過大 🟢' : '正常 ⚪';
-  
-  // Trend estimate
-  const trend5 = closes.slice(-5);
-  const trendDir = trend5.length >= 5 && trend5[trend5.length-1] > trend5[0] ? '短線偏多 ↗️' :
-                   trend5.length >= 5 && trend5[trend5.length-1] < trend5[0] ? '短線偏空 ↘️' : '短線盤整 ↔️';
-  
-  let html = `<table style="width:100%;border-collapse:collapse;font-size:14px;">
-    <tr>
-      <td style="padding:4px 12px;border:1px solid #eee;"><b>${dirIcon} 收盤</b></td>
-      <td style="padding:4px 12px;border:1px solid #eee;font-weight:700;color:${change>=0?'var(--red)':'var(--green)'}">${last.c.toLocaleString()} ${change>=0?'+':''}${change.toFixed(2)} (${pct>=0?'+':''}${pct.toFixed(2)}%)</td>
-      <td style="padding:4px 12px;border:1px solid #eee;"><b>📊 近20日區間</b></td>
-      <td style="padding:4px 12px;border:1px solid #eee;">高 ${high20.toLocaleString()} / 低 ${low20.toLocaleString()} / 幅 ${range20.toFixed(1)}%</td>
-    </tr>
-    <tr>
-      <td style="padding:4px 12px;border:1px solid #eee;"><b>📐 MA60</b></td>
-      <td style="padding:4px 12px;border:1px solid #eee;">${ma60 !== null ? ma60.toLocaleString() : '-'} (乖離 ${ma60Div !== null ? ma60Div.toFixed(2)+'%' : '-'}) ${maStatus}</td>
-      <td style="padding:4px 12px;border:1px solid #eee;"><b>🔵 布林通道</b></td>
-      <td style="padding:4px 12px;border:1px solid #eee;">上 ${bbUpper.toLocaleString()} / 中 ${bbMid.toLocaleString()} / 下 ${bbLower.toLocaleString()} ${bbStatus}</td>
-    </tr>
-    <tr>
-      <td style="padding:4px 12px;border:1px solid #eee;"><b>📈 RSI(14)</b></td>
-      <td style="padding:4px 12px;border:1px solid #eee;">${rsiVal !== null ? rsiVal.toFixed(1) : '-'} ${rsiStatus}</td>
-      <td style="padding:4px 12px;border:1px solid #eee;"><b>⚡ MACD</b></td>
-      <td style="padding:4px 12px;border:1px solid #eee;">DIF ${lastMacd.toFixed(1)} / 信號線 ${lastSig.toFixed(1)} / 柱 ${lastHist.toFixed(1)} ${macdStatus}</td>
-    </tr>
-    <tr>
-      <td style="padding:4px 12px;border:1px solid #eee;"><b>📊 今日成交量</b></td>
-      <td style="padding:4px 12px;border:1px solid #eee;">${last.vol.toLocaleString()} 張 ${volRatio > 1.5 ? '🔥放量' : volRatio > 1.0 ? '正常' : '量縮'}</td>
-      <td style="padding:4px 12px;border:1px solid #eee;"><b>🔍 趨勢</b></td>
-      <td style="padding:4px 12px;border:1px solid #eee;">${trendDir} ${ma60Div !== null ? (last.c > ma60 ? '｜在季線上' : '｜在季線下') : ''}</td>
-    </tr>
-  </table>`;
-  
-  document.getElementById('analysisSummary').innerHTML = html;
-  document.getElementById('analysisText').style.display = 'block';
+/* ════════════════════════════════════════
+ Stock name lookup
+ ════════════════════════════════════════ */
+async function getStockName(code) {
+ try {
+ const now = new Date();
+ const y = now.getFullYear();
+ const m = String(now.getMonth() + 1).padStart(2, '0');
+ const d = String(now.getDate()).padStart(2, '0');
+ const resp = await fetch(
+ `https://www.twse.com.tw/exchangeReport/STOCK_DAY_ALL?response=json&date=${y}${m}${d}`
+ );
+ const json = await resp.json();
+ if (json.stat === 'OK') {
+ const found = json.data.find(r => r[0] === code);
+ if (found) return found[1];
+ }
+ } catch (_) {}
+ return '';
 }
 
-// Chart.js render functions removed
+/* ════════════════════════════════════════
+ Analysis summary table
+ ════════════════════════════════════════ */
+function renderAnalysisText(data) {
+ if (!data.length) return;
 
+ const last = data[data.length - 1];
+ const prev = data.length > 1 ? data[data.length - 2] : null;
+ const change = prev ? last.c - prev.c : 0;
+ const pct = prev && prev.c > 0 ? (change / prev.c * 100) : 0;
+
+ const closes = data.map(d => d.c);
+ const highs = data.map(d => d.h);
+ const lows = data.map(d => d.l);
+ const vols = data.map(d => d.vol);
+
+ const high20 = Math.max(...highs.slice(-20));
+ const low20 = Math.min(...lows.slice(-20));
+ const range20 = ((high20 - low20) / low20 * 100);
+
+ const sma60Arr = calcSMA(closes, 60);
+ const ma60 = sma60Arr[sma60Arr.length - 1];
+ const ma60Div = ma60 !== null ? ((last.c - ma60) / ma60 * 100) : null;
+
+ const bb = calcBB(closes, 20, 2);
+ const bbUpper = bb.upper[bb.upper.length - 1];
+ const bbLower = bb.lower[bb.lower.length - 1];
+ const bbMid = bb.mid[bb.mid.length - 1];
+ const bbPos = bbMid ? ((last.c - bbMid) / (bbUpper - bbMid) * 100) : null;
+
+ const rsiArr = calcRSI(closes, 14);
+ const rsiVal = rsiArr[rsiArr.length - 1];
+
+ const macdR = calcMACD(closes, 12, 26, 9);
+ const lastDIF = macdR.macd[macdR.macd.length - 1];
+ const lastSig = macdR.signal[macdR.signal.length - 1];
+ const lastHist = macdR.hist[macdR.hist.length - 1];
+
+ const avgVol5 = vols.slice(-5).reduce((s, v) => s + v, 0) / Math.min(5, vols.length);
+ const avgVol20 = vols.slice(-20).reduce((s, v) => s + v, 0) / Math.min(20, vols.length);
+ const volRatio = avgVol20 > 0 ? (last.vol / avgVol5) : 0;
+
+ const trend5 = closes.slice(-5);
+ const trendDir = trend5[trend5.length - 1] > trend5[0] ? '短線偏多 ↗️'
+ : trend5[trend5.length - 1] < trend5[0] ? '短線偏空 ↘️' : '短線盤整 ↔️';
+
+ const upClass = (v) => v > 0 ? 'color:var(--red)' : v < 0 ? 'color:var(--green)' : '';
+ const rsiTag = rsiVal > 70 ? '超買 🟠' : rsiVal < 30 ? '超賣 🟢' : '中性 ⚪';
+ const macdTag = lastDIF > lastSig ? '多頭 🟢' : '空頭 🔴';
+ const bbTag = bbPos > 80 ? '上緣 🟠' : bbPos < 20 ? '下緣 🟢' : '中段 ⚪';
+ const maTag = ma60Div > 5 ? '乖離過大 🟠' : ma60Div < -5 ? '乖離過大 🟢' : '正常 ⚪';
+ const volTag = volRatio > 1.5 ? '🔥放量' : volRatio > 1.0 ? '正常' : '量縮';
+ const maPos = ma60 !== null ? (last.c > ma60 ? '｜在季線上' : '｜在季線下') : '';
+
+ const td = (content) => `<td style="padding:4px 12px;border:1px solid #eee;">${content}</td>`;
+
+ document.getElementById('analysisSummary').innerHTML = `
+ <table style="width:100%;border-collapse:collapse;font-size:14px;">
+ <tr>
+ ${td(`<b>${change >= 0 ? '📈' : '📉'} 收盤</b>`)}
+ ${td(`<span style="font-weight:700;${upClass(change)}">${last.c.toLocaleString()} ${change >= 0 ? '+' : ''}${change.toFixed(2)} (${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%)</span>`)}
+ ${td('<b>📊 近20日區間</b>')}
+ ${td(`高 ${high20.toLocaleString()} / 低 ${low20.toLocaleString()} / 幅 ${range20.toFixed(1)}%`)}
+ </tr>
+ <tr>
+ ${td('<b>📐 MA60</b>')}
+ ${td(`${ma60 !== null ? ma60.toLocaleString() : '-'} (乖離 ${ma60Div !== null ? ma60Div.toFixed(2) + '%' : '-'}) ${maTag}`)}
+ ${td('<b>🔵 布林通道</b>')}
+ ${td(`上 ${bbUpper.toLocaleString()} / 中 ${bbMid.toLocaleString()} / 下 ${bbLower.toLocaleString()} ${bbTag}`)}
+ </tr>
+ <tr>
+ ${td('<b>📈 RSI(14)</b>')}
+ ${td(`${rsiVal !== null ? rsiVal.toFixed(1) : '-'} ${rsiTag}`)}
+ ${td('<b>⚡ MACD(12,26,9)</b>')}
+ ${td(`DIF ${lastDIF.toFixed(2)} / 信號 ${lastSig.toFixed(2)} / 柱 ${lastHist.toFixed(2)} ${macdTag}`)}
+ </tr>
+ <tr>
+ ${td('<b>📊 成交量</b>')}
+ ${td(`${last.vol.toLocaleString()} 張 ${volTag}`)}
+ ${td('<b>🔍 趨勢</b>')}
+ ${td(`${trendDir} ${maPos}`)}
+ </tr>
+ </table>`;
+ document.getElementById('analysisText').style.display = 'block';
+}
+
+/* ════════════════════════════════════════
+ Plotly 4-pane chart
+ ════════════════════════════════════════ */
+function renderPlotlyChart(data) {
+ if (!data || data.length < 20) return;
+
+ const dates = data.map(d => new Date(d.t));
+ const closes = data.map(d => d.c);
+
+ const bb = calcBB(closes, 20, 2);
+ const sma60 = calcSMA(closes, 60);
+ const macd = calcMACD(closes, 12, 26, 9);
+ const rsi = calcRSI(closes, 14);
+
+ const volColors = data.map(d => d.c >= d.o ? '#d32f2f' : '#1b5e20');
+
+ const traces = [
+ /* ── Candlestick ── */
+ {
+ type: 'candlestick', x: dates,
+ open: data.map(d => d.o), high: data.map(d => d.h),
+ low: data.map(d => d.l), close: closes,
+ increasing: { line: { color: '#d32f2f' }, fillcolor: '#d32f2f' },
+ decreasing: { line: { color: '#1b5e20' }, fillcolor: '#1b5e20' },
+ xaxis: 'x', yaxis: 'y', showlegend: false
+ },
+ /* ── BB upper ── */
+ {
+ type: 'scatter', x: dates, y: bb.upper,
+ line: { color: 'rgba(88,166,255,0.35)', width: 1, dash: 'dash' },
+ showlegend: false, xaxis: 'x', yaxis: 'y'
+ },
+ /* ── BB lower (fill to upper) ── */
+ {
+ type: 'scatter', x: dates, y: bb.lower,
+ line: { color: 'rgba(88,166,255,0.35)', width: 1, dash: 'dash' },
+ fill: 'tonexty', fillcolor: 'rgba(88,166,255,0.06)',
+ showlegend: false, xaxis: 'x', yaxis: 'y'
+ },
+ /* ── BB mid ── */
+ {
+ type: 'scatter', x: dates, y: bb.mid,
+ line: { color: 'rgba(88,166,255,0.5)', width: 1, dash: 'dot' },
+ showlegend: false, xaxis: 'x', yaxis: 'y'
+ },
+ /* ── MA60 ── */
+ {
+ type: 'scatter', x: dates, y: sma60, name: 'MA60',
+ line: { color: '#1565c0', width: 2 },
+ showlegend: false, xaxis: 'x', yaxis: 'y'
+ },
+ /* ── Volume ── */
+ {
+ type: 'bar', x: dates, y: data.map(d => d.vol),
+ marker: { color: volColors }, showlegend: false,
+ xaxis: 'x2', yaxis: 'y2'
+ },
+ /* ── MACD DIF ── */
+ {
+ type: 'scatter', x: dates, y: macd.macd,
+ line: { color: '#6c5ce7', width: 1.5 },
+ showlegend: false, xaxis: 'x3', yaxis: 'y3'
+ },
+ /* ── MACD Signal ── */
+ {
+ type: 'scatter', x: dates, y: macd.signal,
+ line: { color: '#e65100', width: 1.5 },
+ showlegend: false, xaxis: 'x3', yaxis: 'y3'
+ },
+ /* ── MACD Histogram ── */
+ {
+ type: 'bar', x: dates, y: macd.hist,
+ marker: { color: macd.hist.map(v => v >= 0 ? '#d32f2f' : '#1b5e20') },
+ showlegend: false, xaxis: 'x3', yaxis: 'y3'
+ },
+ /* ── RSI overbought/oversold lines ── */
+ {
+ type: 'scatter', x: dates, y: dates.map(() => 70),
+ line: { color: 'rgba(248,81,73,0.3)', width: 1, dash: 'dash' },
+ showlegend: false, xaxis: 'x4', yaxis: 'y4'
+ },
+ {
+ type: 'scatter', x: dates, y: dates.map(() => 30),
+ line: { color: 'rgba(63,185,80,0.3)', width: 1, dash: 'dash' },
+ showlegend: false, xaxis: 'x4', yaxis: 'y4'
+ },
+ /* ── RSI line ── */
+ {
+ type: 'scatter', x: dates, y: rsi,
+ line: { color: '#1565c0', width: 1.5 },
+ showlegend: false, xaxis: 'x4', yaxis: 'y4'
+ }
+ ];
+
+ const axisDefaults = { showgrid: true, gridcolor: '#e8eaed', zeroline: false };
+
+ const layout = {
+ grid: { rows: 4, columns: 1, pattern: 'independent', roworder: 'top to bottom' },
+ paper_bgcolor: '#ffffff', plot_bgcolor: '#ffffff',
+ font: { family: 'Geist, Inter, sans-serif', size: 11, color: '#202124' },
+ margin: { l: 40, r: 50, t: 20, b: 30 },
+ height: 800,
+ hovermode: 'x unified',
+ dragmode: 'pan',
+ /* Main: candlestick */
+ xaxis: { ...axisDefaults, rangeslider: { visible: false } },
+ yaxis: { ...axisDefaults, side: 'right', domain: [0.48, 1.0] },
+ /* Volume */
+ xaxis2: { ...axisDefaults },
+ yaxis2: { ...axisDefaults, side: 'right', domain: [0.32, 0.47] },
+ /* MACD */
+ xaxis3: { ...axisDefaults },
+ yaxis3: { ...axisDefaults, side: 'right', domain: [0.16, 0.31] },
+ /* RSI */
+ xaxis4: { ...axisDefaults },
+ yaxis4: { ...axisDefaults, side: 'right', range: [0, 100], domain: [0.0, 0.15] },
+ annotations: [{
+ text: '📡 臺灣證券交易所 (TWSE)',
+ xref: 'paper', yref: 'paper', x: 0, y: -0.02,
+ showarrow: false, font: { size: 10, color: '#888' }
+ }]
+ };
+
+ Plotly.newPlot('plotlyChart', traces, layout, { responsive: true, displayModeBar: false });
+}
+
+/* ════════════════════════════════════════
+ Ownership pie (T86-based)
+ ════════════════════════════════════════ */
 function renderOwnership(data, last) {
-  const ctx = document.getElementById('ownershipChart');
-  if (window._ownChart) window._ownChart.destroy();
-  const ownEl = document.getElementById('ownershipLegend');
-  
-  // Use real T86 data if available
-  const id = window._instTradingData;
-  if (id && (id.foreignBuy + id.foreignSell + id.trustBuy + id.trustSell + id.dealerBuy + id.dealerSell) > 0) {
-    const totalInstVol = id.foreignBuy + id.foreignSell + id.trustBuy + id.trustSell + id.dealerBuy + id.dealerSell;
-    const totalVol = last.vol * 2; // total market both sides
-    if (totalVol > 0) {
-      const foreignPct = (id.foreignBuy + id.foreignSell) / totalVol;
-      const trustPct = (id.trustBuy + id.trustSell) / totalVol;
-      const dealerPct = (id.dealerBuy + id.dealerSell) / totalVol;
-      const retailPct = Math.max(0, 1 - foreignPct - trustPct - dealerPct);
-      const labels = ['外資', '投信', '自營商', '散戶'];
-      const values = [foreignPct, trustPct, dealerPct, retailPct];
-      const colors = ['#007bff', '#28a745', '#ffc107', '#6c757d'];
-      
-      window._ownChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: { labels, datasets: [{ data: values, backgroundColor: colors, borderWidth: 0 }] },
-        options: {
-          responsive: true, maintainAspectRatio: true,
-          plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.label}: ${(c.parsed * 100).toFixed(2)}%` } } }
-        }
-      });
-      
-      ownEl.innerHTML = values.map((v,i) => `<div><span class="dot" style="background:${colors[i]}"></span> ${labels[i]} ${(v*100).toFixed(2)}%</div>`).join('') +
-        '<div style="font-size:11px;color:var(--text2);margin-top:8px;">📡 TWSE T86 當日法人成交佔比</div>';
-      return;
-    }
-  }
-  
-  ownEl.innerHTML = '<span style="color:var(--text2)">📡 三大法人資料更新中…</span>';
+ const ctx = document.getElementById('ownershipChart');
+ const ownEl = document.getElementById('ownershipLegend');
+ if (_ownChart) { _ownChart.destroy(); _ownChart = null; }
+
+ const id = _instTradingData;
+ if (id && (id.foreignBuy + id.foreignSell + id.trustBuy + id.trustSell + id.dealerBuy + id.dealerSell) > 0) {
+ const totalVol = last.vol * 2;
+ if (totalVol > 0) {
+ const fP = (id.foreignBuy + id.foreignSell) / totalVol;
+ const tP = (id.trustBuy + id.trustSell) / totalVol;
+ const dP = (id.dealerBuy + id.dealerSell) / totalVol;
+ const rP = Math.max(0, 1 - fP - tP - dP);
+
+ const labels = ['外資', '投信', '自營商', '散戶'];
+ const values = [fP, tP, dP, rP];
+ const colors = ['#007bff', '#28a745', '#ffc107', '#6c757d'];
+
+ _ownChart = new Chart(ctx, {
+ type: 'doughnut',
+ data: { labels, datasets: [{ data: values, backgroundColor: colors, borderWidth: 0 }] },
+ options: {
+ responsive: true, maintainAspectRatio: true,
+ plugins: {
+ legend: { display: false },
+ tooltip: { callbacks: { label: c => `${c.label}: ${(c.parsed * 100).toFixed(2)}%` } }
+ }
+ }
+ });
+
+ ownEl.innerHTML = values
+ .map((v, i) => `<div><span class="dot" style="background:${colors[i]}"></span>${labels[i]} ${(v * 100).toFixed(2)}%</div>`)
+ .join('') +
+ '<div style="font-size:11px;color:var(--text2);margin-top:8px;">📡 TWSE T86 當日法人成交佔比</div>';
+ return;
+ }
+ ownEl.innerHTML = '<span style="color:var(--text2)">📡 三大法人資料更新中…</span>';
 }
 
+/* ════════════════════════════════════════
+ Institutional buy/sell (T86)
+ ════════════════════════════════════════ */
 async function loadInstitutional(code) {
-  document.getElementById('instLoader').style.display = 'block';
-  document.getElementById('instTable').innerHTML = '';
-  
-  try {
-    const now = new Date();
-    const y = now.getFullYear(); const m = String(now.getMonth()+1).padStart(2,'0'); const d = String(now.getDate()).padStart(2,'0');
-    
-    // Try to get T86 data for individual stock institutional trading
-    const data = await fetchTWSE(`https://www.twse.com.tw/fund/T86?response=json&date=${y}${m}${d}&selectType=ALL`);
-    
-    if (data.data && data.data.length > 0) {
-      let html = `<table class="inst-table">
-        <tr><th>日期</th><th>外資買超</th><th>投信買超</th><th>自營商買超</th><th>合計</th></tr>`;
-      
-      // Filter T86 data to our stock only
-      const matching = data.data.filter(r => r[0] && r[0].trim() === code);
-      
-      // Save institutional trading data for ownership chart
-      if (matching.length > 0) {
-        const r = matching[0];
-        window._instTradingData = {
-          foreignBuy: parseInt((r[2]||'').replace(/,/g,'') || 0),
-          foreignSell: parseInt((r[3]||'').replace(/,/g,'') || 0),
-          trustBuy: parseInt((r[8]||'').replace(/,/g,'') || 0),
-          trustSell: parseInt((r[9]||'').replace(/,/g,'') || 0),
-          dealerBuy: parseInt((r[12]||'').replace(/,/g,'') || 0) + parseInt((r[15]||'').replace(/,/g,'') || 0),
-          dealerSell: parseInt((r[13]||'').replace(/,/g,'') || 0) + parseInt((r[16]||'').replace(/,/g,'') || 0),
-        };
-      }
-      
-      for (const row of matching) {
-        // T86 real cols: [0=code,1=name,2=foreignBuy,3=foreignSell,4=foreignNet, 8=trustBuy,9=trustSell,10=trustNet, 12=dealerSelfBuy,13=dealerSelfSell,14=dealerSelfNet, 15=dealerHedgeBuy,16=dealerHedgeSell,17=dealerHedgeNet, 18=grandTotal]
-        const date = row[1]; // stock name as date label
-        const foreignNet = parseInt(row[4]?.replace(/,/g,'') || 0);
-        const trustNet = parseInt(row[10]?.replace(/,/g,'') || 0);
-        const dealerNet = (parseInt(row[14]?.replace(/,/g,'') || 0) + parseInt(row[17]?.replace(/,/g,'') || 0));
-        const totalNet = parseInt(row[18]?.replace(/,/g,'') || 0);
-        
-        const cls = (v) => v > 0 ? 'positive' : v < 0 ? 'negative' : '';
-        html += `<tr>
-          <td>${date}</td>
-          <td class="num ${cls(foreignNet)}">${foreignNet.toLocaleString()}</td>
-          <td class="num ${cls(trustNet)}">${trustNet.toLocaleString()}</td>
-          <td class="num ${cls(dealerNet)}">${dealerNet.toLocaleString()}</td>
-          <td class="num ${cls(totalNet)}">${totalNet.toLocaleString()}</td>
-        </tr>`;
-      }
-      html += '</table>';
-      document.getElementById('instTable').innerHTML = html;
-    } else {
-      document.getElementById('instTable').innerHTML = '<p style="color:var(--text2)">無本日三大法人買賣超資料</p>';
-    }
-  } catch(e) {
-    document.getElementById('instTable').innerHTML = `<p style="color:var(--text2)">⚠️ 無法取得三大法人資料: ${e.message}</p>`;
-  }
-  document.getElementById('instLoader').style.display = 'none';
-  // Re-render ownership chart with real T86 data
-  try { renderOwnership(window.allData, window.allData[window.allData.length-1]); } catch(_) {}
+ document.getElementById('instLoader').style.display = 'block';
+ document.getElementById('instTable').innerHTML = '';
+
+ try {
+ const now = new Date();
+ const y = now.getFullYear();
+ const m = String(now.getMonth() + 1).padStart(2, '0');
+ const d = String(now.getDate()).padStart(2, '0');
+
+ const data = await fetchTWSE(
+ `https://www.twse.com.tw/fund/T86?response=json&date=${y}${m}${d}&selectType=ALL`
+ );
+
+ if (data.data && data.data.length > 0) {
+ const matching = data.data.filter(r => r[0] && r[0].trim() === code);
+
+ /* Save for ownership chart */
+ if (matching.length > 0) {
+ const r = matching[0];
+ const p = (v) => parseInt((v || '').replace(/,/g, '') || 0);
+ _instTradingData = {
+ foreignBuy: p(r[2]), foreignSell: p(r[3]),
+ trustBuy: p(r[8]), trustSell: p(r[9]),
+ dealerBuy: p(r[12]) + p(r[15]),
+ dealerSell: p(r[13]) + p(r[16])
+ };
+ }
+
+ if (matching.length > 0) {
+ /* T86 cols: [0]=code [1]=name [4]=foreignNet [10]=trustNet [14]=dealerSelfNet [17]=dealerHedgeNet [18]=grandTotal */
+ let html = `<table class="inst-table">
+ <tr><th>名稱</th><th>外資買超</th><th>投信買超</th><th>自營商</th><th>合計</th></tr>`;
+ for (const row of matching) {
+ const p = (v) => parseInt((v || '').replace(/,/g, '') || 0);
+ const fN = p(row[4]);
+ const tN = p(row[10]);
+ const dN = p(row[14]) + p(row[17]);
+ const tot = p(row[18]);
+ const cls = (v) => v > 0 ? 'positive' : v < 0 ? 'negative' : '';
+ html += `<tr>
+ <td>${row[1]}</td>
+ <td class="num ${cls(fN)}">${fN.toLocaleString()}</td>
+ <td class="num ${cls(tN)}">${tN.toLocaleString()}</td>
+ <td class="num ${cls(dN)}">${dN.toLocaleString()}</td>
+ <td class="num ${cls(tot)}">${tot.toLocaleString()}</td>
+ </tr>`;
+ }
+ html += '</table>';
+ document.getElementById('instTable').innerHTML = html;
+ } else {
+ document.getElementById('instTable').innerHTML =
+ '<p style="color:var(--text2)">本日無此股票三大法人資料（交易日收盤後更新）</p>';
+ }
+ } else {
+ document.getElementById('instTable').innerHTML =
+ '<p style="color:var(--text2)">無本日三大法人買賣超資料</p>';
+ }
+ } catch (e) {
+ document.getElementById('instTable').innerHTML =
+ `<p style="color:var(--text2)">⚠️ 無法取得三大法人資料: ${e.message}</p>`;
+ }
+
+ document.getElementById('instLoader').style.display = 'none';
+
+ /* Re-render ownership pie now that T86 data is available */
+ if (allData.length) renderOwnership(allData, allData[allData.length - 1]);
 }
 
-// Auto-load from URL params
-const params = new URLSearchParams(window.location.search);
-const code = params.get('code');
-if (code && code.length >= 4) {
-  document.getElementById('stockInput').value = code;
-  loadStock();
+/* ════════════════════════════════════════
+ URL param auto-load (?code=2330)
+ ════════════════════════════════════════ */
+const urlCode = new URLSearchParams(window.location.search).get('code');
+if (urlCode && urlCode.length >= 4) {
+ document.getElementById('stockInput').value = urlCode;
+ loadStock();
+}
 }
 </script>
 </body>
