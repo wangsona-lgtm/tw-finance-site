@@ -195,30 +195,25 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
         <div class="name">大盤儀表板</div>
         <div class="desc">即時行情、K 棒圖、技術指標</div>
       </a>
-      <a href="stock-viewer/" class="quick-link">
+      <a href="#" class="quick-link" onclick="event.preventDefault();document.getElementById('chartModal').classList.add('open')">
         <div class="icon">📈</div>
+        <div class="name">技術分析圖</div>
+        <div class="desc">@sona1115_bot Intel Bull Flag</div>
+      </a>
+      <a href="stock-viewer/" class="quick-link">
+        <div class="icon">🔬</div>
         <div class="name">個股技術分析</div>
         <div class="desc">K 線、MACD、RSI、三大法人</div>
       </a>
-      <a href="papers/" class="quick-link">
-        <div class="icon">📚</div>
-        <div class="name">論文文獻庫</div>
-        <div class="desc">78 篇 QVAR 論文 · 主題分類</div>
-      </a>
-      <a href="report.html" class="quick-link">
-        <div class="icon">📋</div>
-        <div class="name">盤後報告</div>
-        <div class="desc">每日籌碼分析 · ZeroHedge 導讀</div>
+      <a href="expert-viewer/" class="quick-link">
+        <div class="icon">🎙️</div>
+        <div class="name">盤前行情</div>
+        <div class="desc">(專家講評)</div>
       </a>
       <a href="closing-viewer/" class="quick-link">
         <div class="icon">📉</div>
         <div class="name">收盤行情</div>
         <div class="desc">每日盤後個股收盤資料</div>
-      </a>
-      <a href="expert-viewer/" class="quick-link">
-        <div class="icon">🎙️</div>
-        <div class="name">專家講評</div>
-        <div class="desc">盤前專家觀點</div>
       </a>
     </div>
 
@@ -295,27 +290,6 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
           <a href="./NVIDIA_東亞雙軸戰略_講義.pdf" onclick="event.stopPropagation()" download>📥 PDF</a>
         </div>
         <div class="corner" style="background:var(--accent3)"></div>
-      </div>
-    </div>
-
-    <hr class="section-divider">
-
-    <!-- ===== 來自 wang 的技術分析圖 ===== -->
-    <div class="section-title">
-      <h2>📈 來自 wang @sona1115_bot</h2>
-      <p>個股技術分析圖（不定期更新）</p>
-    </div>
-    <div class="chart-card" onclick="document.getElementById('chartModal').classList.add('open')">
-      <img class="chart-img" src="./INTC_BullFlag_2026-06-10.jpg" alt="INTC Bull Flag 技術分析">
-      <div class="chart-info">
-        <h3>Intel (INTC) — Bull Flag 型態量度目標與停損</h3>
-        <p>主升段 +225% 後 Bull Flag 整理。突破 $113、停損 $99。RSI(14)=38.9，綜合評分 +30.5 / 偏多。Fib 延伸目標：$142、$154、$180。</p>
-        <div class="chart-meta">
-          <span>📅 2026-06-10</span>
-          <span>💰 收盤 $107.04</span>
-          <span>📐 Bull Flag</span>
-          <span>🎯 偏多 +30.5</span>
-        </div>
       </div>
     </div>
 
