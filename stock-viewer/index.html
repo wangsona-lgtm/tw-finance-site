@@ -70,6 +70,10 @@ body { font-family: 'Segoe UI', -apple-system, sans-serif; background:var(--bg);
 
 <div id="stockInfo" class="stock-info"></div>
 
+<div id="analysisText" class="card" style="display:none;margin-bottom:16px;">
+  <h3>📋 技術分析摘要</h3>
+  <div id="analysisSummary" style="font-size:14px;line-height:1.8;"></div>
+</div>
 <div id="analysis" class="analysis-section">
   <div class="grid">
     <div class="card chart-card">
@@ -190,6 +194,7 @@ async function loadStock() {
     document.getElementById('stockName').textContent = await getStockName(code);
     
     // Render charts
+    renderAnalysisText(parsed, code);
     renderMainChart(parsed);
     renderVolumeChart(parsed);
     renderMACD(parsed);
@@ -274,6 +279,91 @@ function calcRSI2(data, period) {
     result.push(100 - 100/(1+rs));
   }
   return result;
+}
+
+function renderAnalysisText(data, code) {
+  if (data.length === 0) return;
+  const last = data[data.length-1];
+  const prev = data.length > 1 ? data[data.length-2] : null;
+  const change = prev ? last.c - prev.c : 0;
+  const pct = prev && prev.c > 0 ? (change/prev.c*100) : 0;
+  const closes = data.map(d => d.c);
+  const highs = data.map(d => d.h);
+  const lows = data.map(d => d.l);
+  const vols = data.map(d => d.vol);
+  
+  // Basic stats
+  const avgVol = vols.slice(-20).reduce((s,v) => s+v, 0) / Math.min(20, vols.length);
+  const high20 = Math.max(...highs.slice(-20));
+  const low20 = Math.min(...lows.slice(-20));
+  const range20 = ((high20 - low20) / low20 * 100);
+  
+  // MA60
+  const sma60 = calcSMA(closes, 60);
+  const ma60 = sma60[sma60.length-1];
+  const ma60Div = ma60 !== null ? ((last.c - ma60) / ma60 * 100) : null;
+  
+  // BB
+  const bb = calcBB(closes, 20, 2);
+  const bbUpper = bb.upper[bb.upper.length-1];
+  const bbLower = bb.lower[bb.lower.length-1];
+  const bbMid = bb.mid[bb.mid.length-1];
+  const bbPos = bbMid ? ((last.c - bbMid) / (bbUpper - bbMid) * 100) : null;
+  
+  // RSI
+  const rsi = calcRSI2(closes, 14);
+  const rsiVal = rsi[rsi.length-1];
+  
+  // MACD
+  const macd = calcMACD(closes, 12, 26, 9);
+  const lastMacd = macd.macdLine[macd.macdLine.length-1];
+  const lastSig = macd.signalLine[macd.signalLine.length-1];
+  const lastHist = macd.hist[macd.hist.length-1];
+  
+  // Volume
+  const vol5Avg = vols.slice(-5).reduce((s,v) => s+v, 0) / Math.min(5, vols.length);
+  const volRatio = avgVol > 0 ? (last.vol / vol5Avg) : 0;
+  
+  const dirIcon = change >= 0 ? '📈' : '📉';
+  const rsiStatus = rsiVal > 70 ? '超買 🟠' : rsiVal < 30 ? '超賣 🟢' : '中性 ⚪';
+  const macdStatus = lastMacd > lastSig ? '多頭 🟢' : '空頭 🔴';
+  const bbStatus = bbPos > 80 ? '上緣 🟠' : bbPos < 20 ? '下緣 🟢' : '中段 ⚪';
+  const maStatus = ma60Div > 5 ? '乖離過大 🟠' : ma60Div < -5 ? '乖離過大 🟢' : '正常 ⚪';
+  
+  // Trend estimate
+  const trend5 = closes.slice(-5);
+  const trendDir = trend5.length >= 5 && trend5[trend5.length-1] > trend5[0] ? '短線偏多 ↗️' :
+                   trend5.length >= 5 && trend5[trend5.length-1] < trend5[0] ? '短線偏空 ↘️' : '短線盤整 ↔️';
+  
+  let html = `<table style="width:100%;border-collapse:collapse;font-size:14px;">
+    <tr>
+      <td style="padding:4px 12px;border:1px solid #eee;"><b>${dirIcon} 收盤</b></td>
+      <td style="padding:4px 12px;border:1px solid #eee;font-weight:700;color:${change>=0?'var(--red)':'var(--green)'}">${last.c.toLocaleString()} ${change>=0?'+':''}${change.toFixed(2)} (${pct>=0?'+':''}${pct.toFixed(2)}%)</td>
+      <td style="padding:4px 12px;border:1px solid #eee;"><b>📊 近20日區間</b></td>
+      <td style="padding:4px 12px;border:1px solid #eee;">高 ${high20.toLocaleString()} / 低 ${low20.toLocaleString()} / 幅 ${range20.toFixed(1)}%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 12px;border:1px solid #eee;"><b>📐 MA60</b></td>
+      <td style="padding:4px 12px;border:1px solid #eee;">${ma60 !== null ? ma60.toLocaleString() : '-'} (乖離 ${ma60Div !== null ? ma60Div.toFixed(2)+'%' : '-'}) ${maStatus}</td>
+      <td style="padding:4px 12px;border:1px solid #eee;"><b>🔵 布林通道</b></td>
+      <td style="padding:4px 12px;border:1px solid #eee;">上 ${bbUpper.toLocaleString()} / 中 ${bbMid.toLocaleString()} / 下 ${bbLower.toLocaleString()} ${bbStatus}</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 12px;border:1px solid #eee;"><b>📈 RSI(14)</b></td>
+      <td style="padding:4px 12px;border:1px solid #eee;">${rsiVal !== null ? rsiVal.toFixed(1) : '-'} ${rsiStatus}</td>
+      <td style="padding:4px 12px;border:1px solid #eee;"><b>⚡ MACD</b></td>
+      <td style="padding:4px 12px;border:1px solid #eee;">DIF ${lastMacd.toFixed(1)} / 信號線 ${lastSig.toFixed(1)} / 柱 ${lastHist.toFixed(1)} ${macdStatus}</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 12px;border:1px solid #eee;"><b>📊 今日成交量</b></td>
+      <td style="padding:4px 12px;border:1px solid #eee;">${last.vol.toLocaleString()} 張 ${volRatio > 1.5 ? '🔥放量' : volRatio > 1.0 ? '正常' : '量縮'}</td>
+      <td style="padding:4px 12px;border:1px solid #eee;"><b>🔍 趨勢</b></td>
+      <td style="padding:4px 12px;border:1px solid #eee;">${trendDir} ${ma60Div !== null ? (last.c > ma60 ? '｜在季線上' : '｜在季線下') : ''}</td>
+    </tr>
+  </table>`;
+  
+  document.getElementById('analysisSummary').innerHTML = html;
+  document.getElementById('analysisText').style.display = 'block';
 }
 
 function renderMainChart(data) {
