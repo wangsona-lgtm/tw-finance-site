@@ -113,7 +113,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
     <div class="card"><h3>成交張數（萬）</h3><div class="value" id="idx4">-</div><div class="sub">今日累計</div></div>
   </div>
   <div class="grid grid-2 mt-16">
-    <div class="card chart-card"><h3>大盤走勢</h3><div class="chart-container"><canvas id="indexChart"></canvas></div><div class="rsi-container"><canvas id="rsiChart"></canvas></div></div>
+    <div class="card chart-card"><h3>大盤走勢</h3><div class="chart-container"><canvas id="indexChart"></canvas></div><div class="rsi-container"><canvas id="rsiChart" style="height:80px;"></canvas></div><div class="rsi-container" style="height:80px;border-top:none;padding-top:0;"><canvas id="kdChart"></canvas></div></div>
     <div class="card">
       <h3>成交量前 20 名</h3>
       <div id="top20List" class="scroll-x" style="max-height:320px;overflow-y:auto;"></div>
@@ -490,6 +490,39 @@ async function loadOverview() {
         return rsi;
       }
 
+      // ===== Stochastic KD(9,3,3) =====
+      function calcKD(data, kPeriod, dPeriod) {
+        const kValues = [];
+        const dValues = [];
+        for (let i = 0; i < data.length; i++) {
+          if (i < 8) { kValues.push(null); dValues.push(null); continue; }
+          let high9 = -Infinity, low9 = Infinity;
+          for (let j = 0; j < 9; j++) {
+            const idx = i - j;
+            if (idx >= 0) {
+              const h = candles[idx].h;
+              const l = candles[idx].l;
+              if (h > high9) high9 = h;
+              if (l < low9) low9 = l;
+            }
+          }
+          const close = data[i];
+          const rsv = (high9 === low9) ? 50 : ((close - low9) / (high9 - low9)) * 100;
+          if (i === 8) {
+            kValues.push(50);
+            dValues.push(50);
+          } else if (i > 8) {
+            const prevK = kValues[kValues.length - 1];
+            const k = (2/3) * prevK + (1/3) * rsv;
+            kValues.push(k);
+            const prevD = dValues[dValues.length - 1];
+            const d = (2/3) * prevD + (1/3) * k;
+            dValues.push(d);
+          }
+        }
+        return { kValues, dValues };
+      }
+
       const rsiValues = calcRSI(closes, 14);
       const rsiTimestamps = candles.map(c => c.x);
       const rsiData = rsiTimestamps.map((t, i) => ({
@@ -561,10 +594,94 @@ async function loadOverview() {
       });
       } catch(_) { console.warn('RSI chart error:', _); }
 
+      // ===== Stochastic KD(9,3,3) 圖表 =====
+      try {
+        const kdResult = calcKD(closes, 9, 3);
+        const kdTimestamps = candles.map(c => c.x);
+        const kData = kdTimestamps.map((t, i) => ({
+          x: t, y: kdResult.kValues[i] !== null ? kdResult.kValues[i] : undefined
+        }));
+        const dData = kdTimestamps.map((t, i) => ({
+          x: t, y: kdResult.dValues[i] !== null ? kdResult.dValues[i] : undefined
+        }));
+
+        const kdCtx = document.getElementById('kdChart').getContext('2d');
+        if (window.kdChart && typeof window.kdChart.destroy === 'function') window.kdChart.destroy();
+
+        window.kdChart = new Chart(kdCtx, {
+          type: 'line',
+          data: {
+            datasets: [
+              {
+                label: 'K值(9)',
+                data: kData,
+                borderColor: '#e67e22',
+                borderWidth: 2,
+                pointRadius: 0,
+                fill: false
+              },
+              {
+                label: 'D值(3)',
+                data: dData,
+                borderColor: '#3498db',
+                borderWidth: 2,
+                pointRadius: 0,
+                fill: false
+              }
+            ]
+          },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: {
+              legend: { labels: { color:'#868e96', font:{size:10} } },
+              tooltip: {
+                callbacks: {
+                  title: items => {
+                    if (!items.length) return '';
+                    const d = new Date(items[0].parsed.x);
+                    return d.toLocaleTimeString('zh-TW', {hour:'2-digit',minute:'2-digit'});
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                type: 'linear',
+                ticks: {
+                  color: '#868e96', maxRotation: 0, font:{size:9},
+                  callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
+                },
+                grid: { color: 'rgba(0,0,0,0.06)' }
+              },
+              y: {
+                min: 0, max: 100,
+                ticks: {
+                  color: '#868e96', font:{size:9},
+                  callback: v => {
+                    if (v === 20) return '20 超賣';
+                    if (v === 80) return '80 超買';
+                    return v === 50 ? '50' : '';
+                  }
+                },
+                grid: {
+                  color: ctx => {
+                    const v = ctx.tick.value;
+                    if (v === 20 || v === 80) return 'rgba(220,53,69,0.4)';
+                    if (v === 50) return 'rgba(0,0,0,0.12)';
+                    return 'rgba(0,0,0,0.06)';
+                  }
+                }
+              }
+            }
+          }
+        });
+      } catch(_) { console.warn('KD chart error:', _); }
+
     } catch(e) {
       console.warn('K線讀取失敗，改用折線圖', e);
       try { if (indexChart && typeof indexChart.destroy === 'function') indexChart.destroy(); } catch(_){}
       try { if (window.rsiChart && typeof window.rsiChart.destroy === 'function') window.rsiChart.destroy(); } catch(_){}
+      try { if (window.kdChart && typeof window.kdChart.destroy === 'function') window.kdChart.destroy(); } catch(_){}
       indexChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -820,7 +937,8 @@ async function safeInit() {
   try { await init(); } catch(e) { console.warn('safeInit error:', e); }
   _busy = false;
   // 紀錄上次成功時間，5 分鐘後再跑
-  setTimeout(safeInit, 300000);
+  // 每 30 分鐘自動更新
+  setTimeout(safeInit, 1800000);
 }
 safeInit();
 </script>
