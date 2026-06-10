@@ -135,7 +135,7 @@ async function loadStock() {
   const code = document.getElementById('stockInput').value.trim();
   if (!code || code.length < 4) { alert('請輸入股票代碼（如 2330）'); return; }
   console.log('🔍 Loading stock:', code);
-  document.getElementById('statusMsg').innerHTML = '🔄 載入中...<br><span style="font-size:12px;color:var(--text2);'>正在從 TWSE 抓取資料，請稍候</span>';
+  document.getElementById('statusMsg').innerHTML = "🔄 載入中...<br><span style='font-size:12px;color:var(--text2);'>正在從 TWSE 抓取資料，請稍候</span>";
   document.getElementById('analysis').style.display = 'none';
   document.getElementById('stockInfo').style.display = 'none';
   
@@ -704,7 +704,6 @@ async function loadInstitutional(code) {
   document.getElementById('instLoader').style.display = 'none';
 }
 
-<script>
 // Auto-load from URL params
 const params = new URLSearchParams(window.location.search);
 const code = params.get('code');
