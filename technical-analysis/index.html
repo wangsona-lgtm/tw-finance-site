@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>技術分析圖庫 — 王美智</title>
+<style>
+:root {
+  --bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --text: #1a1a2e;
+  --muted: #6c757d;
+  --accent: #2563eb;
+  --border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+.topnav {
+  background: var(--card-bg); border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px; height: 52px;
+}
+.nav-brand { font-weight: 700; color: var(--accent); text-decoration: none; font-size: 15px; }
+.nav-links { display: flex; gap: 6px; }
+.nav-links a {
+  padding: 6px 14px; border-radius: 6px; font-size: 14px;
+  color: var(--muted); text-decoration: none; transition: .15s;
+}
+.nav-links a:hover { background: #f1f5f9; color: var(--text); }
+.nav-links a.active { background: #dbeafe; color: var(--accent); font-weight: 600; }
+
+.hero {
+  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  color: #fff; padding: 40px 20px 30px; text-align: center;
+}
+.hero h1 { font-size: 26px; margin-bottom: 4px; }
+.hero .subtitle { font-size: 14px; opacity: .85; }
+.hero-stats { font-size: 13px; opacity: .8; margin-top: 8px; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 20px; }
+
+.chart-list { display: flex; flex-direction: column; gap: 16px; }
+
+.chart-card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 10px; overflow: hidden; transition: .15s;
+}
+.chart-card:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(37,99,235,.1); }
+
+.chart-card .chart-img {
+  width: 100%; display: block; cursor: pointer;
+  border-bottom: 1px solid var(--border);
+}
+
+.chart-card .chart-info {
+  padding: 14px 18px;
+}
+.chart-card .chart-meta {
+  display: flex; gap: 8px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-bottom: 4px;
+}
+.chart-card .chart-meta .stock-badge {
+  font-weight: 700; color: var(--accent);
+}
+.chart-card .chart-meta .tag {
+  padding: 1px 8px; border-radius: 8px; background: #f1f5f9;
+}
+.chart-card .chart-meta .tag.bull { background: #dcfce7; color: #166534; }
+.chart-card h3 { font-size: 16px; margin-bottom: 4px; }
+.chart-card p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+/* Modal */
+.modal {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.7);
+  z-index: 200; padding: 20px; overflow-y: auto; cursor: zoom-out;
+}
+.modal.open { display: flex; align-items: center; justify-content: center; }
+.modal img { max-width: 100%; max-height: 95vh; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,.3); }
+
+footer { text-align: center; padding: 30px 20px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); margin-top: 40px; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 20px; }
+  .nav-links a { font-size: 12px; padding: 4px 10px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">🏠 王美智</a>
+    <div class="nav-links">
+      <a href="../dashboard/">儀表板</a>
+      <a href="../stock-viewer/">技術分析</a>
+      <a href="../report.html">報告</a>
+      <a href="../papers/">論文庫</a>
+      <a href="index.html" class="active">📈 技術圖</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1>📈 技術分析圖庫</h1>
+  <p class="subtitle">來自 @sona1115_bot (wang) 的個股技術分析圖</p>
+  <div class="hero-stats" id="heroStats">載入中...</div>
+</header>
+
+<main class="container">
+  <div id="chartList" class="chart-list"></div>
+</main>
+
+<div id="imgModal" class="modal" onclick="this.classList.remove('open')">
+  <img id="modalImg" src="" alt="放大圖">
+</div>
+
+<footer>
+  王美智 · 技術分析圖庫 · 來源：@sona1115_bot (wang)
+</footer>
+
+<script>
+async function loadCharts() {
+  try {
+    const res = await fetch('list.json?_=' + Date.now());
+    const charts = await res.json();
+    document.getElementById('heroStats').textContent = `${charts.length} 張圖表`;
+    
+    const list = document.getElementById('chartList');
+    list.innerHTML = charts.map(c => `
+      <div class="chart-card">
+        <img class="chart-img" src="${c.chart_file}" alt="${c.stock} 技術分析"
+             onclick="document.getElementById('imgModal').classList.add('open'); document.getElementById('modalImg').src='${c.chart_file}'">
+        <div class="chart-info">
+          <div class="chart-meta">
+            <span class="stock-badge">${c.stock}</span>
+            <span>${c.date}</span>
+            <span>${c.pattern}</span>
+            <span class="tag bull">${c.bias}</span>
+            <span>評分 ${c.score}</span>
+            <span>收盤 $${c.price}</span>
+          </div>
+          <h3>${c.name}</h3>
+          <p>${c.notes || ''}</p>
+        </div>
+      </div>
+    `).join('');
+  } catch(e) {
+    document.getElementById('heroStats').textContent = '⚠️ 載入失敗';
+  }
+}
+document.addEventListener('DOMContentLoaded', loadCharts);
+</script>
+</body>
+</html>
