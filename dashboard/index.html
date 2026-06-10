@@ -927,7 +927,7 @@ async function init() {
   ]);
   
   document.getElementById('updateTime').textContent = '更新: ' + new Date().toLocaleString('zh-TW', {timeZone:'Asia/Taipei'});
-  document.getElementById('verInfo').textContent = 'v3 · ' + new Date().toISOString().slice(0,16).replace('T',' ');
+  document.getElementById('verInfo').textContent = 'v3-kd | ' + new Date().toISOString().slice(0,16).replace('T',' ');
 }
 
 // 避免併發 race condition：等前一次跑完再排下一次
