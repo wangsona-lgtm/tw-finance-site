@@ -84,7 +84,7 @@ body { font-family: 'Segoe UI', -apple-system, sans-serif; background:var(--bg);
       </div>
     </div>
     <div class="card">
-      <h3>🧩 籌碼分布</h3>
+      <h3>🧩 法人成交佔比（T86）</h3>
       <div class="pie-container">
         <div style="width:200px;height:200px;"><canvas id="ownershipChart"></canvas></div>
         <div id="ownershipLegend" class="pie-legend"></div>
@@ -605,49 +605,40 @@ function renderRSI(data) {
 }
 
 function renderOwnership(data, last) {
-  // 籌碼分布 - use institutional ownership ratio from available data
-  // Estimate from price range and volume patterns (simplified)
-  // Actual source would be TWSE 集保戶股權分散表, but we'll use a reasonable estimate
   const ctx = document.getElementById('ownershipChart');
   if (window._ownChart) window._ownChart.destroy();
+  const ownEl = document.getElementById('ownershipLegend');
   
-  // Use volume-weighted analysis to estimate institutional activity
-  // Higher conviction moves suggest institutional involvement
-  const recent = data.slice(-20);
-  if (recent.length < 10) {
-    document.getElementById('ownershipLegend').innerHTML = '<span style="color:var(--text2)">資料不足</span>';
-    return;
+  // Use real T86 data if available
+  const id = window._instTradingData;
+  if (id && (id.foreignBuy + id.foreignSell + id.trustBuy + id.trustSell + id.dealerBuy + id.dealerSell) > 0) {
+    const totalInstVol = id.foreignBuy + id.foreignSell + id.trustBuy + id.trustSell + id.dealerBuy + id.dealerSell;
+    const totalVol = last.vol * 2; // total market both sides
+    if (totalVol > 0) {
+      const foreignPct = (id.foreignBuy + id.foreignSell) / totalVol;
+      const trustPct = (id.trustBuy + id.trustSell) / totalVol;
+      const dealerPct = (id.dealerBuy + id.dealerSell) / totalVol;
+      const retailPct = Math.max(0, 1 - foreignPct - trustPct - dealerPct);
+      const labels = ['外資', '投信', '自營商', '散戶'];
+      const values = [foreignPct, trustPct, dealerPct, retailPct];
+      const colors = ['#007bff', '#28a745', '#ffc107', '#6c757d'];
+      
+      window._ownChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: { labels, datasets: [{ data: values, backgroundColor: colors, borderWidth: 0 }] },
+        options: {
+          responsive: true, maintainAspectRatio: true,
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.label}: ${(c.parsed * 100).toFixed(2)}%` } } }
+        }
+      });
+      
+      ownEl.innerHTML = values.map((v,i) => `<div><span class="dot" style="background:${colors[i]}"></span> ${labels[i]} ${(v*100).toFixed(2)}%</div>`).join('') +
+        '<div style="font-size:11px;color:var(--text2);margin-top:8px;">📡 當日法人成交佔比（TWSE T86）</div>';
+      return;
+    }
   }
   
-  // Estimate: large volume days + price correlation = institutional activity
-  const avgVol = recent.reduce((s,d) => s+d.vol, 0) / recent.length;
-  const instVol = recent.filter(d => d.vol > avgVol * 1.5 && Math.abs(d.c - d.o) / d.o > 0.02)
-    .reduce((s,d) => s + d.vol, 0);
-  const totalVol = recent.reduce((s,d) => s + d.vol, 0);
-  const instRatio = totalVol > 0 ? Math.min(instVol / totalVol, 0.5) + 0.10 : 0.35; // 10-50% institutional
-  const retailRatio = 1 - instRatio;
-  
-  window._ownChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      labels: ['法人', '散戶'],
-      datasets: [{
-        data: [instRatio, retailRatio],
-        backgroundColor: ['#007bff', '#6c757d'],
-        borderWidth: 0
-      }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: true,
-      plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.label}: ${(ctx.parsed * 100).toFixed(2)}%` } } }
-    }
-  });
-  
-  document.getElementById('ownershipLegend').innerHTML = `
-    <div><span class="dot" style="background:#007bff"></span> 法人 ${(instRatio*100).toFixed(2)}%</div>
-    <div><span class="dot" style="background:#6c757d"></span> 散戶 ${(retailRatio*100).toFixed(2)}%</div>
-    <div style="font-size:11px;color:var(--text2);margin-top:8px;">📌 估算值（依近20日量價）</div>
-  `;
+  ownEl.innerHTML = '<span style="color:var(--text2)">📡 三大法人資料更新中…</span>';
 }
 
 async function loadInstitutional(code) {
@@ -659,19 +650,35 @@ async function loadInstitutional(code) {
     const y = now.getFullYear(); const m = String(now.getMonth()+1).padStart(2,'0'); const d = String(now.getDate()).padStart(2,'0');
     
     // Try to get T86 data for individual stock institutional trading
-    const data = await fetchTWSE(`https://www.twse.com.tw/fund/T86?response=json&date=${y}${m}${d}&stockNo=${code}`);
+    const data = await fetchTWSE(`https://www.twse.com.tw/fund/T86?response=json&date=${y}${m}${d}&selectType=ALL`);
     
     if (data.data && data.data.length > 0) {
       let html = `<table class="inst-table">
         <tr><th>日期</th><th>外資買超</th><th>投信買超</th><th>自營商買超</th><th>合計</th></tr>`;
       
-      for (const row of data.data.slice(-20)) {
-        // T86 format: [date, foreignBuy, foreignSell, foreignNet, trustBuy, trustSell, trustNet, dealerBuy, dealerSell, dealerNet, totalNet]
-        const date = row[0];
-        const foreignNet = parseInt(row[3]?.replace(/,/g,'') || 0);
-        const trustNet = parseInt(row[6]?.replace(/,/g,'') || 0);
-        const dealerNet = parseInt(row[9]?.replace(/,/g,'') || 0);
-        const totalNet = parseInt(row[10]?.replace(/,/g,'') || 0);
+      // Filter T86 data to our stock only
+      const matching = data.data.filter(r => r[0] && r[0].trim() === code);
+      
+      // Save institutional trading data for ownership chart
+      if (matching.length > 0) {
+        const r = matching[0];
+        window._instTradingData = {
+          foreignBuy: parseInt((r[2]||'').replace(/,/g,'') || 0),
+          foreignSell: parseInt((r[3]||'').replace(/,/g,'') || 0),
+          trustBuy: parseInt((r[8]||'').replace(/,/g,'') || 0),
+          trustSell: parseInt((r[9]||'').replace(/,/g,'') || 0),
+          dealerBuy: parseInt((r[12]||'').replace(/,/g,'') || 0) + parseInt((r[15]||'').replace(/,/g,'') || 0),
+          dealerSell: parseInt((r[13]||'').replace(/,/g,'') || 0) + parseInt((r[16]||'').replace(/,/g,'') || 0),
+        };
+      }
+      
+      for (const row of matching) {
+        // T86 real cols: [0=code,1=name,2=foreignBuy,3=foreignSell,4=foreignNet, 8=trustBuy,9=trustSell,10=trustNet, 12=dealerSelfBuy,13=dealerSelfSell,14=dealerSelfNet, 15=dealerHedgeBuy,16=dealerHedgeSell,17=dealerHedgeNet, 18=grandTotal]
+        const date = row[1]; // stock name as date label
+        const foreignNet = parseInt(row[4]?.replace(/,/g,'') || 0);
+        const trustNet = parseInt(row[10]?.replace(/,/g,'') || 0);
+        const dealerNet = (parseInt(row[14]?.replace(/,/g,'') || 0) + parseInt(row[17]?.replace(/,/g,'') || 0));
+        const totalNet = parseInt(row[18]?.replace(/,/g,'') || 0);
         
         const cls = (v) => v > 0 ? 'positive' : v < 0 ? 'negative' : '';
         html += `<tr>
@@ -691,6 +698,8 @@ async function loadInstitutional(code) {
     document.getElementById('instTable').innerHTML = `<p style="color:var(--text2)">⚠️ 無法取得三大法人資料: ${e.message}</p>`;
   }
   document.getElementById('instLoader').style.display = 'none';
+  // Re-render ownership chart with real T86 data
+  try { renderOwnership(window.allData, window.allData[window.allData.length-1]); } catch(_) {}
 }
 
 // Auto-load from URL params
