@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台股盤後分析</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg: #0f0f1a;
+  --surface: #1a1a2e;
+  --surface2: #16213e;
+  --accent: #ff6b6b;
+  --accent2: #0f3460;
+  --hover: #252545;
+  --red: #ff4757;
+  --green: #2ed573;
+  --yellow: #ffc312;
+  --text: #e0e0e0;
+  --text2: #8888aa;
+  --text3: #555577;
+  --border: #2a2a4a;
+  --sidebar-w: 260px;
+}
+html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); overflow:hidden; }
+.wrapper { display:flex; height:100vh; }
+
+.sidebar {
+  width:var(--sidebar-w); min-width:var(--sidebar-w);
+  background:var(--surface); border-right:1px solid var(--border);
+  display:flex; flex-direction:column; overflow:hidden;
+}
+.sidebar-header {
+  padding:16px; border-bottom:1px solid var(--border);
+}
+.sidebar-header h2 { font-size:15px; font-weight:700; color:var(--accent); }
+.sidebar-header .sub { font-size:11px; color:var(--text3); margin-top:2px; }
+.sidebar-header .nav-link {
+  display:inline-block; margin-top:8px; font-size:12px; color:var(--text2);
+  text-decoration:none; padding:3px 10px; border:1px solid var(--border);
+  border-radius:6px; transition:all .2s;
+}
+.sidebar-header .nav-link:hover { color:var(--accent); border-color:var(--accent); }
+.sidebar-list { flex:1; overflow-y:auto; padding:8px; }
+
+.post-item {
+  display:flex; align-items:center; gap:10px;
+  padding:10px 12px; border-radius:8px;
+  cursor:pointer; transition:all .15s;
+  border:1px solid transparent; margin-bottom:4px;
+}
+.post-item:hover { background:var(--hover); }
+.post-item.active { background:var(--surface2); border-color:var(--accent); }
+.post-item .icon {
+  width:32px; height:32px; border-radius:6px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:14px; flex-shrink:0; background:rgba(255,107,107,.15); color:var(--accent); }
+.post-item .info { flex:1; min-width:0; }
+.post-item .date { font-size:13px; font-weight:500; }
+.post-item .day { font-size:11px; color:var(--text3); margin-left:4px; }
+.post-item .desc { font-size:11px; color:var(--text2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-top:2px; }
+
+.content { flex:1; overflow-y:auto; }
+.content-inner { max-width: 780px; margin:0 auto; padding:32px 24px 80px; }
+
+/* ═══ Post-market Section Card ═══ */
+.section-card {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:14px; padding:24px; margin-bottom:16px;
+}
+.section-card .section-title {
+  font-size:15px; font-weight:600; margin-bottom:14px;
+  padding-bottom:8px; border-bottom:1px solid var(--border);
+  color:var(--accent);
+}
+.section-card .section-content {
+  font-size:14px; line-height:1.9; color:var(--text);
+}
+.section-card .section-content p { margin-bottom:10px; }
+
+.highlight-box {
+  background:rgba(255,107,107,.08);
+  border-left:3px solid var(--accent);
+  padding:12px 16px; margin:12px 0; border-radius:0 6px 6px 0;
+  font-size:13px; line-height:1.7;
+}
+
+.empty-state { text-align:center; padding:80px 20px; color:var(--text3); }
+.empty-state .icon { font-size:48px; margin-bottom:16px; }
+.empty-state .text { font-size:16px; }
+
+.text-red { color:var(--red); }
+.text-green { color:var(--green); }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <div>
+        <h2>🔍 盤後分析</h2>
+        <div class="sub">每日收盤解讀 + 推薦檢討</div>
+        <a class="nav-link" href="../dashboard/">📊 儀表板</a>
+        <a class="nav-link" href="../daily-reports.html">📋 日報</a>
+        <a class="nav-link" href="../expert-viewer/">🎙️ 專家</a>
+        <a class="nav-link" href="../closing-viewer/">📉 收盤</a>
+      </div>
+    </div>
+    <div class="sidebar-list" id="sidebarList"></div>
+  </nav>
+
+  <main class="content">
+    <div class="content-inner" id="mainContent">
+      <div class="empty-state">
+        <div class="icon">🔍</div>
+        <div class="text">選擇日期查看盤後分析</div>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+<script>
+const POST_PREFIX = '../postmarket/';
+
+async function loadPostList() {
+  const res = await fetch(POST_PREFIX + 'list.json?_t=' + Date.now());
+  return await res.json();
+}
+
+async function loadPost(date) {
+  const res = await fetch(POST_PREFIX + date + '.json?_t=' + Date.now());
+  return await res.json();
+}
+
+function renderSidebar(list, activeDate) {
+  document.getElementById('sidebarList').innerHTML = list.map(item => {
+    const active = item.date === activeDate ? ' active' : '';
+    return `<div class="post-item${active}" onclick="selectPost('${item.date}')">
+      <div class="icon">🔍</div>
+      <div class="info">
+        <div class="date">${item.date} <span class="day">週${item.dayOfWeek}</span></div>
+        <div class="desc">${item.title || ''}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function selectPost(date) {
+  window.location.hash = date;
+  const data = await loadPost(date);
+  const list = await loadPostList();
+  renderSidebar(list, date);
+  renderPost(data);
+}
+
+function renderPost(data) {
+  const el = document.getElementById('mainContent');
+  let html = '';
+
+  html += `<div style="font-size:12px;color:var(--text3);margin-bottom:12px;">📅 ${data.date} · ${data.source || '盤後分析'}</div>`;
+
+  if (data.sections) {
+    data.sections.forEach(sec => {
+      html += `<div class="section-card">
+        <div class="section-title">${sec.icon || '📌'} ${sec.title}</div>
+        <div class="section-content">`;
+
+      const content = sec.content || '';
+      const lines = content.split('\n');
+      lines.forEach(line => {
+        line = line.trim();
+        if (!line) return;
+        if (line.includes('關鍵觀察') || line.includes('下跌主因') || line.includes('盤面特徵')) {
+          html += `<div class="highlight-box">${line}</div>`;
+        } else {
+          html += `<p>${line}</p>`;
+        }
+      });
+
+      html += `</div></div>`;
+    });
+  }
+
+  el.innerHTML = html;
+}
+
+(async function() {
+  try {
+    const list = await loadPostList();
+    renderSidebar(list, null);
+    const hash = window.location.hash.replace('#','');
+    if (hash) {
+      await selectPost(hash);
+    } else if (list.length > 0) {
+      await selectPost(list[0].date);
+    }
+  } catch(e) {
+    document.getElementById('mainContent').innerHTML =
+      `<div class="empty-state"><div class="icon">⚠️</div><div class="text">${e.message}</div></div>`;
+  }
+})();
+</script>
+
+</body>
+</html>
