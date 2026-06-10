@@ -3,52 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>台股收盤速報</title>
+<title>收盤行情 · 每日盤後</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; }
 :root {
-  --bg: #0f0f1a;
-  --surface: #1a1a2e;
-  --surface2: #16213e;
-  --accent: #00d4aa;
-  --accent2: #0f3460;
-  --hover: #252545;
-  --red: #ff4757;
-  --green: #2ed573;
-  --yellow: #ffc312;
-  --text: #e0e0e0;
-  --text2: #8888aa;
-  --text3: #555577;
-  --border: #2a2a4a;
+  --bg: #f5f0e8;
+  --surface: #ffffff;
+  --surface2: #fafaf5;
+  --text: #1a1714;
+  --text2: #6b5f55;
+  --text3: #a09888;
+  --accent: #1B365D;
+  --accent2: #8B0000;
+  --border: #d4c9b8;
+  --hover: #f0ebe3;
+  --red: #dc2626;
+  --green: #16a34a;
   --sidebar-w: 260px;
 }
 html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); overflow:hidden; }
 .wrapper { display:flex; height:100vh; }
 
-/* ═══ Sidebar ═══ */
+/* Top Nav */
+.topnav {
+  background:var(--surface); border-bottom:1px solid var(--border);
+  position:sticky; top:0; z-index:100;
+}
+.nav-inner {
+  max-width:1200px; margin:0 auto;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 20px; height:48px;
+}
+.nav-brand { font-weight:700; color:var(--accent); text-decoration:none; font-size:14px; }
+.nav-links { display:flex; gap:4px; }
+.nav-links a {
+  padding:5px 12px; border-radius:6px; font-size:13px;
+  color:var(--text2); text-decoration:none; transition:.15s;
+}
+.nav-links a:hover { background:var(--hover); color:var(--text); }
+.nav-links a.active { background:rgba(27,54,93,.1); color:var(--accent); font-weight:600; }
+
+/* Sidebar */
 .sidebar {
   width:var(--sidebar-w); min-width:var(--sidebar-w);
   background:var(--surface); border-right:1px solid var(--border);
   display:flex; flex-direction:column; overflow:hidden;
 }
-.sidebar-header {
-  padding:16px; border-bottom:1px solid var(--border);
-}
+.sidebar-header { padding:16px; border-bottom:1px solid var(--border); }
 .sidebar-header h2 { font-size:15px; font-weight:700; color:var(--accent); }
 .sidebar-header .sub { font-size:11px; color:var(--text3); margin-top:2px; }
-.sidebar-header .nav-link {
-  display:inline-block; margin-top:8px; font-size:12px; color:var(--text2);
-  text-decoration:none; padding:3px 10px; border:1px solid var(--border);
-  border-radius:6px; transition:all .2s;
-}
-.sidebar-header .nav-link:hover { color:var(--accent); border-color:var(--accent); }
 .sidebar-list { flex:1; overflow-y:auto; padding:8px; }
 
 .closing-item {
   display:flex; align-items:center; gap:10px;
-  padding:10px 12px; border-radius:8px;
-  cursor:pointer; transition:all .15s;
+  padding:10px 12px; border-radius:8px; cursor:pointer; transition:all .15s;
   border:1px solid transparent; margin-bottom:4px;
 }
 .closing-item:hover { background:var(--hover); }
@@ -56,251 +65,125 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
 .closing-item .icon {
   width:32px; height:32px; border-radius:6px;
   display:flex; align-items:center; justify-content:center;
-  font-size:14px; flex-shrink:0; background:rgba(255,71,87,.15); color:var(--red); }
+  font-size:14px; flex-shrink:0; background:rgba(220,38,38,.08); color:var(--red); }
 .closing-item .info { flex:1; min-width:0; }
 .closing-item .date { font-size:13px; font-weight:500; }
 .closing-item .day { font-size:11px; color:var(--text3); margin-left:4px; }
-.closing-item .desc { font-size:11px; color:var(--text2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-top:2px; }
 
-/* ═══ Main Content ═══ */
+/* Content */
 .content { flex:1; overflow-y:auto; }
-.content-inner { max-width: 860px; margin:0 auto; padding:32px 24px 80px; }
+.content-inner { max-width:800px; margin:0 auto; padding:20px 20px 80px; }
 
-/* ═══ Index Card ═══ */
-.index-card {
-  background:linear-gradient(135deg,var(--surface2),var(--surface));
-  border:1px solid var(--border); border-radius:16px;
-  padding:28px; margin-bottom:24px;
-}
-.index-card .label { font-size:12px; color:var(--text3); margin-bottom:4px; letter-spacing:1px; }
-.index-card .price { font-size:48px; font-weight:700; letter-spacing:-1px; }
-.index-card .price.down { color:var(--red); }
-.index-card .price.up { color:var(--green); }
-.index-card .change { font-size:18px; margin-top:4px; }
-.index-card .details {
-  display:flex; gap:24px; margin-top:20px; flex-wrap:wrap;
-  border-top:1px solid var(--border); padding-top:16px;
-}
-.index-card .detail-item { text-align:center; }
-.index-card .detail-item .val { font-size:16px; font-weight:500; }
-.index-card .detail-item .lbl { font-size:11px; color:var(--text3); margin-top:2px; }
-.index-card .feature {
-  margin-top:16px; padding:12px 16px;
-  background:rgba(255,71,87,.08); border-left:3px solid var(--red);
-  border-radius:6px; font-size:13px; color:var(--text2);
-}
-.index-card .feature.up { background:rgba(46,213,115,.08); border-left-color:var(--green); }
+/* Cards */
+.card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:20px; margin-bottom:16px; }
+.card h3 { font-size:15px; font-weight:600; color:var(--accent); margin-bottom:8px; }
 
-/* ═══ Stocks Table ═══ */
-.section-title { font-size:14px; font-weight:500; color:var(--text2); margin:28px 0 12px; letter-spacing:1px; }
-.stocks-table { width:100%; border-collapse:collapse; border-radius:12px; overflow:hidden; }
-.stocks-table th {
-  text-align:left; padding:10px 14px; font-size:11px; font-weight:500;
-  color:var(--text3); background:var(--surface); border-bottom:1px solid var(--border);
-  letter-spacing:1px;
-}
-.stocks-table td {
-  padding:12px 14px; font-size:14px; border-bottom:1px solid var(--border);
-}
-.stocks-table tr:last-child td { border-bottom:none; }
+.index-row { display:flex; gap:16px; flex-wrap:wrap; }
+.index-item { flex:1; min-width:120px; text-align:center; padding:12px; background:var(--surface2); border-radius:8px; }
+.index-item .label { font-size:12px; color:var(--text3); }
+.index-item .value { font-size:20px; font-weight:700; }
+.index-item .value.up { color:var(--red); }
+.index-item .value.down { color:var(--green); }
+.index-item .change { font-size:12px; }
+
+.stocks-table { width:100%; border-collapse:collapse; font-size:13px; }
+.stocks-table th { text-align:left; padding:8px 6px; font-size:12px; color:var(--text3); border-bottom:1px solid var(--border); }
+.stocks-table td { padding:6px; border-bottom:1px solid var(--border); }
 .stocks-table tr:hover td { background:var(--hover); }
-.stocks-table .code { color:var(--text3); font-size:12px; }
-.stocks-table .name { font-weight:500; }
-.stocks-table .price { font-weight:700; }
-.stocks-table .down { color:var(--red); }
-.stocks-table .up { color:var(--green); }
-.stocks-table .change-bar {
-  display:inline-block; height:4px; border-radius:2px; margin-left:8px;
-}
-.stocks-table .change-bar.down { background:var(--red); }
-.stocks-table .change-bar.up { background:var(--green); }
-.stocks-table .change-cell { display:flex; align-items:center; gap:4px; }
+.stocks-table .up { color:var(--red); }
+.stocks-table .down { color:var(--green); }
 
-/* ═══ FX Card ═══ */
-.fx-card {
-  background:var(--surface); border:1px solid var(--border);
-  border-radius:12px; padding:20px; margin-top:12px;
-}
-.fx-card .fx-row { display:flex; align-items:center; gap:24px; }
-.fx-card .fx-pair { font-size:12px; color:var(--text3); letter-spacing:1px; }
-.fx-card .fx-rate { font-size:28px; font-weight:700; }
-.fx-card .fx-change { font-size:14px; }
-.fx-card .fx-change.dep { color:var(--red); }
-.fx-card .fx-change.app { color:var(--green); }
+.empty-state { text-align:center; padding:80px 20px; color:var(--text3); }
+.empty-state .icon { font-size:48px; margin-bottom:12px; }
 
-/* ═══ Status Badge ═══ */
-.status-badge {
-  display:inline-block; padding:2px 10px; border-radius:12px;
-  font-size:11px; font-weight:500; margin-left:8px;
-  background:rgba(46,213,115,.15); color:var(--green);
+@media(max-width:700px) {
+  .sidebar { display:none; }
+  .nav-links a { font-size:11px; padding:4px 8px; }
 }
-
-/* ═══ Utility ═══ */
-.text-red { color:var(--red); }
-.text-green { color:var(--green); }
 </style>
 </head>
 <body>
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">🏠 王美智</a>
+    <div class="nav-links">
+      <a href="../dashboard/">📊 儀表板</a>
+      <a href="../stock-viewer/">🔬 個股分析</a>
+      <a href="../expert-viewer/">🎙️ 盤前行情</a>
+      <a href="index.html" class="active">📉 收盤行情</a>
+      <a href="../papers/">📚 論文庫</a>
+    </div>
+  </div>
+</nav>
 
 <div class="wrapper">
-
-  <!-- ═══ Sidebar ═══ -->
-  <nav class="sidebar">
+  <div class="sidebar">
     <div class="sidebar-header">
-      <div>
-        <h2>📊 收盤速報</h2>
-        <div class="sub">結構化收盤數據</div>
-        <a class="nav-link" href="../dashboard/">📊 儀表板</a>
-        <a class="nav-link" href="../daily-reports.html">📋 晨報</a>
-        <a class="nav-link" href="../expert-viewer/">🎙️ 專家</a>
-        <a class="nav-link" href="../postmarket-viewer/">🔍 盤後</a>
-      </div>
+      <h2>📉 收盤行情</h2>
+      <div class="sub">每日盤後個股收盤</div>
     </div>
     <div class="sidebar-list" id="sidebarList"></div>
-  </nav>
+  </div>
 
-  <!-- ═══ Content ═══ -->
-  <main class="content">
-    <div class="content-inner" id="mainContent">
-      <div style="text-align:center;padding:80px 20px;color:var(--text3);">
-        <div style="font-size:48px;margin-bottom:16px;">📊</div>
-        <div style="font-size:16px;">選擇日期查看收盤數據</div>
-      </div>
+  <div class="content">
+    <div class="content-inner" id="contentArea">
+      <div class="empty-state"><div class="icon">📉</div><p>無收盤資料</p></div>
     </div>
-  </main>
-
+  </div>
 </div>
 
 <script>
-const CLOSING_PREFIX = '../closing/';
-
-// ═══ Load closing list ═══
-async function loadClosingList() {
-  const res = await fetch(CLOSING_PREFIX + 'list.json');
-  return await res.json();
+const DATA_URL = '../closing/list.json';
+async function init() {
+  try {
+    const res = await fetch(DATA_URL + '?_=' + Date.now());
+    const list = await res.json();
+    renderSidebar(list);
+    if (list.length > 0) loadItem(list[0]);
+  } catch(e) {
+    document.getElementById('sidebarList').innerHTML = '<div style="padding:12px;color:#a09888;font-size:13px;">⚠️ 載入失敗</div>';
+  }
 }
-
-// ═══ Load single closing ═══
-async function loadClosing(date) {
-  const res = await fetch(CLOSING_PREFIX + date + '.json');
-  return await res.json();
-}
-
-// ═══ Render sidebar ═══
-function renderSidebar(list, activeDate) {
-  const el = document.getElementById('sidebarList');
-  el.innerHTML = list.map(item => {
-    const isActive = item.date === activeDate;
-    return `<div class="closing-item${isActive ? ' active' : ''}" onclick="selectDate('${item.date}')">
+function renderSidebar(list) {
+  const days = ['日','一','二','三','四','五','六'];
+  document.getElementById('sidebarList').innerHTML = list.map(item => {
+    const d = new Date(item.date);
+    return `<div class="closing-item" onclick='loadItem(${JSON.stringify(item)})'>
       <div class="icon">📉</div>
-      <div class="info">
-        <div class="date">${item.date} <span class="day">週${item.dayOfWeek}</span></div>
-        <div class="desc">${item.title || ''}</div>
-      </div>
+      <div class="info"><div class="date">${item.date} <span class="day">週${days[d.getDay()]}</span></div></div>
     </div>`;
   }).join('');
 }
-
-// ═══ Select date ═══
-async function selectDate(date) {
-  window.location.hash = date;
-  const data = await loadClosing(date);
-  const list = await loadClosingList();
-  renderSidebar(list, date);
-  renderClosing(data);
-}
-
-// ═══ Render closing data ═══
-function renderClosing(data) {
-  const el = document.getElementById('mainContent');
-  const idx = data.index;
-  const isDown = idx.change < 0;
-  const changePct = idx.changePercent > 0 ? '+' + idx.changePercent : idx.changePercent;
-  const chgSign = idx.change > 0 ? '+' : '';
-  const intraPct = idx.intradayDrop ? (idx.intradayDrop > 0 ? '🔴 日內跌 ' + idx.intradayDrop + '%' : '🟢 日內漲 ' + Math.abs(idx.intradayDrop) + '%') : '';
-
-  // Status
-  const statusBadge = data.marketStatus === 'closed'
-    ? '<span class="status-badge">已收盤</span>'
-    : '<span class="status-badge" style="background:rgba(255,199,18,.15);color:var(--yellow);">盤中</span>';
-
-  // Index card
-  let html = `<div class="index-card">
-    <div class="label">${idx.name} ${statusBadge}</div>
-    <div class="price ${isDown ? 'down' : 'up'}">${idx.close.toLocaleString()}</div>
-    <div class="change ${isDown ? 'down' : 'up'}">${chgSign}${idx.change.toLocaleString()} (${changePct}%)</div>
-    <div class="details">
-      <div class="detail-item"><div class="val">${idx.open.toLocaleString()}</div><div class="lbl">開盤</div></div>
-      <div class="detail-item"><div class="val text-red">${idx.high.toLocaleString()}</div><div class="lbl">最高</div></div>
-      <div class="detail-item"><div class="val text-green">${idx.low.toLocaleString()}</div><div class="lbl">最低</div></div>
-      <div class="detail-item"><div class="val">${idx.prevClose.toLocaleString()}</div><div class="lbl">昨收</div></div>
-    </div>
-    ${idx.feature ? `<div class="feature">💡 ${idx.feature}</div>` : ''}
-  </div>`;
-
-  // Stocks table
-  if (data.stocks && data.stocks.length > 0) {
-    html += `<div class="section-title">📌 權值股收盤</div>
-    <table class="stocks-table">
-      <thead><tr>
-        <th>代號</th><th>名稱</th><th style="text-align:right;">收盤</th><th style="text-align:right;">漲跌</th><th style="text-align:right;">漲跌幅</th><th></th>
-      </tr></thead><tbody>`;
-    data.stocks.forEach(s => {
-      const sDown = s.change < 0;
-      const sSign = s.change > 0 ? '+' : '';
-      const barPct = Math.min(Math.abs(s.changePercent) / 10 * 100, 100);
-      html += `<tr>
-        <td class="code">${s.code}</td>
-        <td class="name">${s.name}</td>
-        <td class="price ${sDown ? 'down' : 'up'}" style="text-align:right;">${typeof s.close === 'number' ? s.close.toLocaleString() : s.close}</td>
-        <td class="${sDown ? 'down' : 'up'}" style="text-align:right;">${sSign}${s.change.toLocaleString()}</td>
-        <td style="text-align:right;">
-          <span class="change-cell">
-            ${sDown ? '🔴' : '🟢'} ${s.changePercent > 0 ? '+' : ''}${s.changePercent}%
-            <span class="change-bar ${sDown ? 'down' : 'up'}" style="width:${barPct}px;"></span>
-          </span>
-        </td>
-        <td></td>
-      </tr>`;
-    });
-    html += `</tbody></table>`;
-  }
-
-  // FX
-  if (data.fx) {
-    const fx = data.fx;
-    const fxDep = fx.direction && fx.direction.includes('貶');
-    html += `<div class="section-title">💱 匯率</div>
-    <div class="fx-card">
-      <div class="fx-row">
-        <div class="fx-pair">${fx.pair}</div>
-        <div class="fx-rate ${fxDep ? 'text-red' : 'text-green'}">${fx.rate}</div>
-        <div class="fx-change ${fxDep ? 'dep' : 'app'}">${fx.change > 0 ? '+' : ''}${fx.change} (${fx.changePercent > 0 ? '+' : ''}${fx.changePercent}%)</div>
-        <div style="font-size:13px;color:var(--text3);">${fx.direction || ''}</div>
-      </div>
-    </div>`;
-  }
-
-  el.innerHTML = html;
-}
-
-// ═══ Init ═══
-(async function() {
+async function loadItem(item) {
   try {
-    const list = await loadClosingList();
-    renderSidebar(list, null);
-    const hash = window.location.hash.replace('#','');
-    if (hash) {
-      selectDate(hash);
-    } else if (list.length > 0) {
-      selectDate(list[0].date);
-    }
+    const res = await fetch(`../closing/${item.date}.json?_=${Date.now()}`);
+    const data = await res.json();
+    renderContent(data);
   } catch(e) {
-    document.getElementById('mainContent').innerHTML =
-      `<div style="color:var(--red);padding:40px;text-align:center;">⚠️ ${e.message}</div>`;
+    document.getElementById('contentArea').innerHTML = '<div class="empty-state"><div class="icon">⚠️</div><p>載入失敗</p></div>';
   }
-})();
+}
+function renderContent(data) {
+  let html = '';
+  if (data.index) {
+    html += `<div class="card"><h3>📊 大盤指數</h3><div class="index-row">`;
+    Object.entries(data.index).forEach(([k,v]) => {
+      const cls = parseFloat(v.change) >= 0 ? 'up' : 'down';
+      html += `<div class="index-item"><div class="label">${k}</div><div class="value ${cls}">${v.price}</div><div class="change ${cls}">${v.change} (${v.changePct})</div></div>`;
+    });
+    html += `</div></div>`;
+  }
+  if (data.stocks) {
+    html += `<div class="card"><h3>📋 個股收盤</h3><table class="stocks-table"><thead><tr><th>代碼</th><th>名稱</th><th>收盤</th><th>漲跌</th><th>漲跌幅</th></tr></thead><tbody>`;
+    data.stocks.slice(0,30).forEach(s => {
+      const cls = parseFloat(s.change) >= 0 ? 'up' : 'down';
+      html += `<tr><td>${s.code}</td><td>${s.name}</td><td class="${cls}">${s.close}</td><td class="${cls}">${s.change}</td><td class="${cls}">${s.changePct}</td></tr>`;
+    });
+    html += `</tbody></table></div>`;
+  }
+  document.getElementById('contentArea').innerHTML = html || '<div class="empty-state"><div class="icon">📭</div><p>無資料</p></div>';
+}
+init();
 </script>
-
 </body>
 </html>
