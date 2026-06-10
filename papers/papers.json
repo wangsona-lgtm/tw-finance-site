@@ -1,6 +1,6 @@
 {
   "total": 78,
-  "updated": "2026-06-11 06:10:07",
+  "updated": "2026-06-11 06:15:02",
   "topics": [
     "AI/科技",
     "其他",
@@ -1497,26 +1497,50 @@
       "notes": []
     },
     {
-      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
-      "authors": "Sumba",
+      "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
+      "authors": "Huang, Liu & Yu",
       "year": "2026",
-      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
-      "doi": "10.1016/j.iref.2026.105445",
+      "journal": "Systems (MDPI), 14, 559",
+      "doi": "10.3390/systems14050559",
       "date": "2026-06-05",
       "tags": [],
       "topics": [
-        "潔淨能源",
-        "宏觀總體"
+        "碳市場/碳交易",
+        "綠債/ESG"
       ],
-      "pdf": "",
+      "pdf": "uploads/China_CETS_ESG_Construction.pdf",
       "notes": [
-        "動態面板門檻模型 (DPT)+ 工具變數",
-        "EKC 假說在發展中國家成立",
-        "再生能源可加速 EKC 轉折",
-        "制度品質調節 EKC 形狀和轉折點"
+        "方法：PSM-DID（傾向得分匹配+雙重差分）",
+        "CETS 使營造企業 ESG 分數提高約 0.30 分",
+        "綠色技術創新中介效果 5.9%（部分中介）",
+        "政府補貼正向調節政策效果",
+        "異質性：僅國有企業與東部地區顯著"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-8419"
+      "id": "upload-2026-06-05-9358"
+    },
+    {
+      "title": "Climate Policy Uncertainty and Renewable Energy Consumption in China",
+      "authors": "Zheng, Wang, Moldovan, Mihit & Nicolescu",
+      "year": "2026",
+      "journal": "Sustainability (MDPI), 18, 5460",
+      "doi": "10.3390/su18115460",
+      "date": "2026-06-05",
+      "tags": [
+        "QARDL"
+      ],
+      "topics": [
+        "氣候風險/政策",
+        "潔淨能源"
+      ],
+      "pdf": "uploads/China_CPU_Renewable_Energy.pdf",
+      "notes": [
+        "CPU→REC 有 Granger 因果（雙向時變不對稱）",
+        "使用滾窗 Granger 因果檢定 + 雙向因果分析",
+        "控制 EPU（經濟政策不確定性）、原油價格"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-05-9305"
     },
     {
       "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
@@ -1531,7 +1555,7 @@
         "能源市場",
         "宏觀總體"
       ],
-      "pdf": "",
+      "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
       "notes": [
         "使用 STIRPAT + 固定效果 panel 模型",
         "EKC 假說在海灣六國成立",
@@ -1539,7 +1563,7 @@
         "建議 GCC 國家加速再生能源轉型"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-7457"
+      "id": "upload-2026-06-05-9223"
     },
     {
       "title": "Climate Policy Uncertainty and Load Capacity Factor in China",
@@ -1555,7 +1579,7 @@
         "氣候風險/政策",
         "綠債/ESG"
       ],
-      "pdf": "",
+      "pdf": "uploads/China_CPU_Load_Capacity_Factor.pdf",
       "notes": [
         "核心發現：金融發展×CPU 交互項係數顯著為正",
         "FD 在高 CPU 時期扮演緩衝機制（綠色融資、風險分擔）",
@@ -1563,30 +1587,7 @@
         "A-ARDL 共整合檢定 + Fourier KPSS 結構斷點單根檢定"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-6838"
-    },
-    {
-      "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
-      "authors": "Huang, Liu & Yu",
-      "year": "2026",
-      "journal": "Systems (MDPI), 14, 559",
-      "doi": "10.3390/systems14050559",
-      "date": "2026-06-05",
-      "tags": [],
-      "topics": [
-        "碳市場/碳交易",
-        "綠債/ESG"
-      ],
-      "pdf": "",
-      "notes": [
-        "方法：PSM-DID（傾向得分匹配+雙重差分）",
-        "CETS 使營造企業 ESG 分數提高約 0.30 分",
-        "綠色技術創新中介效果 5.9%（部分中介）",
-        "政府補貼正向調節政策效果",
-        "異質性：僅國有企業與東部地區顯著"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-05-6670"
+      "id": "upload-2026-06-05-706"
     },
     {
       "title": "jQIRF / jQFEVD — 聯合分量脈衝響應函數 & 聯合分量預測誤差變異數分解（方法論文）",
@@ -1609,30 +1610,29 @@
         "延伸應用於中國航空股波動（Transport Research 2024）"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-5858"
+      "id": "upload-2026-06-05-512"
     },
     {
-      "title": "Climate Policy Uncertainty and Renewable Energy Consumption in China",
-      "authors": "Zheng, Wang, Moldovan, Mihit & Nicolescu",
+      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
+      "authors": "Sumba",
       "year": "2026",
-      "journal": "Sustainability (MDPI), 18, 5460",
-      "doi": "10.3390/su18115460",
+      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
+      "doi": "10.1016/j.iref.2026.105445",
       "date": "2026-06-05",
-      "tags": [
-        "QARDL"
-      ],
+      "tags": [],
       "topics": [
-        "氣候風險/政策",
-        "潔淨能源"
+        "潔淨能源",
+        "宏觀總體"
       ],
-      "pdf": "",
+      "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
       "notes": [
-        "CPU→REC 有 Granger 因果（雙向時變不對稱）",
-        "使用滾窗 Granger 因果檢定 + 雙向因果分析",
-        "控制 EPU（經濟政策不確定性）、原油價格"
+        "動態面板門檻模型 (DPT)+ 工具變數",
+        "EKC 假說在發展中國家成立",
+        "再生能源可加速 EKC 轉折",
+        "制度品質調節 EKC 形狀和轉折點"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-5351"
+      "id": "upload-2026-06-05-4892"
     },
     {
       "title": "Toward Carbon Neutrality in Vietnam: Analyzing the Role of Renewable Energy Consumption and Economic Growth Using Wavelet Coherence and Quantile-on-Quantile Approaches",
@@ -1648,7 +1648,7 @@
         "潔淨能源",
         "碳市場/碳交易"
       ],
-      "pdf": "",
+      "pdf": "uploads/Vietnam_Carbon_Neutrality_QQR.pdf",
       "notes": [
         "方法：Wavelet Coherence + QQR（分量對分量迴歸）",
         "年資料 1985-2023，越南案例",
@@ -1656,7 +1656,7 @@
         "GDP 成長在不同分量下對 CO₂ 效果不一致"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-1616"
+      "id": "upload-2026-06-05-2715"
     }
   ]
 }

@@ -13,7 +13,7 @@
       "氣候風險/政策",
       "潔淨能源"
     ],
-    "pdf": "",
+    "pdf": "uploads/China_CPU_Renewable_Energy.pdf",
     "notes": [
       "CPU→REC 有 Granger 因果（雙向時變不對稱）",
       "使用滾窗 Granger 因果檢定 + 雙向因果分析",
@@ -34,7 +34,7 @@
       "氣候風險/政策",
       "綠債/ESG"
     ],
-    "pdf": "",
+    "pdf": "uploads/China_CPU_Load_Capacity_Factor.pdf",
     "notes": [
       "核心發現：金融發展×CPU 交互項係數顯著為正",
       "FD 在高 CPU 時期扮演緩衝機制（綠色融資、風險分擔）",
@@ -54,7 +54,7 @@
       "碳市場/碳交易",
       "綠債/ESG"
     ],
-    "pdf": "",
+    "pdf": "uploads/China_CETS_ESG_Construction.pdf",
     "notes": [
       "方法：PSM-DID（傾向得分匹配+雙重差分）",
       "CETS 使營造企業 ESG 分數提高約 0.30 分",
@@ -75,7 +75,7 @@
       "潔淨能源",
       "宏觀總體"
     ],
-    "pdf": "",
+    "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
     "notes": [
       "動態面板門檻模型 (DPT)+ 工具變數",
       "EKC 假說在發展中國家成立",
@@ -96,7 +96,7 @@
       "能源市場",
       "宏觀總體"
     ],
-    "pdf": "",
+    "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
     "notes": [
       "使用 STIRPAT + 固定效果 panel 模型",
       "EKC 假說在海灣六國成立",
@@ -118,7 +118,7 @@
       "潔淨能源",
       "碳市場/碳交易"
     ],
-    "pdf": "",
+    "pdf": "uploads/Vietnam_Carbon_Neutrality_QQR.pdf",
     "notes": [
       "方法：Wavelet Coherence + QQR（分量對分量迴歸）",
       "年資料 1985-2023，越南案例",
