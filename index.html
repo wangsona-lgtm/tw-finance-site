@@ -36,45 +36,73 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
   background: var(--accent3); color:#fff; padding:60px 32px; text-align:center;
   background-image: radial-gradient(circle at 10% 20%, rgba(139,0,0,.15) 0%, transparent 50%);
 }
-.hero h2 { font-size:36px; font-weight:900; margin-bottom:12px; }
+.hero h2 { font-size:32px; font-weight:900; margin-bottom:12px; }
 .hero p { font-size:16px; opacity:.8; max-width:600px; margin:0 auto; line-height:1.8; }
 
 .container { max-width:1200px; margin:0 auto; padding:40px 20px; }
 
-/* Lecture cards */
-.lecture-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px; }
-.lecture-card {
-  background:var(--surface); border:2px solid var(--border); border-radius:12px; padding:28px;
+/* Section title */
+.section-title {
+  text-align:center; margin-bottom:32px;
+}
+.section-title h2 { font-size:24px; font-weight:700; color:var(--accent3); display:flex; align-items:center; justify-content:center; gap:8px; }
+.section-title p { color:var(--text2); margin-top:6px; font-size:14px; }
+
+/* Cards grid (共用卡片樣式) */
+.card-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px; }
+.card {
+  background:var(--surface); border:2px solid var(--border); border-radius:12px; padding:26px;
   transition:all .2s; cursor:pointer; position:relative; overflow:hidden;
 }
-.lecture-card:hover { transform:translateY(-4px); border-color:var(--accent); box-shadow:0 12px 32px rgba(139,0,0,.1); }
-.lecture-card .tag {
-  display:inline-block; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:700; margin-bottom:12px;
+.card:hover { transform:translateY(-4px); border-color:var(--accent); box-shadow:0 12px 32px rgba(139,0,0,.1); }
+.card .tag {
+  display:inline-block; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:700; margin-bottom:10px;
 }
-.lecture-card .tag.finance { background:rgba(0,100,0,.1); color:var(--accent2); }
-.lecture-card .tag.codex { background:rgba(27,54,93,.1); color:var(--accent3); }
-.lecture-card .tag.r { background:rgba(139,0,0,.1); color:var(--accent); }
-.lecture-card .tag.strategy { background:rgba(27,54,93,.15); color:var(--accent3); }
-.lecture-card .tag.chart { background:rgba(245,158,11,.15); color: #92400e; }
-.lecture-card h3 { font-size:20px; margin-bottom:8px; color:var(--accent3); }
-.lecture-card p { font-size:14px; color:var(--text2); line-height:1.6; margin-bottom:16px; }
-.lecture-card .meta { font-size:12px; color:var(--text2); display:flex; gap:16px; }
-.lecture-card .meta span { display:flex; align-items:center; gap:4px; }
-.lecture-card .actions { margin-top:16px; display:flex; gap:8px; }
-.lecture-card .actions a {
-  padding:8px 16px; border-radius:6px; font-size:13px; font-weight:500; text-decoration:none; cursor:pointer;
+.card .tag.r { background:rgba(139,0,0,.1); color:var(--accent); }
+.card .tag.codex { background:rgba(27,54,93,.1); color:var(--accent3); }
+.card .tag.strategy { background:rgba(27,54,93,.15); color:var(--accent3); }
+.card .tag.chart { background:rgba(245,158,11,.15); color:#92400e; }
+.card h3 { font-size:18px; margin-bottom:8px; color:var(--accent3); }
+.card p { font-size:14px; color:var(--text2); line-height:1.6; margin-bottom:12px; }
+.card .meta { font-size:12px; color:var(--text2); display:flex; gap:14px; flex-wrap:wrap; }
+.card .meta span { display:flex; align-items:center; gap:4px; }
+.card .actions { margin-top:14px; display:flex; gap:8px; }
+.card .actions a {
+  padding:7px 14px; border-radius:6px; font-size:13px; font-weight:500; text-decoration:none;
   border:1px solid var(--border); color:var(--text); background:var(--bg); transition:all .2s;
 }
-.lecture-card .actions a:hover { border-color:var(--accent); color:var(--accent); background:#fff; }
-.lecture-card .corner {
+.card .actions a:hover { border-color:var(--accent); color:var(--accent); background:#fff; }
+.card .corner {
   position:absolute; top:-20px; right:-20px; width:80px; height:80px; border-radius:50%;
   opacity:.05; pointer-events:none;
 }
 
-/* Section title */
-.section-title { text-align:center; margin-bottom:40px; }
-.section-title h2 { font-size:28px; font-weight:700; color:var(--accent3); }
-.section-title p { color:var(--text2); margin-top:8px; }
+/* Section 分隔 */
+.section-divider { margin:48px 0 16px; border:0; border-top:2px solid var(--border); }
+
+/* Quick links (平台入口) */
+.quick-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:16px; }
+.quick-link {
+  display:flex; flex-direction:column; align-items:center; gap:8px;
+  background:var(--surface); border:2px solid var(--border); border-radius:12px;
+  padding:24px 16px; text-decoration:none; color:var(--text); transition:all .2s;
+}
+.quick-link:hover { transform:translateY(-3px); border-color:var(--accent3); box-shadow:0 8px 24px rgba(27,54,93,.1); }
+.quick-link .icon { font-size:32px; }
+.quick-link .name { font-size:15px; font-weight:600; color:var(--accent3); }
+.quick-link .desc { font-size:12px; color:var(--text2); text-align:center; }
+
+/* 技術分析圖卡片（滿版） */
+.chart-card {
+  background:var(--surface); border:2px solid var(--border); border-radius:12px; overflow:hidden; cursor:pointer;
+  transition:all .2s;
+}
+.chart-card:hover { border-color:#f59e0b; box-shadow:0 8px 24px rgba(245,158,11,.1); }
+.chart-card .chart-img { width:100%; display:block; }
+.chart-card .chart-info { padding:18px 24px; }
+.chart-card .chart-info h3 { font-size:18px; color:var(--accent3); margin-bottom:4px; }
+.chart-card .chart-info p { font-size:13px; color:var(--text2); line-height:1.5; }
+.chart-card .chart-meta { display:flex; gap:10px; flex-wrap:wrap; font-size:12px; color:var(--text2); margin-top:6px; }
 
 /* Lecture page (hidden by default) */
 #lecture-content { display:none; }
@@ -89,6 +117,14 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
   transition:all .2s;
 }
 .back-btn:hover { border-color:var(--accent); color:var(--accent); }
+
+/* Modal */
+.modal {
+  display:none; position:fixed; inset:0; background:rgba(0,0,0,.85);
+  z-index:999; cursor:zoom-out; padding:20px;
+}
+.modal.open { display:flex; align-items:center; justify-content:center; }
+.modal img { max-width:100%; max-height:95vh; border-radius:8px; }
 
 /* Footer */
 .footer {
@@ -116,9 +152,10 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 
 @media(max-width:600px) {
   .header { flex-direction:column; gap:12px; text-align:center; }
-  .header nav a { margin:0 8px; }
-  .hero h2 { font-size:26px; }
-  .lecture-grid { grid-template-columns:1fr; }
+  .header nav a { margin:0 8px; font-size:12px; }
+  .hero h2 { font-size:24px; }
+  .card-grid { grid-template-columns:1fr; }
+  .quick-grid { grid-template-columns:repeat(2,1fr); }
 }
 </style>
 </head>
@@ -127,7 +164,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 <div class="header">
   <h1>📚 王美智 <span>· 講義資料庫</span></h1>
   <nav>
-    <a href="#" onclick="showHome()">首頁</a>
+    <a href="#" onclick="showHome()">🏠 首頁</a>
     <a href="dashboard/">📊 儀表板</a>
     <a href="daily-reports.html">📋 日報</a>
     <a href="postmarket-viewer/">🔍 盤後分析</a>
@@ -141,19 +178,60 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 <!-- ===== Home ===== -->
 <div id="lecture-list" class="active">
   <div class="hero">
-    <h2>R 程式碼 × 金融資料 × Codex 實戰</h2>
-    <p>從 ggplot2 視覺化基礎到產業戰略分析，四份實戰講義 + 技術分析圖一次收錄。</p>
+    <h2>📊 金融資料 × 學術研究</h2>
+    <p>TWSE 台股儀表板 · 個股技術分析 · 每日盤後報告 · QVAR 論文庫 · 教學講義</p>
   </div>
 
   <div class="container">
+
+    <!-- ===== 快速入口 ===== -->
     <div class="section-title">
-      <h2>📖 所有講義</h2>
-      <p>點擊閱讀全文，或直接下載 PDF/DOCX</p>
+      <h2>🔗 平台入口</h2>
+      <p>各功能快速連結</p>
+    </div>
+    <div class="quick-grid">
+      <a href="dashboard/" class="quick-link">
+        <div class="icon">📊</div>
+        <div class="name">大盤儀表板</div>
+        <div class="desc">即時行情、K 棒圖、技術指標</div>
+      </a>
+      <a href="stock-viewer/" class="quick-link">
+        <div class="icon">📈</div>
+        <div class="name">個股技術分析</div>
+        <div class="desc">K 線、MACD、RSI、三大法人</div>
+      </a>
+      <a href="papers/" class="quick-link">
+        <div class="icon">📚</div>
+        <div class="name">論文文獻庫</div>
+        <div class="desc">78 篇 QVAR 論文 · 主題分類</div>
+      </a>
+      <a href="report.html" class="quick-link">
+        <div class="icon">📋</div>
+        <div class="name">盤後報告</div>
+        <div class="desc">每日籌碼分析 · ZeroHedge 導讀</div>
+      </a>
+      <a href="closing-viewer/" class="quick-link">
+        <div class="icon">📉</div>
+        <div class="name">收盤行情</div>
+        <div class="desc">每日盤後個股收盤資料</div>
+      </a>
+      <a href="expert-viewer/" class="quick-link">
+        <div class="icon">🎙️</div>
+        <div class="name">專家講評</div>
+        <div class="desc">盤前專家觀點</div>
+      </a>
     </div>
 
-    <div class="lecture-grid">
+    <hr class="section-divider">
+
+    <!-- ===== 講義資料庫 ===== -->
+    <div class="section-title">
+      <h2>📖 講義資料庫</h2>
+      <p>點擊閱讀全文，或直接下載 PDF/DOCX</p>
+    </div>
+    <div class="card-grid">
       <!-- Card 1 -->
-      <div class="lecture-card" onclick="showLecture(0)">
+      <div class="card" onclick="showLecture(0)">
         <span class="tag r">R 程式碼</span>
         <h3>R 金融視覺化講義</h3>
         <p>ggplot2 × yfinance × pixel 復古風。從基礎語法到金融實戰的完整圖表設計指南，共 18 章。</p>
@@ -170,7 +248,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
       </div>
 
       <!-- Card 2 -->
-      <div class="lecture-card" onclick="showLecture(1)">
+      <div class="card" onclick="showLecture(1)">
         <span class="tag codex">Codex</span>
         <h3>如何用 Codex 快速入門任何一個領域</h3>
         <p>打造可迭代的領域學習系統。11 個章節完整拆解用 Codex 建立學習專案的方法論。</p>
@@ -187,7 +265,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
       </div>
 
       <!-- Card 3 -->
-      <div class="lecture-card" onclick="showLecture(2)">
+      <div class="card" onclick="showLecture(2)">
         <span class="tag codex">Codex</span>
         <h3>Codex 五大核心能力</h3>
         <p>官方 60 個 Use Cases 深度解讀。理解真實上下文、拆解目標、呼叫工具、產出審查、迭代反饋。</p>
@@ -204,10 +282,10 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
       </div>
 
       <!-- Card 4 -->
-      <div class="lecture-card" onclick="showLecture(3)">
+      <div class="card" onclick="showLecture(3)">
         <span class="tag strategy">產業戰略</span>
         <h3>輝達東亞雙軸戰略</h3>
-        <p>解構黃仁勳台韓半導體與實體人工智慧布局。NotebookLM 生成之戰略情報分析報告，論證 NVIDIA 的「三角形雙軸戰略」。</p>
+        <p>解構黃仁勳台韓半導體與實體人工智慧布局。NotebookLM 生成之戰略情報分析報告。</p>
         <div class="meta">
           <span>📄 15 頁</span>
           <span>📅 2026-06</span>
@@ -218,35 +296,41 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
         </div>
         <div class="corner" style="background:var(--accent3)"></div>
       </div>
+    </div>
 
-      <!-- Card 5: 技術分析圖 -->
-      <div class="lecture-card" onclick="document.getElementById('chartModal').classList.add('open')">
-        <span class="tag chart">📈 技術分析</span>
-        <h3>Intel (INTC) — Bull Flag 型態量度目標</h3>
-        <p>主升段 +225% 後 Bull Flag 整理。突破 $113、停損 $99。RSI(14)=38.9 接近超賣反彈區。來源：@sona1115_bot (wang)</p>
-        <div class="meta">
+    <hr class="section-divider">
+
+    <!-- ===== 技術分析圖 ===== -->
+    <div class="section-title">
+      <h2>📈 技術分析圖</h2>
+      <p>來自 @sona1115_bot (wang) 的個股技術分析</p>
+    </div>
+    <div class="chart-card" onclick="document.getElementById('chartModal').classList.add('open')">
+      <img class="chart-img" src="./INTC_BullFlag_2026-06-10.jpg" alt="INTC Bull Flag 技術分析">
+      <div class="chart-info">
+        <h3>Intel (INTC) — Bull Flag 型態量度目標與停損</h3>
+        <p>主升段 +225% 後 Bull Flag 整理。突破 $113、停損 $99。RSI(14)=38.9，綜合評分 +30.5 / 偏多。Fib 延伸目標：$142、$154、$180。</p>
+        <div class="chart-meta">
           <span>📅 2026-06-10</span>
-          <span>🏷️ INTC · Bull Flag · 偏多</span>
-          <span>💰 $107.04</span>
+          <span>💰 收盤 $107.04</span>
+          <span>📐 Bull Flag</span>
+          <span>🎯 偏多 +30.5</span>
         </div>
-        <div class="actions">
-          <a href="./INTC_BullFlag_2026-06-10.jpg" target="_blank" onclick="event.stopPropagation()">🔍 放大瀏覽</a>
-        </div>
-        <div class="corner" style="background:#f59e0b"></div>
       </div>
     </div>
+
   </div>
 </div>
 
 <!-- 技術分析圖 Modal -->
-<div id="chartModal" class="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:999;cursor:zoom-out;padding:20px;" onclick="this.style.display='none'">
-  <img src="./INTC_BullFlag_2026-06-10.jpg" style="max-width:100%;max-height:95vh;display:block;margin:auto;border-radius:8px;">
+<div id="chartModal" class="modal" onclick="this.classList.remove('open')">
+  <img src="./INTC_BullFlag_2026-06-10.jpg" alt="INTC 技術分析放大圖">
 </div>
 
 <!-- ===== Lecture Content ===== -->
 <div id="lecture-content">
   <div class="container">
-    <a class="back-btn" onclick="showHome()">← 回到講義列表</a>
+    <a class="back-btn" onclick="showHome()">← 回到首頁</a>
     <div class="article-body" id="lecture-body"></div>
   </div>
 </div>
@@ -335,7 +419,6 @@ function showHome() {
 function showLecture(idx) {
   const l = lectures[idx];
   const body = document.getElementById('lecture-body');
-  
   let html = `
     <h2>${l.title}</h2>
     <p style="color:var(--text2);font-size:14px;margin-bottom:12px;">${l.subtitle}</p>
@@ -349,7 +432,6 @@ function showLecture(idx) {
       <p style="margin:0;">完整 PDF 與 DOCX 檔案請點擊首頁卡片上的下載按鈕。</p>
     </div>
   `;
-  
   body.innerHTML = html;
   document.getElementById('lecture-list').classList.remove('active');
   document.getElementById('lecture-content').classList.add('active');
