@@ -55,6 +55,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 .lecture-card .tag.codex { background:rgba(27,54,93,.1); color:var(--accent3); }
 .lecture-card .tag.r { background:rgba(139,0,0,.1); color:var(--accent); }
 .lecture-card .tag.strategy { background:rgba(27,54,93,.15); color:var(--accent3); }
+.lecture-card .tag.chart { background:rgba(245,158,11,.15); color: #92400e; }
 .lecture-card h3 { font-size:20px; margin-bottom:8px; color:var(--accent3); }
 .lecture-card p { font-size:14px; color:var(--text2); line-height:1.6; margin-bottom:16px; }
 .lecture-card .meta { font-size:12px; color:var(--text2); display:flex; gap:16px; }
@@ -133,7 +134,6 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
     <a href="expert-viewer/">🎙️ 專家</a>
     <a href="closing-viewer/">📉 收盤</a>
     <a href="papers/">📚 論文庫</a>
-    <a href="technical-analysis/">📈 技術圖</a>
     <a href="report.html" style="background:var(--accent);color:#fff;padding:5px 12px;border-radius:6px;">📖 講義</a>
   </nav>
 </div>
@@ -142,7 +142,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 <div id="lecture-list" class="active">
   <div class="hero">
     <h2>R 程式碼 × 金融資料 × Codex 實戰</h2>
-    <p>從 ggplot2 視覺化基礎到產業戰略分析，四份實戰講義一次收錄。</p>
+    <p>從 ggplot2 視覺化基礎到產業戰略分析，四份實戰講義 + 技術分析圖一次收錄。</p>
   </div>
 
   <div class="container">
@@ -218,8 +218,29 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
         </div>
         <div class="corner" style="background:var(--accent3)"></div>
       </div>
+
+      <!-- Card 5: 技術分析圖 -->
+      <div class="lecture-card" onclick="document.getElementById('chartModal').classList.add('open')">
+        <span class="tag chart">📈 技術分析</span>
+        <h3>Intel (INTC) — Bull Flag 型態量度目標</h3>
+        <p>主升段 +225% 後 Bull Flag 整理。突破 $113、停損 $99。RSI(14)=38.9 接近超賣反彈區。來源：@sona1115_bot (wang)</p>
+        <div class="meta">
+          <span>📅 2026-06-10</span>
+          <span>🏷️ INTC · Bull Flag · 偏多</span>
+          <span>💰 $107.04</span>
+        </div>
+        <div class="actions">
+          <a href="./INTC_BullFlag_2026-06-10.jpg" target="_blank" onclick="event.stopPropagation()">🔍 放大瀏覽</a>
+        </div>
+        <div class="corner" style="background:#f59e0b"></div>
+      </div>
     </div>
   </div>
+</div>
+
+<!-- 技術分析圖 Modal -->
+<div id="chartModal" class="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:999;cursor:zoom-out;padding:20px;" onclick="this.style.display='none'">
+  <img src="./INTC_BullFlag_2026-06-10.jpg" style="max-width:100%;max-height:95vh;display:block;margin:auto;border-radius:8px;">
 </div>
 
 <!-- ===== Lecture Content ===== -->
