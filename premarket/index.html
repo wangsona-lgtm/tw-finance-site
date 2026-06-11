@@ -3,54 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>盤前圖表 · tw-finance-site</title>
+<title>盤前資料 · tw-finance-site</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fff;color:#333}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fff;color:#333;line-height:1.7}
 .topnav{background:#f5f5f5;padding:12px 20px;border-bottom:1px solid #ddd;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 .topnav a{color:#2563eb;text-decoration:none;font-size:14px}
 .topnav a:hover{text-decoration:underline}
 .topnav .site-title{font-size:15px;font-weight:700;color:#333;margin-right:auto}
-.container{max-width:1200px;margin:0 auto;padding:20px}
-h1{font-size:22px;margin-bottom:6px}
+.container{max-width:960px;margin:0 auto;padding:20px}
+h1{font-size:22px;margin-bottom:4px}
 .date-label{color:#888;font-size:14px;margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+/* Text sections */
+.section-card{background:#fafafa;border:1px solid #e0e0e0;border-radius:10px;padding:20px;margin-bottom:16px}
+.section-card h3{font-size:16px;font-weight:700;margin-bottom:10px;color:#111}
+.section-card .content{font-size:14px;white-space:pre-wrap;color:#333}
+.highlight{border-left:4px solid #2563eb}
+.highlight h3{color:#2563eb}
+/* Chart grid */
+.chart-section{margin-top:28px}
+.chart-section h2{font-size:18px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
 .card{background:#fafafa;border:1px solid #e0e0e0;border-radius:10px;overflow:hidden;cursor:pointer;transition:box-shadow .2s}
 .card:hover{box-shadow:0 4px 12px rgba(0,0,0,.12)}
-.card img{width:100%;height:190px;object-fit:cover;display:block;border-bottom:1px solid #eee}
-.card .label{padding:10px 14px;font-size:14px;font-weight:600}
+.card img{width:100%;height:160px;object-fit:cover;display:block;border-bottom:1px solid #eee}
+.card .label{padding:8px 12px;font-size:13px;font-weight:600}
 /* Modal */
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:1000;justify-content:center;align-items:center}
 .modal.open{display:flex}
 .modal-img{max-width:95vw;max-height:95vh;border-radius:6px;object-fit:contain}
-.modal-controls{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);color:#fff;padding:6px 20px;border-radius:20px;font-size:14px}
+.modal-counter{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);color:#fff;padding:6px 20px;border-radius:20px;font-size:14px}
 .modal-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:26px;display:flex;align-items:center;justify-content:center}
 .modal-btn:hover{background:rgba(0,0,0,.8)}
-.btn-prev{left:12px}
-.btn-next{right:12px}
+.btn-prev{left:12px}.btn-next{right:12px}
 .modal-close{position:absolute;top:16px;right:20px;background:rgba(0,0,0,.5);color:#fff;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center}
 @media(max-width:600px){
-  .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
-  .card img{height:130px}
-  .card .label{font-size:12px;padding:6px 10px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+  .card img{height:110px}
 }
 </style>
 </head>
 <body>
 
 <div class="topnav">
-  <span class="site-title">📈 盤前圖表</span>
+  <span class="site-title">📋 盤前資料 — 2026-06-11</span>
   <a href="../">🏠 首頁</a>
-  <a href="../expert-viewer/">📄 盤前分析</a>
+  <a href="../expert-viewer/">📄 更多盤前分析</a>
   <a href="../reports/">📰 每日報表</a>
-  <a href="../papers/">📚 論文</a>
 </div>
 
 <div class="container">
-  <h1>盤前圖表 · 2026-06-11</h1>
-  <p class="date-label">來自 @sona1115_bot (wang) · 13 張盤前分析圖表</p>
 
-  <div class="grid" id="chartGrid"></div>
+  <!-- ===== 文字分析區塊 ===== -->
+  <h1>盤前分析 — 6/11 (四)</h1>
+  <p class="date-label">來自 @sona1115_bot (wang) · Fed Watch + 總經 + 圖表</p>
+
+  <div id="textSections"></div>
+
+  <!-- ===== 圖表區塊 ===== -->
+  <div class="chart-section">
+    <h2>📊 盤前圖表 · 13 張</h2>
+    <div class="grid" id="chartGrid"></div>
+  </div>
+
 </div>
 
 <!-- Modal -->
@@ -59,24 +74,96 @@ h1{font-size:22px;margin-bottom:6px}
   <button class="modal-btn btn-prev" onclick="changeChart(-1)">‹</button>
   <button class="modal-btn btn-next" onclick="changeChart(1)">›</button>
   <img id="modalImg" class="modal-img" src="" alt="">
-  <div class="modal-controls" id="modalCounter"></div>
+  <div class="modal-counter" id="modalCounter"></div>
 </div>
 
 <script>
+// ===== Text sections =====
+const sections = [
+  {
+    type: 'content',
+    title: '隔夜美股收盤',
+    content: `美股昨晚全面收黑，費半最重跌 3.57%：
+
+📉 S&P 500 7,266.99 (-1.62%)
+📉 道瓊 49,918.78 (-1.87%)
+📉 NASDAQ 25,169.50 (-1.98%)
+📉 費半 12,206.46 (-3.57%) ← 重災區
+
+權值科技股全倒：
+📉 TSM -4.48% | AMD -4.86% | AVGO -5.12%
+📉 NVDA -3.73% | TSLA -3.80%
+📈 唯一紅：AAPL +0.35%
+
+美股大跌原因：
+1. Oracle 財報後盤跌 5%+，資本支出 $557 億 + 再募 $400 億，稀釋疑慮
+2. 5 月核心 CPI 月增 0.2% 雖低於預期，但年增率仍加速至 2.9%
+3. 美伊衝突升溫，油價飆破 $91
+4. 多家大行警告 AI 倉位過度擁擠，花旗、美銀、高盛同步警示`
+  },
+  {
+    type: 'highlight',
+    title: '總經焦點',
+    content: `📈 VIX 衝到 22.22 (+11.83%) 恐慌升溫
+📈 WTI 原油 $91 (+5.61%) / 布蘭特 $94
+📉 黃金 $4,070 (-4.45%)
+📈 10 年債殖利率 4.54% / 30 年破 5%
+
+🔴 10 年國債拍賣：外資買盤強勁但國內需求熄火
+💵 日圓 160.5（干預警戒線）
+
+今日關注：
+🕐 20:30 美國 5 月 CPI（最關鍵事件）
+🕐 初領失業金人數`
+  },
+  {
+    type: 'content',
+    title: '📡 Fed Watch 聯準會動向分析',
+    content: `Fed 官員立場一覽：
+
+🕊️ Lisa Cook（理事）— 關注勞動市場，緊縮過度風險
+⚖️ Michael Barr（理事）— 監管為重，利率立場跟隨主席
+❓ Anna Paulson（理事）— 4月首度投票支持維持利率
+🕊️ Stephen Miran（理事）— 4月投票要求降息 1 碼，鴿派代表
+⚖️ John Williams（紐約聯儲總裁）— 中性偏鴿
+
+市場解讀：
+• 5 月核心 CPI 月增放緩至 0.2%，但年增加速 + 服務通膨仍在高位
+• 市場對 6/17 FOMC 降息預期降溫
+• 較大共識：7 月前維持利率不變，等待更多通膨降溫證據`
+  },
+  {
+    type: 'highlight',
+    title: '日本央行 — 植田和男住院',
+    content: `日銀總裁植田和男因肝囊腫感染需住院約兩週，將缺席 6/15-16 政策會議（1998 年來首次）。市場仍預期升息至 1%（三十年最高），但後續路徑不明。首相高市早苗偏鴿，可能影響日銀正常化進程。
+
+若植田因健康因素下台，親寬鬆的首相高市早苗可能任命鴿派接班人，扭轉日銀正常化方向。`
+  }
+];
+
+const container = document.getElementById('textSections');
+sections.forEach(s => {
+  const div = document.createElement('div');
+  div.className = 'section-card' + (s.type === 'highlight' ? ' highlight' : '');
+  div.innerHTML = `<h3>${s.title}</h3><div class="content">${s.content}</div>`;
+  container.appendChild(div);
+});
+
+// ===== Charts =====
 const charts = [
   { path: './market_DJI_2026-06-11.jpg', label: '📊 道瓊 (DJI)' },
   { path: './market_IXIC_2026-06-11.jpg', label: '📊 NASDAQ (IXIC)' },
   { path: './market_SOX_2026-06-11.jpg', label: '📊 費半 (SOX)' },
   { path: './market_INTC_2026-06-11.jpg', label: '📊 Intel (INTC)' },
   { path: './market_TSM_2026-06-11.jpg', label: '📊 台積電 ADR (TSM)' },
-  { path: './USDJPY_daily_2026-06-11.jpg', label: '💱 美元/日圓 (USDJPY 160.41)' },
-  { path: './WTI_Trump_2026-06-11.jpg', label: '🛢️ WTI 原油 · 川普宣布再轟炸' },
-  { path: './WTI_5min_2026-06-11.jpg', label: '🛢️ WTI 原油 5分線 (91.85)' },
-  { path: './Trump_Hormuz_2026-06-11.jpg', label: '📱 川普：秘密任務荷姆茲突破' },
-  { path: './GlobalYield_2026-06-11.jpg', label: '📈 全球公債殖利率指數 (3.5%)' },
-  { path: './SovereignDebt_2026-06-11.jpg', label: '🏛️ 全球主權銀團發債創紀錄' },
+  { path: './USDJPY_daily_2026-06-11.jpg', label: '💱 美元/日圓 160.41' },
+  { path: './WTI_Trump_2026-06-11.jpg', label: '🛢️ WTI 原油 · 川普轟炸' },
+  { path: './WTI_5min_2026-06-11.jpg', label: '🛢️ WTI 5分線 (91.85)' },
+  { path: './Trump_Hormuz_2026-06-11.jpg', label: '📱 川普：荷姆茲突破' },
+  { path: './GlobalYield_2026-06-11.jpg', label: '📈 全球公債殖利率 3.5%' },
+  { path: './SovereignDebt_2026-06-11.jpg', label: '🏛️ 主權發債創紀錄' },
   { path: './PressConf_2026-06-11.jpg', label: '🎤 記者會' },
-  { path: './INTC_BullFlag_2026-06-10.jpg', label: '📐 INTC Bull Flag 型態' },
+  { path: './INTC_BullFlag_2026-06-10.jpg', label: '📐 INTC Bull Flag' },
 ];
 
 const grid = document.getElementById('chartGrid');
@@ -96,8 +183,6 @@ function updateModal() {
   document.getElementById('modalImg').src = charts[idx].path;
   document.getElementById('modalCounter').textContent = (idx+1) + '/' + charts.length;
 }
-
-// Keyboard navigation
 document.addEventListener('keydown', e => {
   if (!document.getElementById('modal').classList.contains('open')) return;
   if (e.key === 'ArrowLeft') changeChart(-1);
