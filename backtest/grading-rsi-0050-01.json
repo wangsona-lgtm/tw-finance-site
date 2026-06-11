@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "symbol \u542b 0050",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "strategy rsi",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "oversold=30, overbought=70",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "capital \u542b 2000000 / 200\u842c",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "\u7522\u751f HTML \u5831\u544a (>40KB)",
+      "passed": true,
+      "evidence": "auto-graded"
+    }
+  ]
+}

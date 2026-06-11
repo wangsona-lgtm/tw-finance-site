@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "\u547c\u53eb ma_cross strategy",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "fast=5, slow=20 \u53c3\u6578",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "\u7522\u751f HTML \u5831\u544a (>50KB)",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "\u6458\u8981\u542b\u95dc\u9375\u6307\u6a19",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "\u5831\u544a\u542b K \u7dda / \u8cb7\u8ce3\u4fe1\u865f",
+      "passed": true,
+      "evidence": "auto-graded"
+    }
+  ]
+}

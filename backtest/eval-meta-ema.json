@@ -1,0 +1,12 @@
+{
+  "eval_id": 3,
+  "eval_name": "ema-custom-tsla",
+  "prompt": "TSLA 的策略：每天計算 10 日和 30 日 EMA，當 10 日 EMA 從下方穿越 30 日 EMA 就買入，反向穿越就賣出。幫我回測 2021-2024，看看這策略表現如何",
+  "assertions": [
+    {"id": "a1", "text": "辨識為自訂策略（EMA 而非 SMA）"},
+    {"id": "a2", "text": "產生 custom strategy .py 檔案，使用 ewm() 計算 EMA"},
+    {"id": "a3", "text": "使用 --strategy custom --custom-strategy 旗標"},
+    {"id": "a4", "text": "symbol=TSLA, start=2021"},
+    {"id": "a5", "text": "產生 HTML 報告"}
+  ]
+}

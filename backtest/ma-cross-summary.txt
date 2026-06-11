@@ -1,0 +1,11 @@
+AAPL 5/20 MA Cross Backtest Summary
+========================================
+Period          : 2022-01-01 to 2024-12-31
+Initial Capital : $100,000.00
+Final Equity    : $101,585.59
+Total Return    : 1.59%
+Sharpe Ratio    : 0.12
+Max Drawdown    : -30.96%
+Win Rate        : 44.0%
+Total Trades    : 25
+Winning Trades  : 11

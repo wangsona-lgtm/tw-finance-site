@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "ma-cross-aapl",
+  "prompt": "幫我回測 AAPL 的 5/20 均線交叉策略，從 2022 年初到 2024 年底，初始資金 10 萬美元，產出 HTML 報告",
+  "assertions": [
+    {"id": "a1", "text": "呼叫 backtest_engine.py 時帶入 --strategy ma_cross"},
+    {"id": "a2", "text": "params 包含 fast=5, slow=20"},
+    {"id": "a3", "text": "產生 HTML 報告檔案"},
+    {"id": "a4", "text": "文字摘要包含：總報酬、Sharpe、最大回撤、交易次數"},
+    {"id": "a5", "text": "報告中有買賣信號標記（triangle-up / triangle-down marker）"}
+  ]
+}
