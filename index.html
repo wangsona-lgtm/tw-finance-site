@@ -198,7 +198,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
       <a href="#" class="quick-link" onclick="event.preventDefault();document.getElementById('chartModal').classList.add('open')">
         <div class="icon">📈</div>
         <div class="name">技術分析圖</div>
-        <div class="desc">@sona1115_bot Intel Bull Flag</div>
+        <div class="desc">@sona1115_bot · NASDAQ + INTC</div>
       </a>
       <a href="stock-viewer/" class="quick-link">
         <div class="icon">🔬</div>
@@ -314,9 +314,26 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 </div>
 
 <!-- 圖片放大 Modal -->
-<div id="chartModal" class="modal" onclick="this.classList.remove('open')">
-  <img src="./INTC_BullFlag_2026-06-10.jpg" alt="INTC 技術分析放大圖">
+<div id="chartModal" class="modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div id="chartGallery" style="position:relative;max-width:95vw;max-height:95vh;">
+    <img id="chartModalImg" src="./INTC_BullFlag_2026-06-10.jpg" alt="技術分析放大圖" style="max-width:100%;max-height:95vh;border-radius:8px;display:block;">
+    <div id="chartCounter" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);color:#fff;padding:4px 14px;border-radius:12px;font-size:13px;">1/2</div>
+    <button onclick="changeChart(-1)" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:18px;">‹</button>
+    <button onclick="changeChart(1)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:18px;">›</button>
+  </div>
 </div>
+<script>
+const chartGallery = [
+  { path: './INTC_BullFlag_2026-06-10.jpg', label: 'INTC Bull Flag' },
+  { path: './NASDAQ_IXIC_2026-06-11.jpg', label: 'NASDAQ 綜合指數技術分析' },
+];
+let chartIdx = 0;
+function changeChart(d) {
+  chartIdx = (chartIdx + d + chartGallery.length) % chartGallery.length;
+  document.getElementById('chartModalImg').src = chartGallery[chartIdx].path;
+  document.getElementById('chartCounter').textContent = (chartIdx+1) + '/' + chartGallery.length;
+}
+</script>
 
 <!-- ===== Lecture Content ===== -->
 <div id="lecture-content">
