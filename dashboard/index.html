@@ -1119,7 +1119,38 @@ async function loadDaily() {
 }
 
 // ===== 籌碼資料 =====
-// Load pre-fetched sentiment data (institutional + TAIFEX)
+// Inline embedded sentiment data (updated daily by fetch_sentiment_data.py)
+const __EMBEDDED_SENTIMENT_DATA = {
+  "updated": "2026-06-12T02:59:36.606317",
+  "today": "20260612",
+  "institution": {
+    "date": "20260611",
+    "外資及陸資": {"buy": 513292371055, "sell": 549071652393, "diff": -35779281338},
+    "投信": {"buy": 47264037603, "sell": 34019262466, "diff": 13244775137},
+    "自營商合計": {"buy": 113214467218, "sell": 139472916672, "diff": -26258449454},
+    "合計": {"buy": 629595618546, "sell": 664530285477, "diff": -34934666931}
+  },
+  "pc_ratio": {
+    "date": "2026/6/11",
+    "call_vol": 225901, "put_vol": 214908,
+    "pc_vol_ratio": 105.12, "pc_oi_ratio": 133.33,
+    "call_oi": 132390, "put_oi": 99293
+  },
+  "futures": {
+    "last_seen_date": "2026/06/11",
+    "foreign_tx_net": "-61,949",
+    "total_inst_futures_net": "-74,321"
+  }
+};
+
+const __EMBEDDED_SENTIMENT_HISTORY = [
+  {"date":"2026-06-08","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":83.49,"pc_oi_ratio":126.75,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"},
+  {"date":"2026-06-09","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":118.27,"pc_oi_ratio":133.64,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"},
+  {"date":"2026-06-10","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":107.93,"pc_oi_ratio":166.01,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"},
+  {"date":"2026-06-11","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":105.12,"pc_oi_ratio":133.33,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"},
+  {"date":"2026-06-12","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":105.12,"pc_oi_ratio":133.33,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"}
+];
+
 let sentimentData = null;
 let sentimentHistory = [];
 const SENTIMENT_DATA_FILE = 'sentiment-data.json';
@@ -1134,24 +1165,26 @@ function fmtMoney(v) {
 }
 
 async function loadSentimentData() {
+  // Use embedded data immediately
+  sentimentData = __EMBEDDED_SENTIMENT_DATA;
+  sentimentHistory = __EMBEDDED_SENTIMENT_HISTORY;
+  
+  // Render all sections immediately from embedded data
+  try { renderInstitutions(); } catch(e) { console.warn('inst err:', e); }
+  try { renderFutures(); } catch(e) { console.warn('fut err:', e); }
+  try { renderOptions(); } catch(e) { console.warn('opt err:', e); }
+  try { renderWeeklySentiment(); } catch(e) { console.warn('weekly err:', e); }
+  
+  // Async refresh from server in background (updates embedded data if newer)
   try {
-    // Try pre-fetched data first
     const cb = '?t=' + Date.now();
     const resp = await fetch(SENTIMENT_DATA_FILE + cb);
-    if (resp.ok) sentimentData = await resp.json();
-    
+    if (resp.ok) { sentimentData = await resp.json(); renderInstitutions(); renderFutures(); renderOptions(); }
     const resp2 = await fetch(SENTIMENT_HISTORY_FILE + cb);
-    if (resp2.ok) sentimentHistory = await resp2.json();
+    if (resp2.ok) { sentimentHistory = await resp2.json(); renderWeeklySentiment(); }
   } catch(e) {
-    console.warn('sentiment data file not available, using live API');
+    console.warn('server data not available, using embedded data');
   }
-  
-  // Render all sections
-  renderInstitutions();
-  renderFutures();
-  renderOptions();
-  renderWeeklySentiment();
-}
 
 // ===== 三大法人現貨買賣超 =====
 function renderInstitutions() {
