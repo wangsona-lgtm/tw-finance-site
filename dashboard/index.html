@@ -99,7 +99,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
   <a href="#overview" class="active" onclick="showTab('overview')">📈 大盤總覽</a>
   <a href="#stocks" onclick="showTab('stocks')">📋 個股成交</a>
   <a href="#pe" onclick="showTab('pe')">💰 本益比/殖利率</a>
-  <a href="#margin" onclick="showTab('margin')">🏦 融資融券</a>
+  <a href="#margin" onclick="showTab('margin')">🏦 籌碼</a>
   <a href="#daily" onclick="showTab('daily')">📅 每日盤後行情</a>
 </div>
 
@@ -156,9 +156,24 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
 
 <!-- ===== Margin ===== -->
 <div id="tab-margin" class="container">
+  <h3>📗 信用交易（融資融券）</h3>
   <div id="marginSummary"></div>
-  <div class="chart-container" id="marginChartWrap"><canvas id="marginChart"></canvas></div>
+  <div class="chart-container" id="marginChartWrap" style="height:250px;"><canvas id="marginChart"></canvas></div>
   <div id="marginDetail" style="margin-top:12px;font-size:13px;color:var(--text2);">載入中...</div>
+  
+  <hr><h3>🏢 三大法人現貨買賣超</h3>
+  <div id="instSummary"></div>
+  <div class="chart-container" id="instChartWrap" style="height:250px;display:none;"><canvas id="instChart"></canvas></div>
+  <div id="instDetail" style="margin-top:8px;font-size:13px;color:var(--text2);"></div>
+  
+  <hr><h3>🔄 台指期貨籌碼</h3>
+  <div id="futuresSummary">載入中...</div>
+  <div class="chart-container" id="futuresChartWrap" style="height:250px;display:none;"><canvas id="futuresChart"></canvas></div>
+  
+  <hr><h3>📊 選擇權籌碼</h3>
+  <div id="optionsSummary">載入中...</div>
+  <div class="chart-container" id="optionsChartWrap" style="height:250px;display:none;"><canvas id="optionsChart"></canvas></div>
+  
   <br><hr><br>
   <h3>📋 個股融資券明細</h3>
   <input type="text" id="mgSearch" placeholder="搜尋代號或名稱" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;margin:8px 0;" oninput="renderMgDetail()">
@@ -1084,12 +1099,230 @@ async function loadDaily() {
   }
 }
 
+// ===== 籌碼資料 =====
+// Load pre-fetched sentiment data (institutional + TAIFEX)
+let sentimentData = null;
+let sentimentHistory = [];
+const SENTIMENT_DATA_FILE = 'sentiment-data.json';
+const SENTIMENT_HISTORY_FILE = 'sentiment-history.json';
+
+function fmtMoney(v) {
+  if (v === undefined || v === null) return '-';
+  const abs = Math.abs(v);
+  if (abs >= 1e8) return (v/1e8).toFixed(1) + '億';
+  if (abs >= 1e4) return (v/1e4).toFixed(0) + '萬';
+  return v.toLocaleString();
+}
+
+async function loadSentimentData() {
+  try {
+    // Try pre-fetched data first
+    const resp = await fetch(SENTIMENT_DATA_FILE);
+    if (resp.ok) sentimentData = await resp.json();
+    
+    const resp2 = await fetch(SENTIMENT_HISTORY_FILE);
+    if (resp2.ok) sentimentHistory = await resp2.json();
+  } catch(e) {
+    console.warn('sentiment data file not available, using live API');
+  }
+  
+  // Render all sections
+  renderInstitutions();
+  renderFutures();
+  renderOptions();
+}
+
+// ===== 三大法人現貨買賣超 =====
+function renderInstitutions() {
+  const el = document.getElementById('instSummary');
+  const detailEl = document.getElementById('instDetail');
+  
+  if (!sentimentData || !sentimentData.institution || !sentimentData.institution['外資及陸資']) {
+    // Fallback: try live TWSE API
+    loadInstitutionsLive();
+    return;
+  }
+  
+  const inst = sentimentData.institution;
+  const foreign = inst['外資及陸資'];
+  const trust = inst['投信'];
+  const dealer = inst['自營商合計'];
+  
+  function card(label, val, cls='') {
+    const color = val > 0 ? '#d32f2f' : (val < 0 ? '#1976D2' : 'inherit');
+    const arrow = val > 0 ? '⬆' : (val < 0 ? '⬇' : '➡');
+    return `<div class="card" style="padding:12px;"><h3>${label}</h3><div class="value ${cls}" style="color:${color}">${arrow} ${fmtMoney(val)}</div></div>`;
+  }
+  
+  el.innerHTML = `
+    <div class="grid grid-3">
+      ${card('🏢 外資', foreign.diff)}
+      ${card('🏦 投信', trust.diff)}
+      ${card('📊 自營商', dealer.diff)}
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:var(--text2);">
+      買進: ${fmtMoney(foreign.buy)} / 賣出: ${fmtMoney(foreign.sell)} | 
+      投信買: ${fmtMoney(trust.buy)} / 投信賣: ${fmtMoney(trust.sell)} | 
+      自營買: ${fmtMoney(dealer.buy)} / 自營賣: ${fmtMoney(dealer.sell)}
+    </div>
+  `;
+  detailEl.textContent = `📅 ${inst.date || '未知日期'} 三大法人買賣超`;
+  
+  // Trend chart
+  renderInstChart();
+}
+
+async function loadInstitutionsLive() {
+  const el = document.getElementById('instSummary');
+  try {
+    const today = new Date();
+    let dateStr = '';
+    let data = null;
+    for (let d = 0; d < 7; d++) {
+      const dt = new Date(today);
+      dt.setDate(dt.getDate() - d);
+      dateStr = dt.getFullYear() + String(dt.getMonth()+1).padStart(2,'0') + String(dt.getDate()).padStart(2,'0');
+      try {
+        const resp = await fetch('https://www.twse.com.tw/rwd/zh/fund/BFI82U?date=' + dateStr + '&selectType=ALL', 
+          { headers: { 'User-Agent': 'Mozilla/5.0' } });
+        data = await resp.json();
+        if (data.stat === 'OK') break;
+      } catch(e) { continue; }
+    }
+    if (!data || data.stat !== 'OK') throw new Error('無法取得');
+    
+    const rows = {};
+    for (const r of data.data) {
+      const name = r[0].replace('(不含外資自營商)','').replace('(自行買賣)','').replace('(避險)','');
+      rows[name] = {
+        buy: parseInt(r[1].replace(/,/g,'')),
+        sell: parseInt(r[2].replace(/,/g,'')),
+        diff: parseInt(r[3].replace(/,/g,''))
+      };
+    }
+    
+    const foreign = rows['外資及陸資'] || rows['外資'] || {diff:0,buy:0,sell:0};
+    const trust = rows['投信'] || {diff:0,buy:0,sell:0};
+    let dealerBuy = 0, dealerSell = 0, dealerDiff = 0;
+    for (const r of data.data) {
+      if (r[0].includes('自營商')) {
+        dealerBuy += parseInt(r[1].replace(/,/g,''));
+        dealerSell += parseInt(r[2].replace(/,/g,''));
+        dealerDiff += parseInt(r[3].replace(/,/g,''));
+      }
+    }
+    const dealerTotal = { buy: dealerBuy, sell: dealerSell, diff: dealerDiff };
+    
+    function card(label, val) {
+      const color = val > 0 ? '#d32f2f' : (val < 0 ? '#1976D2' : 'inherit');
+      return `<div class="card" style="padding:12px;"><h3>${label}</h3><div class="value" style="color:${color}">${val>0?'⬆':'⬇'} ${fmtMoney(val)}</div></div>`;
+    }
+    el.innerHTML = `
+      <div class="grid grid-3">
+        ${card('🏢 外資', foreign.diff)}
+        ${card('🏦 投信', trust.diff)}
+        ${card('📊 自營商', dealerTotal.diff)}
+      </div>
+    `;
+    document.getElementById('instDetail').textContent = `📅 ${data.date} 即時TWSE資料`;
+    renderInstChart();
+  } catch(e) {
+    el.innerHTML = `<div class="card"><h3>⚠️ 無法載入</h3><div class="value" style="font-size:14px;color:var(--red);">${e.message}</div></div>`;
+  }
+}
+
+function renderInstChart() {
+  const hist = sentimentHistory;
+  if (!hist || hist.length < 2) return;
+  
+  const ctx = document.getElementById('instChart');
+  if (!ctx) return;
+  const canvas = ctx.getContext('2d');
+  
+  if (window.instChart) window.instChart.destroy();
+  
+  const dates = hist.map(h => h.date);
+  window.instChart = new Chart(canvas, {
+    type: 'bar',
+    data: {
+      labels: dates,
+      datasets: [
+        { label: '外資買賣超', data: hist.map(h => h.inst ? +((h.inst.foreign || 0)/1e8).toFixed(1) : null), backgroundColor: h => h.raw >= 0 ? 'rgba(211,47,47,0.7)' : 'rgba(25,118,210,0.7)', yAxisID: 'y' },
+        { label: '投信買賣超', data: hist.map(h => h.inst ? +((h.inst.investment_trust || 0)/1e8).toFixed(1) : null), backgroundColor: 'rgba(255,193,7,0.7)', yAxisID: 'y' }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'top', labels: { font: { size: 11 } } } },
+      scales: {
+        y: { position: 'left', title: { display: true, text: '億元', font: { size: 10 } } }
+      }
+    }
+  });
+  document.getElementById('instChartWrap').style.display = 'block';
+}
+
+// ===== 台指期貨籌碼 =====
+function renderFutures() {
+  const el = document.getElementById('futuresSummary');
+  
+  const fut = sentimentData?.futures || {};
+  
+  el.innerHTML = `
+    <div class="grid grid-2">
+      <div class="card" style="padding:16px;">
+        <h3>🏢 外資台指期淨空單</h3>
+        <div class="value" style="color:#d32f2f;font-size:28px;">${fut.foreign_tx_net || '待確認'}</div>
+        <div class="sub">口 (資料來源: TAIFEX)</div>
+      </div>
+      <div class="card" style="padding:16px;">
+        <h3>📊 三大法人期貨合計</h3>
+        <div class="value" style="color:#1976D2;font-size:28px;">${fut.total_inst_futures_net || '待確認'}</div>
+        <div class="sub">口 (資料來源: TAIFEX)</div>
+      </div>
+    </div>
+    <div style="margin-top:8px;padding:10px;font-size:12px;color:var(--text2);background:var(--bg2);border-radius:6px;">
+      ⚠️ 期貨資料由期交所提供，本頁每日更新一次。<br>
+      最新資料日期: ${fut.last_seen_date || '未知'}
+    </div>
+  `;
+}
+
+// ===== 選擇權籌碼 =====
+function renderOptions() {
+  const el = document.getElementById('optionsSummary');
+  const pc = sentimentData?.pc_ratio || {};
+  
+  el.innerHTML = `
+    <div class="grid grid-3">
+      <div class="card" style="padding:16px;">
+        <h3>📈 P/C 成交量比值</h3>
+        <div class="value" style="font-size:28px;color:${pc.pc_vol_ratio > 100 ? '#d32f2f' : '#1976D2'};">${pc.pc_vol_ratio || '-'}%</div>
+        <div class="sub">${(pc.pc_vol_ratio || 0) > 100 ? '🟢 避險偏高' : '🔵 正常水準'}</div>
+      </div>
+      <div class="card" style="padding:16px;">
+        <h3>📉 P/C 未平倉比值</h3>
+        <div class="value" style="font-size:28px;color:${pc.pc_oi_ratio > 150 ? '#d32f2f' : '#1976D2'};">${pc.pc_oi_ratio || '-'}%</div>
+        <div class="sub">${(pc.pc_oi_ratio || 0) > 150 ? '🟢 避險情緒濃厚' : '🔵 正常'}</div>
+      </div>
+      <div class="card" style="padding:16px;">
+        <h3>🔄 外資選擇權</h3>
+        <div class="value" style="font-size:20px;">PUT OI > CALL OI</div>
+        <div class="sub">買權:${(pc.call_oi||0).toLocaleString()} / 賣權:${(pc.put_oi||0).toLocaleString()}</div>
+      </div>
+    </div>
+    <div style="margin-top:8px;font-size:12px;color:var(--text2);">
+      📅 ${pc.date || '近日'} 期交所資料｜買權成交量: ${(pc.call_vol||0).toLocaleString()} / 賣權成交量: ${(pc.put_vol||0).toLocaleString()}
+    </div>
+  `;
+}
+
 // ===== Init =====
 async function init() {
     document.getElementById('updateTime').innerHTML = `📅 <strong>${DATA_DATE || new Date().toLocaleString('zh-TW', {timeZone:'Asia/Taipei'})}</strong> — 資料由後端預先抓取，頁面可離線瀏覽`;
   
   await Promise.allSettled([
-    loadOverview(), loadTop20(), loadAllStocks(), loadPE(), loadMargin(), loadDaily()
+    loadOverview(), loadTop20(), loadAllStocks(), loadPE(), loadMargin(), loadDaily(), loadSentimentData()
   ]);
   
   document.getElementById('updateTime').textContent = '更新: ' + new Date().toLocaleString('zh-TW', {timeZone:'Asia/Taipei'});
