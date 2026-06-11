@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>即時回測 — tw-finance-site</title>
+<script src="https://cdn.plot.ly/plotly-3.6.0.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #f5f5f5; font-family: -apple-system, 'Segoe UI', sans-serif; padding: 20px; color: #333; }
+h1 { font-size: 1.5rem; margin-bottom: 4px; }
+.subtitle { color: #888; font-size: 0.85rem; margin-bottom: 20px; }
+.control-panel { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.form-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: end; }
+.form-group { display: flex; flex-direction: column; gap: 4px; }
+.form-group label { font-size: 0.75rem; color: #888; font-weight: 600; }
+.form-group input, .form-group select { padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.9rem; min-width: 100px; }
+.form-group input:focus, .form-group select:focus { outline: none; border-color: #1976D2; }
+.btn { padding: 8px 24px; background: #1976D2; color: #fff; border: none; border-radius: 6px; font-size: 0.9rem; cursor: pointer; font-weight: 600; }
+.btn:hover { background: #1565C0; }
+.btn:disabled { background: #90CAF9; cursor: not-allowed; }
+.results { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.card-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.card { background: #f8f9fa; border-radius: 8px; padding: 12px 16px; min-width: 110px; flex: 1; text-align: center; }
+.card .label { font-size: 0.7rem; color: #888; margin-bottom: 4px; }
+.card .value { font-size: 1.1rem; font-weight: 700; }
+.pos { color: #d32f2f; }
+.neg { color: #1976D2; }
+#chart { width: 100%; height: 600px; }
+#tradeTable { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin-top: 12px; }
+#tradeTable th { background: #f0f0f0; padding: 8px 10px; text-align: left; font-weight: 600; color: #555; }
+#tradeTable td { padding: 6px 10px; border-bottom: 1px solid #eee; }
+#tradeTable tr:hover td { background: #f8f9fa; }
+#loading { display: none; text-align: center; padding: 40px; color: #888; }
+#loading .spinner { border: 3px solid #f0f0f0; border-top: 3px solid #1976D2; border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite; margin: 0 auto 12px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+#status { margin-top: 8px; font-size: 0.8rem; color: #888; }
+</style>
+</head>
+<body>
+
+<h1>📊 即時回測</h1>
+<div class="subtitle">瀏覽器端計算，資料為 2020-01 ~ 2026-06</div>
+
+<div class="control-panel">
+  <div class="form-row">
+    <div class="form-group">
+      <label>股票代碼</label>
+      <input type="text" id="symbol" list="stockList" value="0050.TW" placeholder="例如 2330.TW">
+      <datalist id="stockList"></datalist>
+    </div>
+    <div class="form-group">
+      <label>策略</label>
+      <select id="strategy">
+        <option value="rsi">RSI 超買超賣</option>
+        <option value="macross" selected>MA 均線交叉</option>
+        <option value="emacross">EMA 指數交叉</option>
+      </select>
+    </div>
+    <div class="form-group" id="param1-group">
+      <label id="param1-label">快線 (Fast MA)</label>
+      <input type="number" id="param1" value="5" min="2" max="200">
+    </div>
+    <div class="form-group" id="param2-group">
+      <label id="param2-label">慢線 (Slow MA)</label>
+      <input type="number" id="param2" value="20" min="5" max="500">
+    </div>
+    <div class="form-group" id="param3-group" style="display:none">
+      <label id="param3-label">超買</label>
+      <input type="number" id="param3" value="70" min="50" max="100">
+    </div>
+    <div class="form-group" id="param4-group" style="display:none">
+      <label id="param4-label">超賣</label>
+      <input type="number" id="param4" value="30" min="0" max="50">
+    </div>
+    <div class="form-group">
+      <label>初始資金 (萬)</label>
+      <input type="number" id="capital" value="200" min="10" max="99999">
+    </div>
+    <div class="form-group">
+      <label>&nbsp;</label>
+      <button class="btn" id="runBtn" onclick="runBacktest()">▶ 執行回測</button>
+    </div>
+  </div>
+  <div id="status">就緒 — 已載入 19 檔台股資料</div>
+</div>
+
+<div id="loading"><div class="spinner"></div>計算中...</div>
+
+<div class="results" id="results" style="display:none">
+  <div class="card-row" id="metrics"></div>
+  <div id="chart"></div>
+  <h3 style="margin-top:20px; font-size:1rem;">📋 交易明細</h3>
+  <div style="overflow-x:auto"><table id="tradeTable"><tr><th>#</th><th>日期</th><th>類型</th><th>價格</th><th>金額</th><th>損益</th></tr></table></div>
+</div>
+
+<script>
+// Load stock data
+let stockData = {};
+
+fetch('tw-stock-data.json')
+  .then(r => r.json())
+  .then(d => {
+    stockData = d.stocks;
+    const dl = document.getElementById('stockList');
+    Object.entries(d.stockList || {}).forEach(([k,v]) => {
+      const opt = document.createElement('option');
+      opt.value = k;
+      dl.appendChild(opt);
+    });
+    console.log(`✅ 已載入 ${Object.keys(stockData).length} 檔股票`);
+  });
+
+// Update params based on strategy
+document.getElementById('strategy').addEventListener('change', function() {
+  const p1g = document.getElementById('param1-group');
+  const p2g = document.getElementById('param2-group');
+  const p3g = document.getElementById('param3-group');
+  const p4g = document.getElementById('param4-group');
+  const p1l = document.getElementById('param1-label');
+  const p2l = document.getElementById('param2-label');
+
+  if (this.value === 'rsi') {
+    p1g.style.display = 'none';
+    p2g.style.display = 'none';
+    p3g.style.display = 'flex';
+    p4g.style.display = 'flex';
+    document.getElementById('param1-label').textContent = 'RSI 週期';
+    document.getElementById('param3-label').textContent = '超買門檻';
+    document.getElementById('param4-label').textContent = '超賣門檻';
+  } else {
+    p1g.style.display = 'flex';
+    p2g.style.display = 'flex';
+    p3g.style.display = 'none';
+    p4g.style.display = 'none';
+    p1l.textContent = this.value === 'macross' ? '快線 (Fast MA)' : '快線 (Fast EMA)';
+    p2l.textContent = this.value === 'macross' ? '慢線 (Slow MA)' : '慢線 (Slow EMA)';
+  }
+});
+
+function SMA(data, period) {
+  const result = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i < period - 1) { result.push(null); continue; }
+    let sum = 0;
+    for (let j = i - period + 1; j <= i; j++) sum += data[j];
+    result.push(sum / period);
+  }
+  return result;
+}
+
+function EMA(data, period) {
+  const result = [];
+  const k = 2 / (period + 1);
+  let ema = data[0];
+  result.push(ema);
+  for (let i = 1; i < data.length; i++) {
+    ema = data[i] * k + ema * (1 - k);
+    result.push(ema);
+  }
+  return result;
+}
+
+function RSI(data, period) {
+  const rsi = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i < period) { rsi.push(null); continue; }
+    let gains = 0, losses = 0;
+    for (let j = i - period + 1; j <= i; j++) {
+      const diff = data[j] - data[j-1];
+      if (diff > 0) gains += diff; else losses -= diff;
+    }
+    const avgGain = gains / period;
+    const avgLoss = losses / period;
+    if (avgLoss === 0) { rsi.push(100); continue; }
+    const rs = avgGain / avgLoss;
+    rsi.push(100 - 100 / (1 + rs));
+  }
+  return rsi;
+}
+
+function runBacktest() {
+  const symbol = document.getElementById('symbol').value.trim().toUpperCase();
+  if (!symbol.includes('.')) {
+    document.getElementById('symbol').value = symbol + '.TW';
+  }
+  const sym = document.getElementById('symbol').value;
+  const strategy = document.getElementById('strategy').value;
+  const p1 = parseInt(document.getElementById('param1').value) || 5;
+  const p2 = parseInt(document.getElementById('param2').value) || 20;
+  const p3 = parseInt(document.getElementById('param3').value) || 70;
+  const p4 = parseInt(document.getElementById('param4').value) || 30;
+  const capital = parseFloat(document.getElementById('capital').value) * 10000;
+
+  // Find stock
+  let sd = stockData[sym];
+  if (!sd) {
+    // Try without .TW
+    const alt = sym.replace('.TW','') + '.TW';
+    sd = stockData[alt];
+    if (!sd) {
+      document.getElementById('status').textContent = `❌ 找不到 ${sym}，請輸入正確代碼`;
+      return;
+    }
+    document.getElementById('symbol').value = alt;
+  }
+
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('status').textContent = `🔄 正在回測 ${sd.name} (${sym})…`;
+
+  setTimeout(() => {
+    try {
+      const prices = sd.data.map(d => d.c);
+      const dates = sd.data.map(d => d.d);
+      const highs = sd.data.map(d => d.h);
+      const lows = sd.data.map(d => d.l);
+      const opens = sd.data.map(d => d.o);
+      const n = prices.length;
+
+      let signals = []; // -1 sell, 1 buy, 0 hold
+      let buyPrices = [];
+      let sellPrices = [];
+      let buyDates = [];
+      let sellDates = [];
+      let trades = [];
+
+      if (strategy === 'macross' || strategy === 'emacross') {
+        const fast = strategy === 'macross' ? SMA(prices, p1) : EMA(prices, p1);
+        const slow = strategy === 'macross' ? SMA(prices, p2) : EMA(prices, p2);
+
+        let inPosition = false;
+        for (let i = 0; i < n; i++) {
+          if (i < Math.max(p1, p2)) { signals.push(0); continue; }
+          if (!inPosition && fast[i] !== null && slow[i] !== null && fast[i] > slow[i]) {
+            signals.push(1); // buy
+            buyPrices.push(prices[i]);
+            buyDates.push(dates[i]);
+            inPosition = true;
+          } else if (inPosition && fast[i] !== null && slow[i] !== null && fast[i] < slow[i]) {
+            signals.push(-1); // sell
+            sellPrices.push(prices[i]);
+            sellDates.push(dates[i]);
+            inPosition = false;
+          } else {
+            signals.push(0);
+          }
+        }
+      } else {
+        // RSI
+        const rsi = RSI(prices, p1 || 14);
+        let inPosition = false;
+        for (let i = 0; i < n; i++) {
+          if (rsi[i] === null) { signals.push(0); continue; }
+          if (!inPosition && rsi[i] < p4) {
+            signals.push(1);
+            buyPrices.push(prices[i]);
+            buyDates.push(dates[i]);
+            inPosition = true;
+          } else if (inPosition && rsi[i] > p3) {
+            signals.push(-1);
+            sellPrices.push(prices[i]);
+            sellDates.push(dates[i]);
+            inPosition = false;
+          } else {
+            signals.push(0);
+          }
+        }
+      }
+
+      // Run P&L
+      let cash = capital;
+      let shares = 0;
+      let equity = [capital];
+      let tradeLog = [];
+      let entryPrice = 0, entryDate = '';
+
+      const minSig = Math.min(buyDates.length, sellDates.length);
+      for (let t = 0; t < minSig; t++) {
+        // Buy
+        const buyIdx = dates.indexOf(buyDates[t]);
+        const bp = buyPrices[t];
+        const bshares = Math.floor(cash / bp / 1000) * 1000;
+        if (bshares > 0) {
+          cash -= bshares * bp;
+          shares += bshares;
+          entryPrice = bp;
+          entryDate = buyDates[t];
+          tradeLog.push({ type: 'buy', date: buyDates[t], price: bp, amount: bshares * bp, pnl: null });
+        }
+
+        // Sell
+        const sellIdx = dates.indexOf(sellDates[t]);
+        const sp = sellPrices[t];
+        if (shares > 0) {
+          cash += shares * sp;
+          const pnl = ((sp - entryPrice) / entryPrice * 100);
+          tradeLog.push({ type: 'sell', date: sellDates[t], price: sp, amount: shares * sp, pnl: Math.round(pnl*100)/100 });
+          shares = 0;
+        }
+      }
+
+      // Force sell at end
+      if (shares > 0) {
+        const finalPrice = prices[n-1];
+        cash += shares * finalPrice;
+        const pnl = ((finalPrice - entryPrice) / entryPrice * 100);
+        tradeLog.push({ type: 'sell(end)', date: dates[n-1], price: finalPrice, amount: shares * finalPrice, pnl: Math.round(pnl*100)/100 });
+        shares = 0;
+      }
+
+      // Equity curve
+      for (let i = 0; i < n; i++) {
+        equity.push(cash);
+      }
+
+      const finalValue = cash;
+      const totalReturn = (finalValue - capital) / capital * 100;
+
+      // Buy & Hold
+      const bhReturn = (prices[n-1] / prices[0] - 1) * 100;
+
+      // Sharpe
+      const eq = equity.slice(1);
+      const dailyRet = [];
+      for (let i = 1; i < eq.length; i++) {
+        dailyRet.push(eq[i] / eq[i-1] - 1);
+      }
+      const avgRet = dailyRet.reduce((a,b)=>a+b,0) / dailyRet.length;
+      const stdRet = Math.sqrt(dailyRet.reduce((s,v)=>s+(v-avgRet)**2,0) / dailyRet.length);
+      const sharpe = stdRet > 0 ? Math.sqrt(252) * avgRet / stdRet : 0;
+
+      // Max DD
+      let peak = capital, maxDD = 0;
+      for (let v of equity) {
+        if (v > peak) peak = v;
+        const dd = (peak - v) / peak * 100;
+        if (dd > maxDD) maxDD = dd;
+      }
+
+      // Win rate
+      const wTrades = tradeLog.filter(t => t.pnl !== null && t.pnl > 0);
+      const lTrades = tradeLog.filter(t => t.pnl !== null && t.pnl < 0);
+      const winRate = (wTrades.length + lTrades.length) > 0 ? wTrades.length / (wTrades.length + lTrades.length) * 100 : 0;
+
+      // Annualized return
+      const firstDate = new Date(dates[0]);
+      const lastDate = new Date(dates[n-1]);
+      const years = (lastDate - firstDate) / (365.25 * 24 * 60 * 60 * 1000);
+      const annReturn = years > 0 ? (Math.pow(1 + totalReturn/100, 1/years) - 1) * 100 : 0;
+
+      // Display metrics
+      const m = document.getElementById('metrics');
+      m.innerHTML = `
+        <div class="card"><div class="label">總報酬</div><div class="value ${totalReturn>=0?'pos':'neg'}">${totalReturn.toFixed(1)}%</div></div>
+        <div class="card"><div class="label">年化報酬</div><div class="value">${annReturn.toFixed(1)}%</div></div>
+        <div class="card"><div class="label">Buy & Hold</div><div class="value" style="color:#1976D2">${bhReturn.toFixed(1)}%</div></div>
+        <div class="card"><div class="label">Sharpe</div><div class="value">${sharpe.toFixed(2)}</div></div>
+        <div class="card"><div class="label">最大回撤</div><div class="value neg">${maxDD.toFixed(1)}%</div></div>
+        <div class="card"><div class="label">勝率</div><div class="value">${winRate.toFixed(0)}%</div></div>
+        <div class="card"><div class="label">交易次數</div><div class="value">${tradeLog.length}</div></div>
+        <div class="card"><div class="label">最終資值</div><div class="value">$${finalValue.toLocaleString()}</div></div>
+      `;
+
+      // Plot
+      const buyX = buyDates, buyY = buyPrices;
+      const sellX = sellDates, sellY = sellPrices;
+
+      const candlestick = {
+        x: dates, close: prices, high: highs, low: lows, open: opens,
+        type: 'candlestick', name: 'K線',
+        increasing: {line: {color: '#d32f2f'}},
+        decreasing: {line: {color: '#1976D2'}},
+        xaxis: 'x', yaxis: 'y'
+      };
+
+      const buyTrace = {
+        x: buyX, y: buyY, mode: 'markers', name: '買入',
+        marker: {color: '#00E676', size: 12, symbol: 'triangle-up'},
+        type: 'scatter', xaxis: 'x', yaxis: 'y'
+      };
+
+      const sellTrace = {
+        x: sellX, y: sellY, mode: 'markers', name: '賣出',
+        marker: {color: '#FF5252', size: 12, symbol: 'triangle-down'},
+        type: 'scatter', xaxis: 'x', yaxis: 'y'
+      };
+
+      // For MA/EMA strategy, add lines
+      let extraTraces = [];
+      if (strategy === 'macross') {
+        const fast = SMA(prices, p1);
+        const slow = SMA(prices, p2);
+        extraTraces.push({x: dates, y: fast, type: 'scatter', name: `MA${p1}`, line: {color: '#FFA726', width: 1.5}});
+        extraTraces.push({x: dates, y: slow, type: 'scatter', name: `MA${p2}`, line: {color: '#42A5F5', width: 1.5}});
+      } else if (strategy === 'emacross') {
+        const fast = EMA(prices, p1);
+        const slow = EMA(prices, p2);
+        extraTraces.push({x: dates, y: fast, type: 'scatter', name: `EMA${p1}`, line: {color: '#FFA726', width: 1.5}});
+        extraTraces.push({x: dates, y: slow, type: 'scatter', name: `EMA${p2}`, line: {color: '#42A5F5', width: 1.5}});
+      }
+
+      // Subplots
+      const traces = [candlestick, buyTrace, sellTrace, ...extraTraces];
+
+      const layout = {
+        title: `${sym} ${sd.name} — ${strategy === 'rsi' ? `RSI(${p1||14}) 超買${p3}/超賣${p4}` : `${strategy==='macross'?'MA':'EMA'}(${p1}/${p2}) 交叉`} 回測`,
+        template: 'plotly_white', height: 600,
+        hovermode: 'x unified',
+        xaxis: {rangeslider: {visible: false}},
+        yaxis: {title: '價格 / 淨值 (NT$)'},
+        legend: {orientation: 'h', y: 1.12},
+        margin: {t: 50, r: 30, b: 30, l: 60},
+      };
+
+      Plotly.newPlot('chart', traces, layout, {responsive: true});
+
+      // Trade table
+      const tt = document.getElementById('tradeTable');
+      let html = '<tr><th>#</th><th>日期</th><th>類型</th><th>價格</th><th>金額</th><th>損益</th></tr>';
+      tradeLog.forEach((t,i) => {
+        const color = t.pnl !== null ? (t.pnl >= 0 ? '#d32f2f' : '#1976D2') : '#888';
+        html += `<tr><td>${i+1}</td><td>${t.date}</td><td>${t.type}</td><td>$${t.price.toFixed(2)}</td><td>$${t.amount.toLocaleString()}</td><td style="color:${color}">${t.pnl !== null ? t.pnl+'%' : '—'}</td></tr>`;
+      });
+      tt.innerHTML = html;
+
+      document.getElementById('results').style.display = 'block';
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('status').textContent = `✅ ${sd.name} (${sym}) — ${strategy} 策略 — ${totalReturn.toFixed(1)}%`;
+    } catch (e) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('status').textContent = `❌ 錯誤: ${e.message}`;
+      console.error(e);
+    }
+  }, 100);
+}
+</script>
+</body>
+</html>
