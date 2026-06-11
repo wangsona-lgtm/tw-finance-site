@@ -170,7 +170,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 <div id="lecture-list" class="active">
   <div class="hero">
     <h2>📊 金融資料平台</h2>
-    <p>大盤儀表板 · 技術分析圖 · 個股技術分析 · 盤前行情 · 收盤行情 · 講義資料庫 · 盤前圖表</p><p style="font-size:13px;color:var(--text3);margin-top:4px;">📈 盤前圖表已整合至 <a href="premarket/" style="color:var(--accent);">盤前分析頁</a></p>
+    <p>大盤儀表板 · 回測專區 · 個股技術分析 · 盤前行情 · 盤前圖表 · 收盤行情 · 盤後分析 · 講義資料庫</p>
   </div>
 
   <div class="container">
@@ -186,10 +186,10 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
         <div class="name">大盤儀表板</div>
         <div class="desc">即時行情、K 棒圖、技術指標</div>
       </a>
-      <a href="#chart-section" class="quick-link">
+      <a href="backtest/" class="quick-link">
         <div class="icon">📈</div>
-        <div class="name">技術分析圖</div>
-        <div class="desc">@sona1115_bot · 6 張技術圖</div>
+        <div class="name">回測專區</div>
+        <div class="desc">ETF 回測 · 0050 均線交叉</div>
       </a>
       <a href="stock-viewer/" class="quick-link">
         <div class="icon">🔬</div>
@@ -212,6 +212,23 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
         <div class="desc">每日盤後個股收盤資料</div>
       </a>
     </div>
+
+    <hr class="section-divider">
+
+    <!-- ===== 回測專區 ===== -->
+    <div id="backtest-section" class="section-title">
+      <h2>📈 回測專區</h2>
+      <p>0050.TW ETF 回測 · 台股策略驗證</p>
+    </div>
+    <a href="backtest/" style="display:block;background:var(--surface);border:2px solid var(--accent2);border-radius:12px;padding:24px;text-decoration:none;color:var(--text);transition:all .2s;">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+        <span style="font-size:36px;">📊</span>
+        <div style="flex:1;">
+          <div style="font-size:17px;font-weight:700;color:var(--accent2);margin-bottom:4px;">ETF 回測工具 →</div>
+          <div style="font-size:13px;color:var(--text2);">0050 均線交叉 · 多訊號策略（VIX · HIRP · ML） · VectorBT 回測引擎</div>
+        </div>
+      </div>
+    </a>
 
     <hr class="section-divider">
 
