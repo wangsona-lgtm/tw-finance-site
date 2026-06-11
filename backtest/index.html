@@ -49,6 +49,15 @@ body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text
   </div>
 
   <div class="card" style="border-color:var(--accent2);border-width:2px;">
+    <h3>🖥️ 即時回測工具</h3>
+    <div class="meta">輸入股票代碼 · 選擇策略 (RSI/MA/EMA) · 調整參數 · 瀏覽器即時計算</div>
+    <p style="font-size:14px;color:var(--text2);margin:8px 0;">
+      已預載 19 檔台股資料（2020-2026），支援 RSI 超買超賣、MA 均線交叉、EMA 指數交叉三種策略
+    </p>
+    <a href="live-backtest.html" class="btn" target="_blank" style="background:#E65100;">⚡ 開啟即時回測 →</a>
+  </div>
+
+  <div class="card" style="border-color:var(--accent2);border-width:2px;">
     <h3>📈 0050 RSI 回測（Plotly 版）</h3>
     <div class="meta">2022-01-01 ~ 2024-12-31 ｜ RSI(14) 超賣30/超買70 ｜ 本金 200 萬</div>
     <div class="grid" style="margin:12px 0;">
@@ -64,6 +73,20 @@ body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text
   </div>
 
   <div class="card">
+    <h3>📉 0050 MA(5/20) 均線交叉回測</h3>
+    <div class="meta">2022-01-01 ~ 2024-12-31 ｜ MA5 突破/跌破 MA20 ｜ 本金 200 萬</div>
+    <div class="grid" style="margin:12px 0;">
+      <div><div style="font-size:12px;color:var(--text2)">總報酬</div><div class="value green">+36.29%</div></div>
+      <div><div style="font-size:12px;color:var(--text2)">年化報酬</div><div class="value green">+10.91%</div></div>
+      <div><div style="font-size:12px;color:var(--text2)">Buy & Hold</div><div class="value green">+49.96%</div></div>
+      <div><div style="font-size:12px;color:var(--text2)">Sharpe</div><div class="value green">0.85</div></div>
+      <div><div style="font-size:12px;color:var(--text2)">最大回撤</div><div class="value red">-16.31%</div></div>
+      <div><div style="font-size:12px;color:var(--text2)">勝率</div><div style="font-size:20px;font-weight:700">42.9%</div></div>
+    </div>
+    <a href="0050-ma5-cross-backtest.html" class="btn" target="_blank" style="background:var(--accent2);">📄 MA 交叉報表 →</a>
+  </div>
+
+  <div class="card">
     <h3>📋 回測記錄</h3>
     <div style="font-size:13px;color:var(--text2);margin:8px 0;">
       <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
@@ -75,6 +98,11 @@ body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text
         <span>0050 RSI(30/70) 原 Chart.js 版 (2023-2026)</span>
         <span style="color:var(--accent2);">+2.25%</span>
         <span style="color:var(--text2);">原系統</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
+        <span>0050 MA(5/20) 均線交叉回測</span>
+        <span style="color:var(--accent2);">+36.29%</span>
+        <span style="color:var(--text2);">2026-06-12</span>
       </div>
       <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
         <span>0050 RSI(30/70) 合成版 (2022-2025) ⭐</span>
