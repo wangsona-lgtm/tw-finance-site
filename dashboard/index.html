@@ -1136,10 +1136,11 @@ function fmtMoney(v) {
 async function loadSentimentData() {
   try {
     // Try pre-fetched data first
-    const resp = await fetch(SENTIMENT_DATA_FILE);
+    const cb = '?t=' + Date.now();
+    const resp = await fetch(SENTIMENT_DATA_FILE + cb);
     if (resp.ok) sentimentData = await resp.json();
     
-    const resp2 = await fetch(SENTIMENT_HISTORY_FILE);
+    const resp2 = await fetch(SENTIMENT_HISTORY_FILE + cb);
     if (resp2.ok) sentimentHistory = await resp2.json();
   } catch(e) {
     console.warn('sentiment data file not available, using live API');
