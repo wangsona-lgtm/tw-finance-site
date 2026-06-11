@@ -136,7 +136,8 @@ function renderSidebar(list) {
 }
 async function loadItem(item) {
   try {
-    const res = await fetch(`../postmarket/${item.date}.json?_=${Date.now()}`);
+    const fn = item.file || item.date;
+    const res = await fetch(`../postmarket/${fn}.json?_=${Date.now()}`);
     const data = await res.json();
     renderContent(data);
   } catch(e) {
