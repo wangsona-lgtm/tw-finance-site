@@ -1351,8 +1351,16 @@ function renderWeeklySentiment() {
   // Sort by date
   const sorted = [...sentimentHistory].sort((a,b) => a.date.localeCompare(b.date));
   
+  function localDateStr(d) {
+    const y = d.getFullYear();
+    const m = String(d.getMonth()+1).padStart(2,'0');
+    const day = String(d.getDate()).padStart(2,'0');
+    return y+'-'+m+'-'+day;
+  }
+  
   // Get this week's entries (Mon to today)
   const today = new Date();
+  const todayStr = localDateStr(today);
   const dayOfWeek = today.getDay(); // 0=Sun, 1=Mon...
   const monOffset = dayOfWeek === 0 ? 6 : dayOfWeek - 1; // days back to Monday
   const mon = new Date(today);
@@ -1362,13 +1370,13 @@ function renderWeeklySentiment() {
   for (let i = 0; i <= monOffset && i < 5; i++) {
     const d = new Date(mon);
     d.setDate(mon.getDate() + i);
-    const iso = d.toISOString().slice(0,10);
+    const ds = localDateStr(d);
     const dayName = ['日','一','二','三','四','五','六'][d.getDay()];
-    const found = sorted.find(h => h.date === iso);
+    const found = sorted.find(h => h.date === ds);
     if (found) {
-      weekDays.push({ ...found, dayName, dateLabel: `${iso.slice(5)} (${dayName})` });
+      weekDays.push({ ...found, dayName, dateLabel: `${ds.slice(5)} (${dayName})` });
     } else {
-      weekDays.push({ date: iso, dayName, dateLabel: `${iso.slice(5)} (${dayName})`, inst: null, pc_ratio: null, pc_oi_ratio: null });
+      weekDays.push({ date: ds, dayName, dateLabel: `${ds.slice(5)} (${dayName})`, inst: null, pc_ratio: null, pc_oi_ratio: null });
     }
   }
   
@@ -1420,7 +1428,7 @@ function renderWeeklySentiment() {
       const color = num > 0 ? '#d32f2f' : (num < 0 ? '#1976D2' : '#666');
       return `<span style="color:${color};font-weight:500;">${arrow} ${v}</span>`;
     }
-    const isToday = w.date === today.toISOString().slice(0,10);
+    const isToday = w.date === todayStr;
     const bgStyle = isToday ? ' style="background:rgba(139,0,0,0.04);font-weight:500;"' : '';
     rows += `<tr${bgStyle}>
       <td style="padding:5px 8px;border-bottom:1px solid var(--border);white-space:nowrap;">${w.dateLabel}${isToday ? ' 🟢' : ''}</td>
