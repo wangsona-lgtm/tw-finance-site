@@ -247,7 +247,7 @@ let reports = [];
 // ═══ Load report list ═══
 async function loadReportList() {
   try {
-    const r = await fetch('reports/list.json' + '?t=' + Date.now());
+    const r = await fetch('../reports/list.json' + '?t=' + Date.now());
     reports = await r.json();
     renderSidebar();
     // Auto-select newest
@@ -282,7 +282,7 @@ async function selectReport(date) {
   document.getElementById('reportInner').style.display = 'block';
 
   try {
-    const r = await fetch(`reports/${date}.json` + '?t=' + Date.now());
+    const r = await fetch(`../reports/${date}.json` + '?t=' + Date.now());
     const data = await r.json();
     renderReport(data);
   } catch(e) {
