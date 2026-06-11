@@ -166,18 +166,25 @@ async function loadItem(item) {
 function renderContent(data) {
   let html = '';
   if (data.index) {
-    html += `<div class="card"><h3>📊 大盤指數</h3><div class="index-row">`;
-    Object.entries(data.index).forEach(([k,v]) => {
-      const cls = parseFloat(v.change) >= 0 ? 'up' : 'down';
-      html += `<div class="index-item"><div class="label">${k}</div><div class="value ${cls}">${v.price}</div><div class="change ${cls}">${v.change} (${v.changePct})</div></div>`;
-    });
-    html += `</div></div>`;
+    const idx = data.index;
+    const cls = idx.change >= 0 ? 'up' : 'down';
+    html += `<div class="card">
+      <h3>📊 大盤指數</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px;">
+        <div><div class="label" style="color:#888;font-size:12px;">收盤</div><div style="font-size:24px;font-weight:700;">${idx.close.toLocaleString()}</div></div>
+        <div><div class="label" style="color:#888;font-size:12px;">漲跌</div><div style="font-size:24px;font-weight:700;color:${cls === 'up' ? 'red' : 'green'}">${idx.change.toFixed(2)} (${idx.changePercent.toFixed(2)}%)</div></div>
+        <div><div class="label" style="color:#888;font-size:12px;">開盤</div><div>${idx.open.toLocaleString()}</div></div>
+        <div><div class="label" style="color:#888;font-size:12px;">最高</div><div>${idx.high.toLocaleString()}</div></div>
+        <div><div class="label" style="color:#888;font-size:12px;">最低</div><div>${idx.low.toLocaleString()}</div></div>
+        <div><div class="label" style="color:#888;font-size:12px;">特徵</div><div style="font-size:12px;color:#666;">${idx.feature || ''}</div></div>
+      </div>
+    </div>`;
   }
-  if (data.stocks) {
+  if (data.stocks && data.stocks.length > 0) {
     html += `<div class="card"><h3>📋 個股收盤</h3><table class="stocks-table"><thead><tr><th>代碼</th><th>名稱</th><th>收盤</th><th>漲跌</th><th>漲跌幅</th></tr></thead><tbody>`;
     data.stocks.slice(0,30).forEach(s => {
       const cls = parseFloat(s.change) >= 0 ? 'up' : 'down';
-      html += `<tr><td>${s.code}</td><td>${s.name}</td><td class="${cls}">${s.close}</td><td class="${cls}">${s.change}</td><td class="${cls}">${s.changePct}</td></tr>`;
+      html += `<tr><td>${s.code}</td><td>${s.name}</td><td class="${cls}">${s.close}</td><td class="${cls}">${s.change}</td><td class="${cls}">${s.changePercent}%</td></tr>`;
     });
     html += `</tbody></table></div>`;
   }
