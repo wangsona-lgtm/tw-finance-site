@@ -195,7 +195,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
         <div class="name">大盤儀表板</div>
         <div class="desc">即時行情、K 棒圖、技術指標</div>
       </a>
-      <a href="#" class="quick-link" onclick="event.preventDefault();document.getElementById('chartModal').classList.add('open')">
+      <a href="#chart-section" class="quick-link">
         <div class="icon">📈</div>
         <div class="name">技術分析圖</div>
         <div class="desc">@sona1115_bot · 6 張技術圖</div>
@@ -310,18 +310,50 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
       </div>
     </a>
 
+    <hr class="section-divider">
+
+    <!-- ===== 技術分析圖集合 ===== -->
+    <h2 style="font-size:18px;margin-bottom:8px;">📈 技術分析圖</h2>
+    <p style="color:var(--text2);font-size:13px;margin-bottom:16px;">來自 @sona1115_bot (wang) · 點圖可放大</p>
+    <div style="display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;">
+      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=0;showChart()" style="cursor:pointer;flex:0 0 260px;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <img src="./market_DJI_2026-06-11.png" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
+        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 道瓊 (DJI)</div>
+      </div>
+      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=1;showChart()" style="cursor:pointer;flex:0 0 260px;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <img src="./market_IXIC_2026-06-11.png" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
+        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 NASDAQ (IXIC)</div>
+      </div>
+      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=2;showChart()" style="cursor:pointer;flex:0 0 260px;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <img src="./market_SOX_2026-06-11.png" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
+        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 費城半導體 (SOX)</div>
+      </div>
+      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=3;showChart()" style="cursor:pointer;flex:0 0 260px;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <img src="./market_INTC_2026-06-11.png" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
+        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 Intel (INTC)</div>
+      </div>
+      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=4;showChart()" style="cursor:pointer;flex:0 0 260px;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <img src="./market_TSM_2026-06-11.png" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
+        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 台積電 ADR (TSM)</div>
+      </div>
+      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=5;showChart()" style="cursor:pointer;flex:0 0 260px;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+        <img src="./INTC_BullFlag_2026-06-10.jpg" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
+        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📐 INTC Bull Flag</div>
+      </div>
+    </div>
+
   <div style="text-align:center;padding:20px;color:var(--text3);font-size:12px;border-top:1px solid var(--border);margin-top:32px;">
-    王美智 · tw-finance-site · v1.2.2 &nbsp;|&nbsp; 📡 TWSE · @sona1115_bot
+    王美智 · tw-finance-site · v1.2.3 &nbsp;|&nbsp; 📡 TWSE · @sona1115_bot
   </div>
 </div>
 
 <!-- 圖片放大 Modal -->
 <div id="chartModal" class="modal" onclick="if(event.target===this)this.classList.remove('open')">
-  <div id="chartGallery" style="position:relative;max-width:95vw;max-height:95vh;">
-    <img id="chartModalImg" src="./INTC_BullFlag_2026-06-10.jpg" alt="技術分析放大圖" style="max-width:100%;max-height:95vh;border-radius:8px;display:block;">
-    <div id="chartCounter" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);color:#fff;padding:4px 14px;border-radius:12px;font-size:13px;">1/2</div>
-    <button onclick="changeChart(-1)" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:18px;">‹</button>
-    <button onclick="changeChart(1)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:18px;">›</button>
+  <div style="position:relative;max-width:95vw;max-height:95vh;">
+    <img id="chartModalImg" src="./market_DJI_2026-06-11.png" alt="技術分析放大圖" style="max-width:100%;max-height:95vh;border-radius:8px;display:block;">
+    <div id="chartCounter" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);color:#fff;padding:4px 16px;border-radius:12px;font-size:14px;">1/6</div>
+    <button onclick="changeChart(-1)" style="position:absolute;left:6px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.6);color:#fff;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:24px;display:flex;align-items:center;justify-content:center;">‹</button>
+    <button onclick="changeChart(1)" style="position:absolute;right:6px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.6);color:#fff;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:24px;display:flex;align-items:center;justify-content:center;">›</button>
   </div>
 </div>
 <script>
@@ -334,11 +366,8 @@ const chartGallery = [
   { path: './INTC_BullFlag_2026-06-10.jpg', label: 'INTC Bull Flag 型態' },
 ];
 let chartIdx = 0;
-function changeChart(d) {
-  chartIdx = (chartIdx + d + chartGallery.length) % chartGallery.length;
-  document.getElementById('chartModalImg').src = chartGallery[chartIdx].path;
-  document.getElementById('chartCounter').textContent = (chartIdx+1) + '/' + chartGallery.length;
-}
+function showChart() { document.getElementById('chartModalImg').src = chartGallery[chartIdx].path; document.getElementById('chartCounter').textContent = (chartIdx+1)+'/'+chartGallery.length; }
+function changeChart(d) { chartIdx = (chartIdx + d + chartGallery.length) % chartGallery.length; document.getElementById('chartModalImg').src = chartGallery[chartIdx].path; document.getElementById('chartCounter').textContent = (chartIdx+1)+'/'+chartGallery.length; }
 </script>
 
 <!-- ===== Lecture Content ===== -->
