@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>盤前圖表 · tw-finance-site</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fff;color:#333}
+.topnav{background:#f5f5f5;padding:12px 20px;border-bottom:1px solid #ddd;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.topnav a{color:#2563eb;text-decoration:none;font-size:14px}
+.topnav a:hover{text-decoration:underline}
+.topnav .site-title{font-size:15px;font-weight:700;color:#333;margin-right:auto}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+h1{font-size:22px;margin-bottom:6px}
+.date-label{color:#888;font-size:14px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:#fafafa;border:1px solid #e0e0e0;border-radius:10px;overflow:hidden;cursor:pointer;transition:box-shadow .2s}
+.card:hover{box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.card img{width:100%;height:190px;object-fit:cover;display:block;border-bottom:1px solid #eee}
+.card .label{padding:10px 14px;font-size:14px;font-weight:600}
+/* Modal */
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:1000;justify-content:center;align-items:center}
+.modal.open{display:flex}
+.modal-img{max-width:95vw;max-height:95vh;border-radius:6px;object-fit:contain}
+.modal-controls{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);color:#fff;padding:6px 20px;border-radius:20px;font-size:14px}
+.modal-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:26px;display:flex;align-items:center;justify-content:center}
+.modal-btn:hover{background:rgba(0,0,0,.8)}
+.btn-prev{left:12px}
+.btn-next{right:12px}
+.modal-close{position:absolute;top:16px;right:20px;background:rgba(0,0,0,.5);color:#fff;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center}
+@media(max-width:600px){
+  .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+  .card img{height:130px}
+  .card .label{font-size:12px;padding:6px 10px}
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <span class="site-title">📈 盤前圖表</span>
+  <a href="../">🏠 首頁</a>
+  <a href="../expert-viewer/">📄 盤前分析</a>
+  <a href="../reports/">📰 每日報表</a>
+  <a href="../papers/">📚 論文</a>
+</div>
+
+<div class="container">
+  <h1>盤前圖表 · 2026-06-11</h1>
+  <p class="date-label">來自 @sona1115_bot (wang) · 13 張盤前分析圖表</p>
+
+  <div class="grid" id="chartGrid"></div>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()">
+  <button class="modal-close" onclick="closeModal()">✕</button>
+  <button class="modal-btn btn-prev" onclick="changeChart(-1)">‹</button>
+  <button class="modal-btn btn-next" onclick="changeChart(1)">›</button>
+  <img id="modalImg" class="modal-img" src="" alt="">
+  <div class="modal-controls" id="modalCounter"></div>
+</div>
+
+<script>
+const charts = [
+  { path: './market_DJI_2026-06-11.jpg', label: '📊 道瓊 (DJI)' },
+  { path: './market_IXIC_2026-06-11.jpg', label: '📊 NASDAQ (IXIC)' },
+  { path: './market_SOX_2026-06-11.jpg', label: '📊 費半 (SOX)' },
+  { path: './market_INTC_2026-06-11.jpg', label: '📊 Intel (INTC)' },
+  { path: './market_TSM_2026-06-11.jpg', label: '📊 台積電 ADR (TSM)' },
+  { path: './USDJPY_daily_2026-06-11.jpg', label: '💱 美元/日圓 (USDJPY 160.41)' },
+  { path: './WTI_Trump_2026-06-11.jpg', label: '🛢️ WTI 原油 · 川普宣布再轟炸' },
+  { path: './WTI_5min_2026-06-11.jpg', label: '🛢️ WTI 原油 5分線 (91.85)' },
+  { path: './Trump_Hormuz_2026-06-11.jpg', label: '📱 川普：秘密任務荷姆茲突破' },
+  { path: './GlobalYield_2026-06-11.jpg', label: '📈 全球公債殖利率指數 (3.5%)' },
+  { path: './SovereignDebt_2026-06-11.jpg', label: '🏛️ 全球主權銀團發債創紀錄' },
+  { path: './PressConf_2026-06-11.jpg', label: '🎤 記者會' },
+  { path: './INTC_BullFlag_2026-06-10.jpg', label: '📐 INTC Bull Flag 型態' },
+];
+
+const grid = document.getElementById('chartGrid');
+charts.forEach((c, i) => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.onclick = () => openModal(i);
+  card.innerHTML = `<img src="${c.path}" alt="${c.label}"><div class="label">${c.label}</div>`;
+  grid.appendChild(card);
+});
+
+let idx = 0;
+function openModal(i) { idx = i; updateModal(); document.getElementById('modal').classList.add('open'); }
+function closeModal() { document.getElementById('modal').classList.remove('open'); }
+function changeChart(d) { idx = (idx + d + charts.length) % charts.length; updateModal(); }
+function updateModal() {
+  document.getElementById('modalImg').src = charts[idx].path;
+  document.getElementById('modalCounter').textContent = (idx+1) + '/' + charts.length;
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('modal').classList.contains('open')) return;
+  if (e.key === 'ArrowLeft') changeChart(-1);
+  else if (e.key === 'ArrowRight') changeChart(1);
+  else if (e.key === 'Escape') closeModal();
+});
+</script>
+
+</body>
+</html>
