@@ -156,11 +156,16 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
 
 <!-- ===== Margin ===== -->
 <div id="tab-margin" class="container">
-  <div class="grid grid-3" id="marginCards">
-    <div class="card"><h3>融資餘額（張）</h3><div class="value" id="mg1">-</div></div>
-    <div class="card"><h3>融券餘額（張）</h3><div class="value" id="mg2">-</div></div>
-    <div class="card"><h3>借券餘額</h3><div class="value" id="mg3">-</div></div>
-  </div>
+  <div id="marginSummary"></div>
+  <div class="chart-container" id="marginChartWrap"><canvas id="marginChart"></canvas></div>
+  <div id="marginDetail" style="margin-top:12px;font-size:13px;color:var(--text2);">載入中...</div>
+  <br><hr><br>
+  <h3>📋 個股融資券明細</h3>
+  <input type="text" id="mgSearch" placeholder="搜尋代號或名稱" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;margin:8px 0;" oninput="renderMgDetail()">
+  <div style="overflow-x:auto"><table id="mgDetailTable" style="width:100%;border-collapse:collapse;font-size:12px;">
+    <thead><tr><th style="cursor:pointer" onclick="sortMg('code')">代號</th><th style="cursor:pointer" onclick="sortMg('name')">名稱</th><th style="cursor:pointer" onclick="sortMg('mg')">融資餘額</th><th style="cursor:pointer" onclick="sortMg('ms')">融券餘額</th><th style="cursor:pointer" onclick="sortMg('ratio')">資券比%</th><th style="cursor:pointer" onclick="sortMg('mgChg')">融資增減</th><th style="cursor:pointer" onclick="sortMg('msChg')">融券增減</th><th style="cursor:pointer" onclick="sortMg('offset')">資券互抵</th></tr></thead>
+    <tbody id="mgBody"></tbody>
+  </table></div>
 </div>
 
 <!-- ===== Daily After-Market ===== -->
@@ -827,35 +832,185 @@ async function loadPE() {
 }
 
 // ===== Margin =====
+// ===== 融資融券 =====
+let mgDetailData = [];
+let mgSort = { key: 'mg', asc: false };
+
+// Fetch TWSE market-wide margin summary
+async function fetchMarginSummary(dateStr) {
+  const url = `https://www.twse.com.tw/rwd/zh/marginTrading/MI_MARGN?date=${dateStr}&selectType=ALL`;
+  const resp = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+  if (!resp.ok) throw new Error('HTTP ' + resp.status);
+  return await resp.json();
+}
+
+function fmtWan(n) { return n >= 10000 ? (n/10000).toFixed(1) + '萬' : n.toLocaleString(); }
+
 async function loadMargin() {
   try {
-    const data = await fetchJSON(MARGIN_API);
-    // MI_MARGN 回傳每檔個股明細（欄位：融資今日餘額、融券今日餘額）
-    // 需要加總所有個股計算彙總值
-    let totalMargin = 0;      // 融資總張數
-    let totalShort = 0;       // 融券總張數
-    let hasData = false;
-    for (const r of data) {
-      const mg = parseFloat(r['融資今日餘額'] || 0);
-      const ms = parseFloat(r['融券今日餘額'] || 0);
-      if (!isNaN(mg) && mg > 0) { totalMargin += mg; hasData = true; }
-      if (!isNaN(ms) && ms > 0) { totalShort += ms; hasData = true; }
+    const today = new Date();
+    // Try today and recent weekdays
+    let dateStr = '';
+    let summary = null;
+    for (let d = 0; d < 7; d++) {
+      const dt = new Date(today);
+      dt.setDate(dt.getDate() - d);
+      const ds = dt.getFullYear() + String(dt.getMonth()+1).padStart(2,'0') + String(dt.getDate()).padStart(2,'0');
+      try {
+        summary = await fetchMarginSummary(ds);
+        if (summary.stat === 'OK') { dateStr = ds; break; }
+      } catch(e) { continue; }
     }
-    if (hasData) {
-      // 融資餘額（億）: 融資總張數 × 每張約 1 萬元概算 ÷ 1 億
-      // （融資餘額 = 融資張數 × 平均每股融資金額，此處以每張約當金額簡化）
-      document.getElementById('mg1').textContent = fmt(totalMargin);
-      document.getElementById('mg1').className = 'value';
-      document.getElementById('mg2').textContent = fmt(totalShort);
-      // 借券賣出資料需要從其他端點取得，暫時顯示 '-'（TODO）
-      document.getElementById('mg3').textContent = '-';
-    } else {
-      throw new Error('無資料');
+    if (!summary || summary.stat !== 'OK') throw new Error('無法取得融資券資料');
+
+    // Get market-wide summary data (first table)
+    const tbl = summary.tables[0];
+    const data = {};
+    for (const row of tbl.data) {
+      data[row[0]] = { buy: parseFloat(row[1].replace(/,/g,'')), sell: parseFloat(row[2].replace(/,/g,'')), repay: parseFloat(row[3].replace(/,/g,'')), prev: parseFloat(row[4].replace(/,/g,'')), today: parseFloat(row[5].replace(/,/g,'')) };
     }
+
+    const mg = data['融資(交易單位)'];
+    const ms = data['融券(交易單位)'];
+    const mAmt = data['融資金額(仟元)'];
+
+    // Get detailed per-stock data (second table)
+    const tbl2 = summary.tables[1];
+    mgDetailData = tbl2.data.map(r => ({
+      code: r[0], name: r[1],
+      mgBuy: parseFloat((r[2]||'0').replace(/,/g,'')),
+      mgSell: parseFloat((r[3]||'0').replace(/,/g,'')),
+      mgCash: parseFloat((r[4]||'0').replace(/,/g,'')),
+      mgPrev: parseFloat((r[5]||'0').replace(/,/g,'')),
+      mg: parseFloat((r[6]||'0').replace(/,/g,'')),
+      mgLimit: parseFloat((r[7]||'0').replace(/,/g,'')),
+      msBuy: parseFloat((r[8]||'0').replace(/,/g,'')),
+      msSell: parseFloat((r[9]||'0').replace(/,/g,'')),
+      msCash: parseFloat((r[10]||'0').replace(/,/g,'')),
+      msPrev: parseFloat((r[11]||'0').replace(/,/g,'')),
+      ms: parseFloat((r[12]||'0').replace(/,/g,'')),
+      msLimit: parseFloat((r[13]||'0').replace(/,/g,'')),
+      offset: parseFloat((r[14]||'0').replace(/,/g,'')),
+    })).filter(r => r.mg > 0 || r.ms > 0);
+    mgDetailData.sort((a,b) => b.mg - a.mg);
+
+    // Store history for trend chart
+    const historyKey = 'tw-margin-history';
+    let history = JSON.parse(localStorage.getItem(historyKey) || '[]');
+    const todayStr = dateStr.slice(0,4)+'-'+dateStr.slice(4,6)+'-'+dateStr.slice(6,8);
+    // Only add if not duplicate
+    if (!history.find(h => h.date === todayStr)) {
+      history.push({
+        date: todayStr,
+        mgToday: mg.today, msToday: ms.today,
+        amtToday: Math.round(mAmt.today / 1000), // 億元
+        mgBuy: mg.buy, mgSell: mg.sell
+      });
+      localStorage.setItem(historyKey, JSON.stringify(history));
+    }
+
+    // Display summary cards
+    function card(label, val, chg=null, unit='') {
+      const ch = chg !== null ? `<span style="font-size:13px;color:${chg>=0?'#d32f2f':'#1976D2'};margin-left:6px;">${chg>=0?'▲':'▼'}${Math.abs(chg).toFixed(1)}%</span>` : '';
+      return `<div class="card"><h3>${label}</h3><div class="value">${val.toLocaleString()}${unit}</div><div class="sub">${ch}</div></div>`;
+    }
+    const mgChg = (mg.today - mg.prev) / mg.prev * 100;
+    const msChg = (ms.today - ms.prev) / ms.prev * 100;
+    const amtChg = (mAmt.today - mAmt.prev) / mAmt.prev * 100;
+    document.getElementById('marginSummary').innerHTML = `
+      <div class="grid grid-3">
+        ${card('📗 融資餘額 (張)', mg.today, mgChg)}
+        ${card('📕 融券餘額 (張)', ms.today, msChg)}
+        ${card('💰 融資金額 (仟元)', mAmt.today, amtChg)}
+      </div>
+      <div class="grid grid-4" style="margin-top:8px;">
+        <div class="card" style="padding:12px;"><h3>融資買進</h3><div class="value red">${mg.buy.toLocaleString()}張</div><div class="sub">${(mg.buy-mg.sell)>0?'⬆淨買入':'⬇淨賣出'} ${Math.abs(mg.buy-mg.sell).toLocaleString()}張</div></div>
+        <div class="card" style="padding:12px;"><h3>融資賣出</h3><div class="value">${mg.sell.toLocaleString()}張</div></div>
+        <div class="card" style="padding:12px;"><h3>融券賣出</h3><div class="value red">${ms.sell.toLocaleString()}張</div></div>
+        <div class="card" style="padding:12px;"><h3>融券買進</h3><div class="value">${ms.buy.toLocaleString()}張</div></div>
+      </div>
+    `;
+
+    // Trend chart
+    if (history.length >= 2) {
+      const ctx = document.getElementById('marginChart').getContext('2d');
+      const dates = history.map(h => h.date);
+      if (window.mgChart) window.mgChart.destroy();
+      window.mgChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: dates,
+          datasets: [
+            { label: '融資餘額 (萬張)', data: history.map(h => +(h.mgToday/10000).toFixed(1)), backgroundColor: 'rgba(220,53,69,0.7)', yAxisID: 'y' },
+            { label: '融券餘額 (千張)', data: history.map(h => +(h.msToday/1000).toFixed(1)), backgroundColor: 'rgba(25,118,210,0.7)', yAxisID: 'y1' },
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { font: { size: 11 } } } },
+          scales: {
+            y: { position: 'left', title: { display: true, text: '萬張', font: { size: 10 } } },
+            y1: { position: 'right', title: { display: true, text: '千張', font: { size: 10 } }, grid: { drawOnChartArea: false } }
+          }
+        }
+      });
+      document.getElementById('marginChartWrap').style.display = 'block';
+    }
+
+    // Detail
+    document.getElementById('marginDetail').textContent = `📅 ${summary.date.slice(0,4)}/${summary.date.slice(4,6)}/${summary.date.slice(6,8)} 信用交易統計 · ${mgDetailData.length} 檔有融資券個股`;
+    renderMgDetail();
+
   } catch(e) {
-    document.getElementById('mg1').textContent = '⚠️';
+    document.getElementById('marginSummary').innerHTML = `<div class="card"><h3>⚠️ 無法載入</h3><div class="value" style="font-size:16px;color:var(--red);">${e.message}</div></div>`;
+    console.error('loadMargin error:', e);
   }
 }
+
+function renderMgDetail() {
+  const q = (document.getElementById('mgSearch').value || '').trim().toLowerCase();
+  let filtered = mgDetailData;
+  if (q) filtered = mgDetailData.filter(r => r.code.toLowerCase().includes(q) || r.name.toLowerCase().includes(q));
+  
+  const sorted = [...filtered].sort((a,b) => {
+    let va, vb;
+    switch(mgSort.key) {
+      case 'code': va=a.code; vb=b.code; return mgSort.asc ? (va>vb?1:-1) : (va<vb?1:-1);
+      case 'name': va=a.name; vb=b.name; return mgSort.asc ? (va>vb?1:-1) : (va<vb?1:-1);
+      case 'mg': return mgSort.asc ? a.mg-b.mg : b.mg-a.mg;
+      case 'ms': return mgSort.asc ? a.ms-b.ms : b.ms-a.ms;
+      case 'ratio': const ra=a.mg>0?a.ms/a.mg*100:0, rb=b.mg>0?b.ms/b.mg*100:0; return mgSort.asc ? ra-rb : rb-ra;
+      case 'mgChg': return mgSort.asc ? (a.mg-a.mgPrev)-(b.mg-b.mgPrev) : (b.mg-b.mgPrev)-(a.mg-a.mgPrev);
+      case 'msChg': return mgSort.asc ? (a.ms-a.msPrev)-(b.ms-b.msPrev) : (b.ms-b.msPrev)-(a.ms-a.msPrev);
+      case 'offset': return mgSort.asc ? a.offset-b.offset : b.offset-a.offset;
+      default: return b.mg-a.mg;
+    }
+  });
+  
+  document.getElementById('mgBody').innerHTML = sorted.slice(0, 200).map(r => {
+    const mgChgVal = r.mg - r.mgPrev;
+    const msChgVal = r.ms - r.msPrev;
+    const ratio = r.mg > 0 ? (r.ms/r.mg*100).toFixed(1) : '-';
+    return `<tr>
+      <td>${r.code}</td>
+      <td style="text-align:left;">${r.name}</td>
+      <td>${r.mg.toLocaleString()}</td>
+      <td>${r.ms.toLocaleString()}</td>
+      <td>${ratio}</td>
+      <td style="color:${mgChgVal>0?'#d32f2f':mgChgVal<0?'#1976D2':'inherit'}">${mgChgVal>0?'+':''}${mgChgVal.toLocaleString()}</td>
+      <td style="color:${msChgVal>0?'#d32f2f':msChgVal<0?'#1976D2':'inherit'}">${msChgVal>0?'+':''}${msChgVal.toLocaleString()}</td>
+      <td>${r.offset.toLocaleString()}</td>
+    </tr>`;
+  }).join('');
+}
+
+function sortMg(key) {
+  if (mgSort.key === key) mgSort.asc = !mgSort.asc;
+  else { mgSort.key = key; mgSort.asc = false; }
+  renderMgDetail();
+}
+
+function filterMgDetails() { renderMgDetail(); }
 
 // ===== Daily After-Market =====
 let dailyData = [];
