@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>回測專區 · 王美智</title>
+<script src="https://cdn.plot.ly/plotly-3.6.0.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#f5f0e8;--surface:#fff;--text:#1a1714;--text2:#6b5f55;--accent:#8B0000;--accent2:#006400;--accent3:#1B365D;--border:#d4c9b8}
+:root{--bg:#f5f0e8;--surface:#fff;--text:#1a1714;--text2:#6b5f55;--accent:#8B0000;--accent2:#006400;--accent3:#1B365D;--border:#d4c9b8;--orange:#E65100}
 body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text)}
 .header{background:var(--surface);border-bottom:2px solid var(--border);padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
 .header h1{font-size:22px;font-weight:900}
@@ -15,20 +16,41 @@ body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text
 .nav{display:flex;gap:8px;flex-wrap:wrap}
 .nav a{color:var(--text2);text-decoration:none;font-size:14px;padding:4px 10px;border-radius:6px;transition:all .2s}
 .nav a:hover{background:var(--border);color:var(--text)}
-.container{max-width:800px;margin:0 auto;padding:24px 16px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px}
-.card h3{font-size:16px;color:var(--accent3);margin-bottom:8px}
-.card .meta{font-size:13px;color:var(--text2);margin-bottom:4px}
-.card .value{font-size:24px;font-weight:700}
-.card .value.green{color:var(--accent2)}
-.card .value.red{color:var(--accent)}
-.section-title{text-align:center;padding:32px 0 20px}
-.section-title h2{font-size:24px;font-weight:700;color:var(--accent3)}
-.section-title p{color:var(--text2);margin-top:6px;font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
-.btn{display:inline-block;background:var(--accent3);color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-size:15px;font-weight:500;text-align:center;transition:all .2s}
-.btn:hover{opacity:.9}
-@media(max-width:600px){.header{padding:16px}.header h1{font-size:18px}.container{padding:16px 12px}}
+.container{max-width:860px;margin:0 auto;padding:20px 16px}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.panel h3{font-size:16px;color:var(--accent3);margin-bottom:8px}
+.panel .meta{font-size:13px;color:var(--text2);margin-bottom:4px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:end}
+.grp{display:flex;flex-direction:column;gap:3px}
+.grp label{font-size:0.7rem;color:#888;font-weight:600}
+.grp input,.grp select{padding:7px 10px;border:1px solid #ddd;border-radius:6px;font-size:0.9rem;min-width:80px}
+.grp input:focus,.grp select:focus{outline:none;border-color:var(--orange)}
+.inp-sym{font-size:1.1rem!important;width:120px;font-weight:700;letter-spacing:1px}
+.btn{display:inline-block;background:var(--orange);color:#fff;padding:8px 24px;border:none;border-radius:6px;font-size:0.9rem;cursor:pointer;font-weight:700;transition:.2s;text-decoration:none;text-align:center}
+.btn:hover{opacity:.85}
+.btn:disabled{background:#ccc;cursor:not-allowed}
+.btn-sm{background:var(--accent3);padding:7px 14px;font-size:0.8rem}
+.card-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.card{background:#f8f9fa;border-radius:8px;padding:9px 12px;min-width:85px;flex:1;text-align:center}
+.card .lbl{font-size:0.65rem;color:#888;margin-bottom:2px}
+.card .val{font-size:0.95rem;font-weight:700}
+.card .val.up{color:#d32f2f}
+.card .val.dn{color:#1976D2}
+#chartWrap{width:100%;height:480px}
+#tradeTbl{width:100%;border-collapse:collapse;font-size:0.78rem;margin-top:8px}
+#tradeTbl th{background:#f0f0f0;padding:6px 8px;text-align:left;font-weight:600;color:#555}
+#tradeTbl td{padding:5px 8px;border-bottom:1px solid #eee}
+#loading{display:none;text-align:center;padding:24px;color:#888}
+.spin{border:3px solid #f0f0f0;border-top:3px solid var(--orange);border-radius:50%;width:26px;height:26px;animation:spin .8s linear infinite;margin:0 auto 8px}
+@keyframes spin{to{transform:rotate(360deg)}}
+#status{margin-top:6px;font-size:0.8rem;color:#888}
+.hidden{display:none!important}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.section-title{text-align:center;padding:24px 0 16px}
+.section-title h2{font-size:20px;font-weight:700;color:var(--accent3)}
+.section-title p{color:var(--text2);margin-top:4px;font-size:13px}
+.rec{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:13px}
+.note{font-size:0.75rem;color:#999;margin-top:8px}
 </style>
 </head>
 <body>
@@ -42,85 +64,240 @@ body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text
     <a href="../postmarket-viewer/">🔍 盤後</a>
   </div>
 </div>
+
 <div class="container">
-  <div class="section-title">
-    <h2>📊 ETF 回測專區</h2>
-    <p>0050.TW · RSI 策略 · 均線交叉策略 · 持續更新</p>
-  </div>
 
-  <div class="card" style="border-color:var(--accent2);border-width:2px;">
-    <h3>🖥️ 即時回測工具</h3>
-    <div class="meta">輸入股票代碼 · 選擇策略 (RSI/MA/EMA) · 調整參數 · 瀏覽器即時計算</div>
-    <p style="font-size:14px;color:var(--text2);margin:8px 0;">
-      已預載 19 檔台股資料（2020-2026），支援 RSI 超買超賣、MA 均線交叉、EMA 指數交叉三種策略
-    </p>
-    <a href="live-backtest.html" class="btn" target="_blank" style="background:#E65100;">⚡ 開啟即時回測 →</a>
-  </div>
-
-  <div class="card" style="border-color:var(--accent2);border-width:2px;">
-    <h3>📈 0050 RSI 回測（Plotly 版）</h3>
-    <div class="meta">2022-01-01 ~ 2024-12-31 ｜ RSI(14) 超賣30/超買70 ｜ 本金 200 萬</div>
-    <div class="grid" style="margin:12px 0;">
-      <div><div style="font-size:12px;color:var(--text2)">總報酬</div><div class="value green">+7.60%</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">年化報酬</div><div class="value green">+2.48%</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">Buy & Hold</div><div class="value green">+49.96%</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">Sharpe</div><div style="font-size:20px;font-weight:700">-0.11</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">最大回撤</div><div class="value red">-28.91%</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">勝率</div><div style="font-size:20px;font-weight:700">50%</div></div>
+<!-- ═══ Interactive Backtest Tool ═══ -->
+<div class="panel" style="border-color:var(--orange);border-width:2px;background:#FFF8F0;">
+  <h3>⚡ 即時回測</h3>
+  <div class="meta">輸入股票代碼 → 選策略 → 調整參數 → 按執行</div>
+  <div class="row" style="margin-top:10px">
+    <div class="grp">
+      <label>股票代碼</label>
+      <input class="inp-sym" id="symbol" value="0050" placeholder="2330"
+             onkeydown="if(event.key==='Enter') runBT()">
     </div>
-    <a href="0050-rsi-backtest.html" class="btn" target="_blank">📄 Plotly 版 →</a>
-    <a href="0050-rsi-original.html" class="btn" target="_blank" style="margin-left:8px;background:var(--accent2);">📄 原 Chart.js 版 →</a>
-  </div>
-
-  <div class="card">
-    <h3>📉 0050 MA(5/20) 均線交叉回測</h3>
-    <div class="meta">2022-01-01 ~ 2024-12-31 ｜ MA5 突破/跌破 MA20 ｜ 本金 200 萬</div>
-    <div class="grid" style="margin:12px 0;">
-      <div><div style="font-size:12px;color:var(--text2)">總報酬</div><div class="value green">+36.29%</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">年化報酬</div><div class="value green">+10.91%</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">Buy & Hold</div><div class="value green">+49.96%</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">Sharpe</div><div class="value green">0.85</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">最大回撤</div><div class="value red">-16.31%</div></div>
-      <div><div style="font-size:12px;color:var(--text2)">勝率</div><div style="font-size:20px;font-weight:700">42.9%</div></div>
+    <div class="grp">
+      <label>策略</label>
+      <select id="strategy" onchange="updParams()">
+        <option value="macross">MA 均線交叉</option>
+        <option value="emacross">EMA 指數交叉</option>
+        <option value="rsi">RSI 超買超賣</option>
+      </select>
     </div>
-    <a href="0050-ma5-cross-backtest.html" class="btn" target="_blank" style="background:var(--accent2);">📄 MA 交叉報表 →</a>
-  </div>
-
-  <div class="card">
-    <h3>📋 回測記錄</h3>
-    <div style="font-size:13px;color:var(--text2);margin:8px 0;">
-      <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span>0050 RSI(30/70) Plotly 版 (2022-2024)</span>
-        <span style="color:var(--accent2);">+7.60%</span>
-        <span style="color:var(--text2);">2026-06-12</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span>0050 RSI(30/70) 原 Chart.js 版 (2023-2026)</span>
-        <span style="color:var(--accent2);">+2.25%</span>
-        <span style="color:var(--text2);">原系統</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span>0050 MA(5/20) 均線交叉回測</span>
-        <span style="color:var(--accent2);">+36.29%</span>
-        <span style="color:var(--text2);">2026-06-12</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span>0050 RSI(30/70) 合成版 (2022-2025) ⭐</span>
-        <span style="color:var(--accent2);">+23.14%</span>
-        <span style="color:var(--text2);">原系統</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span>TSLA EMA(10/30) 穿越 (2021-2024)</span>
-        <span style="color:var(--accent);">-11.85%</span>
-        <span style="color:var(--text2);">原系統 · Chart.js</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span>TSLA EMA(10/30) 穿越 ~demo (2021-2024)</span>
-        <span style="color:var(--accent);">-14.80%</span>
-        <span style="color:var(--text2);">原系統 · Plotly</span>
-      </div>
+    <div class="grp" id="gP1">
+      <label id="lP1">快線</label>
+      <input type="number" id="p1" value="5" min="2" max="500">
     </div>
+    <div class="grp" id="gP2">
+      <label id="lP2">慢線</label>
+      <input type="number" id="p2" value="20" min="5" max="500">
+    </div>
+    <div class="grp hidden" id="gP3">
+      <label>超買</label>
+      <input type="number" id="p3" value="70" min="50" max="100">
+    </div>
+    <div class="grp hidden" id="gP4">
+      <label>超賣</label>
+      <input type="number" id="p4" value="30" min="0" max="50">
+    </div>
+    <div class="grp">
+      <label>本金 (萬)</label>
+      <input type="number" id="capital" value="200" min="10" max="99999">
+    </div>
+    <div class="grp">
+      <label>&nbsp;</label>
+      <button class="btn" id="runBtn" onclick="runBT()">⚡ 執行</button>
+    </div>
+  </div>
+  <div id="status">支援所有台股，即時抓取 Yahoo Finance 資料</div>
+</div>
+
+<div id="loading"><div class="spin"></div><div id="loadMsg">載入資料中...</div></div>
+
+<div id="results" class="panel hidden">
+  <div class="card-row" id="metrics"></div>
+  <div id="chartWrap"></div>
+  <h4 style="margin-top:14px;font-size:0.9rem;">📋 交易明細</h4>
+  <div style="overflow-x:auto"><table id="tradeTbl"><tr><th>#</th><th>日期</th><th>類型</th><th>價格</th><th>金額</th><th>損益</th></tr></table></div>
+</div>
+
+<!-- ═══ Static Report Cards ═══ -->
+<div class="section-title"><h2>📊 歷史回測記錄</h2><p>已保存的完整回測報表</p></div>
+
+<div class="panel" style="border-color:var(--accent2);border-width:2px;">
+  <h3>📈 0050 RSI 回測</h3>
+  <div class="meta">2022-01-01 ~ 2024-12-31 ｜ RSI(14) 超賣30/超買70 ｜ 本金 200 萬</div>
+  <div class="grid" style="margin:10px 0">
+    <div><div style="font-size:12px;color:var(--text2)">總報酬</div><div class="val up">+7.60%</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">Buy & Hold</div><div class="val up">+49.96%</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">Sharpe</div><div style="font-size:20px;font-weight:700">-0.11</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">最大回撤</div><div class="val dn">-28.91%</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">勝率</div><div style="font-size:20px;font-weight:700">50%</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">交易</div><div style="font-size:20px;font-weight:700">2筆</div></div>
+  </div>
+  <a href="0050-rsi-backtest.html" class="btn btn-sm" target="_blank">📄 Plotly 報表</a>
+  <a href="0050-rsi-original.html" class="btn btn-sm" style="background:var(--accent2);" target="_blank">📄 Chart.js 版</a>
+</div>
+
+<div class="panel">
+  <h3>📉 0050 MA(5/20) 均線交叉</h3>
+  <div class="meta">2022-01-01 ~ 2024-12-31 ｜ MA5/MA20 ｜ 本金 200 萬</div>
+  <div class="grid" style="margin:10px 0">
+    <div><div style="font-size:12px;color:var(--text2)">總報酬</div><div class="val up">+36.29%</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">Buy & Hold</div><div class="val up">+49.96%</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">Sharpe</div><div class="val up">0.85</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">最大回撤</div><div class="val dn">-16.31%</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">勝率</div><div style="font-size:20px;font-weight:700">42.9%</div></div>
+    <div><div style="font-size:12px;color:var(--text2)">交易</div><div style="font-size:20px;font-weight:700">21筆</div></div>
+  </div>
+  <a href="0050-ma5-cross-backtest.html" class="btn btn-sm" style="background:var(--accent2);" target="_blank">📄 MA 報表</a>
+</div>
+
+<div class="panel">
+  <h3>📋 回測歷程</h3>
+  <div style="margin:8px 0">
+    <div class="rec"><span>0050 RSI(30/70) Plotly (2022-2024)</span><span style="color:var(--accent2);">+7.60%</span><span style="color:var(--text2);font-size:12px">2026-06-12</span></div>
+    <div class="rec"><span>0050 RSI(30/70) 原 Chart.js (2023-2026)</span><span style="color:var(--accent2);">+2.25%</span><span style="color:var(--text2);font-size:12px">原系統</span></div>
+    <div class="rec"><span>0050 RSI(30/70) 合成版 ⭐</span><span style="color:var(--accent2);">+23.14%</span><span style="color:var(--text2);font-size:12px">原系統</span></div>
+    <div class="rec"><span>0050 MA(5/20) 交叉 (2022-2024)</span><span style="color:var(--accent2);">+36.29%</span><span style="color:var(--text2);font-size:12px">2026-06-12</span></div>
+    <div class="rec"><span>TSLA EMA(10/30) 穿越</span><span style="color:#d32f2f;">-11.85%</span><span style="color:var(--text2);font-size:12px">原系統</span></div>
+    <div class="rec"><span>TSLA EMA(10/30) 穿越 ~demo</span><span style="color:#d32f2f;">-14.80%</span><span style="color:var(--text2);font-size:12px">原系統</span></div>
   </div>
 </div>
+
+<div class="note">📡 所有未預載台股透過 corsproxy.io 即時查詢 Yahoo Finance，瀏覽器端計算，不需伺服器。</div>
+</div>
+
+<script>
+// ─── Helpers ───
+const SMA=(d,p)=>{const r=[];for(let i=0;i<d.length;i++){if(i<p-1){r.push(null);continue}let s=0;for(let j=i-p+1;j<=i;j++)s+=d[j];r.push(s/p)}return r}
+const EMA=(d,p)=>{const r=[],k=2/(p+1);let e=d[0];r.push(e);for(let i=1;i<d.length;i++){e=d[i]*k+e*(1-k);r.push(e)}return r}
+const RSI=(d,p)=>{const r=[];for(let i=0;i<d.length;i++){if(i<p){r.push(null);continue}let g=0,l=0;for(let j=i-p+1;j<=i;j++){const df=d[j]-d[j-1];if(df>0)g+=df;else l-=df}const ag=g/p,al=l/p;r.push(al===0?100:100-100/(1+ag/al))}return r}
+
+function updParams(){
+  const s=document.getElementById('strategy').value;
+  const g3=document.getElementById('gP3'),g4=document.getElementById('gP4');
+  const g1=document.getElementById('gP1'),g2=document.getElementById('gP2');
+  if(s==='rsi'){g1.classList.add('hidden');g2.classList.add('hidden');g3.classList.remove('hidden');g4.classList.remove('hidden')}
+  else{g1.classList.remove('hidden');g2.classList.remove('hidden');g3.classList.add('hidden');g4.classList.add('hidden');
+    document.getElementById('lP1').textContent=s==='macross'?'快線 MA':'快線 EMA';
+    document.getElementById('lP2').textContent=s==='macross'?'慢線 MA':'慢線 EMA'}
+}
+
+async function fetchData(symbol){
+  const url=`https://corsproxy.io/?url=https://query2.finance.yahoo.com/v8/finance/chart/${symbol}?range=5y&interval=1d`;
+  const r=await fetch(url,{headers:{Accept:'application/json','User-Agent':'Mozilla/5.0'}});
+  const d=await r.json();
+  const result=d?.chart?.result?.[0];
+  if(!result)throw new Error('查無此股票代碼');
+  const q=result.indicators?.quote?.[0], ts=result.timestamp;
+  if(!q||!ts)throw new Error('資料格式錯誤');
+  const data=[];
+  for(let i=0;i<ts.length;i++){
+    if(q.open[i]&&q.high[i]&&q.low[i]&&q.close[i])
+      data.push({d:new Date(ts[i]*1000).toISOString().split('T')[0],o:+q.open[i].toFixed(2),h:+q.high[i].toFixed(2),l:+q.low[i].toFixed(2),c:+q.close[i].toFixed(2),v:q.volume[i]||0})
+  }
+  return {name:result.meta?.symbol||symbol,data}
+}
+
+// cached data
+let cdata={};
+fetch('tw-stock-data.json').then(r=>r.json()).then(d=>{cdata=d.stocks||{}}).catch(()=>{});
+
+async function runBT(){
+  const raw=document.getElementById('symbol').value.trim().toUpperCase();
+  let sym=raw.includes('.')?raw:raw+'.TW';
+  document.getElementById('symbol').value=sym;
+  const strategy=document.getElementById('strategy').value;
+  const p1=+document.getElementById('p1').value||5,p2=+document.getElementById('p2').value||20;
+  const p3=+document.getElementById('p3').value||70,p4=+document.getElementById('p4').value||30;
+  const cap=parseFloat(document.getElementById('capital').value)*10000;
+  const lm=document.getElementById('loadMsg'),st=document.getElementById('status');
+  document.getElementById('loading').classList.remove('hidden');
+  document.getElementById('results').classList.add('hidden');
+  document.getElementById('runBtn').disabled=true;
+  
+  try{
+    let sd=cdata[sym];
+    if(sd) lm.textContent=`✅ 離線資料：${sd.name||sym}`;
+    else{lm.textContent=`🌐 查詢 ${sym}...`;sd=await fetchData(sym);lm.textContent=`✅ ${sd.name} (${sd.data.length}日)`}
+    
+    await new Promise(r=>setTimeout(r,50));
+    const p=sd.data.map(d=>d.c), dts=sd.data.map(d=>d.d);
+    const h=sd.data.map(d=>d.h), l=sd.data.map(d=>d.l), o=sd.data.map(d=>d.o);
+    
+    let bx=[],bp=[],sx=[],sp=[],trades=[];
+    
+    if(strategy==='macross'||strategy==='emacross'){
+      const fast=strategy==='macross'?SMA(p,p1):EMA(p,p1);
+      const slow=strategy==='macross'?SMA(p,p2):EMA(p,p2);
+      let inP=false;
+      for(let i=Math.max(p1,p2);i<p.length;i++){
+        if(!inP&&fast[i]!==null&&slow[i]!==null&&fast[i]>slow[i]){bx.push(dts[i]);bp.push(p[i]);inP=true}
+        else if(inP&&fast[i]!==null&&slow[i]!==null&&fast[i]<slow[i]){sx.push(dts[i]);sp.push(p[i]);inP=false}
+      }
+    }else{
+      const rsi=RSI(p,p1||14);let inP=false;
+      for(let i=p1;i<p.length;i++){
+        if(!inP&&rsi[i]!==null&&rsi[i]<p4){bx.push(dts[i]);bp.push(p[i]);inP=true}
+        else if(inP&&rsi[i]!==null&&rsi[i]>p3){sx.push(dts[i]);sp.push(p[i]);inP=false}
+      }
+    }
+    
+    let cash=cap,shares=0,entryP=0;
+    for(let t=0;t<Math.min(bx.length,sx.length);t++){
+      const bp2=bp[t];const bsh=Math.max(1000,Math.floor(cash/bp2/1000)*1000);
+      if(bsh>=1000){cash-=bsh*bp2;shares+=bsh;entryP=bp2;trades.push({t:'買',d:bx[t],p:bp2,a:bsh*bp2,r:null})}
+      const sp2=sp[t];
+      if(shares>0){const pnl=(sp2-entryP)/entryP*100;cash+=shares*sp2;trades.push({t:'賣',d:sx[t],p:sp2,a:shares*sp2,r:+pnl.toFixed(2)});shares=0}
+    }
+    if(shares>0){const fp=p[p.length-1];const pnl=(fp-entryP)/entryP*100;cash+=shares*fp;trades.push({t:'了結',d:dts[dts.length-1],p:fp,a:shares*fp,r:+pnl.toFixed(2)});shares=0}
+    
+    const fv=cash,tr=(fv-cap)/cap*100,bh=(p[p.length-1]/p[0]-1)*100;
+    const eq=[cap];for(let i=0;i<p.length;i++)eq.push(cash);
+    const dr=[];for(let i=1;i<eq.length;i++)dr.push(eq[i]/eq[i-1]-1);
+    const av=dr.reduce((a,b)=>a+b,0)/dr.length;
+    const sd2=Math.sqrt(dr.reduce((s,v)=>s+(v-av)**2,0)/dr.length);
+    const sharpe=sd2>0?Math.sqrt(252)*av/sd2:0;
+    let peak=cap,mdd=0;for(let v of eq){if(v>peak)peak=v;const dd=(peak-v)/peak*100;if(dd>mdd)mdd=dd}
+    const w=trades.filter(t=>t.r!==null&&t.r>0),l2=trades.filter(t=>t.r!==null&&t.r<0);
+    const wr=(w.length+l2.length)>0?w.length/(w.length+l2.length)*100:0;
+    const yrs=(new Date(dts[dts.length-1])-new Date(dts[0]))/(365.25*86400000);
+    const ar=yrs>0?(Math.pow(1+tr/100,1/yrs)-1)*100:0;
+    
+    document.getElementById('metrics').innerHTML=
+      `<div class="card"><div class="lbl">總報酬</div><div class="val ${tr>=0?'up':'dn'}">${tr.toFixed(1)}%</div></div>
+       <div class="card"><div class="lbl">年化</div><div class="val">${ar.toFixed(1)}%</div></div>
+       <div class="card"><div class="lbl">Buy&Hold</div><div class="val dn">${bh.toFixed(1)}%</div></div>
+       <div class="card"><div class="lbl">Sharpe</div><div class="val">${sharpe.toFixed(2)}</div></div>
+       <div class="card"><div class="lbl">最大回撤</div><div class="val dn">${mdd.toFixed(1)}%</div></div>
+       <div class="card"><div class="lbl">勝率</div><div class="val">${wr.toFixed(0)}%</div></div>
+       <div class="card"><div class="lbl">交易</div><div class="val">${trades.length}筆</div></div>
+       <div class="card"><div class="lbl">最終資值</div><div class="val">$${fv.toLocaleString()}</div></div>`;
+    
+    const traces=[{x:dts,close:p,high:h,low:l,open:o,type:'candlestick',name:'K線',increasing:{line:{color:'#d32f2f'}},decreasing:{line:{color:'#1976D2'}},xaxis:'x',yaxis:'y'},
+      {x:bx,y:bp,mode:'markers',name:'買入',marker:{color:'#00E676',size:12,symbol:'triangle-up'},type:'scatter',xaxis:'x',yaxis:'y'},
+      {x:sx,y:sp,mode:'markers',name:'賣出',marker:{color:'#FF5252',size:12,symbol:'triangle-down'},type:'scatter',xaxis:'x',yaxis:'y'}];
+    if(strategy==='macross'){const fast=SMA(p,p1),slow=SMA(p,p2);traces.push({x:dts,y:fast,type:'scatter',name:`MA${p1}`,line:{color:'#FFA726',width:1.5}});traces.push({x:dts,y:slow,type:'scatter',name:`MA${p2}`,line:{color:'#42A5F5',width:1.5}})}
+    else if(strategy==='emacross'){const fast=EMA(p,p1),slow=EMA(p,p2);traces.push({x:dts,y:fast,type:'scatter',name:`EMA${p1}`,line:{color:'#FFA726',width:1.5}});traces.push({x:dts,y:slow,type:'scatter',name:`EMA${p2}`,line:{color:'#42A5F5',width:1.5}})}
+    
+    Plotly.newPlot('chartWrap',traces,{
+      title:`${sym} ${strategy==='rsi'?`RSI(${p1||14})超買${p3}/超賣${p4}`:`${strategy==='macross'?'MA':'EMA'}(${p1}/${p2})交叉`}回測`,
+      template:'plotly_white',height:480,hovermode:'x unified',xaxis:{rangeslider:{visible:false}},yaxis:{title:'NT$'},
+      legend:{orientation:'h',y:1.15},margin:{t:45,r:20,b:20,l:50}},{responsive:true});
+    
+    let th='<tr><th>#</th><th>日期</th><th>類型</th><th>價格</th><th>金額</th><th>損益</th></tr>';
+    trades.forEach((t,i)=>{const c=t.r!==null?(t.r>=0?'#d32f2f':'#1976D2'):'#888';th+=`<tr><td>${i+1}</td><td>${t.d}</td><td>${t.t}</td><td>$${t.p.toFixed(2)}</td><td>$${t.a.toLocaleString()}</td><td style="color:${c}">${t.r!==null?t.r+'%':'—'}</td></tr>`});
+    document.getElementById('tradeTbl').innerHTML=th;
+    
+    document.getElementById('results').classList.remove('hidden');
+    st.textContent=`✅ ${sym} · ${trades.length}筆交易 · ${tr.toFixed(1)}%`;
+  }catch(e){document.getElementById('status').textContent=`❌ ${e.message}`;console.error(e)}
+  
+  document.getElementById('loading').classList.add('hidden');
+  document.getElementById('runBtn').disabled=false;
+}
+</script>
 </body>
 </html>
