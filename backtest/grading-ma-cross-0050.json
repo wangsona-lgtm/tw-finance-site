@@ -1,0 +1,31 @@
+{
+  "eval_name": "ma-cross-0050",
+  "timestamp": "2026-06-12",
+  "expectations": [
+    {
+      "text": "呼叫 ma_cross strategy",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "fast=5, slow=20 參數",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "產生 HTML 報告 (>50KB)",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "摘要含關鍵指標",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "報告含 K 線 / 買賣信號",
+      "passed": true,
+      "evidence": "auto-graded"
+    }
+  ]
+}
