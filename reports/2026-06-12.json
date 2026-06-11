@@ -1,0 +1,102 @@
+{
+  "date": "2026-06-12",
+  "type": "OpenClaw 每日晨報整合",
+  "dayOfWeek": "五",
+  "sections": [
+    {
+      "title": "📊 美股全面反彈 — 半導體領漲",
+      "content": "受川普對伊朗立場大轉彎（取消空襲、協議即將簽署）激勵，美股全面大漲。WTI 原油暴跌 -4.01%，殖利率全線下滑，風險情緒顯著改善。費半 SOX 飆漲 +7.91% 為今日領頭羊，Intel +9.27% 爆量居冠。",
+      "stats": [
+        {"label": "S&P 500", "value": "7,394.30", "change": "🟢 +1.75%"},
+        {"label": "NASDAQ", "value": "25,809.66", "change": "🟢 +2.54%"},
+        {"label": "費半 SOX", "value": "13,171.44", "change": "🟢 +7.91% 🚀"},
+        {"label": "道瓊 DJI", "value": "50,848.75", "change": "🟢 +1.86%"},
+        {"label": "羅素2000", "value": "2,921.03", "change": "🟢 +3.02%"},
+        {"label": "VIX", "value": "19.44", "change": "🟢 -12.51%"}
+      ]
+    },
+    {
+      "title": "📈 個股技術分析",
+      "type": "stocks",
+      "groups": [
+        {
+          "name": "TSM ADR",
+          "stocks": [
+            {"code": "TSM", "name": "台積電 ADR", "close": "$421.07", "change": "+3.01%", "note": "RSI 54.6"},
+            {"code": "INTC", "name": "Intel", "close": "$116.96", "change": "+9.27% 🚀", "note": "RSI 48.8 · 量1.44x"}
+          ]
+        }
+      ],
+      "analysis": "TSM 站上 SMA20 ($418) 與 SMA50 ($397)，多頭排列。距 52 週高點 $447 約 6.1%。Intel 強彈收復 SMA20 ($113)，爆量 1.44x 均量。半導體為今日絕對主軸。"
+    },
+    {
+      "title": "🛢️ 原油與匯率",
+      "stats": [
+        {"label": "WTI 原油", "value": "$86.42", "change": "🔴 -4.01%"},
+        {"label": "DXY 美元指數", "value": "99.69", "change": "🔴 -0.26%"},
+        {"label": "10Y 美債殖利率", "value": "4.463%", "change": "🟢 -7.9bp"},
+        {"label": "2Y-10Y 利差", "value": "+27.3bp", "change": "✅ 正常"}
+      ],
+      "content": "油價暴跌反映市場定價美伊協議達成機率極高。川普稱協議已大致完成，週末可望在歐洲簽署。但伊朗官方否認獲批。DXY 逼近 99，美元弱勢格局未變。"
+    },
+    {
+      "title": "🏛️ Fed Watch — Warsh 首秀倒數",
+      "content": "下週 6/16-17 為新任主席 Warsh 的首場 FOMC 會議。市場定價 6 月 Hold 97.1%，但年底升息機率已升至 ~57%。中性利率上調至 3.1%，PCE 通膨預測大上修至 2.7%。FOMC 內部罕見雙向反對：Miran 主張降息 1 碼 vs 三位鷹派要求刪除寬鬆措辭。Waller 稱降息說法「瘋狂」。",
+      "stats": [
+        {"label": "6月 Hold", "value": "97.1%"},
+        {"label": "12月升息", "value": "~57%"},
+        {"label": "中性利率", "value": "3.1%"},
+        {"label": "PCE 預測", "value": "2.7%", "change": "🔺 上修"}
+      ]
+    },
+    {
+      "title": "🌍 ZeroHedge 導讀 — 美伊協議曙光",
+      "type": "news",
+      "items": [
+        {
+          "headline": "川普：伊朗協議大致完成，取消空襲",
+          "content": "川普宣布取消既定空襲，稱美伊諒解備忘錄已達「大致完成的階段」，可望在週末於歐洲簽署。但伊朗 FARS 通訊社隨即否認協議已獲批准。油價先漲後暴跌。",
+          "url": "https://www.zerohedge.com/geopolitical/us-attack-renders-ceasefire-meaningless-iran-says-us-forces-disable-yet-another-tanker",
+          "tags": ["美伊", "油價", "川普"]
+        },
+        {
+          "headline": "61% 以色列民眾反對納坦雅胡連任",
+          "content": "IDI 最新民調顯示反對率高達 61%。川普公開表示「不確定比比是否還想繼續」，暗示納坦雅胡可能退出政壇。",
+          "url": "https://www.zerohedge.com/geopolitical/polls-turn-against-netanyahu-trump-says-pm-may-quit-politics",
+          "tags": ["以色列", "民調"]
+        },
+        {
+          "headline": "印度罕見召見美國外交官 — 油輪攻擊致 3 死",
+          "content": "美軍對阿曼外海兩艘油輪發動引擎室精準打擊，導致三名印度船員死亡。印度外交部正式召見美國代辦抗議。",
+          "url": "https://www.zerohedge.com/geopolitical/new-delhi-furious-after-tanker-strike-oman-leaves-three-indians-dead-summons-us-envoy",
+          "tags": ["印度", "油輪", "美軍"]
+        },
+        {
+          "headline": "SpaceX 定價史上最大 IPO — $135/股",
+          "content": "SpaceX 以每股 $135 募資 750 億美元，市值 1.77 兆美元，超越特斯拉。Polymarket 預測 84% 機率首日上漲。Starlink 獲利但 xAI 拖累淨利。",
+          "url": "https://www.zerohedge.com/markets/spacex-prices-biggest-ever-ipo-135-share",
+          "tags": ["SpaceX", "IPO"]
+        },
+        {
+          "headline": "高盛：近期波動只是前奏，年底目標 8000",
+          "content": "高盛首席策略師 Ben Snider 警告標普 500 獲利成長可望推升指數至 8000，但高槓桿與 AI 不確定性將使波動持續加劇。",
+          "url": "https://www.zerohedge.com/markets/frontier-dreams-meet-cost-curves-citadel-securities-exposes-ais-expensive-reality-check",
+          "tags": ["高盛", "波動"]
+        }
+      ]
+    },
+    {
+      "title": "📅 下週焦點行事曆",
+      "type": "summary",
+      "signals": [
+        {"aspect": "6/16-17 🚨", "signal": "FOMC 利率決議（Warsh 首秀）", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/17", "signal": "FOMC 會後聲明 + SEP 點陣圖", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/17", "signal": "Warsh 首場記者會基調", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/25 🚨", "signal": "5月 PCE 物價指數（核心通膨）", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/25", "signal": "Q1 GDP 第三次估計", "direction": "⭐⭐⭐"},
+        {"aspect": "7/10 🚨", "signal": "6月非農就業 NFP", "direction": "⭐⭐⭐⭐⭐"}
+      ],
+      "conclusion": "Warsh 首秀是決定下半年方向的關鍵。關注①是否保留 easing bias ②通膨描述是否升級 ③點陣圖中位數是否上移。若顯示升息信號，股債可能同步受壓。"
+    }
+  ]
+}
