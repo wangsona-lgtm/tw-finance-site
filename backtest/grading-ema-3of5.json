@@ -1,0 +1,29 @@
+{
+  "expectations": [
+    {
+      "text": "\u8fa8\u8b58\u70ba\u81ea\u8a02 EMA \u7b56\u7565",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "\u4f7f\u7528 ewm() \u8a08\u7b97 EMA",
+      "passed": false,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "custom strategy \u65d7\u6a19 / \u81ea\u8a02\u6a94\u6848",
+      "passed": false,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "TSLA + 2021 start",
+      "passed": true,
+      "evidence": "auto-graded"
+    },
+    {
+      "text": "\u7522\u751f HTML \u5831\u544a (>40KB)",
+      "passed": true,
+      "evidence": "auto-graded"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "eval_name": "rsi-0050",
+  "prompt": "我想測試台股 0050 的 RSI 策略：RSI 低於 30 買入、高於 70 賣出，回測最近 3 年，200 萬台幣",
+  "assertions": [
+    {"id": "a1", "text": "symbol 設為 0050.TW（或 0050）"},
+    {"id": "a2", "text": "呼叫 --strategy rsi"},
+    {"id": "a3", "text": "oversold=30, overbought=70 參數正確"},
+    {"id": "a4", "text": "capital 設為 2000000"},
+    {"id": "a5", "text": "產生 HTML 報告"}
+  ]
+}
