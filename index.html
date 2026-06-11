@@ -118,14 +118,6 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 }
 .back-btn:hover { border-color:var(--accent); color:var(--accent); }
 
-/* Modal */
-.modal {
-  display:none; position:fixed; inset:0; background:rgba(0,0,0,.85);
-  z-index:999; cursor:zoom-out; padding:20px;
-}
-.modal.open { display:flex; align-items:center; justify-content:center; }
-.modal img { max-width:100%; max-height:95vh; border-radius:8px; }
-
 /* Footer */
 .footer {
   border-top:1px solid var(--border); padding:24px 32px; text-align:center;
@@ -178,7 +170,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 <div id="lecture-list" class="active">
   <div class="hero">
     <h2>📊 金融資料平台</h2>
-    <p>大盤儀表板 · 技術分析圖 · 個股技術分析 · 盤前行情 · 收盤行情 · 講義資料庫 · 盤前圖表</p>
+    <p>大盤儀表板 · 技術分析圖 · 個股技術分析 · 盤前行情 · 收盤行情 · 講義資料庫 · 盤前圖表</p><p style="font-size:13px;color:var(--text3);margin-top:4px;">📈 盤前圖表已整合至 <a href="premarket/" style="color:var(--accent);">盤前分析頁</a></p>
   </div>
 
   <div class="container">
@@ -302,65 +294,10 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
       <span style="font-size:32px;">📚</span>
     </a>
 
-    <hr class="section-divider">
-
-    <!-- ===== 技術分析圖集合 ===== -->
-    <h2 style="font-size:18px;margin-bottom:8px;">📈 技術分析圖</h2>
-    <p style="color:var(--text2);font-size:13px;margin-bottom:16px;">來自 @sona1115_bot (wang) · 點圖可放大</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;padding:4px 0 12px;">
-      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=0;showChart()" style="cursor:pointer;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
-        <img src="./market_DJI_2026-06-11.jpg" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
-        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 道瓊 (DJI)</div>
-      </div>
-      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=1;showChart()" style="cursor:pointer;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
-        <img src="./market_IXIC_2026-06-11.jpg" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
-        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 NASDAQ (IXIC)</div>
-      </div>
-      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=2;showChart()" style="cursor:pointer;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
-        <img src="./market_SOX_2026-06-11.jpg" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
-        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 費城半導體 (SOX)</div>
-      </div>
-      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=3;showChart()" style="cursor:pointer;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
-        <img src="./market_INTC_2026-06-11.jpg" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
-        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 Intel (INTC)</div>
-      </div>
-      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=4;showChart()" style="cursor:pointer;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
-        <img src="./market_TSM_2026-06-11.jpg" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
-        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📊 台積電 ADR (TSM)</div>
-      </div>
-      <div onclick="document.getElementById('chartModal').classList.add('open');chartIdx=5;showChart()" style="cursor:pointer;background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
-        <img src="./INTC_BullFlag_2026-06-10.jpg" style="width:100%;height:170px;object-fit:cover;border-bottom:1px solid var(--border);display:block;">
-        <div style="padding:8px 12px;font-size:13px;font-weight:600;">📐 INTC Bull Flag</div>
-      </div>
-    </div>
-
   <div style="text-align:center;padding:20px;color:var(--text3);font-size:12px;border-top:1px solid var(--border);margin-top:32px;">
-    王美智 · tw-finance-site · v1.2.4 &nbsp;|&nbsp; 📡 TWSE · @sona1115_bot
+    王美智 · tw-finance-site · v1.2.5 &nbsp;|&nbsp; 📡 TWSE · @sona1115_bot
   </div>
 </div>
-
-<!-- 圖片放大 Modal -->
-<div id="chartModal" class="modal" onclick="if(event.target===this)this.classList.remove('open')">
-  <div style="position:relative;max-width:95vw;max-height:95vh;">
-    <img id="chartModalImg" src="./market_DJI_2026-06-11.jpg" alt="技術分析放大圖" style="max-width:100%;max-height:95vh;border-radius:8px;display:block;">
-    <div id="chartCounter" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);color:#fff;padding:4px 16px;border-radius:12px;font-size:14px;">1/6</div>
-    <button onclick="changeChart(-1)" style="position:absolute;left:6px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.6);color:#fff;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:24px;display:flex;align-items:center;justify-content:center;">‹</button>
-    <button onclick="changeChart(1)" style="position:absolute;right:6px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.6);color:#fff;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:24px;display:flex;align-items:center;justify-content:center;">›</button>
-  </div>
-</div>
-<script>
-const chartGallery = [
-  { path: './market_DJI_2026-06-11.jpg', label: '道瓊 (DJI)' },
-  { path: './market_IXIC_2026-06-11.jpg', label: 'NASDAQ (IXIC)' },
-  { path: './market_SOX_2026-06-11.jpg', label: '費城半導體 (SOX)' },
-  { path: './market_INTC_2026-06-11.jpg', label: 'Intel (INTC)' },
-  { path: './market_TSM_2026-06-11.jpg', label: '台積電 ADR (TSM)' },
-  { path: './INTC_BullFlag_2026-06-10.jpg', label: 'INTC Bull Flag 型態' },
-];
-let chartIdx = 0;
-function showChart() { document.getElementById('chartModalImg').src = chartGallery[chartIdx].path; document.getElementById('chartCounter').textContent = (chartIdx+1)+'/'+chartGallery.length; }
-function changeChart(d) { chartIdx = (chartIdx + d + chartGallery.length) % chartGallery.length; document.getElementById('chartModalImg').src = chartGallery[chartIdx].path; document.getElementById('chartCounter').textContent = (chartIdx+1)+'/'+chartGallery.length; }
-</script>
 
 <!-- ===== Lecture Content ===== -->
 <div id="lecture-content">
