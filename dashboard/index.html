@@ -175,6 +175,25 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
   <div class="chart-container" id="optionsChartWrap" style="height:250px;display:none;"><canvas id="optionsChart"></canvas></div>
   
   <br><hr><br>
+  <h3>📅 本週每日籌碼比較</h3>
+  <div id="weeklySentimentTable" style="font-size:13px;overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead><tr>
+        <th style="text-align:left;padding:6px 8px;border-bottom:2px solid var(--border);">日期</th>
+        <th style="text-align:right;padding:6px 8px;border-bottom:2px solid var(--border);">外資買賣超</th>
+        <th style="text-align:right;padding:6px 8px;border-bottom:2px solid var(--border);">投信買賣超</th>
+        <th style="text-align:right;padding:6px 8px;border-bottom:2px solid var(--border);">自營商買賣超</th>
+        <th style="text-align:right;padding:6px 8px;border-bottom:2px solid var(--border);">P/C 成交量比</th>
+        <th style="text-align:right;padding:6px 8px;border-bottom:2px solid var(--border);">P/C 未平倉比</th>
+        <th style="text-align:right;padding:6px 8px;border-bottom:2px solid var(--border);">三大法人合計</th>
+        <th style="text-align:right;padding:6px 8px;border-bottom:2px solid var(--border);">外資期貨淨單</th>
+      </tr></thead>
+      <tbody id="weeklySentimentBody"></tbody>
+    </table>
+    <div id="weeklySentimentNote" style="margin-top:8px;font-size:12px;color:var(--text2);"></div>
+  </div>
+  
+  <br><hr><br>
   <h3>📋 個股融資券明細</h3>
   <input type="text" id="mgSearch" placeholder="搜尋代號或名稱" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;margin:8px 0;" oninput="renderMgDetail()">
   <div style="overflow-x:auto"><table id="mgDetailTable" style="width:100%;border-collapse:collapse;font-size:12px;">
@@ -1130,6 +1149,7 @@ async function loadSentimentData() {
   renderInstitutions();
   renderFutures();
   renderOptions();
+  renderWeeklySentiment();
 }
 
 // ===== 三大法人現貨買賣超 =====
@@ -1315,6 +1335,123 @@ function renderOptions() {
       📅 ${pc.date || '近日'} 期交所資料｜買權成交量: ${(pc.call_vol||0).toLocaleString()} / 賣權成交量: ${(pc.put_vol||0).toLocaleString()}
     </div>
   `;
+}
+
+// ===== 本週每日籌碼比較 =====
+function renderWeeklySentiment() {
+  const body = document.getElementById('weeklySentimentBody');
+  const note = document.getElementById('weeklySentimentNote');
+  
+  if (!sentimentHistory || sentimentHistory.length < 1) {
+    body.innerHTML = `<tr><td colspan="8" style="text-align:center;padding:24px;color:var(--text2);">📊 尚無歷史資料，每日收集後將會顯示</td></tr>`;
+    note.textContent = '每日排程自動收集籌碼資料，累積後即可看到本週逐日變化。';
+    return;
+  }
+  
+  // Sort by date
+  const sorted = [...sentimentHistory].sort((a,b) => a.date.localeCompare(b.date));
+  
+  // Get this week's entries (Mon to today)
+  const today = new Date();
+  const dayOfWeek = today.getDay(); // 0=Sun, 1=Mon...
+  const monOffset = dayOfWeek === 0 ? 6 : dayOfWeek - 1; // days back to Monday
+  const mon = new Date(today);
+  mon.setDate(today.getDate() - monOffset);
+  
+  const weekDays = [];
+  for (let i = 0; i <= monOffset && i < 5; i++) {
+    const d = new Date(mon);
+    d.setDate(mon.getDate() + i);
+    const iso = d.toISOString().slice(0,10);
+    const dayName = ['日','一','二','三','四','五','六'][d.getDay()];
+    const found = sorted.find(h => h.date === iso);
+    if (found) {
+      weekDays.push({ ...found, dayName, dateLabel: `${iso.slice(5)} (${dayName})` });
+    } else {
+      weekDays.push({ date: iso, dayName, dateLabel: `${iso.slice(5)} (${dayName})`, inst: null, pc_ratio: null, pc_oi_ratio: null });
+    }
+  }
+  
+  if (weekDays.length === 0) {
+    body.innerHTML = `<tr><td colspan="8" style="text-align:center;padding:24px;color:var(--text2);">📊 本週尚無資料</td></tr>`;
+    note.textContent = '';
+    return;
+  }
+  
+  // Calculate week totals
+  let totalForeign = 0, totalTrust = 0, totalDealer = 0;
+  let weekCount = 0;
+  for (const w of weekDays) {
+    if (w.inst) {
+      totalForeign += w.inst.foreign || 0;
+      totalTrust += w.inst.investment_trust || 0;
+      totalDealer += w.inst.dealer_total || 0;
+      weekCount++;
+    }
+  }
+  
+  function fmt(v) {
+    if (v === null || v === undefined) return '-';
+    const abs = Math.abs(v);
+    if (abs >= 1e8) return (v/1e8).toFixed(1) + '億';
+    if (abs >= 1e4) return (v/1e4).toFixed(1) + '萬';
+    return v.toLocaleString();
+  }
+  
+  function colorVal(v) {
+    if (v === null || v === undefined || v === 0) return '<span style="color:#666;">-</span>';
+    const arrow = v > 0 ? '⬆' : '⬇';
+    const color = v > 0 ? '#d32f2f' : '#1976D2';
+    return `<span style="color:${color};font-weight:600;">${arrow} ${fmt(v)}</span>`;
+  }
+  
+  function pctVal(v) {
+    if (v === null || v === undefined || v === 0) return '<span style="color:#666;">-</span>';
+    return `<span style="color:${v > 100 ? '#d32f2f' : '#1976D2'};font-weight:500;">${v.toFixed(1)}%</span>`;
+  }
+  
+  let rows = '';
+  for (const w of weekDays) {
+    function fmtFutures(v) {
+      if (!v || v === 0) return '-';
+      const num = parseInt(String(v).replace(/[,\s]/g, ''));
+      if (isNaN(num)) return v;
+      const arrow = num > 0 ? '⬆' : (num < 0 ? '⬇' : '➡');
+      const color = num > 0 ? '#d32f2f' : (num < 0 ? '#1976D2' : '#666');
+      return `<span style="color:${color};font-weight:500;">${arrow} ${v}</span>`;
+    }
+    const isToday = w.date === today.toISOString().slice(0,10);
+    const bgStyle = isToday ? ' style="background:rgba(139,0,0,0.04);font-weight:500;"' : '';
+    rows += `<tr${bgStyle}>
+      <td style="padding:5px 8px;border-bottom:1px solid var(--border);white-space:nowrap;">${w.dateLabel}${isToday ? ' 🟢' : ''}</td>
+      <td style="padding:5px 8px;border-bottom:1px solid var(--border);text-align:right;">${w.inst ? colorVal(w.inst.foreign) : '-'}</td>
+      <td style="padding:5px 8px;border-bottom:1px solid var(--border);text-align:right;">${w.inst ? colorVal(w.inst.investment_trust) : '-'}</td>
+      <td style="padding:5px 8px;border-bottom:1px solid var(--border);text-align:right;">${w.inst ? colorVal(w.inst.dealer_total) : '-'}</td>
+      <td style="padding:5px 8px;border-bottom:1px solid var(--border);text-align:right;">${pctVal(w.pc_ratio)}</td>
+      <td style="padding:5px 8px;border-bottom:1px solid var(--border);text-align:right;">${pctVal(w.pc_oi_ratio)}</td>
+      <td style="padding:5px 8px;border-bottom:1px solid var(--border);text-align:right;">${w.inst ? colorVal((w.inst.foreign||0)+(w.inst.investment_trust||0)+(w.inst.dealer_total||0)) : '-'}</td>
+      <td style="padding:5px 8px;border-bottom:1px solid var(--border);text-align:right;">${fmtFutures(w.futures_foreign_net)}</td>
+    </tr>`;
+  }
+  
+  // Add total row if we have data
+  if (weekCount > 0) {
+    const totalAll = totalForeign + totalTrust + totalDealer;
+    rows += `<tr style="background:rgba(27,54,93,0.05);font-weight:600;">
+      <td style="padding:6px 8px;border-top:2px solid var(--border);">📊 本週累計</td>
+      <td style="padding:6px 8px;border-top:2px solid var(--border);text-align:right;">${colorVal(totalForeign)}</td>
+      <td style="padding:6px 8px;border-top:2px solid var(--border);text-align:right;">${colorVal(totalTrust)}</td>
+      <td style="padding:6px 8px;border-top:2px solid var(--border);text-align:right;">${colorVal(totalDealer)}</td>
+      <td style="padding:6px 8px;border-top:2px solid var(--border);text-align:right;" colspan="2"></td>
+      <td style="padding:6px 8px;border-top:2px solid var(--border);text-align:right;">${colorVal(totalAll)}</td>
+      <td style="padding:6px 8px;border-top:2px solid var(--border);text-align:right;"></td>
+    </tr>`;
+  }
+  
+  body.innerHTML = rows;
+  
+  // Note about data source
+  note.innerHTML = `⚠️ 三大法人資料目前僅顯示最新交易日，每日收盤後自動更新。P/C 比來自期交所各日資料。`;
 }
 
 // ===== Init =====

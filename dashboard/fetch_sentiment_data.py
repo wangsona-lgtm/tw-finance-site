@@ -142,7 +142,9 @@ def main():
             'dealer_total': inst.get('自營商合計', {}).get('diff', 0)
         },
         'pc_ratio': output.get('pc_ratio', {}).get('pc_vol_ratio', 0),
-        'pc_oi_ratio': output.get('pc_ratio', {}).get('pc_oi_ratio', 0)
+        'pc_oi_ratio': output.get('pc_ratio', {}).get('pc_oi_ratio', 0),
+        'futures_foreign_net': output.get('futures', {}).get('foreign_tx_net', ''),
+        'futures_total_net': output.get('futures', {}).get('total_inst_futures_net', '')
     }
     
     # Update or add
