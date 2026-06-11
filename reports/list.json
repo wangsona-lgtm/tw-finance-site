@@ -1,1 +1,17 @@
-["2026-06-11","2026-06-10","2026-06-09"]
+[
+  {
+    "date": "2026-06-11",
+    "dayOfWeek": "四",
+    "title": "ZH 導讀：美伊升級+Oracle+CPI+植田住院"
+  },
+  {
+    "date": "2026-06-10",
+    "dayOfWeek": "三",
+    "title": "ZH 導讀：AI 拋售+期貨保證金"
+  },
+  {
+    "date": "2026-06-09",
+    "dayOfWeek": "二",
+    "title": "ZH 導讀：NVIDIA/Broadcom 財報"
+  }
+]
