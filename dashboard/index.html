@@ -101,6 +101,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
   <a href="#pe" onclick="showTab('pe')">💰 本益比/殖利率</a>
   <a href="#margin" onclick="showTab('margin')">🏦 籌碼</a>
   <a href="#daily" onclick="showTab('daily')">📅 每日盤後行情</a>
+  <a href="#technical" onclick="showTab('technical');initTechnical()">📊 技術分析</a>
 </div>
 
 <!-- ===== Overview ===== -->
@@ -200,6 +201,26 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
     <thead><tr><th style="cursor:pointer" onclick="sortMg('code')">代號</th><th style="cursor:pointer" onclick="sortMg('name')">名稱</th><th style="cursor:pointer" onclick="sortMg('mg')">融資餘額</th><th style="cursor:pointer" onclick="sortMg('ms')">融券餘額</th><th style="cursor:pointer" onclick="sortMg('ratio')">資券比%</th><th style="cursor:pointer" onclick="sortMg('mgChg')">融資增減</th><th style="cursor:pointer" onclick="sortMg('msChg')">融券增減</th><th style="cursor:pointer" onclick="sortMg('offset')">資券互抵</th></tr></thead>
     <tbody id="mgBody"></tbody>
   </table></div>
+</div>
+
+<!-- ===== 技術分析 ===== -->
+<div id="tab-technical" class="container">
+  <div class="card">
+    <div style="margin-bottom:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <label style="font-size:14px;font-weight:500;">週期：</label>
+      <select id="techInterval" style="padding:5px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px;">
+        <option value="5">5 分K</option>
+        <option value="15">15 分K</option>
+        <option value="30">30 分K</option>
+        <option value="D" selected>日 K</option>
+        <option value="M">月 K</option>
+        <option value="Q">季 K</option>
+      </select>
+      <button onclick="initTechnical()" style="padding:5px 14px;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;">🔄 繪製</button>
+      <span id="techInfo" style="font-size:12px;color:var(--text2);margin-left:4px;"></span>
+    </div>
+    <div id="techChart" style="width:100%;height:72vh;"></div>
+  </div>
 </div>
 
 <!-- ===== Daily After-Market ===== -->
@@ -1543,6 +1564,195 @@ async function safeInit() {
   setTimeout(safeInit, 1800000);
 }
 safeInit();
+
+// ===== 技術分析 (Plotly 日月季K) =====
+function techSMA(data, p) {
+  const r = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i < p-1) { r.push(null); continue; }
+    let s = 0;
+    for (let j = 0; j < p; j++) s += data[i-j];
+    r.push(s/p);
+  }
+  return r;
+}
+function techEMA(data, p) {
+  const r = []; const k = 2/(p+1);
+  for (let i = 0; i < data.length; i++) {
+    if (i === 0) { r.push(data[i]); continue; }
+    if (i < p-1) { r.push(null); continue; }
+    r.push(data[i]*k + r[i-1]*(1-k));
+  }
+  return r;
+}
+function techRSI(data, p) {
+  const r = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i < p) { r.push(null); continue; }
+    let g = 0, l = 0;
+    for (let j = 0; j < p; j++) {
+      const d = data[i-j] - data[i-j-1];
+      if (d > 0) g += d; else l += Math.abs(d);
+    }
+    const ag = g/p, al = l/p;
+    r.push(al === 0 ? 100 : 100 - 100/(1 + ag/al));
+  }
+  return r;
+}
+function techBB(data, p, k) {
+  const r = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i < p-1) { r.push({u:null,m:null,l:null}); continue; }
+    let s = 0;
+    for (let j = 0; j < p; j++) s += data[i-j];
+    const m = s / p;
+    let sq = 0;
+    for (let j = 0; j < p; j++) sq += (data[i-j]-m)**2;
+    const sd = Math.sqrt(sq/p);
+    r.push({u:m+k*sd, m, l:m-k*sd});
+  }
+  return r;
+}
+function aggK(daily, tf) {
+  if (!daily || !daily.length) return [];
+  if (tf === 'D') return [...daily].sort((a,b)=>a.date.localeCompare(b.date));
+  const g = []; let c = null;
+  for (const d of daily) {
+    const dt = new Date(d.date+'T00:00:00+08:00');
+    const k = tf === 'M' ? `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}`
+      : `${dt.getFullYear()}-Q${Math.floor(dt.getMonth()/3)+1}`;
+    const lb = tf === 'M' ? `${dt.getFullYear()}/${String(dt.getMonth()+1).padStart(2,'0')}` : `${dt.getFullYear()} Q${Math.floor(dt.getMonth()/3)+1}`;
+    if (!c || c.k !== k) {
+      if (c) g.push(c);
+      c = { k, lb, o:d.o, h:d.h, l:d.l, c:d.c, v:d.v, ts:dt.getTime() };
+    } else { c.h=Math.max(c.h,d.h); c.l=Math.min(c.l,d.l); c.c=d.c; c.v+=d.v; }
+  }
+  if (c) g.push(c);
+  return g;
+}
+
+let _techData = null;
+async function initTechnical() {
+  const el = document.getElementById('techChart');
+  const info = document.getElementById('techInfo');
+  const interval = document.getElementById('techInterval').value;
+  info.textContent = '載入中...';
+
+  try {
+    let candles, isIntraday = false;
+
+    if (interval === 'D' || interval === 'M' || interval === 'Q') {
+      // 日/月/季 K: 從 JSON 載入
+      if (!_techData) {
+        const r = await fetch('data/taiex-historical.json');
+        if (!r.ok) throw new Error('歷史資料 HTTP '+r.status);
+        _techData = await r.json();
+      }
+      candles = aggK(_techData, interval).map(x => ({
+        t: x.date || x.lb, o: x.o, h: x.h, l: x.l, c: x.c, v: x.v
+      }));
+    } else {
+      // 分K: 從 TWSE 盤中 tick
+      isIntraday = true;
+      const today = new Date();
+      const ds = today.getFullYear()+String(today.getMonth()+1).padStart(2,'0')+String(today.getDate()).padStart(2,'0');
+      const resp = await fetch('https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date='+ds);
+      if (!resp.ok) throw new Error('TWSE HTTP '+resp.status);
+      const json = await resp.json();
+      if (!json.data || !json.data.length) { info.textContent = '⚠️ 盤中資料尚未發布'; return; }
+
+      const intMin = parseInt(interval);
+      const buckets = new Map();
+      for (const row of json.data) {
+        const t = row[0].split(':').map(Number);
+        const val = parseFloat(row[1].replace(/,/g,''));
+        if (isNaN(val)||val===0) continue;
+        const vol = parseInt(row[2].replace(/,/g,''))||0;
+        const key = Math.floor((t[0]*60+t[1])/intMin);
+        if (!buckets.has(key)) buckets.set(key,{o:val,h:val,l:val,c:val,v:vol,tt:t});
+        else { const b=buckets.get(key); b.h=Math.max(b.h,val); b.l=Math.min(b.l,val); b.c=val; b.v+=vol; }
+      }
+      candles = [...buckets.entries()]
+        .map(([,v])=>({t:`${String(v.tt[0]).padStart(2,'0')}:${String(v.tt[1]).padStart(2,'0')}`,o:v.o,h:v.h,l:v.l,c:v.c,v:v.v}))
+        .sort((a,b)=>a.t.localeCompare(b.t)).filter(c=>c.t>='09:00'&&c.t<='13:30');
+    }
+
+    if (candles.length < 2) { info.textContent = '⚠️ K棒不足'; return; }
+
+    const closes = candles.map(c=>c.c), times = candles.map(c=>c.t), colors = candles.map(c=>c.c>=c.o?'#3fb950':'#f85149');
+    const maP = isIntraday ? [5,10,20,60] : [5,20,60,200];
+    const maColors = {5:'#6c5ce7',10:'#e67e22',20:'#3498db',60:'#e74c3c',200:'#f39c12'};
+    const bb = techBB(closes,20,2);
+    const rsi = techRSI(closes,14);
+
+    // 收盤摘要
+    const last=candles[candles.length-1], first=candles[0];
+    const chg=last.c-first.o, pct=chg/first.o*100;
+    info.innerHTML = `${candles[0].t}~${candles[candles.length-1].t} ｜ `+
+      `收 <b>${last.c.toLocaleString()}</b> <span style="color:${chg>=0?'#3fb950':'#f85149'}">${chg>=0?'▲':'▼'}${Math.abs(chg).toFixed(2)}(${pct.toFixed(2)}%)</span> ｜ `+
+      `${candles.length} 根K棒 ｜ RSI ${rsi[rsi.length-1]!==null?rsi[rsi.length-1].toFixed(1):'-'}`;
+
+    const traces = [
+      { type:'candlestick', x:times, open:candles.map(c=>c.o), high:candles.map(c=>c.h),
+        low:candles.map(c=>c.l), close:closes,
+        increasing:{line:{color:'#3fb950'},fillcolor:'#3fb950'},
+        decreasing:{line:{color:'#f85149'},fillcolor:'#f85149'}, name:'加權指數', yaxis:'y' },
+      ...maP.map(p=>({ type:'scatter', mode:'lines', x:times, y:techSMA(closes,p),
+        line:{color:maColors[p],width:p===200?2.5:1.5}, name:'MA'+p, yaxis:'y' })),
+      { type:'scatter', mode:'lines', x:times, y:bb.map(b=>b.m),
+        line:{color:'rgba(0,123,255,0.3)',width:1,dash:'dot'}, name:'BB中線', yaxis:'y' },
+      { type:'bar', x:times, y:candles.map(c=>c.v/(isIntraday?1e6:1e8)),
+        marker:{color:colors,opacity:0.3}, name:isIntraday?'成交量(百萬股)':'成交量(億)', yaxis:'y3' },
+      { type:'scatter', mode:'lines', x:times, y:rsi,
+        line:{color:'#6c5ce7',width:2}, name:'RSI(14)', yaxis:'y2' },
+      ...[70,50,30].map(y=>({ type:'scatter', mode:'lines',
+        x:[times[0],times[times.length-1]], y:[y,y],
+        line:{color:y===70?'rgba(220,53,69,0.3)':y===50?'rgba(255,255,255,0.1)':'rgba(40,167,69,0.3)',width:1,dash:'dash'},
+        name:y===70?'超買70':y===50?'50':'超賣30', yaxis:'y2', showlegend:false })),
+    ];
+
+    const annotations = [];
+    const MA5 = maP.includes(5) ? techSMA(closes,5) : [];
+    for (let i=20; i<candles.length; i++) {
+      if (MA5[i]&&MA5[i-1]&&techSMA(closes,20)[i]&&techSMA(closes,20)[i-1]) {
+        if (MA5[i-1]<techSMA(closes,20)[i-1]&&MA5[i]>=techSMA(closes,20)[i])
+          annotations.push({x:times[i],y:candles[i].l,text:'🟢 黃金交叉',showarrow:true,arrowhead:1,arrowsize:1.2,arrowwidth:2,arrowcolor:'#3fb950',font:{color:'#3fb950',size:11},ax:0,ay:-45});
+        if (MA5[i-1]>techSMA(closes,20)[i-1]&&MA5[i]<=techSMA(closes,20)[i])
+          annotations.push({x:times[i],y:candles[i].h,text:'🔴 死亡交叉',showarrow:true,arrowhead:1,arrowsize:1.2,arrowwidth:2,arrowcolor:'#f85149',font:{color:'#f85149',size:11},ax:0,ay:45});
+      }
+    }
+    for (let i=1; i<candles.length; i++) {
+      if (rsi[i]!==null&&rsi[i-1]!==null) {
+        if (rsi[i-1]>=70&&rsi[i]<70) annotations.push({x:times[i],y:73,text:'⬇ 超買回落',font:{color:'#f85149',size:10},showarrow:false,yref:'y2'});
+        if (rsi[i-1]<=30&&rsi[i]>30) annotations.push({x:times[i],y:27,text:'⬆ 超賣反彈',font:{color:'#3fb950',size:10},showarrow:false,yref:'y2'});
+      }
+      if (bb[i]&&bb[i].u!==null&&candles[i].c>bb[i].u&&bb[i-1]&&candles[i-1].c<=bb[i-1].u)
+        annotations.push({x:times[i],y:candles[i].h,text:'⬆ 突破上軌',showarrow:true,arrowhead:1,arrowcolor:'#ffc107',font:{color:'#ffc107',size:10},ax:20,ay:-30});
+      if (bb[i]&&bb[i].l!==null&&candles[i].c<bb[i].l&&bb[i-1]&&candles[i-1].c>=bb[i-1].l)
+        annotations.push({x:times[i],y:candles[i].l,text:'⬇ 跌破下軌',showarrow:true,arrowhead:1,arrowcolor:'#17a2b8',font:{color:'#17a2b8',size:10},ax:-20,ay:30});
+    }
+
+    await Plotly.newPlot('techChart', traces, {
+      title:{text:'加權指數技術分析 ('+(interval==='D'?'日線':interval==='M'?'月線':interval==='Q'?'季線':interval+'分K')+')',font:{color:'var(--text)'}},
+      paper_bgcolor:'var(--surface)', plot_bgcolor:'var(--surface)',
+      font:{color:'var(--text2)',size:11},
+      margin:{t:40,r:20,b:40,l:50},
+      xaxis:{rangeslider:{visible:false},domain:[0,1],tickangle:isIntraday?-45:-30,
+        gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:9}},
+      yaxis:{title:{text:'指數',font:{size:11}},domain:[0.26,1],gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:10}},
+      yaxis2:{title:{text:'RSI',font:{size:10}},domain:[0,0.13],range:[0,100],gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:9},side:'right'},
+      yaxis3:{title:{text:isIntraday?'成交量(M)':'成交量(億)',font:{size:10}},domain:[0.13,0.26],gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:9}},
+      annotations,
+      legend:{orientation:'h',y:1.02,x:0,font:{size:9}},
+      hovermode:'x unified',
+      dragmode:'zoom',
+    }, {responsive:true,displayModeBar:true,modeBarButtonsToRemove:['lasso2d','select2d'],displaylogo:false});
+
+  } catch(e) {
+    el.innerHTML = `<div style="text-align:center;padding:40px;color:#dc3545;"><h3>⚠️ 載入失敗</h3><p style="margin-top:8px;color:var(--text2);">${e.message}</p></div>`;
+    info.textContent = '⚠️ 失敗';
+  }
+}
 </script>
 </body>
 </html>
