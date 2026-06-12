@@ -12,7 +12,10 @@ python3 fetch_sentiment_data.py
 # 3. 台股指數 K線歷史（Yahoo Finance）
 python3 update_taiex_historical.py
 
-# 4. 本日收盤快照（Yahoo Finance）
+# 4. 個股日K線（19 檔預載股，Yahoo Finance）
+python3 update_stock_data.py
+
+# 5. 本日收盤快照（Yahoo Finance）
 python3 -c "
 import json, urllib.request, time
 url = 'https://query1.finance.yahoo.com/v8/finance/chart/%5ETWII?range=2d&interval=1d'
@@ -33,7 +36,7 @@ with open('data/today-index.json', 'w') as f:
 print(f'✅ today-index.json: {date_str} close={q["close"][-1]:.0f}')
 "
 
-# 5. Commit + Push
-git add data/ ../charts/data/taiex-historical.json sentiment-data.json sentiment-history.json
+# 6. Commit + Push
+git add data/ ../charts/data/taiex-historical.json ../backtest/tw-stock-data.json sentiment-data.json sentiment-history.json
 git commit -m "chore: refresh $(date +%Y-%m-%d)" --allow-empty
 git push
