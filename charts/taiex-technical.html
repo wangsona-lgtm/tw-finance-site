@@ -7,37 +7,32 @@
 <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
-body { background:#1a1a2e; color:#e0e0e0; font-family:system-ui,-apple-system,sans-serif; padding:20px; }
-.header { text-align:center; margin-bottom:16px; }
-.header h1 { font-size:22px; color:#58a6ff; }
-.header .sub { font-size:12px; color:#8b949e; margin-top:4px; }
+body { background:#fff; color:#212529; font-family:system-ui,-apple-system,sans-serif; padding:0; }
+
 .controls {
-  text-align:center; margin-bottom:12px; display:flex; flex-wrap:wrap;
-  justify-content:center; gap:6px; align-items:center;
+  text-align:center; margin-bottom:6px; display:flex; flex-wrap:wrap;
+  justify-content:center; gap:4px; align-items:center;
 }
 .controls label { font-size:13px; margin-right:4px; }
 .controls select, .controls button {
-  background:#2d2d44; color:#e0e0e0; border:1px solid #3d3d5c;
-  padding:5px 12px; border-radius:6px; font-size:13px; cursor:pointer;
+  background:#f8f9fa; color:#212529; border:1px solid #dee2e6;
+  padding:4px 10px; border-radius:6px; font-size:12px; cursor:pointer;
 }
-.controls button:hover { background:#3d3d5c; }
+.controls button:hover { background:#e9ecef; }
 .controls .badge {
-  display:inline-block; background:#3d3d5c; color:#8b949e;
-  border-radius:10px; padding:2px 10px; font-size:11px;
+  display:inline-block; background:#e9ecef; color:#6c757d;
+  border-radius:10px; padding:2px 8px; font-size:10px;
 }
-#chart { width:100%; height:90vh; }
-.loading { text-align:center; padding:80px 20px; color:#8b949e; }
+#chart { width:100%; height:100%; min-height:400px; }
+.loading { text-align:center; padding:60px 20px; color:#6c757d; }
 .loading .spin { font-size:48px; animation:pulse 1.5s ease-in-out infinite; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
 .error { text-align:center; padding:40px; }
-.error h3 { color:#f85149; }
+.error h3 { color:#dc3545; }
 </style>
 </head>
 <body>
-<div class="header">
-  <h1>📊 加權指數技術分析</h1>
-  <div class="sub" id="info">載入中...</div>
-</div>
+
 <div class="controls">
   <label>週期：</label>
   <select id="interval">
@@ -424,46 +419,46 @@ async function loadData() {
     const layout = {
       title: {
         text: `加權指數技術分析 (${interval === 'D' ? '日線' : interval === 'M' ? '月線' : interval === 'Q' ? '季線' : interval+'分K'})`,
-        font: { color: '#e0e0e0', size: 16 },
+        font: { color: '#212529', size: 14 },
       },
       dragmode: 'zoom',
-      margin: { t: 50, r: 20, b: 40, l: 50 },
-      paper_bgcolor: '#1a1a2e',
-      plot_bgcolor: '#1a1a2e',
-      font: { color: '#8b949e', size: 11 },
+      margin: { t: 10, r: 8, b: 16, l: 36 },
+      paper_bgcolor: '#fff',
+      plot_bgcolor: '#fff',
+      font: { color: '#6c757d', size: 10 },
       xaxis: {
         rangeslider: { visible: false },
         domain: [0, 1],
         tickangle: isIntraday ? -45 : -30,
         nticks: isIntraday ? 12 : 8,
-        gridcolor: 'rgba(255,255,255,0.06)',
-        tickfont: { color: '#8b949e', size: 9 },
+        gridcolor: 'rgba(0,0,0,0.06)',
+        tickfont: { color: '#6c757d', size: 9 },
       },
       yaxis: {
-        title: { text: '指數', font: { color: '#8b949e', size: 11 } },
+        title: { text: '指數', font: { color: '#6c757d', size: 10 } },
         domain: [0.26, 1],
-        gridcolor: 'rgba(255,255,255,0.06)',
-        tickfont: { color: '#8b949e', size: 10 },
+        gridcolor: 'rgba(0,0,0,0.06)',
+        tickfont: { color: '#6c757d', size: 9 },
       },
       yaxis2: {
-        title: { text: 'RSI', font: { color: '#8b949e', size: 10 } },
+        title: { text: 'RSI', font: { color: '#6c757d', size: 9 } },
         domain: [0, 0.13],
         range: [0, 100],
-        gridcolor: 'rgba(255,255,255,0.04)',
-        tickfont: { color: '#8b949e', size: 9 },
+        gridcolor: 'rgba(0,0,0,0.04)',
+        tickfont: { color: '#6c757d', size: 9 },
         side: 'right',
       },
       yaxis3: {
-        title: { text: isIntraday ? '成交量 (M)' : '成交量 (億)', font: { color: '#8b949e', size: 10 } },
+        title: { text: isIntraday ? '成交量 (M)' : '成交量 (億)', font: { color: '#6c757d', size: 9 } },
         domain: [0.13, 0.26],
-        gridcolor: 'rgba(255,255,255,0.04)',
-        tickfont: { color: '#8b949e', size: 9 },
+        gridcolor: 'rgba(0,0,0,0.04)',
+        tickfont: { color: '#6c757d', size: 9 },
       },
       annotations,
       legend: {
         orientation: 'h', y: 1.02, x: 0,
         font: { color: '#8b949e', size: 9 },
-        bgcolor: 'rgba(26,26,46,0.8)',
+        bgcolor: 'rgba(255,255,255,0.9)',
       },
       hovermode: 'x unified',
     };
@@ -484,7 +479,7 @@ async function loadData() {
       <div class="error">
         <h3>⚠️ 載入失敗</h3>
         <p style="margin-top:8px;font-size:14px;color:#8b949e;">${e.message}</p>
-        <button onclick="loadData()" style="margin-top:12px;padding:8px 20px;background:#2d2d44;border:1px solid #3d3d5c;border-radius:6px;color:#e0e0e0;cursor:pointer;">🔄 重試</button>
+        <button onclick="loadData()" style="margin-top:12px;padding:8px 20px;background:#f8f9fa;border:1px solid #dee2e6;border-radius:6px;color:#212529;cursor:pointer;">🔄 重試</button>
       </div>`;
     document.getElementById('info').textContent = '⚠️ 載入失敗';
   }
