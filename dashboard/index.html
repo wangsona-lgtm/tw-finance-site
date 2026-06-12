@@ -246,32 +246,38 @@ const DATA_DATE = "1150610";
 async function fetchJSON(url, useProxy=false) {
   const endpoint = url.split('/v1/')[1];
   
-  // Map endpoint to embedded data
-  const map = {
-    'exchangeReport/MI_INDEX': 'MI_INDEX',
-    'exchangeReport/STOCK_DAY_ALL': 'STOCK_DAY_ALL',
-    'exchangeReport/BWIBBU_ALL': 'BWIBBU_ALL',
-    'exchangeReport/MI_MARGN': 'MI_MARGN',
-    'exchangeReport/MI_INDEX20': 'MI_INDEX20',
+  // Step 1: Try local pre-fetched data (same-origin, no CORS)
+  const localMap = {
+    'exchangeReport/MI_INDEX': 'data/MI_INDEX.json',
+    'exchangeReport/STOCK_DAY_ALL': 'data/STOCK_DAY_ALL.json',
+    'exchangeReport/BWIBBU_ALL': 'data/BWIBBU_ALL.json',
+    'exchangeReport/MI_MARGN': 'data/MI_MARGN.json',
+    'exchangeReport/MI_INDEX20': 'data/MI_INDEX20.json',
   };
-  
-  const key = map[endpoint];
-  if (key && EMBEDDED_DATA[key] && EMBEDDED_DATA[key].length > 0) {
-    console.log(`📦 Using embedded data: ${key}`);
-    return EMBEDDED_DATA[key];
+  const localFile = localMap[endpoint];
+  if (localFile) {
+    try {
+      const r = await fetch(localFile + '?t=' + Date.now());
+      if (r.ok) {
+        const data = await r.json();
+        if (data && (Array.isArray(data) || data.stat === 'OK')) {
+          console.log(`📦 Using pre-fetched: ${localFile}`);
+          return data;
+        }
+      }
+    } catch(e) { /* fall through */ }
   }
   
-  // Step 1: Try direct CORS fetch (openapi.twse.com.tw supports CORS)
+  // Step 2: Try direct CORS fetch
   try {
     const r = await fetch(url);
     if (r.ok) return await r.json();
   } catch(e) { /* direct failed, try proxies */ }
   
-  // Step 2: Fallback: try CORS proxy
+  // Step 3: CORS proxy fallback
   const proxies = [
     'https://corsproxy.io/?',
     'https://api.allorigins.win/raw?url=',
-    'https://corsproxy.org/?',
   ];
   for (const p of proxies) {
     try {
@@ -879,6 +885,15 @@ let mgSort = { key: 'mg', asc: false };
 
 // Fetch TWSE market-wide margin summary
 async function fetchMarginSummary(dateStr) {
+  // Try local pre-fetched data first
+  try {
+    const lr = await fetch('data/MARGIN_RWD.json?t=' + Date.now());
+    if (lr.ok) {
+      const data = await lr.json();
+      if (data && data.stat === 'OK') return data;
+    }
+  } catch(e) { /* fall through */ }
+  // Fallback: try direct CORS fetch (might not work)
   const url = `https://www.twse.com.tw/rwd/zh/marginTrading/MI_MARGN?date=${dateStr}&selectType=ALL`;
   const resp = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
   if (!resp.ok) throw new Error('HTTP ' + resp.status);
