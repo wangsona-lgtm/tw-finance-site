@@ -261,7 +261,13 @@ async function fetchJSON(url, useProxy=false) {
     return EMBEDDED_DATA[key];
   }
   
-  // Fallback: try CORS proxy
+  // Step 1: Try direct CORS fetch (openapi.twse.com.tw supports CORS)
+  try {
+    const r = await fetch(url);
+    if (r.ok) return await r.json();
+  } catch(e) { /* direct failed, try proxies */ }
+  
+  // Step 2: Fallback: try CORS proxy
   const proxies = [
     'https://corsproxy.io/?',
     'https://api.allorigins.win/raw?url=',
