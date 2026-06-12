@@ -114,7 +114,9 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
     <div class="card"><h3>成交張數（萬）</h3><div class="value" id="idx4">-</div><div class="sub">今日累計</div></div>
   </div>
   <div class="grid grid-2 mt-16">
-    <div class="card chart-card"><h3>大盤走勢（K棒圖 — Plotly）</h3><div id="overviewChart" style="width:100%;height:420px;"></div></div>
+    <div class="card" style="grid-column:1/-1;padding:4px;">
+      <iframe src="../charts/taiex-technical.html" style="width:100%;height:480px;border:none;border-radius:8px;" loading="lazy"></iframe>
+    </div>
     <div class="card">
       <h3>成交量前 20 名</h3>
       <div id="top20List" class="scroll-x" style="max-height:320px;overflow-y:auto;"></div>
@@ -366,120 +368,7 @@ async function loadOverview() {
       }
     }
 
-    // 大盤走勢 K棒圖（Plotly）
-    try {
-      // 優先使用今天的盤中 Tick
-      const today = new Date();
-      const dStr = today.toISOString().slice(0,10);
-      const dateStr = dStr.replace(/-/g,'');
-
-      let tickRows = null;
-      if (EMBEDDED_DATA && EMBEDDED_DATA.TICK_INDEX && EMBEDDED_DATA.TICK_INDEX.length > 0) {
-        tickRows = EMBEDDED_DATA.TICK_INDEX;
-      } else {
-        const resp = await fetch('https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date='+dateStr);
-        if (!resp.ok) throw new Error('TWSE HTTP '+resp.status);
-        const tickData = await resp.json();
-        if (!tickData.data || tickData.data.length === 0) throw new Error('無 Tick 資料');
-        tickRows = tickData.data;
-      }
-
-      // 聚合為 5 分K
-      const buckets = new Map();
-      for (const row of tickRows) {
-        const timeStr = row[0];
-        const valStr = row[1];
-        const val = parseFloat(String(valStr).replace(/,/g,''));
-        if (isNaN(val) || val === 0) continue;
-        const [h, m] = timeStr.split(':').map(Number);
-        const key = Math.floor((h*60 + m) / 5);
-        const vol = parseInt(row[2].replace(/,/g,'')) || 0;
-        if (!buckets.has(key)) buckets.set(key, { o:val, h:val, l:val, c:val, v:vol });
-        else { const b = buckets.get(key); b.h = Math.max(b.h,val); b.l = Math.min(b.l,val); b.c = val; b.v += vol; }
-      }
-
-      const candles = [...buckets.entries()]
-        .filter(([k]) => k >= 108)
-        .map(([key, ohlc]) => ({
-          t: dStr+' '+String(Math.floor(key/12)).padStart(2,'0')+':'+String((key%12)*5).padStart(2,'0'),
-          o: ohlc.o, h: ohlc.h, l: ohlc.l, c: ohlc.c, v: ohlc.v
-        }))
-        .sort((a, b) => a.t.localeCompare(b.t));
-
-      if (candles.length < 3) throw new Error('K棒不足');
-
-      const closes = candles.map(c => c.c);
-      const times = candles.map(c => c.t);
-      function sma(d, p) {
-        const r = [];
-        for (let i = 0; i < d.length; i++) {
-          if (i < p-1) { r.push(null); continue; }
-          let s = 0;
-          for (let j = 0; j < p; j++) s += d[i-j];
-          r.push(s/p);
-        }
-        return r;
-      }
-      function rsiCalc(d, p) {
-        const r = [];
-        for (let i = 0; i < d.length; i++) {
-          if (i < p) { r.push(null); continue; }
-          let g = 0, l = 0;
-          for (let j = 0; j < p; j++) {
-            const diff = d[i-j] - d[i-j-1];
-            if (diff > 0) g += diff; else l += Math.abs(diff);
-          }
-          const ag = g/p, al = l/p;
-          r.push(al === 0 ? 100 : 100 - 100/(1 + ag/al));
-        }
-        return r;
-      }
-      const rsi = rsiCalc(closes, 14);
-      const colors = candles.map(c => c.c >= c.o ? '#3fb950' : '#f85149');
-
-      const traces = [
-        { type:'candlestick', x:times, open:candles.map(c=>c.o), high:candles.map(c=>c.h),
-          low:candles.map(c=>c.l), close:closes, increasing:{line:{color:'#3fb950'},fillcolor:'#3fb950'},
-          decreasing:{line:{color:'#f85149'},fillcolor:'#f85149'}, name:'加權指數', yaxis:'y' },
-        { type:'scatter', mode:'lines', x:times, y:sma(closes,5),
-          line:{color:'#6c5ce7',width:1.5}, name:'MA5', yaxis:'y' },
-        { type:'scatter', mode:'lines', x:times, y:sma(closes,20),
-          line:{color:'#3498db',width:1.5}, name:'MA20', yaxis:'y' },
-        { type:'scatter', mode:'lines', x:times, y:sma(closes,60),
-          line:{color:'#e74c3c',width:2}, name:'MA60', yaxis:'y' },
-        { type:'scatter', mode:'lines', x:times, y:rsi,
-          line:{color:'#6c5ce7',width:2}, name:'RSI(14)', yaxis:'y2' },
-        { type:'scatter', mode:'lines', x:[times[0],times[times.length-1]], y:[70,70],
-          line:{color:'rgba(220,53,69,0.3)',width:1,dash:'dash'}, name:'超買70', yaxis:'y2', showlegend:false },
-        { type:'scatter', mode:'lines', x:[times[0],times[times.length-1]], y:[30,30],
-          line:{color:'rgba(40,167,69,0.3)',width:1,dash:'dash'}, name:'超賣30', yaxis:'y2', showlegend:false },
-        { type:'bar', x:times, y:candles.map(c=>c.v/1e6),
-          marker:{color:colors,opacity:0.3}, name:'量(百萬股)', yaxis:'y3' },
-      ];
-
-      const last=candles[candles.length-1], first=candles[0];
-      const chg=last.c-first.o;
-
-      await Plotly.newPlot('overviewChart', traces, {
-        title:{text:'大盤走勢 — 加權指數 (5分K) 收 '+last.c.toLocaleString()+' '+dateStr,font:{color:'var(--text)',size:14}},
-        paper_bgcolor:'var(--surface)', plot_bgcolor:'var(--surface)',
-        font:{color:'var(--text2)',size:10},
-        margin:{t:36,r:16,b:30,l:44},
-        xaxis:{rangeslider:{visible:false},domain:[0,1],tickangle:-45,
-          gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:9}},
-        yaxis:{title:{text:'指數',font:{size:10}},domain:[0.32,1],gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:9}},
-        yaxis2:{title:{text:'RSI',font:{size:9}},domain:[0,0.15],range:[0,100],
-          gridcolor:'rgba(0,0,0,0.03)',tickfont:{size:8},side:'right'},
-        yaxis3:{title:{text:'量(M)',font:{size:9}},domain:[0.15,0.32],
-          gridcolor:'rgba(0,0,0,0.03)',tickfont:{size:8}},
-        legend:{orientation:'h',y:1.02,x:0,font:{size:8}},
-        hovermode:'x unified', dragmode:'zoom',
-      }, {responsive:true,displayModeBar:false,displaylogo:false});
-
-    } catch(e) {
-      document.getElementById('overviewChart').innerHTML =
-        '<div style="text-align:center;padding:40px;color:#dc3545;font-size:13px;">⚠️ K棒載入失敗: '+e.message+'</div>';
-    }
+    // 大盤走勢已由 iframe 崁入 charts/taiex-technical.html
 
   } catch(e) {
     document.getElementById('idx1').textContent = '⚠️';
