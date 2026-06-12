@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-12",
+  "dayOfWeek": "五",
+  "marketStatus": "closed",
+  "index": {
+    "name": "TAIEX 加權指數",
+    "close": 44169.04,
+    "change": 996.83,
+    "changePercent": 2.36,
+    "open": 43587.63,
+    "high": 44798.88,
+    "low": 43587.63,
+    "prevClose": 43172.21,
+    "feature": "SOX +7.91% 激勵，半導體領軍強彈 +996 點"
+  },
+  "stocks": [
+    {"code":"2330","name":"台積電","close":2310.0,"change":60.0,"changePercent":2.67},
+    {"code":"2454","name":"聯發科","close":4180.0,"change":95.0,"changePercent":2.33},
+    {"code":"2317","name":"鴻海","close":260.5,"change":2.0,"changePercent":0.77},
+    {"code":"2303","name":"聯電","close":133.5,"change":8.5,"changePercent":6.80},
+    {"code":"2382","name":"廣達","close":372.0,"change":2.0,"changePercent":0.54},
+    {"code":"2357","name":"華碩","close":785.0,"change":1.0,"changePercent":0.13},
+    {"code":"3231","name":"緯創","close":156.0,"change":3.5,"changePercent":2.30},
+    {"code":"2412","name":"中華電","close":145.0,"change":0.0,"changePercent":0.00},
+    {"code":"2881","name":"富邦金","close":122.0,"change":-3.5,"changePercent":-2.79},
+    {"code":"2882","name":"國泰金","close":100.5,"change":0.0,"changePercent":0.00},
+    {"code":"2603","name":"長榮","close":228.0,"change":2.0,"changePercent":0.88},
+    {"code":"2002","name":"中鋼","close":18.9,"change":0.35,"changePercent":1.89},
+    {"code":"1301","name":"台塑","close":45.25,"change":1.45,"changePercent":3.31},
+    {"code":"1303","name":"南亞","close":106.5,"change":9.6,"changePercent":9.91},
+    {"code":"1101","name":"台泥","close":24.55,"change":0.3,"changePercent":1.24}
+  ]
+}
