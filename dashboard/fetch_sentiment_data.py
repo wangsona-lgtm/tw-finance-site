@@ -39,12 +39,13 @@ def get_twse_inst(date_str):
         diff = int(r[3].replace(',',''))
         key = name.replace('(不含外資自營商)','').replace('(自行買賣)','').replace('(避險)','')
         result[key] = {'buy': buy, 'sell': sell, 'diff': diff}
-    # Calculate totals
-    result['自營商合計'] = {
-        'buy': result.get('自營商', {}).get('buy', 0) + result.get('自營商', {}).get('buy', 0),
-        'sell': result.get('自營商', {}).get('sell', 0) + result.get('自營商', {}).get('sell', 0),
-        'diff': result.get('自營商', {}).get('diff', 0) + result.get('自營商', {}).get('diff', 0)
-    }
+    # Calculate totals for dealer (自行買賣 + 避險)
+    dealer_buy = sum(int(r[1].replace(',','')) for r in data.get('data',[]) if '自營商' in r[0] and '外資' not in r[0])
+    dealer_sell = sum(int(r[2].replace(',','')) for r in data.get('data',[]) if '自營商' in r[0] and '外資' not in r[0])
+    dealer_diff = sum(int(r[3].replace(',','')) for r in data.get('data',[]) if '自營商' in r[0] and '外資' not in r[0])
+    result['自營商合計'] = {'buy': dealer_buy, 'sell': dealer_sell, 'diff': dealer_diff}
+    
+    # 備註：原「自營商」key 會被後者覆蓋（因為 (自行買賣) 和 (避險) 都對應到同一 key）
     return result
 
 def get_pc_ratio(dt):
@@ -133,33 +134,38 @@ def main():
     except:
         hist = []
     
-    # Add today's entry
-    entry = {
-        'date': today_str[:4]+'-'+today_str[4:6]+'-'+today_str[6:8],
-        'inst': None if not inst else {
-            'foreign': inst.get('外資及陸資', {}).get('diff', 0),
-            'investment_trust': inst.get('投信', {}).get('diff', 0),
-            'dealer_total': inst.get('自營商合計', {}).get('diff', 0)
-        },
-        'pc_ratio': output.get('pc_ratio', {}).get('pc_vol_ratio', 0),
-        'pc_oi_ratio': output.get('pc_ratio', {}).get('pc_oi_ratio', 0),
-        'futures_foreign_net': output.get('futures', {}).get('foreign_tx_net', ''),
-        'futures_total_net': output.get('futures', {}).get('total_inst_futures_net', '')
-    }
-    
-    # Update or add
-    existing = [h for h in hist if h['date'] == entry['date']]
-    if existing:
-        existing[0].update(entry)
-    else:
-        hist.append(entry)
+    # Add today's entry (僅當成功取得資料時)
+    if inst:
+        entry = {
+            'date': today_str[:4]+'-'+today_str[4:6]+'-'+today_str[6:8],
+            'inst': {
+                'foreign': inst.get('外資及陸資', {}).get('diff', 0),
+                'investment_trust': inst.get('投信', {}).get('diff', 0),
+                'dealer_total': inst.get('自營商合計', {}).get('diff', 0)
+            },
+            'pc_ratio': output.get('pc_ratio', {}).get('pc_vol_ratio', 0),
+            'pc_oi_ratio': output.get('pc_ratio', {}).get('pc_oi_ratio', 0),
+            'futures_foreign_net': output.get('futures', {}).get('foreign_tx_net', ''),
+            'futures_total_net': output.get('futures', {}).get('total_inst_futures_net', '')
+        }
+        
+        # Update or add (僅限當天)
+        existing = [h for h in hist if h['date'] == entry['date']]
+        if existing:
+            existing[0].update(entry)
+        else:
+            hist.append(entry)
+        # 保留最近 30 天
+        hist = hist[-30:]
     
     with open(HIST, 'w', encoding='utf-8') as f:
         json.dump(hist, f, ensure_ascii=False, indent=2)
     
-    print('OK:', output['institution'].get('外資及陸資',{}).get('diff','N/A') 
-          if output.get('institution') else 'No inst data')
+    print('OK: 外資', f'{inst.get("外資及陸資",{}).get("diff","N/A"):,}' if inst else 'N/A', '元')
+    print('OK: 投信', f'{inst.get("投信",{}).get("diff","N/A"):,}' if inst else 'N/A', '元')
+    print('OK: 自營商', f'{inst.get("自營商合計",{}).get("diff","N/A"):,}' if inst else 'N/A', '元')
     print('PC:', output.get('pc_ratio', {}).get('pc_vol_ratio', 'N/A'))
+    print(f'History entries: {len(hist)}')
 
 if __name__ == '__main__':
     main()

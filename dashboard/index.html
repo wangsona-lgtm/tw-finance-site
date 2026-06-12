@@ -754,34 +754,71 @@ async function loadDaily() {
 // ===== 籌碼資料 =====
 // Inline embedded sentiment data (updated daily by fetch_sentiment_data.py)
 const __EMBEDDED_SENTIMENT_DATA = {
-  "updated": "2026-06-12T02:59:36.606317",
+  "updated": "2026-06-12T16:24:00",
   "today": "20260612",
   "institution": {
-    "date": "20260611",
-    "外資及陸資": {"buy": 513292371055, "sell": 549071652393, "diff": -35779281338},
-    "投信": {"buy": 47264037603, "sell": 34019262466, "diff": 13244775137},
-    "自營商合計": {"buy": 113214467218, "sell": 139472916672, "diff": -26258449454},
-    "合計": {"buy": 629595618546, "sell": 664530285477, "diff": -34934666931}
+    "date": "20260612",
+    "自營商": {
+      "buy": 42406648167,
+      "sell": 36303927600,
+      "diff": 6102720567
+    },
+    "投信": {
+      "buy": 31410288090,
+      "sell": 18473279140,
+      "diff": 12937008950
+    },
+    "外資及陸資": {
+      "buy": 413201386718,
+      "sell": 384511118366,
+      "diff": 28690268352
+    },
+    "外資自營商": {
+      "buy": 0,
+      "sell": 0,
+      "diff": 0
+    },
+    "合計": {
+      "buy": 497803044754,
+      "sell": 447233235115,
+      "diff": 50569809639
+    },
+    "自營商合計": {
+      "buy": 53191369946,
+      "sell": 44248837609,
+      "diff": 8942532337
+    }
   },
   "pc_ratio": {
-    "date": "2026/6/11",
-    "call_vol": 225901, "put_vol": 214908,
-    "pc_vol_ratio": 105.12, "pc_oi_ratio": 133.33,
-    "call_oi": 132390, "put_oi": 99293
+    "date": "2026/6/12",
+    "call_vol": 391613,
+    "put_vol": 391113,
+    "pc_vol_ratio": 100.13,
+    "call_oi": 109682,
+    "put_oi": 65153,
+    "pc_oi_ratio": 168.35
   },
   "futures": {
-    "last_seen_date": "2026/06/11",
+    "note": "Futures data from latest available",
+    "last_seen_date": "2026/06/12",
     "foreign_tx_net": "-61,949",
     "total_inst_futures_net": "-74,321"
   }
 };
 
 const __EMBEDDED_SENTIMENT_HISTORY = [
-  {"date":"2026-06-08","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":83.49,"pc_oi_ratio":126.75,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"},
-  {"date":"2026-06-09","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":118.27,"pc_oi_ratio":133.64,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"},
-  {"date":"2026-06-10","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":107.93,"pc_oi_ratio":166.01,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"},
-  {"date":"2026-06-11","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":105.12,"pc_oi_ratio":133.33,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"},
-  {"date":"2026-06-12","inst":{"foreign":-35779281338,"investment_trust":13244775137,"dealer_total":-26258449454},"pc_ratio":105.12,"pc_oi_ratio":133.33,"futures_foreign_net":"-61,949","futures_total_net":"-74,321"}
+  {
+    "date": "2026-06-12",
+    "inst": {
+      "foreign": 28690268352,
+      "investment_trust": 12937008950,
+      "dealer_total": 8942532337
+    },
+    "pc_ratio": 100.13,
+    "pc_oi_ratio": 168.35,
+    "futures_foreign_net": "-61,949",
+    "futures_total_net": "-74,321"
+  }
 ];
 
 let sentimentData = null;

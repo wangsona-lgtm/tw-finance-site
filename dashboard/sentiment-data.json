@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12T16:05:03.172220",
+  "updated": "2026-06-12T16:24:00",
   "today": "20260612",
   "institution": {
     "date": "20260612",
@@ -29,9 +29,9 @@
       "diff": 50569809639
     },
     "自營商合計": {
-      "buy": 84813296334,
-      "sell": 72607855200,
-      "diff": 12205441134
+      "buy": 53191369946,
+      "sell": 44248837609,
+      "diff": 8942532337
     }
   },
   "pc_ratio": {
@@ -44,10 +44,9 @@
     "pc_oi_ratio": 168.35
   },
   "futures": {
-    "note": "Futures/options data from latest available report",
-    "last_seen_date": "2026/06/11",
+    "note": "Futures data from latest available",
+    "last_seen_date": "2026/06/12",
     "foreign_tx_net": "-61,949",
     "total_inst_futures_net": "-74,321"
-  },
-  "error": null
+  }
 }
