@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>加權指數技術分析 — Plotly</title>
+<script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#1a1a2e; color:#e0e0e0; font-family:system-ui,-apple-system,sans-serif; padding:20px; }
+.header { text-align:center; margin-bottom:20px; }
+.header h1 { font-size:22px; color:#58a6ff; }
+.header .sub { font-size:13px; color:#8b949e; margin-top:4px; }
+.controls { text-align:center; margin-bottom:16px; }
+.controls select, .controls button {
+  background:#2d2d44; color:#e0e0e0; border:1px solid #3d3d5c;
+  padding:6px 14px; border-radius:6px; font-size:13px; cursor:pointer;
+}
+.controls button:hover { background:#3d3d5c; }
+#chart { width:100%; height:92vh; }
+.loading { text-align:center; padding:40px; color:#8b949e; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📊 加權指數技術分析</h1>
+  <div class="sub" id="info">載入中...</div>
+</div>
+<div class="controls">
+  <label style="font-size:13px;margin-right:8px;">週期：</label>
+  <select id="interval">
+    <option value="1">1 分K</option>
+    <option value="5" selected>5 分K</option>
+    <option value="15">15 分K</option>
+    <option value="30">30 分K</option>
+  </select>
+  <button onclick="loadData()">🔄 重新整理</button>
+  <span style="font-size:12px;color:#8b949e;margin-left:12px;">資料來源：TWSE 即時報價</span>
+</div>
+<div id="chart" class="loading">📈 載入圖表中...</div>
+
+<script>
+// ===== 指標計算 =====
+function sma(data, period) {
+  const r = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i < period - 1) { r.push(null); continue; }
+    let s = 0;
+    for (let j = 0; j < period; j++) s += data[i - j];
+    r.push(s / period);
+  }
+  return r;
+}
+
+function calcRSI(data, period) {
+  const rsi = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i < period) { rsi.push(null); continue; }
+    let gain = 0, loss = 0;
+    for (let j = 0; j < period; j++) {
+      const d = data[i - j] - data[i - j - 1];
+      if (d > 0) gain += d; else loss += Math.abs(d);
+    }
+    const avgGain = gain / period, avgLoss = loss / period;
+    const rs = avgLoss === 0 ? 999 : avgGain / avgLoss;
+    rsi.push(100 - 100 / (1 + rs));
+  }
+  return rsi;
+}
+
+function calcBB(data, period, k) {
+  const result = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i < period - 1) { result.push({upper:null,middle:null,lower:null}); continue; }
+    let sum = 0;
+    for (let j = 0; j < period; j++) sum += data[i - j];
+    const ma = sum / period;
+    let sqSum = 0;
+    for (let j = 0; j < period; j++) sqSum += (data[i - j] - ma) ** 2;
+    const std = Math.sqrt(sqSum / period);
+    result.push({ upper: ma + k*std, middle: ma, lower: ma - k*std });
+  }
+  return result;
+}
+
+// ===== 主要載入函數 =====
+async function loadData() {
+  const el = document.getElementById('chart');
+  el.className = 'loading';
+  el.innerHTML = '📈 載入圖表中...';
+  document.getElementById('info').textContent = '正在取得 TWSE 資料...';
+
+  try {
+    // 抓取今日盤中 Tick 資料 (CORS OK ✓)
+    const today = new Date();
+    const ds = today.getFullYear()
+      + String(today.getMonth()+1).padStart(2,'0')
+      + String(today.getDate()).padStart(2,'0');
+
+    const resp = await fetch(
+      `https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date=${ds}`
+    );
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const json = await resp.json();
+    if (!json.data || json.data.length === 0) throw new Error('無盤中資料');
+
+    const tickRows = json.data;
+    const interval = parseInt(document.getElementById('interval').value);
+
+    // 聚合 K 棒 (time bucket: interval 分鐘)
+    const buckets = new Map();
+    for (const row of tickRows) {
+      const t = row[0].split(':').map(Number);
+      const val = parseFloat(row[1].replace(/,/g,''));
+      if (isNaN(val) || val === 0) continue;
+      // 成交量在第 3 欄 (成交股數)
+      const vol = parseInt(row[2].replace(/,/g,'')) || 0;
+      const key = Math.floor((t[0]*60 + t[1]) / interval);
+      if (!buckets.has(key)) {
+        buckets.set(key, { o:val, h:val, l:val, c:val, v:vol, t: t });
+      } else {
+        const b = buckets.get(key);
+        b.h = Math.max(b.h, val);
+        b.l = Math.min(b.l, val);
+        b.c = val;
+        b.v += vol;
+      }
+    }
+
+    // 轉為陣列並排序
+    const candles = [...buckets.entries()]
+      .map(([k, v]) => ({
+        time: `${String(v.t[0]).padStart(2,'0')}:${String(v.t[1]).padStart(2,'0')}`,
+        o: v.o, h: v.h, l: v.l, c: v.c, v: v.v
+      }))
+      .sort((a, b) => a.time.localeCompare(b.time));
+
+    // 只在 09:00~13:30 之間
+    const filtered = candles.filter(c => c.time >= '09:00' && c.time <= '13:30');
+
+    if (filtered.length < 2) throw new Error('K棒不足');
+
+    const closes = filtered.map(c => c.c);
+    const times = filtered.map(c => c.time);
+    const volumes = filtered.map(c => c.v);
+
+    // 技術指標
+    const ma5 = sma(closes, 5);
+    const ma10 = sma(closes, 10);
+    const ma20 = sma(closes, 20);
+    const ma60 = sma(closes, 60);
+    const rsi = calcRSI(closes, 14);
+    const bb = calcBB(closes, 20, 2);
+
+    // 判斷漲跌顏色
+    const colors = filtered.map(c => c.c >= c.o ? '#3fb950' : '#f85149');
+
+    // ===== 建立 Plotly 圖表 =====
+    const candleData = {
+      type: 'candlestick',
+      x: times,
+      open: filtered.map(c => c.o),
+      high: filtered.map(c => c.h),
+      low: filtered.map(c => c.l),
+      close: closes,
+      increasing: { line: { color: '#3fb950' }, fillcolor: '#3fb950' },
+      decreasing: { line: { color: '#f85149' }, fillcolor: '#f85149' },
+      name: '加權指數',
+      yaxis: 'y',
+      xaxis: 'x',
+    };
+
+    const ma5Trace = {
+      type: 'scatter', mode: 'lines',
+      x: times, y: ma5,
+      line: { color: '#6c5ce7', width: 1.5 },
+      name: 'MA5',
+      yaxis: 'y',
+    };
+
+    const ma10Trace = {
+      type: 'scatter', mode: 'lines',
+      x: times, y: ma10,
+      line: { color: '#e67e22', width: 1.5 },
+      name: 'MA10',
+      yaxis: 'y',
+    };
+
+    const ma20Trace = {
+      type: 'scatter', mode: 'lines',
+      x: times, y: ma20,
+      line: { color: '#3498db', width: 1.5 },
+      name: 'MA20',
+      yaxis: 'y',
+    };
+
+    const ma60Trace = {
+      type: 'scatter', mode: 'lines',
+      x: times, y: ma60,
+      line: { color: '#e74c3c', width: 2.5 },
+      name: 'MA60',
+      yaxis: 'y',
+    };
+
+    // 布林通道中線
+    const bbMid = {
+      type: 'scatter', mode: 'lines',
+      x: times, y: bb.map(b => b.middle),
+      line: { color: 'rgba(0,123,255,0.5)', width: 1, dash: 'dot' },
+      name: 'BB 中線',
+      yaxis: 'y',
+    };
+
+    // 成交量條 (同 K 棒的紅綠色)
+    const volumeTrace = {
+      type: 'bar',
+      x: times, y: volumes.map(v => v / 1e6), // 百萬股
+      marker: { color: colors, opacity: 0.4 },
+      name: '成交量 (百萬股)',
+      yaxis: 'y3',
+    };
+
+    // RSI
+    const rsiTrace = {
+      type: 'scatter', mode: 'lines',
+      x: times, y: rsi,
+      line: { color: '#6c5ce7', width: 2 },
+      name: 'RSI(14)',
+      yaxis: 'y2',
+    };
+
+    // RSI 超買超賣線
+    const rsiOverbought = {
+      type: 'scatter', mode: 'lines',
+      x: [times[0], times[times.length-1]],
+      y: [70, 70],
+      line: { color: 'rgba(220,53,69,0.3)', width: 1, dash: 'dash' },
+      name: '超買 70',
+      yaxis: 'y2',
+      showlegend: false,
+    };
+
+    const rsiOversold = {
+      type: 'scatter', mode: 'lines',
+      x: [times[0], times[times.length-1]],
+      y: [30, 30],
+      line: { color: 'rgba(40,167,69,0.3)', width: 1, dash: 'dash' },
+      name: '超賣 30',
+      yaxis: 'y2',
+      showlegend: false,
+    };
+
+    const rsiMid = {
+      type: 'scatter', mode: 'lines',
+      x: [times[0], times[times.length-1]],
+      y: [50, 50],
+      line: { color: 'rgba(255,255,255,0.1)', width: 1 },
+      name: '50',
+      yaxis: 'y2',
+      showlegend: false,
+    };
+
+    // ===== 型態標註 =====
+    const annotations = [];
+    // 判斷技術型態
+    for (let i = 20; i < filtered.length; i++) {
+      // 黃金交叉 (MA5 突破 MA20)
+      if (ma5[i-1] !== null && ma10[i-1] !== null && ma20[i-1] !== null &&
+          ma5[i] !== null && ma10[i] !== null && ma20[i] !== null) {
+        if (ma5[i-1] < ma20[i-1] && ma5[i] >= ma20[i]) {
+          annotations.push({
+            x: times[i], y: filtered[i].l,
+            text: '🟢 黃金交叉', showarrow: true,
+            arrowhead: 1, arrowsize: 1, arrowwidth: 1.5,
+            arrowcolor: '#3fb950', font: { color: '#3fb950', size: 11 },
+            ax: 0, ay: -40,
+          });
+        }
+        // 死亡交叉
+        if (ma5[i-1] > ma20[i-1] && ma5[i] <= ma20[i]) {
+          annotations.push({
+            x: times[i], y: filtered[i].h,
+            text: '🔴 死亡交叉', showarrow: true,
+            arrowhead: 1, arrowsize: 1, arrowwidth: 1.5,
+            arrowcolor: '#f85149', font: { color: '#f85149', size: 11 },
+            ax: 0, ay: 40,
+          });
+        }
+      }
+      // RSI 超買超賣
+      if (rsi[i] !== null && rsi[i-1] !== null) {
+        if (rsi[i-1] >= 70 && rsi[i] < 70) {
+          annotations.push({
+            x: times[i], y: rsi[i] + 3,
+            text: '⬇ 超買回落', showarrow: false,
+            font: { color: '#f85149', size: 10 },
+            yref: 'y2',
+          });
+        }
+        if (rsi[i-1] <= 30 && rsi[i] > 30) {
+          annotations.push({
+            x: times[i], y: rsi[i] - 3,
+            text: '⬆ 超賣反彈', showarrow: false,
+            font: { color: '#3fb950', size: 10 },
+            yref: 'y2',
+          });
+        }
+      }
+      // 突破布林上軌
+      if (bb[i] && bb[i].upper !== null && filtered[i].c > bb[i].upper) {
+        if (i === filtered.length - 1 || (bb[i-1] && filtered[i-1].c <= bb[i-1].upper)) {
+          annotations.push({
+            x: times[i], y: filtered[i].h,
+            text: '⬆ 突破上軌', showarrow: true,
+            arrowhead: 1, arrowsize: 1, arrowwidth: 1,
+            arrowcolor: '#ffc107', font: { color: '#ffc107', size: 10 },
+            ax: 20, ay: -30, yref: 'y',
+          });
+        }
+      }
+      // 跌破布林下軌
+      if (bb[i] && bb[i].lower !== null && filtered[i].c < bb[i].lower) {
+        if (i === filtered.length - 1 || (bb[i-1] && filtered[i-1].c >= bb[i-1].lower)) {
+          annotations.push({
+            x: times[i], y: filtered[i].l,
+            text: '⬇ 跌破下軌', showarrow: true,
+            arrowhead: 1, arrowsize: 1, arrowwidth: 1,
+            arrowcolor: '#17a2b8', font: { color: '#17a2b8', size: 10 },
+            ax: -20, ay: 30, yref: 'y',
+          });
+        }
+      }
+    }
+
+    // 收盤行情摘要
+    const last = filtered[filtered.length-1];
+    const open = filtered[0];
+    const chg = last.c - open.o;
+    const pct = (chg / open.o * 100);
+    const high = Math.max(...filtered.map(c => c.h));
+    const low = Math.min(...filtered.map(c => c.l));
+    const totalVol = volumes.reduce((a,b) => a+b, 0);
+    const lastRsi = rsi[rsi.length-1];
+
+    document.getElementById('info').innerHTML =
+      `📅 ${ds} ｜ 收 <strong>${last.c.toLocaleString()}</strong> ` +
+      `<span style="color:${chg>=0?'#3fb950':'#f85149'}">${chg>=0?'▲':'▼'}${Math.abs(chg).toFixed(2)} (${pct.toFixed(2)}%)</span> ` +
+      `｜ 高 ${high.toLocaleString()} 低 ${low.toLocaleString()} ｜ ` +
+      `成交量 ${(totalVol/1e6).toFixed(1)}M ｜ RSI ${lastRsi !== null ? lastRsi.toFixed(1) : '-'}`;
+
+    // ===== 組合圖表 =====
+    const layout = {
+      title: { text: `加權指數技術分析 — ${ds} (${interval}分K)`, font: { color: '#e0e0e0', size: 16 } },
+      dragmode: 'zoom',
+      margin: { t: 50, r: 20, b: 40, l: 50 },
+      paper_bgcolor: '#1a1a2e',
+      plot_bgcolor: '#1a1a2e',
+      font: { color: '#8b949e', size: 11 },
+      xaxis: {
+        rangeslider: { visible: false },
+        domain: [0, 1],
+        tickangle: -45,
+        nticks: 12,
+        gridcolor: 'rgba(255,255,255,0.06)',
+        tickfont: { color: '#8b949e', size: 10 },
+      },
+      yaxis: {
+        title: { text: '指數', font: { color: '#8b949e', size: 11 } },
+        domain: [0.28, 1],
+        gridcolor: 'rgba(255,255,255,0.06)',
+        tickfont: { color: '#8b949e', size: 10 },
+      },
+      yaxis2: {
+        title: { text: 'RSI', font: { color: '#8b949e', size: 10 } },
+        domain: [0, 0.15],
+        range: [0, 100],
+        gridcolor: 'rgba(255,255,255,0.04)',
+        tickfont: { color: '#8b949e', size: 9 },
+        side: 'right',
+      },
+      yaxis3: {
+        title: { text: '成交量 (M)', font: { color: '#8b949e', size: 10 } },
+        domain: [0.15, 0.28],
+        gridcolor: 'rgba(255,255,255,0.04)',
+        tickfont: { color: '#8b949e', size: 9 },
+      },
+      annotations: annotations,
+      legend: {
+        orientation: 'h',
+        y: 1.02,
+        x: 0,
+        font: { color: '#8b949e', size: 10 },
+        bgcolor: 'rgba(26,26,46,0.8)',
+      },
+      hovermode: 'x unified',
+    };
+
+    const config = {
+      responsive: true,
+      displayModeBar: true,
+      modeBarButtonsToRemove: ['lasso2d', 'select2d'],
+      displaylogo: false,
+    };
+
+    const traces = [
+      candleData, ma5Trace, ma10Trace, ma20Trace, ma60Trace, bbMid,
+      volumeTrace,
+      rsiTrace, rsiOverbought, rsiOversold, rsiMid,
+    ];
+
+    Plotly.newPlot('chart', traces, layout, config);
+    el.className = '';
+
+  } catch (e) {
+    document.getElementById('chart').innerHTML = `
+      <div style="text-align:center;padding:40px;color:#f85149;">
+        <h3>⚠️ 載入失敗</h3>
+        <p style="margin-top:8px;font-size:14px;">${e.message}</p>
+        <button onclick="loadData()" style="margin-top:12px;padding:8px 20px;background:#2d2d44;border:1px solid #3d3d5c;border-radius:6px;color:#e0e0e0;cursor:pointer;">🔄 重試</button>
+      </div>`;
+    document.getElementById('info').textContent = '⚠️ 載入失敗';
+  }
+}
+
+// 自動載入
+loadData();
+</script>
+</body>
+</html>
