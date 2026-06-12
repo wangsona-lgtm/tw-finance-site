@@ -1644,7 +1644,7 @@ async function initTechnical() {
     if (interval === 'D' || interval === 'M' || interval === 'Q') {
       // 日/月/季 K: 從 JSON 載入
       if (!_techData) {
-        const r = await fetch('data/taiex-historical.json');
+        const r = await fetch('../charts/data/taiex-historical.json');
         if (!r.ok) throw new Error('歷史資料 HTTP '+r.status);
         _techData = await r.json();
       }
