@@ -114,7 +114,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
     <div class="card"><h3>成交張數（萬）</h3><div class="value" id="idx4">-</div><div class="sub">今日累計</div></div>
   </div>
   <div class="grid grid-2 mt-16">
-    <div class="card chart-card"><h3>大盤走勢</h3><div class="chart-container"><canvas id="indexChart"></canvas></div><div class="rsi-container"><canvas id="rsiChart" style="height:80px;"></canvas></div><div class="rsi-container" style="height:80px;border-top:none;padding-top:0;"><canvas id="kdChart"></canvas></div></div>
+    <div class="card chart-card"><h3>大盤走勢（K棒圖 — Plotly）</h3><div id="overviewChart" style="width:100%;height:420px;"></div></div>
     <div class="card">
       <h3>成交量前 20 名</h3>
       <div id="top20List" class="scroll-x" style="max-height:320px;overflow-y:auto;"></div>
@@ -327,7 +327,6 @@ function showTab(name) {
 }
 
 // ===== Overview =====
-let indexChart = null;
 async function loadOverview() {
   try {
     const data = await fetchJSON(INDEX_API);
@@ -367,16 +366,13 @@ async function loadOverview() {
       }
     }
 
-    // 大盤走勢 K棒圖
-    const ctx = document.getElementById('indexChart').getContext('2d');
-    if (indexChart) indexChart.destroy();
+    // 大盤走勢 K棒圖（Plotly）
     try {
-      // 優先使用今天的盤中 Tick（收盤後顯示今日完整走勢）
+      // 優先使用今天的盤中 Tick
       const today = new Date();
       const dStr = today.toISOString().slice(0,10);
       const dateStr = dStr.replace(/-/g,'');
 
-      // 使用內嵌 Tick 資料（或從 TWSE live fetch）
       let tickRows = null;
       if (EMBEDDED_DATA && EMBEDDED_DATA.TICK_INDEX && EMBEDDED_DATA.TICK_INDEX.length > 0) {
         tickRows = EMBEDDED_DATA.TICK_INDEX;
@@ -388,7 +384,7 @@ async function loadOverview() {
         tickRows = tickData.data;
       }
 
-      // 將 5 秒 Tick 聚合為 1 分鐘 K棒
+      // 聚合為 5 分K
       const buckets = new Map();
       for (const row of tickRows) {
         const timeStr = row[0];
@@ -396,386 +392,95 @@ async function loadOverview() {
         const val = parseFloat(String(valStr).replace(/,/g,''));
         if (isNaN(val) || val === 0) continue;
         const [h, m] = timeStr.split(':').map(Number);
-        const key = h*60 + m;
-        if (!buckets.has(key)) buckets.set(key, { o:val, h:val, l:val, c:val });
-        else { const b = buckets.get(key); b.h = Math.max(b.h,val); b.l = Math.min(b.l,val); b.c = val; }
+        const key = Math.floor((h*60 + m) / 5);
+        const vol = parseInt(row[2].replace(/,/g,'')) || 0;
+        if (!buckets.has(key)) buckets.set(key, { o:val, h:val, l:val, c:val, v:vol });
+        else { const b = buckets.get(key); b.h = Math.max(b.h,val); b.l = Math.min(b.l,val); b.c = val; b.v += vol; }
       }
 
       const candles = [...buckets.entries()]
-        .filter(([k]) => k >= 540)
+        .filter(([k]) => k >= 108)
         .map(([key, ohlc]) => ({
-          x: new Date(dStr+'T'+String(Math.floor(key/60)).padStart(2,'0')+':'+String(key%60).padStart(2,'0')+':00+08:00').getTime(),
-          o: ohlc.o, h: ohlc.h, l: ohlc.l, c: ohlc.c
+          t: dStr+' '+String(Math.floor(key/12)).padStart(2,'0')+':'+String((key%12)*5).padStart(2,'0'),
+          o: ohlc.o, h: ohlc.h, l: ohlc.l, c: ohlc.c, v: ohlc.v
         }))
-        .sort((a, b) => a.x - b.x);
+        .sort((a, b) => a.t.localeCompare(b.t));
 
-      // ===== 技術指標計算 =====
+      if (candles.length < 3) throw new Error('K棒不足');
+
       const closes = candles.map(c => c.c);
-      function sma(data, period) {
-        const result = [];
-        for (let i = 0; i < data.length; i++) {
-          if (i < period - 1) { result.push(null); continue; }
-          let sum = 0;
-          for (let j = 0; j < period; j++) sum += data[i - j];
-          result.push(sum / period);
+      const times = candles.map(c => c.t);
+      function sma(d, p) {
+        const r = [];
+        for (let i = 0; i < d.length; i++) {
+          if (i < p-1) { r.push(null); continue; }
+          let s = 0;
+          for (let j = 0; j < p; j++) s += d[i-j];
+          r.push(s/p);
         }
-        return result;
+        return r;
       }
-      const ma5 = sma(closes, 5);
-      const ma10 = sma(closes, 10);
-      const ma20 = sma(closes, 20);
-      const ma60 = sma(closes, 60);
-      const ma100 = sma(closes, 100);
-
-      const ma5Data = candles.map((c, i) => ({ x: c.x, y: ma5[i] !== null ? ma5[i] : undefined }));
-      const ma10Data = candles.map((c, i) => ({ x: c.x, y: ma10[i] !== null ? ma10[i] : undefined }));
-      const ma20Data = candles.map((c, i) => ({ x: c.x, y: ma20[i] !== null ? ma20[i] : undefined }));
-      const ma60Data = candles.map((c, i) => ({ x: c.x, y: ma60[i] !== null ? ma60[i] : undefined }));
-      const ma100Data = candles.map((c, i) => ({ x: c.x, y: ma100[i] !== null ? ma100[i] : undefined }));
-
-      // ===== 布林通道（20期，2倍標準差）=====
-      function bb(data, period, k) {
-        const result = [];
-        for (let i = 0; i < data.length; i++) {
-          if (i < period - 1) { result.push(null); continue; }
-          let sum = 0;
-          for (let j = 0; j < period; j++) sum += data[i - j];
-          const ma = sum / period;
-          let sqSum = 0;
-          for (let j = 0; j < period; j++) sqSum += (data[i - j] - ma) ** 2;
-          const std = Math.sqrt(sqSum / period);
-          result.push({ upper: ma + k*std, middle: ma, lower: ma - k*std });
+      function rsiCalc(d, p) {
+        const r = [];
+        for (let i = 0; i < d.length; i++) {
+          if (i < p) { r.push(null); continue; }
+          let g = 0, l = 0;
+          for (let j = 0; j < p; j++) {
+            const diff = d[i-j] - d[i-j-1];
+            if (diff > 0) g += diff; else l += Math.abs(diff);
+          }
+          const ag = g/p, al = l/p;
+          r.push(al === 0 ? 100 : 100 - 100/(1 + ag/al));
         }
-        return result;
+        return r;
       }
-      const bbData = bb(closes, 20, 2);
-      const bbUpper = candles.map((c, i) => ({ x: c.x, y: bbData[i] !== null ? bbData[i].upper : undefined }));
-      const bbMiddle = candles.map((c, i) => ({ x: c.x, y: bbData[i] !== null ? bbData[i].middle : undefined }));
-      const bbLower = candles.map((c, i) => ({ x: c.x, y: bbData[i] !== null ? bbData[i].lower : undefined }));
+      const rsi = rsiCalc(closes, 14);
+      const colors = candles.map(c => c.c >= c.o ? '#3fb950' : '#f85149');
 
-      // ===== 建立 K 棒圖 =====
-      const indicatorPlugin = {
-        id: 'indicators',
-        afterDraw(chart) {
-          const opts = chart.options.plugins?.indicators;
-          if (!opts) return;
-          const { ctx, scales } = chart;
-          const xs = scales.x, ys = scales.y;
-          if (!xs || !ys) return;
-          function drawLine(data, color, w, dash) {
-            if (!data || data.length === 0) return;
-            ctx.beginPath();
-            ctx.strokeStyle = color;
-            ctx.lineWidth = w || 1;
-            ctx.setLineDash(dash || []);
-            let started = false;
-            for (const p of data) {
-              if (p.y === undefined || p.y === null) { started = false; continue; }
-              const px = xs.getPixelForValue(p.x);
-              const py = ys.getPixelForValue(p.y);
-              if (!started) { ctx.moveTo(px, py); started = true; }
-              else ctx.lineTo(px, py);
-            }
-            ctx.stroke();
-            ctx.setLineDash([]);
-          }
-          drawLine(opts.ma5, '#6c5ce7', 1.5);
-          drawLine(opts.ma10, '#e67e22', 1.5);
-          drawLine(opts.ma20, '#3498db', 1.5);
-          drawLine(opts.ma60, '#e74c3c', 2.5);
-          drawLine(opts.ma100, '#95a5a6', 1.5);
+      const traces = [
+        { type:'candlestick', x:times, open:candles.map(c=>c.o), high:candles.map(c=>c.h),
+          low:candles.map(c=>c.l), close:closes, increasing:{line:{color:'#3fb950'},fillcolor:'#3fb950'},
+          decreasing:{line:{color:'#f85149'},fillcolor:'#f85149'}, name:'加權指數', yaxis:'y' },
+        { type:'scatter', mode:'lines', x:times, y:sma(closes,5),
+          line:{color:'#6c5ce7',width:1.5}, name:'MA5', yaxis:'y' },
+        { type:'scatter', mode:'lines', x:times, y:sma(closes,20),
+          line:{color:'#3498db',width:1.5}, name:'MA20', yaxis:'y' },
+        { type:'scatter', mode:'lines', x:times, y:sma(closes,60),
+          line:{color:'#e74c3c',width:2}, name:'MA60', yaxis:'y' },
+        { type:'scatter', mode:'lines', x:times, y:rsi,
+          line:{color:'#6c5ce7',width:2}, name:'RSI(14)', yaxis:'y2' },
+        { type:'scatter', mode:'lines', x:[times[0],times[times.length-1]], y:[70,70],
+          line:{color:'rgba(220,53,69,0.3)',width:1,dash:'dash'}, name:'超買70', yaxis:'y2', showlegend:false },
+        { type:'scatter', mode:'lines', x:[times[0],times[times.length-1]], y:[30,30],
+          line:{color:'rgba(40,167,69,0.3)',width:1,dash:'dash'}, name:'超賣30', yaxis:'y2', showlegend:false },
+        { type:'bar', x:times, y:candles.map(c=>c.v/1e6),
+          marker:{color:colors,opacity:0.3}, name:'量(百萬股)', yaxis:'y3' },
+      ];
 
-          // 布林通道
-          function drawBB(data, color, w, dash) {
-            if (!data || data.length === 0) return;
-            ctx.beginPath();
-            ctx.strokeStyle = color;
-            ctx.lineWidth = w || 1;
-            ctx.setLineDash(dash || []);
-            let started = false;
-            for (const p of data) {
-              if (p.y === undefined || p.y === null) { started = false; continue; }
-              const px = xs.getPixelForValue(p.x);
-              const py = ys.getPixelForValue(p.y);
-              if (!started) { ctx.moveTo(px, py); started = true; }
-              else ctx.lineTo(px, py);
-            }
-            ctx.stroke();
-            ctx.setLineDash([]);
-          }
-          drawBB(opts.bbUpper, 'rgba(0,123,255,0.35)', 1);
-          drawBB(opts.bbLower, 'rgba(0,123,255,0.35)', 1);
-          drawBB(opts.bbMiddle, 'rgba(0,123,255,0.5)', 1, [5,5]);
-        }
-      };
+      const last=candles[candles.length-1], first=candles[0];
+      const chg=last.c-first.o;
 
-      indexChart = new Chart(ctx, {
-        type: 'candlestick',
-        data: { datasets: [{ label:'加權指數', data:candles, color:{ up:'#dc3545', down:'#28a745', unchanged:'#adb5bd' }, borderColor:'#adb5bd' }] },
-        options: {
-          responsive: true, maintainAspectRatio: false,
-          interaction: { mode: 'index', intersect: false },
-          plugins: {
-            legend: { labels: { color:'#868e96' } },
-            indicators: { ma5:ma5Data, ma10:ma10Data, ma20:ma20Data, ma60:ma60Data, ma100:ma100Data, bbUpper, bbMiddle, bbLower },
-            tooltip: {
-              callbacks: {
-                title: items => { if(!items.length)return''; return new Date(items[0].parsed.x).toLocaleTimeString('zh-TW',{hour:'2-digit',minute:'2-digit'}); },
-                label: ctx => { const d=ctx.dataset.data[ctx.dataIndex]; return ' 開:'+d.o.toLocaleString()+' 高:'+d.h.toLocaleString()+' 低:'+d.l.toLocaleString()+' 收:'+d.c.toLocaleString(); },
-                afterBody: items => {
-                  const idx=items[0].dataIndex, opts=items[0].chart.options.plugins?.indicators;
-                  if(!opts)return null;
-                  const labels=['MA5','MA10','MA20','MA60','MA100'], keys=['ma5','ma10','ma20','ma60','ma100'];
-                  const lines=[];
-                  keys.forEach((k,i)=>{ if(opts[k]&&opts[k][idx]&&opts[k][idx].y!==undefined) lines.push(labels[i]+': '+Number(opts[k][idx].y).toLocaleString()); });
-                  // 布林通道
-                  if (opts.bbUpper && opts.bbUpper[idx] && opts.bbUpper[idx].y !== undefined)
-                    lines.push('BB上: '+Number(opts.bbUpper[idx].y).toLocaleString()+' BB中: '+Number(opts.bbMiddle[idx].y).toLocaleString()+' BB下: '+Number(opts.bbLower[idx].y).toLocaleString());
-                  return lines.length ? '\n'+lines.join('\n') : null;
-                }
-              }
-            }
-          },
-          scales: {
-            x: { type:'linear', ticks:{ color:'#868e96', maxRotation:0, font:{size:10}, callback:v=>{const d=new Date(v);return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');} }, grid:{ color:'rgba(0,0,0,0.08)' } },
-            y: { ticks:{ color:'#868e96', font:{size:10} }, grid:{ color:'rgba(0,0,0,0.08)' } }
-          }
-        },
-        plugins: [indicatorPlugin]
-      });
-
-      // ===== RSI(14) =====
-      function calcRSI(data, period) {
-        const rsi = [];
-        for (let i = 0; i < data.length; i++) {
-          if (i < period) { rsi.push(null); continue; }
-          let gainSum = 0, lossSum = 0;
-          for (let j = 0; j < period; j++) {
-            const diff = data[i - j] - data[i - j - 1];
-            if (diff > 0) gainSum += diff;
-            else lossSum += Math.abs(diff);
-          }
-          const avgGain = gainSum / period;
-          const avgLoss = lossSum / period;
-          const rs = avgLoss === 0 ? 999 : avgGain / avgLoss;
-          rsi.push(100 - 100 / (1 + rs));
-        }
-        return rsi;
-      }
-
-      // ===== Stochastic KD(9,3,3) =====
-      function calcKD(data, kPeriod, dPeriod) {
-        const kValues = [];
-        const dValues = [];
-        for (let i = 0; i < data.length; i++) {
-          if (i < 8) { kValues.push(null); dValues.push(null); continue; }
-          let high9 = -Infinity, low9 = Infinity;
-          for (let j = 0; j < 9; j++) {
-            const idx = i - j;
-            if (idx >= 0) {
-              const h = candles[idx].h;
-              const l = candles[idx].l;
-              if (h > high9) high9 = h;
-              if (l < low9) low9 = l;
-            }
-          }
-          const close = data[i];
-          const rsv = (high9 === low9) ? 50 : ((close - low9) / (high9 - low9)) * 100;
-          if (i === 8) {
-            kValues.push(50);
-            dValues.push(50);
-          } else if (i > 8) {
-            const prevK = kValues[kValues.length - 1];
-            const k = (2/3) * prevK + (1/3) * rsv;
-            kValues.push(k);
-            const prevD = dValues[dValues.length - 1];
-            const d = (2/3) * prevD + (1/3) * k;
-            dValues.push(d);
-          }
-        }
-        return { kValues, dValues };
-      }
-
-      const rsiValues = calcRSI(closes, 14);
-      const rsiTimestamps = candles.map(c => c.x);
-      const rsiData = rsiTimestamps.map((t, i) => ({
-        x: t, y: rsiValues[i] !== null ? rsiValues[i] : undefined
-      }));
-
-      // 建立 RSI 圖表
-      const rsiCtx = document.getElementById('rsiChart').getContext('2d');
-      if (window.rsiChart && typeof window.rsiChart.destroy === 'function') window.rsiChart.destroy();
-
-      try {
-      window.rsiChart = new Chart(rsiCtx, {
-        type: 'line',
-        data: {
-          datasets: [{
-            label: 'RSI(14)',
-            data: rsiData,
-            borderColor: '#6c5ce7',
-            borderWidth: 2,
-            pointRadius: 0,
-            fill: false
-          }]
-        },
-        options: {
-          responsive: true, maintainAspectRatio: false,
-          plugins: {
-            legend: { labels: { color:'#868e96', font:{size:10} } },
-            annotation: undefined,
-            tooltip: {
-              callbacks: {
-                title: items => {
-                  if (!items.length) return '';
-                  const d = new Date(items[0].parsed.x);
-                  return d.toLocaleTimeString('zh-TW', {hour:'2-digit',minute:'2-digit'});
-                }
-              }
-            }
-          },
-          scales: {
-            x: {
-              type: 'linear',
-              ticks: {
-                color: '#868e96', maxRotation: 0, font:{size:9},
-                callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
-              },
-              grid: { color: 'rgba(0,0,0,0.06)' }
-            },
-            y: {
-              min: 0, max: 100,
-              ticks: {
-                color: '#868e96', font:{size:9},
-                callback: v => {
-                  if (v === 30) return '30 超賣';
-                  if (v === 70) return '70 超買';
-                  return v === 50 ? '50' : '';
-                }
-              },
-              grid: {
-                color: ctx => {
-                  const v = ctx.tick.value;
-                  if (v === 30 || v === 70) return 'rgba(220,53,69,0.4)';
-                  if (v === 50) return 'rgba(0,0,0,0.12)';
-                  return 'rgba(0,0,0,0.06)';
-                }
-              }
-            }
-          }
-        }
-      });
-      } catch(_) { console.warn('RSI chart error:', _); }
-
-      // ===== Stochastic KD(9,3,3) 圖表 =====
-      try {
-        const kdResult = calcKD(closes, 9, 3);
-        const kdTimestamps = candles.map(c => c.x);
-        const kData = kdTimestamps.map((t, i) => ({
-          x: t, y: kdResult.kValues[i] !== null ? kdResult.kValues[i] : undefined
-        }));
-        const dData = kdTimestamps.map((t, i) => ({
-          x: t, y: kdResult.dValues[i] !== null ? kdResult.dValues[i] : undefined
-        }));
-
-        const kdCtx = document.getElementById('kdChart').getContext('2d');
-        if (window.kdChart && typeof window.kdChart.destroy === 'function') window.kdChart.destroy();
-
-        window.kdChart = new Chart(kdCtx, {
-          type: 'line',
-          data: {
-            datasets: [
-              {
-                label: 'K值(9)',
-                data: kData,
-                borderColor: '#e67e22',
-                borderWidth: 2,
-                pointRadius: 0,
-                fill: false
-              },
-              {
-                label: 'D值(3)',
-                data: dData,
-                borderColor: '#3498db',
-                borderWidth: 2,
-                pointRadius: 0,
-                fill: false
-              }
-            ]
-          },
-          options: {
-            responsive: true, maintainAspectRatio: false,
-            plugins: {
-              legend: { labels: { color:'#868e96', font:{size:10} } },
-              tooltip: {
-                callbacks: {
-                  title: items => {
-                    if (!items.length) return '';
-                    const d = new Date(items[0].parsed.x);
-                    return d.toLocaleTimeString('zh-TW', {hour:'2-digit',minute:'2-digit'});
-                  }
-                }
-              }
-            },
-            scales: {
-              x: {
-                type: 'linear',
-                ticks: {
-                  color: '#868e96', maxRotation: 0, font:{size:9},
-                  callback: v => { const d=new Date(v); return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'); }
-                },
-                grid: { color: 'rgba(0,0,0,0.06)' }
-              },
-              y: {
-                min: 0, max: 100,
-                ticks: {
-                  color: '#868e96', font:{size:9},
-                  callback: v => {
-                    if (v === 20) return '20 超賣';
-                    if (v === 80) return '80 超買';
-                    return v === 50 ? '50' : '';
-                  }
-                },
-                grid: {
-                  color: ctx => {
-                    const v = ctx.tick.value;
-                    if (v === 20 || v === 80) return 'rgba(220,53,69,0.4)';
-                    if (v === 50) return 'rgba(0,0,0,0.12)';
-                    return 'rgba(0,0,0,0.06)';
-                  }
-                }
-              }
-            }
-          }
-        });
-      } catch(_) { console.warn('KD chart error:', _); }
+      await Plotly.newPlot('overviewChart', traces, {
+        title:{text:'大盤走勢 — 加權指數 (5分K) 收 '+last.c.toLocaleString()+' '+dateStr,font:{color:'var(--text)',size:14}},
+        paper_bgcolor:'var(--surface)', plot_bgcolor:'var(--surface)',
+        font:{color:'var(--text2)',size:10},
+        margin:{t:36,r:16,b:30,l:44},
+        xaxis:{rangeslider:{visible:false},domain:[0,1],tickangle:-45,
+          gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:9}},
+        yaxis:{title:{text:'指數',font:{size:10}},domain:[0.32,1],gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:9}},
+        yaxis2:{title:{text:'RSI',font:{size:9}},domain:[0,0.15],range:[0,100],
+          gridcolor:'rgba(0,0,0,0.03)',tickfont:{size:8},side:'right'},
+        yaxis3:{title:{text:'量(M)',font:{size:9}},domain:[0.15,0.32],
+          gridcolor:'rgba(0,0,0,0.03)',tickfont:{size:8}},
+        legend:{orientation:'h',y:1.02,x:0,font:{size:8}},
+        hovermode:'x unified', dragmode:'zoom',
+      }, {responsive:true,displayModeBar:false,displaylogo:false});
 
     } catch(e) {
-      console.warn('K線讀取失敗，改用折線圖', e);
-      try { if (indexChart && typeof indexChart.destroy === 'function') indexChart.destroy(); } catch(_){}
-      try { if (window.rsiChart && typeof window.rsiChart.destroy === 'function') window.rsiChart.destroy(); } catch(_){}
-      try { if (window.kdChart && typeof window.kdChart.destroy === 'function') window.kdChart.destroy(); } catch(_){}
-      indexChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ['09:00','10:00','11:00','12:00','13:00','13:30'],
-          datasets: [{
-            label: '加權指數',
-            data: [43500, 43480, 43450, 43470, 43500, 43502],
-            borderColor: '#58a6ff', backgroundColor: 'rgba(88,166,255,0.12)',
-            fill: true, tension: .4, pointRadius: 3
-          }]
-        },
-        options: {
-          responsive: true, maintainAspectRatio: false,
-          plugins: { legend: { labels: { color:'#868e96' } } },
-          scales: {
-            x: { ticks: { color:'#868e96' }, grid: { color:'rgba(0,0,0,0.08)' } },
-            y: { ticks: { color:'#868e96' }, grid: { color:'rgba(0,0,0,0.08)' } }
-          }
-        }
-      });
+      document.getElementById('overviewChart').innerHTML =
+        '<div style="text-align:center;padding:40px;color:#dc3545;font-size:13px;">⚠️ K棒載入失敗: '+e.message+'</div>';
     }
+
   } catch(e) {
     document.getElementById('idx1').textContent = '⚠️';
     document.getElementById('idx1sub').textContent = e.message;
