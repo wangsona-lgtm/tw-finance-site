@@ -261,7 +261,7 @@ try{const EMBEDDED_DATA = {};}catch(e){}
 
 ;
 ;
-const DATA_DATE = "1150610";
+const DATA_DATE = "1150612";
 
 // 優先使用內嵌資料，proxy 為備援
 async function fetchJSON(url, useProxy=false) {
@@ -371,20 +371,16 @@ async function loadOverview() {
     const ctx = document.getElementById('indexChart').getContext('2d');
     if (indexChart) indexChart.destroy();
     try {
-      // 日期轉換：1150608 → 2026-06-08
-      const ds = DATA_DATE;
-      const dY = +ds.slice(0,3);
-      const dM = ds.slice(3,5);
-      const dD = ds.slice(5,7);
-      const yyyy = 1911 + dY;
-      const dStr = yyyy+'-'+dM+'-'+dD;
+      // 優先使用今天的盤中 Tick（收盤後顯示今日完整走勢）
+      const today = new Date();
+      const dStr = today.toISOString().slice(0,10);
+      const dateStr = dStr.replace(/-/g,'');
 
       // 使用內嵌 Tick 資料（或從 TWSE live fetch）
       let tickRows = null;
       if (EMBEDDED_DATA && EMBEDDED_DATA.TICK_INDEX && EMBEDDED_DATA.TICK_INDEX.length > 0) {
         tickRows = EMBEDDED_DATA.TICK_INDEX;
       } else {
-        const dateStr = String(yyyy)+dM+dD;
         const resp = await fetch('https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date='+dateStr);
         if (!resp.ok) throw new Error('TWSE HTTP '+resp.status);
         const tickData = await resp.json();
