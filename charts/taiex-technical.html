@@ -8,17 +8,29 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { background:#1a1a2e; color:#e0e0e0; font-family:system-ui,-apple-system,sans-serif; padding:20px; }
-.header { text-align:center; margin-bottom:20px; }
+.header { text-align:center; margin-bottom:16px; }
 .header h1 { font-size:22px; color:#58a6ff; }
-.header .sub { font-size:13px; color:#8b949e; margin-top:4px; }
-.controls { text-align:center; margin-bottom:16px; }
+.header .sub { font-size:12px; color:#8b949e; margin-top:4px; }
+.controls {
+  text-align:center; margin-bottom:12px; display:flex; flex-wrap:wrap;
+  justify-content:center; gap:6px; align-items:center;
+}
+.controls label { font-size:13px; margin-right:4px; }
 .controls select, .controls button {
   background:#2d2d44; color:#e0e0e0; border:1px solid #3d3d5c;
-  padding:6px 14px; border-radius:6px; font-size:13px; cursor:pointer;
+  padding:5px 12px; border-radius:6px; font-size:13px; cursor:pointer;
 }
 .controls button:hover { background:#3d3d5c; }
-#chart { width:100%; height:92vh; }
-.loading { text-align:center; padding:40px; color:#8b949e; }
+.controls .badge {
+  display:inline-block; background:#3d3d5c; color:#8b949e;
+  border-radius:10px; padding:2px 10px; font-size:11px;
+}
+#chart { width:100%; height:90vh; }
+.loading { text-align:center; padding:80px 20px; color:#8b949e; }
+.loading .spin { font-size:48px; animation:pulse 1.5s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.error { text-align:center; padding:40px; }
+.error h3 { color:#f85149; }
 </style>
 </head>
 <body>
@@ -27,330 +39,393 @@ body { background:#1a1a2e; color:#e0e0e0; font-family:system-ui,-apple-system,sa
   <div class="sub" id="info">載入中...</div>
 </div>
 <div class="controls">
-  <label style="font-size:13px;margin-right:8px;">週期：</label>
+  <label>週期：</label>
   <select id="interval">
-    <option value="1">1 分K</option>
-    <option value="5" selected>5 分K</option>
+    <option value="5">5 分K</option>
     <option value="15">15 分K</option>
     <option value="30">30 分K</option>
+    <option value="D" selected>日 K</option>
+    <option value="M">月 K</option>
+    <option value="Q">季 K</option>
   </select>
-  <button onclick="loadData()">🔄 重新整理</button>
-  <span style="font-size:12px;color:#8b949e;margin-left:12px;">資料來源：TWSE 即時報價</span>
+  <button onclick="loadData()">🔄 更新</button>
+  <span class="badge">📡 Yahoo Finance + TWSE</span>
 </div>
-<div id="chart" class="loading">📈 載入圖表中...</div>
+<div id="chart" class="loading">
+  <div class="spin">📈</div>
+  <div style="margin-top:16px;font-size:14px;">讀取歷史資料中...</div>
+</div>
 
 <script>
-// ===== 指標計算 =====
+// ===== 技術指標函數 =====
 function sma(data, period) {
   const r = [];
   for (let i = 0; i < data.length; i++) {
-    if (i < period - 1) { r.push(null); continue; }
+    if (i < period-1) { r.push(null); continue; }
     let s = 0;
-    for (let j = 0; j < period; j++) s += data[i - j];
+    for (let j = 0; j < period; j++) s += data[i-j];
     r.push(s / period);
   }
   return r;
 }
 
-function calcRSI(data, period) {
-  const rsi = [];
+function ema(data, period) {
+  const r = []; const k = 2/(period+1);
   for (let i = 0; i < data.length; i++) {
-    if (i < period) { rsi.push(null); continue; }
-    let gain = 0, loss = 0;
-    for (let j = 0; j < period; j++) {
-      const d = data[i - j] - data[i - j - 1];
-      if (d > 0) gain += d; else loss += Math.abs(d);
+    if (i === 0) { r.push(data[i]); continue; }
+    if (i < period-1) { r.push(null); continue; }
+    r.push(data[i]*k + r[i-1]*(1-k));
+  }
+  return r;
+}
+
+function calcRSI(data, p) {
+  const r = [];
+  for (let i = 0; i < data.length; i++) {
+    if (i < p) { r.push(null); continue; }
+    let g = 0, l = 0;
+    for (let j = 0; j < p; j++) {
+      const d = data[i-j] - data[i-j-1];
+      if (d > 0) g += d; else l += Math.abs(d);
     }
-    const avgGain = gain / period, avgLoss = loss / period;
-    const rs = avgLoss === 0 ? 999 : avgGain / avgLoss;
-    rsi.push(100 - 100 / (1 + rs));
+    const ag = g/p, al = l/p;
+    r.push(al === 0 ? 100 : 100 - 100/(1 + ag/al));
   }
-  return rsi;
+  return r;
 }
 
-function calcBB(data, period, k) {
-  const result = [];
+function calcBB(data, p, k) {
+  const r = [];
   for (let i = 0; i < data.length; i++) {
-    if (i < period - 1) { result.push({upper:null,middle:null,lower:null}); continue; }
-    let sum = 0;
-    for (let j = 0; j < period; j++) sum += data[i - j];
-    const ma = sum / period;
-    let sqSum = 0;
-    for (let j = 0; j < period; j++) sqSum += (data[i - j] - ma) ** 2;
-    const std = Math.sqrt(sqSum / period);
-    result.push({ upper: ma + k*std, middle: ma, lower: ma - k*std });
+    if (i < p-1) { r.push({u:null,m:null,l:null}); continue; }
+    let s = 0;
+    for (let j = 0; j < p; j++) s += data[i-j];
+    const m = s / p;
+    let sq = 0;
+    for (let j = 0; j < p; j++) sq += (data[i-j]-m)**2;
+    const sd = Math.sqrt(sq/p);
+    r.push({u:m+k*sd, m, l:m-k*sd});
   }
-  return result;
+  return r;
 }
 
-// ===== 主要載入函數 =====
+// ===== 聚合 K 棒 =====
+function aggregateK(dailyData, timeframe) {
+  if (!dailyData || dailyData.length === 0) return [];
+  if (timeframe === 'D') return [...dailyData].sort((a,b) => a.date.localeCompare(b.date));
+
+  const groups = [];
+  let current = null;
+
+  for (const d of dailyData) {
+    const dt = new Date(d.date + 'T00:00:00+08:00');
+    const key = timeframe === 'M'
+      ? `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}`
+      : `${dt.getFullYear()}-Q${Math.floor(dt.getMonth()/3)+1}`;
+
+    if (!current || current.key !== key) {
+      if (current) groups.push(current);
+      current = {
+        key,
+        label: timeframe === 'M'
+          ? `${dt.getFullYear()}/${String(dt.getMonth()+1).padStart(2,'0')}`
+          : `${dt.getFullYear()} Q${Math.floor(dt.getMonth()/3)+1}`,
+        o: d.o, h: d.h, l: d.l, c: d.c, v: d.v,
+        ts: dt.getTime()
+      };
+    } else {
+      current.h = Math.max(current.h, d.h);
+      current.l = Math.min(current.l, d.l);
+      current.c = d.c;
+      current.v += d.v;
+    }
+  }
+  if (current) groups.push(current);
+  return groups;
+}
+
+// ===== 從日K壓成週K =====
+function weeklyK(dailyData) {
+  if (!dailyData || dailyData.length === 0) return [];
+  const groups = [];
+  let current = null;
+  for (const d of dailyData) {
+    const dt = new Date(d.date + 'T00:00:00+08:00');
+    const dow = dt.getDay(); // 0=Sun, 1=Mon ...
+    const mon = new Date(dt);
+    mon.setDate(dt.getDate() - (dow === 0 ? 6 : dow-1));
+    const key = mon.toISOString().slice(0,10);
+
+    if (!current || current.key !== key) {
+      if (current) groups.push(current);
+      current = { key, label: key, o: d.o, h: d.h, l: d.l, c: d.c, v: d.v, ts: dt.getTime() };
+    } else {
+      current.h = Math.max(current.h, d.h);
+      current.l = Math.min(current.l, d.l);
+      current.c = d.c;
+      current.v += d.v;
+    }
+  }
+  if (current) groups.push(current);
+  return groups;
+}
+
+// ===== 載入資料 =====
+let historicalData = null;
+
+async function loadHistorical() {
+  if (historicalData) return historicalData;
+  const r = await fetch('data/taiex-historical.json');
+  historicalData = await r.json();
+  return historicalData;
+}
+
+async function loadIntraday() {
+  const today = new Date();
+  const ds = today.getFullYear()
+    + String(today.getMonth()+1).padStart(2,'0')
+    + String(today.getDate()).padStart(2,'0');
+
+  const resp = await fetch(
+    `https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date=${ds}`
+  );
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+  const json = await resp.json();
+  if (!json.data || json.data.length === 0) return null;
+  return json.data;
+}
+
+// ===== 主流程 =====
 async function loadData() {
   const el = document.getElementById('chart');
   el.className = 'loading';
-  el.innerHTML = '📈 載入圖表中...';
-  document.getElementById('info').textContent = '正在取得 TWSE 資料...';
+  el.innerHTML = '<div class="spin">📈</div><div style="margin-top:16px;">計算中...</div>';
+  document.getElementById('info').textContent = '讀取資料中...';
 
   try {
-    // 抓取今日盤中 Tick 資料 (CORS OK ✓)
-    const today = new Date();
-    const ds = today.getFullYear()
-      + String(today.getMonth()+1).padStart(2,'0')
-      + String(today.getDate()).padStart(2,'0');
+    const interval = document.getElementById('interval').value;
 
-    const resp = await fetch(
-      `https://www.twse.com.tw/exchangeReport/MI_5MINS_INDEX?response=json&date=${ds}`
-    );
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const json = await resp.json();
-    if (!json.data || json.data.length === 0) throw new Error('無盤中資料');
+    let candles;
+    let isIntraday = false;
 
-    const tickRows = json.data;
-    const interval = parseInt(document.getElementById('interval').value);
-
-    // 聚合 K 棒 (time bucket: interval 分鐘)
-    const buckets = new Map();
-    for (const row of tickRows) {
-      const t = row[0].split(':').map(Number);
-      const val = parseFloat(row[1].replace(/,/g,''));
-      if (isNaN(val) || val === 0) continue;
-      // 成交量在第 3 欄 (成交股數)
-      const vol = parseInt(row[2].replace(/,/g,'')) || 0;
-      const key = Math.floor((t[0]*60 + t[1]) / interval);
-      if (!buckets.has(key)) {
-        buckets.set(key, { o:val, h:val, l:val, c:val, v:vol, t: t });
-      } else {
-        const b = buckets.get(key);
-        b.h = Math.max(b.h, val);
-        b.l = Math.min(b.l, val);
-        b.c = val;
-        b.v += vol;
+    if (interval === 'D' || interval === 'M' || interval === 'Q') {
+      // === 日/月/季 K 線 ===
+      const daily = await loadHistorical();
+      let agg;
+      if (interval === 'D') agg = daily;
+      else if (interval === 'M') agg = aggregateK(daily, 'M');
+      else agg = aggregateK(daily, 'Q');
+      candles = agg.map(c => ({
+        time: c.date || c.label,
+        o: c.o, h: c.h, l: c.l, c: c.c, v: c.v
+      }));
+    } else {
+      // === 分 K 線 (從盤中 tick) ===
+      isIntraday = true;
+      const ticks = await loadIntraday();
+      if (!ticks) {
+        el.innerHTML = '<div class="error"><h3>⏰ 盤中資料尚未發布</h3><p>請在交易時段 (09:00-13:30) 使用此功能</p></div>';
+        return;
       }
+
+      const intervalMin = parseInt(interval);
+      const buckets = new Map();
+      for (const row of ticks) {
+        const t = row[0].split(':').map(Number);
+        const val = parseFloat(row[1].replace(/,/g,''));
+        if (isNaN(val) || val === 0) continue;
+        const vol = parseInt(row[2].replace(/,/g,'')) || 0;
+        const key = Math.floor((t[0]*60+t[1]) / intervalMin);
+        if (!buckets.has(key)) {
+          buckets.set(key, { o:val, h:val, l:val, c:val, v:vol, t });
+        } else {
+          const b = buckets.get(key);
+          b.h = Math.max(b.h, val); b.l = Math.min(b.l, val);
+          b.c = val; b.v += vol;
+        }
+      }
+
+      candles = [...buckets.entries()]
+        .map(([,v]) => ({
+          time: `${String(v.t[0]).padStart(2,'0')}:${String(v.t[1]).padStart(2,'0')}`,
+          o: v.o, h: v.h, l: v.l, c: v.c, v: v.v
+        }))
+        .sort((a,b) => a.time.localeCompare(b.time))
+        .filter(c => c.time >= '09:00' && c.time <= '13:30');
     }
 
-    // 轉為陣列並排序
-    const candles = [...buckets.entries()]
-      .map(([k, v]) => ({
-        time: `${String(v.t[0]).padStart(2,'0')}:${String(v.t[1]).padStart(2,'0')}`,
-        o: v.o, h: v.h, l: v.l, c: v.c, v: v.v
-      }))
-      .sort((a, b) => a.time.localeCompare(b.time));
+    if (candles.length < 2) {
+      el.innerHTML = '<div class="error"><h3>⚠️ 資料不足</h3><p>K 棒數量不足（至少需要 2 根）</p></div>';
+      return;
+    }
 
-    // 只在 09:00~13:30 之間
-    const filtered = candles.filter(c => c.time >= '09:00' && c.time <= '13:30');
+    const closes = candles.map(c => c.c);
+    const times = candles.map(c => c.time);
+    const volumes = candles.map(c => c.v);
+    const colors = candles.map(c => c.c >= c.o ? '#3fb950' : '#f85149');
 
-    if (filtered.length < 2) throw new Error('K棒不足');
+    // 技術指標：根據週期決定參數
+    const maPeriods = isIntraday ? [5, 10, 20, 60] : [5, 20, 60, 200];
+    const rsiPeriod = 14;
+    const bbPeriod = 20;
 
-    const closes = filtered.map(c => c.c);
-    const times = filtered.map(c => c.time);
-    const volumes = filtered.map(c => c.v);
+    const mas = {};
+    maPeriods.forEach(p => { mas[`ma${p}`] = sma(closes, p); });
 
-    // 技術指標
-    const ma5 = sma(closes, 5);
-    const ma10 = sma(closes, 10);
-    const ma20 = sma(closes, 20);
-    const ma60 = sma(closes, 60);
-    const rsi = calcRSI(closes, 14);
-    const bb = calcBB(closes, 20, 2);
+    // EMA 替代
+    const emas = {};
+    maPeriods.forEach(p => { emas[`ema${p}`] = ema(closes, p); });
 
-    // 判斷漲跌顏色
-    const colors = filtered.map(c => c.c >= c.o ? '#3fb950' : '#f85149');
+    const rsi = calcRSI(closes, rsiPeriod);
+    const bb = calcBB(closes, bbPeriod, 2);
 
-    // ===== 建立 Plotly 圖表 =====
-    const candleData = {
-      type: 'candlestick',
-      x: times,
-      open: filtered.map(c => c.o),
-      high: filtered.map(c => c.h),
-      low: filtered.map(c => c.l),
-      close: closes,
+    // ===== Plotly 圖表 =====
+    const candleTrace = {
+      type: 'candlestick', x: times,
+      open: candles.map(c => c.o), high: candles.map(c => c.h),
+      low: candles.map(c => c.l), close: closes,
       increasing: { line: { color: '#3fb950' }, fillcolor: '#3fb950' },
       decreasing: { line: { color: '#f85149' }, fillcolor: '#f85149' },
-      name: '加權指數',
-      yaxis: 'y',
-      xaxis: 'x',
+      name: '加權指數', yaxis: 'y',
     };
 
-    const ma5Trace = {
-      type: 'scatter', mode: 'lines',
-      x: times, y: ma5,
-      line: { color: '#6c5ce7', width: 1.5 },
-      name: 'MA5',
-      yaxis: 'y',
-    };
+    const maColors = { '5':'#6c5ce7', '10':'#e67e22', '20':'#3498db', '60':'#e74c3c', '200':'#f39c12' };
+    const maTraces = maPeriods.map(p => ({
+      type: 'scatter', mode: 'lines', x: times, y: mas[`ma${p}`],
+      line: { color: maColors[String(p)], width: p === 200 ? 2.5 : 1.5 },
+      name: `MA${p}`, yaxis: 'y',
+    }));
 
-    const ma10Trace = {
-      type: 'scatter', mode: 'lines',
-      x: times, y: ma10,
-      line: { color: '#e67e22', width: 1.5 },
-      name: 'MA10',
-      yaxis: 'y',
-    };
-
-    const ma20Trace = {
-      type: 'scatter', mode: 'lines',
-      x: times, y: ma20,
-      line: { color: '#3498db', width: 1.5 },
-      name: 'MA20',
-      yaxis: 'y',
-    };
-
-    const ma60Trace = {
-      type: 'scatter', mode: 'lines',
-      x: times, y: ma60,
-      line: { color: '#e74c3c', width: 2.5 },
-      name: 'MA60',
-      yaxis: 'y',
-    };
-
-    // 布林通道中線
+    // 布林
     const bbMid = {
-      type: 'scatter', mode: 'lines',
-      x: times, y: bb.map(b => b.middle),
-      line: { color: 'rgba(0,123,255,0.5)', width: 1, dash: 'dot' },
-      name: 'BB 中線',
-      yaxis: 'y',
+      type: 'scatter', mode: 'lines', x: times, y: bb.map(b => b.m),
+      line: { color: 'rgba(0,123,255,0.3)', width: 1, dash: 'dot' },
+      name: 'BB 中線', yaxis: 'y',
     };
 
-    // 成交量條 (同 K 棒的紅綠色)
-    const volumeTrace = {
-      type: 'bar',
-      x: times, y: volumes.map(v => v / 1e6), // 百萬股
-      marker: { color: colors, opacity: 0.4 },
-      name: '成交量 (百萬股)',
+    // 成交量
+    const volTrace = {
+      type: 'bar', x: times,
+      y: volumes.map(v => isIntraday ? v/1e6 : v/1e8),
+      marker: { color: colors, opacity: 0.3 },
+      name: isIntraday ? '成交量 (百萬股)' : '成交量 (億股)',
       yaxis: 'y3',
     };
 
     // RSI
     const rsiTrace = {
-      type: 'scatter', mode: 'lines',
-      x: times, y: rsi,
-      line: { color: '#6c5ce7', width: 2 },
-      name: 'RSI(14)',
-      yaxis: 'y2',
+      type: 'scatter', mode: 'lines', x: times, y: rsi,
+      line: { color: '#6c5ce7', width: 2 }, name: `RSI(${rsiPeriod})`, yaxis: 'y2',
     };
 
-    // RSI 超買超賣線
-    const rsiOverbought = {
+    // RSI 參考線
+    const rsiLines = [
+      { y: 70, color: 'rgba(220,53,69,0.3)', name: '超買 70' },
+      { y: 50, color: 'rgba(255,255,255,0.1)', name: '50' },
+      { y: 30, color: 'rgba(40,167,69,0.3)', name: '超賣 30' },
+    ];
+    const rsiRefTraces = rsiLines.map(l => ({
       type: 'scatter', mode: 'lines',
-      x: [times[0], times[times.length-1]],
-      y: [70, 70],
-      line: { color: 'rgba(220,53,69,0.3)', width: 1, dash: 'dash' },
-      name: '超買 70',
-      yaxis: 'y2',
-      showlegend: false,
-    };
-
-    const rsiOversold = {
-      type: 'scatter', mode: 'lines',
-      x: [times[0], times[times.length-1]],
-      y: [30, 30],
-      line: { color: 'rgba(40,167,69,0.3)', width: 1, dash: 'dash' },
-      name: '超賣 30',
-      yaxis: 'y2',
-      showlegend: false,
-    };
-
-    const rsiMid = {
-      type: 'scatter', mode: 'lines',
-      x: [times[0], times[times.length-1]],
-      y: [50, 50],
-      line: { color: 'rgba(255,255,255,0.1)', width: 1 },
-      name: '50',
-      yaxis: 'y2',
-      showlegend: false,
-    };
+      x: [times[0], times[times.length-1]], y: [l.y, l.y],
+      line: { color: l.color, width: 1, dash: 'dash' },
+      name: l.name, yaxis: 'y2', showlegend: false,
+    }));
 
     // ===== 型態標註 =====
     const annotations = [];
-    // 判斷技術型態
-    for (let i = 20; i < filtered.length; i++) {
-      // 黃金交叉 (MA5 突破 MA20)
-      if (ma5[i-1] !== null && ma10[i-1] !== null && ma20[i-1] !== null &&
-          ma5[i] !== null && ma10[i] !== null && ma20[i] !== null) {
-        if (ma5[i-1] < ma20[i-1] && ma5[i] >= ma20[i]) {
-          annotations.push({
-            x: times[i], y: filtered[i].l,
-            text: '🟢 黃金交叉', showarrow: true,
-            arrowhead: 1, arrowsize: 1, arrowwidth: 1.5,
-            arrowcolor: '#3fb950', font: { color: '#3fb950', size: 11 },
-            ax: 0, ay: -40,
-          });
-        }
-        // 死亡交叉
-        if (ma5[i-1] > ma20[i-1] && ma5[i] <= ma20[i]) {
-          annotations.push({
-            x: times[i], y: filtered[i].h,
-            text: '🔴 死亡交叉', showarrow: true,
-            arrowhead: 1, arrowsize: 1, arrowwidth: 1.5,
-            arrowcolor: '#f85149', font: { color: '#f85149', size: 11 },
-            ax: 0, ay: 40,
-          });
-        }
+    const histLen = candles.length;
+    const MA5 = mas.ma5, MA20 = mas.ma20;
+
+    // 均線交叉
+    for (let i = 20; i < histLen; i++) {
+      if (MA5[i] === null || MA20[i] === null || MA5[i-1] === null || MA20[i-1] === null) continue;
+      // 黃金交叉
+      if (MA5[i-1] < MA20[i-1] && MA5[i] >= MA20[i]) {
+        annotations.push({
+          x: times[i], y: candles[i].l,
+          text: '🟢 黃金交叉', showarrow: true,
+          arrowhead: 1, arrowsize: 1.2, arrowwidth: 2,
+          arrowcolor: '#3fb950', font: { color: '#3fb950', size: 11 },
+          ax: 0, ay: -45,
+        });
       }
-      // RSI 超買超賣
-      if (rsi[i] !== null && rsi[i-1] !== null) {
-        if (rsi[i-1] >= 70 && rsi[i] < 70) {
-          annotations.push({
-            x: times[i], y: rsi[i] + 3,
-            text: '⬇ 超買回落', showarrow: false,
-            font: { color: '#f85149', size: 10 },
-            yref: 'y2',
-          });
-        }
-        if (rsi[i-1] <= 30 && rsi[i] > 30) {
-          annotations.push({
-            x: times[i], y: rsi[i] - 3,
-            text: '⬆ 超賣反彈', showarrow: false,
-            font: { color: '#3fb950', size: 10 },
-            yref: 'y2',
-          });
-        }
-      }
-      // 突破布林上軌
-      if (bb[i] && bb[i].upper !== null && filtered[i].c > bb[i].upper) {
-        if (i === filtered.length - 1 || (bb[i-1] && filtered[i-1].c <= bb[i-1].upper)) {
-          annotations.push({
-            x: times[i], y: filtered[i].h,
-            text: '⬆ 突破上軌', showarrow: true,
-            arrowhead: 1, arrowsize: 1, arrowwidth: 1,
-            arrowcolor: '#ffc107', font: { color: '#ffc107', size: 10 },
-            ax: 20, ay: -30, yref: 'y',
-          });
-        }
-      }
-      // 跌破布林下軌
-      if (bb[i] && bb[i].lower !== null && filtered[i].c < bb[i].lower) {
-        if (i === filtered.length - 1 || (bb[i-1] && filtered[i-1].c >= bb[i-1].lower)) {
-          annotations.push({
-            x: times[i], y: filtered[i].l,
-            text: '⬇ 跌破下軌', showarrow: true,
-            arrowhead: 1, arrowsize: 1, arrowwidth: 1,
-            arrowcolor: '#17a2b8', font: { color: '#17a2b8', size: 10 },
-            ax: -20, ay: 30, yref: 'y',
-          });
-        }
+      // 死亡交叉
+      if (MA5[i-1] > MA20[i-1] && MA5[i] <= MA20[i]) {
+        annotations.push({
+          x: times[i], y: candles[i].h,
+          text: '🔴 死亡交叉', showarrow: true,
+          arrowhead: 1, arrowsize: 1.2, arrowwidth: 2,
+          arrowcolor: '#f85149', font: { color: '#f85149', size: 11 },
+          ax: 0, ay: 45,
+        });
       }
     }
 
-    // 收盤行情摘要
-    const last = filtered[filtered.length-1];
-    const open = filtered[0];
+    // RSI 超買超賣
+    for (let i = 1; i < histLen; i++) {
+      if (rsi[i] === null || rsi[i-1] === null) continue;
+      if (rsi[i-1] >= 70 && rsi[i] < 70) {
+        annotations.push({
+          x: times[i], y: 72, text: '⬇ 超買回落',
+          font: { color: '#f85149', size: 10 }, showarrow: false, yref: 'y2',
+        });
+      }
+      if (rsi[i-1] <= 30 && rsi[i] > 30) {
+        annotations.push({
+          x: times[i], y: 28, text: '⬆ 超賣反彈',
+          font: { color: '#3fb950', size: 10 }, showarrow: false, yref: 'y2',
+        });
+      }
+    }
+
+    // 布林突破
+    for (let i = 1; i < histLen; i++) {
+      if (bb[i] && bb[i].u !== null && candles[i].c > bb[i].u &&
+          bb[i-1] && candles[i-1].c <= bb[i-1].u) {
+        annotations.push({
+          x: times[i], y: candles[i].h, text: '⬆ 突破上軌',
+          showarrow: true, arrowhead: 1, arrowcolor: '#ffc107',
+          font: { color: '#ffc107', size: 10 }, ax: 20, ay: -30,
+        });
+      }
+      if (bb[i] && bb[i].l !== null && candles[i].c < bb[i].l &&
+          bb[i-1] && candles[i-1].c >= bb[i-1].l) {
+        annotations.push({
+          x: times[i], y: candles[i].l, text: '⬇ 跌破下軌',
+          showarrow: true, arrowhead: 1, arrowcolor: '#17a2b8',
+          font: { color: '#17a2b8', size: 10 }, ax: -20, ay: 30,
+        });
+      }
+    }
+
+    // ===== 收盤摘要 =====
+    const last = candles[candles.length-1];
+    const open = candles[0];
     const chg = last.c - open.o;
-    const pct = (chg / open.o * 100);
-    const high = Math.max(...filtered.map(c => c.h));
-    const low = Math.min(...filtered.map(c => c.l));
+    const pct = chg / open.o * 100;
+    const high = Math.max(...candles.map(c => c.h));
+    const low = Math.min(...candles.map(c => c.l));
     const totalVol = volumes.reduce((a,b) => a+b, 0);
     const lastRsi = rsi[rsi.length-1];
+    const dateRange = `${candles[0].time} ~ ${candles[candles.length-1].time}`;
 
-    document.getElementById('info').innerHTML =
-      `📅 ${ds} ｜ 收 <strong>${last.c.toLocaleString()}</strong> ` +
-      `<span style="color:${chg>=0?'#3fb950':'#f85149'}">${chg>=0?'▲':'▼'}${Math.abs(chg).toFixed(2)} (${pct.toFixed(2)}%)</span> ` +
-      `｜ 高 ${high.toLocaleString()} 低 ${low.toLocaleString()} ｜ ` +
-      `成交量 ${(totalVol/1e6).toFixed(1)}M ｜ RSI ${lastRsi !== null ? lastRsi.toFixed(1) : '-'}`;
+    const infoStr = `📅 ${dateRange} ｜ ` +
+      `收 <strong>${last.c.toLocaleString()}</strong> ` +
+      `<span style="color:${chg>=0?'#3fb950':'#f85149'}">` +
+      `${chg>=0?'▲':'▼'}${Math.abs(chg).toFixed(2)} (${pct.toFixed(2)}%)</span> ｜ ` +
+      `開 ${open.o.toLocaleString()} 高 ${high.toLocaleString()} 低 ${low.toLocaleString()} ｜ ` +
+      `量 ${(totalVol/1e8).toFixed(1)}E ｜ ` +
+      `RSI ${lastRsi !== null ? lastRsi.toFixed(1) : '-'} ｜ ` +
+      `${candles.length} 根K棒`;
 
-    // ===== 組合圖表 =====
+    document.getElementById('info').innerHTML = infoStr;
+
+    // ===== 圖表輸出 =====
     const layout = {
-      title: { text: `加權指數技術分析 — ${ds} (${interval}分K)`, font: { color: '#e0e0e0', size: 16 } },
+      title: {
+        text: `加權指數技術分析 (${interval === 'D' ? '日線' : interval === 'M' ? '月線' : interval === 'Q' ? '季線' : interval+'分K'})`,
+        font: { color: '#e0e0e0', size: 16 },
+      },
       dragmode: 'zoom',
       margin: { t: 50, r: 20, b: 40, l: 50 },
       paper_bgcolor: '#1a1a2e',
@@ -359,70 +434,63 @@ async function loadData() {
       xaxis: {
         rangeslider: { visible: false },
         domain: [0, 1],
-        tickangle: -45,
-        nticks: 12,
+        tickangle: isIntraday ? -45 : -30,
+        nticks: isIntraday ? 12 : 8,
         gridcolor: 'rgba(255,255,255,0.06)',
-        tickfont: { color: '#8b949e', size: 10 },
+        tickfont: { color: '#8b949e', size: 9 },
       },
       yaxis: {
         title: { text: '指數', font: { color: '#8b949e', size: 11 } },
-        domain: [0.28, 1],
+        domain: [0.26, 1],
         gridcolor: 'rgba(255,255,255,0.06)',
         tickfont: { color: '#8b949e', size: 10 },
       },
       yaxis2: {
         title: { text: 'RSI', font: { color: '#8b949e', size: 10 } },
-        domain: [0, 0.15],
+        domain: [0, 0.13],
         range: [0, 100],
         gridcolor: 'rgba(255,255,255,0.04)',
         tickfont: { color: '#8b949e', size: 9 },
         side: 'right',
       },
       yaxis3: {
-        title: { text: '成交量 (M)', font: { color: '#8b949e', size: 10 } },
-        domain: [0.15, 0.28],
+        title: { text: isIntraday ? '成交量 (M)' : '成交量 (億)', font: { color: '#8b949e', size: 10 } },
+        domain: [0.13, 0.26],
         gridcolor: 'rgba(255,255,255,0.04)',
         tickfont: { color: '#8b949e', size: 9 },
       },
-      annotations: annotations,
+      annotations,
       legend: {
-        orientation: 'h',
-        y: 1.02,
-        x: 0,
-        font: { color: '#8b949e', size: 10 },
+        orientation: 'h', y: 1.02, x: 0,
+        font: { color: '#8b949e', size: 9 },
         bgcolor: 'rgba(26,26,46,0.8)',
       },
       hovermode: 'x unified',
     };
 
     const config = {
-      responsive: true,
-      displayModeBar: true,
+      responsive: true, displayModeBar: true,
       modeBarButtonsToRemove: ['lasso2d', 'select2d'],
       displaylogo: false,
     };
 
-    const traces = [
-      candleData, ma5Trace, ma10Trace, ma20Trace, ma60Trace, bbMid,
-      volumeTrace,
-      rsiTrace, rsiOverbought, rsiOversold, rsiMid,
-    ];
+    const traces = [candleTrace, ...maTraces, bbMid, volTrace, rsiTrace, ...rsiRefTraces];
 
-    Plotly.newPlot('chart', traces, layout, config);
+    await Plotly.newPlot('chart', traces, layout, config);
     el.className = '';
 
   } catch (e) {
-    document.getElementById('chart').innerHTML = `
-      <div style="text-align:center;padding:40px;color:#f85149;">
+    el.innerHTML = `
+      <div class="error">
         <h3>⚠️ 載入失敗</h3>
-        <p style="margin-top:8px;font-size:14px;">${e.message}</p>
+        <p style="margin-top:8px;font-size:14px;color:#8b949e;">${e.message}</p>
         <button onclick="loadData()" style="margin-top:12px;padding:8px 20px;background:#2d2d44;border:1px solid #3d3d5c;border-radius:6px;color:#e0e0e0;cursor:pointer;">🔄 重試</button>
       </div>`;
     document.getElementById('info').textContent = '⚠️ 載入失敗';
   }
 }
 
-// 自動載入
+// ===== 自動載入 =====
 loadData();
 </script>
 </body>
