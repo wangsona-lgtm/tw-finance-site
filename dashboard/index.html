@@ -115,7 +115,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
   </div>
   <div class="grid grid-2 mt-16">
     <div class="card" style="grid-column:1/-1;padding:4px;">
-      <iframe src="../charts/taiex-technical.html" style="width:100%;height:480px;border:none;border-radius:8px;" loading="lazy"></iframe>
+      <div id="overviewTechChart" style="width:100%;height:480px;"></div>
     </div>
     <div class="card">
       <h3>成交量前 20 名</h3>
@@ -368,7 +368,8 @@ async function loadOverview() {
       }
     }
 
-    // 大盤走勢已由 iframe 崁入 charts/taiex-technical.html
+    // 大盤走勢（Plotly 日K，從歷史資料載入）
+    loadOverviewChart().catch(e => console.warn('Overview chart:', e.message));
 
   } catch(e) {
     document.getElementById('idx1').textContent = '⚠️';
@@ -1165,6 +1166,44 @@ function renderWeeklySentiment() {
   
   // Note about data source
   note.innerHTML = `⚠️ 三大法人資料目前僅顯示最新交易日，每日收盤後自動更新。P/C 比來自期交所各日資料。`;
+}
+
+// ===== 大盤走勢（Overview Plotly 日K）=====
+async function loadOverviewChart() {
+  const el = document.getElementById('overviewTechChart');
+  try {
+    const r = await fetch('../charts/data/taiex-historical.json');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const allData = await r.json();
+    // 取最近 1 年約 250 筆
+    const daily = allData.slice(-250);
+    const times = daily.map(d => d.date);
+    const closes = daily.map(d => d.c);
+
+    const traces = [
+      { type:'candlestick', x:times, open:daily.map(d=>d.o), high:daily.map(d=>d.h),
+        low:daily.map(d=>d.l), close:closes,
+        increasing:{line:{color:'#3fb950'},fillcolor:'#3fb950'},
+        decreasing:{line:{color:'#f85149'},fillcolor:'#f85149'}, name:'加權指數', yaxis:'y' },
+      { type:'scatter', mode:'lines', x:times, y:techSMA(closes,20),
+        line:{color:'#3498db',width:1.5}, name:'MA20', yaxis:'y' },
+      { type:'scatter', mode:'lines', x:times, y:techSMA(closes,60),
+        line:{color:'#e74c3c',width:2}, name:'MA60', yaxis:'y' },
+    ];
+
+    await Plotly.newPlot('overviewTechChart', traces, {
+      paper_bgcolor:'#fff', plot_bgcolor:'#fff',
+      font:{color:'#6c757d',size:10},
+      margin:{t:10,r:8,b:24,l:40},
+      xaxis:{rangeslider:{visible:false},tickangle:-45,gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:9}},
+      yaxis:{title:{text:'指數',font:{size:10}},domain:[0,1],gridcolor:'rgba(0,0,0,0.04)',tickfont:{size:9}},
+      legend:{orientation:'h',y:1.02,x:0,font:{size:8}},
+      hovermode:'x unified', dragmode:'zoom',
+    }, {responsive:true,displayModeBar:false,displaylogo:false});
+
+  } catch(e) {
+    el.innerHTML = `<div style="text-align:center;padding:40px;color:#dc3545;">⚠️ ${e.message}</div>`;
+  }
 }
 
 // ===== Init =====
