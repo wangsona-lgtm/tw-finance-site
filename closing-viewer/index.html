@@ -180,15 +180,100 @@ function renderContent(data) {
     </div>`;
   }
   if (data.stocks && data.stocks.length > 0) {
-    html += `<div class="card"><h3>📋 個股收盤</h3><table class="stocks-table"><thead><tr><th>代碼</th><th>名稱</th><th>收盤</th><th>漲跌</th><th>漲跌幅</th></tr></thead><tbody>`;
-    data.stocks.slice(0,30).forEach(s => {
-      const cls = parseFloat(s.change) >= 0 ? 'up' : 'down';
-      html += `<tr><td>${s.code}</td><td>${s.name}</td><td class="${cls}">${s.close}</td><td class="${cls}">${s.change}</td><td class="${cls}">${s.changePercent}%</td></tr>`;
-    });
-    html += `</tbody></table></div>`;
+    const total = data.stocks.length;
+    const listed = (data.summary && data.summary.listed) || data.stocks.filter(s=>s.market==='上市').length;
+    const otcCount = total - listed;
+    html += `<div class="card">
+      <h3>📋 個股收盤 <span style="font-size:12px;font-weight:400;color:#888;">（上市 ${listed} 檔 · 上櫃 ${otcCount} 檔 · 共 ${total} 檔）</span></h3>
+      <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+        <input type="text" id="searchInput" placeholder="🔍 搜尋代碼/名稱..." oninput="renderStocks()" style="flex:1;min-width:160px;padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px;outline:none;">
+        <select id="marketFilter" onchange="renderStocks()" style="padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:white;outline:none;">
+          <option value="all">全部市場</option>
+          <option value="上市">上市</option>
+          <option value="上櫃">上櫃</option>
+        </select>
+        <select id="sortBy" onchange="renderStocks()" style="padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:white;outline:none;">
+          <option value="code">依代碼</option>
+          <option value="change-desc">漲跌幅↓</option>
+          <option value="change-asc">漲跌幅↑</option>
+          <option value="name">依名稱</option>
+        </select>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="stocks-table"><thead><tr><th>代碼</th><th>名稱</th><th>市場</th><th>收盤</th><th>漲跌</th><th>漲跌幅</th></tr></thead><tbody id="stocksTbody"></tbody></table>
+      </div>
+      <div id="paginationInfo" style="text-align:center;margin-top:12px;font-size:12px;color:var(--text3);"></div>
+    </div>`;
+    // Store full data for JS
+    window._stocksData = data.stocks;
+    window._stocksIndex = data.index;
+    renderStocks();
   }
   document.getElementById('contentArea').innerHTML = html || '<div class="empty-state"><div class="icon">📭</div><p>無資料</p></div>';
 }
+// ── 全部上市櫃股票搜尋 + 分頁 ───────────────────────────
+const PAGE_SIZE = 100;
+let _currentPage = 0;
+
+function renderStocks() {
+  const data = window._stocksData || [];
+  const q = (document.getElementById('searchInput')?.value || '').trim().toLowerCase();
+  const market = document.getElementById('marketFilter')?.value || 'all';
+  const sort = document.getElementById('sortBy')?.value || 'code';
+
+  // Filter
+  let filtered = data.filter(s => {
+    if (market !== 'all' && s.market !== market) return false;
+    if (q) {
+      return s.code.toLowerCase().includes(q) || s.name.toLowerCase().includes(q);
+    }
+    return true;
+  });
+
+  // Sort
+  filtered = [...filtered];
+  if (sort === 'code') {
+    filtered.sort((a,b) => a.code.localeCompare(b.code, undefined, {numeric:true}));
+  } else if (sort === 'change-desc') {
+    filtered.sort((a,b) => b.changePercent - a.changePercent);
+  } else if (sort === 'change-asc') {
+    filtered.sort((a,b) => a.changePercent - b.changePercent);
+  } else if (sort === 'name') {
+    filtered.sort((a,b) => a.name.localeCompare(b.name, 'zh-TW'));
+  }
+
+  // Paginate
+  const total = filtered.length;
+  const pages = Math.ceil(total / PAGE_SIZE) || 1;
+  if (_currentPage >= pages) _currentPage = pages - 1;
+  const start = _currentPage * PAGE_SIZE;
+  const page = filtered.slice(start, start + PAGE_SIZE);
+
+  // Render rows
+  const tbody = document.getElementById('stocksTbody');
+  if (!tbody) return;
+  tbody.innerHTML = page.map(s => {
+    const cls = parseFloat(s.change) >= 0 ? 'up' : 'down';
+    const mktTag = s.market === '上櫃' ? '<span style="font-size:10px;color:#8b5cf6;background:#f3e8ff;padding:1px 5px;border-radius:3px;">櫃</span>' : '<span style="font-size:10px;color:#1B365D;background:#e8f0fe;padding:1px 5px;border-radius:3px;">市</span>';
+    return `<tr><td>${s.code}</td><td>${s.name}</td><td>${mktTag}</td><td class="${cls}">${s.close}</td><td class="${cls}">${s.change >= 0 ? '+' : ''}${s.change}</td><td class="${cls}">${s.changePercent >= 0 ? '+' : ''}${s.changePercent}%</td></tr>`;
+  }).join('');
+
+  // Pagination controls
+  const info = document.getElementById('paginationInfo');
+  if (info) {
+    let controls = `顯示 ${start+1}-${Math.min(start+PAGE_SIZE, total)} / 共 ${total} 檔`;
+    if (pages > 1) {
+      controls += ' &nbsp;|&nbsp; ';
+      if (_currentPage > 0) controls += `<a href="#" onclick="_currentPage=0;renderStocks();return false" style="color:var(--accent);">◀◀</a> `;
+      if (_currentPage > 0) controls += `<a href="#" onclick="_currentPage=Math.max(0,_currentPage-1);renderStocks();return false" style="color:var(--accent);">◀</a> `;
+      controls += `第 <b>${_currentPage+1}</b> / ${pages} 頁 `;
+      if (_currentPage < pages-1) controls += `<a href="#" onclick="_currentPage=Math.min(${pages-1},_currentPage+1);renderStocks();return false" style="color:var(--accent);">▶</a> `;
+      if (_currentPage < pages-1) controls += `<a href="#" onclick="_currentPage=${pages-1};renderStocks();return false" style="color:var(--accent);">▶▶</a>`;
+    }
+    info.innerHTML = controls;
+  }
+}
+
 init();
 </script>
 </body>
