@@ -1,0 +1,29 @@
+[
+  {
+    "id": "upload-2026-06-13-merza-ozturk",
+    "title": "Energy inflation in the shadow of US–China tensions: Is the energy transition a pathway to stability?",
+    "search_date": "2026-06-13",
+    "authors": "Ebrahim Merza, Ilhan Ozturk",
+    "year": "2026",
+    "journal": "Energy Policy",
+    "doi": "10.1016/j.enpol.2026.115422",
+    "volume": "217",
+    "pages": "115422",
+    "citations": "",
+    "openalex_url": "",
+    "abstract": "Investigates the influence of US-China tensions and energy transition on energy inflation using MMQR for 33 countries (1995-2023). Results show US-China tensions increase energy inflation across all quantiles, while energy transition mitigates it at lower and medium levels. Technology advancement and globalization reduce energy inflation across all quantiles.",
+    "tags": ["MMQR"],
+    "topics": ["能源市場", "地緣政治/國防", "潔淨能源", "方法論"],
+    "type": "upload",
+    "pdf": "pdfs/merza-ozturk-2026-energy-inflation.pdf",
+    "notes": [
+      "核心方法: MMQR (Method of Moments Quantile Regression)",
+      "33國面板資料，1995-2023",
+      "因變數：Energy Inflation (能源通膨)",
+      "自變數：US-China Tensions, Energy Transition, EG, FD, TD, UP, GLOB",
+      "美中緊張在全部quantile都顯著推升能源通膨",
+      "能源轉型在低至中quantile顯著抑制通膨",
+      "技術發展與全球化在所有quantile都降低能源成本"
+    ]
+  }
+]
