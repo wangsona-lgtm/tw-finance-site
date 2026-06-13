@@ -12,8 +12,15 @@
     "citations": "",
     "openalex_url": "",
     "abstract": "Investigates the influence of US-China tensions and energy transition on energy inflation using MMQR for 33 countries (1995-2023). Results show US-China tensions increase energy inflation across all quantiles, while energy transition mitigates it at lower and medium levels. Technology advancement and globalization reduce energy inflation across all quantiles.",
-    "tags": ["MMQR"],
-    "topics": ["能源市場", "地緣政治/國防", "潔淨能源", "方法論"],
+    "tags": [
+      "MMQR"
+    ],
+    "topics": [
+      "能源市場",
+      "地緣政治/國防",
+      "潔淨能源",
+      "方法論"
+    ],
     "type": "upload",
     "pdf": "pdfs/merza-ozturk-2026-energy-inflation.pdf",
     "notes": [
@@ -24,6 +31,39 @@
       "美中緊張在全部quantile都顯著推升能源通膨",
       "能源轉型在低至中quantile顯著抑制通膨",
       "技術發展與全球化在所有quantile都降低能源成本"
+    ]
+  },
+  {
+    "id": "upload-2026-06-13-cui-usman",
+    "title": "Artificial intelligence and natural resource exploitation shaping load capacity factor in Quad economies: Role of renewable energy and green innovations",
+    "search_date": "2026-06-13",
+    "authors": "Yang Cui, Muhammad Usman, Muhammad Irfan, Mohammad Haseeb",
+    "year": "2026",
+    "journal": "Geoscience Frontiers",
+    "doi": "10.1016/j.gsf.2026.102367",
+    "volume": "",
+    "pages": "102367",
+    "citations": "",
+    "openalex_url": "",
+    "abstract": "Examines heterogeneous effects of AI adoption and natural resource exploitation on load capacity factor (LCF) in Quad economies (US, Japan, India, Australia) from 1995-2023 using MMQR. AI negatively impacts LCF (−0.240 to −0.305 across quantiles). Natural resources (+0.305 to +0.330), green innovation (+0.093 to +0.249), financial development (+1.033 to +1.406, strongest), and renewable energy (+0.421 to +0.764) all positively affect LCF.",
+    "tags": [
+      "MMQR"
+    ],
+    "topics": [
+      "潔淨能源",
+      "AI/科技",
+      "氣候風險/政策"
+    ],
+    "type": "upload",
+    "pdf": "pdfs/cui-usman-2026-ai-load-capacity.pdf",
+    "notes": [
+      "核心方法: MMQR (Method of Moments Quantile Regression)",
+      "Quad四國面板 (美日印澳), 1995-2023",
+      "因變數: Load Capacity Factor (LCF) = 生物承載力/生態足跡",
+      "AI採用在所有quantile都顯著惡化LCF, 高LCF時破壞更大",
+      "自然資源開採對LCF為正向(需搭配妥善投資)",
+      "金融發展是影響LCF最強的變數",
+      "再生能源效益隨LCF水準提升而擴大"
     ]
   }
 ]
