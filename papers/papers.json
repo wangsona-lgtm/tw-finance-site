@@ -1,6 +1,6 @@
 {
-  "total": 73,
-  "updated": "2026-06-13 20:44:31",
+  "total": 74,
+  "updated": "2026-06-13 20:48:27",
   "topics": [
     "AI/科技",
     "其他",
@@ -17,6 +17,42 @@
     "金融市場"
   ],
   "papers": [
+    {
+      "id": "upload-2026-06-13-nguyen-thailand",
+      "title": "Asymmetric impacts of foreign direct investment, economic growth, fossil fuel dependence on renewable energy consumption in Thailand",
+      "search_date": "2026-06-13",
+      "authors": "Vi Thi Nguyen, Thi Lan Anh Nguyen, Huong Giang Luong, Hoa Xuan Pham",
+      "year": "2026",
+      "journal": "Energy Conversion and Management: X",
+      "doi": "10.1016/j.ecmx.2026.102019",
+      "volume": "31",
+      "pages": "102019",
+      "citations": "",
+      "openalex_url": "",
+      "abstract": "Examines dynamic relationships among EG, FDI, fossil fuel consumption, and RE consumption in Thailand (1990-2023) using VECM + LEAP + MARKAL. RE consumption has not yet significantly influenced EG historically. FDI and FFC remain dominant drivers. Scenario simulations show targeted green FDI + efficiency-enhancing design can substantially increase renewable penetration.",
+      "tags": [
+        "VECM",
+        "ARDL",
+        "LEAP",
+        "MARKAL"
+      ],
+      "topics": [
+        "潔淨能源",
+        "能源市場",
+        "宏觀總體"
+      ],
+      "type": "upload",
+      "pdf": "pdfs/nguyen-2026-thailand-renewable-fdi.pdf",
+      "notes": [
+        "分法: VECM (歷史分析) + LEAP + MARKAL (能源系統模擬至2050)",
+        "單國時間序列: 泰國 1990-2023",
+        "RE消費尚未顯著影響EG (歷史階段)",
+        "FDI和FFC仍是經濟成長主導因子",
+        "情境模擬: 綠色FDI + 系統效率提升可大幅增加再生能源滲透率",
+        "政策建議: 綠色FDI獎勵、RE基建投資、電網現代化",
+        "⚠️ 非分位數方法 — 但為同主題(能源轉型)的 complement"
+      ]
+    },
     {
       "id": "upload-2026-06-13-merza-ozturk",
       "title": "Energy inflation in the shadow of US–China tensions: Is the energy transition a pathway to stability?",
