@@ -46,6 +46,21 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
 }
 .sidebar-header a:hover { color:var(--accent); border-color:var(--accent); }
 
+/* ═══ Tab Switcher ═══ */
+.tab-bar {
+  display:flex; gap:4px; margin-bottom:8px;
+}
+.tab-btn {
+  flex:1; padding:8px 12px; border:1px solid var(--border); border-radius:6px;
+  background:transparent; color:var(--text2); font-size:13px; font-weight:500;
+  cursor:pointer; transition:all .2s; font-family:inherit;
+}
+.tab-btn:hover { background:var(--hover); color:var(--text); }
+.tab-btn.active {
+  background:var(--accent); color:#000; border-color:var(--accent);
+  font-weight:700;
+}
+
 .sidebar-list { flex:1; overflow-y:auto; padding:8px; }
 
 .report-item {
@@ -213,8 +228,8 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
   <div class="sidebar">
     <div class="sidebar-header">
       <div>
-        <h2>📋 盤前晨報</h2>
-        <div class="sub" style="font-size:11px;color:var(--text3);margin-top:2px;">每日市場動態總匯</div>
+        <h2 id="pageTitle">📋 盤前晨報</h2>
+        <div class="sub" id="pageSubtitle" style="font-size:11px;color:var(--text3);margin-top:2px;">每日市場動態總匯</div>
       </div>
       <div style="display:flex;flex-direction:column;gap:4px;">
         <a href="stock-viewer/" style="font-size:11px;color:var(--text2);text-decoration:none;">📈 技術</a>
@@ -222,6 +237,10 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
         <a href="closing-viewer/" style="font-size:11px;color:var(--text2);text-decoration:none;">📉 收盤</a>
         <a href="index.html" style="font-size:11px;color:var(--text2);text-decoration:none;">🏠 首頁</a>
       </div>
+    </div>
+    <div class="tab-bar" style="padding:8px;">
+      <button class="tab-btn active" id="tabDaily" onclick="switchTab('daily')">📋 日報</button>
+      <button class="tab-btn" id="tabWeekly" onclick="switchTab('weekly')">📅 周報</button>
     </div>
     <div class="sidebar-list" id="reportList">
       <div class="loading" style="text-align:center;padding:40px;color:var(--text2);font-size:13px;">載入中...</div>
@@ -231,9 +250,9 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
   <!-- Content -->
   <div class="content" id="reportContent">
     <div class="empty-state" id="emptyState">
-      <div class="big-icon">📊</div>
-      <h3>選取一份晨報</h3>
-      <p>左側列表選擇日期，即可檢視<br>盤前市場動態與事件總覽</p>
+      <div class="big-icon" id="emptyIcon">📊</div>
+      <h3 id="emptyTitle">選取一份晨報</h3>
+      <p id="emptyDesc">左側列表選擇日期，即可檢視<br>盤前市場動態與事件總覽</p>
     </div>
     <div class="content-inner" id="reportInner" style="display:none;"></div>
   </div>
@@ -243,11 +262,50 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
 const APP_VERSION = 'v2';
 // ═══ Data ═══
 let reports = [];
+let currentTab = 'daily';
+
+// ═══ Check hash on load ═══
+if (window.location.hash === '#weekly') {
+  currentTab = 'weekly';
+  document.getElementById('tabDaily').classList.remove('active');
+  document.getElementById('tabWeekly').classList.add('active');
+  document.getElementById('pageTitle').textContent = '📅 每週周報';
+  document.getElementById('pageSubtitle').textContent = 'tradingview-mcp 每週市場掃描與策略回測';
+  document.getElementById('emptyIcon').textContent = '📅';
+  document.getElementById('emptyTitle').textContent = '選取一份周報';
+  document.getElementById('emptyDesc').innerHTML = '左側列表選擇週次，即可檢視<br>每週市場回顧、技術分析與策略表現';
+}
+
+// ═══ Tab switching ═══
+function switchTab(tab) {
+  currentTab = tab;
+  document.getElementById('tabDaily').classList.toggle('active', tab === 'daily');
+  document.getElementById('tabWeekly').classList.toggle('active', tab === 'weekly');
+  
+  if (tab === 'daily') {
+    document.getElementById('pageTitle').textContent = '📋 盤前晨報';
+    document.getElementById('pageSubtitle').textContent = '每日市場動態總匯';
+    document.getElementById('emptyIcon').textContent = '📊';
+    document.getElementById('emptyTitle').textContent = '選取一份晨報';
+    document.getElementById('emptyDesc').innerHTML = '左側列表選擇日期，即可檢視<br>盤前市場動態與事件總覽';
+  } else {
+    document.getElementById('pageTitle').textContent = '📅 每週周報';
+    document.getElementById('pageSubtitle').textContent = 'tradingview-mcp 每週市場掃描與策略回測';
+    document.getElementById('emptyIcon').textContent = '📅';
+    document.getElementById('emptyTitle').textContent = '選取一份周報';
+    document.getElementById('emptyDesc').innerHTML = '左側列表選擇週次，即可檢視<br>每週市場回顧、技術分析與策略表現';
+  }
+  
+  loadReportList();
+}
 
 // ═══ Load report list ═══
 async function loadReportList() {
+  const prefix = currentTab === 'daily' ? 'reports' : '周報';
+  document.getElementById('reportList').innerHTML = 
+    `<div class="loading" style="text-align:center;padding:40px;color:var(--text2);font-size:13px;">載入中...</div>`;
   try {
-    const r = await fetch('reports/list.json' + '?t=' + Date.now());
+    const r = await fetch(prefix + '/list.json' + '?t=' + Date.now());
     reports = await r.json();
     renderSidebar();
     // Auto-select newest
@@ -259,30 +317,43 @@ async function loadReportList() {
 }
 
 function renderSidebar() {
-  document.getElementById('reportList').innerHTML = reports.map(r => `
-    <div class="report-item" data-date="${r.date}" onclick="selectReport('${r.date}')">
-      <div class="icon ${r.date === reports[0].date ? 'new' : 'old'}">📄</div>
-      <div class="info">
-        <div class="date">${r.date} <span class="day">週${r.dayOfWeek}</span></div>
-        <div class="desc">${r.title}</div>
+  const prefix = currentTab === 'daily' ? 'reports' : '周報';
+  document.getElementById('reportList').innerHTML = reports.map(r => {
+    const dateKey = r.date || r.weekNum;
+    const isNewest = dateKey === (reports[0].date || reports[0].weekNum);
+    let desc = r.title;
+    let dayLabel = '';
+    if (currentTab === 'daily') {
+      dayLabel = `週${r.dayOfWeek || ''}`;
+    } else {
+      dayLabel = `${r.weekNum || ''} ${r.period || ''}`;
+    }
+    return `
+      <div class="report-item" data-date="${dateKey}" onclick="selectReport('${dateKey}')">
+        <div class="icon ${isNewest ? 'new' : 'old'}">${currentTab === 'daily' ? '📄' : '📅'}</div>
+        <div class="info">
+          <div class="date">${r.date || r.weekNum} <span class="day">${dayLabel}</span></div>
+          <div class="desc">${desc}</div>
+        </div>
+        ${isNewest ? '<span class="badge">最新</span>' : ''}
       </div>
-      ${r.date === reports[0].date ? '<span class="badge">最新</span>' : ''}
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 // ═══ Select & render ═══
-async function selectReport(date) {
+async function selectReport(dateOrWeek) {
   // Highlight active
   document.querySelectorAll('.report-item').forEach(el => el.classList.remove('active'));
-  const item = document.querySelector(`.report-item[data-date="${date}"]`);
+  const item = document.querySelector(`.report-item[data-date="${dateOrWeek}"]`);
   if (item) item.classList.add('active');
 
   document.getElementById('emptyState').style.display = 'none';
   document.getElementById('reportInner').style.display = 'block';
 
+  const prefix = currentTab === 'daily' ? 'reports' : '周報';
   try {
-    const r = await fetch(`reports/${date}.json` + '?t=' + Date.now());
+    const r = await fetch(`${prefix}/${dateOrWeek}.json` + '?t=' + Date.now());
     const data = await r.json();
     renderReport(data);
   } catch(e) {
