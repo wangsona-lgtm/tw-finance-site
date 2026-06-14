@@ -1,0 +1,50 @@
+{
+  "date": "2026-06-07",
+  "weekNum": "W23",
+  "period": "6/1(一) – 6/7(日)",
+  "source": "tradingview-mcp · 定期市場掃描",
+  "sections": [
+    {
+      "title": "📊 本週大盤總覽",
+      "content": "本週台股加權指數創歷史新高後拉回整理。NVIDIA 財報優於預期但股價反應冷淡，Broadcom 財報後引發 AI 股全面拋售。美股方面，NASDAQ 週跌 -1.4%，費半 -2.8%。市場焦點轉向下週 CPI 與 FOMC。",
+      "stats": [
+        { "label": "加權指數(週)", "value": "43,503", "change": "🟢 +0.3%" },
+        { "label": "NASDAQ(週)", "value": "25,932", "change": "🔴 -1.4%" },
+        { "label": "費半(週)", "value": "12,781", "change": "🔴 -2.8%" },
+        { "label": "VIX", "value": "18.92", "change": "🟢 +3.2%" },
+        { "label": "台幣收盤", "value": "31.55", "change": "🔴 -0.1%" }
+      ]
+    },
+    {
+      "title": "📰 本週焦點回顧",
+      "type": "news",
+      "items": [
+        {
+          "headline": "NVIDIA GTC 2026 發表下一代 GPU 架構",
+          "content": "黃仁勳宣布 Rubin Ultra GPU 量產時程，股價先漲後跌，市場對估值過高的擔憂壓過技術利多。",
+          "tags": ["NVIDIA", "GPU", "AI"]
+        },
+        {
+          "headline": "Broadcom 財報失色，AI 網路晶片需求放緩",
+          "content": "AVGO Q2 營收低於預期，網路晶片部門成長放緩。股價單日暴跌 -12%，拖累整體 AI 族群。",
+          "tags": ["Broadcom", "財報", "AI"]
+        },
+        {
+          "headline": "美國 5月非農就業 +172K 超預期",
+          "content": "勞動市場持續強勁，市場對降息預期進一步降溫。Fed 6月維持利率機率升至 98.9%。",
+          "tags": ["總經", "就業", "Fed"]
+        }
+      ]
+    },
+    {
+      "title": "🔮 下週關注",
+      "type": "table",
+      "headers": ["日期", "事件", "重要性"],
+      "rows": [
+        ["6/10(三)", "5月 CPI 公布（預估年增4.2%）", "🏆🏆🏆 最高"],
+        ["6/11(四)", "PPI + 初領失業金", "🏆🏆"],
+        ["🌍 隨時", "美伊衝突發展", "🏆🏆🏆"]
+      ]
+    }
+  ]
+}
