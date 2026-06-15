@@ -1,0 +1,118 @@
+{
+  "date": "2026-06-15",
+  "type": "OpenClaw 每日盤前晨報",
+  "dayOfWeek": "一",
+  "sections": [
+    {
+      "title": "📊 全球市場同步走高 — 和平協議點燃風險情緒",
+      "content": "週末川普宣布美伊和平協議正式完成，風險資產全面上漲。上週五美股已提前反應+半導體領漲，今早日韓台股接力飆升，KOSPI +4.6% 全球居冠，台股加權 +2.36% 站回 44,169。VIX 恐慌指數降至 17.68（-9%），WTI 原油期貨盤前大跌反應油價溢價消退。歐洲期貨也在上漲。",
+      "stats": [
+        {"label": "S&P 500", "value": "7,431.46", "change": "🟢 +0.50%"},
+        {"label": "NASDAQ", "value": "25,888.84", "change": "🟢 +0.31%"},
+        {"label": "台股加權", "value": "44,169.04", "change": "🟢 +2.36%"},
+        {"label": "KOSPI", "value": "8,123.62", "change": "🟢 +4.63% 🚀"},
+        {"label": "恆生指數", "value": "24,718.10", "change": "🟢 +1.93%"},
+        {"label": "VIX", "value": "17.68", "change": "🟢 -9.05% ↓"}
+      ]
+    },
+    {
+      "title": "🛢️ 美伊和平協議正式達成 — 油價溢價消退",
+      "content": "川普於 Truth Social 宣布美伊協議完成，授權「立即解除霍爾木茲海峽封鎖」，喊出「讓石油流動吧」。巴基斯坦總理確認下週五（6/20）將在瑞士舉行簽署儀式。據路透草案，伊朗將稀釋高濃縮鈾，美國解凍伊朗 250 億美元資產。伊朗官方態度謹慎但偏向簽署。Polymarket「6月30日前永久協議」機率 39% vs 62%。英國皇家海軍在英吉利海峽扣押俄羅斯影子艦隊油輪，地緣政治風險此消彼長。",
+      "stats": [
+        {"label": "WTI 原油(上週收)", "value": "$86.42", "change": "🔴 -4.01%"},
+        {"label": "DXY 美元指數", "value": "~99.5", "change": "🔴 弱勢"},
+        {"label": "10Y 美債殖利率", "value": "~4.46%", "change": "🔻 下滑"},
+        {"label": "Polymarket 協議機率", "value": "Yes 39%", "change": "No 62%"}
+      ]
+    },
+    {
+      "title": "📈 亞洲開盤 — 和平紅利全面擴散",
+      "type": "stocks",
+      "groups": [
+        {
+          "name": "亞洲主要市場 (6/15 即時)",
+          "stocks": [
+            {"code": "TWSE", "name": "台股加權", "close": "44,169.04", "change": "+2.36% 🚀", "note": "半導體領漲"},
+            {"code": "KOSPI", "name": "韓國綜合", "close": "8,123.62", "change": "+4.63% 🚀🚀", "note": "全球最強"},
+            {"code": "NKY", "name": "日經225", "close": "66,020.04", "change": "0.00%", "note": "休市?"},
+            {"code": "HSI", "name": "恆生指數", "close": "24,718.10", "change": "+1.93%"},
+            {"code": "SHCOMP", "name": "上證指數", "close": "4,031.51", "change": "+1.12%"}
+          ]
+        }
+      ],
+      "analysis": "韓國 KOSPI +4.63% 為全球今日最強市場，反映對伊朗協議 — 韓國為伊朗石油主要買家之一。台股 +2.36% 收復週五部分跌幅，半導體族群反彈主攻。日經訊號異常（顯示 0.00% 可能尚未更新）。整體亞洲呈現典型風險-on 模式。"
+    },
+    {
+      "title": "🏛️ Fed Watch — FOMC 明日登場",
+      "content": "最大議題：明後天 6/16-17 FOMC 會議（Warsh 首秀）。市場定價 6 月 Hold ~97%。Warsh 立場偏鷹（6/5 稱「通膨仍是問題」），今晚至明晨 FOMC 進入緘默期。市場最大的不確定性在於：① 點陣圖是否上修中性利率 ② 通膨措辭是否升級 ③ Warsh 記者會基調。上週 CPI 突破 4.2%（2023 年來首次），Hartnett 警告歷史規律：CPI>4% 後標普未來 3 月平均跌 4%。",
+      "stats": [
+        {"label": "6月 Hold 機率", "value": "97.1%"},
+        {"label": "中性利率", "value": "3.1%", "change": "🔺 上修"},
+        {"label": "5月 CPI", "value": "4.2%", "change": "🔺 2023年來首次"},
+        {"label": "FOMC 開始", "value": "📅 6/16 (二)"}
+      ]
+    },
+    {
+      "title": "🌍 ZeroHedge 週末導讀",
+      "type": "news",
+      "items": [
+        {
+          "headline": "美伊和平協議完成——川普：讓石油流動吧",
+          "content": "川普在紐約開盤前30分宣布協議完成，授權解除荷姆茲封鎖。巴基斯坦總理確認6/20瑞士簽約。伊朗態度謹慎仍審查細節。Polymarket Yes 39%。",
+          "url": "https://www.zerohedge.com/geopolitical/trump-says-peace-deal-coming-sunday-tehran-signals-still-reviewing-text",
+          "tags": ["美伊", "和平協議", "油價"]
+        },
+        {
+          "headline": "川普批以色列襲貝魯特「不該發生」",
+          "content": "以色列對貝魯特南郊空襲後，川普迅速降溫，據報在電話中質問納坦雅胡。伊朗議會要求先約束以色列否則不簽協議。",
+          "url": "https://www.zerohedge.com/geopolitical/iran-says-new-israeli-attack-beirut-wont-go-unanswered-tenuous-us-iran-d…line",
+          "tags": ["以色列", "真主黨", "美伊"]
+        },
+        {
+          "headline": "英國特種部隊登船扣押俄羅斯影子艦隊油輪",
+          "content": "皇家海軍陸戰隊週日凌晨在英吉利海峽實施直升機繩降登船行動，扣押受制裁的 SMYRTOS 號。英國國防部稱首次英國主導的此類行動。",
+          "url": "https://www.zerohedge.com/geopolitical/uk-intercepts-russian-shadow-fleet-vessel-unprecedented-english-channel-commando",
+          "tags": ["俄羅斯", "英國", "制裁"]
+        },
+        {
+          "headline": "AI 超級循環核心的 1.8 兆美元表外定時炸彈",
+          "content": "高盛警告 Hyperscaler 2027年 CapEx 上看 1.1~1.4兆美元。但企業正轉向中國廉價 AI 方案，token 定價壓力上升。鉅額投資將在2026年底前吞噬幾乎所有營運現金流。",
+          "url": "https://www.zerohedge.com/markets/18-trillion-balance-sheet-time-bomb-heart-ai-supercycle",
+          "tags": ["AI", "CapEx", "高盛"]
+        },
+        {
+          "headline": "高盛合夥人：市場日益集中於少數贏家",
+          "content": "Mark Wilson 總結上週是「歷史性一週」，拜訪客戶後發現市場集中度持續惡化，少數股票主導整體表現。",
+          "url": "https://www.zerohedge.com/markets/goldman-partner-reflects-historic-week-increasingly-exposed-narrowing-group-winners",
+          "tags": ["高盛", "集中度"]
+        },
+        {
+          "headline": "Hartnett 警告：CPI>4% 後歷史平均跌 7%",
+          "content": "Hartnett 指出過去100年，一旦 CPI 突破4%，標普500平均未來3月跌4%、6月跌7%。市場仍處 euphoria 忽略風險。",
+          "url": "https://www.zerohedge.com/markets/harnett-keep-chips-table",
+          "tags": ["Hartnett", "CPI", "風險"]
+        },
+        {
+          "headline": "Strategy 新數學：稀釋等於增值？",
+          "content": "QTR 質疑 Michael Saylor 的 BTC Yield 指標實為下降，持倉比特幣帳面虧損約120億美元。公司是否在移動球門柱？",
+          "url": "https://www.zerohedge.com/markets/strategys-new-math-dilution-equals-accretion",
+          "tags": ["MSTR", "比特幣", "Strategy"]
+        }
+      ]
+    },
+    {
+      "title": "📅 本週焦點行事曆",
+      "type": "summary",
+      "signals": [
+        {"aspect": "6/16-17 🚨🚨", "signal": "FOMC 利率決議（Warsh 首秀）", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/17 🚨", "signal": "FOMC 會後聲明 + SEP 點陣圖", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/17 🚨", "signal": "Warsh 首場記者會基調", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/20 🚨", "signal": "美伊協議正式簽署儀式（瑞士）", "direction": "⭐⭐⭐⭐"},
+        {"aspect": "6/25 🚨", "signal": "5月 PCE 物價指數", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/25", "signal": "Q1 GDP 三次估計", "direction": "⭐⭐⭐"},
+        {"aspect": "本週", "signal": "英國扣押俄影子艦隊後續效應", "direction": "⭐⭐⭐"}
+      ],
+      "conclusion": "本週兩大主軸：① 美伊和平協議帶動的風險溢價消退行情，油價若持續走低將進一步提振全球股市 ② FOMC 明日登場，Warsh 的首秀基調將決定6月下半旬方向。注意 Hartnett 的 CPI>4% 歷史警示雖可能被和平紅利暫時掩蓋，但若 FOMC 點陣圖上移，反轉風險仍在。"
+    }
+  ]
+}
