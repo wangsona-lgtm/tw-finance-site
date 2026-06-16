@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-17",
+  "type": "ZeroHedge 導讀",
+  "dayOfWeek": "三",
+  "sections": [
+    {
+      "title": "📰 ZeroHedge 每日導讀 — 6月17日（三）",
+      "content": "🌍 **美伊協議：以色列強硬派怒火中燒**\n\n以色列前總理 Bennett 痛批 Netanyahu 領導失敗，稱其任期「從內戰開始、以 10/7 大屠殺延續、以伊朗歷史性失敗告終」。Ben-Gvir、Smotrich 等強硬派公開揚言不受協議約束，誓言持續伊朗政權更迭行動。Bennett 承諾若上台將重啟「章魚主義」全面打擊伊朗。\n\n同時黎巴嫩議長與伊朗議長通話，要求美國施壓以色列撤出黎巴嫩南部。以色列正式要求查閱美伊 MOU 遭拒，顯示美以罕見分歧。\n\n🔗 https://www.zerohedge.com/geopolitical/hardline-israeli-politicians-livid-over-iran-deal-want-netanyahu-out-so-they-can-do\n🔗 https://www.zerohedge.com/geopolitical/trump-vance-virtually-sign-us-iran-deal-hormuz-fears-ease-energy-flows-remain-months\n\n---\n\n📈 **美股盤後：科技股重挫、原油續跌、20年債拍賣強勁**\n\n美股週二漲跌互現：道瓊獨紅，那斯達克因科技股獲利了結重挫約 2%（半導體成主要拖累）。BTIG 警告半導體動能正在消退（SOXX 跌逾 3%）。\n\n原油續跌：Qatar 表示荷姆茲海峽重開後一個月內恢復 50% LNG 產能、兩個月達 80%。美國准許伊朗即時恢復石油出口。WTI 進一步下探。\n\n20年國債拍賣表現亮眼：2.75倍超額認購，外國間接投標 71.6% 創 2024 年 7 月以來最高。一級交易商僅承接 8.5%。顯示市場對 Warsh 鷹派驚喜無所畏懼。\n\n🔗 https://www.zerohedge.com/markets/stocks-mixed-tech-hits-indices-while-oil-continues-slump-newqsuawk-us-market-wrap\n🔗 https://www.zerohedge.com/markets/stellar-20y-auction-stops-through-highest-foreign-demand-2-years\n🔗 https://www.zerohedge.com/markets/eventually-everything-comes-back-earth-btig-sees-semis-momentum-waning\n\n---\n\n🥇 **央行黃金儲備：45% 受訪央行預期未來 12 個月增持，創紀錄新高**\n\n世界黃金協會 2026 年央行黃金儲備調查：\n• 45% 受訪者預期未來 12 個月增持黃金（創紀錄新高）\n• 89% 預期全球央行黃金儲備總量將增加\n• 74% 預期美元佔全球儲備比重將在五年內顯著或適度下降\n• 84% 預期五年後黃金佔總儲備比重將更高\n• 主要增持理由：危機時表現、投資組合多元化、通膨對沖、地緣政治避險\n• 半數央行透過國內購買計劃（本幣）融資\n• 英格蘭銀行仍為最受歡迎託管地（57%），境內託管 49%\n\n🔗 https://www.zerohedge.com/markets/record-percentage-central-banks-expect-gold-reserves-increase-next-12-months\n\n---\n\n💰 **算力稀缺論是否鬆動？高盛提出關鍵質疑**\n\n高盛 1-Delta 交易檯主管 Rich Privorotsky 對市場核心假設「算力稀缺」提出質疑，分析 AI 算力供需相對動態。此問題關乎市場過去一年由 AI 驅動的爆炸性上漲能否持續。\n\n🔗 https://www.zerohedge.com/markets/compute-scarce-narrative-starting-crack\n\n---\n\n🔥 **科技股領跌，大盤分散化交易持續建倉**\n\n「broadening out」交易主題持續：S&P 表現優於那斯達克，科技股被拋售。MSFT 取消 Oracle 雲端合約衝擊半導體。比特幣因科技股下跌同步走低。SPCX (SpaceX) 繼續上漲，市值超越 Amazon。\n\n🔗 https://www.zerohedge.com/markets/big-tech-bond-yields-black-gold-dump-ahead-warshs-big-day"
+    },
+    {
+      "title": "📊 本日摘要",
+      "type": "summary",
+      "stats": [
+        {"label": "文章總數", "value": "8 篇", "change": "全為 premium"},
+        {"label": "🌍 地緣政治", "value": "2 篇", "change": "以色列反彈 / 伊朗協議"},
+        {"label": "📈 市場/財經", "value": "6 篇", "change": "科技重挫 / 原油續跌"},
+        {"label": "核心主題", "value": "美伊協議後續", "change": "油價續跌 + 科技獲利了結"},
+        {"label": "焦點事件", "value": "FOMC 決議", "change": "Warsh 首秀今天登場"}
+      ],
+      "signals": [
+        {"aspect": "🛢️ 油價", "signal": "續跌，荷姆茲重啟 + 伊朗即時出口", "direction": "🔴"},
+        {"aspect": "📉 半導體", "signal": "SOXX 跌逾 3%，動能明顯減弱", "direction": "🔴"},
+        {"aspect": "🏦 20Y 拍賣", "signal": "外資需求創 2 年高，拍賣強勁", "direction": "🟢"},
+        {"aspect": "🥇 央行黃金", "signal": "45% 預期增持，美元儲備占比看跌", "direction": "🟢"},
+        {"aspect": "🇮🇱 以色列政局", "signal": "強硬派要求 Netanyahu 下台", "direction": "⚠️"},
+        {"aspect": "🤖 AI 算力", "signal": "高盛質疑稀缺敘事，市場面臨考驗", "direction": "⚠️"},
+        {"aspect": "🏛️ FOMC", "signal": "Warsh 首場記者會，預計維持利率", "direction": "👀"}
+      ],
+      "conclusion": "今天零星的 FOMC 決議（Warsh 首秀）是最大變數。盤前原油續跌、科技股回調提前反應，但 20 年債拍賣強勁暗示市場對利率不確定性消化良好。央行黃金需求創紀錄新高，美元霸權鬆動趨勢持續。半導體動能減弱需警惕是否為更廣泛的回調開端。"
+    }
+  ]
+}
