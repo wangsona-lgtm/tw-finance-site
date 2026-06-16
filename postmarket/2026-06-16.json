@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-16",
+  "dayOfWeek": "二",
+  "title": "盤後總匯：美伊和平協議 + FOMC 首日 + 技術分析",
+  "source": "ZeroHedge 導讀 + Fed Watch + 每日技術分析 (cronjobs)",
+  "sections": [
+    {
+      "type": "content",
+      "title": "📊 美股收盤 — 全面 risk-on，和平協議點火",
+      "content": "受美伊臨時和平協議（MOU）簽署在即推動，美股週一全面走高。科技、通訊服務與可選消費領漲，能源股因油價暴跌成為唯一下跌板塊。\n\n📈 標普500：7,431.46（+0.50%）\n📈 NASDAQ：25,888.84（+0.31%）（Alphabet +1.4%, Meta +1%, MSFT +0.9%）\n📈 道瓊：51,671.03（+0.92%）\n📈 費半 SOX：14,099.62（+5.45%🚀 大漲突破近期高點）\n📉 美元 DXY：走弱至 99.75\n\n🔗 原文：https://www.zerohedge.com/markets/us-stocks-rallied-global-risk-environment-amid-us-iran-interim-peace-agreement-newsquawk\n🔗 https://www.zerohedge.com/markets/stocks-rally-and-crude-plummets-usiran-agree-mou-newsquawk-us-market-wrap"
+    },
+    {
+      "type": "content",
+      "title": "🛢️ 原油 — 地緣溢價蒸發，WTI 重挫",
+      "content": "美伊和平協議達成後，交易員迅速移除原油地緣政治風險溢價。WTI 原油期貨盤前大跌，能源股（XLE）成為美股唯一下跌板塊。\n\n- 荷姆茲海峽 1-2 週內逐步重啟，數百艘船等待通行\n- 伊朗 60 天免費通行作為信心建立措施\n- 高盛：隨著海峽重開，伊朗石油有望回流市場\n\n🔗 https://www.zerohedge.com/markets/stocks-bonds-bullion-bitcoin-bid-oil-sinks-hormuz-hopes-ai-dispersion-grows"
+    },
+    {
+      "type": "content",
+      "title": "🌍 美伊協議細節 — G7 公布",
+      "content": "川普在 G7 峰會詳述協議：伊朗承諾不發展核武器 + 接受嚴格核查；美國解除海軍封鎖。伊朗不會在簽署當下獲得任何資金或制裁鬆綁。協議已由伊朗議會議長蓋利巴夫電子簽署，6/20 週五瑞士正式簽字。\n\n川普強調這與 JCPOA 不同。Polymarket 6/30 前永久協議機率 Yes 39% / No 62%。\n\n🔗 https://www.zerohedge.com/geopolitical/iran-offers-60-day-toll-free-hormuz-transit-100s-ships-await-reopening"
+    },
+    {
+      "type": "content",
+      "title": "🏛️ Fed Watch — FOMC 首日（6/16）",
+      "content": "📌 FOMC 6/16-17 會議今日登場，Warsh 首秀基調將是焦點。\n\n**市場定價：**\n- 6月 Hold：97.1%\n- 12月升1碼機率：42.0%（超越 Hold 39.9% 成為最可能情境）\n- 中性利率：3.0%（疫情前 2.5%）\n\n**美債殖利率曲線：**\n- 3M：3.618%\n- 2Y：4.188%（-2.5bp）\n- 10Y：4.469%（-1.8bp）\n- 30Y：4.958%\n- 2Y-10Y 利差：+28.1bp ✅ 正常\n\n**SEP 預測（3月版 vs 市場預期6月）：**\n- GDP：1.7%→下修風險\n- PCE 通膨：2.7%（3月僅 2.4%，大幅上修）\n- 失業率：4.4%\n- 核心 PCE：3.1%\n- 聯邦基金利率終點：3.0%\n\n⚠️ 3月點陣圖已過時（vs 5月 CPI 4.2%），本次 6 月會議將公布新版 SEP，市場預期點陣圖將進一步上移。\n\n**FOMC 靜默期（自 6/3 起）：**\nWarsh 🆕 首次主持 / Jefferson ⚖️ 平衡 / Barr 偏鷹 / Waller 偏鷹 / Cook 偏鴿"
+    },
+    {
+      "type": "content",
+      "title": "🥇 黃金 & 比特幣 — 同步走強",
+      "content": "在原油暴跌的同時，避險資金轉向黃金與比特幣：\n\n- 黃金現貨：$4,238.80（+3.63%），週跌 -$197.90（-4.27%）\n- 比特幣：同步走強，受美元走弱 + 法幣信心動搖支撐\n- DXY 美元指數：99.75（-0.11%）\n\n黃金短線反映和平協議後避險需求下降後的技術性回補，中東不確定性未完全消除。"
+    },
+    {
+      "type": "content",
+      "title": "⚠️ 高盛槓桿警示 — 融資利率飆升",
+      "content": "彭博分析師 Simon White 指出：\n\n- 股市槓桿需求持續攀升，總回報互換（TRS）成為推升行情工具\n- 市場越來越容易受到相關性突然上升的衝擊（correlation shock）\n- 資金追逐收益率的行為正在累積系統性風險\n\n高盛衍生品主管 Rich Privorotsky：「市場已將美伊協議定價完畢，下一步資金流向何方？」\n\n🔗 https://www.zerohedge.com/markets/theres-lot-stock-leverage-exposed-correlation-shock\n🔗 https://www.zerohedge.com/markets/goldman-1-delta-desk-asks-trillion-dollar-question"
+    },
+    {
+      "type": "content",
+      "title": "📊 每日技術分析 — 2026/06/16",
+      "content": "📈 **① 道瓊工業指數 (DJI)**\n- 收盤：$51,671.03（+$468.77, +0.92%）\n- RSI(14)：60.2 — 偏多區間，未達超買\n- SMA20：$50,677 — 站穩 20 日均線\n- 型態：🟢 偏多，壓力 $51,946 / 支撐 $49,236\n\n📈 **② 費城半導體指數 (SOX)**\n- 收盤：$14,099.62（+$728.15, +5.45%🚀）\n- RSI(14)：59.6 — 動能強勁但未過熱\n- SMA20：$12,734 — 遠高於 20 日均線\n- 型態：🟢 偏多，半導體領漲突破近期高點，壓力 $14,135 / 支撐 $12,000\n\n📈 **③ 台股加權指數 (TAIEX)**\n- 收盤參考圖表\n\n📸 **技術圖表：**\n\n道瓊日線分析：\n\n費城半導體指數分析：\n\n台股加權指數分析：\n"
+    },
+    {
+      "type": "content",
+      "title": "📡 高盛 1-Delta — 兆美元問題",
+      "content": "高盛衍生品部門主管 Rich Privorotsky 提出「兆美元問題」：\n\n- 市場全面 price in 美伊協議，日經隔夜大漲 5%\n- 下一步資金流向何方？\n- AI 領域仍是焦點但分化加劇（Anthropic 經歷「糟糕週末」）\n- NVDA 宣布發行 250 億美元公司債\n\n🔗 https://www.zerohedge.com/markets/goldman-1-delta-desk-asks-trillion-dollar-question"
+    },
+    {
+      "type": "content",
+      "title": "🔮 明日展望 — 6/17 關鍵事件",
+      "content": "🚨 **FOMC 決議日（6/17 凌晨）**\n- 台灣時間 6/17（三）凌晨 02:00 利率決議\n- 02:30 Warsh 首場記者會\n- 關注：點陣圖上移幅度、通膨措辭是否升級、經濟預測摘要（SEP）\n\n🚨 **其他關注：**\n- 紐約 Fed 調查 / NAHB / 美國工業生產均低於預期\n- Fitch 確認中國 A 級評級\n- FOX 收購 ROKU\n- 本週後續：BoJ / RBA / BoE / SNB 利率決策"
+    }
+  ]
+}
