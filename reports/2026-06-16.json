@@ -1,8 +1,20 @@
 {
   "date": "2026-06-16",
-  "type": "OpenClaw 每日盤後行情",
+  "type": "OpenClaw 每日報告 — ZeroHedge 導讀 + 盤後行情",
   "dayOfWeek": "二",
   "sections": [
+    {
+      "title": "🌍 美伊和平協議 — G7 詳述細節，週五瑞士簽署",
+      "stats": [
+        {"label": "荷姆茲海峽", "value": "逐步重啟", "change": "1-2週內"},
+        {"label": "伊朗60天", "value": "免費通行", "change": "信心建立措施"},
+        {"label": "簽署日", "value": "6/20 (五)", "change": "瑞士"},
+        {"label": "WTI 原油", "value": "暴跌", "change": "🔴 溢價消退"},
+        {"label": "標普500", "value": "7,431", "change": "🟢 +0.50%"},
+        {"label": "NASDAQ", "value": "25,889", "change": "🟢 +0.31%"}
+      ],
+      "content": "川普在法國 G7 峰會上正式對外說明與伊朗達成的臨時協議細節。協議核心：伊朗承諾不發展核武器，接受嚴格核查；美國解除荷姆茲海峽封鎖作為交換。伊朗不會在簽署當下獲得任何資金或制裁鬆綁——所有讓步取決於伊朗履行條款。伊朗議會議長蓋利巴夫已電子簽署，預計週五在瑞士正式簽字。荷姆茲海峽因佈有水雷，完全開放需 1-2 週，但已有船隻開始移動。\n\n伊朗提議 60 天免費通行荷姆茲海峽作為信心建立措施。川普明確表示這與歐巴馬時代的 JCPOA 不同——JCPOA 是一項「糟糕的協議，只會讓伊朗走向核武」。\n\n🔗 https://www.zerohedge.com/geopolitical/iran-offers-60-day-toll-free-hormuz-transit-100s-ships-await-reopening"
+    },
     {
       "title": "📊 台股收盤 — 加權 +412 點站回 45,809",
       "stats": [
@@ -11,7 +23,7 @@
         {"label": "台灣50", "value": "42,540.48", "change": "🟢 +481.32 (+1.14%)"},
         {"label": "資訊科技", "value": "89,508.92", "change": "🟢 +953.62 (+1.08%)"}
       ],
-      "content": "今日加權指數收 45,809.19，上漲 412.20 點 (+0.91%)。FOMC 會議首日市場情緒偏多，台股跟隨亞洲市場反彈，台灣50 指數 +1.14% 為主要權值貢獻。成交量維持在近期均值，半導體族群領漲。"
+      "content": "加權指數收 45,809.19，上漲 412.20 點 (+0.91%)。FOMC 會議首日市場情緒偏多，台股跟隨全球 peace deal risk-on 行情，半導體族群領漲。台灣50 +1.14%、資訊科技 +1.08% 反映權值股撐盤。"
     },
     {
       "title": "🏦 三大法人 — 合計買超 582.7 億",
@@ -27,7 +39,7 @@
           ]
         }
       ],
-      "analysis": "外資買超 408 億為近期最大單日買超之一，投信同步買超 113.9 億。三大法人合計買超 582.7 億，顯示法人對今日行情信心充足。"
+      "analysis": "外資大買 408 億為近期最大單日買超之一，呼應全球 risk-on 情緒。投信同步買超 113.9 億，三大法人合計 582.7 億，顯示法人對和平協議行情信心充足。"
     },
     {
       "title": "📈 期貨選擇權 — PC Ratio 偏多",
@@ -39,7 +51,7 @@
         {"label": "Put 未平倉", "value": "103,830", "change": ""},
         {"label": "PC OI Ratio", "value": "164.48%", "change": "🟢 偏多"}
       ],
-      "content": "PC 成交量比 131.64%、未平倉比 164.48%，均顯示選擇權市場偏多結構。Call 未平倉大於 Put 近 7 萬口，市場對後市持樂觀態度。"
+      "content": "PC Vol 131.64%、OI 164.48%，選擇權市場持續偏多結構。Call 未平倉大於 Put 近 7 萬口，市場對後市維持樂觀。"
     },
     {
       "title": "🔥 今日熱門股 — 成交量前 5",
@@ -56,19 +68,47 @@
           ]
         }
       ],
-      "analysis": "半導體為今日主軸：華邦電、力積電、聯電全數進入前五大量。00403A 主動型 ETF 成交量異常放大，可能反映資金流入。"
+      "analysis": "半導體為主軸：華邦電、力積電、聯電全數大量。00403A 主動 ETF 量能異常放大，可能反映資金追逐台股行情。"
     },
     {
-      "title": "📅 FOMC 首日 — 市場靜待明日決議",
-      "content": "FOMC 6/16-17 會議今日登場，Warsh 首秀基調將是明晨焦點。市場定價 6 月 Hold ~97%，關注點陣圖是否上修中性利率、通膨措辭是否升級。今日台股法人強勁買超反映對 FOMC 偏鴿預期。明日收盤後 FOMC 聲明將決定短線方向。",
+      "title": "🛢️ 原油暴跌 — 地緣溢價蒸發",
+      "content": "美伊協議達成後，交易員迅速移除原油地緣政治風險溢價。WTI 原油期貨盤前大跌，能源股成為週一美股唯一下跌板塊。高盛指出，隨著荷姆茲海峽逐步重開，伊朗石油有望回流市場，進一步壓低油價。\n\n🔗 https://www.zerohedge.com/markets/stocks-rally-and-crude-plummets-usiran-agree-mou-newsquawk-us-market-wrap",
+      "stats": [
+        {"label": "WTI 原油", "value": "暴跌", "change": "🔴 溢價消退"},
+        {"label": "能源股", "value": "唯一下跌", "change": "🔴 板塊"},
+        {"label": "荷姆茲", "value": "1-2週重啟", "change": "🟢 數百船待航"}
+      ]
+    },
+    {
+      "title": "🥇 黃金 & 比特幣 — 避險買盤轉向",
+      "content": "在原油暴跌的同時，黃金與比特幣同步上漲。黃金現貨因美元走弱獲得支撐，比特幣也因法幣信心動搖吸引資金流入。AI 領域方面，Anthropic 經歷了一個「糟糕的週末」，AI 生態分歧擴大。\n\n🔗 https://www.zerohedge.com/markets/stocks-bonds-bullion-bitcoin-bid-oil-sinks-hormuz-hopes-ai-dispersion-grows",
+      "stats": [
+        {"label": "黃金", "value": "上漲", "change": "🟢 美元走弱"},
+        {"label": "比特幣", "value": "走強", "change": "🟢 同步"},
+        {"label": "DXY 美元", "value": "走弱", "change": "🔴 下跌"}
+      ]
+    },
+    {
+      "title": "⚠️ 高盛警告 — 期貨融資利率飆升",
+      "content": "彭博分析師 Simon White 指出，股市槓桿需求持續攀升，總回報互換（TRS）成為推升行情的重要工具。市場越來越容易受到相關性突然上升的衝擊（correlation shock），資金追逐收益率的行為正在累積系統性風險。\n\n🔗 https://www.zerohedge.com/markets/theres-lot-stock-leverage-exposed-correlation-shock"
+    },
+    {
+      "title": "💡 高盛 1-Delta 交易檯 — 兆美元問題",
+      "content": "高盛衍生品部門主管 Rich Privorotsky 指出，市場已將美伊協議視為定價並繼續前進，日經指數隔夜大漲 5%。市場的下一個問題是：資金下一步會流向哪裡？AI 領域仍是關注焦點。\n\n🔗 https://www.zerohedge.com/markets/goldman-1-delta-desk-asks-trillion-dollar-question"
+    },
+    {
+      "title": "📅 本週焦點 — FOMC + 三大央行",
       "type": "summary",
       "signals": [
-        {"aspect": "台股", "signal": "加權 45,809 (+0.91%)", "direction": "🟢 強勢"},
-        {"aspect": "外資", "signal": "大買 408 億", "direction": "🟢 偏多"},
-        {"aspect": "PC Ratio", "signal": "Vol 131.64% / OI 164.48%", "direction": "🟢 偏多"},
-        {"aspect": "FOMC", "signal": "6/16-17 會議中", "direction": "⚠️ 等待中"}
+        {"aspect": "6/16-17 🚨", "signal": "FOMC 利率決議（Warsh 首秀）", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/17 🚨", "signal": "FOMC 會後聲明 + SEP 點陣圖", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "6/17 🚨", "signal": "Warsh 首場記者會基調", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "本週", "signal": "BoJ / RBA / BoE / SNB 利率決策", "direction": "⭐⭐⭐⭐"},
+        {"aspect": "6/20 🚨", "signal": "美伊協議正式簽署（瑞士）", "direction": "⭐⭐⭐⭐"},
+        {"aspect": "6/25 🚨", "signal": "5月 PCE 物價指數", "direction": "⭐⭐⭐⭐⭐"},
+        {"aspect": "本週", "signal": "紐約 Fed 調查/NAHB/工業生產低於預期", "direction": "⭐⭐⭐"}
       ],
-      "conclusion": "今日台股在 FOMC 首日由法人領軍上漲，三大法人合計買超 582.7 億為關鍵支撐。明晨 FOMC 決議前預期市場維持偏多格局，但需留意點陣圖變動風險。"
+      "conclusion": "本日兩大主軸：① 美伊和平協議帶動全球風險資產全面上漲，台股在外資大買 408 億推動下收復 45,800 ② FOMC 會議首日平穩，明晨 Warsh 首秀決議將決定短線方向。原油地緣溢價消退是結構性變化，若油價持續走低將進一步利好股市但不利能源板塊。注意高盛槓桿警示——融資利率飆升 + 集中度風險可能在下一次拋售中被放大。"
     }
   ]
 }
