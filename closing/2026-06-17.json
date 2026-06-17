@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-17",
+  "dayOfWeek": "三",
+  "marketStatus": "收盤",
+  "index": {
+    "name": "TAIEX 加權指數",
+    "close": 45723.76,
+    "change": -85.43,
+    "changePercent": -0.19,
+    "open": 45685.00,
+    "high": 45736.00,
+    "low": 45159.00,
+    "prevClose": 45809.19,
+    "volume": 6574400,
+    "feature": "🔴 跌 85 點（-0.19%）"
+  },
+  "stocks": [
+    {"code": "2330", "name": "台積電", "close": 2375, "change": -25, "changePercent": -1.04, "volume": 20927},
+    {"code": "2454", "name": "聯發科", "close": 4430, "change": -130, "changePercent": -2.85, "volume": 7954},
+    {"code": "2317", "name": "鴻海", "close": 270, "change": 1, "changePercent": 0.37, "volume": 35753},
+    {"code": "2308", "name": "台達電", "close": 2160, "change": -58.4, "changePercent": -2.63, "volume": 10058},
+    {"code": "2382", "name": "廣達", "close": 373, "change": 10.5, "changePercent": 2.90, "volume": 18042}
+  ],
+  "summary": {
+    "totalStocks": 1353,
+    "listed": 1353,
+    "otc": 0,
+    "volumeTotal": 6574400,
+    "volume5dAvg": 6518875,
+    "winnerSectors": ["塑化 +5.14%", "AI 伺服器 +1.99%", "金融 +1.63%"],
+    "loserSectors": ["電信 -1.56%", "航運 -0.99%", "半導體 -0.37%"]
+  }
+}
