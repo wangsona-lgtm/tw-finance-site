@@ -1,6 +1,6 @@
 {
-  "total": 83,
-  "updated": "2026-06-17 09:30:03",
+  "total": 84,
+  "updated": "2026-06-17 15:33:02",
   "topics": [
     "AI/科技",
     "其他",
@@ -18,61 +18,32 @@
   ],
   "papers": [
     {
-      "title": "The nexus between climate policy uncertainty and load capacity factor in China with the moderating role of financial development",
-      "authors": "Özbek, Şahin & Bayar",
+      "title": "SpaceX與太空產業概況 — 市場熱門話題",
+      "authors": "商品業務處 / 財管商品部 / 海外股票科",
       "year": "2026",
-      "journal": "Discover Sustainability",
-      "doi": "10.1007/s43621-026-03409-0",
-      "date": "2026-06-16",
+      "journal": "財管商品部市場熱門話題",
+      "date": "2026-06-17",
+      "doi": "",
       "tags": [
-        "A-ARDL",
-        "FMOLS",
-        "DOLS",
-        "LCF",
-        "CPU"
+        "SpaceX",
+        "太空經濟",
+        "IPO",
+        "SPCX"
       ],
       "topics": [
-        "氣候風險/政策",
-        "碳市場/碳交易"
+        "AI/科技",
+        "金融市場"
       ],
-      "pdf": "uploads/CPU_LCF_China_Ozbek_2026.pdf",
+      "pdf": "pdfs/spacex-space-industry-overview.pdf",
       "notes": [
-        "A-ARDL + FMOLS + DOLS 三種方法互補驗證",
-        "1990-2021, 中國",
-        "FD 和 CPU 各自降低環境品質，但交互項 FD×CPU 改善環境品質",
-        "FD 在不確定時期可透過三渠道維持綠色投資"
+        "SpaceX 6/12 那斯達克掛牌上市（股票代號SPCX）",
+        "IPO募集750-800億美元，估值1.75-2兆美元",
+        "三大業務：太空(Space)、通訊連接(Connectivity)、AI",
+        "上市後將進入美股市值前十大公司",
+        "初期僅5%股票流通，95%股份鎖住"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-6141"
-    },
-    {
-      "title": "Assessing the effects of green innovation, renewable energy, and environmental policy stringency on ecological and material footprints in G7 economies",
-      "authors": "Omri, Feki & Chtourou",
-      "year": "2026",
-      "journal": "Discover Environment, 4, 239",
-      "doi": "10.1007/s44274-026-00768-3",
-      "date": "2026-06-16",
-      "tags": [
-        "CS-ARDL",
-        "EF",
-        "MF",
-        "EPS",
-        "G7"
-      ],
-      "topics": [
-        "潔淨能源",
-        "碳市場/碳交易",
-        "氣候風險/政策"
-      ],
-      "pdf": "uploads/Omri_G7_EF_MF_2026.pdf",
-      "notes": [
-        "G7 panel (1990-2020), CS-ARDL",
-        "GDP→EF↑ MF↑, EPS→EF↓, RE→EF↓",
-        "GI→MF↑（綠色技術資源密集問題）",
-        "首篇聯合分析EF+MF驅動因子於G7"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-16-4019"
+      "id": "upload-2026-06-17-8246"
     },
     {
       "title": "Sustainable energy transition toward a zero-carbon future in major Global South economies: Roles of green innovation, institutions, and geopolitical risk",
@@ -101,7 +72,64 @@
         "SDG-7 進展取決於技術能力+制度韌性"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-1655"
+      "id": "upload-2026-06-16-5765"
+    },
+    {
+      "title": "Assessing the effects of green innovation, renewable energy, and environmental policy stringency on ecological and material footprints in G7 economies",
+      "authors": "Omri, Feki & Chtourou",
+      "year": "2026",
+      "journal": "Discover Environment, 4, 239",
+      "doi": "10.1007/s44274-026-00768-3",
+      "date": "2026-06-16",
+      "tags": [
+        "CS-ARDL",
+        "EF",
+        "MF",
+        "EPS",
+        "G7"
+      ],
+      "topics": [
+        "潔淨能源",
+        "碳市場/碳交易",
+        "氣候風險/政策"
+      ],
+      "pdf": "uploads/Omri_G7_EF_MF_2026.pdf",
+      "notes": [
+        "G7 panel (1990-2020), CS-ARDL",
+        "GDP→EF↑ MF↑, EPS→EF↓, RE→EF↓",
+        "GI→MF↑（綠色技術資源密集問題）",
+        "首篇聯合分析EF+MF驅動因子於G7"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-16-5638"
+    },
+    {
+      "title": "The nexus between climate policy uncertainty and load capacity factor in China with the moderating role of financial development",
+      "authors": "Özbek, Şahin & Bayar",
+      "year": "2026",
+      "journal": "Discover Sustainability",
+      "doi": "10.1007/s43621-026-03409-0",
+      "date": "2026-06-16",
+      "tags": [
+        "A-ARDL",
+        "FMOLS",
+        "DOLS",
+        "LCF",
+        "CPU"
+      ],
+      "topics": [
+        "氣候風險/政策",
+        "碳市場/碳交易"
+      ],
+      "pdf": "uploads/CPU_LCF_China_Ozbek_2026.pdf",
+      "notes": [
+        "A-ARDL + FMOLS + DOLS 三種方法互補驗證",
+        "1990-2021, 中國",
+        "FD 和 CPU 各自降低環境品質，但交互項 FD×CPU 改善環境品質",
+        "FD 在不確定時期可透過三渠道維持綠色投資"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-16-1444"
     },
     {
       "title": "The interplay of financial development, oil prices, and CO2 emissions in shaping renewable energy consumption in emerging nations: An evidence from panel quantile regression",
@@ -130,7 +158,7 @@
         "FDI→REC+, CO2→REC-(高分位)"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-155"
+      "id": "upload-2026-06-16-1369"
     },
     {
       "title": "Spillover across varying Regional and Economic Realities: Evaluating the Hedging potential of Demographic Traits",
@@ -158,7 +186,7 @@
         "Peer Review 版本，DOI 暫為 xxxxx"
       ],
       "type": "upload",
-      "id": "upload-2026-06-12-9728"
+      "id": "upload-2026-06-12-8657"
     },
     {
       "id": "2026-06-10-9",
@@ -1640,27 +1668,26 @@
       "notes": []
     },
     {
-      "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
-      "authors": "Ben Salah, Arouri, Klibi & Smaoui",
+      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
+      "authors": "Sumba",
       "year": "2026",
-      "journal": "Sustainability (MDPI), 18, 5196",
-      "doi": "10.3390/su18105196",
+      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
+      "doi": "10.1016/j.iref.2026.105445",
       "date": "2026-06-05",
       "tags": [],
       "topics": [
-        "碳市場/碳交易",
-        "能源市場",
+        "潔淨能源",
         "宏觀總體"
       ],
-      "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
+      "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
       "notes": [
-        "使用 STIRPAT + 固定效果 panel 模型",
-        "EKC 假說在海灣六國成立",
-        "能源消費是 CO₂ 排放最大驅動因子",
-        "建議 GCC 國家加速再生能源轉型"
+        "動態面板門檻模型 (DPT)+ 工具變數",
+        "EKC 假說在發展中國家成立",
+        "再生能源可加速 EKC 轉折",
+        "制度品質調節 EKC 形狀和轉折點"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-8215"
+      "id": "upload-2026-06-05-9218"
     },
     {
       "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
@@ -1683,52 +1710,30 @@
         "異質性：僅國有企業與東部地區顯著"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-6414"
+      "id": "upload-2026-06-05-9127"
     },
     {
-      "title": "jQIRF / jQFEVD — 聯合分量脈衝響應函數 & 聯合分量預測誤差變異數分解（方法論文）",
-      "authors": "Thomas F. P. Wiesen, Paul M. Beaumont",
-      "year": "2023",
-      "journal": "Empirical Economics",
-      "doi": "10.1007/s00181-023-02496-6",
+      "title": "Climate Policy Uncertainty and Renewable Energy Consumption in China",
+      "authors": "Zheng, Wang, Moldovan, Mihit & Nicolescu",
+      "year": "2026",
+      "journal": "Sustainability (MDPI), 18, 5460",
+      "doi": "10.3390/su18115460",
       "date": "2026-06-05",
       "tags": [
-        "jQIRF",
-        "jQFEVD"
+        "QARDL"
       ],
       "topics": [
-        "方法論"
+        "氣候風險/政策",
+        "潔淨能源"
       ],
-      "pdf": "",
+      "pdf": "uploads/China_CPU_Renewable_Energy.pdf",
       "notes": [
-        "jIRF：所有變數同時受相關衝擊的聯合反應路徑",
-        "jFEVD：所有變數同時衝擊對預測誤差的聯合貢獻",
-        "延伸應用於中國航空股波動（Transport Research 2024）"
+        "CPU→REC 有 Granger 因果（雙向時變不對稱）",
+        "使用滾窗 Granger 因果檢定 + 雙向因果分析",
+        "控制 EPU（經濟政策不確定性）、原油價格"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-5876"
-    },
-    {
-      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
-      "authors": "Sumba",
-      "year": "2026",
-      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
-      "doi": "10.1016/j.iref.2026.105445",
-      "date": "2026-06-05",
-      "tags": [],
-      "topics": [
-        "潔淨能源",
-        "宏觀總體"
-      ],
-      "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
-      "notes": [
-        "動態面板門檻模型 (DPT)+ 工具變數",
-        "EKC 假說在發展中國家成立",
-        "再生能源可加速 EKC 轉折",
-        "制度品質調節 EKC 形狀和轉折點"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-05-4570"
+      "id": "upload-2026-06-05-7962"
     },
     {
       "title": "Climate Policy Uncertainty and Load Capacity Factor in China",
@@ -1752,30 +1757,7 @@
         "A-ARDL 共整合檢定 + Fourier KPSS 結構斷點單根檢定"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-3102"
-    },
-    {
-      "title": "Climate Policy Uncertainty and Renewable Energy Consumption in China",
-      "authors": "Zheng, Wang, Moldovan, Mihit & Nicolescu",
-      "year": "2026",
-      "journal": "Sustainability (MDPI), 18, 5460",
-      "doi": "10.3390/su18115460",
-      "date": "2026-06-05",
-      "tags": [
-        "QARDL"
-      ],
-      "topics": [
-        "氣候風險/政策",
-        "潔淨能源"
-      ],
-      "pdf": "uploads/China_CPU_Renewable_Energy.pdf",
-      "notes": [
-        "CPU→REC 有 Granger 因果（雙向時變不對稱）",
-        "使用滾窗 Granger 因果檢定 + 雙向因果分析",
-        "控制 EPU（經濟政策不確定性）、原油價格"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-05-2570"
+      "id": "upload-2026-06-05-7821"
     },
     {
       "title": "Toward Carbon Neutrality in Vietnam: Analyzing the Role of Renewable Energy Consumption and Economic Growth Using Wavelet Coherence and Quantile-on-Quantile Approaches",
@@ -1799,7 +1781,53 @@
         "GDP 成長在不同分量下對 CO₂ 效果不一致"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-1916"
+      "id": "upload-2026-06-05-4269"
+    },
+    {
+      "title": "jQIRF / jQFEVD — 聯合分量脈衝響應函數 & 聯合分量預測誤差變異數分解（方法論文）",
+      "authors": "Thomas F. P. Wiesen, Paul M. Beaumont",
+      "year": "2023",
+      "journal": "Empirical Economics",
+      "doi": "10.1007/s00181-023-02496-6",
+      "date": "2026-06-05",
+      "tags": [
+        "jQIRF",
+        "jQFEVD"
+      ],
+      "topics": [
+        "方法論"
+      ],
+      "pdf": "",
+      "notes": [
+        "jIRF：所有變數同時受相關衝擊的聯合反應路徑",
+        "jFEVD：所有變數同時衝擊對預測誤差的聯合貢獻",
+        "延伸應用於中國航空股波動（Transport Research 2024）"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-05-2633"
+    },
+    {
+      "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
+      "authors": "Ben Salah, Arouri, Klibi & Smaoui",
+      "year": "2026",
+      "journal": "Sustainability (MDPI), 18, 5196",
+      "doi": "10.3390/su18105196",
+      "date": "2026-06-05",
+      "tags": [],
+      "topics": [
+        "碳市場/碳交易",
+        "能源市場",
+        "宏觀總體"
+      ],
+      "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
+      "notes": [
+        "使用 STIRPAT + 固定效果 panel 模型",
+        "EKC 假說在海灣六國成立",
+        "能源消費是 CO₂ 排放最大驅動因子",
+        "建議 GCC 國家加速再生能源轉型"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-05-1283"
     }
   ]
 }
