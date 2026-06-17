@@ -309,6 +309,22 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
         </div>
         <div class="corner" style="background:var(--accent3)"></div>
       </div>
+
+      <!-- Card 5 — SpaceX 太空產業 -->
+      <div class="card" onclick="showLecture(4)">
+        <span class="tag strategy" style="background:rgba(0,0,0,.08);color:#333;">太空經濟</span>
+        <h3>🚀 SpaceX 與太空產業概況</h3>
+        <p>財管商品部市場熱門話題。SPCX 6/12 那斯達克掛牌上市，IPO 750~800 億美元，估值上看 2 兆美元，太空經濟加速落地。</p>
+        <div class="meta">
+          <span>📄 10 頁</span>
+          <span>📅 2026-06</span>
+          <span>🏷️ SpaceX · 太空經濟 · IPO · SPCX</span>
+        </div>
+        <div class="actions">
+          <a href="./papers/pdfs/spacex-space-industry-overview.pdf" onclick="event.stopPropagation()" download>📥 PDF</a>
+        </div>
+        <div class="corner" style="background:#1a1a2e"></div>
+      </div>
     </div>
 
     <hr class="section-divider">
@@ -401,6 +417,20 @@ const lectures = [
       '戰略目的：最大化全球算力產出，最小化東亞供應鏈內部競爭'
     ],
     summary: 'Google NotebookLM 生成之戰略情報分析報告。核心論點：NVIDIA 並非在台灣與韓國之間「二選一」，而是建構以 NVIDIA 為頂點、台韓為兩軸的「三角雙軸戰略」— 台灣 = 製造之手（半導體生態），韓國 = 算力之腦（AI 基礎建設/記憶體），NVIDIA = 下棋之人。'
+  },
+  {
+    title: 'SpaceX 與太空產業概況',
+    subtitle: '財管商品部 · 市場熱門話題',
+    chapters: [
+      'SpaceX 6/12 IPO上市 — 挑戰全球最大規模IPO',
+      '上市後將進入美股市值前十大公司',
+      'SpaceX 三大業務：太空(Space)、通訊連接(Connectivity)、AI',
+      '併購 xAI 後定位升級為太空通訊與 AI 算力巨頭',
+      'IPO 募集 750~800 億美元，估值 1.75~2 兆美元',
+      '初期僅 5% 流通，95% 股份鎖住',
+      '馬斯克持有逾四成股份，剩餘股份仍會對股價產生潛在波動'
+    ],
+    summary: '富邦投顧產業報告。SpaceX 於 5/20 遞交 S-1 招股書，6/12 在那斯達克掛牌（代號 SPCX）。上市後市值將一舉超越 Amazon 等科技巨頭，進入美股前十大。報告涵蓋 SpaceX 戰略定位、財務預測、產業競爭格局與投資風險分析。'
   }
 ];
 
