@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技術分析圖表</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #1e1e2e;
+      color: #cdd6f4;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 32px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+      color: #cba6f7;
+    }
+    .subtitle {
+      color: #6c7086;
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #313244;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.15s, box-shadow 0.15s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      color: #89b4fa;
+      margin-bottom: 8px;
+    }
+    .card .meta {
+      font-size: 0.8rem;
+      color: #6c7086;
+      margin-bottom: 6px;
+    }
+    .card .desc {
+      font-size: 0.85rem;
+      color: #bac2de;
+      line-height: 1.5;
+    }
+    .card .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .tag-us { background: #1e66f5; color: #fff; }
+    .tag-tw { background: #e6a50a; color: #000; }
+    .tag-baseline { background: #585b70; color: #cdd6f4; }
+    .tag-primary { background: #a6e3a1; color: #1e1e2e; }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 技術分析圖表</h1>
+  <p class="subtitle">5 張美股 / 權值股回測圖表</p>
+
+  <div class="grid">
+    <a href="ma-cross-with_skill.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <iframe srcdoc="<!DOCTYPE html><html><body style='margin:0;background:#1e1e2e;display:flex;align-items:center;justify-content:center;height:400px;color:#6c7086;font-family:sans-serif;font-size:14px;'><p>📈 AAPL — MA5/MA20 交叉策略</p></body></html>"></iframe>
+        <div class="card-body">
+          <h2>AAPL · 均線交叉</h2>
+          <div class="meta">ma_cross 策略 (with skill)</div>
+          <div class="desc">5/20 日均線交叉回測，2022–2024，初始資金 $100,000</div>
+          <span class="tag tag-us">美股</span>
+          <span class="tag tag-primary">with skill</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="ma-cross-without_skill.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <iframe srcdoc="<!DOCTYPE html><html><body style='margin:0;background:#1e1e2e;display:flex;align-items:center;justify-content:center;height:400px;color:#6c7086;font-family:sans-serif;font-size:14px;'><p>📈 AAPL — MA5/MA20 (無 skill)</p></body></html>"></iframe>
+        <div class="card-body">
+          <h2>AAPL · 均線交叉 (baseline)</h2>
+          <div class="meta">ma_cross 策略 (without skill)</div>
+          <div class="desc">5/20 日均線交叉回測，無 skill 輔助，對照組</div>
+          <span class="tag tag-us">美股</span>
+          <span class="tag tag-baseline">baseline</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="rsi-0050-with_skill.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <iframe srcdoc="<!DOCTYPE html><html><body style='margin:0;background:#1e1e2e;display:flex;align-items:center;justify-content:center;height:400px;color:#6c7086;font-family:sans-serif;font-size:14px;'><p>📈 0050 — RSI 策略</p></body></html>"></iframe>
+        <div class="card-body">
+          <h2>0050 · RSI 指標策略</h2>
+          <div class="meta">rsi-0050 策略 (with skill)</div>
+          <div class="desc">RSI(14) 超買超賣訊號回測，0050 權值股</div>
+          <span class="tag tag-tw">權值股</span>
+          <span class="tag tag-primary">with skill</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="ema-custom-with_skill.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <iframe srcdoc="<!DOCTYPE html><html><body style='margin:0;background:#1e1e2e;display:flex;align-items:center;justify-content:center;height:400px;color:#6c7086;font-family:sans-serif;font-size:14px;'><p>📈 TSLA — EMA 10/30 穿越</p></body></html>"></iframe>
+        <div class="card-body">
+          <h2>TSLA · EMA 穿越</h2>
+          <div class="meta">ema-custom 策略 (with skill)</div>
+          <div class="desc">EMA(10/30) 穿越策略回測，2021–2024</div>
+          <span class="tag tag-us">美股</span>
+          <span class="tag tag-primary">with skill</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="ema-custom-without_skill.html" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <iframe srcdoc="<!DOCTYPE html><html><body style='margin:0;background:#1e1e2e;display:flex;align-items:center;justify-content:center;height:400px;color:#6c7086;font-family:sans-serif;font-size:14px;'><p>📈 TSLA — EMA 10/30 (無 skill)</p></body></html>"></iframe>
+        <div class="card-body">
+          <h2>TSLA · EMA 穿越 (baseline)</h2>
+          <div class="meta">ema-custom 策略 (without skill)</div>
+          <div class="desc">EMA(10/30) 穿越回測，無 skill 輔助對照組</div>
+          <span class="tag tag-us">美股</span>
+          <span class="tag tag-baseline">baseline</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
