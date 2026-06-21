@@ -1,6 +1,6 @@
 {
   "total": 83,
-  "updated": "2026-06-18 09:30:03",
+  "updated": "2026-06-21 09:30:03",
   "topics": [
     "AI/科技",
     "其他",
@@ -43,36 +43,7 @@
         "FD 在不確定時期可透過三渠道維持綠色投資"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-7790"
-    },
-    {
-      "title": "Assessing the effects of green innovation, renewable energy, and environmental policy stringency on ecological and material footprints in G7 economies",
-      "authors": "Omri, Feki & Chtourou",
-      "year": "2026",
-      "journal": "Discover Environment, 4, 239",
-      "doi": "10.1007/s44274-026-00768-3",
-      "date": "2026-06-16",
-      "tags": [
-        "CS-ARDL",
-        "EF",
-        "MF",
-        "EPS",
-        "G7"
-      ],
-      "topics": [
-        "潔淨能源",
-        "碳市場/碳交易",
-        "氣候風險/政策"
-      ],
-      "pdf": "uploads/Omri_G7_EF_MF_2026.pdf",
-      "notes": [
-        "G7 panel (1990-2020), CS-ARDL",
-        "GDP→EF↑ MF↑, EPS→EF↓, RE→EF↓",
-        "GI→MF↑（綠色技術資源密集問題）",
-        "首篇聯合分析EF+MF驅動因子於G7"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-16-6147"
+      "id": "upload-2026-06-16-9162"
     },
     {
       "title": "Sustainable energy transition toward a zero-carbon future in major Global South economies: Roles of green innovation, institutions, and geopolitical risk",
@@ -101,7 +72,7 @@
         "SDG-7 進展取決於技術能力+制度韌性"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-4608"
+      "id": "upload-2026-06-16-6648"
     },
     {
       "title": "The interplay of financial development, oil prices, and CO2 emissions in shaping renewable energy consumption in emerging nations: An evidence from panel quantile regression",
@@ -130,7 +101,36 @@
         "FDI→REC+, CO2→REC-(高分位)"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-3664"
+      "id": "upload-2026-06-16-5335"
+    },
+    {
+      "title": "Assessing the effects of green innovation, renewable energy, and environmental policy stringency on ecological and material footprints in G7 economies",
+      "authors": "Omri, Feki & Chtourou",
+      "year": "2026",
+      "journal": "Discover Environment, 4, 239",
+      "doi": "10.1007/s44274-026-00768-3",
+      "date": "2026-06-16",
+      "tags": [
+        "CS-ARDL",
+        "EF",
+        "MF",
+        "EPS",
+        "G7"
+      ],
+      "topics": [
+        "潔淨能源",
+        "碳市場/碳交易",
+        "氣候風險/政策"
+      ],
+      "pdf": "uploads/Omri_G7_EF_MF_2026.pdf",
+      "notes": [
+        "G7 panel (1990-2020), CS-ARDL",
+        "GDP→EF↑ MF↑, EPS→EF↓, RE→EF↓",
+        "GI→MF↑（綠色技術資源密集問題）",
+        "首篇聯合分析EF+MF驅動因子於G7"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-16-4902"
     },
     {
       "title": "Spillover across varying Regional and Economic Realities: Evaluating the Hedging potential of Demographic Traits",
@@ -158,7 +158,7 @@
         "Peer Review 版本，DOI 暫為 xxxxx"
       ],
       "type": "upload",
-      "id": "upload-2026-06-12-4704"
+      "id": "upload-2026-06-12-8448"
     },
     {
       "id": "2026-06-10-9",
@@ -1640,50 +1640,51 @@
       "notes": []
     },
     {
-      "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
-      "authors": "Huang, Liu & Yu",
+      "title": "Climate Policy Uncertainty and Load Capacity Factor in China",
+      "authors": "Özbek, Şahin & Bayar",
       "year": "2026",
-      "journal": "Systems (MDPI), 14, 559",
-      "doi": "10.3390/systems14050559",
+      "journal": "Discover Sustainability (Springer)",
+      "doi": "10.1007/s43621-026-03409-0",
       "date": "2026-06-05",
-      "tags": [],
+      "tags": [
+        "QARDL"
+      ],
       "topics": [
-        "碳市場/碳交易",
+        "氣候風險/政策",
         "綠債/ESG"
       ],
-      "pdf": "uploads/China_CETS_ESG_Construction.pdf",
+      "pdf": "uploads/China_CPU_Load_Capacity_Factor.pdf",
       "notes": [
-        "方法：PSM-DID（傾向得分匹配+雙重差分）",
-        "CETS 使營造企業 ESG 分數提高約 0.30 分",
-        "綠色技術創新中介效果 5.9%（部分中介）",
-        "政府補貼正向調節政策效果",
-        "異質性：僅國有企業與東部地區顯著"
+        "核心發現：金融發展×CPU 交互項係數顯著為正",
+        "FD 在高 CPU 時期扮演緩衝機制（綠色融資、風險分擔）",
+        "使用 FMOLS（主估計）+ DOLS（穩健性）",
+        "A-ARDL 共整合檢定 + Fourier KPSS 結構斷點單根檢定"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-8684"
+      "id": "upload-2026-06-05-898"
     },
     {
-      "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
-      "authors": "Ben Salah, Arouri, Klibi & Smaoui",
+      "title": "Climate Policy Uncertainty and Renewable Energy Consumption in China",
+      "authors": "Zheng, Wang, Moldovan, Mihit & Nicolescu",
       "year": "2026",
-      "journal": "Sustainability (MDPI), 18, 5196",
-      "doi": "10.3390/su18105196",
+      "journal": "Sustainability (MDPI), 18, 5460",
+      "doi": "10.3390/su18115460",
       "date": "2026-06-05",
-      "tags": [],
-      "topics": [
-        "碳市場/碳交易",
-        "能源市場",
-        "宏觀總體"
+      "tags": [
+        "QARDL"
       ],
-      "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
+      "topics": [
+        "氣候風險/政策",
+        "潔淨能源"
+      ],
+      "pdf": "uploads/China_CPU_Renewable_Energy.pdf",
       "notes": [
-        "使用 STIRPAT + 固定效果 panel 模型",
-        "EKC 假說在海灣六國成立",
-        "能源消費是 CO₂ 排放最大驅動因子",
-        "建議 GCC 國家加速再生能源轉型"
+        "CPU→REC 有 Granger 因果（雙向時變不對稱）",
+        "使用滾窗 Granger 因果檢定 + 雙向因果分析",
+        "控制 EPU（經濟政策不確定性）、原油價格"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-8116"
+      "id": "upload-2026-06-05-4954"
     },
     {
       "title": "Toward Carbon Neutrality in Vietnam: Analyzing the Role of Renewable Energy Consumption and Economic Growth Using Wavelet Coherence and Quantile-on-Quantile Approaches",
@@ -1707,31 +1708,30 @@
         "GDP 成長在不同分量下對 CO₂ 效果不一致"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-8032"
+      "id": "upload-2026-06-05-4030"
     },
     {
-      "title": "Climate Policy Uncertainty and Load Capacity Factor in China",
-      "authors": "Özbek, Şahin & Bayar",
+      "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
+      "authors": "Ben Salah, Arouri, Klibi & Smaoui",
       "year": "2026",
-      "journal": "Discover Sustainability (Springer)",
-      "doi": "10.1007/s43621-026-03409-0",
+      "journal": "Sustainability (MDPI), 18, 5196",
+      "doi": "10.3390/su18105196",
       "date": "2026-06-05",
-      "tags": [
-        "QARDL"
-      ],
+      "tags": [],
       "topics": [
-        "氣候風險/政策",
-        "綠債/ESG"
+        "碳市場/碳交易",
+        "能源市場",
+        "宏觀總體"
       ],
-      "pdf": "uploads/China_CPU_Load_Capacity_Factor.pdf",
+      "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
       "notes": [
-        "核心發現：金融發展×CPU 交互項係數顯著為正",
-        "FD 在高 CPU 時期扮演緩衝機制（綠色融資、風險分擔）",
-        "使用 FMOLS（主估計）+ DOLS（穩健性）",
-        "A-ARDL 共整合檢定 + Fourier KPSS 結構斷點單根檢定"
+        "使用 STIRPAT + 固定效果 panel 模型",
+        "EKC 假說在海灣六國成立",
+        "能源消費是 CO₂ 排放最大驅動因子",
+        "建議 GCC 國家加速再生能源轉型"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-6906"
+      "id": "upload-2026-06-05-1832"
     },
     {
       "title": "jQIRF / jQFEVD — 聯合分量脈衝響應函數 & 聯合分量預測誤差變異數分解（方法論文）",
@@ -1754,30 +1754,30 @@
         "延伸應用於中國航空股波動（Transport Research 2024）"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-4329"
+      "id": "upload-2026-06-05-143"
     },
     {
-      "title": "Climate Policy Uncertainty and Renewable Energy Consumption in China",
-      "authors": "Zheng, Wang, Moldovan, Mihit & Nicolescu",
+      "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
+      "authors": "Huang, Liu & Yu",
       "year": "2026",
-      "journal": "Sustainability (MDPI), 18, 5460",
-      "doi": "10.3390/su18115460",
+      "journal": "Systems (MDPI), 14, 559",
+      "doi": "10.3390/systems14050559",
       "date": "2026-06-05",
-      "tags": [
-        "QARDL"
-      ],
+      "tags": [],
       "topics": [
-        "氣候風險/政策",
-        "潔淨能源"
+        "碳市場/碳交易",
+        "綠債/ESG"
       ],
-      "pdf": "uploads/China_CPU_Renewable_Energy.pdf",
+      "pdf": "uploads/China_CETS_ESG_Construction.pdf",
       "notes": [
-        "CPU→REC 有 Granger 因果（雙向時變不對稱）",
-        "使用滾窗 Granger 因果檢定 + 雙向因果分析",
-        "控制 EPU（經濟政策不確定性）、原油價格"
+        "方法：PSM-DID（傾向得分匹配+雙重差分）",
+        "CETS 使營造企業 ESG 分數提高約 0.30 分",
+        "綠色技術創新中介效果 5.9%（部分中介）",
+        "政府補貼正向調節政策效果",
+        "異質性：僅國有企業與東部地區顯著"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-4018"
+      "id": "upload-2026-06-05-1167"
     },
     {
       "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
@@ -1799,7 +1799,7 @@
         "制度品質調節 EKC 形狀和轉折點"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-1260"
+      "id": "upload-2026-06-05-1113"
     }
   ]
 }
