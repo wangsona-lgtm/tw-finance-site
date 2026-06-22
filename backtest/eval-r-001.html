@@ -613,6 +613,20 @@
           </div>
         </div>
       </div>
+<<<<<<< Updated upstream
+=======
+
+      <!-- Grades (collapsible) -->
+      <div class="section" id="grades-section" style="display:none;">
+        <div class="section-header" style="padding-top: 1.5rem;">
+          <div class="grades-toggle" onclick="toggleGrades()">
+            <span class="arrow" id="grades-arrow">&#9654;</span>
+            Formal Grades
+          </div>
+        </div>
+        <div class="grades-content" id="grades-content"></div>
+      </div>
+>>>>>>> Stashed changes
     </div>
 
     <div class="nav" id="outputs-nav">
@@ -793,9 +807,18 @@
         content.className = "output-file-content";
 
         if (file.type === "text") {
-          const pre = document.createElement("pre");
-          pre.textContent = file.content;
-          content.appendChild(pre);
+          const trimmed = file.content.trimStart();
+          if (trimmed.startsWith('<!') || trimmed.startsWith('<html')) {
+            // Full HTML document — render in iframe so charts/scripts execute
+            const iframe = document.createElement("iframe");
+            iframe.srcdoc = file.content;
+            iframe.style.cssText = "width:100%; height:920px; border:none;";
+            content.appendChild(iframe);
+          } else {
+            const pre = document.createElement("pre");
+            pre.textContent = file.content;
+            content.appendChild(pre);
+          }
         } else if (file.type === "image") {
           const img = document.createElement("img");
           img.src = file.data_uri;
@@ -953,9 +976,18 @@
         fc.className = "output-file-content";
 
         if (file.type === "text") {
-          const pre = document.createElement("pre");
-          pre.textContent = file.content;
-          fc.appendChild(pre);
+          const trimmed = file.content.trimStart();
+          if (trimmed.startsWith('<!') || trimmed.startsWith('<html')) {
+            // Full HTML document — render in iframe so charts/scripts execute
+            const iframe = document.createElement("iframe");
+            iframe.srcdoc = file.content;
+            iframe.style.cssText = "width:100%; height:920px; border:none;";
+            fc.appendChild(iframe);
+          } else {
+            const pre = document.createElement("pre");
+            pre.textContent = file.content;
+            fc.appendChild(pre);
+          }
         } else if (file.type === "image") {
           const img = document.createElement("img");
           img.src = file.data_uri;
