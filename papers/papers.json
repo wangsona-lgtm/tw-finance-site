@@ -1,6 +1,6 @@
 {
   "total": 83,
-  "updated": "2026-06-21 09:30:03",
+  "updated": "2026-06-22 09:32:33",
   "topics": [
     "AI/科技",
     "其他",
@@ -17,63 +17,6 @@
     "金融市場"
   ],
   "papers": [
-    {
-      "title": "The nexus between climate policy uncertainty and load capacity factor in China with the moderating role of financial development",
-      "authors": "Özbek, Şahin & Bayar",
-      "year": "2026",
-      "journal": "Discover Sustainability",
-      "doi": "10.1007/s43621-026-03409-0",
-      "date": "2026-06-16",
-      "tags": [
-        "A-ARDL",
-        "FMOLS",
-        "DOLS",
-        "LCF",
-        "CPU"
-      ],
-      "topics": [
-        "氣候風險/政策",
-        "碳市場/碳交易"
-      ],
-      "pdf": "uploads/CPU_LCF_China_Ozbek_2026.pdf",
-      "notes": [
-        "A-ARDL + FMOLS + DOLS 三種方法互補驗證",
-        "1990-2021, 中國",
-        "FD 和 CPU 各自降低環境品質，但交互項 FD×CPU 改善環境品質",
-        "FD 在不確定時期可透過三渠道維持綠色投資"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-16-9162"
-    },
-    {
-      "title": "Sustainable energy transition toward a zero-carbon future in major Global South economies: Roles of green innovation, institutions, and geopolitical risk",
-      "authors": "Caglar, Naimoglu & Demirdag",
-      "year": "2026",
-      "journal": "Energy for Sustainable Development, 93, 102050",
-      "doi": "10.1016/j.esd.2026.102050",
-      "date": "2026-06-16",
-      "tags": [
-        "panel",
-        "SDG-7",
-        "GRI",
-        "GEO",
-        "Porter Hypothesis"
-      ],
-      "topics": [
-        "潔淨能源",
-        "氣候風險/政策",
-        "宏觀總體"
-      ],
-      "pdf": "uploads/Caglar_GlobalSouth_ENT_2026.pdf",
-      "notes": [
-        "Panel: Brazil, China, India, Indonesia, Thailand (2002-2023)",
-        "Porter Hypothesis(強版本)延伸—地緣穩定為創新驅動環境轉型之前提",
-        "GRI→ENT正向, RQ強化此過程, GEO抑制",
-        "SDG-7 進展取決於技術能力+制度韌性"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-16-6648"
-    },
     {
       "title": "The interplay of financial development, oil prices, and CO2 emissions in shaping renewable energy consumption in emerging nations: An evidence from panel quantile regression",
       "authors": "Arsh, Liaqat, Batool & Khan",
@@ -101,7 +44,7 @@
         "FDI→REC+, CO2→REC-(高分位)"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-5335"
+      "id": "upload-2026-06-16-910"
     },
     {
       "title": "Assessing the effects of green innovation, renewable energy, and environmental policy stringency on ecological and material footprints in G7 economies",
@@ -130,7 +73,64 @@
         "首篇聯合分析EF+MF驅動因子於G7"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-4902"
+      "id": "upload-2026-06-16-5889"
+    },
+    {
+      "title": "The nexus between climate policy uncertainty and load capacity factor in China with the moderating role of financial development",
+      "authors": "Özbek, Şahin & Bayar",
+      "year": "2026",
+      "journal": "Discover Sustainability",
+      "doi": "10.1007/s43621-026-03409-0",
+      "date": "2026-06-16",
+      "tags": [
+        "A-ARDL",
+        "FMOLS",
+        "DOLS",
+        "LCF",
+        "CPU"
+      ],
+      "topics": [
+        "氣候風險/政策",
+        "碳市場/碳交易"
+      ],
+      "pdf": "uploads/CPU_LCF_China_Ozbek_2026.pdf",
+      "notes": [
+        "A-ARDL + FMOLS + DOLS 三種方法互補驗證",
+        "1990-2021, 中國",
+        "FD 和 CPU 各自降低環境品質，但交互項 FD×CPU 改善環境品質",
+        "FD 在不確定時期可透過三渠道維持綠色投資"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-16-4904"
+    },
+    {
+      "title": "Sustainable energy transition toward a zero-carbon future in major Global South economies: Roles of green innovation, institutions, and geopolitical risk",
+      "authors": "Caglar, Naimoglu & Demirdag",
+      "year": "2026",
+      "journal": "Energy for Sustainable Development, 93, 102050",
+      "doi": "10.1016/j.esd.2026.102050",
+      "date": "2026-06-16",
+      "tags": [
+        "panel",
+        "SDG-7",
+        "GRI",
+        "GEO",
+        "Porter Hypothesis"
+      ],
+      "topics": [
+        "潔淨能源",
+        "氣候風險/政策",
+        "宏觀總體"
+      ],
+      "pdf": "uploads/Caglar_GlobalSouth_ENT_2026.pdf",
+      "notes": [
+        "Panel: Brazil, China, India, Indonesia, Thailand (2002-2023)",
+        "Porter Hypothesis(強版本)延伸—地緣穩定為創新驅動環境轉型之前提",
+        "GRI→ENT正向, RQ強化此過程, GEO抑制",
+        "SDG-7 進展取決於技術能力+制度韌性"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-16-1556"
     },
     {
       "title": "Spillover across varying Regional and Economic Realities: Evaluating the Hedging potential of Demographic Traits",
@@ -158,7 +158,7 @@
         "Peer Review 版本，DOI 暫為 xxxxx"
       ],
       "type": "upload",
-      "id": "upload-2026-06-12-8448"
+      "id": "upload-2026-06-12-6015"
     },
     {
       "id": "2026-06-10-9",
@@ -1640,28 +1640,27 @@
       "notes": []
     },
     {
-      "title": "Climate Policy Uncertainty and Load Capacity Factor in China",
-      "authors": "Özbek, Şahin & Bayar",
-      "year": "2026",
-      "journal": "Discover Sustainability (Springer)",
-      "doi": "10.1007/s43621-026-03409-0",
+      "title": "jQIRF / jQFEVD — 聯合分量脈衝響應函數 & 聯合分量預測誤差變異數分解（方法論文）",
+      "authors": "Thomas F. P. Wiesen, Paul M. Beaumont",
+      "year": "2023",
+      "journal": "Empirical Economics",
+      "doi": "10.1007/s00181-023-02496-6",
       "date": "2026-06-05",
       "tags": [
-        "QARDL"
+        "jQIRF",
+        "jQFEVD"
       ],
       "topics": [
-        "氣候風險/政策",
-        "綠債/ESG"
+        "方法論"
       ],
-      "pdf": "uploads/China_CPU_Load_Capacity_Factor.pdf",
+      "pdf": "",
       "notes": [
-        "核心發現：金融發展×CPU 交互項係數顯著為正",
-        "FD 在高 CPU 時期扮演緩衝機制（綠色融資、風險分擔）",
-        "使用 FMOLS（主估計）+ DOLS（穩健性）",
-        "A-ARDL 共整合檢定 + Fourier KPSS 結構斷點單根檢定"
+        "jIRF：所有變數同時受相關衝擊的聯合反應路徑",
+        "jFEVD：所有變數同時衝擊對預測誤差的聯合貢獻",
+        "延伸應用於中國航空股波動（Transport Research 2024）"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-898"
+      "id": "upload-2026-06-05-6506"
     },
     {
       "title": "Climate Policy Uncertainty and Renewable Energy Consumption in China",
@@ -1684,7 +1683,76 @@
         "控制 EPU（經濟政策不確定性）、原油價格"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-4954"
+      "id": "upload-2026-06-05-5069"
+    },
+    {
+      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
+      "authors": "Sumba",
+      "year": "2026",
+      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
+      "doi": "10.1016/j.iref.2026.105445",
+      "date": "2026-06-05",
+      "tags": [],
+      "topics": [
+        "潔淨能源",
+        "宏觀總體"
+      ],
+      "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
+      "notes": [
+        "動態面板門檻模型 (DPT)+ 工具變數",
+        "EKC 假說在發展中國家成立",
+        "再生能源可加速 EKC 轉折",
+        "制度品質調節 EKC 形狀和轉折點"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-05-4144"
+    },
+    {
+      "title": "Climate Policy Uncertainty and Load Capacity Factor in China",
+      "authors": "Özbek, Şahin & Bayar",
+      "year": "2026",
+      "journal": "Discover Sustainability (Springer)",
+      "doi": "10.1007/s43621-026-03409-0",
+      "date": "2026-06-05",
+      "tags": [
+        "QARDL"
+      ],
+      "topics": [
+        "氣候風險/政策",
+        "綠債/ESG"
+      ],
+      "pdf": "uploads/China_CPU_Load_Capacity_Factor.pdf",
+      "notes": [
+        "核心發現：金融發展×CPU 交互項係數顯著為正",
+        "FD 在高 CPU 時期扮演緩衝機制（綠色融資、風險分擔）",
+        "使用 FMOLS（主估計）+ DOLS（穩健性）",
+        "A-ARDL 共整合檢定 + Fourier KPSS 結構斷點單根檢定"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-05-3179"
+    },
+    {
+      "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
+      "authors": "Ben Salah, Arouri, Klibi & Smaoui",
+      "year": "2026",
+      "journal": "Sustainability (MDPI), 18, 5196",
+      "doi": "10.3390/su18105196",
+      "date": "2026-06-05",
+      "tags": [],
+      "topics": [
+        "碳市場/碳交易",
+        "能源市場",
+        "宏觀總體"
+      ],
+      "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
+      "notes": [
+        "使用 STIRPAT + 固定效果 panel 模型",
+        "EKC 假說在海灣六國成立",
+        "能源消費是 CO₂ 排放最大驅動因子",
+        "建議 GCC 國家加速再生能源轉型"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-05-2153"
     },
     {
       "title": "Toward Carbon Neutrality in Vietnam: Analyzing the Role of Renewable Energy Consumption and Economic Growth Using Wavelet Coherence and Quantile-on-Quantile Approaches",
@@ -1708,53 +1776,7 @@
         "GDP 成長在不同分量下對 CO₂ 效果不一致"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-4030"
-    },
-    {
-      "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
-      "authors": "Ben Salah, Arouri, Klibi & Smaoui",
-      "year": "2026",
-      "journal": "Sustainability (MDPI), 18, 5196",
-      "doi": "10.3390/su18105196",
-      "date": "2026-06-05",
-      "tags": [],
-      "topics": [
-        "碳市場/碳交易",
-        "能源市場",
-        "宏觀總體"
-      ],
-      "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
-      "notes": [
-        "使用 STIRPAT + 固定效果 panel 模型",
-        "EKC 假說在海灣六國成立",
-        "能源消費是 CO₂ 排放最大驅動因子",
-        "建議 GCC 國家加速再生能源轉型"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-05-1832"
-    },
-    {
-      "title": "jQIRF / jQFEVD — 聯合分量脈衝響應函數 & 聯合分量預測誤差變異數分解（方法論文）",
-      "authors": "Thomas F. P. Wiesen, Paul M. Beaumont",
-      "year": "2023",
-      "journal": "Empirical Economics",
-      "doi": "10.1007/s00181-023-02496-6",
-      "date": "2026-06-05",
-      "tags": [
-        "jQIRF",
-        "jQFEVD"
-      ],
-      "topics": [
-        "方法論"
-      ],
-      "pdf": "",
-      "notes": [
-        "jIRF：所有變數同時受相關衝擊的聯合反應路徑",
-        "jFEVD：所有變數同時衝擊對預測誤差的聯合貢獻",
-        "延伸應用於中國航空股波動（Transport Research 2024）"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-05-143"
+      "id": "upload-2026-06-05-1891"
     },
     {
       "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
@@ -1777,29 +1799,7 @@
         "異質性：僅國有企業與東部地區顯著"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-1167"
-    },
-    {
-      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
-      "authors": "Sumba",
-      "year": "2026",
-      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
-      "doi": "10.1016/j.iref.2026.105445",
-      "date": "2026-06-05",
-      "tags": [],
-      "topics": [
-        "潔淨能源",
-        "宏觀總體"
-      ],
-      "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
-      "notes": [
-        "動態面板門檻模型 (DPT)+ 工具變數",
-        "EKC 假說在發展中國家成立",
-        "再生能源可加速 EKC 轉折",
-        "制度品質調節 EKC 形狀和轉折點"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-05-1113"
+      "id": "upload-2026-06-05-1754"
     }
   ]
 }
