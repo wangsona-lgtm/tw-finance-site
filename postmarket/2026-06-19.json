@@ -1,0 +1,131 @@
+{
+  "date": "2026-06-19",
+  "weekday": "週五",
+  "generatedAt": "2026-06-19T06:05:30+08:00",
+  "fedWatch": {
+    "date": "2026-06-18",
+    "source": "Fed Watch cron @ 2026-06-18 06:20 UTC",
+    "summary": "FOMC 6月維持利率不變 3.50-3.75%，點陣圖大幅上修 PCE 至 3.6%、利率中位數至 3.8%，暗示年內還需升息一碼。Warsh 首秀鷹派，廢除前瞻指引。",
+    "treasury": {
+      "twoYear": 4.229,
+      "tenYear": 4.463,
+      "thirtyYear": 4.926,
+      "spread2y10y": 23.4,
+      "spreadNote": "正常（無倒掛），曲線陡化",
+      "change2yr": "+1.6bp",
+      "change10yr": "-2.4bp",
+      "change30yr": "-4.9bp"
+    },
+    "dxy": {
+      "close": 100.39,
+      "change": 0.85,
+      "changePercent": 0.85,
+      "direction": "up"
+    },
+    "vix": {
+      "close": 18.44,
+      "change": 2.03,
+      "changePercent": 12.37,
+      "direction": "up",
+      "note": "避險情緒升溫，飆破18關卡"
+    },
+    "fomc": {
+      "lastMeeting": "2026-06-16~17",
+      "decision": "維持利率不變 3.50% - 3.75%",
+      "vote": "12-0 全數通過",
+      "dotPlot2026": 3.8,
+      "dotPlotLongRun": 3.1,
+      "pceForecast2026": 3.6,
+      "gdpForecast2026": 2.2,
+      "unemployment2026": 4.3,
+      "keyHawkish": "Warsh 首秀鷹派：廢除前瞻指引、刪除降息偏向措辭、宣布成立專案小組檢討政策框架",
+      "hikeProbabilityJul": 54.0,
+      "hikeProbabilityDec": 86.0
+    },
+    "officials": {
+      "warsh": {
+        "stance": "hawkish",
+        "voter": true
+      },
+      "williams": {
+        "stance": "neutral",
+        "voter": true
+      },
+      "barr": {
+        "stance": "dovish",
+        "voter": true
+      },
+      "bowman": {
+        "stance": "hawkish",
+        "voter": true
+      },
+      "cook": {
+        "stance": "dovish",
+        "voter": true
+      },
+      "jefferson": {
+        "stance": "neutral",
+        "voter": true
+      },
+      "waller": {
+        "stance": "hawkish",
+        "voter": true
+      },
+      "kugler": {
+        "stance": "dovish",
+        "voter": true
+      },
+      "hammack": {
+        "stance": "neutral",
+        "voter": true
+      },
+      "harker": {
+        "stance": "dovish",
+        "voter": true
+      },
+      "kashkari": {
+        "stance": "dovish",
+        "voter": true
+      },
+      "logan": {
+        "stance": "hawkish",
+        "voter": true
+      }
+    },
+    "economicCalendar": {
+      "upcoming": [
+        {
+          "date": "2026-06-19",
+          "event": "初領失業金 (6/13當週)",
+          "importance": 3
+        },
+        {
+          "date": "2026-06-22",
+          "event": "5月成屋銷售",
+          "importance": 2
+        },
+        {
+          "date": "2026-06-24",
+          "event": "6月消費者信心",
+          "importance": 3
+        },
+        {
+          "date": "2026-06-25",
+          "event": "Q1 GDP 終值",
+          "importance": 3
+        },
+        {
+          "date": "2026-06-26",
+          "event": "5月核心 PCE YoY",
+          "importance": 5
+        },
+        {
+          "date": "2026-06-27",
+          "event": "6月密大消費者信心終值",
+          "importance": 2
+        }
+      ]
+    },
+    "keyTakeaway": "Hold, Hawkish, Higher for Longer. CPI 4.2% + PCE上修至3.6% → 通膨黏著。Warsh 時代開啓：模糊溝通、行動導向。未來30天關鍵：6/26核心PCE、7月FOMC升息機率54%。"
+  }
+}

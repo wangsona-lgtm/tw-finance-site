@@ -1,0 +1,253 @@
+{
+  "date": "2026-06-23",
+  "weekday": "週二",
+  "generatedAt": "2026-06-23T16:05:00+08:00",
+  "indices": {
+    "taiex": {
+      "close": 47100.65,
+      "change": -640.86,
+      "changePercent": -1.34,
+      "direction": "down",
+      "volume_shares": 16649496405,
+      "volume_value": 1662638095720,
+      "transactions": 8354294,
+      "note": "開高走低收最低，昨大漲+1276後今日獲利了結賣壓沉重"
+    },
+    "otc": {
+      "close": 440.81,
+      "changePercent": -2.9,
+      "direction": "down",
+      "note": "櫃買指數重挫約-2.9%，中小型股賣壓最重"
+    }
+  },
+  "stocks": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "close": 2490.0,
+      "change": -20.0,
+      "changePercent": -0.8,
+      "volume": 37001895,
+      "direction": "down",
+      "note": "抗跌僅小跌-0.8%，外資調節力道有限"
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "close": 4535.0,
+      "change": 70.0,
+      "changePercent": 1.56,
+      "volume": 18137972,
+      "direction": "up",
+      "note": "逆勢強漲+1.56%，撐住指數跌幅"
+    },
+    {
+      "symbol": "2317",
+      "name": "鴻海",
+      "close": 259.5,
+      "change": -9.0,
+      "changePercent": -3.35,
+      "volume": 91600800,
+      "direction": "down",
+      "note": "重挫-3.35%最弱勢權值股"
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "close": 2080.0,
+      "change": -70.0,
+      "changePercent": -3.26,
+      "volume": 14779242,
+      "direction": "down"
+    },
+    {
+      "symbol": "2382",
+      "name": "廣達",
+      "close": 372.5,
+      "change": -7.5,
+      "changePercent": -1.97,
+      "volume": 16362886,
+      "direction": "down"
+    },
+    {
+      "symbol": "2603",
+      "name": "長榮",
+      "close": 189.0,
+      "change": -4.0,
+      "changePercent": -2.07,
+      "volume": 21854642,
+      "direction": "down"
+    },
+    {
+      "symbol": "2002",
+      "name": "中鋼",
+      "close": 19.2,
+      "change": -0.3,
+      "changePercent": -1.54,
+      "volume": 87164256,
+      "direction": "down"
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞",
+      "close": 154.5,
+      "change": 2.0,
+      "changePercent": 1.31,
+      "volume": 222203812,
+      "direction": "up",
+      "note": "油價大跌帶動石化成本下降預期"
+    },
+    {
+      "symbol": "2303",
+      "name": "聯電",
+      "close": 170.0,
+      "change": 10.0,
+      "changePercent": 6.25,
+      "volume": 550642760,
+      "direction": "up",
+      "note": "昨日漲停後延續動能，成交量55億股"
+    },
+    {
+      "symbol": "2882",
+      "name": "國泰金",
+      "close": 113.5,
+      "change": 0.5,
+      "changePercent": 0.44,
+      "volume": 29407198,
+      "direction": "up"
+    },
+    {
+      "symbol": "2886",
+      "name": "兆豐金",
+      "close": 45.2,
+      "change": 0.45,
+      "changePercent": 1.01,
+      "volume": 47309566,
+      "direction": "up"
+    }
+  ],
+  "sectors": {
+    "strong": [
+      {
+        "name": "IC設計/半導體",
+        "changePercent": 1.5,
+        "note": "聯發科+1.56%，聯電+6.25%，台積電抗跌"
+      },
+      {
+        "name": "金融(部分)",
+        "changePercent": 0.5,
+        "note": "國泰金+0.44%，兆豐金+1.01%，金融逆勢撐盤"
+      }
+    ],
+    "weak": [
+      {
+        "name": "EMS代工",
+        "changePercent": -3.2,
+        "note": "鴻海-3.35%，廣達-1.97%"
+      },
+      {
+        "name": "光電/面板",
+        "changePercent": -4.5,
+        "note": "友達-6.14%，群創同步走弱"
+      },
+      {
+        "name": "鋼鐵/傳產",
+        "changePercent": -1.5,
+        "note": "中鋼-1.54%，台塑化下跌"
+      },
+      {
+        "name": "OTC中小型股",
+        "changePercent": -2.9,
+        "note": "櫃買指數重挫近3%"
+      }
+    ]
+  },
+  "volume": {
+    "totalShares": 16649496405,
+    "totalValue": 1662638095720,
+    "changeVsYesterday": 9.6,
+    "note": "成交值16,626億，較昨日(15,158億)增9.6%，量大下跌"
+  },
+  "fx": {
+    "usdtwd": 31.631,
+    "previousClose": 31.588,
+    "change": 0.043,
+    "changePercent": 0.14,
+    "note": "台幣微幅貶值，最新央行數據為6/22"
+  },
+  "positions": {
+    "institutions": {
+      "summary": "三大法人合計賣超 483.6 億，外資大賣 385.9 億，投信獨力買超 72.2 億",
+      "date": "2026-06-23",
+      "data": [
+        {
+          "name": "外資及陸資(不含自營)",
+          "buy": 590443430438,
+          "sell": 629035783079,
+          "net": -38592352641,
+          "direction": "sell"
+        },
+        {
+          "name": "投信",
+          "buy": 62802564362,
+          "sell": 55585671951,
+          "net": 7216892411,
+          "direction": "buy"
+        },
+        {
+          "name": "自營商(自行買賣)",
+          "buy": 8793363407,
+          "sell": 11432867252,
+          "net": -2639503845,
+          "direction": "sell"
+        },
+        {
+          "name": "自營商(避險)",
+          "buy": 49541524694,
+          "sell": 63886172073,
+          "net": -14344647379,
+          "direction": "sell"
+        }
+      ],
+      "total": {
+        "buy": 711580882901,
+        "sell": 759940494355,
+        "net": -48359611454,
+        "direction": "sell"
+      },
+      "note": "資料來源：TWSE 證交所三大法人買賣金額統計表(115/06/23)"
+    },
+    "futures": {
+      "date": "2026-06-22",
+      "note": "期交所數據公布有延遲，以下為6/22(昨日)留倉數據",
+      "summary": "外資TX淨空單續增至68,337口以上(期貨總OI淨-569,638口)，選擇權P/C量127.75%/OI 147.65%，綜合判斷偏空",
+      "institutions_total": {
+        "selfOperated_net": -352130,
+        "trust_net": 67223,
+        "foreign_net": -569638,
+        "total_net": -854545,
+        "unit": "口"
+      },
+      "putCallRatio": {
+        "date": "2026-06-22",
+        "putCallVolumeRatio": 127.75,
+        "putCallOIRatio": 147.65,
+        "note": "成交量比127.75%，未平倉比147.65%，PUT雙雙高於CALL，偏空解讀"
+      },
+      "overall_assessment": {
+        "foreign_futures_direction": "bearish",
+        "pc_ratio_direction": "bearish",
+        "composite_direction": "bearish",
+        "composite_note": "期貨空單擴大+P/C Ratio雙雙>120%，法人嚴守避險，對漲勢持續性存疑"
+      }
+    }
+  },
+  "sections": {
+    "盤後籌碼": {
+      "generatedAt": "2026-06-23T16:05:00+08:00",
+      "source": "TWSE證交所BFI82U/三大法人買賣超統計表",
+      "summary": "📊 **【16:00 盤後籌碼速報】**\n\n**📈 大盤統計(6/23 週二)**\n- 加權指數：收 **47,100.65**，跌 **-640.86點(-1.34%)**\n- 成交值：**1,662,638,095,720元**(約16,626億) | 成交股數：16,649,496,405股 | 成交筆數：8,354,294筆\n- 開盤47,795→最高48,218→收最低47,100，**開高走低收最低**\n\n**💰 三大法人買賣超 (6/23)**\n- **外資**：🔴 賣超 **385.9億**（買5,904億/賣6,290億）← 主要賣壓來源\n- **投信**：🟢 買超 **72.2億**（買628億/賣556億）← 唯一偏多法人\n- **自營商(自行)**：🔴 賣超 **26.4億**\n- **自營商(避險)**：🔴 賣超 **143.4億**\n- **三大法人合計**：🔴 **賣超 483.6億**\n\n**📋 核心權值股表現**\n📌 **台積電(2330)**：2,490(-0.80%) — 抗跌，外資調節有限\n📌 **聯發科(2454)**：4,535(+1.56%) — 逆勢上漲，IC設計強勢\n📌 **鴻海(2317)**：259.5(-3.35%) — 最弱勢權值，EMS遭調節\n📌 **台達電(2308)**：2,080(-3.26%) — 同步走弱\n📌 **聯電(2303)**：170.0(+6.25%) — 漲停後延續，量55億股\n📌 **南亞(1303)**：154.5(+1.31%) — 油價跌76→74石化成本降\n\n**🔮 期貨籌碼(6/22最新)**\n- 外資期貨總OI淨空單：**-569,638口**（昨-541,761口，擴大）\n- P/C Ratio量：**127.75%** | OI：**147.65%**（PUT雙雙高於CALL）\n- 三大法人期貨淨額總計：**-854,545口**\n- 綜合判斷：🔴 **偏空** — 外資期貨避險擴大，PUT顯著大於CALL\n\n**📌 盤勢解讀**\n台股昨日大漲1,276點後，今日開高走低收最低(-640點)，外資大賣386億是主要賣壓。\n金融股逆勢上漲(國泰金+0.44%、兆豐金+1.01%)，資金從電子轉入金融避險。\n期貨籌碼顯示外資空單持續擴大，選擇權PUT遠大於CALL，法人對後市偏保守。\n\n⏱ 更新時間：2026-06-23T16:05+08:00 | 資料來源：TWSE證交所BFI82U/TAIFEX"
+    }
+  },
+  "updatedAt": "2026-06-23T16:05:00+08:00"
+}

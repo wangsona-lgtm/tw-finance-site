@@ -1,0 +1,72 @@
+{
+  "source": "/home/nutc/.hermes/cron/output/05b7ef15112d/2026-06-20_12-14-02.md",
+  "reportDate": "2026-06-21",
+  "generatedAt": "2026-06-21T07:05:00+08:00",
+  "data": {
+    "lastTradingDay": "2026-06-18",
+    "marketHoliday": "Juneteenth (2026-06-19)",
+    "indices": {
+      "S&P 500": { "close": 7500.58, "daily": "+0.18%", "weekly": "-0.71%" },
+      "Dow Jones": { "close": 51564.70, "daily": "-0.01%", "weekly": "-0.21%" },
+      "NASDAQ": { "close": 26517.93, "daily": "+0.41%", "weekly": "-0.62%" },
+      "Russell 2000": { "close": 2979.77, "daily": "+0.92%", "weekly": "+0.50%" },
+      "Philadelphia Semiconductor": { "close": 14341.78, "daily": "+1.82%", "weekly": "+1.72%" }
+    },
+    "topTech": {
+      "NVDA": { "close": 210.69, "daily": "+1.62%", "weekly": "-0.83%" },
+      "AAPL": { "close": 298.01, "daily": "-0.03%", "weekly": "+0.54%" },
+      "MSFT": { "close": 379.40, "daily": "+0.42%", "weekly": "-5.09%" },
+      "AMZN": { "close": 244.39, "daily": "+1.78%", "weekly": "-0.66%" },
+      "GOOGL": { "close": 368.03, "daily": "+0.62%", "weekly": "-0.36%" },
+      "META": { "close": 577.22, "daily": "+0.77%", "weekly": "-2.74%" },
+      "TSLA": { "close": 400.49, "daily": "+0.60%", "weekly": "-2.59%" },
+      "TSM": { "close": 462.12, "daily": "+5.30%", "weekly": "+4.69%" },
+      "AMD": { "close": 537.37, "daily": "+1.09%", "weekly": "-1.81%" },
+      "AVGO": { "close": 411.35, "daily": "+0.43%", "weekly": "+4.42%" }
+    },
+    "sectorETFs": {
+      "SMH": { "sector": "半導體", "close": 659.88, "daily": "+1.75%", "weekly": "+1.97%", "rank": "strongest" },
+      "XLI": { "sector": "工業", "close": 180.91, "daily": "-0.87%", "weekly": "+1.25%" },
+      "XLU": { "sector": "公用事業", "close": 44.76, "daily": "+0.36%", "weekly": "+0.04%" },
+      "XLF": { "sector": "金融", "close": 53.57, "daily": "-1.80%", "weekly": "+0.02%" },
+      "XLK": { "sector": "科技", "close": 191.44, "daily": "+0.54%", "weekly": "-0.18%" },
+      "XLY": { "sector": "非必需消費", "close": 117.16, "daily": "+0.44%", "weekly": "-1.19%" },
+      "XLB": { "sector": "原材料", "close": 51.81, "daily": "-0.79%", "weekly": "-1.31%" },
+      "XLV": { "sector": "醫療保健", "close": 149.40, "daily": "-1.24%", "weekly": "-2.28%" },
+      "XLP": { "sector": "必需消費", "close": 83.30, "daily": "-0.64%", "weekly": "-2.55%" },
+      "XLE": { "sector": "能源", "close": 53.77, "daily": "-0.68%", "weekly": "-3.20%", "rank": "weakest" }
+    },
+    "macroCommodities": {
+      "美元指數": { "close": 100.85, "daily": "+0.51%", "weekly": "+1.22%" },
+      "黃金": { "close": 4224.10, "daily": "-1.30%", "weekly": "-2.40%" },
+      "原油": { "close": 76.60, "daily": "+1.42%", "weekly": "-5.14%" },
+      "比特幣": { "close": 62896, "daily": "-2.36%", "weekly": "-5.12%" },
+      "10年債殖利率": { "close": "4.49%", "note": "截至6/12" },
+      "VIX": { "close": 16.40, "daily": "-4.82%", "weekly": "+1.23%" }
+    },
+    "keyEvents": [
+      "FOMC 6月利率維持5.25-5.50%，點陣圖全年僅降息一次",
+      "中歐貿易戰升級 — 歐盟對中國電動車加徵最高38.1%關稅，中方反制白蘭地豬肉反傾銷",
+      "以色列空襲黎巴嫩南部真主黨，中東緊張延續",
+      "烏克蘭無人機襲擊俄羅斯油庫；歐盟第14輪制裁鎖定俄羅斯LNG",
+      "法國國會選舉極右翼聲勢看漲，歐元承壓",
+      "Apple Intelligence Siri/AI功能延至10-11月分階段推出",
+      "TSLA Gigafactory Mexico擱置，Q2交車預估下調至~47萬輛",
+      "Fed年度銀行壓力測試結果6/24盤後公布"
+    ],
+    "mondayOutlook": {
+      "futures": {
+        "ES=F": { "price": 7556.25, "change": "+0.64%" },
+        "NQ=F": { "price": 30647.00, "change": "+1.27%" }
+      },
+      "direction": "偏多 (科技領漲)",
+      "keyDates": [
+        { "date": "2026-06-22", "event": "無重大數據發布", "importance": "low" },
+        { "date": "2026-06-23", "event": "Fed理事Waller談話、5月新屋銷售", "importance": "medium" },
+        { "date": "2026-06-24", "event": "Fed銀行壓力測試結果盤後、5月耐久財訂單", "importance": "high" },
+        { "date": "2026-06-25", "event": "初領失業救濟金、Q1 GDP終值", "importance": "medium" },
+        { "date": "2026-06-26", "event": "5月核心PCE物價指數", "importance": "critical" }
+      ]
+    }
+  }
+}

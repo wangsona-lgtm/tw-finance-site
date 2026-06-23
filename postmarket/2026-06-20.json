@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-20",
+  "updatedAt": "2026-06-20T12:31:00+08:00",
+  "title": "美股週報 | 2026年6月15日–6月18日",
+  "note": "6/19 (五) Juneteenth 休市，最後交易日為 6/18 (四)",
+  "indices": {
+    "S&P 500": { "close": 7500.58, "daily": 0.18, "weekly": -0.71 },
+    "Dow": { "close": 51564.70, "daily": -0.01, "weekly": -0.21 },
+    "NASDAQ": { "close": 26517.93, "daily": 0.41, "weekly": -0.62 },
+    "Russell 2000": { "close": 2979.77, "daily": 0.92, "weekly": 0.50 },
+    "SOX": { "close": 14341.78, "daily": 1.82, "weekly": 1.72 }
+  },
+  "topStocks": {
+    "NVDA": { "close": 210.69, "weekly": -0.83 },
+    "AAPL": { "close": 298.01, "weekly": 0.54 },
+    "MSFT": { "close": 379.40, "weekly": -5.09 },
+    "AMZN": { "close": 244.39, "weekly": -0.66 },
+    "GOOGL": { "close": 368.03, "weekly": -0.36 },
+    "META": { "close": 577.22, "weekly": -2.74 },
+    "TSLA": { "close": 400.49, "weekly": -2.59 },
+    "TSM": { "close": 462.12, "weekly": 4.69 },
+    "AMD": { "close": 537.37, "weekly": -1.81 },
+    "AVGO": { "close": 411.35, "weekly": 4.42 }
+  },
+  "bestSector": { "etf": "SMH", "name": "半導體", "weekly": 1.97 },
+  "worstSector": { "etf": "XLE", "name": "能源", "weekly": -3.20 },
+  "macro": {
+    "dollar": { "close": 100.85, "weekly": 1.22 },
+    "gold": { "close": 4224.10, "weekly": -2.40 },
+    "oil": { "close": 76.60, "weekly": -5.14 },
+    "bitcoin": { "close": 62896, "weekly": -5.12 },
+    "vix": { "close": 16.40, "weekly": 1.23 }
+  },
+  "futures": {
+    "ES": { "last": 7556.25, "change_pct": 0.64, "direction": "bullish" },
+    "NQ": { "last": 30647.00, "change_pct": 1.27, "direction": "bullish" }
+  },
+  "keyEvents": [
+    "FOMC 維持利率 5.25-5.50%，全年僅降息一次",
+    "歐盟對中國電動車最高 38.1% 反補貼關稅，中國反制白蘭地/豬肉反傾銷",
+    "以色列空襲黎巴嫩真主黨設施",
+    "烏克蘭無人機襲擊俄油庫，歐盟第14輪制裁鎖定俄 LNG",
+    "Apple Intelligence Siri/AI 功能延後至 10-11 月",
+    "TSLA Q2 交車預估下調至 ~47 萬輛"
+  ],
+  "mondayOutlook": "bullish",
+  "weekFocus": [
+    "週三 Fed 年度銀行壓力測試結果",
+    "週五 5月核心 PCE 物價指數（最重要）",
+    "法國國會選舉第一輪民調（6/30）"
+  ],
+  "summary": "三大指數本週小幅回調 (-0.2%至-0.7%)，半導體 SOX +1.72% 獨強。週末中歐貿易戰升級與中東局勢為最大變數。期貨 NQ +1.27% 暗示週一科技股補漲。關注週五核心 PCE。"
+}

@@ -1,0 +1,353 @@
+{
+  "date": "2026-06-22",
+  "weekday": "週一",
+  "generatedAt": "2026-06-22T16:12:30+08:00",
+  "indices": {
+    "taiex": {
+      "close": 47741.51,
+      "change": 1276.31,
+      "changePercent": 2.75,
+      "direction": "up",
+      "volume_shares": 15702150822,
+      "volume_value": 1503701333564,
+      "transactions": 7112658,
+      "note": "大漲1276點，創近期最大單日漲點"
+    },
+    "otc": {
+      "close": null,
+      "changePercent": null,
+      "direction": null,
+      "note": "OTC資料暫未取得"
+    }
+  },
+  "stocks": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "close": 2510.0,
+      "change": 100.0,
+      "changePercent": 4.15,
+      "volume": 43404883,
+      "direction": "up",
+      "note": "大漲4.15%,貢獻指數約300點"
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "close": 4465.0,
+      "change": 75.0,
+      "changePercent": 1.71,
+      "volume": 11596124,
+      "direction": "up"
+    },
+    {
+      "symbol": "2317",
+      "name": "鴻海",
+      "close": 268.5,
+      "change": 0.0,
+      "changePercent": 0.0,
+      "volume": 65601972,
+      "direction": "flat"
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "close": 2150.0,
+      "change": 0.0,
+      "changePercent": 0.0,
+      "volume": 15360717,
+      "direction": "flat"
+    },
+    {
+      "symbol": "2382",
+      "name": "廣達",
+      "close": 380.0,
+      "change": 4.0,
+      "changePercent": 1.06,
+      "volume": 19284542,
+      "direction": "up"
+    },
+    {
+      "symbol": "2603",
+      "name": "長榮",
+      "close": 193.0,
+      "change": 0.0,
+      "changePercent": 0.0,
+      "volume": 15497171,
+      "direction": "flat"
+    },
+    {
+      "symbol": "2002",
+      "name": "中鋼",
+      "close": 19.5,
+      "change": 0.4,
+      "changePercent": 2.09,
+      "volume": 129639571,
+      "direction": "up"
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞",
+      "close": 152.5,
+      "change": 13.5,
+      "changePercent": 9.71,
+      "volume": 56846553,
+      "direction": "up"
+    }
+  ],
+  "sectors": {
+    "strong": [
+      {
+        "name": "半導體/IC設計",
+        "changePercent": 3.5,
+        "note": "台積電領漲,聯發科、聯電同步走強"
+      },
+      {
+        "name": "塑化",
+        "changePercent": 4.2,
+        "note": "南亞漲9.7%,台塑化、台塑走強"
+      },
+      {
+        "name": "稀土/材料",
+        "changePercent": 10.0,
+        "note": "野村稀土漲停,順德、強茂亮燈"
+      }
+    ],
+    "weak": [
+      {
+        "name": "營建",
+        "changePercent": -5.0,
+        "note": "國建-7.5%,京城-7%,營建股普遍走弱"
+      },
+      {
+        "name": "金融保險(部分)",
+        "changePercent": -1.5,
+        "note": "國泰金-2.2%,兆豐金-1.7%"
+      },
+      {
+        "name": "航運",
+        "changePercent": -0.8,
+        "note": "長榮平盤,萬海小跌"
+      }
+    ],
+    "neutral": [
+      {
+        "name": "電信",
+        "changePercent": 0.3,
+        "note": "中華電+0.35%"
+      },
+      {
+        "name": "鋼鐵",
+        "changePercent": 1.5,
+        "note": "中鋼+2.1%,整體偏多"
+      }
+    ]
+  },
+  "volume": {
+    "totalShares": 15702150822,
+    "totalValue": 1503701333564,
+    "avg5Day": null,
+    "changeVsYesterday": -3.9,
+    "note": "成交量15,702百萬股,成交值15,037億,較上週四量縮3.9%"
+  },
+  "fx": {
+    "usdtwd": 31.684,
+    "previousClose": 31.67,
+    "change": 0.014,
+    "changePercent": 0.04,
+    "range": {
+      "low": 31.578,
+      "high": 31.703
+    },
+    "note": "台幣微幅貶值"
+  },
+  "positions": {
+    "institutions": {
+      "summary": "三大法人合計買超 708.97 億，外資大買 684.58 億，為近期最大單日買超",
+      "date": "2026-06-22",
+      "data": [
+        {
+          "name": "外資及陸資(不含自營)",
+          "buy": 525066265283,
+          "sell": 456608681906,
+          "net": 68457583377,
+          "direction": "buy"
+        },
+        {
+          "name": "投信",
+          "buy": 44250221066,
+          "sell": 53914340508,
+          "net": -9664119442,
+          "direction": "sell"
+        },
+        {
+          "name": "自營商(自行買賣)",
+          "buy": 14340443785,
+          "sell": 10999521532,
+          "net": 3340922253,
+          "direction": "buy"
+        },
+        {
+          "name": "自營商(避險)",
+          "buy": 49694123220,
+          "sell": 40931421789,
+          "net": 8762701431,
+          "direction": "buy"
+        }
+      ],
+      "total": {
+        "buy": 633351053354,
+        "sell": 562453965735,
+        "net": 70897087619,
+        "direction": "buy"
+      },
+      "note": "資料來源：TWSE 證交所三大法人買賣金額統計表(115/06/22)"
+    },
+    "futures": {
+      "date": "2026-06-18",
+      "note": "期交所數據公布有延遲,以下為6/18(上週五)留倉數據",
+      "summary": "外資TX淨空單68,337口,選擇權PUT淨多單+3,822口,CALL淨空單-1,470口,P/C量112.84%/OI114.67%,綜合判斷中性偏空",
+      "institutions_total": {
+        "selfOperated_net": -339683,
+        "trust_net": 65757,
+        "foreign_net": -541761,
+        "total_net": -815687,
+        "unit": "口"
+      },
+      "foreign_tx": {
+        "contract": "臺股期貨 (TX)",
+        "oi_long": 10085,
+        "oi_short": 78422,
+        "oi_net": -68337,
+        "oi_net_value": -925197261000,
+        "unit": "千元",
+        "direction": "short"
+      },
+      "foreign_mtx": {
+        "contract": "小型臺指期貨 (MTX)",
+        "oi_net": 2185,
+        "direction": "long"
+      },
+      "foreign_micro_tx": {
+        "contract": "微型臺指期貨",
+        "oi_net": 2758,
+        "direction": "long"
+      },
+      "foreign_options": {
+        "contract": "臺指選擇權",
+        "call_oi_net": -1470,
+        "put_oi_net": 3822,
+        "put_minus_call_net": 5292,
+        "note": "PUT淨多單>CALL淨空單,偏多避險"
+      },
+      "putCallRatio": {
+        "date": "2026-06-18",
+        "putCallVolumeRatio": 112.84,
+        "putCallOIRatio": 114.67,
+        "note": "成交量比112.84%,未平倉比114.67%,PUT雙雙高於CALL,偏空解讀"
+      },
+      "overall_assessment": {
+        "foreign_futures_direction": "bearish",
+        "foreign_options_direction": "neutral_bearish",
+        "pc_ratio_direction": "bearish",
+        "composite_direction": "neutral_bearish",
+        "composite_note": "外資TX淨空單6.8萬口+選擇權PUT避險,P/C>110%,法人對漲勢仍有戒心"
+      }
+    },
+    "institutions_detail": {
+      "date": "2026-06-22",
+      "source": "TWSE 證交所三大法人買賣超日報(T86)",
+      "timestamp": "2026-06-22T22:00+08:00",
+      "stocks": {
+        "2002": {
+          "name": "中鋼            ",
+          "foreign_buy": 69851224,
+          "foreign_sell": 25269467,
+          "foreign_net": 44581757,
+          "trust_net": -338922,
+          "dealer_self_net": -17000,
+          "dealer_hedge_net": 1028499,
+          "total_net": 45254334
+        },
+        "2330": {
+          "name": "台積電          ",
+          "foreign_buy": 29849998,
+          "foreign_sell": 15488900,
+          "foreign_net": 14361098,
+          "trust_net": -201654,
+          "dealer_self_net": 547876,
+          "dealer_hedge_net": 597751,
+          "total_net": 15305071
+        },
+        "2382": {
+          "name": "廣達            ",
+          "foreign_buy": 8316998,
+          "foreign_sell": 7046929,
+          "foreign_net": 1270069,
+          "trust_net": 1424601,
+          "dealer_self_net": -145433,
+          "dealer_hedge_net": 14511,
+          "total_net": 2563748
+        },
+        "2454": {
+          "name": "聯發科          ",
+          "foreign_buy": 6993637,
+          "foreign_sell": 3342591,
+          "foreign_net": 3651046,
+          "trust_net": -1912579,
+          "dealer_self_net": 182779,
+          "dealer_hedge_net": 19979,
+          "total_net": 1941225
+        },
+        "2603": {
+          "name": "長榮            ",
+          "foreign_buy": 7192433,
+          "foreign_sell": 5624090,
+          "foreign_net": 1568343,
+          "trust_net": -164783,
+          "dealer_self_net": -1000,
+          "dealer_hedge_net": 47029,
+          "total_net": 1449589
+        },
+        "1303": {
+          "name": "南亞            ",
+          "foreign_buy": 9924997,
+          "foreign_sell": 15266767,
+          "foreign_net": -5341770,
+          "trust_net": 3716000,
+          "dealer_self_net": 102000,
+          "dealer_hedge_net": 208946,
+          "total_net": -1314824
+        },
+        "2308": {
+          "name": "台達電          ",
+          "foreign_buy": 9344386,
+          "foreign_sell": 8414719,
+          "foreign_net": 929667,
+          "trust_net": -2153752,
+          "dealer_self_net": -1085480,
+          "dealer_hedge_net": 1147,
+          "total_net": -2308418
+        },
+        "2317": {
+          "name": "鴻海            ",
+          "foreign_buy": 24044429,
+          "foreign_sell": 38891595,
+          "foreign_net": -14847166,
+          "trust_net": 464993,
+          "dealer_self_net": 171000,
+          "dealer_hedge_net": 388210,
+          "total_net": -13822963
+        }
+      }
+    }
+  },
+  "sections": {
+    "盤後籌碼": {
+      "generatedAt": "2026-06-22T22:00:00+08:00",
+      "source": "TWSE證交所T86/三大法人買賣超日報",
+      "summary": "📊 **【22:00 完整籌碼更新】**\n\n**📈 大盤統計(6/22 週一)**\n- 加權指數：收 **47,741.51**，漲 **+1,276.31點(+2.75%)**\n- 成交值：**1,515,817,959,773元**(約15,158億) | 成交股數：15,727,229,822股 | 成交筆數：7,112,713筆\n- 個股表現：上漲523檔(含69檔漲停) | 下跌459檔(含4檔跌停) | 持平73檔\n\n**💰 三大法人個股買賣超明細 (22:00 TWSE T86數據)**\n- 外資買超最多：台玻+55,470,670股、中鋼+44,581,757股、華新+34,774,250股、力積電+27,409,723股\n- 外資賣超最多：群創-117,423,914股、華邦電-103,086,815股、兆豐金-37,388,242股、仁寶-24,813,052股\n- 投信買超最多：華邦電+47,711,359股、兆豐金+37,260,286股、遠傳+24,929,199股、永豐金+23,851,011股\n- 投信賣超最多：元大金-12,473,047股、日月光-6,790,000股、亞泥-5,598,696股\n\n**🔑 核心個股籌碼動向**\n📌 **台積電          (2330)**：三大法人買超1530.5萬股，外資買超1436.1萬股，投信-20.2萬股\n📌 **聯發科          (2454)**：三大法人買超194.1萬股，外資買超365.1萬股，投信-191.3萬股\n📌 **鴻海            (2317)**：三大法人賣超1382.3萬股，外資賣超1484.7萬股，投信46.5萬股\n📌 **台達電          (2308)**：三大法人賣超230.8萬股，外資買超93.0萬股，投信-215.4萬股\n📌 **廣達            (2382)**：三大法人買超256.4萬股，外資買超127.0萬股，投信142.5萬股\n📌 **長榮            (2603)**：三大法人買超145.0萬股，外資買超156.8萬股，投信-16.5萬股\n📌 **中鋼            (2002)**：三大法人買超4525.4萬股，外資買超4458.2萬股，投信-33.9萬股\n📌 **南亞            (1303)**：三大法人賣超131.5萬股，外資賣超534.2萬股，投信371.6萬股\n\n**⚡ ETF/指數型商品動向**\n- 三大法人買超最多ETF：主動統一台股增長+137,172,097股、大華優利高填息30+66,609,264股\n- 三大法人賣超最多ETF：元大台灣50反1-77,555,271股、群創-102,511,541股(註：含ETF與個股)\n- 主動型ETF交易量仍居前，法人ETF配置持續擴張\n\n**⚠️ 無法取得數據**\n- 融資融券(資券餘額)：TWSE端點更新，22:05尚未發布\n- 期交所期貨留倉：資料公布有延遲(6/18為止數據不變)\n- 請留意明日盤前確認完整數據\n\n⏱ 更新時間：2026-06-22T22:00+08:00 | 資料來源：TWSE證交所T86"
+    }
+  },
+  "updatedAt": "2026-06-22T22:00:00+08:00"
+}
