@@ -279,5 +279,59 @@
       "FD→REC+, Oil price 不對稱(低分位- 高分位+)",
       "FDI→REC+, CO2→REC-(高分位)"
     ]
+  },
+  {
+    "title": "The Mathematics of Modeling the Future",
+    "authors": "Miquel Noguer i Alonso",
+    "year": "2026",
+    "journal": "arXiv:2606.20977 [q-fin.MF]",
+    "doi": "",
+    "date": "2026-06-23",
+    "tags": ["方法論"],
+    "topics": ["方法論", "AI/科技"],
+    "pdf": "uploads/Mathematics_of_Modeling_Future_Noguer_2026.pdf",
+    "notes": [
+      "從 filtration、conditional expectation、Markov kernel 到 Kolmogorov equations 的統一數學框架",
+      "提出 forecasting calculus：tower property → semigroup law, Ito's formula → backward equation",
+      "Wasserstein gradient flow + Fisher-Rao 幾何下的密度演化",
+      "附 Gaussian OU / CIR 過程的顯式範例",
+      "arXiv q-fin new 2026-06"
+    ]
+  },
+  {
+    "title": "Reinforcement Learning for Risk-Sensitive Investment Management: a Free Energy--Entropy Duality Approach",
+    "authors": "Sebastien Lleo, Wolfgang Runggaldier",
+    "year": "2026",
+    "journal": "arXiv:2606.20903 [q-fin.PM]",
+    "doi": "",
+    "date": "2026-06-23",
+    "tags": ["RL", "continuous-time"],
+    "topics": ["金融市場", "AI/科技"],
+    "pdf": "uploads/RL_Risk_Sensitive_Investment_Lleo_2026.pdf",
+    "notes": [
+      "free energy-entropy duality → risk-sensitive 資產配置改寫為 stochastic differential game",
+      "continuous-time q-learning actor-critic 求解",
+      "fractional Kelly decomposition 的經濟解釋",
+      "美股實證: portfolio actor 學習精確度高",
+      "arXiv q-fin new 2026-06"
+    ]
+  },
+  {
+    "title": "Revisiting Trade-sign Long-memory and Square-root Law Price Impact",
+    "authors": "Chris Angstmann, Tim Gebbie",
+    "year": "2026",
+    "journal": "arXiv:2606.16269 [q-fin.TR]",
+    "doi": "",
+    "date": "2026-06-23",
+    "tags": ["微結構", "price impact"],
+    "topics": ["金融市場", "方法論"],
+    "pdf": "uploads/Trade_sign_Long_Memory_Angstmann_2026.pdf",
+    "notes": [
+      "coupled reaction-diffusion 模型推導 LMF long-memory + square-root law",
+      "事件時間 vs 物理時間的區分",
+      "Pareto 型 meta-order 長度 → power-law trade-sign autocorrelation",
+      "Volterra equation leading-order → concave impact trajectory",
+      "arXiv q-fin new 2026-06"
+    ]
   }
 ]
