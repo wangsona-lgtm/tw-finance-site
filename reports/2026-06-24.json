@@ -1,0 +1,427 @@
+{
+  "date": "2026-06-24",
+  "day": "Wednesday",
+  "generated_at": "2026-06-24T07:20:00+08:00",
+  "sections": {
+    "pre-market": {
+      "title": "盤前分析 — US-China 晶片禁令全面升級，SOX -7.87% 半導體大屠殺",
+      "summary": "SOX -7.87% 為年內最大跌幅，Biden 敲定 HBM/GAA 新一輪出口管制。台股昨日已先行開高走低 -1.34%，夜盤遭 SOX/TSM ADR 雙重重擊。預估開低 -2.5% ~ -4% (45,200~45,800)。資金由半導體全面撤出轉入防禦(金融/電信/食品)。",
+      "severity": "critical",
+      "action": "防禦為上，半導體勿摸底"
+    },
+    "zh_digest": {
+      "source": "zerohedge",
+      "fetched_at": "2026-06-24T06:04:25.239151",
+      "date": "2026-06-24",
+      "title": "📰 ZeroHedge 每日導讀 — 6月24日（三）",
+      "total_articles": 10,
+      "premium_count": 10,
+      "articles": [
+        {
+          "id": 1,
+          "title": "US Tech Trounced, Bonds Bid As A Korean Butterfly Flaps Its Wings...",
+          "title_original": "",
+          "category": "markets",
+          "emoji": "📈",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/markets/us-tech-trounced-bonds-bid-korean-butterfly-flaps-its-wings",
+          "local_images": [],
+          "is_premium": true
+        },
+        {
+          "id": 2,
+          "title": "Trump Insists Iran Caved On Nuclear Inspections, As Tehran Touts US To Unfreeze $12BN; Hormuz Tolls Still Disputed",
+          "title_original": "",
+          "category": "geopolitical",
+          "emoji": "🌍",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/geopolitical/iran-says-us-unfreeze-12bn-insists-it-alone-will-decide-how-funds-be-used",
+          "local_images": [
+            {
+              "url": "https://files.zhedge.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://assets.zerohedge.com/s3fs-public/inline-images/iranfrozenfunds.jpg",
+              "local": "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg"
+            }
+          ],
+          "is_premium": true
+        },
+        {
+          "id": 3,
+          "title": "Cyberattack Hits Iran's Banking System, Disrupting Card Networks At Three Major Lenders",
+          "title_original": "",
+          "category": "geopolitical",
+          "emoji": "🌍",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/geopolitical/cyberattack-hits-irans-banking-system-disrupting-card-networks-three-major-lenders",
+          "local_images": [
+            {
+              "url": "https://files.zhedge.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://assets.zerohedge.com/s3fs-public/inline-images/iranbankbranc.jpg",
+              "local": "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_4.jpg"
+            }
+          ],
+          "is_premium": true
+        },
+        {
+          "id": 4,
+          "title": "UN Maritime Agency Initiates Plan To Clear Hormuz Traffic: Hundreds Of Vessels, 11K Sailors",
+          "title_original": "",
+          "category": "geopolitical",
+          "emoji": "🌍",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/geopolitical/un-maritime-body-initiates-hormuz-shipping-unclogging-hundreds-vessels-11k-sailors",
+          "local_images": [
+            {
+              "url": "https://files.zhedge.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://assets.zerohedge.com/s3fs-public/inline-images/hormuzshipsbackup.jpg",
+              "local": "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg"
+            }
+          ],
+          "is_premium": true
+        },
+        {
+          "id": 5,
+          "title": "The Decline Of Mainstream Media: From COVID To Capital Markets",
+          "title_original": "",
+          "category": "markets",
+          "emoji": "📈",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/markets/decline-mainstream-media-covid-capital-markets",
+          "local_images": [
+            {
+              "url": "https://files.zhedge.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://assets.zerohedge.com/s3fs-public/inline-images/Screenshot%202026-06-22%20at%2013.42.29.jpg",
+              "local": "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_4.jpg"
+            },
+            {
+              "url": "https://files.zhedge.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://assets.zerohedge.com/s3fs-public/inline-images/Screenshot%202026-06-22%20at%2013.42.51.jpg",
+              "local": "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_5.jpg"
+            },
+            {
+              "url": "https://files.zhedge.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://assets.zerohedge.com/s3fs-public/inline-images/Screenshot%202026-06-22%20at%2013.43.26.jpg",
+              "local": "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_6.jpg"
+            },
+            {
+              "url": "https://files.zhedge.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://assets.zerohedge.com/s3fs-public/inline-images/Screenshot%202026-06-22%20at%2013.44.48.jpg",
+              "local": "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_7.jpg"
+            }
+          ],
+          "is_premium": true
+        },
+        {
+          "id": 6,
+          "title": "After Korean Carnage, Nomura Quants Fear Massive Levered ETF Forced-Selling In US Markets",
+          "title_original": "",
+          "category": "markets",
+          "emoji": "📈",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/markets/after-korean-carnage-nomura-quants-fear-massive-levered-etf-forced-selling-us-markets",
+          "local_images": [],
+          "is_premium": true
+        },
+        {
+          "id": 7,
+          "title": "Stocks slide as chip rout drags indices lower - Newsquawk US Market Wrap",
+          "title_original": "",
+          "category": "markets",
+          "emoji": "📈",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/markets/stocks-slide-chip-rout-drags-indices-lower-newsquawk-us-market-wrap",
+          "local_images": [],
+          "is_premium": true
+        },
+        {
+          "id": 8,
+          "title": "Meta Developing Prediction Market App Called \"Arena\" To Compete With Polymarket, Kalshi",
+          "title_original": "",
+          "category": "markets",
+          "emoji": "📈",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/markets/meta-developing-prediction-market-app-called-arena-compete-polymarket-kalshi",
+          "local_images": [
+            {
+              "url": "https://files.zhedge.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://assets.zerohedge.com/s3fs-public/inline-images/image%20%28100%29_10.jpg",
+              "local": "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_4.jpg"
+            }
+          ],
+          "is_premium": true
+        },
+        {
+          "id": 9,
+          "title": "'You Are Here': Goldman Partner Lays Out The 11 Stages Of A Tech Bubble",
+          "title_original": "",
+          "category": "markets",
+          "emoji": "📈",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/markets/you-are-here-goldman-partner-lays-out-11-stages-tech-bubble",
+          "local_images": [],
+          "is_premium": true
+        },
+        {
+          "id": 10,
+          "title": "Trump Privately Told Zelensky To Act 'More Boldly' Toward Russia: Ukrainian Media",
+          "title_original": "",
+          "category": "geopolitical",
+          "emoji": "🌍",
+          "summary": "",
+          "key_takeaways": [],
+          "url": "https://www.zerohedge.com/geopolitical/trump-privately-told-zelensky-act-more-boldly-toward-russia-ukrainian-media",
+          "local_images": [
+            {
+              "url": "https://files.zhedge.com/cdn-cgi/image/width=1920,quality=75,format=auto/https://assets.zerohedge.com/s3fs-public/inline-images/trump-zelenskynew_0.jpg",
+              "local": "/home/nutc/.hermes/cron/output/zerohedge/images/article_9_img_4.jpg"
+            }
+          ],
+          "is_premium": true
+        }
+      ],
+      "statistics": {
+        "total_articles": 10,
+        "premium": 10,
+        "geopolitical": 4,
+        "markets": 6,
+        "with_images": 6
+      }
+    }
+  },
+  "market_data": {
+    "us_indices": {
+      "sp500": {
+        "close": 7365.46,
+        "change": -1.44
+      },
+      "dow": {
+        "close": 51666.84,
+        "change": -0.09
+      },
+      "nasdaq": {
+        "close": 25587.04,
+        "change": -2.21
+      },
+      "russell2000": {
+        "close": 2975.48,
+        "change": -0.96
+      },
+      "sox": {
+        "close": 13482.51,
+        "change": -7.87
+      }
+    },
+    "key_stocks": {
+      "msft": {
+        "close": 373.94,
+        "change": 1.8
+      },
+      "amzn": {
+        "close": 234.11,
+        "change": 0.57
+      },
+      "meta": {
+        "close": 562.2,
+        "change": -0.29
+      },
+      "aapl": {
+        "close": 294.3,
+        "change": -0.91
+      },
+      "googl": {
+        "close": 346.13,
+        "change": -1.02
+      },
+      "nvda": {
+        "close": 200.04,
+        "change": -4.13
+      },
+      "tsla": {
+        "close": 381.61,
+        "change": -5.79
+      },
+      "amd": {
+        "close": 519.85,
+        "change": -5.76
+      },
+      "avgo": {
+        "close": 380.15,
+        "change": -3.06
+      },
+      "tsm_adr": {
+        "close": 436.39,
+        "change": -6.69
+      }
+    },
+    "sector_etfs": {
+      "xlp": {
+        "close": 83.72,
+        "change": 1.87
+      },
+      "xlv": {
+        "close": 152.18,
+        "change": 1.41
+      },
+      "xlu": {
+        "close": 45.07,
+        "change": 0.78
+      },
+      "xle": {
+        "close": 54.46,
+        "change": 0.74
+      },
+      "xlf": {
+        "close": 53.88,
+        "change": 0.34
+      },
+      "xly": {
+        "close": 113.76,
+        "change": -1.03
+      },
+      "xlb": {
+        "close": 50.87,
+        "change": -1.45
+      },
+      "xli": {
+        "close": 178.15,
+        "change": -2.01
+      },
+      "xlk": {
+        "close": 184.19,
+        "change": -4.14
+      },
+      "smh": {
+        "close": 622.05,
+        "change": -7.01
+      }
+    },
+    "macro": {
+      "dxy": {
+        "close": 101.02,
+        "change": 0.18
+      },
+      "gold": {
+        "close": 4114.7,
+        "change": -1.61
+      },
+      "crude": {
+        "close": 72.92,
+        "change": -2.54
+      },
+      "bitcoin": {
+        "close": 62490,
+        "change": -2.28
+      },
+      "tnx": {
+        "close": 4.49,
+        "direction": "up"
+      },
+      "vix": {
+        "close": 19.49,
+        "change": 12.79
+      }
+    },
+    "tw_stock": {
+      "taiex_prev_close": 47101,
+      "taiex_prev_change": -641,
+      "taiex_prev_change_pct": -1.34,
+      "tsm_2330_close": 2490,
+      "tsm_2330_change_pct": -0.8,
+      "usd_twd": 31.69,
+      "tsm_adr_premium": 11.08
+    }
+  },
+  "recommendations": {
+    "today": [
+      {
+        "stock": "2881 富邦金",
+        "direction": "偏多",
+        "reason": "資金避風港，金融股抗跌，殖利率4.49%有利壽險收益",
+        "target": "82~87",
+        "stop_loss": 78
+      },
+      {
+        "stock": "1216 統一",
+        "direction": "偏多",
+        "reason": "消費防禦，油價跌降成本，高殖利率下檔保護",
+        "target": "78~83",
+        "stop_loss": 74
+      },
+      {
+        "stock": "2454 聯發科",
+        "direction": "偏多(錯殺)",
+        "reason": "昨日逆勢收紅+1.57%，ASIC+AI邊緣題材",
+        "target": "4400~4700",
+        "stop_loss": 4250
+      },
+      {
+        "stock": "2330 台積電",
+        "direction": "極度風險",
+        "reason": "ADR-6.69%溢價11%緩衝，AI需求未消失，僅短線",
+        "target": "2330~2450",
+        "stop_loss": 2280
+      }
+    ],
+    "review": {
+      "date": "2026-06-23",
+      "hit_rate": "2/4 (50%)",
+      "avg_return": 0.16,
+      "details": [
+        {
+          "stock": "2303 聯電",
+          "price": 160,
+          "close": 170.0,
+          "return": 6.25,
+          "result": "hit",
+          "note": "成熟製程補漲邏輯正確"
+        },
+        {
+          "stock": "1303 南亞",
+          "price": 152.5,
+          "close": 154.5,
+          "return": 1.31,
+          "result": "hit",
+          "note": "油價成本下降邏輯正確"
+        },
+        {
+          "stock": "2330 台積電",
+          "price": 2510,
+          "close": 2490,
+          "return": -0.8,
+          "result": "miss",
+          "note": "推薦價為前日收盤高點，成本不利"
+        },
+        {
+          "stock": "2409 友達",
+          "price": 31.0,
+          "close": 29.05,
+          "return": -6.14,
+          "result": "big_miss",
+          "note": "前日漲停隔日開高倒貨，面板基本面差"
+        }
+      ]
+    }
+  },
+  "key_events": [
+    "Biden 敲定 HBM/GAA 出口管制，SOX -7.87% 年內最大跌幅",
+    "Richmond Fed 製造業指數 -18 (預期 -6)，衰退憂慮升溫",
+    "Dallas Fed Logan 鷹派發言，降息預期延後",
+    "原油 $72.92 (-2.54%) 需求擔憂+強美元"
+  ],
+  "predictions": {
+    "open_range": "45,200 ~ 45,800",
+    "open_direction": "🔴 大幅開低 -2.5% ~ -4%",
+    "key_support": [
+      "45,000",
+      "44,500"
+    ],
+    "key_resistance": [
+      "46,500"
+    ]
+  },
+  "source": "cron_2edfc497e5ad",
+  "status": "completed",
+  "type": "zh-digest+pre-market",
+  "updated_at": "2026-06-24T07:20:52+08:00"
+}
