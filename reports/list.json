@@ -1,36 +1,20 @@
 {
   "reports": [
     {
-      "date": "2026-06-17",
-      "type": "pre-market",
-      "file": "reports/2026-06-17.json",
-      "generated_at": "2026-06-17T07:16:08+08:00",
+      "date": "2026-06-25",
+      "type": "zh-digest",
+      "file": "reports/2026-06-25.json",
+      "generated_at": "2026-06-25T06:05:00+08:00",
       "status": "completed",
-      "note": "盤前分析：SOX -5.71%半導體屠殺，台股預估開低600~900點；FOMC為關鍵事件"
+      "note": "ZH導讀：Micron財報、Fed壓力測試、共和黨內戰、中東局勢、科技股拖累收盤"
     },
     {
-      "date": "2026-06-18",
+      "date": "2026-06-24",
       "type": "pre-market",
-      "file": "reports/2026-06-18.json",
-      "generated_at": "2026-06-18T07:05:00+08:00",
+      "file": "reports/2026-06-24.json",
+      "generated_at": "2026-06-24T07:20:00+08:00",
       "status": "completed",
-      "note": "盤前分析：FOMC鷹派轉向股債雙殺；SOX +1.38%半導體止血；台股結算日橫盤45,877"
-    },
-    {
-      "date": "2026-06-19",
-      "type": "pre-market",
-      "file": "reports/2026-06-19.json",
-      "generated_at": "2026-06-19T07:05:00+08:00",
-      "status": "completed",
-      "note": "盤前分析：白宮出口管制軟化催化SOX +6.42%暴力反彈；TSM ADR +6.94%溢價+21%；MSCI權重調整生效日"
-    },
-    {
-      "date": "2026-06-22",
-      "type": "zh-digest+pre-market",
-      "file": "reports/2026-06-22.json",
-      "generated_at": "2026-06-22T07:05:00+08:00",
-      "status": "completed",
-      "note": "ZH導讀 + 盤前分析：SOX +6.42%反彈、TSM ADR +6.94%、VIX -11%恐慌緩解，台股預估開高300~500點"
+      "note": "盤前分析：US-China晶片禁令全面升級，SOX -7.87%年內最大跌幅；TSM ADR -6.69%；預估開低-2.5%~-4%，資金轉防禦"
     },
     {
       "date": "2026-06-23",
@@ -41,13 +25,37 @@
       "note": "盤前分析：NASDAQ-1.32%大型科技重挫，但SOX+2.04%+TSM ADR+1.20%護航；油價跌至$74。中性偏多，半導體/石化主軸"
     },
     {
-      "date": "2026-06-24",
-      "type": "pre-market",
-      "file": "reports/2026-06-24.json",
-      "generated_at": "2026-06-24T07:20:00+08:00",
+      "date": "2026-06-22",
+      "type": "zh-digest+pre-market",
+      "file": "reports/2026-06-22.json",
+      "generated_at": "2026-06-22T07:05:00+08:00",
       "status": "completed",
-      "note": "盤前分析：US-China晶片禁令全面升級，SOX -7.87%年內最大跌幅；TSM ADR -6.69%；預估開低-2.5%~-4%，資金轉防禦"
+      "note": "ZH導讀 + 盤前分析：SOX +6.42%反彈、TSM ADR +6.94%、VIX -11%恐慌緩解，台股預估開高300~500點"
+    },
+    {
+      "date": "2026-06-19",
+      "type": "pre-market",
+      "file": "reports/2026-06-19.json",
+      "generated_at": "2026-06-19T07:05:00+08:00",
+      "status": "completed",
+      "note": "盤前分析：白宮出口管制軟化催化SOX +6.42%暴力反彈；TSM ADR +6.94%溢價+21%；MSCI權重調整生效日"
+    },
+    {
+      "date": "2026-06-18",
+      "type": "pre-market",
+      "file": "reports/2026-06-18.json",
+      "generated_at": "2026-06-18T07:05:00+08:00",
+      "status": "completed",
+      "note": "盤前分析：FOMC鷹派轉向股債雙殺；SOX +1.38%半導體止血；台股結算日橫盤45,877"
+    },
+    {
+      "date": "2026-06-17",
+      "type": "pre-market",
+      "file": "reports/2026-06-17.json",
+      "generated_at": "2026-06-17T07:16:08+08:00",
+      "status": "completed",
+      "note": "盤前分析：SOX -5.71%半導體屠殺，台股預估開低600~900點；FOMC為關鍵事件"
     }
   ],
-  "updated_at": "2026-06-24T07:20:00+08:00"
+  "updated_at": "2026-06-25T06:05:00+08:00"
 }
