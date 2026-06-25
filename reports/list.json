@@ -63,7 +63,15 @@
       "generated_at": "2026-06-17T07:16:08+08:00",
       "status": "completed",
       "note": "盤前分析：SOX -5.71%半導體屠殺，台股預估開低600~900點；FOMC為關鍵事件"
+    },
+    {
+      "date": "2026-06-26",
+      "type": "pre-market",
+      "file": "reports/2026-06-26.json",
+      "generated_at": "2026-06-26T07:07:09+08:00",
+      "status": "completed",
+      "note": "盤前分析：SOX +3.59%半導體強彈反攻，ADR溢價+15.79%護航，AAPL -6.12%拖累Apple供應鏈，黃金$4,039創史高"
     }
   ],
-  "updated_at": "2026-06-25T07:10:00+08:00"
+  "updated_at": "2026-06-26T07:10:00+08:00"
 }
