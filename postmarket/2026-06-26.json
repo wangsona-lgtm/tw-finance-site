@@ -1,0 +1,173 @@
+{
+  "date": "2026-06-26",
+  "dayOfWeek": "星期五",
+  "updatedAt": "2026-06-26T13:38:45+08:00",
+  "summary": "台股今日遭遇全面性賣壓，加權指數暴跌 1,683.50 點 (-3.64%)。櫃買OTC跌幅 5.59% 為近期最慘。聯發科暴跌 9.98% 逼近跌停、台達電跌 8.59%。成交量暴增 21.8% 為帶量恐慌性下殺。新台幣僅微幅波動 (31.823)，暗示賣壓以內資為主。",
+  "indices": {
+    "taiex": {
+      "name": "加權指數",
+      "close": 44571.76,
+      "change": -1683.50,
+      "changePercent": -3.64,
+      "direction": "down",
+      "open": 46188.60,
+      "high": 46188.60,
+      "low": 44454.22
+    },
+    "otc": {
+      "name": "櫃買OTC",
+      "close": 415.26,
+      "change": -24.58,
+      "changePercent": -5.59,
+      "direction": "down"
+    },
+    "electronics": {
+      "name": "電子指數",
+      "close": 2858.34,
+      "change": -116.46,
+      "changePercent": -3.91,
+      "direction": "down"
+    }
+  },
+  "stocks": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "close": 2340.0,
+      "change": -50.0,
+      "changePercent": -2.09,
+      "direction": "down",
+      "volume": 39059,
+      "open": 2360,
+      "high": 2370,
+      "low": 2325
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "close": 3880.0,
+      "change": -430.0,
+      "changePercent": -9.98,
+      "direction": "down",
+      "volume": 20134,
+      "open": 4150,
+      "high": 4185,
+      "low": 3880
+    },
+    {
+      "symbol": "2317",
+      "name": "鴻海",
+      "close": 248.5,
+      "change": -9.0,
+      "changePercent": -3.50,
+      "direction": "down",
+      "volume": 75816,
+      "open": 255.5,
+      "high": 255.5,
+      "low": 248.0
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "close": 1810.0,
+      "change": -170.0,
+      "changePercent": -8.59,
+      "direction": "down",
+      "volume": 22936,
+      "open": 1925,
+      "high": 1935,
+      "low": 1790
+    },
+    {
+      "symbol": "2382",
+      "name": "廣達",
+      "close": 362.0,
+      "change": -4.5,
+      "changePercent": -1.23,
+      "direction": "down",
+      "volume": 20133,
+      "open": 362.0,
+      "high": 372.0,
+      "low": 357.0
+    }
+  ],
+  "sectors": [
+    {
+      "code": "00733",
+      "name": "富邦臺灣中小",
+      "changePercent": -5.05,
+      "direction": "down",
+      "note": "中小型股最慘，反映OTC崩跌"
+    },
+    {
+      "code": "0053",
+      "name": "元大電子",
+      "changePercent": -4.23,
+      "direction": "down",
+      "note": "電子權值股全面下殺"
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "changePercent": -3.78,
+      "direction": "down",
+      "note": "權值股同步走弱"
+    },
+    {
+      "code": "00830",
+      "name": "國泰費城半導體",
+      "changePercent": -3.43,
+      "direction": "down",
+      "note": "半導體族群重挫"
+    },
+    {
+      "code": "0056",
+      "name": "元大高股息",
+      "changePercent": -3.20,
+      "direction": "down",
+      "note": "高股息也難逃賣壓"
+    }
+  ],
+  "volume": {
+    "totalShares": 16387499,
+    "changePercent": 21.8,
+    "direction": "up",
+    "note": "爆量下殺，賣壓沉重"
+  },
+  "currency": {
+    "pair": "USD/TWD",
+    "rate": 31.823,
+    "change": -0.012,
+    "changePercent": -0.04,
+    "direction": "up"
+  },
+  "international": {
+    "sp500": {
+      "close": 7357.49,
+      "trend": "連5日走低"
+    },
+    "nasdaq": {
+      "close": 25358.60,
+      "trend": "連5日下滑"
+    },
+    "phlx": {
+      "name": "費城半導體",
+      "close": 13940.87,
+      "changePercent": 3.59,
+      "direction": "up"
+    },
+    "tsmAdr": {
+      "close": 434.99,
+      "changePercent": -1.32,
+      "direction": "down"
+    }
+  },
+  "keyObservations": [
+    "加權指數暴跌 1,683 點，創近期最大單日跌幅",
+    "OTC 跌幅 5.59% 遠超大盤，內資散戶同步撤離",
+    "聯發科暴跌 9.98% 逼近跌停，台達電跌 8.59%",
+    "成交量暴增 21.8%，為帶量恐慌性賣壓",
+    "新台幣僅微幅波動，匯市未見恐慌，賣壓以內資為主",
+    "費城半導體指數前日已反彈 3.59%，台股補跌存在時差效應"
+  ]
+}
