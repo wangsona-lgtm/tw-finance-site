@@ -1,7 +1,7 @@
 {
   "date": "2026-06-26",
   "dayOfWeek": "星期五",
-  "updatedAt": "2026-06-26T13:38:45+08:00",
+  "updatedAt": "2026-06-26T16:05:00+08:00",
   "summary": "台股今日遭遇全面性賣壓，加權指數暴跌 1,683.50 點 (-3.64%)。櫃買OTC跌幅 5.59% 為近期最慘。聯發科暴跌 9.98% 逼近跌停、台達電跌 8.59%。成交量暴增 21.8% 為帶量恐慌性下殺。新台幣僅微幅波動 (31.823)，暗示賣壓以內資為主。",
   "indices": {
     "taiex": {
@@ -162,12 +162,87 @@
       "direction": "down"
     }
   },
+  "institutionalTrading": {
+    "dataSource": "TWSE BFI82U",
+    "dataDate": "2026-06-26",
+    "summary": "外資今日大舉賣超 1,431.89 億，為今日最大賣壓來源。三大法人合計賣超 2,055.28 億，創近期最大淨賣超紀錄。投信逆勢買超 83.95 億提供些許支撐。",
+    "table": [
+      {
+        "institution": "自營商(自行買賣)",
+        "buyAmount": 12177727957,
+        "sellAmount": 28296848609,
+        "netAmount": -16119120652,
+        "netAmountYi": -161.19,
+        "direction": "down"
+      },
+      {
+        "institution": "自營商(避險)",
+        "buyAmount": 64623913196,
+        "sellAmount": 119238605204,
+        "netAmount": -54614692008,
+        "netAmountYi": -546.15,
+        "direction": "down"
+      },
+      {
+        "institution": "投信",
+        "buyAmount": 43220885894,
+        "sellAmount": 34825504882,
+        "netAmount": 8395381012,
+        "netAmountYi": 83.95,
+        "direction": "up"
+      },
+      {
+        "institution": "外資及陸資(不含外資自營商)",
+        "buyAmount": 501730561003,
+        "sellAmount": 644919776454,
+        "netAmount": -143189215451,
+        "netAmountYi": -1431.89,
+        "direction": "down"
+      },
+      {
+        "institution": "合計",
+        "buyAmount": 621753088050,
+        "sellAmount": 827280735149,
+        "netAmount": -205527647099,
+        "netAmountYi": -2055.28,
+        "direction": "down"
+      }
+    ],
+    "interpretation": "外資賣超 1,431.89 億搭配今日期貨淨空單 -81,051 口，顯示外資對台股後市極為保守。投信買超 83.95 億為內資作帳護盤。自營商偏向全面減碼（合計 -707.34 億）。整體法人籌碼極為偏空。"
+  },
+  "futuresAndOptions": {
+    "dataSource": "TAIFEX OpenAPI",
+    "dataDate": "2026-06-25",
+    "isLatest": true,
+    "note": "TAIFEX 今日數據預計 17:00–18:00 上線，以下為 6/25 最新可用數據",
+    "txForeignNetOi": -81051,
+    "txForeignOiLong": 6034,
+    "txForeignOiShort": 87085,
+    "txDealerNetOi": 3003,
+    "txTrustNetOi": 60921,
+    "foreignOptions": {
+      "callOiNet": -974,
+      "putOiNet": 3916
+    },
+    "putCallRatio": {
+      "volumePc": 96.56,
+      "oiPc": 114.57
+    },
+    "threeMajorFuturesOiNet": {
+      "dealer": -415781,
+      "trust": 77839,
+      "foreign": -594327
+    },
+    "interpretation": "外資臺股期貨淨空單 81,051 口，水位處於極高水準。OI P/C Ratio 114.57% 仍偏避險。選擇權方面外資 PUT 淨多單 3,916 口、CALL 淨空單 974 口，整體避險情緒濃厚。期權綜合評估：偏空。"
+  },
   "keyObservations": [
     "加權指數暴跌 1,683 點，創近期最大單日跌幅",
     "OTC 跌幅 5.59% 遠超大盤，內資散戶同步撤離",
     "聯發科暴跌 9.98% 逼近跌停，台達電跌 8.59%",
     "成交量暴增 21.8%，為帶量恐慌性賣壓",
-    "新台幣僅微幅波動，匯市未見恐慌，賣壓以內資為主",
-    "費城半導體指數前日已反彈 3.59%，台股補跌存在時差效應"
+    "新台幣僅微幅波動 (31.823)，匯市未見恐慌，賣壓以內資為主",
+    "費城半導體指數前日已反彈 3.59%，台股補跌存在時差效應",
+    "外資單日大賣 1,431.89 億，期貨淨空單 8.1 萬口，籌碼極度偏空",
+    "三大法人合計賣超 2,055.28 億，為近期最大淨賣超"
   ]
 }
