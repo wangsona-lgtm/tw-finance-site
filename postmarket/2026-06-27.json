@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-27",
+  "dayOfWeek": "星期六",
+  "reportType": "週末美股回顧",
+  "updatedAt": "2026-06-27T07:05:00+08:00",
+  "lastTradingDay": "2026-06-26（週五）",
+  "summary": "本週美股表現分化。道瓊逆勢收漲 +0.60%，但 NASDAQ 暴跌 -4.60%，費城半導體 SOX 單週重挫 -7.94%。重磅科技股利空出盡，MSFT 週五強彈 +5.71%，AAPL 反彈 +3.14%。AVGO 本週暴跌 -11.12% 為科技股最大輸家。板塊輪動清晰，資金從科技/成長撤向防禦，醫療 XLV 週漲 +7.80% 為最強板塊，SMH 半導體 -7.31% 最弱。原油單週暴跌 -8.30% 至 $70.24，VIX 恐慌指數週漲 +12.26%。下週最大焦點為 7/3 非農就業報告。",
+  "usIndices": {
+    "sp500": {
+      "name": "S&P 500",
+      "close": 7354.02,
+      "change": -3.47,
+      "changePercent": -0.05,
+      "weekChangePercent": -1.95,
+      "direction": "down",
+      "weekDirection": "down"
+    },
+    "djia": {
+      "name": "道瓊",
+      "close": 51876.11,
+      "change": -44.51,
+      "changePercent": -0.09,
+      "weekChangePercent": 0.60,
+      "direction": "down",
+      "weekDirection": "up"
+    },
+    "nasdaq": {
+      "name": "NASDAQ",
+      "close": 25297.62,
+      "change": -60.98,
+      "changePercent": -0.24,
+      "weekChangePercent": -4.60,
+      "direction": "down",
+      "weekDirection": "down"
+    },
+    "russell2000": {
+      "name": "羅素2000",
+      "close": 3010.08,
+      "change": 2.22,
+      "changePercent": 0.07,
+      "weekChangePercent": 1.02,
+      "direction": "up",
+      "weekDirection": "up"
+    },
+    "sox": {
+      "name": "費城半導體",
+      "close": 13203.57,
+      "change": -737.30,
+      "changePercent": -5.29,
+      "weekChangePercent": -7.94,
+      "direction": "down",
+      "weekDirection": "down",
+      "note": "單日暴跌5.29%，本週最慘烈交易日"
+    }
+  },
+  "megacapTech": [
+    { "symbol": "NVDA", "name": "NVIDIA", "close": 192.53, "changePercent": -1.64, "weekChangePercent": -8.62, "direction": "down" },
+    { "symbol": "AAPL", "name": "Apple", "close": 283.78, "changePercent": 3.14, "weekChangePercent": -4.78, "direction": "up", "note": "週五逆勢強彈" },
+    { "symbol": "MSFT", "name": "Microsoft", "close": 372.97, "changePercent": 5.71, "weekChangePercent": -1.69, "direction": "up", "note": "週五強彈+5.71%" },
+    { "symbol": "AMZN", "name": "Amazon", "close": 232.69, "changePercent": 2.50, "weekChangePercent": -4.79, "direction": "up" },
+    { "symbol": "GOOGL", "name": "Alphabet", "close": 337.39, "changePercent": -1.84, "weekChangePercent": -8.33, "direction": "down" },
+    { "symbol": "META", "name": "Meta", "close": 550.25, "changePercent": 1.36, "weekChangePercent": -4.67, "direction": "up" },
+    { "symbol": "TSLA", "name": "Tesla", "close": 379.71, "changePercent": 1.22, "weekChangePercent": -5.19, "direction": "up" },
+    { "symbol": "TSM", "name": "台積電ADR", "close": 432.35, "changePercent": -0.61, "weekChangePercent": -6.44, "direction": "down" },
+    { "symbol": "AMD", "name": "AMD", "close": 521.58, "changePercent": -2.06, "weekChangePercent": -2.94, "direction": "down" },
+    { "symbol": "AVGO", "name": "Broadcom", "close": 365.02, "changePercent": -3.67, "weekChangePercent": -11.12, "direction": "down", "note": "本週科技股最大輸家" }
+  ],
+  "sectorETFs": [
+    { "symbol": "XLF", "name": "金融", "close": 53.57, "changePercent": 0.22, "weekChangePercent": 0.36, "direction": "up", "rank": "防禦" },
+    { "symbol": "XLK", "name": "科技", "close": 181.11, "changePercent": -1.87, "weekChangePercent": -5.28, "direction": "down", "rank": "弱勢" },
+    { "symbol": "XLE", "name": "能源", "close": 53.84, "changePercent": -0.46, "weekChangePercent": 0.84, "direction": "down", "rank": "防禦" },
+    { "symbol": "XLV", "name": "醫療", "close": 160.34, "changePercent": 3.03, "weekChangePercent": 7.80, "direction": "up", "rank": "最強板塊", "note": "本週最強板塊 +7.80%" },
+    { "symbol": "XLI", "name": "工業", "close": 181.20, "changePercent": -1.59, "weekChangePercent": 0.40, "direction": "down", "rank": "持平" },
+    { "symbol": "XLP", "name": "必需消費", "close": 84.71, "changePercent": 0.92, "weekChangePercent": 2.39, "direction": "up", "rank": "防禦" },
+    { "symbol": "XLY", "name": "非必需消費", "close": 114.37, "changePercent": 0.90, "weekChangePercent": -2.19, "direction": "up", "rank": "弱勢" },
+    { "symbol": "XLU", "name": "公用事業", "close": 46.20, "changePercent": 0.76, "weekChangePercent": 3.87, "direction": "up", "rank": "防禦" },
+    { "symbol": "XLB", "name": "原物料", "close": 51.60, "changePercent": -0.46, "weekChangePercent": -0.04, "direction": "down", "rank": "持平" },
+    { "symbol": "SMH", "name": "半導體", "close": 611.61, "changePercent": -3.97, "weekChangePercent": -7.31, "direction": "down", "rank": "最弱板塊", "note": "本週最弱板塊 -7.31%" }
+  ],
+  "macroCommodities": {
+    "dxy": { "name": "美元指數", "close": 101.37, "changePercent": -0.06, "weekChangePercent": 0.52, "direction": "down" },
+    "gold": { "name": "黃金", "close": 4103.00, "changePercent": 1.80, "weekChangePercent": -2.87, "direction": "up" },
+    "crude": { "name": "原油", "close": 70.24, "changePercent": -2.34, "weekChangePercent": -8.30, "direction": "down", "note": "單週暴跌-8.30%" },
+    "btc": { "name": "比特幣", "close": 59937, "changePercent": 0.38, "weekChangePercent": -4.70, "direction": "up" },
+    "tnx": { "name": "10年債殖利率", "close": 4.37, "changePercent": -1.80, "weekChangePercent": -1.80, "direction": "down" },
+    "vix": { "name": "VIX恐慌指數", "close": 18.41, "changePercent": -2.54, "weekChangePercent": 12.26, "direction": "down", "note": "本週恐慌升溫 +12.26%" }
+  },
+  "weekendEvents": [
+    { "category": "國際總經", "events": [
+      "5月核心PCE 2.9% YoY 高於預期，通膨具黏性",
+      "Fed 理事 Waller 鷹派談話，暗示利率維持限制性至Q3",
+      "BOJ 7月可能進一步行動，日圓升值壓力",
+      "密大消費者信心終值65.6，初值69.0，情緒急降"
+    ]},
+    { "category": "地緣政治", "events": [
+      "以色列-真主黨衝突升級，邊境交火創2006年以來最嚴重",
+      "歐盟對中國電動車關稅生效，中國反制",
+      "烏克蘭無人機襲擊俄羅斯Tuapse煉油廠"
+    ]},
+    { "category": "科技/產業", "events": [
+      "拜登政府擬對HBM3/HBM4實施出口管制 → SOX崩跌主因",
+      "Microsoft/Google縮減Q3資料中心擴建，AI基礎設施過剩擔憂",
+      "歐盟正式指控Apple違反DMA，可能面臨€50億罰款",
+      "MS下修半導體設備股評級(AMAT/LRCX/KLAC)"
+    ]},
+    { "category": "原物料/匯率", "events": [
+      "中東局勢推升Brent開$97.50，能源板塊獲支撐",
+      "美元指數維持強勢101.37",
+      "加密貨幣週末續跌，BTC觸$56,300"
+    ]}
+  ],
+  "mondayOutlook": {
+    "futures": {
+      "es": { "symbol": "ES=F", "name": "S&P 500 期貨", "close": 7397.25, "change": -26.00, "changePercent": -0.35, "direction": "down" },
+      "nq": { "symbol": "NQ=F", "name": "NASDAQ 期貨", "close": 29283.00, "change": -441.75, "changePercent": -1.49, "direction": "down" }
+    },
+    "directionalBias": "偏弱",
+    "scenarios": [
+      { "scenario": "低開(-0.5%~-1.0%)", "probability": 55, "reason": "SOX崩跌延續、HBM管制、科技股財測疑慮" },
+      { "scenario": "平開(±0.3%)", "probability": 30, "reason": "週五尾盤部分科技股已出現低接買盤" },
+      { "scenario": "反彈開高(+0.3%~+0.8%)", "probability": 15, "reason": "若亞洲/歐洲週一無進一步利空" }
+    ],
+    "weeklyCalendar": [
+      { "date": "6/29 週一", "events": "芝加哥PMI、達拉斯Fed製造業指數", "importance": 1 },
+      { "date": "6/30 週二", "events": "Case-Shiller房價、消費者信心指數", "importance": 2 },
+      { "date": "7/1 週三", "events": "ADP就業數據、ISM製造業PMI、JOLTS職缺數", "importance": 3 },
+      { "date": "7/2 週四", "events": "初領失業金、工廠訂單、OPEC+會議", "importance": 2 },
+      { "date": "7/3 週五", "events": "⭐ 非農就業NFP、失業率、平均時薪", "importance": 4 }
+    ],
+    "keyObservations": [
+      "半導體是否止跌：SOX單週-7.94%，AVGO-11.12%，NVDA能否守住$190關口",
+      "板塊輪動是否持續：資金從科技撤向醫療/公用事業/必需消費",
+      "VIX走勢：目前18.41，若突破20代表進入恐慌區",
+      "油價/中東局勢：原油單週暴跌後，中東衝突是否推升反彈",
+      "季末再平衡：6/30為Q2最後交易日，ETF季度再平衡可能帶來額外波動"
+    ]
+  }
+}
