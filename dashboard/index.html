@@ -398,10 +398,11 @@ async function loadOverview() {
 
 async function loadTop20() {
   try {
-    const data = await fetchJSON(INDEX_API + '20');
+    const data = await fetchJSON(ALL_STOCKS_API);
+    const sorted = [...data].sort((a,b) => parseFloat(b.TradeValue||'0') - parseFloat(a.TradeValue||'0'));
     const html = `<table class="compact">
       <tr><th>排名</th><th>代碼</th><th>名稱</th><th>成交金額</th><th>收盤價</th></tr>
-      ${data.slice(0,20).map((r,i) => 
+      ${sorted.slice(0,20).map((r,i) => 
         `<tr><td>${i+1}</td><td>${r['Code']}</td><td class="name">${r['Name']}</td>
         <td>${fmt(r['TradeValue'])}</td><td>${r['ClosingPrice']||'-'}</td></tr>`
       ).join('')}
