@@ -1,0 +1,80 @@
+{
+  "date": "2026-06-28",
+  "reportType": "weekend_review",
+  "generatedAt": "2026-06-28T07:05:00+08:00",
+  "lastTradingDay": "2026-06-26",
+  "summary": "週末回顧：SOX 單日崩跌 -5.29%，HBM 出口管制重創半導體；資金明顯輪動至防禦板塊，醫療 XLV 週漲 7.80% 為最強；原油暴跌 -8.30%、VIX 飆升 +12.26%；下週關注 7/3 非農就業。",
+  "indices": {
+    "sp500": { "close": 7354.02, "change": -3.47, "changePct": -0.05, "weekChangePct": -1.95 },
+    "dow": { "close": 51876.11, "change": -44.51, "changePct": -0.09, "weekChangePct": 0.60 },
+    "nasdaq": { "close": 25297.62, "change": -60.98, "changePct": -0.24, "weekChangePct": -4.60 },
+    "russell2000": { "close": 3010.08, "change": 2.22, "changePct": 0.07, "weekChangePct": 1.02 },
+    "sox": { "close": 13203.57, "change": -737.30, "changePct": -5.29, "weekChangePct": -7.94 }
+  },
+  "megacapTech": {
+    "NVDA": { "close": 192.53, "changePct": -1.64, "weekChangePct": -8.62 },
+    "AAPL": { "close": 283.78, "changePct": 3.14, "weekChangePct": -4.78 },
+    "MSFT": { "close": 372.97, "changePct": 5.71, "weekChangePct": -1.69 },
+    "AMZN": { "close": 232.69, "changePct": 2.50, "weekChangePct": -4.79 },
+    "GOOGL": { "close": 337.39, "changePct": -1.84, "weekChangePct": -8.33 },
+    "META": { "close": 550.25, "changePct": 1.36, "weekChangePct": -4.67 },
+    "TSLA": { "close": 379.71, "changePct": 1.22, "weekChangePct": -5.19 },
+    "TSM": { "close": 432.35, "changePct": -0.61, "weekChangePct": -6.44 },
+    "AMD": { "close": 521.58, "changePct": -2.06, "weekChangePct": -2.94 },
+    "AVGO": { "close": 365.02, "changePct": -3.67, "weekChangePct": -11.12 }
+  },
+  "sectorETFs": {
+    "bestWeekly": { "symbol": "XLV", "sector": "醫療", "weekChangePct": 7.80 },
+    "worstWeekly": { "symbol": "SMH", "sector": "半導體", "weekChangePct": -7.31 },
+    "xlv": { "close": 160.34, "changePct": 3.03, "weekChangePct": 7.80 },
+    "xlu": { "close": 46.20, "changePct": 0.76, "weekChangePct": 3.87 },
+    "xlp": { "close": 84.71, "changePct": 0.92, "weekChangePct": 2.39 },
+    "xle": { "close": 53.84, "changePct": -0.46, "weekChangePct": 0.84 },
+    "xlf": { "close": 53.57, "changePct": 0.22, "weekChangePct": 0.36 },
+    "xli": { "close": 181.20, "changePct": -1.59, "weekChangePct": 0.40 },
+    "xlb": { "close": 51.60, "changePct": -0.46, "weekChangePct": -0.04 },
+    "xly": { "close": 114.37, "changePct": 0.90, "weekChangePct": -2.19 },
+    "xlk": { "close": 181.11, "changePct": -1.87, "weekChangePct": -5.28 },
+    "smh": { "close": 611.61, "changePct": -3.97, "weekChangePct": -7.31 }
+  },
+  "macro": {
+    "dxy": { "close": 101.37, "weekChangePct": 0.52 },
+    "gold": { "close": 4103.00, "weekChangePct": -2.87 },
+    "crude": { "close": 70.24, "weekChangePct": -8.30 },
+    "bitcoin": { "close": 59937, "weekChangePct": -4.70 },
+    "tnx": { "close": 4.37, "weekChangePct": -1.80 },
+    "vix": { "close": 18.41, "weekChangePct": 12.26 }
+  },
+  "weekendEvents": [
+    { "category": "國際總經", "event": "5月核心PCE 2.9% YoY（預期2.8%），通膨具黏性", "impact": "bearish" },
+    { "category": "國際總經", "event": "Fed Waller 鷹派談話，暗示利率維持限制性至Q3", "impact": "bearish" },
+    { "category": "國際總經", "event": "密大消費者信心終值65.6（初值69.0）", "impact": "bearish" },
+    { "category": "地緣政治", "event": "以色列-真主黨衝突升級，邊境交火加劇", "impact": "neutral_bearish" },
+    { "category": "地緣政治", "event": "歐盟對中電動車關稅生效，中國反制", "impact": "bearish" },
+    { "category": "科技", "event": "拜登政府擬對HBM3/HBM4實施出口管制", "impact": "bearish" },
+    { "category": "科技", "event": "MS/Google縮減Q3資料中心擴建計畫", "impact": "bearish" },
+    { "category": "科技", "event": "歐盟正式指控Apple違反DMA", "impact": "bearish" }
+  ],
+  "mondayOutlook": {
+    "prediction": "bearish_open",
+    "probability": {
+      "bearish_open_0.5_1.0": "55%",
+      "flat_0.3": "30%",
+      "bullish_rebound": "15%"
+    },
+    "keyFocus": [
+      "半導體能否止跌 — NVDA $190 關口",
+      "板塊輪動 — 資金是否持續撤出科技轉向防禦",
+      "VIX 是否突破 20 恐慌區間",
+      "中東衝突對油價反彈影響",
+      "Q2 季末再平衡 (6/30) 額外波動"
+    ],
+    "weeklyEvents": [
+      { "day": "Mon 6/29", "event": "芝加哥PMI、達拉斯Fed製造業", "importance": 1 },
+      { "day": "Tue 6/30", "event": "Case-Shiller房價、消費者信心", "importance": 2 },
+      { "day": "Wed 7/1", "event": "ADP就業、ISM製造業PMI、JOLTS", "importance": 3 },
+      { "day": "Thu 7/2", "event": "初領失業金、OPEC+會議", "importance": 2 },
+      { "day": "Fri 7/3", "event": "⭐ 非農就業NFP、失業率、平均時薪", "importance": 4 }
+    ]
+  }
+}
