@@ -257,6 +257,7 @@ if index_data:
             'high': index_data['high'],
             'low': index_data['low'],
             'close': index_data['close'],
+            'prev_close': index_data.get('prevClose', 0),
             'volume': index_data.get('volume', 0),
         }, f)
     print(f'  ✅ today-index.json updated')

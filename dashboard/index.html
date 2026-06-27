@@ -344,8 +344,8 @@ async function loadOverview() {
           const todayResp = await fetch('data/today-index.json');
           if (todayResp.ok) {
             const todayData = await todayResp.json();
-            if (todayData && todayData.close) {
-              const prev = todayData.prev_close || todayData.close - 1;
+            if (todayData && todayData.close && todayData.prev_close) {
+              const prev = todayData.prev_close;
               closeVal = todayData.close.toFixed(2);
               chgVal = (todayData.close - prev).toFixed(2);
               pctVal = ((todayData.close - prev) / prev * 100).toFixed(2) + '%';
