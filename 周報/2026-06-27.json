@@ -6,7 +6,7 @@
   "sections": [
     {
       "title": "🛢️🥇 CFTC COT Report — WTI 原油 & 黃金未平倉趨勢（截至 6/23）",
-      "content": "本週為 COT 每週報告第一期上線。CFTC 最新數據截至 6/23（週二結算），涵蓋 NYMEX WTI 原油與 COMEX 黃金期貨的未平倉口數與投機淨部位趨勢。以下為 2026 年初至今的四面板趨勢圖：\n\n<img src=\"../charts/cot_oil_gold_weekly.png\" alt=\"COT 原油與黃金未平倉趨勢\" style=\"width:100%;max-width:900px;border-radius:12px;margin:12px 0;box-shadow:0 4px 20px rgba(0,0,0,0.5);\"/>\n\n📌 2026 年 WTI 原油與黃金 COT 趨勢 — 上半：總 OI + 投機淨部位（含四巫日標記）｜下半：投機多空倉位變化"
+      "content": "本週為 COT 每週報告第一期上線。CFTC 最新數據截至 6/23（週二結算），涵蓋 NYMEX WTI 原油與 COMEX 黃金期貨的未平倉口數與投機淨部位趨勢。以下為 2026 年初至今的四面板趨勢圖：\n\n<img src=\"charts/cot_oil_gold_weekly.png\" alt=\"COT 原油與黃金未平倉趨勢\" style=\"width:100%;max-width:900px;border-radius:12px;margin:12px 0;box-shadow:0 4px 20px rgba(0,0,0,0.5);\"/>\n\n📌 2026 年 WTI 原油與黃金 COT 趨勢 — 上半：總 OI + 投機淨部位（含四巫日標記）｜下半：投機多空倉位變化"
     },
     {
       "title": "📊 本週關鍵數據",
