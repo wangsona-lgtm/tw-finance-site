@@ -2,6 +2,14 @@
   "reports": [
     {
       "date": "2026-06-30",
+      "type": "premarket-analysis",
+      "file": "reports/2026-06-30.json",
+      "generated_at": "2026-06-30T07:10:00+08:00",
+      "status": "completed",
+      "note": "盤前分析：SOX+3.83%、TSM ADR+5.26%、NASDQ+2.07%，今日強多開出預估+300~500點"
+    },
+    {
+      "date": "2026-06-30",
       "type": "zh-digest",
       "file": "reports/2026-06-30.json",
       "generated_at": "2026-06-30T06:15:00+08:00",
