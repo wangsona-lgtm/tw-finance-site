@@ -1,6 +1,14 @@
 {
   "reports": [
     {
+      "date": "2026-06-29",
+      "type": "zh-digest",
+      "file": "reports/2026-06-29.json",
+      "generated_at": "2026-06-29T06:10:30+08:00",
+      "status": "completed",
+      "note": "ZH導讀：17篇 — 避險基金創紀錄賣科技、美伊衝突升溫、Goldman波動轉向論、JPMorgan華盛頓干預論"
+    },
+    {
       "date": "2026-06-25",
       "type": "pre-market",
       "file": "reports/2026-06-25.json",
@@ -81,5 +89,5 @@
       "note": "盤前分析：台股上週暴跌-1,683至44,572、SOX -5.29%半導體續殺，但台指期夜盤逆勢狂拉+543點，台積電ADR溢價+17%護航"
     }
   ],
-  "updated_at": "2026-06-29T07:05:00+08:00"
+  "updated_at": "2026-06-29T06:10:30+08:00"
 }
