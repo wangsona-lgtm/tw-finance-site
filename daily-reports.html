@@ -306,7 +306,8 @@ async function loadReportList() {
     `<div class="loading" style="text-align:center;padding:40px;color:var(--text2);font-size:13px;">載入中...</div>`;
   try {
     const r = await fetch(prefix + '/list.json' + '?t=' + Date.now());
-    reports = await r.json();
+    const raw = await r.json();
+    reports = Array.isArray(raw) ? raw : (raw.reports || []);
     renderSidebar();
     // Auto-select newest
     if (reports.length > 0) selectReport(reports[0].date);

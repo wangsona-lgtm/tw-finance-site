@@ -240,7 +240,8 @@ let reports = [];
 async function loadReportList() {
   try {
     const r = await fetch('reports/list.json' + '?t=' + Date.now());
-    reports = await r.json();
+    const raw = await r.json();
+    reports = Array.isArray(raw) ? raw : (raw.reports || []);
     renderSidebar();
     // Auto-select newest
     if (reports.length > 0) selectReport(reports[0].date);
