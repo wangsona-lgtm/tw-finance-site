@@ -54,7 +54,7 @@
       "name": "鴻海",
       "close": 246.5,
       "change": -2.0,
-      "changePercent": -0.80,
+      "changePercent": -0.8,
       "direction": "down"
     },
     {
@@ -62,7 +62,7 @@
       "name": "大立光",
       "close": 4380.0,
       "change": -340.0,
-      "changePercent": -7.20,
+      "changePercent": -7.2,
       "direction": "down"
     },
     {
@@ -70,7 +70,7 @@
       "name": "台達電",
       "close": 1915.0,
       "change": 105.0,
-      "changePercent": 5.80,
+      "changePercent": 5.8,
       "direction": "up"
     },
     {
@@ -137,20 +137,52 @@
     "direction": "up",
     "low": 31.828,
     "high": 31.927,
-    "previousClose": 31.860
+    "previousClose": 31.86
   },
   "stockHighlights": {
     "strongest": [
-      { "symbol": "2379", "name": "瑞昱", "changePercent": 6.08 },
-      { "symbol": "2308", "name": "台達電", "changePercent": 5.80 },
-      { "symbol": "2301", "name": "光寶科", "changePercent": 5.46 },
-      { "symbol": "2327", "name": "國巨", "changePercent": 2.96 }
+      {
+        "symbol": "2379",
+        "name": "瑞昱",
+        "changePercent": 6.08
+      },
+      {
+        "symbol": "2308",
+        "name": "台達電",
+        "changePercent": 5.8
+      },
+      {
+        "symbol": "2301",
+        "name": "光寶科",
+        "changePercent": 5.46
+      },
+      {
+        "symbol": "2327",
+        "name": "國巨",
+        "changePercent": 2.96
+      }
     ],
     "weakest": [
-      { "symbol": "2492", "name": "華新科", "changePercent": -9.81 },
-      { "symbol": "3008", "name": "大立光", "changePercent": -7.20 },
-      { "symbol": "2882", "name": "國泰金", "changePercent": -4.25 },
-      { "symbol": "2881", "name": "富邦金", "changePercent": -3.73 }
+      {
+        "symbol": "2492",
+        "name": "華新科",
+        "changePercent": -9.81
+      },
+      {
+        "symbol": "3008",
+        "name": "大立光",
+        "changePercent": -7.2
+      },
+      {
+        "symbol": "2882",
+        "name": "國泰金",
+        "changePercent": -4.25
+      },
+      {
+        "symbol": "2881",
+        "name": "富邦金",
+        "changePercent": -3.73
+      }
     ]
   },
   "keyObservations": [
@@ -162,10 +194,10 @@
     "OTC 與電子指數數據因證交所尖峰暫缺，待後續更新"
   ],
   "postmarket": {
-    "generatedAt": "2026-06-29T16:07:14+08:00",
-    "dataSource": "TWSE BFI82U, TAIFEX OpenAPI, Yahoo Finance",
+    "generatedAt": "2026-06-29T22:05:00+08:00",
+    "dataSource": "TWSE BFI82U, MI_MARGN, TAIFEX OpenAPI, Yahoo Finance",
     "futuresDataDate": "2026-06-26",
-    "futuresDataNote": "期交所今日數據約 18:00 更新，此為上週五收盤數據",
+    "futuresDataNote": "期交所TAIFEX數據約 18:00-21:00 更新，本次無法直接取得，沿用前次(2026-06-26)數據",
     "weeklyTrend": {
       "period": "2026-06-22 ~ 2026-06-29",
       "previousClose": 47742,
@@ -175,51 +207,51 @@
       "note": "上週連日重挫，本週一出現技術性反彈"
     },
     "institutionalTrading": {
-      "summary": "三大法人合計買超 31.50 億，投信大買 137.54 億抵銷外資賣壓",
+      "summary": "三大法人合計買超 55.90 億，投信大買 145.19 億抵銷外資賣壓",
       "note": "單位：新台幣元",
       "details": [
         {
           "type": "自營商(自行買賣)",
-          "buyAmount": 10401000000,
-          "sellAmount": 12376000000,
-          "netAmount": -1974000000,
+          "buyAmount": 10401248085,
+          "sellAmount": 12375601873,
+          "netAmount": -1974353788,
           "direction": "sell"
         },
         {
           "type": "自營商(避險)",
-          "buyAmount": 33036000000,
-          "sellAmount": 35654000000,
-          "netAmount": -2619000000,
+          "buyAmount": 33036267452,
+          "sellAmount": 35654801349,
+          "netAmount": -2618533897,
           "direction": "sell"
         },
         {
           "type": "投信",
-          "buyAmount": 42501000000,
-          "sellAmount": 28747000000,
-          "netAmount": 13754000000,
+          "buyAmount": 43292022685,
+          "sellAmount": 28772942556,
+          "netAmount": 14519080129,
           "direction": "buy"
         },
         {
           "type": "外資及陸資(不含自營商)",
-          "buyAmount": 426326000000,
-          "sellAmount": 432337000000,
-          "netAmount": -6011000000,
+          "buyAmount": 443174487241,
+          "sellAmount": 447510694798,
+          "netAmount": -4336207557,
           "direction": "sell"
         },
         {
           "type": "合計",
-          "buyAmount": 512263000000,
-          "sellAmount": 509113000000,
-          "netAmount": 3150000000,
+          "buyAmount": 529904025463,
+          "sellAmount": 524314040576,
+          "netAmount": 5589984887,
           "direction": "buy",
           "isTotal": true
         }
       ],
       "interpretation": {
-        "foreign": "外資續賣 60.11 億，連日調節未止，大盤反彈中外資仍站在賣方",
-        "investmentTrust": "投信大買 137.54 億，明顯承接護盤或換股操作",
-        "dealer": "自營商合計賣超 45.93 億（自行-19.74 億 + 避險-26.19 億），避險與自行買賣雙雙偏空",
-        "net": "全市場合計仍買超 31.50 億，主因投信大額買盤抵銷外資賣壓"
+        "foreign": "外資續賣 43.36 億，較上週五收斂但仍站在賣方",
+        "investmentTrust": "投信大買 145.19 億，積極承接護盤力道增強",
+        "dealer": "自營商合計賣超 45.93 億（自行-19.74 億 + 避險-26.19 億），雙雙偏空",
+        "net": "全市場合計買超 55.90 億，投信大額買盤抵銷外資賣壓"
       }
     },
     "futuresPositions": {
@@ -232,10 +264,27 @@
         "direction": "short"
       },
       "totalByInstitution": [
-        { "institution": "自營商", "netOi": -397177, "direction": "short" },
-        { "institution": "投信", "netOi": 76365, "direction": "long" },
-        { "institution": "外資及陸資", "netOi": -574113, "direction": "short" },
-        { "institution": "三大法人合計", "netOi": null, "direction": "short", "note": "大幅淨空方" }
+        {
+          "institution": "自營商",
+          "netOi": -397177,
+          "direction": "short"
+        },
+        {
+          "institution": "投信",
+          "netOi": 76365,
+          "direction": "long"
+        },
+        {
+          "institution": "外資及陸資",
+          "netOi": -574113,
+          "direction": "short"
+        },
+        {
+          "institution": "三大法人合計",
+          "netOi": null,
+          "direction": "short",
+          "note": "大幅淨空方"
+        }
       ],
       "optionsForeign": {
         "callNetOi": -1022,
@@ -253,52 +302,239 @@
       "assessmentDetail": "外資臺指期淨空單 -76,391 口處於高檔空單水位；自營商同步偏空；僅投信維持多單方向；選擇權未平倉 P/C 128.74% 顯示市場避險需求仍高"
     },
     "strongStocks": [
-      { "symbol": "4763", "name": "材料*-KY", "close": 47.85, "changePercent": 10.0, "isLimitUp": true, "theme": null },
-      { "symbol": "5434", "name": "崇越", "close": 539.0, "changePercent": 10.0, "isLimitUp": true, "theme": "半導體材料" },
-      { "symbol": "1444", "name": "力麗", "close": 8.15, "changePercent": 9.99, "isLimitUp": true, "theme": "紡織" },
-      { "symbol": "2406", "name": "國碩", "close": 38.0, "changePercent": 9.99, "isLimitUp": true, "theme": "太陽能" },
-      { "symbol": "1626", "name": "艾美特-KY", "close": 10.8, "changePercent": 9.98, "isLimitUp": true, "theme": "家電" },
-      { "symbol": "1447", "name": "力鵬", "close": 6.84, "changePercent": 9.97, "isLimitUp": true, "theme": "紡織" },
-      { "symbol": "8033", "name": "雷虎", "close": 154.5, "changePercent": 9.96, "isLimitUp": true, "theme": "軍工航太" },
-      { "symbol": "6446", "name": "藥華藥", "close": 1270.0, "changePercent": 9.96, "isLimitUp": true, "theme": "生技新藥" },
-      { "symbol": "3717", "name": "聯嘉投控", "close": 25.95, "changePercent": 9.96, "isLimitUp": true, "theme": null },
-      { "symbol": "1435", "name": "中福", "close": 24.9, "changePercent": 9.93, "isLimitUp": true, "theme": null }
+      {
+        "symbol": "4763",
+        "name": "材料*-KY",
+        "close": 47.85,
+        "changePercent": 10.0,
+        "isLimitUp": true,
+        "theme": null
+      },
+      {
+        "symbol": "5434",
+        "name": "崇越",
+        "close": 539.0,
+        "changePercent": 10.0,
+        "isLimitUp": true,
+        "theme": "半導體材料"
+      },
+      {
+        "symbol": "1444",
+        "name": "力麗",
+        "close": 8.15,
+        "changePercent": 9.99,
+        "isLimitUp": true,
+        "theme": "紡織"
+      },
+      {
+        "symbol": "2406",
+        "name": "國碩",
+        "close": 38.0,
+        "changePercent": 9.99,
+        "isLimitUp": true,
+        "theme": "太陽能"
+      },
+      {
+        "symbol": "1626",
+        "name": "艾美特-KY",
+        "close": 10.8,
+        "changePercent": 9.98,
+        "isLimitUp": true,
+        "theme": "家電"
+      },
+      {
+        "symbol": "1447",
+        "name": "力鵬",
+        "close": 6.84,
+        "changePercent": 9.97,
+        "isLimitUp": true,
+        "theme": "紡織"
+      },
+      {
+        "symbol": "8033",
+        "name": "雷虎",
+        "close": 154.5,
+        "changePercent": 9.96,
+        "isLimitUp": true,
+        "theme": "軍工航太"
+      },
+      {
+        "symbol": "6446",
+        "name": "藥華藥",
+        "close": 1270.0,
+        "changePercent": 9.96,
+        "isLimitUp": true,
+        "theme": "生技新藥"
+      },
+      {
+        "symbol": "3717",
+        "name": "聯嘉投控",
+        "close": 25.95,
+        "changePercent": 9.96,
+        "isLimitUp": true,
+        "theme": null
+      },
+      {
+        "symbol": "1435",
+        "name": "中福",
+        "close": 24.9,
+        "changePercent": 9.93,
+        "isLimitUp": true,
+        "theme": null
+      }
     ],
     "weakStocks": [
-      { "symbol": "6834", "name": "天二科技", "close": 109.0, "changePercent": -9.92, "isLimitDown": true },
-      { "symbol": "2484", "name": "希華", "close": 69.2, "changePercent": -9.90, "isLimitDown": true, "theme": "石英元件" },
-      { "symbol": "6890", "name": "來億-KY", "close": 201.5, "changePercent": -9.84, "isLimitDown": true },
-      { "symbol": "2233", "name": "宇隆", "close": 193.0, "changePercent": -9.81, "isLimitDown": true },
-      { "symbol": "2316", "name": "楠梓電", "close": 210.0, "changePercent": -8.70, "isLimitDown": false },
-      { "symbol": "3008", "name": "大立光", "close": 4380.0, "changePercent": -7.20, "isLimitDown": false, "theme": "蘋概股重挫" }
+      {
+        "symbol": "6834",
+        "name": "天二科技",
+        "close": 109.0,
+        "changePercent": -9.92,
+        "isLimitDown": true
+      },
+      {
+        "symbol": "2484",
+        "name": "希華",
+        "close": 69.2,
+        "changePercent": -9.9,
+        "isLimitDown": true,
+        "theme": "石英元件"
+      },
+      {
+        "symbol": "6890",
+        "name": "來億-KY",
+        "close": 201.5,
+        "changePercent": -9.84,
+        "isLimitDown": true
+      },
+      {
+        "symbol": "2233",
+        "name": "宇隆",
+        "close": 193.0,
+        "changePercent": -9.81,
+        "isLimitDown": true
+      },
+      {
+        "symbol": "2316",
+        "name": "楠梓電",
+        "close": 210.0,
+        "changePercent": -8.7,
+        "isLimitDown": false
+      },
+      {
+        "symbol": "3008",
+        "name": "大立光",
+        "close": 4380.0,
+        "changePercent": -7.2,
+        "isLimitDown": false,
+        "theme": "蘋概股重挫"
+      }
     ],
     "nextDayEvents": {
       "date": "2026-06-30",
       "dayOfWeek": "星期二",
       "exDividend": [
-        { "symbol": "1301", "name": "台塑", "cashDividend": 0.50 },
-        { "symbol": "6592", "name": "和潤企業", "cashDividend": 3.00, "stockDividend": 0.03 },
-        { "symbol": "1817", "name": "凱撒衛", "cashDividend": 2.20 },
-        { "symbol": "1731", "name": "美吾華", "cashDividend": 1.22 },
-        { "symbol": "2328", "name": "廣宇", "cashDividend": 0.90 },
-        { "symbol": "3714", "name": "富采", "cashDividend": 0.90 },
-        { "symbol": "8039", "name": "台虹", "cashDividend": 1.99 },
-        { "symbol": "7711", "name": "永擎", "cashDividend": 8.99 },
-        { "symbol": "9931", "name": "欣高", "cashDividend": 1.80 },
-        { "symbol": "1521", "name": "大億", "cashDividend": 0.75 },
-        { "symbol": "1598", "name": "岱宇", "cashDividend": 0.50 },
-        { "symbol": "1727", "name": "中華化", "cashDividend": 0.15 },
-        { "symbol": "4722", "name": "國精化", "cashDividend": 1.18 },
-        { "symbol": "6835", "name": "圓裕", "cashDividend": 1.01 },
-        { "symbol": "1410", "name": "南染", "cashDividend": 0.20 }
+        {
+          "symbol": "1301",
+          "name": "台塑",
+          "cashDividend": 0.5
+        },
+        {
+          "symbol": "6592",
+          "name": "和潤企業",
+          "cashDividend": 3.0,
+          "stockDividend": 0.03
+        },
+        {
+          "symbol": "1817",
+          "name": "凱撒衛",
+          "cashDividend": 2.2
+        },
+        {
+          "symbol": "1731",
+          "name": "美吾華",
+          "cashDividend": 1.22
+        },
+        {
+          "symbol": "2328",
+          "name": "廣宇",
+          "cashDividend": 0.9
+        },
+        {
+          "symbol": "3714",
+          "name": "富采",
+          "cashDividend": 0.9
+        },
+        {
+          "symbol": "8039",
+          "name": "台虹",
+          "cashDividend": 1.99
+        },
+        {
+          "symbol": "7711",
+          "name": "永擎",
+          "cashDividend": 8.99
+        },
+        {
+          "symbol": "9931",
+          "name": "欣高",
+          "cashDividend": 1.8
+        },
+        {
+          "symbol": "1521",
+          "name": "大億",
+          "cashDividend": 0.75
+        },
+        {
+          "symbol": "1598",
+          "name": "岱宇",
+          "cashDividend": 0.5
+        },
+        {
+          "symbol": "1727",
+          "name": "中華化",
+          "cashDividend": 0.15
+        },
+        {
+          "symbol": "4722",
+          "name": "國精化",
+          "cashDividend": 1.18
+        },
+        {
+          "symbol": "6835",
+          "name": "圓裕",
+          "cashDividend": 1.01
+        },
+        {
+          "symbol": "1410",
+          "name": "南染",
+          "cashDividend": 0.2
+        }
       ],
       "upcomingEvents": [
-        { "date": "2026-07-01", "event": "台泥 1101 除息 0.80 元；華碩 2357 除息 42.00 元" },
-        { "date": "2026-07-02", "event": "鴻海 2317 除息 7.17 元（本週重頭戲）" },
-        { "date": "2026-07-03", "event": "日月光投控 3711 除息 6.58 元" },
-        { "date": "2026-07-07", "event": "達發 6526 除息 13.50 元" },
-        { "date": "2026-07-08", "event": "聯電 2303 除息 2.61 元；遠傳 4904 除息 3.81 元" },
-        { "date": "2026-07-09", "event": "藥華藥 6446 除權息；AES-KY 6781 除息 19.10 元" }
+        {
+          "date": "2026-07-01",
+          "event": "台泥 1101 除息 0.80 元；華碩 2357 除息 42.00 元"
+        },
+        {
+          "date": "2026-07-02",
+          "event": "鴻海 2317 除息 7.17 元（本週重頭戲）"
+        },
+        {
+          "date": "2026-07-03",
+          "event": "日月光投控 3711 除息 6.58 元"
+        },
+        {
+          "date": "2026-07-07",
+          "event": "達發 6526 除息 13.50 元"
+        },
+        {
+          "date": "2026-07-08",
+          "event": "聯電 2303 除息 2.61 元；遠傳 4904 除息 3.81 元"
+        },
+        {
+          "date": "2026-07-09",
+          "event": "藥華藥 6446 除權息；AES-KY 6781 除息 19.10 元"
+        }
       ],
       "note": "台塑明日除息影響指數約 15~20 點"
     },
@@ -311,8 +547,39 @@
       "currency": "中性 (台幣31.84狹幅整理)",
       "strongSectors": "生技(藥華藥)、軍工(雷虎)、紡織",
       "weakSectors": "蘋概(大立光-7.2%)、高價電子",
-      "conclusion": "短線急跌後技術反彈，但籌碼面（外資期貨高檔空單 + 現貨續賣）仍偏空。投信積極承接為市場提供支撐，指數可能於 44,500~45,500 間震盪築底。留意明日台塑除息影響指數約 15~20 點，鴻海 7/2 除息 7.17 元為本週重頭戲。"
-    }
+      "conclusion": "短線急跌後技術反彈，但籌碼面（外資期貨高檔空單 + 現貨續賣）仍偏空。投信積極承接為市場提供支撐，指數可能於 44,500~45,500 間震盪築底。留意明日台塑除息影響指數約 15~20 點，鴻海 7/2 除息 7.17 元為本週重頭戲。",
+      "margin": "融資+33億，反彈日散戶追價；融券+1,355張，空方未退"
+    },
+    "marginTrading": {
+      "date": "2026-06-29",
+      "source": "TWSE MI_MARGN (21:30 公布)",
+      "marginPurchase": {
+        "name": "融資餘額",
+        "previousBalance": 590926517000,
+        "todayBalance": 594229687000,
+        "change": 3303170000,
+        "changeFormatted": "+33.03 億",
+        "unit": "元",
+        "direction": "increase"
+      },
+      "shortSelling": {
+        "name": "融券餘額",
+        "previousBalance": 203932,
+        "todayBalance": 205287,
+        "change": 1355,
+        "changeFormatted": "+1,355 張",
+        "unit": "張",
+        "direction": "increase"
+      },
+      "marginDetails": {
+        "buyAmount": 28864920000,
+        "sellAmount": 24710335000,
+        "cashRepay": 851415000,
+        "interpretation": "融資增加 33 億，反彈日散戶進場追價；融券小增 1,355 張，空方未明顯退場"
+      }
+    },
+    "marginDataDate": "2026-06-29",
+    "institutionalDataDate": "2026-06-29"
   },
   "meta": {
     "generatedBy": "cron_8a869bd74983",
