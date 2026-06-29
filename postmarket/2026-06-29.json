@@ -1,0 +1,162 @@
+{
+  "date": "2026-06-29",
+  "dayOfWeek": "星期一",
+  "updatedAt": "2026-06-29T13:43:06+08:00",
+  "reportType": "closing_report",
+  "summary": "台股上週五暴跌 1,683 點後今日強勁反彈，加權指數大漲 546.43 點 (+1.23%)，收復部分失地。台達電領軍大漲 5.80% 為權值股亮點，電子零組件、半導體族群領漲。金融股延續弱勢跌逾 1.7%，鴻海逆勢小跌 0.40%。反彈量縮顯示市場追價意願謹慎。新台幣微幅升值至 31.846。",
+  "indices": {
+    "taiex": {
+      "name": "加權指數",
+      "close": 45118.19,
+      "change": 546.43,
+      "changePercent": 1.23,
+      "direction": "up",
+      "open": 44594.81,
+      "high": 45521.63,
+      "low": 44594.81
+    },
+    "otc": {
+      "name": "櫃買OTC",
+      "close": null,
+      "change": null,
+      "changePercent": null,
+      "direction": null,
+      "note": "收盤後證交所尖峰時段，數據暫未釋出"
+    },
+    "electronics": {
+      "name": "電子指數",
+      "close": null,
+      "change": null,
+      "changePercent": null,
+      "direction": null,
+      "note": "收盤後證交所尖峰時段，數據暫未釋出"
+    }
+  },
+  "stocks": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "close": 2380.0,
+      "change": 40.0,
+      "changePercent": 1.71,
+      "direction": "up"
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "close": 3935.0,
+      "change": 55.0,
+      "changePercent": 1.42,
+      "direction": "up"
+    },
+    {
+      "symbol": "2317",
+      "name": "鴻海",
+      "close": 247.5,
+      "change": -1.0,
+      "changePercent": -0.40,
+      "direction": "down"
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "close": 1915.0,
+      "change": 105.0,
+      "changePercent": 5.80,
+      "direction": "up"
+    },
+    {
+      "symbol": "2382",
+      "name": "廣達",
+      "close": 366.5,
+      "change": 4.5,
+      "changePercent": 1.24,
+      "direction": "up"
+    }
+  ],
+  "sectors": [
+    {
+      "name": "電子零組件",
+      "changePercent": 4.49,
+      "direction": "up",
+      "highlight": "台達電 +5.80%、光寶科 +5.46%、國巨 +2.96%"
+    },
+    {
+      "name": "半導體",
+      "changePercent": 2.62,
+      "direction": "up",
+      "highlight": "瑞昱 +6.08%、聯詠 +2.75%、聯發科 +1.42%"
+    },
+    {
+      "name": "航運",
+      "changePercent": 1.97,
+      "direction": "up",
+      "highlight": "陽明 +2.59%、萬海 +2.22%、長榮 +1.38%"
+    },
+    {
+      "name": "塑化",
+      "changePercent": 1.85,
+      "direction": "up",
+      "highlight": "台塑 +2.36%、南亞 +1.72%、台塑化 +1.48%"
+    },
+    {
+      "name": "金融",
+      "changePercent": -1.79,
+      "direction": "down",
+      "highlight": "國泰金 -4.25%、富邦金 -3.73%"
+    },
+    {
+      "name": "電腦週邊",
+      "changePercent": 0.76,
+      "direction": "up",
+      "highlight": "仁寶 -1.44%、鴻海 -0.40%（族群偏弱）"
+    }
+  ],
+  "volume": {
+    "totalShares": null,
+    "totalAmount": null,
+    "note": "大盤總成交金額因證交所尖峰時段暫未公布，0050成交量推估約為上週五6-7成",
+    "lastTradeAmount": 16728.0,
+    "lastTradeUnit": "億",
+    "previousDate": "2026-06-26",
+    "etfNote": "0050今日1.03億股 vs 上週五2.52億股，量縮明顯"
+  },
+  "currency": {
+    "pair": "USD/TWD",
+    "rate": 31.846,
+    "change": -0.014,
+    "changePercent": -0.04,
+    "direction": "up",
+    "low": 31.840,
+    "high": 31.921,
+    "previousClose": 31.860
+  },
+  "stockHighlights": {
+    "strongest": [
+      { "symbol": "2379", "name": "瑞昱", "changePercent": 6.08 },
+      { "symbol": "2308", "name": "台達電", "changePercent": 5.80 },
+      { "symbol": "2301", "name": "光寶科", "changePercent": 5.46 },
+      { "symbol": "2327", "name": "國巨", "changePercent": 2.96 }
+    ],
+    "weakest": [
+      { "symbol": "2492", "name": "華新科", "changePercent": -9.81 },
+      { "symbol": "3008", "name": "大立光", "changePercent": -6.89 },
+      { "symbol": "2882", "name": "國泰金", "changePercent": -4.25 },
+      { "symbol": "2881", "name": "富邦金", "changePercent": -3.73 }
+    ]
+  },
+  "keyObservations": [
+    "上週五暴跌 1,683 點後今日強彈 546 點，大幅反彈但量能萎縮",
+    "台達電領軍大漲 5.80% 逼近 2000 元，為權值股最強",
+    "鴻海逆勢走弱 -0.40%，金融股續跌逾 1.7%",
+    "反彈量縮（約前日 6-7 成），市場追價意願謹慎",
+    "新台幣微幅升值，匯市平穩",
+    "OTC 與電子指數數據因證交所尖峰暫缺，待後續更新"
+  ],
+  "meta": {
+    "generatedBy": "cron_39f732630e4d",
+    "generatedAt": "2026-06-29T13:43:06+08:00",
+    "publishedBy": "cron_276831a1",
+    "publishedAt": "2026-06-29T13:40:00+08:00"
+  }
+}
