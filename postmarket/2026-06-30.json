@@ -710,5 +710,217 @@
         "成交量能否跟上"
       ]
     }
+  },
+  "full_chip_data": {
+    "generated_at": "2026-06-30T22:00:00+08:00",
+    "source": "twse-mi-margn+twse-twt93u+taifex-openapi+goodinfo",
+    "margin_short": {
+      "margin_balance_shares": 9435456,
+      "margin_balance_change": 49348,
+      "margin_balance_amount_100m": 6116.52,
+      "margin_balance_amount_change_100m": 174.23,
+      "short_balance_shares": 194887,
+      "short_balance_change": -10400,
+      "as_of_date": "2026-06-30"
+    },
+    "short_selling_balance": {
+      "2330": {
+        "name": "台積電",
+        "prev_balance": 21000,
+        "current_balance": 22000,
+        "change": 1000,
+        "today_sell": 3000,
+        "today_buyback": 2000
+      },
+      "2882": {
+        "name": "國泰金",
+        "prev_balance": 0,
+        "current_balance": 75000,
+        "change": 75000,
+        "today_sell": 75000,
+        "today_buyback": 0,
+        "alert": "暴增異常"
+      },
+      "2317": {
+        "name": "鴻海",
+        "prev_balance": 0,
+        "current_balance": 0,
+        "change": 0,
+        "today_sell": 0,
+        "today_buyback": 0
+      },
+      "6505": {
+        "name": "台塑化",
+        "prev_balance": 14000,
+        "current_balance": 14000,
+        "change": 0,
+        "today_sell": 1000,
+        "today_buyback": 1000
+      },
+      "2382": {
+        "name": "廣達",
+        "prev_balance": 1046000,
+        "current_balance": 1023000,
+        "change": -23000,
+        "today_sell": 1000,
+        "today_buyback": 24000
+      }
+    },
+    "stock_institutional_trading": {
+      "2330": {
+        "name": "台積電",
+        "close": 2410,
+        "change_pct": 1.69,
+        "foreign": {
+          "buy": 34039,
+          "sell": 35465,
+          "net": -1426
+        },
+        "investment_trust": {
+          "net": -90
+        },
+        "assessment": "ADR溢價22.5%但外資仍小幅賣超，外資趁漲調節"
+      },
+      "2882": {
+        "name": "國泰金",
+        "close": 98.3,
+        "change_pct": -3.15,
+        "foreign": {
+          "buy": 75307,
+          "sell": 26245,
+          "net": 49062
+        },
+        "investment_trust": {
+          "net": -5952
+        },
+        "short_selling_alert": "借券賣出從0暴增至75000張，外資現貨買+借券空=避險對沖",
+        "assessment": "外資大買但投信倒貨，借券異常暴增，風險上升"
+      },
+      "2317": {
+        "name": "鴻海",
+        "close": 251.0,
+        "change_pct": 1.83,
+        "foreign": {
+          "net": -764
+        },
+        "investment_trust": {
+          "net": -832
+        },
+        "assessment": "反彈但法人雙雙賣超，趨勢未反轉，建議反彈減碼"
+      },
+      "6505": {
+        "name": "台塑化",
+        "close": 55.1,
+        "change_pct": -0.36,
+        "foreign": {
+          "net": -242
+        },
+        "assessment": "法人中性偏空，借券持平"
+      },
+      "2382": {
+        "name": "廣達",
+        "close": 368.0,
+        "change_pct": 0.27,
+        "foreign": {
+          "net": -159
+        },
+        "investment_trust": {
+          "net": 1773
+        },
+        "assessment": "投信轉買+借券回補，籌碼好轉"
+      }
+    },
+    "market_breadth": {
+      "tse_advances": 8811,
+      "tse_declines": 2500,
+      "tse_unchanged": 497,
+      "tse_limit_up": 588,
+      "tse_limit_down": 77,
+      "otc_advances": 747,
+      "otc_declines": 237,
+      "otc_unchanged": 66,
+      "otc_limit_up": 59,
+      "otc_limit_down": 1,
+      "advance_decline_ratio": 3.5
+    },
+    "strong_sectors": [
+      {
+        "name": "半導體",
+        "leader": "聯發科+8.57%、台積電+1.69%"
+      },
+      {
+        "name": "被動元件",
+        "leader": "國巨+9.62%、華新科同步大漲"
+      },
+      {
+        "name": "電子零組件",
+        "leader": "台達電+2.36%、光寶科+5.46%"
+      },
+      {
+        "name": "航運",
+        "leader": "長榮航+2.28%、陽明+1.17%"
+      },
+      {
+        "name": "塑化",
+        "leader": "台塑+2.44%、台塑化-0.55%"
+      }
+    ],
+    "weak_sectors": [
+      {
+        "name": "鋼鐵",
+        "leader": "中鋼-1.31%"
+      },
+      {
+        "name": "電信",
+        "leader": "遠傳-1.27%、中華電-0.35%"
+      },
+      {
+        "name": "國泰金",
+        "leader": "2882 -3.15%",
+        "note": "借券暴增+投信獲利了結"
+      }
+    ],
+    "recommendation_review": {
+      "2330": {
+        "verdict": "hold",
+        "cumulative_return_pct": 1.05,
+        "note": "ADR溢價22.5%保護邏輯存在但外資未轉買"
+      },
+      "2882": {
+        "verdict": "caution",
+        "cumulative_return_pct": 4.13,
+        "note": "累計正報酬但借券暴增7.5萬張，短期壓力大增"
+      },
+      "2317": {
+        "verdict": "fail",
+        "cumulative_return_pct": -14.33,
+        "note": "趨勢未反轉，建議反彈減碼"
+      },
+      "6505": {
+        "verdict": "hold_watch",
+        "cumulative_return_pct": null,
+        "note": "持平，法人中性偏空"
+      },
+      "2382": {
+        "verdict": "hold",
+        "cumulative_return_pct": null,
+        "note": "投信轉買+借券回補，籌碼好轉"
+      }
+    },
+    "overall_assessment": {
+      "方向": "偏多反彈",
+      "強度": "強（漲停647檔、漲跌比3.5:1）",
+      "法人動向": "三大法人合計買超144.41億，外資僅賣5.09億大幅收斂",
+      "期貨風險": "外資淨空單53.3萬口（6/29）仍偏空",
+      "資券": "融資大增174億散戶追價，融券回補1萬張",
+      "國泰金警訊": "借券賣出暴增7.5萬張",
+      "關鍵觀察": [
+        "外資是否轉買回補",
+        "國泰金借券異常後續",
+        "台積電2400關卡",
+        "量能是否續增",
+        "7/3非農數據"
+      ]
+    }
   }
 }
