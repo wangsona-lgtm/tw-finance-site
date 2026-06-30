@@ -333,5 +333,45 @@
       "Volterra equation leading-order → concave impact trajectory",
       "arXiv q-fin new 2026-06"
     ]
+  },
+  {
+    "title": "The Mediating Role of Globalization in the Nexus Between CO₂ Emissions, GHGs, and Economic Growth",
+    "authors": "Abdelbasset Dhouiwi",
+    "year": "2026",
+    "journal": "Published April 5, 2026",
+    "doi": "",
+    "date": "2026-06-30",
+    "tags": [
+      "panel",
+      "mediation",
+      "globalization",
+      "G20",
+      "Baron-Kenny"
+    ],
+    "topics": [
+      "宏觀總體",
+      "碳市場/碳交易",
+      "氣候風險/政策"
+    ],
+    "pdf": "uploads/Globalization_Mediating_CO2_GHG_Growth_Dhouiwi_2026.pdf",
+    "notes": [
+      "樣本：20 G20 國家，2010–2024，年資料，300 筆觀測值",
+      "資料庫：Global Economy Database",
+      "方法：Baron & Kenny (1986) 四步驟中介分析 + 固定效果面板",
+      "---",
+      "【變數】DV=經濟成長(實質GDP成長率), IV=CO₂排放(每單位GDP)+GHGE(每單位GDP), Mediator=全球化(KOF指數0-100), Controls=投資/GDP比, 通膨, 失業率, 監管品質",
+      "---",
+      "【Step 1】CO₂→EG: +2.1680(p<0.001), GHGE→EG: +12.1037(p=0.002) 正向顯著",
+      "【Step 2】CO₂→GLOB: −0.9385(p<0.001), GHGE→GLOB: −18.9679(p<0.001) 排放越高全球化越低",
+      "【Step 3】GLOB→EG: +4.7803(p=0.025) 全球化正向促成長",
+      "【Step 4 核心】CO₂+GLOB→EG: CO₂變為−1.1601(p=0.405❌), GLOB維持+5.1606(p<0.001)✅ → 全球化完全中介 CO₂→EG",
+      "【Step 4 核心】GHGE+GLOB→EG: GHGE變為−0.3395(p=0.888❌), GLOB維持+5.0169(p<0.001)✅ → 全球化完全中介 GHGE→EG",
+      "---",
+      "【診斷】CSD顯著(χ²=343.55), 單根I(0), VIF<3, JB常態(p=0.392), DW=1.98, 非線性不顯著",
+      "---",
+      "【政策意涵】1)不能只靠減排，全球化渠道更關鍵；2)促國際整合+貿易+FDI有助環境壓力轉綠色成長；3)G20需協調行動；4)注意污染天堂假說",
+      "---",
+      "【限制】僅G20不可外推；Baron&Kenny檢定力較低；年資料無法捕捉短期動態；未控制各國環境法規差異"
+    ]
   }
 ]
