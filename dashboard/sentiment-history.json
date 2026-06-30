@@ -134,12 +134,12 @@
   {
     "date": "2026-06-30",
     "inst": {
-      "foreign": -4336207557,
-      "investment_trust": 14519080129,
-      "dealer_total": -4592887685
+      "foreign": -508728992,
+      "investment_trust": 755850342,
+      "dealer_total": 14585072281
     },
-    "pc_ratio": 117.54,
-    "pc_oi_ratio": 123.92,
+    "pc_ratio": 137.17,
+    "pc_oi_ratio": 134.93,
     "futures_foreign_net": "-61,949",
     "futures_total_net": "-74,321"
   }
