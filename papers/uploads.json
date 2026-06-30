@@ -373,5 +373,52 @@
       "---",
       "【限制】僅G20不可外推；Baron&Kenny檢定力較低；年資料無法捕捉短期動態；未控制各國環境法規差異"
     ]
+  },
+  {
+    "title": "Financial development and renewable energy consumption: a novel view under the moderating role of institutional quality across APEC economies",
+    "authors": "Chowdhury, M.A.S., An, M. & Hedvicakova, M.",
+    "year": "2026",
+    "journal": "Humanities and Social Sciences Communications (Nature), Article in Press",
+    "doi": "10.1057/s41599-026-07998-z",
+    "date": "2026-06-30",
+    "tags": [
+      "panel",
+      "quantile regression",
+      "IQ",
+      "APEC",
+      "moderation",
+      "REC",
+      "SDG"
+    ],
+    "topics": [
+      "潔淨能源",
+      "氣候風險/政策",
+      "金融市場",
+      "宏觀總體"
+    ],
+    "pdf": "uploads/Chowdhury_FD_IQ_REC_APEC_2026.pdf",
+    "notes": [
+      "樣本：12 APEC 經濟體 (澳、中、香港、日、韓、馬、墨、菲、星、泰、美、越)，2002–2021，240 obs",
+      "資料庫：World Development Indicators (WB)",
+      "方法：固定效果 + Panel Quantile Regression (Q.25/Q.50/Q.75/Q.95) + SYS-GMM/MMQR/Driscoll-Kraay 穩健性",
+      "---",
+      "【變數】DV=REC(再生能源消費%總最終能源), IV=FD1(國內信貸%GDP)+FD2(股票交易%GDP), Moderator=IQ(PCA合成6項WGI指標), Controls=EI(能源密集度), TO(貿易開放度), TI(技術創新)",
+      "---",
+      "【H1】FD→REC: Q.50係數−0.5386*(p<0.10), FE係數−0.5466***(p<0.01) → FD對REC為負向顯著，金融體系偏向傳統能源投資",
+      "【H2】FD×IQ→REC: APEC交互項係數+0.7815***(p<0.01)，高所得組+0.7899***(p<0.01)，中高所得組+0.1242*(p<0.10) → IQ正向調節FD-REC關係",
+      "---",
+      "【IQ直接】IQ→REC: 係數不顯著，IQ無直接顯著影響",
+      "【EI】EI→REC: FE係數−0.5531**(p<0.05)，能源密集度越高REC越低",
+      "【TO】TO→REC: 係數正值但不顯著，貿易開放度單獨不直接促REC",
+      "【TI】TI→REC: FE係數−0.3353***(p<0.01)，技術創新反而抑制REC(與再生能源目標脫鉤)",
+      "---",
+      "【診斷】CSD顯著, HS異質斜率, LLC/IPS單根I(0), Pedroni共整合(pp<0.05), Granger因果全顯著(無內生性), Hausman FE=23.12***(p<0.001), VIF<3",
+      "---",
+      "【理論】Energy Transition Theory + Institutional Theory 雙支柱",
+      "---",
+      "【政策意涵】1)金融資源需重新導向綠色金融(綠債、補貼、稅務優惠)；2)強化制度品質(透明+監管效率+問責)吸引再生能源投資；3)高EI經濟體須投資能效技術；4)利用貿易開放降低綠色技術關稅壁壘；5)技術創新須對齊再生能源目標",
+      "---",
+      "【限制】僅12國、未納碳價與政治風險、未考慮非線性與門檻效應、IQ多維度未拆解"
+    ]
   }
 ]
