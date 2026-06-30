@@ -420,5 +420,57 @@
       "---",
       "【限制】僅12國、未納碳價與政治風險、未考慮非線性與門檻效應、IQ多維度未拆解"
     ]
+  },
+  {
+    "title": "Green innovation and the CO₂ emissions gap: New evidence from OECD economies",
+    "authors": "Nguyen, T.T.T. & Pham, B.T.",
+    "year": "2026",
+    "journal": "Environmental and Sustainability Indicators (Elsevier), 31, 101382",
+    "doi": "10.1016/j.indic.2026.101382",
+    "date": "2026-06-30",
+    "tags": [
+      "directed technical change",
+      "carbon inequality",
+      "green innovation",
+      "pooled Bewley",
+      "panel cointegration",
+      "OECD"
+    ],
+    "topics": [
+      "碳市場/碳交易",
+      "氣候風險/政策",
+      "方法論",
+      "宏觀總體"
+    ],
+    "pdf": "uploads/Nguyen_Green_Innovation_CO2_Gap_OECD_2026.pdf",
+    "notes": [
+      "樣本：36 OECD 經濟體（排除愛爾蘭、義大利資料不全），1990–2021，unbalanced panel，N=1082~1152",
+      "資料庫：World Inequality Database (CO2gap), WDI (GDP/TO/UBAN), OECD Patent Indicators (GINO), World Bank (LPAT)",
+      "方法：Pooled Bewley (PB) 估計長條共整合向量 + PMG/MG/DFE/FE-DK/IV-GMM 穩健性",
+      "---",
+      "【DV】CO2gap = ln(前10%排放者人均CO₂ − 後50%排放者人均CO₂)，Chancel (2022) 消費基礎碳足跡",
+      "【IV核心】GINO = 環境相關技術占國內發明專利比率(%) → 創新方向；LPAT = ln(總專利申請數) → 創新規模",
+      "【Controls】LGDP(人均GDP對數), LGDP²(EKC二次項), TROP(貿易開放%GDP), UBAN(城市化率%)",
+      "---",
+      "【H1結果】LPAT→CO2gap: 係數不顯著，創新規模與碳不平等無系統性關聯 ✅ H1成立",
+      "【H2結果 核心】GINO→CO2gap: PB係數−0.0051~−0.0063**(p<0.05), PMG係數−0.0095~−0.0136*(p<0.05)",
+      "  → 綠色技術佔比每增1pp，碳不平等降0.5%~1.4% ✅ H2成立",
+      "---",
+      "【EKC】LGDP(+)顯著, LGDP²(−)顯著 → 所得與碳不平等呈倒U型",
+      "【UBAN】−0.0152~−0.0166**(p<0.05) 城市化降低碳不平等（集聚效率效益）",
+      "【TROP】不穩定/不顯著",
+      "---",
+      "【分組分析】GINO對前10%排放者(−0.49~−0.68%)與後50%排放者(−0.55~−0.71%)皆降排",
+      "  → 高低排放者都受益，但量級相近，絕對差距因基數效應縮小",
+      "---",
+      "【診斷】CSD顯著(CD,CDw,CD*), LLC/Breitung/IPS/CIPS單根I(1), Kao/Pedroni/Westerlund共整合(p<0.05), ECT=−0.35~−0.37(p<0.01)",
+      "【穩健性】FE-DK Driscoll-Kraay 標準誤 + IV-GMM + MG/DFE + 擴增控制變數(INFL/FD/FDI/WUI) → GINO始終顯著負向",
+      "---",
+      "【理論基礎】Acemoglu et al. (2012) Directed Technical Change + Kaya恆等式 + Rebound效應",
+      "---",
+      "【政策意涵】1)創新方向比規模重要 → 碳定價+綠色產業政策引導R&D；2)綠色專利補貼可兼顧減排與公平；3)城市化建設低碳基礎設施有助降低不平等；4)僅靠一般性R&D補貼無法改善碳不平等",
+      "---",
+      "【限制】僅OECD、專利指標未必反映技術擴散與採用、消費基礎排放有量測誤差"
+    ]
   }
 ]
