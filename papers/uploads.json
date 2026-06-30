@@ -472,5 +472,51 @@
       "---",
       "【限制】僅OECD、專利指標未必反映技術擴散與採用、消費基礎排放有量測誤差"
     ]
+  },
+  {
+    "title": "Impact of Geopolitical Risk and Economic Globalization on Turkey's Environmental Sustainability: Novel Quantile-on-quantile KRLS Method",
+    "authors": "Awan, A., Jahanger, A., Emran Hossain, M., Meo, M.S. & Yusoff, N.Y.b.M.",
+    "year": "2026",
+    "journal": "Politická ekonomie, 74(3), 490–514",
+    "doi": "10.18267/j.polek.1505",
+    "date": "2026-06-30",
+    "tags": [
+      "QQKRLS",
+      "quantile-on-quantile",
+      "geopolitical risk",
+      "globalization",
+      "Turkey",
+      "energy"
+    ],
+    "topics": [
+      "碳市場/碳交易",
+      "能源市場",
+      "地緣政治/國防",
+      "方法論"
+    ],
+    "pdf": "uploads/Awan_Geopolitical_Globalization_Turkey_CO2_2026.pdf",
+    "notes": [
+      "樣本：土耳其，1970–2019，年資料頻率轉換為季資料（quadratic match-sum），約200 obs",
+      "資料庫：WB (CO₂/GDPPC/NRR/REN), KOF (EGI), GPRH (GPRI)",
+      "方法：QQKRLS (Quantile-on-Quantile Kernel-based Regularized Least Squares) + QQR 穩健性",
+      "---",
+      "【DV】CO₂ = ln(人均CO₂排放，噸/人)",
+      "【IV】EGI=經濟全球化指數(KOF), GPRI=地緣政治風險指數, NRR=自然資源租金%GDP, GDPPC=人均GDP, REN=再生能源%最終能源",
+      "---",
+      "【EGI→CO₂】低分位(0.05-0.35)弱正相關，中分位(0.40-0.65)正相關轉強，高分位又轉弱 → 全球化在中度排放水準時環境成本最明顯",
+      "【GDPPC→CO₂】整體強正相關(低-高分位CO₂×中-高分位GDPPC) → 經濟成長=排碳增加",
+      "【GPRI→CO₂】整體正相關，中高分位(0.40-0.80)最強 → 地緣緊張排擠環保優先序",
+      "【NRR→CO₂】整體負相關(低-高分位NRR×中低分位CO₂)，僅極低分位正相關 → 土耳其自然資源(森林碳匯)有助減排",
+      "【REN→CO₂】複雜：低CO₂分位強負相關，中分位轉弱甚至轉正，高分位負相關再現 → 再生能源在低排放階段最有效",
+      "---",
+      "【前提檢定】JB常態檢定全拒絕(H0=常態), BDS非線性檢定全顯著(p<0.01), 參數穩定性Max-F/Exp-F/Ave-F通過",
+      "【穩健性】QQR 非參數雙變量分位數-on-分位數迴歸 → 結果與QQKRLS一致",
+      "---",
+      "【貢獻】1)首次在土耳其用QQKRLS研究EGI×GPRI對CO₂非線性效果；2)QQKRLS優勢：捕捉非線性+正則化防止過擬合+機器學習適應力",
+      "---",
+      "【政策意涵】1)貿易協定納入環境條款+高碳進口課稅+低碳進口獎勵；2)提升制度品質紓緩地緣風險對環境的負面影響；3)推廣再生能源R&D+公私合作+補貼稅制；4)經濟成長不應減產，應轉向低碳生產路徑",
+      "---",
+      "【限制】僅土耳其單國、結果不可外推、年轉季資料可能有測量誤差"
+    ]
   }
 ]
