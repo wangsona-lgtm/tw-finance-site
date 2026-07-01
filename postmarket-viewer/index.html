@@ -117,7 +117,10 @@ const DATA_URL = '../postmarket/list.json';
 async function init() {
   try {
     const res = await fetch(DATA_URL + '?_=' + Date.now());
-    const list = await res.json();
+    const data = await res.json();
+    // list.json 格式: { updatedAt, reports: ["2026-06-17", ...] }
+    const dates = data.reports || data;
+    const list = dates.map(d => typeof d === 'string' ? {date: d, file: d, title: '盤後分析'} : d);
     renderSidebar(list);
     if (list.length > 0) loadItem(list[0]);
   } catch(e) {
@@ -146,16 +149,66 @@ async function loadItem(item) {
 }
 function renderContent(data) {
   let html = '';
-  if (data.title) {
-    html += `<div class="card"><h3>${data.title}</h3><p>📅 ${data.date||''}</p></div>`;
+  if (data.title || data.date) {
+    html += `<div class="card"><h3>${data.title||'盤後分析'}</h3><p>📅 ${data.date||''}</p></div>`;
   }
   if (data.sections) {
     data.sections.forEach(s => {
-      html += `<div class="card"><div class="section"><h4>${s.title||''}</h4><p>${s.content||s.text||''}</p></div></div>`;
+      html += `<div class="card"><div class="section"><h4>${s.title||''}</h4><p>${(s.content||s.text||'').replace(/\n/g,'<br>')}</p></div></div>`;
     });
   }
   if (data.content) {
-    html += `<div class="card"><p>${data.content}</p></div>`;
+    html += `<div class="card"><p>${data.content.replace(/\n/g,'<br>')}</p></div>`;
+  }
+  // Flat format: summary, indices, stocks, sector_performance, etc.
+  if (data.summary && typeof data.summary === 'object') {
+    let shtml = '';
+    for (const [k,v] of Object.entries(data.summary)) {
+      if (typeof v === 'object') {
+        shtml += Object.entries(v).map(([sk,sv]) => `<div><b>${sk}:</b> ${sv}</div>`).join('');
+      } else {
+        shtml += `<div><b>${k}:</b> ${v}</div>`;
+      }
+    }
+    html += `<div class="card"><div class="section"><h4>📊 大盤摘要</h4><p>${shtml}</p></div></div>`;
+  }
+  if (data.indices && typeof data.indices === 'object') {
+    let ihtml = '';
+    const entries = Object.entries(data.indices).slice(0,15);
+    for (const [k,v] of entries) {
+      if (typeof v === 'object') {
+        ihtml += `<div>${k}: ${v.close||''} ${v.change||''} ${v.change_pct||''}</div>`;
+      } else {
+        ihtml += `<div>${k}: ${v}</div>`;
+      }
+    }
+    if (Object.keys(data.indices).length > 15) ihtml += `<div>…還有 ${Object.keys(data.indices).length-15} 項</div>`;
+    html += `<div class="card"><div class="section"><h4>📈 指數</h4><p>${ihtml}</p></div></div>`;
+  }
+  if (data.postmarket && typeof data.postmarket === 'object') {
+    let phtml = '';
+    for (const [k,v] of Object.entries(data.postmarket)) {
+      if (typeof v === 'object') {
+        phtml += `<div style="margin-top:8px"><b>${k}</b>: ${JSON.stringify(v).slice(0,200)}</div>`;
+      } else {
+        phtml += `<div><b>${k}:</b> ${String(v).slice(0,100)}</div>`;
+      }
+    }
+    html += `<div class="card"><div class="section"><h4>🏛️ 盤後資訊</h4><p>${phtml}</p></div></div>`;
+  }
+  if (data.full_chip_data && typeof data.full_chip_data === 'object') {
+    let fhtml = '';
+    for (const [k,v] of Object.entries(data.full_chip_data)) {
+      if (typeof v === 'object') {
+        fhtml += `<div style="margin-top:8px"><b>${k}</b></div>`;
+        for (const [sk,sv] of Object.entries(v)) {
+          fhtml += `<div style="margin-left:12px">${sk}: ${typeof sv==='object'?JSON.stringify(sv).slice(0,100):sv}</div>`;
+        }
+      } else {
+        fhtml += `<div><b>${k}:</b> ${String(v).slice(0,100)}</div>`;
+      }
+    }
+    html += `<div class="card"><div class="section"><h4>🔬 完整籌碼</h4><p>${fhtml}</p></div></div>`;
   }
   document.getElementById('contentArea').innerHTML = html || '<div class="empty-state"><div class="icon">📭</div><p>無資料</p></div>';
 }
