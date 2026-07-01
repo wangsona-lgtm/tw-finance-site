@@ -40,7 +40,7 @@
     "recommendation_review": {
       "overall": {
         "hit_rate": "3/4 = 75%",
-        "avg_return": 1.40,
+        "avg_return": 1.4,
         "taiex_return": 1.94,
         "excess_return": -0.54,
         "note": "略遜大盤"
@@ -82,7 +82,7 @@
           "direction": "偏多",
           "ref_price": 1070,
           "close": 1040,
-          "change_pct": -2.80,
+          "change_pct": -2.8,
           "verdict": "miss",
           "note": "連漲後拉回，應區分續抱與新進兩套建議"
         }
@@ -110,15 +110,56 @@
         }
       ],
       "second_day_limit_up": [
-        {"code": "6719", "name": "力智", "close": 297.0, "cumulative_pct": 10.0},
-        {"code": "3563", "name": "牧德", "close": 778.0, "cumulative_pct": 9.9},
-        {"code": "3605", "name": "宏致", "close": 85.6, "cumulative_pct": 9.9},
-        {"code": "4916", "name": "事欣", "close": 112.5, "cumulative_pct": 9.8}
+        {
+          "code": "6719",
+          "name": "力智",
+          "close": 297.0,
+          "cumulative_pct": 10.0
+        },
+        {
+          "code": "3563",
+          "name": "牧德",
+          "close": 778.0,
+          "cumulative_pct": 9.9
+        },
+        {
+          "code": "3605",
+          "name": "宏致",
+          "close": 85.6,
+          "cumulative_pct": 9.9
+        },
+        {
+          "code": "4916",
+          "name": "事欣",
+          "close": 112.5,
+          "cumulative_pct": 9.8
+        }
       ],
       "consecutive_limit_up": [
-        {"code": "6226", "name": "光鼎", "streak": 8, "close": 24.25, "cumulative_pct": 94.0, "risk": "🔴🔴🔴🔴🔴 最高風險"},
-        {"code": "6224", "name": "聚鼎", "streak": 3, "close": 84.90, "cumulative_pct": 20.9, "risk": "🟡🟡 中等風險"},
-        {"code": "3532", "name": "台勝科", "streak": 3, "close": 400.0, "cumulative_pct": 20.8, "risk": "🟡🟡 中等風險"}
+        {
+          "code": "6226",
+          "name": "光鼎",
+          "streak": 8,
+          "close": 24.25,
+          "cumulative_pct": 94.0,
+          "risk": "🔴🔴🔴🔴🔴 最高風險"
+        },
+        {
+          "code": "6224",
+          "name": "聚鼎",
+          "streak": 3,
+          "close": 84.9,
+          "cumulative_pct": 20.9,
+          "risk": "🟡🟡 中等風險"
+        },
+        {
+          "code": "3532",
+          "name": "台勝科",
+          "streak": 3,
+          "close": 400.0,
+          "cumulative_pct": 20.8,
+          "risk": "🟡🟡 中等風險"
+        }
       ],
       "assessment": "半導體/IC設計族群連續2天出現，與權值股半導體行情一致。動能維持中性偏多，但漲停家數從10檔降至7檔，顯示資金集中化"
     },
@@ -128,5 +169,144 @@
       "2026-06-29": "無交易",
       "2026-06-26": "0/4=0%"
     }
-  }
+  },
+  "positions": {
+    "date": "2026-07-01",
+    "generated_at": "2026-07-01T16:07:09+08:00",
+    "source": "twse+taifex",
+    "taiex": {
+      "close": 47018.99,
+      "change": 893.08,
+      "change_pct": 1.94,
+      "direction": "up",
+      "note": "連兩日大漲，續創近期新高，延續半導體領漲格局"
+    },
+    "institutional_trading": {
+      "date": "2026-07-01",
+      "source": "TWSE BFI82U",
+      "summary": "三大法人合計買超529.36億，外資強勢回補323.76億，投信大買146.21億",
+      "direction": "偏多",
+      "items": [
+        {
+          "name": "自營商(自行買賣)",
+          "buy_ntd": 12538480913,
+          "sell_ntd": 12711247070,
+          "net_ntd": -172766157,
+          "net_100m": -1.73,
+          "direction": "sell"
+        },
+        {
+          "name": "自營商(避險)",
+          "buy_ntd": 42557383558,
+          "sell_ntd": 36446141084,
+          "net_ntd": 6111242474,
+          "net_100m": 61.11,
+          "direction": "buy"
+        },
+        {
+          "name": "投信",
+          "buy_ntd": 74247565455,
+          "sell_ntd": 59626128762,
+          "net_ntd": 14621436693,
+          "net_100m": 146.21,
+          "direction": "buy"
+        },
+        {
+          "name": "外資及陸資",
+          "buy_ntd": 469659225904,
+          "sell_ntd": 437283626098,
+          "net_ntd": 32375599806,
+          "net_100m": 323.76,
+          "direction": "buy"
+        },
+        {
+          "name": "三大法人合計",
+          "buy_ntd": 599002655830,
+          "sell_ntd": 546067143014,
+          "net_ntd": 52935512816,
+          "net_100m": 529.36,
+          "direction": "buy"
+        }
+      ],
+      "analysis": "外資今日強勢回補323.76億，終結過去數日賣超趨勢。投信同步大買146.21億，形成內外資合力做多。自營商避險亦買超61.11億。三大法人合買529.36億為近期最大買超金額，與指數大漲893點呼應。"
+    },
+    "futures_positions": {
+      "date": "2026-06-30",
+      "note": "期交所數據延遲一日，以下為6/30收盤資料",
+      "taiex_futures_net_oi": {
+        "self_operated": 1571,
+        "investment_trust": 66623,
+        "foreign": -83063
+      },
+      "foreign_tx_net_oi": -83063,
+      "foreign_small_tx_net_oi": 2785,
+      "foreign_micro_tx_net_oi": 10258,
+      "pc_ratio": {
+        "volume_pct": 137.17,
+        "oi_pct": 134.93,
+        "interpretation": "PUT量與OI均高於CALL，偏空訊號"
+      },
+      "options_net_oi": {
+        "self_operated": {
+          "call": 2554,
+          "put": 5719
+        },
+        "investment_trust": {
+          "call": -1757,
+          "put": 117
+        },
+        "foreign": {
+          "call": 1406,
+          "put": 5759
+        }
+      },
+      "analysis": "外資臺股期貨淨空單83,063口，較前一日76,627口擴大，顯示即使現貨大幅買超，期貨仍維持避險空單。P/C Ratio量137.17%、OI 134.93%均偏高，選擇權PUT避險未降。綜合偏空，但若指數持續強勢，空單回補壓力可能觸發軋空。"
+    },
+    "forex": {
+      "rate": 31.86,
+      "change": "微幅升值",
+      "interpretation": "台幣維持31.86附近，外資雖在股市大量買超，匯率未見明顯升值，可能為盤後匯入或近期資金仍偏謹慎"
+    },
+    "strong_sectors": [
+      {
+        "name": "半導體",
+        "leaders": "台積電(2505,+3.94%)、聯發科、日月光",
+        "note": "ADR溢價帶動，延續連日強勢"
+      },
+      {
+        "name": "IC設計",
+        "leaders": "力智連2根、牧德連2根",
+        "note": "族群輪動續強"
+      },
+      {
+        "name": "電子零組件",
+        "leaders": "光鼎連8根、聚鼎連3根",
+        "note": "光鼎進入極端區間需留意風險"
+      },
+      {
+        "name": "網通",
+        "leaders": "事欣連2根",
+        "note": "零星表現"
+      }
+    ],
+    "next_day_events": {
+      "ex_dividend": "華碩(42元)、富邦金(4.25元)、玉山金(1.40元)等27檔除息，估影響指數-30~-40點",
+      "notes": [
+        "連兩日大漲逾千點，明日須留意獲利了結賣壓",
+        "外資期貨空單83,063口為潛在軋空燃料",
+        "光鼎連8根漲停，短線過熱"
+      ]
+    },
+    "overall_score": {
+      "institutional_buying": 5,
+      "foreign_spot": 5,
+      "foreign_futures": 2,
+      "technical": 5,
+      "pc_ratio": 2,
+      "average": 3.8,
+      "direction": "偏多但需留意期貨空單壓力",
+      "summary": "今日籌碼面大幅轉多，外資現貨買超323億為關鍵訊號。但期貨空單83,063口仍在擴大，選擇權P/C偏高，短線偏多但中期仍有壓力。綜合評分3.8/5，偏多震盪格局。"
+    }
+  },
+  "updated_at": "2026-07-01T16:07:09+08:00"
 }
