@@ -15,12 +15,26 @@
   --text2: #6b5f55;
   --text3: #a09888;
   --accent: #1B365D;
+  --accent2: #D4A843;
   --border: #d4c9b8;
   --hover: #f0ebe3;
   --sidebar-w: 260px;
+  --up: #d32f2f;
+  --down: #2e7d32;
 }
 html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); overflow:hidden; }
 .wrapper { display:flex; height:100vh; }
+.up { color:var(--up); } .down { color:var(--down); }
+.data-table { width:100%; border-collapse:collapse; font-size:13px; margin-top:6px; }
+.data-table th { text-align:left; font-weight:600; color:var(--text3); font-size:11px; padding:4px 6px; border-bottom:1px solid var(--border); }
+.data-table td { padding:3px 6px; border-bottom:1px solid var(--border2,#eee); white-space:nowrap; }
+.data-table tr:last-child td { border-bottom:none; }
+.data-table .stock-code { color:var(--text3); font-size:11px; }
+.data-table .truncate { max-width:160px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.section + .section { margin-top:16px; }
+.badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:11px; font-weight:500; }
+.badge-up { background:rgba(211,47,47,.1); color:var(--up); }
+.badge-down { background:rgba(46,125,50,.1); color:var(--down); }
 
 .topnav {
   background:var(--surface); border-bottom:1px solid var(--border);
@@ -147,11 +161,18 @@ async function loadItem(item) {
     document.getElementById('contentArea').innerHTML = '<div class="empty-state"><div class="icon">⚠️</div><p>載入失敗</p></div>';
   }
 }
+function fmt(o) { return (o||o===0)?String(o).replace(/\B(?=(\d{3})+(?!\d))/g,','):'-'; }
+function cls(v) { let n=parseFloat(v); if(isNaN(n)) return ''; return n>0?'up':n<0?'down':''; }
+function badge(v) { let n=parseFloat(v); if(isNaN(n)) return ''; return n>0?'up':'down'; }
+function dirCls(dir) { return dir==='up'||dir==='+'?'up':'down'; }
+
 function renderContent(data) {
   let html = '';
+  // ====== Title ======
   if (data.title || data.date) {
     html += `<div class="card"><h3>${data.title||'盤後分析'}</h3><p>📅 ${data.date||''}</p></div>`;
   }
+  // ====== Legacy sections ======
   if (data.sections) {
     data.sections.forEach(s => {
       html += `<div class="card"><div class="section"><h4>${s.title||''}</h4><p>${(s.content||s.text||'').replace(/\n/g,'<br>')}</p></div></div>`;
@@ -160,56 +181,200 @@ function renderContent(data) {
   if (data.content) {
     html += `<div class="card"><p>${data.content.replace(/\n/g,'<br>')}</p></div>`;
   }
-  // Flat format: summary, indices, stocks, sector_performance, etc.
+  
+  // ====== Summary ======
   if (data.summary && typeof data.summary === 'object') {
-    let shtml = '';
-    for (const [k,v] of Object.entries(data.summary)) {
-      if (typeof v === 'object') {
-        shtml += Object.entries(v).map(([sk,sv]) => `<div><b>${sk}:</b> ${sv}</div>`).join('');
-      } else {
-        shtml += `<div><b>${k}:</b> ${v}</div>`;
-      }
-    }
-    html += `<div class="card"><div class="section"><h4>📊 大盤摘要</h4><p>${shtml}</p></div></div>`;
+    let md = data.market_direction || '';
+    let s = data.summary;
+    let taiex = s.taiex || {};
+    let broad = s.broad_index || {};
+    let tai50 = s.tai50 || {};
+    let ts = s.trading_stats || {};
+    let dir = taiex.direction || (taiex.change>0?'up':'down');
+    html += `<div class="card">
+      <div class="section">
+        <h4>📊 加權指數 <span class="badge badge-${dirCls(dir)}">${dir==='up'?'▲':'▼'} ${taiex.change||''}</span></h4>
+        <table class="data-table">
+          <tr><td>收盤</td><td><b>${fmt(taiex.close)}</b></td><td class="${cls(taiex.change_pct)}">${taiex.change_pct||''}%</td></tr>
+          <tr><td>漲跌</td><td class="${cls(taiex.change)}">${fmt(taiex.change)}</td><td>昨收 ${fmt(taiex.previous_close)}</td></tr>
+          <tr><td>臺灣50</td><td>${fmt(tai50.close)}</td><td class="${cls(tai50.change_pct)}">${tai50.change_pct||''}%</td></tr>
+          ${ts.total_volume?`<tr><td>成交量</td><td>${fmt(ts.total_volume)} 張</td><td></td></tr>`:''}
+          ${ts.total_value?`<tr><td>成交值</td><td>${fmt(ts.total_value)} 億</td><td></td></tr>`:''}
+          ${s.fx_usdtwd?`<tr><td>美元/台幣</td><td>${s.fx_usdtwd}</td><td class="${cls(s.fx_change_pct)}">${s.fx_change||''} (${s.fx_change_pct||''}%)</td></tr>`:''}
+        </table>
+      </div>
+    </div>`;
   }
+  
+  // ====== Indices (table) ======
   if (data.indices && typeof data.indices === 'object') {
-    let ihtml = '';
-    const entries = Object.entries(data.indices).slice(0,15);
+    let entries = Object.entries(data.indices);
+    let ihtml = '<table class="data-table"><tr><th>指數</th><th>收盤</th><th>漲跌</th><th>%</th></tr>';
     for (const [k,v] of entries) {
-      if (typeof v === 'object') {
-        ihtml += `<div>${k}: ${v.close||''} ${v.change||''} ${v.change_pct||''}</div>`;
-      } else {
-        ihtml += `<div>${k}: ${v}</div>`;
-      }
+      let c = v.close||v.value||'';
+      let ch = v.change||v.diff||'';
+      let pct = v.change_pct||v.pct||'';
+      ihtml += `<tr><td class="truncate">${k}</td><td>${fmt(c)}</td><td class="${cls(ch)}">${ch}</td><td class="${cls(pct)}">${pct}%</td></tr>`;
     }
-    if (Object.keys(data.indices).length > 15) ihtml += `<div>…還有 ${Object.keys(data.indices).length-15} 項</div>`;
-    html += `<div class="card"><div class="section"><h4>📈 指數</h4><p>${ihtml}</p></div></div>`;
+    ihtml += '</table>';
+    html += `<div class="card"><div class="section"><h4>📈 指數行情 (${entries.length})</h4>${ihtml}</div></div>`;
   }
+  
+  // ====== Stocks (table) ======
+  if (data.stocks && typeof data.stocks === 'object') {
+    let entries = Object.entries(data.stocks);
+    let stbl = '<table class="data-table"><tr><th>代號</th><th>名稱</th><th>收盤</th><th>漲跌</th><th>%</th></tr>';
+    for (const [code,sv] of entries) {
+      let nm = sv.name||sv.n||'';
+      let c = sv.close||sv.c||'';
+      let ch = sv.change||sv.d||sv.diff||'';
+      let pct = sv.change_pct||sv.p||'';
+      stbl += `<tr><td class="stock-code">${code}</td><td class="truncate">${nm}</td><td>${fmt(c)}</td><td class="${cls(ch)}">${ch}</td><td class="${cls(pct)}">${pct}%</td></tr>`;
+    }
+    stbl += '</table>';
+    html += `<div class="card"><div class="section"><h4>🏢 權值股 (${entries.length})</h4>${stbl}</div></div>`;
+  }
+  
+  // ====== Sector Performance ======
+  if (data.sector_performance && typeof data.sector_performance === 'object') {
+    for (const [dirName, items] of Object.entries(data.sector_performance)) {
+      if (!Array.isArray(items) || items.length===0) continue;
+      let lbl = dirName.includes('gain')?'📗 強勢類股':'📕 弱勢類股';
+      let tbl = '<table class="data-table"><tr><th>類股</th><th>漲跌</th><th>%</th></tr>';
+      for (const item of items) {
+        let nm = item.name||item.sector||item.n||'';
+        let ch = item.change||item.d||'';
+        let pct = item.change_pct||item.p||'';
+        tbl += `<tr><td>${nm}</td><td class="${cls(ch)}">${ch}</td><td class="${cls(pct)}">${pct}%</td></tr>`;
+      }
+      tbl += '</table>';
+      html += `<div class="card"><div class="section"><h4>${lbl}</h4>${tbl}</div></div>`;
+    }
+  }
+  
+  // ====== Top Movers ======
+  if (data.top_movers && typeof data.top_movers === 'object') {
+    for (const [dirName, items] of Object.entries(data.top_movers)) {
+      if (!Array.isArray(items) || items.length===0) continue;
+      let lbl = dirName.includes('gain')?'⬆️ 漲幅排行':'⬇️ 跌幅排行';
+      let tbl = '<table class="data-table"><tr><th>股票</th><th>代號</th><th>收盤</th><th>%</th></tr>';
+      for (const item of items) {
+        let nm = item.name||item.n||item.code||'';
+        let code = item.code||item.id||item.ticker||'';
+        let c = item.close||item.c||'';
+        let pct = item.change_pct||item.p||'';
+        tbl += `<tr><td>${nm}</td><td class="stock-code">${code}</td><td>${fmt(c)}</td><td class="${cls(pct)}">${pct}%</td></tr>`;
+      }
+      tbl += '</table>';
+      html += `<div class="card"><div class="section"><h4>${lbl}</h4>${tbl}</div></div>`;
+    }
+  }
+  
+  // ====== Postmarket (盤後資訊) ======
   if (data.postmarket && typeof data.postmarket === 'object') {
+    let pm = data.postmarket;
     let phtml = '';
-    for (const [k,v] of Object.entries(data.postmarket)) {
-      if (typeof v === 'object') {
-        phtml += `<div style="margin-top:8px"><b>${k}</b>: ${JSON.stringify(v).slice(0,200)}</div>`;
-      } else {
-        phtml += `<div><b>${k}:</b> ${String(v).slice(0,100)}</div>`;
+    // Institutional trading
+    if (pm.institutional_trading) {
+      let it = pm.institutional_trading;
+      phtml += '<div class="section"><h4>🏛️ 三大法人買賣超</h4><table class="data-table"><tr><th>類別</th><th>買超</th></tr>';
+      for (const [k,v] of Object.entries(it)) {
+        if (k==='total') continue;
+        let val = typeof v==='object'?(v.buy_net||v.value||v.amount||''):v;
+        phtml += `<tr><td>${k}</td><td class="${cls(val)}">${fmt(val)}</td></tr>`;
       }
+      if (it.total) {
+        let tot = typeof it.total==='object'?(it.total.buy_net||it.total.value||''):it.total;
+        phtml += `<tr style="font-weight:600"><td>合計</td><td class="${cls(tot)}">${fmt(tot)}</td></tr>`;
+      }
+      phtml += '</table></div>';
     }
-    html += `<div class="card"><div class="section"><h4>🏛️ 盤後資訊</h4><p>${phtml}</p></div></div>`;
+    // Futures
+    if (pm.futures_positions) {
+      let fp = pm.futures_positions;
+      phtml += '<div class="section"><h4>📊 期貨未平倉</h4><table class="data-table">';
+      for (const [k,v] of Object.entries(fp)) {
+        let val = typeof v==='object'?(v.net_position||v.position||v.value||''):v;
+        phtml += `<tr><td>${k}</td><td class="${cls(val)}">${fmt(val)}</td></tr>`;
+      }
+      phtml += '</table></div>';
+    }
+    // Next day events
+    if (pm.next_day_events) {
+      let ev = Array.isArray(pm.next_day_events)?pm.next_day_events:[pm.next_day_events];
+      phtml += '<div class="section"><h4>📅 明日關注</h4>';
+      for (const e of ev) {
+        let txt = typeof e==='object'?(e.event||e.title||e.text||JSON.stringify(e)):e;
+        phtml += `<p style="font-size:13px;">• ${txt}</p>`;
+      }
+      phtml += '</div>';
+    }
+    // Market assessment
+    if (pm.market_assessment) {
+      let ma = pm.market_assessment;
+      let txt = typeof ma==='object'?(ma.text||ma.assessment||ma.summary||''):ma;
+      if (txt) phtml += `<div class="section"><h4>💬 盤後觀點</h4><p>${txt}</p></div>`;
+    }
+    if (phtml) html += `<div class="card">${phtml}</div>`;
   }
+  
+  // ====== Full Chip Data (完整籌碼) ======
   if (data.full_chip_data && typeof data.full_chip_data === 'object') {
+    let fc = data.full_chip_data;
     let fhtml = '';
-    for (const [k,v] of Object.entries(data.full_chip_data)) {
-      if (typeof v === 'object') {
-        fhtml += `<div style="margin-top:8px"><b>${k}</b></div>`;
-        for (const [sk,sv] of Object.entries(v)) {
-          fhtml += `<div style="margin-left:12px">${sk}: ${typeof sv==='object'?JSON.stringify(sv).slice(0,100):sv}</div>`;
-        }
-      } else {
-        fhtml += `<div><b>${k}:</b> ${String(v).slice(0,100)}</div>`;
+    // Margin & Short
+    if (fc.margin_short) {
+      let ms = fc.margin_short;
+      fhtml += '<div class="section"><h4>💰 融資融券</h4><table class="data-table">';
+      for (const [k,v] of Object.entries(ms)) {
+        let val = typeof v==='object'?(v.value||v.amount||v.balance||''):v;
+        let chg = typeof v==='object'?(v.change||v.diff||''):'';
+        fhtml += `<tr><td>${k}</td><td>${fmt(val)}</td><td class="${cls(chg)}">${chg}</td></tr>`;
       }
+      fhtml += '</table></div>';
     }
-    html += `<div class="card"><div class="section"><h4>🔬 完整籌碼</h4><p>${fhtml}</p></div></div>`;
+    // Short selling
+    if (fc.short_selling_balance) {
+      let ss = fc.short_selling_balance;
+      fhtml += '<div class="section"><h4>📉 借券賣出</h4><table class="data-table">';
+      for (const [k,v] of Object.entries(ss)) {
+        if (typeof v==='object') continue; // skip complex
+        fhtml += `<tr><td>${k}</td><td>${fmt(v)}</td></tr>`;
+      }
+      fhtml += '</table></div>';
+    }
+    // Market breadth
+    if (fc.market_breadth) {
+      let mb = fc.market_breadth;
+      fhtml += '<div class="section"><h4>📋 漲跌家數</h4><table class="data-table">';
+      for (const [k,v] of Object.entries(mb)) {
+        if (typeof v==='object') continue;
+        fhtml += `<tr><td>${k}</td><td>${v}</td></tr>`;
+      }
+      fhtml += '</table></div>';
+    }
+    // Strong/Weak sectors
+    if (fc.strong_sectors && Array.isArray(fc.strong_sectors)) {
+      fhtml += `<div class="section"><h4>✅ 強勢族群</h4><p>${fc.strong_sectors.join('、')}</p></div>`;
+    }
+    if (fc.weak_sectors && Array.isArray(fc.weak_sectors)) {
+      fhtml += `<div class="section"><h4>❌ 弱勢族群</h4><p>${fc.weak_sectors.join('、')}</p></div>`;
+    }
+    // Recommendation review
+    if (fc.recommendation_review) {
+      let rr = fc.recommendation_review;
+      let txt = typeof rr==='object'?(rr.text||rr.review||rr.summary||''):rr;
+      if (txt) fhtml += `<div class="section"><h4>🎯 推薦檢討</h4><p>${txt}</p></div>`;
+    }
+    // Overall assessment
+    if (fc.overall_assessment) {
+      let oa = fc.overall_assessment;
+      let txt = typeof oa==='object'?(oa.text||oa.assessment||oa.summary||''):oa;
+      if (txt) fhtml += `<div class="section"><h4>💡 整體評估</h4><p>${txt}</p></div>`;
+    }
+    if (fhtml) html += `<div class="card">${fhtml}</div>`;
   }
+  
   document.getElementById('contentArea').innerHTML = html || '<div class="empty-state"><div class="icon">📭</div><p>無資料</p></div>';
 }
 init();
