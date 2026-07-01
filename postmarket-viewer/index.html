@@ -166,6 +166,34 @@ function cls(v) { let n=parseFloat(v); if(isNaN(n)) return ''; return n>0?'up':n
 function badge(v) { let n=parseFloat(v); if(isNaN(n)) return ''; return n>0?'up':'down'; }
 function dirCls(dir) { return dir==='up'||dir==='+'?'up':'down'; }
 
+// 欄位名稱中文化
+const CN = {
+  self_managed:'自營商', hedge:'避險', investment_trust:'投信', foreign:'外資',
+  as_of_date:'日期', taiex_futures_net_oi:'台指期淨OI', total_futures_options_net:'期權合計淨額',
+  small_taiex_futures:'小台指期', put_call_ratio:'P/C Ratio', overall_assessment:'整體評估',
+  margin_balance_shares:'融資餘額(張)', margin_balance_change:'融資增減',
+  margin_balance_amount_100m:'融資金額(億)', margin_balance_amount_change_100m:'金額增減(億)',
+  short_balance_shares:'融券餘額(張)', short_balance_change:'融券增減',
+  tse_advances:'上市上漲', tse_declines:'上市下跌', tse_unchanged:'上市持平',
+  tse_limit_up:'上市漲停', tse_limit_down:'上市跌停',
+  otc_advances:'上櫃上漲', otc_declines:'上櫃下跌', otc_unchanged:'上櫃持平',
+  otc_limit_up:'上櫃漲停', otc_limit_down:'上櫃跌停',
+  advance_decline_ratio:'漲跌比',
+  buy_100m:'買進(億)', sell_100m:'賣出(億)', net_100m:'淨買超(億)',
+  buy_net:'買超淨額', value:'金額', amount:'額度', net_position:'淨部位',
+  proprietary:'自營商', direction:'方向', oi:'OI',
+  futures_oi:'期貨OI', options_oi:'選擇權OI', ratio:'比率',
+  volume:'成交量', interpretation:'解讀',
+  margin_short:'融資融券', short_selling_balance:'借券賣出',
+  market_breadth:'漲跌家數', strong_sectors:'強勢族群', weak_sectors:'弱勢族群',
+  recommendation_review:'推薦檢討', overall_assessment:'整體評估',
+  market_assessment:'盤後觀點',
+  generated_at:'產生時間', source:'來源',
+  next_day_events:'明日關注',
+  total:'合計', 買超:'買超淨額'
+};
+function cn(key) { return CN[key.toLowerCase()] || CN[key] || key; }
+
 function renderContent(data) {
   let html = '';
   // ====== Title ======
@@ -277,11 +305,13 @@ function renderContent(data) {
     // Institutional trading
     if (pm.institutional_trading) {
       let it = pm.institutional_trading;
-      phtml += '<div class="section"><h4>🏛️ 三大法人買賣超</h4><table class="data-table"><tr><th>類別</th><th>買超</th></tr>';
+      phtml += '<div class="section"><h4>🏛️ 三大法人買賣超</h4><table class="data-table"><tr><th>類別</th><th>買進(億)</th><th>賣出(億)</th><th>淨買超(億)</th></tr>';
       for (const [k,v] of Object.entries(it)) {
         if (k==='total') continue;
-        let val = typeof v==='object'?(v.buy_net||v.value||v.amount||''):v;
-        phtml += `<tr><td>${k}</td><td class="${cls(val)}">${fmt(val)}</td></tr>`;
+        let b = typeof v==='object'?v.buy_100m||v.buy||'':v;
+        let s = typeof v==='object'?v.sell_100m||v.sell||'':v;
+        let n = typeof v==='object'?v.net_100m||v.buy_net||v.net||'':v;
+        phtml += `<tr><td>${cn(k)}</td><td>${fmt(b)}</td><td>${fmt(s)}</td><td class="${cls(n)}">${fmt(n)}</td></tr>`;
       }
       if (it.total) {
         let tot = typeof it.total==='object'?(it.total.buy_net||it.total.value||''):it.total;
@@ -294,8 +324,16 @@ function renderContent(data) {
       let fp = pm.futures_positions;
       phtml += '<div class="section"><h4>📊 期貨未平倉</h4><table class="data-table">';
       for (const [k,v] of Object.entries(fp)) {
-        let val = typeof v==='object'?(v.net_position||v.position||v.value||''):v;
-        phtml += `<tr><td>${k}</td><td class="${cls(val)}">${fmt(val)}</td></tr>`;
+        if (k==='as_of_date') {
+          phtml += `<tr><td>${cn(k)}</td><td>${v}</td></tr>`;
+        } else if (typeof v === 'object' && v !== null) {
+          // Show first-level summary value if available
+          let val = v.net_100m||v.net_position||v.oi||v.value||v.ratio||'';
+          let extra = v.interpretation?'('+v.interpretation+')':'';
+          phtml += `<tr><td>${cn(k)}</td><td class="${cls(val)}">${fmt(val)} ${extra}</td></tr>`;
+        } else {
+          phtml += `<tr><td>${cn(k)}</td><td>${typeof v==='string'?cn(v):v}</td></tr>`;
+        }
       }
       phtml += '</table></div>';
     }
@@ -327,21 +365,31 @@ function renderContent(data) {
       let ms = fc.margin_short;
       fhtml += '<div class="section"><h4>💰 融資融券</h4><table class="data-table">';
       for (const [k,v] of Object.entries(ms)) {
-        let val = typeof v==='object'?(v.value||v.amount||v.balance||''):v;
-        let chg = typeof v==='object'?(v.change||v.diff||''):'';
-        fhtml += `<tr><td>${k}</td><td>${fmt(val)}</td><td class="${cls(chg)}">${chg}</td></tr>`;
+        if (k==='as_of_date') {
+          fhtml += `<tr><td>${cn(k)}</td><td>${v}</td><td></td></tr>`;
+        } else {
+          let val = typeof v==='object'?(v.value||v.amount||v.balance||''):v;
+          let chg = typeof v==='object'?(v.change||v.diff||''):'';
+          fhtml += `<tr><td>${cn(k)}</td><td>${fmt(val)}</td><td class="${cls(chg)}">${chg||''}</td></tr>`;
+        }
       }
       fhtml += '</table></div>';
     }
-    // Short selling
+    // Short selling (借券賣出餘額前5大)
     if (fc.short_selling_balance) {
       let ss = fc.short_selling_balance;
-      fhtml += '<div class="section"><h4>📉 借券賣出</h4><table class="data-table">';
-      for (const [k,v] of Object.entries(ss)) {
-        if (typeof v==='object') continue; // skip complex
-        fhtml += `<tr><td>${k}</td><td>${fmt(v)}</td></tr>`;
+      let entries = Object.entries(ss).filter(([k,v]) => typeof v==='object' && v.current_balance).slice(0,5);
+      if (entries.length > 0) {
+        fhtml += '<div class="section"><h4>📉 借券賣出 (前5)</h4><table class="data-table"><tr><th>股票</th><th>前日餘額</th><th>今日餘額</th><th>增減</th></tr>';
+        for (const [code, sv] of entries) {
+          let nm = sv.name||'';
+          let prev = sv.prev_balance||sv.prev||'';
+          let cur = sv.current_balance||sv.balance||'';
+          let chg = sv.change||sv.diff||(cur&&prev?cur-prev:'');
+          fhtml += `<tr><td>${nm}<span class="stock-code"> ${code}</span></td><td>${fmt(prev)}</td><td>${fmt(cur)}</td><td class="${cls(chg)}">${chg}</td></tr>`;
+        }
+        fhtml += '</table></div>';
       }
-      fhtml += '</table></div>';
     }
     // Market breadth
     if (fc.market_breadth) {
@@ -349,7 +397,7 @@ function renderContent(data) {
       fhtml += '<div class="section"><h4>📋 漲跌家數</h4><table class="data-table">';
       for (const [k,v] of Object.entries(mb)) {
         if (typeof v==='object') continue;
-        fhtml += `<tr><td>${k}</td><td>${v}</td></tr>`;
+        fhtml += `<tr><td>${cn(k)}</td><td>${v}</td></tr>`;
       }
       fhtml += '</table></div>';
     }
