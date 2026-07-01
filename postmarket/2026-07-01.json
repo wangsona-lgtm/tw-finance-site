@@ -1,0 +1,132 @@
+{
+  "date": "2026-07-01",
+  "day_of_week": "Wednesday",
+  "generated_at": "2026-07-01T14:26:00+08:00",
+  "market_direction": "up",
+  "summary": {
+    "taiex": {
+      "close": 47018.99,
+      "change": 893.08,
+      "change_pct": 1.94,
+      "previous_close": 46125.91,
+      "direction": "up"
+    },
+    "trading_stats": {
+      "limit_up": 7,
+      "limit_down": 0
+    }
+  },
+  "source": "postmarket-analysis",
+  "postmarket": {
+    "generated_at": "2026-07-01T14:23:12+08:00",
+    "source": "yfinance+tw_momentum_monitor",
+    "market_assessment": {
+      "taiex_close": 47018.99,
+      "taiex_change_pct": 1.94,
+      "taiex_high": 47293.1,
+      "institutional_buying": 4,
+      "foreign_sentiment": 3,
+      "futures_momentum": 3,
+      "technical": 5,
+      "overall_score": "3.8/5",
+      "overall_direction": "偏多震盪",
+      "key_events": [
+        "台積電ADR溢價帶動續攻2505",
+        "半導體IC設計族群連續強勢",
+        "連兩日大漲逾千點後需留意獲利了結",
+        "光鼎連8根漲停進入極端區間"
+      ]
+    },
+    "recommendation_review": {
+      "overall": {
+        "hit_rate": "3/4 = 75%",
+        "avg_return": 1.40,
+        "taiex_return": 1.94,
+        "excess_return": -0.54,
+        "note": "略遜大盤"
+      },
+      "items": [
+        {
+          "code": "2330",
+          "name": "台積電",
+          "direction": "偏多",
+          "ref_price": 2410,
+          "close": 2505,
+          "change_pct": 3.94,
+          "verdict": "hit",
+          "note": "ADR溢價補漲邏輯驗證，連三日命中"
+        },
+        {
+          "code": "3711",
+          "name": "日月光投控",
+          "direction": "偏多",
+          "ref_price": 680,
+          "close": 703,
+          "change_pct": 3.38,
+          "verdict": "hit",
+          "note": "CoWoS先進封裝需求續航，連兩日強漲"
+        },
+        {
+          "code": "2382",
+          "name": "廣達",
+          "direction": "偏多",
+          "ref_price": 368,
+          "close": 372,
+          "change_pct": 1.09,
+          "verdict": "hit",
+          "note": "穩步填息，盤中越過目標價375"
+        },
+        {
+          "code": "3037",
+          "name": "欣興",
+          "direction": "偏多",
+          "ref_price": 1070,
+          "close": 1040,
+          "change_pct": -2.80,
+          "verdict": "miss",
+          "note": "連漲後拉回，應區分續抱與新進兩套建議"
+        }
+      ]
+    },
+    "momentum_scan": {
+      "scanned_stocks": 223,
+      "limit_up_count": 7,
+      "previous_limit_up_count": 10,
+      "strong_sectors": [
+        {
+          "name": "其他(電子零組件)",
+          "count": 3,
+          "leaders": "光鼎連8根、聚鼎連3根、力智連2根"
+        },
+        {
+          "name": "半導體/IC設計",
+          "count": 3,
+          "leaders": "台勝科連3根、牧德連2根、宏致連2根"
+        },
+        {
+          "name": "網通",
+          "count": 1,
+          "leaders": "事欣連2根"
+        }
+      ],
+      "second_day_limit_up": [
+        {"code": "6719", "name": "力智", "close": 297.0, "cumulative_pct": 10.0},
+        {"code": "3563", "name": "牧德", "close": 778.0, "cumulative_pct": 9.9},
+        {"code": "3605", "name": "宏致", "close": 85.6, "cumulative_pct": 9.9},
+        {"code": "4916", "name": "事欣", "close": 112.5, "cumulative_pct": 9.8}
+      ],
+      "consecutive_limit_up": [
+        {"code": "6226", "name": "光鼎", "streak": 8, "close": 24.25, "cumulative_pct": 94.0, "risk": "🔴🔴🔴🔴🔴 最高風險"},
+        {"code": "6224", "name": "聚鼎", "streak": 3, "close": 84.90, "cumulative_pct": 20.9, "risk": "🟡🟡 中等風險"},
+        {"code": "3532", "name": "台勝科", "streak": 3, "close": 400.0, "cumulative_pct": 20.8, "risk": "🟡🟡 中等風險"}
+      ],
+      "assessment": "半導體/IC設計族群連續2天出現，與權值股半導體行情一致。動能維持中性偏多，但漲停家數從10檔降至7檔，顯示資金集中化"
+    },
+    "cumulative_record": {
+      "2026-07-01": "3/4=75%",
+      "2026-06-30": "4/4=100%",
+      "2026-06-29": "無交易",
+      "2026-06-26": "0/4=0%"
+    }
+  }
+}
