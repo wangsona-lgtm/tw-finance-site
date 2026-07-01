@@ -2,11 +2,12 @@
   "reports": [
     {
       "date": "2026-07-02",
-      "type": "zh-digest",
+      "type": "zh-digest+premarket-analysis",
       "file": "reports/2026-07-02.json",
       "generated_at": "2026-07-02T06:15:00+08:00",
       "status": "completed",
-      "note": "ZH導讀：7篇 — META+8.8%引爆動能股崩盤逾10%、高盛警告2027石油過剩300萬桶/日、美伊外交角力持續、ISM/ADP雙雙低於預期"
+      "note": "ZH導讀 + 盤前分析：SOX-6.27%近一年最大日跌幅、TSM ADR-6.98%、META+8.8%引爆動能股崩盤、金融逆勢+2.18%、高盛警告石油過剩",
+      "updated_at": "2026-07-02T07:07:00+08:00"
     },
     {
       "date": "2026-07-01",
