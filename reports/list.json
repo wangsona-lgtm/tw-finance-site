@@ -2,12 +2,12 @@
   "reports": [
     {
       "date": "2026-07-03",
-      "type": "zh-digest",
+      "type": "zh-digest+premarket-analysis",
       "file": "reports/2026-07-03.json",
       "generated_at": "2026-07-03T06:15:00+08:00",
       "status": "completed",
-      "note": "ZH導讀：7篇 — 非農僅+120K連三月降溫、伊朗石油滯銷40+艘油輪塞船、IBM裁員7800人、Blue Owl科技基金遭38%贖回、Vance曝伊朗MoU為補充儲備窗口",
-      "updated_at": "2026-07-03T06:15:00+08:00"
+      "note": "ZH導讀 + 盤前分析：SOX兩日-11.4%半年最大、道瓊逆勢+1.14%創高、AAPL+4.84%逆勢強、黃金$4,136歷史新高、外資賣超890億、非農+120K連三月降溫",
+      "updated_at": "2026-07-03T07:05:00+08:00"
     },
     {
       "date": "2026-07-02",
