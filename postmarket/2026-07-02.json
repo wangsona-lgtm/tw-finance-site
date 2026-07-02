@@ -1,0 +1,81 @@
+{
+  "date": "2026-07-02",
+  "day_of_week": "Thursday",
+  "generated_at": "2026-07-02T13:40:00+08:00",
+  "market_direction": "down",
+  "summary": {
+    "taiex": {
+      "close": 46744.16,
+      "change": -274.83,
+      "change_pct": -0.58,
+      "previous_close": 47018.99,
+      "open": 46833.89,
+      "high": 46910.31,
+      "low": 45981.89,
+      "direction": "down"
+    },
+    "otc": {
+      "close": 439.51,
+      "change": 8.28,
+      "change_pct": 1.92,
+      "direction": "up"
+    },
+    "electronics_index": {
+      "close": 3023.76,
+      "change": -20.50,
+      "change_pct": -0.67,
+      "direction": "down"
+    },
+    "trading_stats": {
+      "tse_volume_ntd_100m": 10164,
+      "otc_volume_ntd_100m": 2437,
+      "tse_shares": 11571963,
+      "tse_trades": 3401466,
+      "volume_change_note": "較昨日(13,678億)萎縮約26%"
+    }
+  },
+  "stocks": {
+    "2330": { "name": "台積電", "close": 2465, "change_pct": -1.60, "volume": 27140, "direction": "down" },
+    "2454": { "name": "聯發科", "close": 4345, "change_pct": 0.23, "volume": 6505, "direction": "up" },
+    "2317": { "name": "鴻海", "close": 239, "change_pct": -0.83, "volume": 64466, "direction": "down" },
+    "2308": { "name": "台達電", "close": 1970, "change_pct": -1.01, "volume": 6242, "direction": "down" },
+    "2382": { "name": "廣達", "close": 369, "change_pct": -0.81, "volume": 8737, "direction": "down" }
+  },
+  "forex": {
+    "usdtwd": 31.907,
+    "change": 0.014,
+    "change_pct": 0.04,
+    "range": { "low": 31.829, "high": 31.983 },
+    "direction": "up"
+  },
+  "us_markets": {
+    "date": "2026-07-01",
+    "sp500": { "close": 7483.23, "change_pct": -0.22, "direction": "down" },
+    "nasdaq": { "close": 26040.03, "change_pct": -0.66, "direction": "down" },
+    "dow": { "close": 52305.24, "change_pct": -0.03, "direction": "down" }
+  },
+  "strong_sectors": [
+    { "name": "塑化", "avg_change_pct": 9.27, "leaders": "台塑+9.94%、台塑化+9.95%、南亞+7.92%", "direction": "up" },
+    { "name": "航運", "avg_change_pct": 0.50, "direction": "up" },
+    { "name": "電信", "avg_change_pct": 0.47, "leaders": "台灣大+1.27%", "direction": "up" }
+  ],
+  "weak_sectors": [
+    { "name": "電子零組件", "avg_change_pct": -3.28, "laggards": "華新科-6.97%、國巨-6.58%", "direction": "down" },
+    { "name": "金融保險", "avg_change_pct": -1.32, "laggards": "富邦金-2.86%", "direction": "down" },
+    { "name": "電腦週邊", "avg_change_pct": -0.38, "direction": "down" },
+    { "name": "半導體", "avg_change_pct": -0.12, "laggards": "聯電-2.37%", "direction": "down" }
+  ],
+  "market_assessment": {
+    "note": "開低後急殺至45,982點(最深跌1,037點)，隨後低接買盤湧入收斂跌幅，日K留928點長下影線。櫃買逆勢大漲+1.92%，資金轉進中小型股。塑化集團噴出為最大亮點。",
+    "key_events": [
+      "台股開低盤中急殺逾千點至45,982，長下影線顯示46,000有強支撐",
+      "櫃買OTC逆勢大漲+1.92%，中小型股優於權值股",
+      "塑化集團台塑+9.94%、台塑化+9.95%逼近漲停為今日最大亮點",
+      "被動元件國巨/華新科重挫逾6%",
+      "金融股全面下跌無一倖免",
+      "成交量縮至10,164億(較昨-26%)，追價意願保守"
+    ]
+  },
+  "source": "postmarket-closing-report",
+  "updated_at": "2026-07-02T13:40:00+08:00"
+}
