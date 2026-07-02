@@ -339,7 +339,7 @@
     "key_insight": "費半-6.27%衝擊下台股僅-0.58%，展現相對強勢。漲停11檔集中在IC設計(4檔)與機電(2檔)，資金在系統性風險中仍敢於追逐確定性高的族群"
   },
   "source": "postmarket-closing-report",
-  "updated_at": "2026-07-02T16:05:00+08:00",
+  "updated_at": "2026-07-02T22:10:00+08:00",
   "institutional_trading": {
     "spot": {
       "date": "2026-07-02",
@@ -469,5 +469,271 @@
       }
     ],
     "summary": "今日籌碼最大亮點：外資現貨賣超890億但大盤僅跌-0.58%，低接買盤強勁。外資逆勢買超塑化族群（台塑/南亞/台塑化）為罕見操作。投信買超91億延續作帳行情。期貨留倉57.6萬口空單仍為潛在壓力。"
+  },
+  "complete_holdings": {
+    "generated_at": "2026-07-02T22:10:00+08:00",
+    "data_source": "TWSE/TPEx public APIs",
+    "note": "完整籌碼數據自 TWSE 公開 API 擷取",
+    "taiex_summary": {
+      "close": 46744.16,
+      "change": -274.83,
+      "change_pct": -0.58,
+      "tse_volume_ntd_100m": 10164,
+      "previous_close": 47018.99,
+      "interpretation": "大盤開低後急殺至45,982(+1,037點)，隨後低接買盤湧入收斂跌幅至-274點，日K留928點長下影線。OTC逆勢大漲+1.92%，資金轉進中小型股。"
+    },
+    "institutional_trading": {
+      "date": "2026-07-02",
+      "summary": "三大法人合計賣超834.19億，外資單日賣超890.47億為最大賣壓來源，投信逆勢買超99.56億",
+      "institutions": [
+        {
+          "name": "外資及陸資",
+          "buy_100m": 3625.34,
+          "sell_100m": 4515.8,
+          "net_100m": -890.47,
+          "direction": "sell"
+        },
+        {
+          "name": "投信",
+          "buy_100m": 483.66,
+          "sell_100m": 384.1,
+          "net_100m": 99.56,
+          "direction": "buy"
+        },
+        {
+          "name": "自營商(自行買賣)",
+          "buy_100m": 102.43,
+          "sell_100m": 91.43,
+          "net_100m": 11.0,
+          "direction": "buy"
+        },
+        {
+          "name": "自營商(避險)",
+          "buy_100m": 359.1,
+          "sell_100m": 413.39,
+          "net_100m": -54.28,
+          "direction": "sell"
+        },
+        {
+          "name": "三大法人合計",
+          "buy_100m": 4570.53,
+          "sell_100m": 5404.72,
+          "net_100m": -834.19,
+          "direction": "sell"
+        }
+      ],
+      "interpretation": "外資大賣890億主因費半-6.27%引發被動調節，但台股僅跌-0.58%展現強韌性。投信買超近100億為作帳行情支撐。塑化(台塑+南亞+台塑化)獲外資逆勢大買，金融股遭外資提款。"
+    },
+    "foreign_top_buys": [
+      {
+        "symbol": "2344",
+        "name": "華邦電",
+        "net_buy_shares": 41390209
+      },
+      {
+        "symbol": "2881",
+        "name": "富邦金",
+        "net_buy_shares": 37126487
+      },
+      {
+        "symbol": "1314",
+        "name": "中石化",
+        "net_buy_shares": 32887176
+      },
+      {
+        "symbol": "2882",
+        "name": "國泰金",
+        "net_buy_shares": 25492148
+      },
+      {
+        "symbol": "1301",
+        "name": "台塑",
+        "net_buy_shares": 25122957
+      },
+      {
+        "symbol": "1312",
+        "name": "國喬",
+        "net_buy_shares": 16570600
+      },
+      {
+        "symbol": "2883",
+        "name": "凱基金",
+        "net_buy_shares": 15067156
+      },
+      {
+        "symbol": "2105",
+        "name": "正新",
+        "net_buy_shares": 14763660
+      }
+    ],
+    "foreign_top_sells": [
+      {
+        "symbol": "00988A",
+        "name": "主動統一全球創新",
+        "net_sell_shares": 58419468
+      },
+      {
+        "symbol": "2409",
+        "name": "友達",
+        "net_sell_shares": 46140222
+      },
+      {
+        "symbol": "00631L",
+        "name": "元大台灣50正2",
+        "net_sell_shares": 32526825
+      },
+      {
+        "symbol": "2886",
+        "name": "兆豐金",
+        "net_sell_shares": 32265527
+      },
+      {
+        "symbol": "2892",
+        "name": "第一金",
+        "net_sell_shares": 28970241
+      },
+      {
+        "symbol": "2303",
+        "name": "聯電",
+        "net_sell_shares": 24499232
+      },
+      {
+        "symbol": "2891",
+        "name": "中信金",
+        "net_sell_shares": 21952757
+      }
+    ],
+    "margin_trading": {
+      "data_date": "2026-07-02",
+      "margin_balance_ntd_100m": 6208.37,
+      "margin_change_ntd_100m": 113.35,
+      "margin_change_direction": "increase",
+      "short_balance_shares": 200271,
+      "short_change_shares": 3879,
+      "short_change_direction": "increase",
+      "interpretation": "融資增加113.35億至6,208億(增幅+1.86%)，融券增加3,879張至200,271張。大盤下殺收斂跌幅，散戶逢低加碼融資意願升溫，但融券同步增加顯示空方仍有抵抗。"
+    },
+    "key_stocks": {
+      "2330": {
+        "name": "台積電",
+        "close": 2465,
+        "change": -40,
+        "change_pct": -1.6,
+        "volume_shares": 35919290,
+        "direction": "down"
+      },
+      "2454": {
+        "name": "聯發科",
+        "close": 4345,
+        "change": 10,
+        "change_pct": 0.23,
+        "volume_shares": 8544133,
+        "direction": "up"
+      },
+      "2317": {
+        "name": "鴻海",
+        "close": 239,
+        "change": 0,
+        "change_pct": 0.0,
+        "volume_shares": 67897136,
+        "direction": "flat"
+      },
+      "2882": {
+        "name": "國泰金",
+        "close": 93.5,
+        "change": -1.5,
+        "change_pct": -1.58,
+        "volume_shares": 65125802,
+        "direction": "down"
+      },
+      "2382": {
+        "name": "廣達",
+        "close": 369,
+        "change": -3,
+        "change_pct": -0.81,
+        "volume_shares": 9014780,
+        "direction": "down"
+      },
+      "2308": {
+        "name": "台達電",
+        "close": 1970,
+        "change": -20,
+        "change_pct": -1.01,
+        "volume_shares": 6939618,
+        "direction": "down"
+      },
+      "1301": {
+        "name": "台塑",
+        "close": 59.7,
+        "change": 5.4,
+        "change_pct": 9.94,
+        "volume_shares": 112956008,
+        "direction": "up"
+      },
+      "6505": {
+        "name": "台塑化",
+        "close": 57.6,
+        "change": 4.0,
+        "change_pct": 7.46,
+        "volume_shares": 24282487,
+        "direction": "up"
+      },
+      "2881": {
+        "name": "富邦金",
+        "close": 119.5,
+        "change": -3.0,
+        "change_pct": -2.45,
+        "volume_shares": 73286313,
+        "direction": "down"
+      }
+    },
+    "momentum_indicators": {
+      "limit_up_count": 231,
+      "limit_down_count": 5,
+      "up_count": 649,
+      "down_count": 200,
+      "note": "上市漲停54檔、上櫃漲停177檔(含ETN)，合計231檔漲停。跌停僅5檔。盤面極度分歧：權值股遭外資調節但中小型股投機力道強勁。"
+    },
+    "futures_consolidated": {
+      "data_date": "2026-07-01",
+      "note": "期交所數據T+1公布，以下為7/1盤後數據",
+      "foreign_tx_net_oi": -84168,
+      "foreign_total_futures_net_oi": -576307,
+      "foreign_options_net_oi": -5257,
+      "institutional_futures_net_oi": [
+        {
+          "name": "外資及陸資",
+          "net_oi": -576307,
+          "direction": "short"
+        },
+        {
+          "name": "投信",
+          "net_oi": 81739,
+          "direction": "long"
+        },
+        {
+          "name": "自營商",
+          "net_oi": -374164,
+          "direction": "short"
+        }
+      ],
+      "interpretation": "外資期貨淨空單57.6萬口為偏空布局，但今日現貨賣壓已充分反映。投信期貨多單8.1萬口與現貨買超方向一致。外資期現貨不同步(期空單+現賣890億)顯示全面避險格局。"
+    },
+    "overall_assessment": {
+      "market_direction": "震盪偏弱，但結構分歧",
+      "key_observations": [
+        "外資單日狂賣890億為近半年最大量，但加權指數僅跌0.58%",
+        "OTC逆勢大漲+1.92%創近期強勢表現，資金轉進中小型股",
+        "塑化集團(台塑+台塑化+南亞)全面大漲近10%為今日最大亮點",
+        "融資增113億、融券增3,879張，籌碼面多空分歧",
+        "外資買超集中在塑化(台塑/中石化/國喬)及金融(富邦金/國泰金)",
+        "金融股整體遭外資賣超(兆豐金/第一金/中信金為賣超前三)"
+      ],
+      "risk_warnings": [
+        "外資期貨淨空單57.6萬口仍為潛在壓力",
+        "台積電收2465(-1.6%)，若TSM ADR續跌將拖累權值",
+        "融資大增113億，若行情反轉恐引發斷頭賣壓"
+      ]
+    }
   }
 }
