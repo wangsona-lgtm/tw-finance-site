@@ -1,6 +1,15 @@
 {
   "reports": [
     {
+      "date": "2026-07-03",
+      "type": "zh-digest",
+      "file": "reports/2026-07-03.json",
+      "generated_at": "2026-07-03T06:15:00+08:00",
+      "status": "completed",
+      "note": "ZH導讀：7篇 — 非農僅+120K連三月降溫、伊朗石油滯銷40+艘油輪塞船、IBM裁員7800人、Blue Owl科技基金遭38%贖回、Vance曝伊朗MoU為補充儲備窗口",
+      "updated_at": "2026-07-03T06:15:00+08:00"
+    },
+    {
       "date": "2026-07-02",
       "type": "zh-digest+premarket-analysis",
       "file": "reports/2026-07-02.json",
@@ -122,5 +131,5 @@
       "note": "盤前分析：台股上週暴跌-1,683至44,572、SOX -5.29%半導體續殺，但台指期夜盤逆勢狂拉+543點，台積電ADR溢價+17%護航"
     }
   ],
-  "updated_at": "2026-07-02T06:15:00+08:00"
+  "updated_at": "2026-07-03T06:15:00+08:00"
 }
