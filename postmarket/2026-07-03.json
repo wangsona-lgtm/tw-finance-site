@@ -1,0 +1,201 @@
+{
+  "date": "2026-07-03",
+  "day_of_week": "Friday",
+  "generated_at": "2026-07-03T06:05:00+08:00",
+  "sections": {
+    "fed_watch": {
+      "source": "Fed Watch + Fed Fetch",
+      "cron_job": "ef6a7bbe6def",
+      "fetched_at": "2026-07-03T06:03:22+08:00",
+      "market_note": "今日美國 independence Day 補假，美股休市（7/3）",
+      "us_treasury_yields": {
+        "note": "殖利率全面飆升，Warsh Sintra 演說 + NFP 不如預期引發利率路徑重新定價",
+        "yields": {
+          "2y": { "value": 4.230, "change_bp": 10.0, "direction": "up" },
+          "10y": { "value": 4.485, "change_bp": 11.3, "direction": "up" },
+          "30y": { "value": 4.985, "change_bp": 12.1, "direction": "up" },
+          "3m_tbill": { "value": 3.668, "change_bp": 0.5, "direction": "up" }
+        },
+        "spreads": {
+          "2y10y": { "value_bp": 25.5, "prior_bp": 24.2, "note": "正向斜率持續陡化" },
+          "2y30y": { "value_bp": 75.5, "prior_bp": 73.4 }
+        }
+      },
+      "dxy": {
+        "close": 100.88,
+        "change": -0.51,
+        "change_pct": -0.50,
+        "direction": "down",
+        "weekly_change": -0.48,
+        "weekly_change_pct": -0.47,
+        "note": "美元連續走弱，NFP 意外疲軟 + Warsh 演說未如預期鷹派，美元跌破 101 關卡"
+      },
+      "vix": {
+        "close": 16.15,
+        "change": -0.44,
+        "change_pct": -2.65,
+        "direction": "down",
+        "weekly_change": -2.26,
+        "weekly_change_pct": -12.3,
+        "note": "VIX 處於 15-20 正常區間，避險情緒降溫。SOX 崩跌但恐慌集中在半導體特定板塊"
+      },
+      "fed_funds_futures": {
+        "current_implied_rate": 3.675,
+        "year_end_implied_rate": 3.90,
+        "year_total_bp_change": 27.5,
+        "direction": "tightening",
+        "contracts": [
+          { "contract": "ZQ=F (連續)", "price": 96.325, "implied_rate": 3.675, "bp_vs_mid": 5.0 },
+          { "contract": "Jul 26 (ZQN26)", "price": 96.370, "implied_rate": 3.630, "bp_vs_mid": 0.5 },
+          { "contract": "Aug 26 (ZQQ26)", "price": 96.325, "implied_rate": 3.675, "bp_vs_mid": 5.0 },
+          { "contract": "Sep 26 (ZQU26)", "price": 96.275, "implied_rate": 3.725, "bp_vs_mid": 10.0 },
+          { "contract": "Oct 26 (ZQV26)", "price": 96.215, "implied_rate": 3.785, "bp_vs_mid": 16.0 },
+          { "contract": "Nov 26 (ZQX26)", "price": 96.165, "implied_rate": 3.835, "bp_vs_mid": 21.0 },
+          { "contract": "Dec 26 (ZQZ26)", "price": 96.100, "implied_rate": 3.900, "bp_vs_mid": 27.5 }
+        ]
+      },
+      "cme_fedwatch_probabilities": {
+        "data_source": "Investing.com 7/2 更新",
+        "current_rate": "3.50-3.75%",
+        "target_mid": 3.625,
+        "meetings": [
+          {
+            "date": "2026-07-28",
+            "label": "7/28-29",
+            "hold_prob": 81.2,
+            "hike_25bp_prob": 18.8,
+            "hike_50bp_prob": 0,
+            "prior_day_hold": 69.0,
+            "prior_week_hold": 66.8,
+            "note": "7月升息機率從上週33.2%驟降至18.8%"
+          },
+          {
+            "date": "2026-09-15",
+            "label": "9/15-16",
+            "hold_prob": 46.2,
+            "hike_25bp_prob": 45.7,
+            "hike_50bp_prob": 8.1,
+            "prior_day_hold": 35.4,
+            "prior_week_hold": 36.7
+          },
+          {
+            "date": "2026-10-27",
+            "label": "10/27-28",
+            "hold_prob": 35.6,
+            "hike_25bp_prob": 45.8,
+            "hike_50bp_prob": 16.7,
+            "prior_day_hold": 26.4,
+            "prior_week_hold": 28.3
+          },
+          {
+            "date": "2026-12-08",
+            "label": "12/8-9",
+            "hold_prob": 22.2,
+            "hike_25bp_prob": 42.0,
+            "hike_50bp_prob": 27.7,
+            "prior_day_hold": 15.9,
+            "prior_week_hold": 19.1
+          }
+        ],
+        "key_drivers": [
+          "NFP 僅 +57K（預期 +110K）— 就業市場明顯降溫",
+          "Warsh Sintra 演說：「通膨風險比幾週前降低」— 比預期鴿派",
+          "升息時點從7月延後至9月或10月"
+        ]
+      },
+      "fomc_analysis": {
+        "latest_meeting": "2026-06-16~17",
+        "decision": "維持 3.50-3.75%（中位數 3.625%）",
+        "vote": "12-0 全數贊成（Warsh 首度以主席身份主持）",
+        "statement_changes": {
+          "forward_guidance": "完全移除（Powell 4月版本含 easing bias）",
+          "inflation_desc": "remains elevated",
+          "geopolitics": "中東衝突明確入文（4月未提及）",
+          "length": "~100字（極簡，Powell 時代 ~500字）",
+          "adjustment_bias": "無任何傾向表述"
+        },
+        "sep_dot_plot": {
+          "note": "Warsh 首份 SEP — 鷹派大反轉",
+          "median_rates": [
+            { "year": "2026", "current": 3.8, "prior_sep": 3.4, "change_bp": 40 },
+            { "year": "2027", "current": 3.6, "prior_sep": 3.1, "change_bp": 50 },
+            { "year": "2028", "current": 3.4, "prior_sep": 3.1, "change_bp": 30 },
+            { "year": "Longer Run", "current": 3.1, "prior_sep": 3.1, "change_bp": 0 }
+          ],
+          "distribution_2026": [
+            { "rate": 4.375, "count": 1 },
+            { "rate": 4.125, "count": 5 },
+            { "rate": 3.875, "count": 3 },
+            { "rate": 3.625, "count": 8 },
+            { "rate": 3.375, "count": 1 }
+          ]
+        },
+        "sep_economic_projections": {
+          "gdp_2026": { "value": 2.2, "prior": 2.4, "direction": "down" },
+          "unemployment_2026": { "value": 4.3, "prior": 4.4, "direction": "down" },
+          "pce_2026": { "value": 3.6, "prior": 2.7, "direction": "up", "change": 0.9 },
+          "core_pce_2026": { "value": 3.3, "prior": 2.7, "direction": "up", "change": 0.6 }
+        }
+      },
+      "fed_officials_comments": [
+        { "name": "Kevin Warsh", "title": "主席（6月接任）", "voting": "永久", "stance": "balance_hawkish", "emoji": "⚖️🦅", "comment": "Sintra 演說：「通膨風險已下降」「物價太高」「會讓認為我能容忍2%以上通膨的人失望」— 比市場預期的鴿" },
+        { "name": "Christopher Waller", "title": "理事", "voting": "永久", "stance": "hawkish", "emoji": "🦅", "comment": "「升息是可能的」「寬鬆傾向該廢了」「現在談降息是瘋了」— 從鴿轉鷹" },
+        { "name": "John Williams", "title": "紐約聯準銀行", "voting": "永久", "stance": "hawkish", "emoji": "🦅", "comment": "「通膨仍過高」「必須回到2%目標」— 將通膨達標預期延至2028" },
+        { "name": "Austan Goolsbee", "title": "芝加哥聯準銀行", "voting": "2026無投票權", "stance": "neutral", "emoji": "⚖️", "comment": "「通膨仍然太高」" },
+        { "name": "Beth Hammack", "title": "克里夫蘭聯準銀行", "voting": "2026輪值", "stance": "hawkish", "emoji": "🦅", "comment": "4月反對聲明中的寬鬆措辭" },
+        { "name": "Neel Kashkari", "title": "明尼阿波利斯聯準銀行", "voting": "2026輪值", "stance": "hawkish", "emoji": "🦅", "comment": "4月反對寬鬆傾向" },
+        { "name": "Lorie Logan", "title": "達拉斯聯準銀行", "voting": "2026輪值", "stance": "hawkish", "emoji": "🦅", "comment": "4月反對寬鬆傾向" },
+        { "name": "Lisa Cook", "title": "理事", "voting": "永久", "stance": "dovish", "emoji": "🕊️", "comment": "暫無近期公開談話" },
+        { "name": "Philip Jefferson", "title": "副主席", "voting": "永久", "stance": "neutral", "emoji": "⚖️", "comment": "" },
+        { "name": "Stephen Miran", "title": "理事", "voting": "永久", "stance": "dovish", "emoji": "🕊️", "comment": "4月唯一主張降息1碼的官員（最鴿）" }
+      ],
+      "economic_calendar": {
+        "past_week": [
+          { "date": "7/1", "event": "ISM 製造業PMI（6月）", "actual": "53.3", "expected": "~53.0", "prior": "54.0" },
+          { "date": "7/2", "event": "非農就業 NFP（6月）", "actual": "+57K", "expected": "+110K", "prior": "+172K", "significance": "high", "note": "重大意外！就業市場顯著降溫" }
+        ],
+        "upcoming": [
+          { "date": "7/7", "event": "美國5月國際貿易收支" },
+          { "date": "7月中", "event": "6月 CPI 數據", "significance": "high" },
+          { "date": "7月中", "event": "6月 PPI 數據" },
+          { "date": "7月底", "event": "6月 PCE 物價指數", "significance": "high" },
+          { "date": "7/28-29", "event": "FOMC 利率會議", "significance": "high" },
+          { "date": "7/30", "event": "Q2 GDP 初估值", "significance": "high" },
+          { "date": "7/30", "event": "6月個人所得與支出" }
+        ]
+      },
+      "market_expectations_summary": {
+        "vs_last_week": {
+          "july_hike_prob_change": -14.4,
+          "sep_hold_prob_change": 9.5,
+          "year_end_implied_rate": "持平 ~3.90%",
+          "dxy_change": -0.5,
+          "vix_change": -2.2,
+          "10y_yield_change_bp": 12,
+          "summary": "市場從「7月可能升息」重新定價為「9月或10月才可能首次升息」，但全年總升息幅度變化不大"
+        },
+        "wall_street_consensus": "普遍預期7月維持不變（81%機率已反映）；Warsh 溝通風格仍在適應期；軟 NFP 後多家投行延後首次升息預期至9月或11月"
+      },
+      "impact_analysis": {
+        "taiwan_stock": {
+          "taiex_close": 47019,
+          "taiex_change_pct": 1.94,
+          "risk_note": "SOX 半導體指數週四暴跌5.44%，台股半導體族群（2330 台積電、2454 聯發科等）下週可能補跌。AI 投資回報疑慮升溫。但 NFP 疲軟 → Fed 升息壓力緩解，整體資金面仍有利風險資產"
+        },
+        "forex": {
+          "usdtwd": 31.89,
+          "note": "DXY跌破101→美元弱勢有利新興市場。台幣有升值空間。中東地緣風險仍是美元避險需求支撐"
+        }
+      },
+      "conclusion": {
+        "core_view": "NFP 疲軟 + Warsh 鴿派意外 = 市場暫時喘口氣，但通膨數據才是 Fed 真正的判官。7月CPI 前，市場將在「軟著陸」與「再通膨」之間搖擺",
+        "key_watch_items": [
+          "7/7 貿易收支數據",
+          "7月中 CPI 數據（決定 Fed 7月基調）",
+          "FOMC 6月會議紀錄（預計7月初公布）",
+          "7/28-29 FOMC 會議 — 目前市場預期維持利率不變（81.2%）"
+        ]
+      }
+    }
+  }
+}
