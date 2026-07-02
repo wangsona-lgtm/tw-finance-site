@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
   "day_of_week": "Thursday",
-  "generated_at": "2026-07-02T13:40:00+08:00",
+  "generated_at": "2026-07-02T14:08:00+08:00",
   "market_direction": "down",
   "summary": {
     "taiex": {
@@ -76,6 +76,90 @@
       "成交量縮至10,164億(較昨-26%)，追價意願保守"
     ]
   },
+  "recommendation_review": {
+    "summary": { "hit": 2, "miss": 1, "neutral": 1 },
+    "items": [
+      {
+        "symbol": 2881,
+        "name": "富邦金",
+        "direction": "偏多",
+        "reference_price": 122.50,
+        "close": 119.50,
+        "change_pct": -2.45,
+        "result": "miss",
+        "note": "金融避風港論錯誤。全球費半重挫引發外資全面調節，金融股因流動性佳反成提款機。改進：需觀察台指期夜盤/金融期貨表現"
+      },
+      {
+        "symbol": 2330,
+        "name": "台積電",
+        "direction": "短空長多",
+        "reference_price": 2505,
+        "close": 2465,
+        "change_pct": -1.60,
+        "result": "neutral",
+        "note": "開低-2.2%後收斂至-1.60%，12.89%溢價緩衝發揮作用。短空命中但長多待觀察"
+      },
+      {
+        "symbol": 1216,
+        "name": "統一",
+        "direction": "偏多",
+        "reference_price": 74.50,
+        "close": 74.90,
+        "change_pct": 0.54,
+        "result": "hit",
+        "note": "防禦策略命中。大盤不穩資金流入防禦型標的，成交量放大至1,037萬張"
+      },
+      {
+        "symbol": 2454,
+        "name": "聯發科",
+        "direction": "觀望",
+        "reference_price": 4335,
+        "close": 4345,
+        "change_pct": 0.23,
+        "result": "hit",
+        "note": "開低4,200後強勢拉回，IC設計韌性超預期。觀望避免了開低殺出損失"
+      }
+    ]
+  },
+  "momentum_scan": {
+    "scan_time": "2026-07-02T14:00:00+08:00",
+    "total_scanned": 223,
+    "limit_up_count": 11,
+    "market_note": "大盤跌-0.58%下仍有11檔漲停，中小型動能持續",
+    "sector_rankings": [
+      { "rank": 1, "sector": "半導體/IC設計", "limit_up_count": 4, "max_streak": 2, "fire_level": 3 },
+      { "rank": 2, "sector": "光電/二極體", "limit_up_count": 2, "max_streak": 9, "fire_level": 3 },
+      { "rank": 3, "sector": "機電/自動化", "limit_up_count": 2, "max_streak": 2, "fire_level": 3 },
+      { "rank": 4, "sector": "電子零組件", "limit_up_count": 1, "max_streak": 2, "fire_level": 2 },
+      { "rank": 5, "sector": "網通", "limit_up_count": 1, "max_streak": 2, "fire_level": 2 },
+      { "rank": 6, "sector": "生技", "limit_up_count": 1, "max_streak": 2, "fire_level": 2 }
+    ],
+    "extreme_streaks": [
+      {
+        "symbol": 6226,
+        "name": "光鼎",
+        "streak": 9,
+        "price": 26.65,
+        "cumulative_return_pct": 113.2,
+        "risk": "highest",
+        "sector": "光電/其他",
+        "note": "已連9根漲停，累計+113%，短線過熱。芒格系統評為最高風險"
+      }
+    ],
+    "day2_limit_up": [
+      { "symbol": 6573, "name": "虹揚-KY", "sector": "二極體", "price": 23.10, "cumulative_return_pct": 10.0 },
+      { "symbol": 3661, "name": "世芯-KY", "sector": "半導體/IC設計", "price": 4895, "cumulative_return_pct": 10.0 },
+      { "symbol": 3673, "name": "宸鴻", "sector": "半導體/IC設計", "price": 83.80, "cumulative_return_pct": 10.0 },
+      { "symbol": 4562, "name": "穎漢", "sector": "機電/自動化", "price": 37.05, "cumulative_return_pct": 9.9 },
+      { "symbol": 5484, "name": "慧友", "sector": "電子零組件", "price": 49.40, "cumulative_return_pct": 9.9 },
+      { "symbol": 3550, "name": "Copartner", "sector": "半導體/IC設計", "price": 36.70, "cumulative_return_pct": 9.9 },
+      { "symbol": 3588, "name": "通嘉", "sector": "半導體/IC設計", "price": 72.30, "cumulative_return_pct": 9.9 },
+      { "symbol": 4576, "name": "大銀微", "sector": "機電/自動化", "price": 235.00, "cumulative_return_pct": 9.8 },
+      { "symbol": 4919, "name": "新唐", "sector": "網通", "price": 185.00, "cumulative_return_pct": 9.8 },
+      { "symbol": 4195, "name": "基米", "sector": "生技", "price": 16.90, "cumulative_return_pct": 9.7 }
+    ],
+    "key_insight": "費半-6.27%衝擊下台股僅-0.58%，展現相對強勢。漲停11檔集中在IC設計(4檔)與機電(2檔)，資金在系統性風險中仍敢於追逐確定性高的族群"
+  },
   "source": "postmarket-closing-report",
-  "updated_at": "2026-07-02T13:40:00+08:00"
+  "updated_at": "2026-07-02T14:10:00+08:00"
 }
