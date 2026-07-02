@@ -22,7 +22,7 @@
     },
     "electronics_index": {
       "close": 3023.76,
-      "change": -20.50,
+      "change": -20.5,
       "change_pct": -0.67,
       "direction": "down"
     },
@@ -35,35 +35,113 @@
     }
   },
   "stocks": {
-    "2330": { "name": "台積電", "close": 2465, "change_pct": -1.60, "volume": 27140, "direction": "down" },
-    "2454": { "name": "聯發科", "close": 4345, "change_pct": 0.23, "volume": 6505, "direction": "up" },
-    "2317": { "name": "鴻海", "close": 239, "change_pct": -0.83, "volume": 64466, "direction": "down" },
-    "2308": { "name": "台達電", "close": 1970, "change_pct": -1.01, "volume": 6242, "direction": "down" },
-    "2382": { "name": "廣達", "close": 369, "change_pct": -0.81, "volume": 8737, "direction": "down" }
+    "2330": {
+      "name": "台積電",
+      "close": 2465,
+      "change_pct": -1.6,
+      "volume": 27140,
+      "direction": "down"
+    },
+    "2454": {
+      "name": "聯發科",
+      "close": 4345,
+      "change_pct": 0.23,
+      "volume": 6505,
+      "direction": "up"
+    },
+    "2317": {
+      "name": "鴻海",
+      "close": 239,
+      "change_pct": -0.83,
+      "volume": 64466,
+      "direction": "down"
+    },
+    "2308": {
+      "name": "台達電",
+      "close": 1970,
+      "change_pct": -1.01,
+      "volume": 6242,
+      "direction": "down"
+    },
+    "2382": {
+      "name": "廣達",
+      "close": 369,
+      "change_pct": -0.81,
+      "volume": 8737,
+      "direction": "down"
+    }
   },
   "forex": {
     "usdtwd": 31.907,
     "change": 0.014,
     "change_pct": 0.04,
-    "range": { "low": 31.829, "high": 31.983 },
+    "range": {
+      "low": 31.829,
+      "high": 31.983
+    },
     "direction": "up"
   },
   "us_markets": {
     "date": "2026-07-01",
-    "sp500": { "close": 7483.23, "change_pct": -0.22, "direction": "down" },
-    "nasdaq": { "close": 26040.03, "change_pct": -0.66, "direction": "down" },
-    "dow": { "close": 52305.24, "change_pct": -0.03, "direction": "down" }
+    "sp500": {
+      "close": 7483.23,
+      "change_pct": -0.22,
+      "direction": "down"
+    },
+    "nasdaq": {
+      "close": 26040.03,
+      "change_pct": -0.66,
+      "direction": "down"
+    },
+    "dow": {
+      "close": 52305.24,
+      "change_pct": -0.03,
+      "direction": "down"
+    }
   },
   "strong_sectors": [
-    { "name": "塑化", "avg_change_pct": 9.27, "leaders": "台塑+9.94%、台塑化+9.95%、南亞+7.92%", "direction": "up" },
-    { "name": "航運", "avg_change_pct": 0.50, "direction": "up" },
-    { "name": "電信", "avg_change_pct": 0.47, "leaders": "台灣大+1.27%", "direction": "up" }
+    {
+      "name": "塑化",
+      "avg_change_pct": 9.27,
+      "leaders": "台塑+9.94%、台塑化+9.95%、南亞+7.92%",
+      "direction": "up"
+    },
+    {
+      "name": "航運",
+      "avg_change_pct": 0.5,
+      "direction": "up"
+    },
+    {
+      "name": "電信",
+      "avg_change_pct": 0.47,
+      "leaders": "台灣大+1.27%",
+      "direction": "up"
+    }
   ],
   "weak_sectors": [
-    { "name": "電子零組件", "avg_change_pct": -3.28, "laggards": "華新科-6.97%、國巨-6.58%", "direction": "down" },
-    { "name": "金融保險", "avg_change_pct": -1.32, "laggards": "富邦金-2.86%", "direction": "down" },
-    { "name": "電腦週邊", "avg_change_pct": -0.38, "direction": "down" },
-    { "name": "半導體", "avg_change_pct": -0.12, "laggards": "聯電-2.37%", "direction": "down" }
+    {
+      "name": "電子零組件",
+      "avg_change_pct": -3.28,
+      "laggards": "華新科-6.97%、國巨-6.58%",
+      "direction": "down"
+    },
+    {
+      "name": "金融保險",
+      "avg_change_pct": -1.32,
+      "laggards": "富邦金-2.86%",
+      "direction": "down"
+    },
+    {
+      "name": "電腦週邊",
+      "avg_change_pct": -0.38,
+      "direction": "down"
+    },
+    {
+      "name": "半導體",
+      "avg_change_pct": -0.12,
+      "laggards": "聯電-2.37%",
+      "direction": "down"
+    }
   ],
   "market_assessment": {
     "note": "開低後急殺至45,982點(最深跌1,037點)，隨後低接買盤湧入收斂跌幅，日K留928點長下影線。櫃買逆勢大漲+1.92%，資金轉進中小型股。塑化集團噴出為最大亮點。",
@@ -77,14 +155,18 @@
     ]
   },
   "recommendation_review": {
-    "summary": { "hit": 2, "miss": 1, "neutral": 1 },
+    "summary": {
+      "hit": 2,
+      "miss": 1,
+      "neutral": 1
+    },
     "items": [
       {
         "symbol": 2881,
         "name": "富邦金",
         "direction": "偏多",
-        "reference_price": 122.50,
-        "close": 119.50,
+        "reference_price": 122.5,
+        "close": 119.5,
         "change_pct": -2.45,
         "result": "miss",
         "note": "金融避風港論錯誤。全球費半重挫引發外資全面調節，金融股因流動性佳反成提款機。改進：需觀察台指期夜盤/金融期貨表現"
@@ -95,7 +177,7 @@
         "direction": "短空長多",
         "reference_price": 2505,
         "close": 2465,
-        "change_pct": -1.60,
+        "change_pct": -1.6,
         "result": "neutral",
         "note": "開低-2.2%後收斂至-1.60%，12.89%溢價緩衝發揮作用。短空命中但長多待觀察"
       },
@@ -103,8 +185,8 @@
         "symbol": 1216,
         "name": "統一",
         "direction": "偏多",
-        "reference_price": 74.50,
-        "close": 74.90,
+        "reference_price": 74.5,
+        "close": 74.9,
         "change_pct": 0.54,
         "result": "hit",
         "note": "防禦策略命中。大盤不穩資金流入防禦型標的，成交量放大至1,037萬張"
@@ -127,12 +209,48 @@
     "limit_up_count": 11,
     "market_note": "大盤跌-0.58%下仍有11檔漲停，中小型動能持續",
     "sector_rankings": [
-      { "rank": 1, "sector": "半導體/IC設計", "limit_up_count": 4, "max_streak": 2, "fire_level": 3 },
-      { "rank": 2, "sector": "光電/二極體", "limit_up_count": 2, "max_streak": 9, "fire_level": 3 },
-      { "rank": 3, "sector": "機電/自動化", "limit_up_count": 2, "max_streak": 2, "fire_level": 3 },
-      { "rank": 4, "sector": "電子零組件", "limit_up_count": 1, "max_streak": 2, "fire_level": 2 },
-      { "rank": 5, "sector": "網通", "limit_up_count": 1, "max_streak": 2, "fire_level": 2 },
-      { "rank": 6, "sector": "生技", "limit_up_count": 1, "max_streak": 2, "fire_level": 2 }
+      {
+        "rank": 1,
+        "sector": "半導體/IC設計",
+        "limit_up_count": 4,
+        "max_streak": 2,
+        "fire_level": 3
+      },
+      {
+        "rank": 2,
+        "sector": "光電/二極體",
+        "limit_up_count": 2,
+        "max_streak": 9,
+        "fire_level": 3
+      },
+      {
+        "rank": 3,
+        "sector": "機電/自動化",
+        "limit_up_count": 2,
+        "max_streak": 2,
+        "fire_level": 3
+      },
+      {
+        "rank": 4,
+        "sector": "電子零組件",
+        "limit_up_count": 1,
+        "max_streak": 2,
+        "fire_level": 2
+      },
+      {
+        "rank": 5,
+        "sector": "網通",
+        "limit_up_count": 1,
+        "max_streak": 2,
+        "fire_level": 2
+      },
+      {
+        "rank": 6,
+        "sector": "生技",
+        "limit_up_count": 1,
+        "max_streak": 2,
+        "fire_level": 2
+      }
     ],
     "extreme_streaks": [
       {
@@ -147,19 +265,209 @@
       }
     ],
     "day2_limit_up": [
-      { "symbol": 6573, "name": "虹揚-KY", "sector": "二極體", "price": 23.10, "cumulative_return_pct": 10.0 },
-      { "symbol": 3661, "name": "世芯-KY", "sector": "半導體/IC設計", "price": 4895, "cumulative_return_pct": 10.0 },
-      { "symbol": 3673, "name": "宸鴻", "sector": "半導體/IC設計", "price": 83.80, "cumulative_return_pct": 10.0 },
-      { "symbol": 4562, "name": "穎漢", "sector": "機電/自動化", "price": 37.05, "cumulative_return_pct": 9.9 },
-      { "symbol": 5484, "name": "慧友", "sector": "電子零組件", "price": 49.40, "cumulative_return_pct": 9.9 },
-      { "symbol": 3550, "name": "Copartner", "sector": "半導體/IC設計", "price": 36.70, "cumulative_return_pct": 9.9 },
-      { "symbol": 3588, "name": "通嘉", "sector": "半導體/IC設計", "price": 72.30, "cumulative_return_pct": 9.9 },
-      { "symbol": 4576, "name": "大銀微", "sector": "機電/自動化", "price": 235.00, "cumulative_return_pct": 9.8 },
-      { "symbol": 4919, "name": "新唐", "sector": "網通", "price": 185.00, "cumulative_return_pct": 9.8 },
-      { "symbol": 4195, "name": "基米", "sector": "生技", "price": 16.90, "cumulative_return_pct": 9.7 }
+      {
+        "symbol": 6573,
+        "name": "虹揚-KY",
+        "sector": "二極體",
+        "price": 23.1,
+        "cumulative_return_pct": 10.0
+      },
+      {
+        "symbol": 3661,
+        "name": "世芯-KY",
+        "sector": "半導體/IC設計",
+        "price": 4895,
+        "cumulative_return_pct": 10.0
+      },
+      {
+        "symbol": 3673,
+        "name": "宸鴻",
+        "sector": "半導體/IC設計",
+        "price": 83.8,
+        "cumulative_return_pct": 10.0
+      },
+      {
+        "symbol": 4562,
+        "name": "穎漢",
+        "sector": "機電/自動化",
+        "price": 37.05,
+        "cumulative_return_pct": 9.9
+      },
+      {
+        "symbol": 5484,
+        "name": "慧友",
+        "sector": "電子零組件",
+        "price": 49.4,
+        "cumulative_return_pct": 9.9
+      },
+      {
+        "symbol": 3550,
+        "name": "Copartner",
+        "sector": "半導體/IC設計",
+        "price": 36.7,
+        "cumulative_return_pct": 9.9
+      },
+      {
+        "symbol": 3588,
+        "name": "通嘉",
+        "sector": "半導體/IC設計",
+        "price": 72.3,
+        "cumulative_return_pct": 9.9
+      },
+      {
+        "symbol": 4576,
+        "name": "大銀微",
+        "sector": "機電/自動化",
+        "price": 235.0,
+        "cumulative_return_pct": 9.8
+      },
+      {
+        "symbol": 4919,
+        "name": "新唐",
+        "sector": "網通",
+        "price": 185.0,
+        "cumulative_return_pct": 9.8
+      },
+      {
+        "symbol": 4195,
+        "name": "基米",
+        "sector": "生技",
+        "price": 16.9,
+        "cumulative_return_pct": 9.7
+      }
     ],
     "key_insight": "費半-6.27%衝擊下台股僅-0.58%，展現相對強勢。漲停11檔集中在IC設計(4檔)與機電(2檔)，資金在系統性風險中仍敢於追逐確定性高的族群"
   },
   "source": "postmarket-closing-report",
-  "updated_at": "2026-07-02T14:10:00+08:00"
+  "updated_at": "2026-07-02T16:05:00+08:00",
+  "institutional_trading": {
+    "spot": {
+      "date": "2026-07-02",
+      "summary": "三大法人合計賣超842.55億，外資單日賣超890億為最大賣壓來源，投信逆勢買超91億作帳",
+      "institutions": [
+        {
+          "name": "外資及陸資",
+          "buy_100m": 3395.91,
+          "sell_100m": 4286.37,
+          "net_100m": -890.47,
+          "direction": "sell"
+        },
+        {
+          "name": "投信",
+          "buy_100m": 464.8,
+          "sell_100m": 373.6,
+          "net_100m": 91.19,
+          "direction": "buy"
+        },
+        {
+          "name": "自營商(自行買賣)",
+          "buy_100m": 102.43,
+          "sell_100m": 91.43,
+          "net_100m": 11.0,
+          "direction": "buy"
+        },
+        {
+          "name": "自營商(避險)",
+          "buy_100m": 359.1,
+          "sell_100m": 413.38,
+          "net_100m": -54.28,
+          "direction": "sell"
+        },
+        {
+          "name": "三大法人合計",
+          "buy_100m": 4322.23,
+          "sell_100m": 5164.78,
+          "net_100m": -842.55,
+          "direction": "sell"
+        }
+      ],
+      "interpretation": "外資大賣890億主因費半-6.27%引發被動調節，但台股僅跌-0.58%展現強韌性。投信買超91億為作帳行情支撐。塑化(台塑+南亞等)獲外資逆勢大買，金融股則遭外資提款。"
+    },
+    "futures_and_options": {
+      "data_date": "2026-07-01",
+      "note": "期交所數據T+1公布，以下為7/1盤後留倉",
+      "foreign_tx_net_oi": -84168,
+      "foreign_total_futures_net_oi": -576307,
+      "foreign_options_net_oi": -5257,
+      "foreign_options_interpretation": "PUT淨額>0偏空",
+      "pc_ratio": {
+        "volume_pct": 113.71,
+        "oi_pct": 142.03,
+        "interpretation": "成交量P/C 113.71%與未平倉P/C 142.03%雙雙偏高，表示PUT成交與留倉均大於CALL，市場避險氛圍濃厚"
+      },
+      "institutional_futures_net_oi": [
+        {
+          "name": "外資及陸資",
+          "net_oi": -576307,
+          "direction": "short"
+        },
+        {
+          "name": "投信",
+          "net_oi": 81739,
+          "direction": "long"
+        },
+        {
+          "name": "自營商",
+          "net_oi": -374164,
+          "direction": "short"
+        }
+      ],
+      "interpretation": "外資期貨淨空單57.6萬口為偏空布局，但現貨賣壓已消化。投信期貨多單8.1萬口與現貨買超方向一致。期現貨不同步顯示外資可能透過期權避險操作。"
+    },
+    "foreign_top_buys": [
+      {
+        "symbol": "2344",
+        "name": "華邦電",
+        "net_buy_shares": 41390209
+      },
+      {
+        "symbol": "2881",
+        "name": "富邦金",
+        "net_buy_shares": 37126487
+      },
+      {
+        "symbol": "1314",
+        "name": "中石化",
+        "net_buy_shares": 32887176
+      },
+      {
+        "symbol": "2882",
+        "name": "國泰金",
+        "net_buy_shares": 25492148
+      },
+      {
+        "symbol": "1301",
+        "name": "台塑",
+        "net_buy_shares": 25122957
+      }
+    ],
+    "foreign_top_sells": [
+      {
+        "symbol": "00988A",
+        "name": "主動統一全球創新",
+        "net_sell_shares": 58419468
+      },
+      {
+        "symbol": "2409",
+        "name": "友達",
+        "net_sell_shares": 46140222
+      },
+      {
+        "symbol": "00631L",
+        "name": "元大台灣50正2",
+        "net_sell_shares": 32526825
+      },
+      {
+        "symbol": "2886",
+        "name": "兆豐金",
+        "net_sell_shares": 32265527
+      },
+      {
+        "symbol": "2892",
+        "name": "第一金",
+        "net_sell_shares": 28970241
+      }
+    ],
+    "summary": "今日籌碼最大亮點：外資現貨賣超890億但大盤僅跌-0.58%，低接買盤強勁。外資逆勢買超塑化族群（台塑/南亞/台塑化）為罕見操作。投信買超91億延續作帳行情。期貨留倉57.6萬口空單仍為潛在壓力。"
+  }
 }
