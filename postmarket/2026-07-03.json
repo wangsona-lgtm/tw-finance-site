@@ -554,8 +554,8 @@
       }
     },
     "postmarket": {
-      "source": "盤後籌碼分析 (cron 8a869bd74983)",
-      "fetched_at": "2026-07-03T16:05:06+08:00",
+      "source": "完整籌碼分析 (cron a3b9c8d7e6f5)",
+      "fetched_at": "2026-07-03T22:05:00+08:00",
       "summary": "外資大賣超 777 億、期貨淨空單 8.4 萬口高檔，但指數低接買盤撐住收紅",
       "institutional_investors": {
         "date": "2026-07-03",
@@ -762,7 +762,209 @@
           "support": 45800,
           "resistance": 47000
         }
-      }
+      },
+      "margin": {
+        "data_date": "2026-07-03",
+        "note": "晚間 21:30 公布",
+        "margin_balance": {
+          "amount_100m": "630,812,485",
+          "prev_amount_100m": "620,837,289",
+          "change_100m": "630,812,485"
+        },
+        "short_balance": {
+          "volume": "200,370",
+          "prev_volume": "200,271"
+        }
+      },
+      "borrowed_shares": {
+        "data_date": "2026-07-03",
+        "key_stocks": {
+          "1326": {
+            "name": "台化",
+            "prev_balance": 388000,
+            "sell": 468000,
+            "buy": 60000,
+            "cash_repay": 10000,
+            "today_balance": 786000
+          },
+          "2308": {
+            "name": "台達電",
+            "prev_balance": 51000,
+            "sell": 8000,
+            "buy": 29000,
+            "cash_repay": 0,
+            "today_balance": 30000
+          },
+          "2317": {
+            "name": "鴻海",
+            "prev_balance": 24000,
+            "sell": 20000,
+            "buy": 4000,
+            "cash_repay": 0,
+            "today_balance": 40000
+          },
+          "2330": {
+            "name": "台積電",
+            "prev_balance": 63000,
+            "sell": 0,
+            "buy": 32000,
+            "cash_repay": 0,
+            "today_balance": 31000
+          },
+          "2382": {
+            "name": "廣達",
+            "prev_balance": 1026000,
+            "sell": 17000,
+            "buy": 5000,
+            "cash_repay": 0,
+            "today_balance": 1038000
+          },
+          "2454": {
+            "name": "聯發科",
+            "prev_balance": 0,
+            "sell": 0,
+            "buy": 0,
+            "cash_repay": 0,
+            "today_balance": 0
+          },
+          "2881": {
+            "name": "富邦金",
+            "prev_balance": 8000,
+            "sell": 13000,
+            "buy": 3000,
+            "cash_repay": 0,
+            "today_balance": 18000
+          },
+          "2882": {
+            "name": "國泰金",
+            "prev_balance": 7000,
+            "sell": 2000,
+            "buy": 3000,
+            "cash_repay": 0,
+            "today_balance": 6000
+          },
+          "3037": {
+            "name": "欣興",
+            "prev_balance": 0,
+            "sell": 0,
+            "buy": 0,
+            "cash_repay": 0,
+            "today_balance": 0
+          },
+          "3711": {
+            "name": "日月光投控",
+            "prev_balance": 0,
+            "sell": 10000,
+            "buy": 0,
+            "cash_repay": 0,
+            "today_balance": 10000
+          },
+          "6505": {
+            "name": "台塑化",
+            "prev_balance": 28000,
+            "sell": 8000,
+            "buy": 1000,
+            "cash_repay": 0,
+            "today_balance": 35000
+          }
+        }
+      },
+      "foreign_stock_trading": {
+        "data_date": "2026-07-03",
+        "key_stocks": {
+          "2303": {
+            "name": "聯電",
+            "foreign_buy": 51084582,
+            "foreign_sell": 15791342,
+            "foreign_net": 35293240
+          },
+          "2882": {
+            "name": "國泰金",
+            "foreign_buy": 23380208,
+            "foreign_sell": 13179750,
+            "foreign_net": 10200458
+          },
+          "2881": {
+            "name": "富邦金",
+            "foreign_buy": 22544339,
+            "foreign_sell": 16216214,
+            "foreign_net": 6328125
+          },
+          "1326": {
+            "name": "台化",
+            "foreign_buy": 25174000,
+            "foreign_sell": 20725669,
+            "foreign_net": 4448331
+          },
+          "2382": {
+            "name": "廣達",
+            "foreign_buy": 4338632,
+            "foreign_sell": 3108789,
+            "foreign_net": 1229843
+          },
+          "2317": {
+            "name": "鴻海",
+            "foreign_buy": 22453779,
+            "foreign_sell": 21867504,
+            "foreign_net": 586275
+          },
+          "2308": {
+            "name": "台達電",
+            "foreign_buy": 9186317,
+            "foreign_sell": 8748863,
+            "foreign_net": 437454
+          },
+          "3711": {
+            "name": "日月光投控",
+            "foreign_buy": 7403802,
+            "foreign_sell": 25741443,
+            "foreign_net": -18337641
+          },
+          "2330": {
+            "name": "台積電",
+            "foreign_buy": 14563276,
+            "foreign_sell": 27099801,
+            "foreign_net": -12536525
+          },
+          "3037": {
+            "name": "欣興",
+            "foreign_buy": 5462686,
+            "foreign_sell": 9177202,
+            "foreign_net": -3714516
+          },
+          "2454": {
+            "name": "聯發科",
+            "foreign_buy": 4700614,
+            "foreign_sell": 8066940,
+            "foreign_net": -3366326
+          },
+          "2379": {
+            "name": "瑞昱",
+            "foreign_buy": 857397,
+            "foreign_sell": 3149607,
+            "foreign_net": -2292210
+          },
+          "3661": {
+            "name": "世芯-KY",
+            "foreign_buy": 725732,
+            "foreign_sell": 1273414,
+            "foreign_net": -547682
+          },
+          "6505": {
+            "name": "台塑化",
+            "foreign_buy": 14578152,
+            "foreign_sell": 15111190,
+            "foreign_net": -533038
+          },
+          "3008": {
+            "name": "大立光",
+            "foreign_buy": 371375,
+            "foreign_sell": 673242,
+            "foreign_net": -301867
+          }
+        }
+      },
+      "margin_summary": "融資餘額增至6,308.1億 (++99.8億)"
     }
   }
 }
