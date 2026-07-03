@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
   "day_of_week": "Friday",
-  "generated_at": "2026-07-03T06:05:00+08:00",
+  "generated_at": "2026-07-03T13:41:56+08:00",
   "sections": {
     "fed_watch": {
       "source": "Fed Watch + Fed Fetch",
@@ -195,6 +195,48 @@
           "FOMC 6月會議紀錄（預計7月初公布）",
           "7/28-29 FOMC 會議 — 目前市場預期維持利率不變（81.2%）"
         ]
+      }
+    },
+    "tw_market_close": {
+      "source": "台股收盤速報 (39f732630e4d)",
+      "fetched_at": "2026-07-03T13:41:56+08:00",
+      "summary": "加權指數開低走高，早盤一度重挫逾860點觸及45,880，隨後買盤湧入翻紅，傳產與金融領漲",
+      "indices": {
+        "taiex": { "close": 46780.62, "change": 36.46, "change_pct": 0.08, "direction": "up", "open": 46545.14, "high": 46948.83, "low": 45880.69 },
+        "otc": { "close": 95.92, "change": 1.33, "change_pct": 1.41, "direction": "up" },
+        "electronics": { "close": 3013.56, "change": -5.12, "change_pct": -0.17, "direction": "down" }
+      },
+      "key_stocks": [
+        { "symbol": "2330", "name": "台積電", "close": 2445.0, "change": -20.0, "change_pct": -0.81, "direction": "down", "volume": 26403 },
+        { "symbol": "2454", "name": "聯發科", "close": 4195.0, "change": -150.0, "change_pct": -3.45, "direction": "down", "volume": 11122 },
+        { "symbol": "2317", "name": "鴻海", "close": 240.5, "change": 1.5, "change_pct": 0.63, "direction": "up", "volume": 48969 },
+        { "symbol": "2308", "name": "台達電", "close": 2075.0, "change": 105.0, "change_pct": 5.33, "direction": "up", "volume": 14263 },
+        { "symbol": "2382", "name": "廣達", "close": 377.0, "change": 8.0, "change_pct": 2.17, "direction": "up", "volume": 12717 }
+      ],
+      "strong_sectors": [
+        { "rank": 1, "name": "生技醫療類", "change_pct": 3.62 },
+        { "rank": 2, "name": "化學類", "change_pct": 3.60 },
+        { "rank": 3, "name": "觀光類", "change_pct": 3.21 },
+        { "rank": 4, "name": "金融保險類", "change_pct": 2.85 },
+        { "rank": 5, "name": "汽車類", "change_pct": 2.84 }
+      ],
+      "weak_sectors": [
+        { "rank": 1, "name": "油電燃氣類", "change_pct": -1.82 },
+        { "rank": 2, "name": "貿易百貨類", "change_pct": -1.13 },
+        { "rank": 3, "name": "光電類", "change_pct": -0.27 },
+        { "rank": 4, "name": "食品類", "change_pct": -0.24 }
+      ],
+      "fx": {
+        "usdtwd": 31.9460,
+        "prior_close": 31.8948,
+        "change": 0.0512,
+        "change_pct": 0.16,
+        "direction": "twd_weak"
+      },
+      "analysis": {
+        "intraday_volatility": 1068,
+        "volume_note": "證交所尚未發布最終成交量數據",
+        "note": "台積電、聯發科表現疲弱，但傳產（生技、化學、觀光）與金融族群火力全開，櫃買指數勁揚1.41%顯示內資積極"
       }
     }
   }
