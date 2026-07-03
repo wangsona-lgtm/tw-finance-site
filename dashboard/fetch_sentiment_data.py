@@ -81,9 +81,12 @@ def get_tx_futures(dt):
         resp = urllib.request.urlopen(req, context=ctx, timeout=15)
         raw = resp.read().decode('utf-8')
         data = json.loads(raw)
-        if not isinstance(data, list):
+        if not isinstance(data, list) or len(data) == 0:
             return None
-        result = {'date': dt.strftime('%Y/%m/%d')}
+        # TAIFEX API returns data for the latest date available, not filtered by input dt.
+        # Use the actual date from the response.
+        actual_date = data[0].get('Date', dt.strftime('%Y%m%d'))
+        result = {'date': actual_date[:4]+'/'+actual_date[4:6]+'/'+actual_date[6:8]}
         for entry in data:
             item = entry.get('Item')
             fut_net = int(entry.get('FuturesOpenInterest(Net)', '0'))
@@ -169,10 +172,11 @@ def main():
     except:
         hist = []
     
-    # Add today's entry (僅當成功取得資料時)
+    # Add entry (僅當成功取得資料時，用實際資料日期而非執行日期)
     if inst:
+        actual_date = inst.get('date', today_str)
         entry = {
-            'date': today_str[:4]+'-'+today_str[4:6]+'-'+today_str[6:8],
+            'date': actual_date[:4]+'-'+actual_date[4:6]+'-'+actual_date[6:8],
             'inst': {
                 'foreign': inst.get('外資及陸資', {}).get('diff', 0),
                 'investment_trust': inst.get('投信', {}).get('diff', 0),
