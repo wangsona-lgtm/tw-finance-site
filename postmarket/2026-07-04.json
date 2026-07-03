@@ -1,0 +1,162 @@
+{
+  "date": "2026-07-04",
+  "day_of_week": "Saturday",
+  "title": "美股週末回顧與展望 — 2026年7月4日",
+  "generated_at": "2026-07-04T07:05:00+08:00",
+  "source": "cron: 美股週末回顧",
+  "cron_job_id": "05b7ef15112d",
+  "covering_week": "2026-06-29 ~ 2026-07-02",
+  "note": "7月3日(五)美國獨立紀念日補假休市，下週一7/6恢復交易",
+
+  "indices": {
+    "sp500": {
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "close": 7483.24,
+      "daily_change": 0.01,
+      "daily_change_pct": 0.00,
+      "weekly_change_pct": 1.76,
+      "direction": "up"
+    },
+    "dow": {
+      "name": "道瓊工業",
+      "symbol": "^DJI",
+      "close": 52900.07,
+      "daily_change": 594.83,
+      "daily_change_pct": 1.14,
+      "weekly_change_pct": 1.97,
+      "direction": "up"
+    },
+    "nasdaq": {
+      "name": "NASDAQ",
+      "symbol": "^IXIC",
+      "close": 25832.67,
+      "daily_change": -207.36,
+      "daily_change_pct": -0.80,
+      "weekly_change_pct": 2.12,
+      "direction": "down"
+    },
+    "russell2000": {
+      "name": "羅素2000",
+      "symbol": "^RUT",
+      "close": 2996.11,
+      "daily_change": -16.48,
+      "daily_change_pct": -0.55,
+      "weekly_change_pct": -0.46,
+      "direction": "down"
+    },
+    "sox": {
+      "name": "費城半導體",
+      "symbol": "^SOX",
+      "close": 12626.22,
+      "daily_change": -727.06,
+      "daily_change_pct": -5.44,
+      "weekly_change_pct": -4.37,
+      "direction": "down"
+    }
+  },
+
+  "megatech": [
+    {"ticker": "NVDA", "name": "NVIDIA", "close": 194.83, "daily_pct": -1.39, "weekly_pct": 1.19, "direction": "down"},
+    {"ticker": "AAPL", "name": "Apple", "close": 308.63, "daily_pct": 4.84, "weekly_pct": 8.76, "direction": "up"},
+    {"ticker": "MSFT", "name": "Microsoft", "close": 390.49, "daily_pct": 1.62, "weekly_pct": 4.70, "direction": "up"},
+    {"ticker": "AMZN", "name": "Amazon", "close": 242.67, "daily_pct": 0.40, "weekly_pct": 4.29, "direction": "up"},
+    {"ticker": "GOOGL", "name": "Alphabet", "close": 359.91, "daily_pct": -0.36, "weekly_pct": 6.67, "direction": "down"},
+    {"ticker": "META", "name": "Meta", "close": 582.90, "daily_pct": -4.90, "weekly_pct": 5.93, "direction": "down"},
+    {"ticker": "TSLA", "name": "Tesla", "close": 393.45, "daily_pct": -7.49, "weekly_pct": 3.62, "direction": "down"},
+    {"ticker": "TSM", "name": "TSMC", "close": 434.16, "daily_pct": -2.27, "weekly_pct": 0.42, "direction": "down"},
+    {"ticker": "AMD", "name": "AMD", "close": 517.82, "daily_pct": -4.26, "weekly_pct": -0.72, "direction": "down"},
+    {"ticker": "AVGO", "name": "Broadcom", "close": 360.45, "daily_pct": -2.41, "weekly_pct": -1.25, "direction": "down"}
+  ],
+
+  "sector_etfs": [
+    {"ticker": "XLF", "name": "金融", "close": 55.62, "daily_pct": 1.53, "weekly_pct": 3.83, "direction": "up"},
+    {"ticker": "XLK", "name": "科技", "close": 180.59, "daily_pct": -2.71, "weekly_pct": -0.29, "direction": "down"},
+    {"ticker": "XLE", "name": "能源", "close": 53.22, "daily_pct": 0.78, "weekly_pct": -1.15, "direction": "up"},
+    {"ticker": "XLV", "name": "醫療保健", "close": 163.74, "daily_pct": 2.63, "weekly_pct": 2.12, "direction": "up"},
+    {"ticker": "XLI", "name": "工業", "close": 183.91, "daily_pct": 0.30, "weekly_pct": 1.50, "direction": "up"},
+    {"ticker": "XLP", "name": "必需消費", "close": 84.99, "daily_pct": 2.03, "weekly_pct": 0.33, "direction": "up"},
+    {"ticker": "XLY", "name": "非必需消費", "close": 117.12, "daily_pct": -0.82, "weekly_pct": 2.40, "direction": "down"},
+    {"ticker": "XLU", "name": "公用事業", "close": 45.76, "daily_pct": 2.21, "weekly_pct": -0.95, "direction": "up"},
+    {"ticker": "XLB", "name": "原材料", "close": 52.01, "daily_pct": 1.94, "weekly_pct": 0.79, "direction": "up"},
+    {"ticker": "SMH", "name": "半導體", "close": 592.29, "daily_pct": -4.54, "weekly_pct": -3.16, "direction": "down"}
+  ],
+  "strongest_sector_weekly": "XLF 金融 +3.83%",
+  "weakest_sector_weekly": "SMH 半導體 -3.16%",
+
+  "macro_commodities": {
+    "dollar_index": {"name": "美元指數", "symbol": "DX-Y.NYB", "close": 100.86, "daily_pct": -0.52, "weekly_pct": -0.49, "direction": "down"},
+    "gold": {"name": "黃金期貨", "symbol": "GC=F", "close": 4112.70, "daily_pct": 1.09, "weekly_pct": 0.83, "direction": "up"},
+    "crude": {"name": "原油期貨", "symbol": "CL=F", "close": 68.69, "daily_pct": 0.16, "weekly_pct": -0.78, "direction": "up"},
+    "bitcoin": {"name": "比特幣", "symbol": "BTC-USD", "close": 61485, "daily_pct": 2.47, "weekly_pct": 2.45, "direction": "up"},
+    "tnx": {"name": "10年期美債殖利率", "symbol": "^TNX", "close_approx": 4.37, "weekly_note": "殖利率小幅上行約3-5bp", "direction": "up"},
+    "vix": {"name": "VIX恐慌指數", "symbol": "^VIX", "close": 16.15, "daily_pct": -2.65, "weekly_pct": -12.28, "direction": "down"}
+  },
+
+  "weekend_events": {
+    "macro": [
+      "6月非農就業大幅低於預期（7/2公布），市場降息預期升溫",
+      "聯準會主席Warsh處鷹派與就業疲弱兩難困境",
+      "目前通膨仍處4%以上高位，BofA預測升息但GS/Barclays已推遲升息預期",
+      "JOLTS職缺約760萬，顯示勞動市場仍有一定韌性"
+    ],
+    "geopolitics": [],
+    "tech_industry": [
+      "費半SOX單日暴跌5.44%，創近期最大單日跌幅，AI股創紀錄2兆美元漲勢後獲利了結",
+      "資金從科技股大舉流向金融、醫療、消費必需品等防禦性與價值板塊",
+      "科技七巨頭獨霸格局正在鬆動"
+    ],
+    "market_structure": [
+      "德州證交所(TXSE)將於7/6(一)在達拉斯正式上線，挑戰NYSE與NASDAQ雙頭壟斷"
+    ],
+    "commodities_forex": [
+      "黃金創歷史新高突破$4,100，受弱勢美元+降息預期+避險需求推動",
+      "美元指數跌破101，觸及數月低點",
+      "OPEC+預期8月起續增產，油價基本面偏空",
+      "UAE退出OPEC後出口創歷史新高"
+    ],
+    "other": [
+      "比特幣站上$61K，週末情緒偏正面",
+      "SEC態度轉變承認加密貨幣ETF相關錯誤",
+      "Trump評論市場稱「每個人都在賺錢」"
+    ]
+  },
+
+  "monday_outlook": {
+    "futures": {
+      "es_f": {"symbol": "ES=F", "last": 7557.00, "implied_direction": "up", "note": "較現貨收盤高出約74點(+0.99%)"},
+      "nq_f": {"symbol": "NQ=F", "last": 29901.75, "implied_direction": "up", "note": "參考值"}
+    },
+    "overall_assessment": "週一開盤預計小幅偏多 (+0.3%~+0.8%)，但半導體板塊可能繼續承壓。資金輪動將是主旋律。",
+    "most_likely_scenario": "開高震盪，金融/醫療續強，科技股漲跌互見",
+    "key_factors": {
+      "soft_jobs_data": {"direction": "bullish", "detail": "降息預期升溫，利多利率敏感板塊"},
+      "futures_pricing": {"direction": "bullish", "detail": "ES/F週五維持高檔"},
+      "vix_decline": {"direction": "bullish", "detail": "VIX降至16.15，市場恐慌降溫"},
+      "semiconductor_momentum": {"direction": "bearish", "detail": "獲利了結可能延續至下週"},
+      "weak_dollar": {"direction": "bullish", "detail": "支持商品與跨國企業"},
+      "txse_launch": {"direction": "neutral", "detail": "結構性利多，短期影響有限"}
+    }
+  },
+
+  "weekly_focus": [
+    {"date": "週一 7/6", "event": "ISM服務業PMI（6月）", "importance": 5},
+    {"date": "週二 7/7", "event": "貿易收支", "importance": 2},
+    {"date": "週三 7/8", "event": "MBA房貸申請、EIA庫存", "importance": 3},
+    {"date": "週四 7/9", "event": "CPI（6月）❗", "importance": 5},
+    {"date": "週五 7/10", "event": "PPI（6月）、密大消費者信心", "importance": 4}
+  ],
+
+  "fed_speeches_this_week": "關注Warsh是否公開回應就業數據。上週三重申不會容忍通膨高於2%，但當時就業未公布",
+  "key_technical_levels": {
+    "sp500_support": 7350,
+    "sp500_resistance": 7600,
+    "nvda_key_level": 190
+  },
+
+  "core_variables": [
+    "軟著陸vs衰退交易 — 若CPI意外升溫可能引發較大波動",
+    "半導體是否止跌 — NVDA能否守住$190整數關卡",
+    "板塊輪動持續性 — 金融XLF能否延續強勢"
+  ]
+}
