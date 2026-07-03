@@ -1,7 +1,7 @@
 {
   "date": "2026-07-03",
   "day_of_week": "Friday",
-  "generated_at": "2026-07-03T13:41:56+08:00",
+  "generated_at": "2026-07-03T16:05:30+08:00",
   "sections": {
     "fed_watch": {
       "source": "Fed Watch + Fed Fetch",
@@ -11,20 +11,43 @@
       "us_treasury_yields": {
         "note": "殖利率全面飆升，Warsh Sintra 演說 + NFP 不如預期引發利率路徑重新定價",
         "yields": {
-          "2y": { "value": 4.230, "change_bp": 10.0, "direction": "up" },
-          "10y": { "value": 4.485, "change_bp": 11.3, "direction": "up" },
-          "30y": { "value": 4.985, "change_bp": 12.1, "direction": "up" },
-          "3m_tbill": { "value": 3.668, "change_bp": 0.5, "direction": "up" }
+          "2y": {
+            "value": 4.23,
+            "change_bp": 10.0,
+            "direction": "up"
+          },
+          "10y": {
+            "value": 4.485,
+            "change_bp": 11.3,
+            "direction": "up"
+          },
+          "30y": {
+            "value": 4.985,
+            "change_bp": 12.1,
+            "direction": "up"
+          },
+          "3m_tbill": {
+            "value": 3.668,
+            "change_bp": 0.5,
+            "direction": "up"
+          }
         },
         "spreads": {
-          "2y10y": { "value_bp": 25.5, "prior_bp": 24.2, "note": "正向斜率持續陡化" },
-          "2y30y": { "value_bp": 75.5, "prior_bp": 73.4 }
+          "2y10y": {
+            "value_bp": 25.5,
+            "prior_bp": 24.2,
+            "note": "正向斜率持續陡化"
+          },
+          "2y30y": {
+            "value_bp": 75.5,
+            "prior_bp": 73.4
+          }
         }
       },
       "dxy": {
         "close": 100.88,
         "change": -0.51,
-        "change_pct": -0.50,
+        "change_pct": -0.5,
         "direction": "down",
         "weekly_change": -0.48,
         "weekly_change_pct": -0.47,
@@ -41,17 +64,52 @@
       },
       "fed_funds_futures": {
         "current_implied_rate": 3.675,
-        "year_end_implied_rate": 3.90,
+        "year_end_implied_rate": 3.9,
         "year_total_bp_change": 27.5,
         "direction": "tightening",
         "contracts": [
-          { "contract": "ZQ=F (連續)", "price": 96.325, "implied_rate": 3.675, "bp_vs_mid": 5.0 },
-          { "contract": "Jul 26 (ZQN26)", "price": 96.370, "implied_rate": 3.630, "bp_vs_mid": 0.5 },
-          { "contract": "Aug 26 (ZQQ26)", "price": 96.325, "implied_rate": 3.675, "bp_vs_mid": 5.0 },
-          { "contract": "Sep 26 (ZQU26)", "price": 96.275, "implied_rate": 3.725, "bp_vs_mid": 10.0 },
-          { "contract": "Oct 26 (ZQV26)", "price": 96.215, "implied_rate": 3.785, "bp_vs_mid": 16.0 },
-          { "contract": "Nov 26 (ZQX26)", "price": 96.165, "implied_rate": 3.835, "bp_vs_mid": 21.0 },
-          { "contract": "Dec 26 (ZQZ26)", "price": 96.100, "implied_rate": 3.900, "bp_vs_mid": 27.5 }
+          {
+            "contract": "ZQ=F (連續)",
+            "price": 96.325,
+            "implied_rate": 3.675,
+            "bp_vs_mid": 5.0
+          },
+          {
+            "contract": "Jul 26 (ZQN26)",
+            "price": 96.37,
+            "implied_rate": 3.63,
+            "bp_vs_mid": 0.5
+          },
+          {
+            "contract": "Aug 26 (ZQQ26)",
+            "price": 96.325,
+            "implied_rate": 3.675,
+            "bp_vs_mid": 5.0
+          },
+          {
+            "contract": "Sep 26 (ZQU26)",
+            "price": 96.275,
+            "implied_rate": 3.725,
+            "bp_vs_mid": 10.0
+          },
+          {
+            "contract": "Oct 26 (ZQV26)",
+            "price": 96.215,
+            "implied_rate": 3.785,
+            "bp_vs_mid": 16.0
+          },
+          {
+            "contract": "Nov 26 (ZQX26)",
+            "price": 96.165,
+            "implied_rate": 3.835,
+            "bp_vs_mid": 21.0
+          },
+          {
+            "contract": "Dec 26 (ZQZ26)",
+            "price": 96.1,
+            "implied_rate": 3.9,
+            "bp_vs_mid": 27.5
+          }
         ]
       },
       "cme_fedwatch_probabilities": {
@@ -117,51 +175,213 @@
         "sep_dot_plot": {
           "note": "Warsh 首份 SEP — 鷹派大反轉",
           "median_rates": [
-            { "year": "2026", "current": 3.8, "prior_sep": 3.4, "change_bp": 40 },
-            { "year": "2027", "current": 3.6, "prior_sep": 3.1, "change_bp": 50 },
-            { "year": "2028", "current": 3.4, "prior_sep": 3.1, "change_bp": 30 },
-            { "year": "Longer Run", "current": 3.1, "prior_sep": 3.1, "change_bp": 0 }
+            {
+              "year": "2026",
+              "current": 3.8,
+              "prior_sep": 3.4,
+              "change_bp": 40
+            },
+            {
+              "year": "2027",
+              "current": 3.6,
+              "prior_sep": 3.1,
+              "change_bp": 50
+            },
+            {
+              "year": "2028",
+              "current": 3.4,
+              "prior_sep": 3.1,
+              "change_bp": 30
+            },
+            {
+              "year": "Longer Run",
+              "current": 3.1,
+              "prior_sep": 3.1,
+              "change_bp": 0
+            }
           ],
           "distribution_2026": [
-            { "rate": 4.375, "count": 1 },
-            { "rate": 4.125, "count": 5 },
-            { "rate": 3.875, "count": 3 },
-            { "rate": 3.625, "count": 8 },
-            { "rate": 3.375, "count": 1 }
+            {
+              "rate": 4.375,
+              "count": 1
+            },
+            {
+              "rate": 4.125,
+              "count": 5
+            },
+            {
+              "rate": 3.875,
+              "count": 3
+            },
+            {
+              "rate": 3.625,
+              "count": 8
+            },
+            {
+              "rate": 3.375,
+              "count": 1
+            }
           ]
         },
         "sep_economic_projections": {
-          "gdp_2026": { "value": 2.2, "prior": 2.4, "direction": "down" },
-          "unemployment_2026": { "value": 4.3, "prior": 4.4, "direction": "down" },
-          "pce_2026": { "value": 3.6, "prior": 2.7, "direction": "up", "change": 0.9 },
-          "core_pce_2026": { "value": 3.3, "prior": 2.7, "direction": "up", "change": 0.6 }
+          "gdp_2026": {
+            "value": 2.2,
+            "prior": 2.4,
+            "direction": "down"
+          },
+          "unemployment_2026": {
+            "value": 4.3,
+            "prior": 4.4,
+            "direction": "down"
+          },
+          "pce_2026": {
+            "value": 3.6,
+            "prior": 2.7,
+            "direction": "up",
+            "change": 0.9
+          },
+          "core_pce_2026": {
+            "value": 3.3,
+            "prior": 2.7,
+            "direction": "up",
+            "change": 0.6
+          }
         }
       },
       "fed_officials_comments": [
-        { "name": "Kevin Warsh", "title": "主席（6月接任）", "voting": "永久", "stance": "balance_hawkish", "emoji": "⚖️🦅", "comment": "Sintra 演說：「通膨風險已下降」「物價太高」「會讓認為我能容忍2%以上通膨的人失望」— 比市場預期的鴿" },
-        { "name": "Christopher Waller", "title": "理事", "voting": "永久", "stance": "hawkish", "emoji": "🦅", "comment": "「升息是可能的」「寬鬆傾向該廢了」「現在談降息是瘋了」— 從鴿轉鷹" },
-        { "name": "John Williams", "title": "紐約聯準銀行", "voting": "永久", "stance": "hawkish", "emoji": "🦅", "comment": "「通膨仍過高」「必須回到2%目標」— 將通膨達標預期延至2028" },
-        { "name": "Austan Goolsbee", "title": "芝加哥聯準銀行", "voting": "2026無投票權", "stance": "neutral", "emoji": "⚖️", "comment": "「通膨仍然太高」" },
-        { "name": "Beth Hammack", "title": "克里夫蘭聯準銀行", "voting": "2026輪值", "stance": "hawkish", "emoji": "🦅", "comment": "4月反對聲明中的寬鬆措辭" },
-        { "name": "Neel Kashkari", "title": "明尼阿波利斯聯準銀行", "voting": "2026輪值", "stance": "hawkish", "emoji": "🦅", "comment": "4月反對寬鬆傾向" },
-        { "name": "Lorie Logan", "title": "達拉斯聯準銀行", "voting": "2026輪值", "stance": "hawkish", "emoji": "🦅", "comment": "4月反對寬鬆傾向" },
-        { "name": "Lisa Cook", "title": "理事", "voting": "永久", "stance": "dovish", "emoji": "🕊️", "comment": "暫無近期公開談話" },
-        { "name": "Philip Jefferson", "title": "副主席", "voting": "永久", "stance": "neutral", "emoji": "⚖️", "comment": "" },
-        { "name": "Stephen Miran", "title": "理事", "voting": "永久", "stance": "dovish", "emoji": "🕊️", "comment": "4月唯一主張降息1碼的官員（最鴿）" }
+        {
+          "name": "Kevin Warsh",
+          "title": "主席（6月接任）",
+          "voting": "永久",
+          "stance": "balance_hawkish",
+          "emoji": "⚖️🦅",
+          "comment": "Sintra 演說：「通膨風險已下降」「物價太高」「會讓認為我能容忍2%以上通膨的人失望」— 比市場預期的鴿"
+        },
+        {
+          "name": "Christopher Waller",
+          "title": "理事",
+          "voting": "永久",
+          "stance": "hawkish",
+          "emoji": "🦅",
+          "comment": "「升息是可能的」「寬鬆傾向該廢了」「現在談降息是瘋了」— 從鴿轉鷹"
+        },
+        {
+          "name": "John Williams",
+          "title": "紐約聯準銀行",
+          "voting": "永久",
+          "stance": "hawkish",
+          "emoji": "🦅",
+          "comment": "「通膨仍過高」「必須回到2%目標」— 將通膨達標預期延至2028"
+        },
+        {
+          "name": "Austan Goolsbee",
+          "title": "芝加哥聯準銀行",
+          "voting": "2026無投票權",
+          "stance": "neutral",
+          "emoji": "⚖️",
+          "comment": "「通膨仍然太高」"
+        },
+        {
+          "name": "Beth Hammack",
+          "title": "克里夫蘭聯準銀行",
+          "voting": "2026輪值",
+          "stance": "hawkish",
+          "emoji": "🦅",
+          "comment": "4月反對聲明中的寬鬆措辭"
+        },
+        {
+          "name": "Neel Kashkari",
+          "title": "明尼阿波利斯聯準銀行",
+          "voting": "2026輪值",
+          "stance": "hawkish",
+          "emoji": "🦅",
+          "comment": "4月反對寬鬆傾向"
+        },
+        {
+          "name": "Lorie Logan",
+          "title": "達拉斯聯準銀行",
+          "voting": "2026輪值",
+          "stance": "hawkish",
+          "emoji": "🦅",
+          "comment": "4月反對寬鬆傾向"
+        },
+        {
+          "name": "Lisa Cook",
+          "title": "理事",
+          "voting": "永久",
+          "stance": "dovish",
+          "emoji": "🕊️",
+          "comment": "暫無近期公開談話"
+        },
+        {
+          "name": "Philip Jefferson",
+          "title": "副主席",
+          "voting": "永久",
+          "stance": "neutral",
+          "emoji": "⚖️",
+          "comment": ""
+        },
+        {
+          "name": "Stephen Miran",
+          "title": "理事",
+          "voting": "永久",
+          "stance": "dovish",
+          "emoji": "🕊️",
+          "comment": "4月唯一主張降息1碼的官員（最鴿）"
+        }
       ],
       "economic_calendar": {
         "past_week": [
-          { "date": "7/1", "event": "ISM 製造業PMI（6月）", "actual": "53.3", "expected": "~53.0", "prior": "54.0" },
-          { "date": "7/2", "event": "非農就業 NFP（6月）", "actual": "+57K", "expected": "+110K", "prior": "+172K", "significance": "high", "note": "重大意外！就業市場顯著降溫" }
+          {
+            "date": "7/1",
+            "event": "ISM 製造業PMI（6月）",
+            "actual": "53.3",
+            "expected": "~53.0",
+            "prior": "54.0"
+          },
+          {
+            "date": "7/2",
+            "event": "非農就業 NFP（6月）",
+            "actual": "+57K",
+            "expected": "+110K",
+            "prior": "+172K",
+            "significance": "high",
+            "note": "重大意外！就業市場顯著降溫"
+          }
         ],
         "upcoming": [
-          { "date": "7/7", "event": "美國5月國際貿易收支" },
-          { "date": "7月中", "event": "6月 CPI 數據", "significance": "high" },
-          { "date": "7月中", "event": "6月 PPI 數據" },
-          { "date": "7月底", "event": "6月 PCE 物價指數", "significance": "high" },
-          { "date": "7/28-29", "event": "FOMC 利率會議", "significance": "high" },
-          { "date": "7/30", "event": "Q2 GDP 初估值", "significance": "high" },
-          { "date": "7/30", "event": "6月個人所得與支出" }
+          {
+            "date": "7/7",
+            "event": "美國5月國際貿易收支"
+          },
+          {
+            "date": "7月中",
+            "event": "6月 CPI 數據",
+            "significance": "high"
+          },
+          {
+            "date": "7月中",
+            "event": "6月 PPI 數據"
+          },
+          {
+            "date": "7月底",
+            "event": "6月 PCE 物價指數",
+            "significance": "high"
+          },
+          {
+            "date": "7/28-29",
+            "event": "FOMC 利率會議",
+            "significance": "high"
+          },
+          {
+            "date": "7/30",
+            "event": "Q2 GDP 初估值",
+            "significance": "high"
+          },
+          {
+            "date": "7/30",
+            "event": "6月個人所得與支出"
+          }
         ]
       },
       "market_expectations_summary": {
@@ -202,32 +422,126 @@
       "fetched_at": "2026-07-03T13:41:56+08:00",
       "summary": "加權指數開低走高，早盤一度重挫逾860點觸及45,880，隨後買盤湧入翻紅，傳產與金融領漲",
       "indices": {
-        "taiex": { "close": 46780.62, "change": 36.46, "change_pct": 0.08, "direction": "up", "open": 46545.14, "high": 46948.83, "low": 45880.69 },
-        "otc": { "close": 95.92, "change": 1.33, "change_pct": 1.41, "direction": "up" },
-        "electronics": { "close": 3013.56, "change": -5.12, "change_pct": -0.17, "direction": "down" }
+        "taiex": {
+          "close": 46780.62,
+          "change": 36.46,
+          "change_pct": 0.08,
+          "direction": "up",
+          "open": 46545.14,
+          "high": 46948.83,
+          "low": 45880.69
+        },
+        "otc": {
+          "close": 95.92,
+          "change": 1.33,
+          "change_pct": 1.41,
+          "direction": "up"
+        },
+        "electronics": {
+          "close": 3013.56,
+          "change": -5.12,
+          "change_pct": -0.17,
+          "direction": "down"
+        }
       },
       "key_stocks": [
-        { "symbol": "2330", "name": "台積電", "close": 2445.0, "change": -20.0, "change_pct": -0.81, "direction": "down", "volume": 26403 },
-        { "symbol": "2454", "name": "聯發科", "close": 4195.0, "change": -150.0, "change_pct": -3.45, "direction": "down", "volume": 11122 },
-        { "symbol": "2317", "name": "鴻海", "close": 240.5, "change": 1.5, "change_pct": 0.63, "direction": "up", "volume": 48969 },
-        { "symbol": "2308", "name": "台達電", "close": 2075.0, "change": 105.0, "change_pct": 5.33, "direction": "up", "volume": 14263 },
-        { "symbol": "2382", "name": "廣達", "close": 377.0, "change": 8.0, "change_pct": 2.17, "direction": "up", "volume": 12717 }
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "close": 2445.0,
+          "change": -20.0,
+          "change_pct": -0.81,
+          "direction": "down",
+          "volume": 26403
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "close": 4195.0,
+          "change": -150.0,
+          "change_pct": -3.45,
+          "direction": "down",
+          "volume": 11122
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海",
+          "close": 240.5,
+          "change": 1.5,
+          "change_pct": 0.63,
+          "direction": "up",
+          "volume": 48969
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "close": 2075.0,
+          "change": 105.0,
+          "change_pct": 5.33,
+          "direction": "up",
+          "volume": 14263
+        },
+        {
+          "symbol": "2382",
+          "name": "廣達",
+          "close": 377.0,
+          "change": 8.0,
+          "change_pct": 2.17,
+          "direction": "up",
+          "volume": 12717
+        }
       ],
       "strong_sectors": [
-        { "rank": 1, "name": "生技醫療類", "change_pct": 3.62 },
-        { "rank": 2, "name": "化學類", "change_pct": 3.60 },
-        { "rank": 3, "name": "觀光類", "change_pct": 3.21 },
-        { "rank": 4, "name": "金融保險類", "change_pct": 2.85 },
-        { "rank": 5, "name": "汽車類", "change_pct": 2.84 }
+        {
+          "rank": 1,
+          "name": "生技醫療類",
+          "change_pct": 3.62
+        },
+        {
+          "rank": 2,
+          "name": "化學類",
+          "change_pct": 3.6
+        },
+        {
+          "rank": 3,
+          "name": "觀光類",
+          "change_pct": 3.21
+        },
+        {
+          "rank": 4,
+          "name": "金融保險類",
+          "change_pct": 2.85
+        },
+        {
+          "rank": 5,
+          "name": "汽車類",
+          "change_pct": 2.84
+        }
       ],
       "weak_sectors": [
-        { "rank": 1, "name": "油電燃氣類", "change_pct": -1.82 },
-        { "rank": 2, "name": "貿易百貨類", "change_pct": -1.13 },
-        { "rank": 3, "name": "光電類", "change_pct": -0.27 },
-        { "rank": 4, "name": "食品類", "change_pct": -0.24 }
+        {
+          "rank": 1,
+          "name": "油電燃氣類",
+          "change_pct": -1.82
+        },
+        {
+          "rank": 2,
+          "name": "貿易百貨類",
+          "change_pct": -1.13
+        },
+        {
+          "rank": 3,
+          "name": "光電類",
+          "change_pct": -0.27
+        },
+        {
+          "rank": 4,
+          "name": "食品類",
+          "change_pct": -0.24
+        }
       ],
       "fx": {
-        "usdtwd": 31.9460,
+        "usdtwd": 31.946,
         "prior_close": 31.8948,
         "change": 0.0512,
         "change_pct": 0.16,
@@ -237,6 +551,217 @@
         "intraday_volatility": 1068,
         "volume_note": "證交所尚未發布最終成交量數據",
         "note": "台積電、聯發科表現疲弱，但傳產（生技、化學、觀光）與金融族群火力全開，櫃買指數勁揚1.41%顯示內資積極"
+      }
+    },
+    "postmarket": {
+      "source": "盤後籌碼分析 (cron 8a869bd74983)",
+      "fetched_at": "2026-07-03T16:05:06+08:00",
+      "summary": "外資大賣超 777 億、期貨淨空單 8.4 萬口高檔，但指數低接買盤撐住收紅",
+      "institutional_investors": {
+        "date": "2026-07-03",
+        "total_buy": 4279.2,
+        "total_sell": 5013.66,
+        "total_net": -734.46,
+        "foreign_net": -777.83,
+        "foreign_buy": 3441.08,
+        "foreign_sell": 4218.9,
+        "investment_trust_net": 75.96,
+        "investment_trust_buy": 366.62,
+        "investment_trust_sell": 290.65,
+        "dealer_self_net": 28.34,
+        "dealer_self_buy": 108.37,
+        "dealer_self_sell": 80.03,
+        "dealer_hedge_net": -60.93,
+        "dealer_hedge_buy": 363.14,
+        "dealer_hedge_sell": 424.07,
+        "dealer_total_net": -32.59,
+        "dealer_total_buy": 471.51,
+        "dealer_total_sell": 504.1
+      },
+      "futures_options": {
+        "data_date": "2026-07-02",
+        "note": "今日(7/3) TAIFEX 數據尚未發布，使用最新 7/2 數據",
+        "foreign_tx_net_short": -84487,
+        "foreign_tx_long_oi": 4770,
+        "foreign_tx_short_oi": 89257,
+        "foreign_tx_net_change": -906,
+        "pc_ratio_volume": 98.93,
+        "pc_ratio_oi": 120.46,
+        "pc_ratio_volume_prior": 113.71,
+        "pc_ratio_oi_prior": 142.03,
+        "institutional_futures_net": {
+          "dealer": -402978,
+          "investment_trust": 80961,
+          "foreign": -601105,
+          "total": -923122
+        },
+        "institutional_options_net": {
+          "dealer": -8831,
+          "investment_trust": -1672,
+          "foreign": -6216,
+          "total": -16719
+        },
+        "foreign_options": {
+          "call_oi_net": -661,
+          "put_oi_net": 5580,
+          "interpretation": "偏空避險"
+        }
+      },
+      "fx": {
+        "usdtwd_close": 31.915,
+        "usdtwd_high": 31.982,
+        "usdtwd_low": 31.866,
+        "usdtwd_open": 31.933,
+        "direction": "twd_strengthen",
+        "note": "台幣升值 +0.06%，外資大賣但匯市相對穩定"
+      },
+      "market_turnover": {
+        "amount_billion": 1059.47,
+        "volume_shares": 12151168,
+        "prior_amount_billion": "較昨縮量",
+        "note": "成交金額 1,059.47 億"
+      },
+      "top_gainers": [
+        {
+          "rank": 1,
+          "name": "台達電",
+          "symbol": "2308",
+          "close": 2075.0,
+          "change_pct": 8.07,
+          "volume_mm": 15.16
+        },
+        {
+          "rank": 2,
+          "name": "台化",
+          "symbol": "1326",
+          "close": 68.0,
+          "change_pct": 7.94,
+          "volume_mm": 97.52
+        },
+        {
+          "rank": 3,
+          "name": "南電",
+          "symbol": "8046",
+          "close": 1185.0,
+          "change_pct": 7.73,
+          "volume_mm": 13.1
+        },
+        {
+          "rank": 4,
+          "name": "聯電",
+          "symbol": "2303",
+          "close": 170.5,
+          "change_pct": 7.23,
+          "volume_mm": 75.69
+        },
+        {
+          "rank": 5,
+          "name": "欣興",
+          "symbol": "3037",
+          "close": 969.0,
+          "change_pct": 2.54,
+          "volume_mm": 18.99
+        }
+      ],
+      "top_losers": [
+        {
+          "rank": 1,
+          "name": "世芯-KY",
+          "symbol": "3661",
+          "close": 4650.0,
+          "change_pct": -4.71,
+          "volume_mm": 2.9
+        },
+        {
+          "rank": 2,
+          "name": "瑞昱",
+          "symbol": "2379",
+          "close": 783.0,
+          "change_pct": -2.37,
+          "volume_mm": 4.44
+        },
+        {
+          "rank": 3,
+          "name": "大立光",
+          "symbol": "3008",
+          "close": 4230.0,
+          "change_pct": -1.63,
+          "volume_mm": 1.51
+        },
+        {
+          "rank": 4,
+          "name": "玉晶光",
+          "symbol": "3406",
+          "close": 636.0,
+          "change_pct": -1.24,
+          "volume_mm": 0.98
+        },
+        {
+          "rank": 5,
+          "name": "日月光",
+          "symbol": "3711",
+          "close": 682.0,
+          "change_pct": -1.16,
+          "volume_mm": 38.55
+        }
+      ],
+      "weekly_summary": "本週：週一 +893 → 週二 -274 → 今日 +36，追價意願趨謹慎",
+      "upcoming_events": {
+        "note": "下週重點除權息與法說會",
+        "key_dates": [
+          {
+            "date": "7/6",
+            "events": [
+              "欣興(3037)除息$1.98",
+              "萬海(2615)除息$3.00",
+              "可成(2474)除息$7.11"
+            ]
+          },
+          {
+            "date": "7/7",
+            "events": [
+              "聯發科(2454)除息$24.50 ⭐",
+              "南亞科(2408)除息$1.35",
+              "達發(6526)除息$13.50"
+            ]
+          },
+          {
+            "date": "7/8",
+            "events": [
+              "聯電(2303)除息$2.61 ⭐",
+              "緯創(3231)除息$5.50",
+              "上銀(2049)除息$2.00",
+              "長榮航(2618)除息$2.00"
+            ]
+          },
+          {
+            "date": "7/9",
+            "events": [
+              "中華電(2412)除息$5.20 ⭐",
+              "台灣大(3045)除息$4.74",
+              "中興電(1513)除息$6.00",
+              "大立光(3008)法說會 🎤"
+            ]
+          },
+          {
+            "date": "7/10",
+            "events": [
+              "中信金(2891)除息$2.50 ⭐",
+              "聯詠(3034)除息$23.00 ⭐",
+              "華航(2610)除息$0.81"
+            ]
+          }
+        ]
+      },
+      "conclusion": {
+        "verdict": "外資現貨大賣超、期貨空單高企，籌碼面偏弱；但指數 45,880 低點獲買盤承接收紅，台幣仍穩。短線偏區間震盪 (45,800–47,000)",
+        "institutional_bias": "bearish",
+        "fx_signal": "neutral",
+        "technical_signal": "neutral_bullish",
+        "key_levels": {
+          "support": 45800,
+          "resistance": 47000
+        }
       }
     }
   }
