@@ -74,8 +74,8 @@ def get_pc_ratio(dt):
     return None
 
 def get_tx_futures(dt):
-    """Fetch TX futures institutional net OI from TAIFEX OpenAPI."""
-    url = 'https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate'
+    """Fetch ALL futures (not just TX) institutional net OI from TAIFEX OpenAPI."""
+    url = 'https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDividedByFuturesAndOptionsBytheDate'
     try:
         req = urllib.request.Request(url, headers=H)
         resp = urllib.request.urlopen(req, context=ctx, timeout=15)
@@ -83,14 +83,11 @@ def get_tx_futures(dt):
         data = json.loads(raw)
         if not isinstance(data, list):
             return None
-        # Find TX contracts for each institution
         result = {'date': dt.strftime('%Y/%m/%d')}
         for entry in data:
-            if entry.get('ContractCode') == '臺股期貨':
-                item = entry.get('Item')
-                net_oi = int(entry.get('OpenInterest(Net)', '0'))
-                result[item] = net_oi
-        # Sum totals
+            item = entry.get('Item')
+            fut_net = int(entry.get('FuturesOpenInterest(Net)', '0'))
+            result[item] = fut_net
         foreign_net = result.get('外資及陸資', 0)
         trust_net = result.get('投信', 0)
         dealer_net = result.get('自營商', 0)
@@ -149,7 +146,7 @@ def main():
             break
     if futures_data:
         output['futures'] = {
-            'note': 'TX (臺股期貨) Net OI per TAIFEX',
+            'note': '期貨(全部合約) Net OI per TAIFEX',
             'last_seen_date': futures_data.get('date', ''),
             'foreign_tx_net': f"{futures_data.get('foreign_net', 0):,}",
             'total_inst_futures_net': f"{futures_data.get('total', 0):,}",
