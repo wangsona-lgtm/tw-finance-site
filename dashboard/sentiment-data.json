@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T14:30:03.549278",
+  "updated": "2026-07-03T16:05:04.225470",
   "today": "20260703",
   "institution": {
     "date": "20260702",
@@ -35,13 +35,13 @@
     }
   },
   "pc_ratio": {
-    "date": "2026/7/2",
-    "call_vol": 152726,
-    "put_vol": 154372,
-    "pc_vol_ratio": 98.93,
-    "call_oi": 87173,
-    "put_oi": 72364,
-    "pc_oi_ratio": 120.46
+    "date": "2026/7/3",
+    "call_vol": 442908,
+    "put_vol": 443706,
+    "pc_vol_ratio": 99.82,
+    "call_oi": 64347,
+    "put_oi": 47210,
+    "pc_oi_ratio": 136.3
   },
   "futures": {
     "note": "Futures/options data from latest available report",
