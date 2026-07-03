@@ -57,22 +57,43 @@ for name, url in endpoints.items():
     except Exception as e:
         print(f'  {name}: {e}')
 
-# Margin RWD
-try:
-    r = requests.get(
-        f'https://www.twse.com.tw/rwd/zh/marginTrading/MI_MARGN?date={date_str}&selectType=ALL',
-        timeout=15
-    )
-    if r.status_code == 200:
-        data = r.json()
-        fp = DATA_DIR / 'MARGIN_RWD.json'
-        with open(fp, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False)
-        print(f'  MARGIN_RWD: {len(data.get("tables",[]))} tables saved')
+# Margin RWD - try multiple dates with fallback
+def prev_td(dt):
+    dt = dt - timedelta(days=1)
+    while dt.weekday() >= 5:
+        dt -= timedelta(days=1)
+    return dt
+margin_data = None
+for d in range(10):
+    if d == 0:
+        test_date = target  # use the script's already-calculated target date
     else:
-        print(f'  MARGIN_RWD: HTTP {r.status_code}')
-except Exception as e:
-    print(f'  MARGIN_RWD: {e}')
+        test_date = prev_td(target) if d == 1 else prev_td(test_date)
+    ds = test_date.strftime('%Y%m%d')
+    try:
+        r = requests.get(
+            f'https://www.twse.com.tw/rwd/zh/marginTrading/MI_MARGN?date={ds}&selectType=ALL',
+            timeout=15
+        )
+        if r.status_code == 200:
+            data = r.json()
+            if data.get('stat') == 'OK' and data.get('tables'):
+                margin_data = data
+                date_str = ds
+                print(f'  MARGIN_RWD: date={ds}, {len(data["tables"])} tables saved')
+                break
+            else:
+                print(f'  MARGIN_RWD: {ds} -> {data.get("stat","no data")}')
+        else:
+            print(f'  MARGIN_RWD: {ds} -> HTTP {r.status_code}')
+    except Exception as e:
+        print(f'  MARGIN_RWD: {ds} -> {e}')
+if margin_data:
+    fp = DATA_DIR / 'MARGIN_RWD.json'
+    with open(fp, 'w', encoding='utf-8') as f:
+        json.dump(margin_data, f, ensure_ascii=False)
+else:
+    print(f'  MARGIN_RWD: no valid data found in last 10 days')
 
 # Meta
 with open(DATA_DIR / 'meta.json', 'w') as f:
