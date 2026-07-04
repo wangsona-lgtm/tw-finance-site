@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-05",
+  "generated_at": "2026-07-05T07:05:00+08:00",
+  "title": "美股週末回顧 — 2026年7月5日",
+  "market_date": "2026-07-02（週四）",
+  "note": "7月3日（五）美國獨立紀念日補假，股市休市。下週一7月6日恢復交易。",
+  "indices": {
+    "sp500": { "price": 7483.24, "change_pct": 0.00, "week_pct": 1.76, "direction": "up" },
+    "dow": { "price": 52900.07, "change_pct": 1.14, "week_pct": 1.97, "direction": "up" },
+    "nasdaq": { "price": 25832.67, "change_pct": -0.80, "week_pct": 2.12, "direction": "down" },
+    "russell2000": { "price": 2996.11, "change_pct": -0.55, "week_pct": -0.46, "direction": "down" },
+    "sox": { "price": 12626.22, "change_pct": -5.44, "week_pct": -4.37, "direction": "down" }
+  },
+  "key_stocks": {
+    "NVDA": { "price": 194.83, "change_pct": -1.39, "week_pct": 1.19, "direction": "down" },
+    "AAPL": { "price": 308.63, "change_pct": 4.84, "week_pct": 8.76, "direction": "up" },
+    "MSFT": { "price": 390.49, "change_pct": 1.62, "week_pct": 4.70, "direction": "up" },
+    "AMZN": { "price": 242.67, "change_pct": 0.40, "week_pct": 4.29, "direction": "up" },
+    "GOOGL": { "price": 359.91, "change_pct": -0.36, "week_pct": 6.67, "direction": "down" },
+    "META": { "price": 582.90, "change_pct": -4.90, "week_pct": 5.93, "direction": "down" },
+    "TSLA": { "price": 393.45, "change_pct": -7.49, "week_pct": 3.62, "direction": "down" },
+    "TSM": { "price": 434.16, "change_pct": -2.27, "week_pct": 0.42, "direction": "down" },
+    "AMD": { "price": 517.82, "change_pct": -4.26, "week_pct": -0.72, "direction": "down" },
+    "AVGO": { "price": 360.45, "change_pct": -2.41, "week_pct": -1.25, "direction": "down" }
+  },
+  "sector_etfs": {
+    "XLF": { "name": "金融", "price": 55.62, "change_pct": 1.53, "week_pct": 3.83, "direction": "up", "rank": "最强" },
+    "XLK": { "name": "科技", "price": 180.59, "change_pct": -2.71, "week_pct": -0.29, "direction": "down" },
+    "XLE": { "name": "能源", "price": 53.22, "change_pct": 0.78, "week_pct": -1.15, "direction": "up" },
+    "XLV": { "name": "醫療保健", "price": 163.74, "change_pct": 2.63, "week_pct": 2.12, "direction": "up" },
+    "XLI": { "name": "工業", "price": 183.91, "change_pct": 0.30, "week_pct": 1.50, "direction": "up" },
+    "XLP": { "name": "必需消費", "price": 84.99, "change_pct": 2.03, "week_pct": 0.33, "direction": "up" },
+    "XLY": { "name": "非必需消費", "price": 117.12, "change_pct": -0.82, "week_pct": 2.40, "direction": "down" },
+    "XLU": { "name": "公用事業", "price": 45.76, "change_pct": 2.21, "week_pct": -0.95, "direction": "up" },
+    "XLB": { "name": "原材料", "price": 52.01, "change_pct": 1.94, "week_pct": 0.79, "direction": "up" },
+    "SMH": { "name": "半導體", "price": 592.29, "change_pct": -4.54, "week_pct": -3.16, "direction": "down", "rank": "最弱" }
+  },
+  "macro": {
+    "dollar_index": { "price": 100.86, "change_pct": -0.52, "week_pct": -0.49, "direction": "down" },
+    "gold": { "price": 4112.70, "change_pct": 1.09, "week_pct": 0.83, "direction": "up" },
+    "crude": { "price": 68.69, "change_pct": 0.16, "week_pct": -0.78, "direction": "up" },
+    "bitcoin": { "price": 61485, "change_pct": 2.47, "week_pct": 2.45, "direction": "up" },
+    "tnx": { "price": "~4.37-4.40%", "note": "小幅上行" },
+    "vix": { "price": 16.15, "change_pct": -2.65, "week_pct": -12.28, "direction": "down" }
+  },
+  "weekend_highlights": [
+    "6月非農就業大幅低於預期，降息預期升溫",
+    "費半 SOX 單日暴跌 5.44%，AI股創紀錄漲勢後獲利了結",
+    "AAPL 逆勢大漲 4.84%，週漲 8.76% 領先科技巨頭",
+    "資金大舉輪動：金融/醫療/防禦性板塊吸金，科技遭拋售",
+    "德州證交所 (TXSE) 週一 (7/6) 正式啟動交易",
+    "黃金突破 $4,100 創歷史新高，美元指數跌破101",
+    "VIX 降至 16.15，本週暴跌 12.28%"
+  ],
+  "outlook": {
+    "futures": { "ES_F": 7557.00, "NQ_F": 29901.75, "signal": "偏多" },
+    "direction": "開高震盪，金融/醫療續強，科技股漲跌互見",
+    "bias": "小幅偏多 (+0.3% ~ +0.8%)",
+    "key_events_next_week": [
+      "週一 7/6：ISM 服務業 PMI（6月）⭐⭐⭐⭐⭐",
+      "週四 7/9：CPI（6月）⭐⭐⭐⭐⭐",
+      "週五 7/10：PPI（6月）、密大消費者信心",
+      "Fed Chair Warsh 是否公開回應就業數據",
+      "德州證交所 TXSE 週一上線首日"
+    ],
+    "key_variables": [
+      "軟著陸 vs 衰退交易 — 週四 CPI 為關鍵",
+      "半導體是否止跌 — NVDA $190 為技術關卡",
+      "板塊輪動持續性 — 金融/醫療能否延續強勢"
+    ]
+  }
+}
