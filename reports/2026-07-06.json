@@ -59,6 +59,42 @@
       "summary": "",
       "url": "https://www.zerohedge.com/markets/biggest-problem-ai-today",
       "timestamp": "2026-07-06"
+    },
+    {
+      "date": "2026-07-06",
+      "type": "daily-reports",
+      "source": "premarket",
+      "title": "台股盤前分析",
+      "sections": [
+        {
+          "title": "隔夜美股（7/3 因獨立紀念日休市，最新為7/2收盤）",
+          "content": "S&P 500: 7,483 (+0.00% CFD) | Dow: 52,900 (+1.14%) | Nasdaq: 25,833 (-0.80%) | Russell 2000: 2,996 (-0.55%) | VIX: 15.81 (-2.11%，避險情緒偏低) | 黃金: 4,187 (+1.49%)"
+        },
+        {
+          "title": "重磅科技股",
+          "content": "TSM ADR: $437.63 (-1.46%) | NVDA、AAPL、MSFT 等因假期無成交。台積電ADR較2330仍有溢價，今日台股開盤需留意ADR連動。"
+        },
+        {
+          "title": "總經商品",
+          "content": "10年債: 4.49% | 2年債: 4.14% | 利差+35bp | 美元指數穩定 | 原油: 近期波動不大 | 比特幣: 觀望"
+        },
+        {
+          "title": "Fed 預期",
+          "content": "7/29 FOMC 維持利率不變機率 75.6%，市場無降息預期。本週關注 CPI、非農就業數據。"
+        },
+        {
+          "title": "台股盤前重點",
+          "content": "1. 美股休市後首日，台指期參考ADR與亞股開盤\n2. 台積電ADR跌1.46%，可能壓抑台積電(2330)與電子族群\n3. 黃金大漲1.49%，留意金礦股表現\n4. VIX低檔，市場避險情緒低，短線波動有限"
+        },
+        {
+          "title": "今日關注個股",
+          "content": "🎯 台積電(2330): ADR連動，開盤觀察承接力道\n🎯 金礦股: 黃金大漲帶動\n🎯 金融股: 利差擴大有利獲利"
+        }
+      ],
+      "meta": {
+        "note": "7/3 美國獨立紀念日休市，數據參考7/2收盤與CFD報價",
+        "source": "Yahoo Finance / Trading Economics / CME FedWatch"
+      }
     }
   ],
   "meta": {
