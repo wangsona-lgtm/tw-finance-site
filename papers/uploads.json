@@ -518,5 +518,31 @@
       "---",
       "【限制】僅土耳其單國、結果不可外推、年轉季資料可能有測量誤差"
     ]
+  },
+  {
+    "title": "精讀筆記：方法論核心 5 篇 + 高引用實證 5 篇",
+    "authors": "王美智教授 QVAR 文獻庫精讀",
+    "year": "2026",
+    "journal": "QVAR 文獻庫精讀筆記",
+    "doi": "",
+    "date": "2026-07-06",
+    "tags": ["QIRF", "jQIRF", "jQFEVD", "QQGC", "WQC", "WQQGC", "QGC", "QVAR"],
+    "topics": ["方法論", "綠債/ESG", "能源市場", "碳市場/碳交易"],
+    "pdf": "uploads/精讀筆記_10篇_王美智_QVAR文獻庫_2026-07-06.pdf",
+    "notes": [
+      "十篇總覽：方法論五篇構成一條完整的「分位數衝擊分析」工具鏈",
+      "01 Han/Jung/Lee (JFEC 2022) — QIRF by Local Projections 奠基之作",
+      "02 Jung/Lee (2023) — QIRF 漸近理論與 R 套件",
+      "03 Mayer/Wied/Troster (JoE 2025) — 結構不穩定下的分位數因果檢定",
+      "04 Wiesen/Beaumont (2024) — 聯合衝擊視角",
+      "05 Wang/Chavas/Li (2024) — QIRF 在商品市場的應用",
+      "06 Adebayo/Olanrewaju (2025) — QGC 原油-碳-加密貨幣",
+      "07 Wang et al. (IREF 2024) — QQGC 觀光-碳排放",
+      "08 Usman et al. (Energy 2025) — WQQGC 加密貨幣-原油-碳",
+      "09 Yi/Shen/Cai (FRL 2025) — WQC 地緣風險-綠色金融",
+      "10 Jiang et al. (Sustainability 2025) — QQGC 碳-加密貨幣-綠色投資",
+      "標籤說明：全文精讀＝已取得全文；摘要精讀＝依公開摘要與方法文獻整理",
+      "來源：Mayer et al. arXiv 全文、Jiang et al. MDPI 全文、Wiley/Elsevier 頁面"
+    ]
   }
 ]
