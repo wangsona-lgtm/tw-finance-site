@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每週周報 | 王美智</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg: #f5f0e8;
+  --surface: #ffffff;
+  --text: #1a1714;
+  --text2: #6b5f55;
+  --accent: #8B0000;
+  --accent3: #1B365D;
+  --border: #d4c9b8;
+}
+body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); }
+.header {
+  background:var(--surface); border-bottom:2px solid var(--border);
+  padding:16px 24px; display:flex; justify-content:space-between; align-items:center;
+}
+.header h1 { font-size:18px; color:var(--accent3); }
+.header a { color:var(--text2); text-decoration:none; font-size:13px; }
+.container { max-width:1000px; margin:0 auto; padding:24px 16px; }
+.week-card {
+  background:var(--surface); border:2px solid var(--border); border-radius:12px;
+  padding:24px; margin-bottom:20px; transition:all .2s;
+}
+.week-card:hover { border-color:var(--accent); box-shadow:0 8px 24px rgba(139,0,0,.1); }
+.week-card h3 { font-size:18px; color:var(--accent3); margin-bottom:8px; }
+.week-card .period { font-size:13px; color:var(--text2); margin-bottom:12px; }
+.week-card .summary { font-size:14px; line-height:1.7; color:var(--text); margin-bottom:16px; }
+.week-card .sections { margin:12px 0; }
+.week-card .section-item {
+  background:rgba(27,54,93,.03); border-left:3px solid var(--accent3);
+  padding:10px 14px; margin:8px 0; border-radius:0 6px 6px 0;
+}
+.week-card .section-item h4 { font-size:14px; color:var(--accent3); margin-bottom:4px; }
+.week-card .section-item p { font-size:13px; color:var(--text2); line-height:1.5; }
+.week-card .chart-img { width:100%; border-radius:8px; margin:12px 0; }
+.week-card .meta { font-size:12px; color:var(--text2); margin-top:12px; }
+.badge {
+  display:inline-block; background:var(--accent); color:#fff;
+  padding:3px 10px; border-radius:4px; font-size:11px; font-weight:600; margin-right:6px;
+}
+.badge-w { background:var(--accent3); }
+.footer { text-align:center; padding:24px; font-size:12px; color:var(--text2); border-top:1px solid var(--border); margin-top:32px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📅 每週周報 (COT 原油·黃金·未平倉)</h1>
+  <a href="./">← 回首頁</a>
+</div>
+<div class="container" id="weekly-container">
+  <div style="text-align:center;padding:40px;color:var(--text2);">載入中...</div>
+</div>
+<div class="footer">
+  王美智 · tw-finance-site · 每週六更新
+</div>
+
+<script>
+async function loadWeekly() {
+  const container = document.getElementById('weekly-container');
+  try {
+    const res = await fetch('./周報/list.json');
+    const list = await res.json();
+    list.sort((a,b) => b.date.localeCompare(a.date));
+    
+    let html = '';
+    for (const item of list) {
+      try {
+        const detailRes = await fetch(`./周報/${item.date}.json`);
+        const detail = await detailRes.json();
+        
+        html += `<div class="week-card">
+          <span class="badge badge-w">${detail.weekNum || item.weekNum || 'W?'}</span>
+          <span class="badge">${item.date}</span>
+          <h3>${detail.title || item.title || '週報'}</h3>
+          <div class="period">📅 ${detail.period || item.period || ''}</div>
+          <div class="summary">${detail.summary || item.summary || ''}</div>
+          ${detail.sections ? detail.sections.map(s => `
+            <div class="section-item">
+              <h4>${s.title}</h4>
+              <p>${s.content}</p>
+            </div>
+          `).join('') : ''}
+          ${detail.chart ? `<img class="chart-img" src="./周報/${detail.chart}" alt="COT Chart">` : ''}
+          <div class="meta">${detail.meta ? JSON.stringify(detail.meta).replace(/["{}]/g,'').replace(/,/g,' | ') : ''}</div>
+        </div>`;
+      } catch(e) {
+        html += `<div class="week-card">
+          <span class="badge">${item.date}</span>
+          <h3>${item.title || '週報'}</h3>
+          <div class="period">${item.period || ''}</div>
+          <div class="summary">${item.summary || ''}</div>
+        </div>`;
+      }
+    }
+    container.innerHTML = html;
+  } catch(e) {
+    container.innerHTML = '<div style="text-align:center;padding:40px;color:var(--accent);">載入失敗，請稍後再試</div>';
+  }
+}
+loadWeekly();
+</script>
+</body>
+</html>
