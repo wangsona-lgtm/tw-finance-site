@@ -76,6 +76,10 @@
     "file": "tw-finance-site/reports/2026-07-06.json"
   },
   {
+    "date": "2026-07-07",
+    "file": "tw-finance-site/reports/2026-07-07.json"
+  },
+  {
     "date": "list",
     "file": "tw-finance-site/reports/list.json"
   }

@@ -1,0 +1,100 @@
+{
+  "date": "2026-07-07",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀",
+  "sections": [
+    {
+      "title": "'One Bubble After Another': Bitcoin Bid, Semis Slip, Oil & Gold Dip",
+      "category": "market",
+      "summary": "Independence Day 長週末後美股季節性反彈但動能遞減。比特幣無視科技股逆風強勢V轉回升。債券與美元先漲後跌收平。原油持平，黃金因ETF持續外流而走低。",
+      "url": "https://www.zerohedge.com/markets/one-bubble-after-another-bitcoin-bid-semis-slip-oil-gold-dip",
+      "timestamp": "2026-07-07",
+      "images": []
+    },
+    {
+      "title": "Cuba's Entire Power Grid Collapses As Castro's Grandson Seeks Talks With Trump",
+      "category": "geopolitics",
+      "summary": "古巴發生全國性電網崩潰，時間點恰在卡斯楚孫子Raúl Guillermo Rodríguez Castro釋放與川普直接對話信號之際。這被解讀為古巴統治圈出現裂痕，極端經濟困境正迫使哈瓦那尋求外交出路。",
+      "url": "https://www.zerohedge.com/geopolitical/i-can-negotiate-castros-grandson-says-hes-ready-discuss-cubas-future-president-trump",
+      "timestamp": "2026-07-07",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_5.png"
+      ]
+    },
+    {
+      "title": "Morgan Stanley Tells Clients To Get Out Of Chip Stocks, Buy Hyperscalers",
+      "category": "market",
+      "summary": "Morgan Stanley策略師Michael Wilson正式建議減持半導體，轉向hyperscalers與落後板塊。資金輪動邏輯：油價跌→利率穩定→資金從momentum股流向價值/循環股。看好消費耐久品、運輸、生技三大板塊。",
+      "url": "https://www.zerohedge.com/markets/morgan-stanley-tells-clients-get-out-chip-stocks-buy-hyperscalers-heres-why",
+      "timestamp": "2026-07-07",
+      "images": []
+    },
+    {
+      "title": "US Stocks Higher / Samsung Prelim Earnings — Newsquawk Market Wrap",
+      "category": "market",
+      "summary": "長假後美股收高，Nasdaq領漲(+1.26%)，半導體指數SOXX飆漲3%。Fed鷹派Waller對前瞻指引持審慎態度。美元回吐漲幅，risk-on貨幣（AUD、GBP）受益。Samsung盤後 preliminary Q2財報為本週亞洲科技股風向標。",
+      "url": "https://www.zerohedge.com/markets/us-stocks-higher-ahead-samsung-q2-figures-newsquawk-daily-asia-pac-market-open",
+      "timestamp": "2026-07-07",
+      "images": []
+    },
+    {
+      "title": "Deutsche Bank Unveils 2026's \"Charts To Make You Go Wow!!!\"",
+      "category": "market",
+      "summary": "Deutsche Bank發佈年度圖表精選專輯，以視覺化方式挑戰和重塑當前重大宏觀與市場敘事。付費內容，預覽僅揭示主題方向。",
+      "url": "https://www.zerohedge.com/markets/deutsche-banks-2026-charts-make-you-go-wow",
+      "timestamp": "2026-07-07",
+      "images": []
+    },
+    {
+      "title": "Hormuz In The Rearview As Asia-US Ocean Container Rates Soar Past $7,900",
+      "category": "geopolitics",
+      "summary": "亞洲→美東運價突破$7,900/FEU，亞洲→美西漲至$6,175/FEU。Freightos指出運價飆升主因已非中東衝突，而是旺季需求提前爆發。荷姆茲海峽風險猶存，航商積極調整航線與運力配置。",
+      "url": "https://www.zerohedge.com/geopolitical/hormuz-rearview-asia-us-ocean-container-rates-soar-past-7900",
+      "timestamp": "2026-07-07",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_4.png"
+      ]
+    },
+    {
+      "title": "Nvidia Turns Green After Denying Report Its Kyber Server Rack Has Been Delayed",
+      "category": "market",
+      "summary": "SemiAnalysis爆料Nvidia次世代AI伺服器Kyber NVL144因PCB良率問題延後12個月至2028年，亞洲PCB供應鏈劇烈波動。Nvidia隨後否認延遲，稱roadmap intact，股價由黑翻紅。",
+      "url": "https://www.zerohedge.com/markets/nvidia-turns-green-after-denying-report-its-kyber-server-rack-has-been-delayed",
+      "timestamp": "2026-07-07",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_4.jpg"
+      ]
+    },
+    {
+      "title": "Watch Meta & Momo Vol: Goldman 1-Delta Desk Braces For 'Over Optimistic' Earnings Season",
+      "category": "market",
+      "summary": "Goldman Sachs 1-Delta交易檯警告市場對即將到來的財報季可能過於樂觀，特別是Meta與Momentum股的波動率值得關注。科技反彈掩蓋了市場對財報失望的潛在風險。",
+      "url": "https://www.zerohedge.com/markets/watch-meta-momo-vol-goldman-1-delta-desk-braces-over-optimistic-earnings-season",
+      "timestamp": "2026-07-07",
+      "images": []
+    },
+    {
+      "title": "Mag 7 Stocks: Risk Or Opportunity In The Making?",
+      "category": "market",
+      "summary": "Mag 7內部分化劇烈：MSFT(-22% YTD)與META(-14%)因巨額Capex被市場懲罰，但AAPL、GOOG、NVDA仍正報酬。資金輪動至半導體，SOX權重已達S&P 500的20%。散戶半導體選擇權日均交易量達19億美元（歷史均值6倍）。核心辯論：AI Capex是泡沫還是未來現金流的必要投資？",
+      "url": "https://www.zerohedge.com/markets/mag-7-stocks-risk-or-opportunity-making",
+      "timestamp": "2026-07-07",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_10_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_10_img_5.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_10_img_6.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_10_img_7.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_10_img_8.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_10_img_9.jpg"
+      ]
+    }
+  ],
+  "meta": {
+    "total_articles": 9,
+    "premium_count": 9,
+    "market_count": 7,
+    "geopolitics_count": 2
+  }
+}
