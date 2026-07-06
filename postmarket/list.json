@@ -1,22 +1,114 @@
-{
-  "updatedAt": "2026-07-05T07:05:00+08:00",
-  "reports": [
-    "2026-06-17",
-    "2026-06-18",
-    "2026-06-19",
-    "2026-06-20",
-    "2026-06-21",
-    "2026-06-22",
-    "2026-06-23",
-    "2026-06-26",
-    "2026-06-27",
-    "2026-06-28",
-    "2026-06-29",
-    "2026-06-30",
-    "2026-07-01",
-    "2026-07-02",
-    "2026-07-03",
-    "2026-07-04",
-    "2026-07-05"
-  ]
-}
+[
+  {
+    "date": "2026-06-09-full",
+    "file": "tw-finance-site/postmarket/2026-06-09-full.json"
+  },
+  {
+    "date": "2026-06-09",
+    "file": "tw-finance-site/postmarket/2026-06-09.json"
+  },
+  {
+    "date": "2026-06-10",
+    "file": "tw-finance-site/postmarket/2026-06-10.json"
+  },
+  {
+    "date": "2026-06-11",
+    "file": "tw-finance-site/postmarket/2026-06-11.json"
+  },
+  {
+    "date": "2026-06-11_16-00",
+    "file": "tw-finance-site/postmarket/2026-06-11_16-00.json"
+  },
+  {
+    "date": "2026-06-11_22-00",
+    "file": "tw-finance-site/postmarket/2026-06-11_22-00.json"
+  },
+  {
+    "date": "2026-06-12",
+    "file": "tw-finance-site/postmarket/2026-06-12.json"
+  },
+  {
+    "date": "2026-06-16",
+    "file": "tw-finance-site/postmarket/2026-06-16.json"
+  },
+  {
+    "date": "2026-06-17",
+    "file": "tw-finance-site/postmarket/2026-06-17.json"
+  },
+  {
+    "date": "2026-06-18",
+    "file": "tw-finance-site/postmarket/2026-06-18.json"
+  },
+  {
+    "date": "2026-06-19",
+    "file": "tw-finance-site/postmarket/2026-06-19.json"
+  },
+  {
+    "date": "2026-06-20",
+    "file": "tw-finance-site/postmarket/2026-06-20.json"
+  },
+  {
+    "date": "2026-06-21",
+    "file": "tw-finance-site/postmarket/2026-06-21.json"
+  },
+  {
+    "date": "2026-06-22",
+    "file": "tw-finance-site/postmarket/2026-06-22.json"
+  },
+  {
+    "date": "2026-06-23",
+    "file": "tw-finance-site/postmarket/2026-06-23.json"
+  },
+  {
+    "date": "2026-06-24",
+    "file": "tw-finance-site/postmarket/2026-06-24.json"
+  },
+  {
+    "date": "2026-06-25",
+    "file": "tw-finance-site/postmarket/2026-06-25.json"
+  },
+  {
+    "date": "2026-06-26",
+    "file": "tw-finance-site/postmarket/2026-06-26.json"
+  },
+  {
+    "date": "2026-06-27",
+    "file": "tw-finance-site/postmarket/2026-06-27.json"
+  },
+  {
+    "date": "2026-06-28",
+    "file": "tw-finance-site/postmarket/2026-06-28.json"
+  },
+  {
+    "date": "2026-06-29",
+    "file": "tw-finance-site/postmarket/2026-06-29.json"
+  },
+  {
+    "date": "2026-06-30",
+    "file": "tw-finance-site/postmarket/2026-06-30.json"
+  },
+  {
+    "date": "2026-07-01",
+    "file": "tw-finance-site/postmarket/2026-07-01.json"
+  },
+  {
+    "date": "2026-07-02",
+    "file": "tw-finance-site/postmarket/2026-07-02.json"
+  },
+  {
+    "date": "2026-07-03",
+    "file": "tw-finance-site/postmarket/2026-07-03.json"
+  },
+  {
+    "date": "2026-07-04",
+    "file": "tw-finance-site/postmarket/2026-07-04.json"
+  },
+  {
+    "date": "2026-07-05",
+    "file": "tw-finance-site/postmarket/2026-07-05.json"
+  },
+  {
+    "date": "list",
+    "file": "tw-finance-site/postmarket/list.json"
+  }
+]

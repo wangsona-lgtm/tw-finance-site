@@ -1,0 +1,28 @@
+{
+  "date": "2026-07-06",
+  "type": "postmarket",
+  "source": "fedwatch",
+  "title": "Fed Watch 聯準會動向",
+  "sections": [
+    {
+      "title": "美債殖利率曲線",
+      "content": "10年期: 4.49% | 2年期: 4.14% | 2y-10y利差: +35bp (未倒掛) | 30年房貸: 6.43%"
+    },
+    {
+      "title": "VIX 恐慌指數",
+      "content": "16.45 (低於12月均值18.09，市場避險情緒偏低)"
+    },
+    {
+      "title": "CME FedWatch 利率預期",
+      "content": "下次FOMC: 7月29日 | 維持利率不變機率: 75.6% | 市場預期全年維持觀望"
+    },
+    {
+      "title": "重點摘要",
+      "content": "殖利率曲線轉正(+35bp)，VIX處於相對低位，市場對Fed 7月按兵不動有高度共識。"
+    }
+  ],
+  "meta": {
+    "data_date": "2026-07-02~04",
+    "source": "CME FedWatch / Seeking Alpha / Yahoo Finance"
+  }
+}

@@ -1,135 +1,82 @@
-{
-  "reports": [
-    {
-      "date": "2026-07-03",
-      "type": "zh-digest+premarket-analysis",
-      "file": "reports/2026-07-03.json",
-      "generated_at": "2026-07-03T06:15:00+08:00",
-      "status": "completed",
-      "note": "ZH導讀 + 盤前分析：SOX兩日-11.4%半年最大、道瓊逆勢+1.14%創高、AAPL+4.84%逆勢強、黃金$4,136歷史新高、外資賣超890億、非農+120K連三月降溫",
-      "updated_at": "2026-07-03T07:05:00+08:00"
-    },
-    {
-      "date": "2026-07-02",
-      "type": "zh-digest+premarket-analysis",
-      "file": "reports/2026-07-02.json",
-      "generated_at": "2026-07-02T06:15:00+08:00",
-      "status": "completed",
-      "note": "ZH導讀 + 盤前分析：SOX-6.27%近一年最大日跌幅、TSM ADR-6.98%、META+8.8%引爆動能股崩盤、金融逆勢+2.18%、高盛警告石油過剩",
-      "updated_at": "2026-07-02T07:07:00+08:00"
-    },
-    {
-      "date": "2026-07-01",
-      "type": "zh-digest+premarket-analysis",
-      "file": "reports/2026-07-01.json",
-      "generated_at": "2026-07-01T07:06:00+08:00",
-      "status": "completed",
-      "note": "ZH導讀 + 盤前分析：SOX連兩日+7.90%、TSM ADR+4.94%溢價+28.44%歷史新高、AMD+7.68%、VIX降至16.45"
-    },
-    {
-      "date": "2026-06-30",
-      "type": "premarket-analysis",
-      "file": "reports/2026-06-30.json",
-      "generated_at": "2026-06-30T07:10:00+08:00",
-      "status": "completed",
-      "note": "盤前分析：SOX+3.83%、TSM ADR+5.26%、NASDQ+2.07%，今日強多開出預估+300~500點"
-    },
-    {
-      "date": "2026-06-30",
-      "type": "zh-digest",
-      "file": "reports/2026-06-30.json",
-      "generated_at": "2026-06-30T06:15:00+08:00",
-      "status": "completed",
-      "note": "ZH導讀：7篇 — 抄底買盤Nasdaq反彈+2%、美伊拒談但代表團已赴卡達、中國變相降息、高盛AI部位重置、韓國8800億半導體投資"
-    },
-    {
-      "date": "2026-06-29",
-      "type": "zh-digest",
-      "file": "reports/2026-06-29.json",
-      "generated_at": "2026-06-29T06:10:30+08:00",
-      "status": "completed",
-      "note": "ZH導讀：17篇 — 避險基金創紀錄賣科技、美伊衝突升溫、Goldman波動轉向論、JPMorgan華盛頓干預論"
-    },
-    {
-      "date": "2026-06-25",
-      "type": "pre-market",
-      "file": "reports/2026-06-25.json",
-      "generated_at": "2026-06-25T07:08:46+08:00",
-      "status": "completed",
-      "note": "盤前分析：TSM ADR盤後+3.21%反彈確認、美伊和平協議油價崩至9.84、美光+15%記憶體爆發、外資淨空單59.7萬口"
-    },
-    {
-      "date": "2026-06-25",
-      "type": "zh-digest",
-      "file": "reports/2026-06-25.json",
-      "generated_at": "2026-06-25T06:05:00+08:00",
-      "status": "completed",
-      "note": "ZH導讀：Micron財報、Fed壓力測試、共和黨內戰、中東局勢、科技股拖累收盤"
-    },
-    {
-      "date": "2026-06-24",
-      "type": "pre-market",
-      "file": "reports/2026-06-24.json",
-      "generated_at": "2026-06-24T07:20:00+08:00",
-      "status": "completed",
-      "note": "盤前分析：US-China晶片禁令全面升級，SOX -7.87%年內最大跌幅；TSM ADR -6.69%；預估開低-2.5%~-4%，資金轉防禦"
-    },
-    {
-      "date": "2026-06-23",
-      "type": "pre-market",
-      "file": "reports/2026-06-23.json",
-      "generated_at": "2026-06-23T07:07:58+08:00",
-      "status": "completed",
-      "note": "盤前分析：NASDAQ-1.32%大型科技重挫，但SOX+2.04%+TSM ADR+1.20%護航；油價跌至$74。中性偏多，半導體/石化主軸"
-    },
-    {
-      "date": "2026-06-22",
-      "type": "zh-digest+pre-market",
-      "file": "reports/2026-06-22.json",
-      "generated_at": "2026-06-22T07:05:00+08:00",
-      "status": "completed",
-      "note": "ZH導讀 + 盤前分析：SOX +6.42%反彈、TSM ADR +6.94%、VIX -11%恐慌緩解，台股預估開高300~500點"
-    },
-    {
-      "date": "2026-06-19",
-      "type": "pre-market",
-      "file": "reports/2026-06-19.json",
-      "generated_at": "2026-06-19T07:05:00+08:00",
-      "status": "completed",
-      "note": "盤前分析：白宮出口管制軟化催化SOX +6.42%暴力反彈；TSM ADR +6.94%溢價+21%；MSCI權重調整生效日"
-    },
-    {
-      "date": "2026-06-18",
-      "type": "pre-market",
-      "file": "reports/2026-06-18.json",
-      "generated_at": "2026-06-18T07:05:00+08:00",
-      "status": "completed",
-      "note": "盤前分析：FOMC鷹派轉向股債雙殺；SOX +1.38%半導體止血；台股結算日橫盤45,877"
-    },
-    {
-      "date": "2026-06-17",
-      "type": "pre-market",
-      "file": "reports/2026-06-17.json",
-      "generated_at": "2026-06-17T07:16:08+08:00",
-      "status": "completed",
-      "note": "盤前分析：SOX -5.71%半導體屠殺，台股預估開低600~900點；FOMC為關鍵事件"
-    },
-    {
-      "date": "2026-06-26",
-      "type": "pre-market",
-      "file": "reports/2026-06-26.json",
-      "generated_at": "2026-06-26T07:07:09+08:00",
-      "status": "completed",
-      "note": "盤前分析：SOX +3.59%半導體強彈反攻，ADR溢價+15.79%護航，AAPL -6.12%拖累Apple供應鏈，黃金$4,039創史高"
-    },
-    {
-      "date": "2026-06-29",
-      "type": "pre-market",
-      "file": "reports/2026-06-29.json",
-      "generated_at": "2026-06-29T07:05:00+08:00",
-      "status": "completed",
-      "note": "盤前分析：台股上週暴跌-1,683至44,572、SOX -5.29%半導體續殺，但台指期夜盤逆勢狂拉+543點，台積電ADR溢價+17%護航"
-    }
-  ],
-  "updated_at": "2026-07-03T06:15:00+08:00"
-}
+[
+  {
+    "date": "2026-06-09-zh",
+    "file": "tw-finance-site/reports/2026-06-09-zh.json"
+  },
+  {
+    "date": "2026-06-10",
+    "file": "tw-finance-site/reports/2026-06-10.json"
+  },
+  {
+    "date": "2026-06-11",
+    "file": "tw-finance-site/reports/2026-06-11.json"
+  },
+  {
+    "date": "2026-06-12",
+    "file": "tw-finance-site/reports/2026-06-12.json"
+  },
+  {
+    "date": "2026-06-15",
+    "file": "tw-finance-site/reports/2026-06-15.json"
+  },
+  {
+    "date": "2026-06-16",
+    "file": "tw-finance-site/reports/2026-06-16.json"
+  },
+  {
+    "date": "2026-06-17",
+    "file": "tw-finance-site/reports/2026-06-17.json"
+  },
+  {
+    "date": "2026-06-18",
+    "file": "tw-finance-site/reports/2026-06-18.json"
+  },
+  {
+    "date": "2026-06-22",
+    "file": "tw-finance-site/reports/2026-06-22.json"
+  },
+  {
+    "date": "2026-06-23",
+    "file": "tw-finance-site/reports/2026-06-23.json"
+  },
+  {
+    "date": "2026-06-24",
+    "file": "tw-finance-site/reports/2026-06-24.json"
+  },
+  {
+    "date": "2026-06-25",
+    "file": "tw-finance-site/reports/2026-06-25.json"
+  },
+  {
+    "date": "2026-06-26",
+    "file": "tw-finance-site/reports/2026-06-26.json"
+  },
+  {
+    "date": "2026-06-29",
+    "file": "tw-finance-site/reports/2026-06-29.json"
+  },
+  {
+    "date": "2026-06-30",
+    "file": "tw-finance-site/reports/2026-06-30.json"
+  },
+  {
+    "date": "2026-07-01",
+    "file": "tw-finance-site/reports/2026-07-01.json"
+  },
+  {
+    "date": "2026-07-02",
+    "file": "tw-finance-site/reports/2026-07-02.json"
+  },
+  {
+    "date": "2026-07-03",
+    "file": "tw-finance-site/reports/2026-07-03.json"
+  },
+  {
+    "date": "2026-07-06",
+    "file": "tw-finance-site/reports/2026-07-06.json"
+  },
+  {
+    "date": "list",
+    "file": "tw-finance-site/reports/list.json"
+  }
+]
