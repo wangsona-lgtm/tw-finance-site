@@ -7,6 +7,7 @@ from datetime import datetime
 
 PAPERS_DIR = os.path.dirname(os.path.abspath(__file__))
 MEMORY_DIR = os.path.expanduser("~/.openclaw/workspace/memory/qvar-papers")
+BF_DIR = os.path.expanduser("~/.openclaw/workspace/memory/behavioral-finance-papers")
 UPLOADS_JSON = os.path.join(PAPERS_DIR, "uploads.json")
 OUTPUT_JSON = os.path.join(PAPERS_DIR, "papers.json")
 
@@ -76,6 +77,13 @@ TOPIC_RULES = [
         "neural network", "a.i", "人工智能", "機器學習",
         "第四次工業革命", "fourth industrial revolution",
         "ict", "digital",
+    ]),
+    ("行為金融", [
+        "informed trading", "smart money", "institutional herding",
+        "positive feedback trading", "retail attention", "disposition effect",
+        "behavioral finance", "investor behavior", "herding",
+        "feedback trading", "attention", "momentum trading",
+        "information asymmetry", "toxic flow", "insider trading",
     ]),
 ]
 
@@ -159,6 +167,90 @@ def parse_daily_md(path):
     
     return papers
 
+def parse_behavioral_finance_md(path):
+    """Parse a behavioral finance paper note .md file into a list of paper dicts."""
+    with open(path, "r", encoding="utf-8") as f:
+        text = f.read()
+    
+    date_match = re.search(r'搜尋日期：(\\d{4}-\\d{2}-\\d{2})', text)
+    search_date = date_match.group(1) if date_match else "2026-07-07"
+    
+    papers = []
+    # Match sections like ### 1.1 Title
+    sections = re.split(r'\n###\s+\d+\.\d+\s+', text)
+    
+    for idx, sec in enumerate(sections):
+        if idx == 0:
+            continue
+        
+        lines = sec.strip().split('\n')
+        title = lines[0].strip() if lines else ""
+        
+        paper = {
+            "id": f"bf-{search_date}-{idx}",
+            "title": title,
+            "search_date": search_date,
+            "authors": "",
+            "year": "",
+            "journal": "",
+            "doi": "",
+            "citations": "",
+            "openalex_url": "",
+            "abstract": "",
+            "tags": [],
+            "topics": ["行為金融"],
+            "type": "search",
+            "notes": []
+        }
+        
+        for line in lines[1:]:
+            line = line.strip()
+            if line.startswith("- **作者：**"):
+                paper["authors"] = line.replace("- **作者：**", "").strip()
+            elif line.startswith("- **年份：**"):
+                paper["year"] = line.replace("- **年份：**", "").strip()
+            elif line.startswith("- **期刊：**"):
+                paper["journal"] = line.replace("- **期刊：**", "").strip()
+            elif line.startswith("- **DOI：**"):
+                paper["doi"] = line.replace("- **DOI：**", "").strip()
+            elif line.startswith("- **被引：**"):
+                paper["citations"] = line.replace("- **被引：**", "").strip()
+            elif line.startswith("- **OpenAlex：**"):
+                paper["openalex_url"] = line.replace("- **OpenAlex：**", "").strip()
+            elif line.startswith("**【Key Findings】**"):
+                break  # Notes will be collected separately
+        
+        # Collect notes
+        in_notes = False
+        for line in lines[1:]:
+            line = line.strip()
+            if line.startswith("**【變數】**"):
+                in_notes = True
+                paper["notes"].append("=== 變數 ===")
+            elif line.startswith("**【資料來源】**"):
+                paper["notes"].append("=== 資料來源 ===")
+            elif line.startswith("**【方法論】**"):
+                paper["notes"].append("=== 方法論 ===")
+            elif line.startswith("**【Key Findings】**"):
+                paper["notes"].append("=== Key Findings ===")
+            elif line.startswith("**【APA】**"):
+                paper["notes"].append("=== APA ===")
+            elif in_notes and line and not line.startswith("#") and not line.startswith("---"):
+                paper["notes"].append(line)
+        
+        # Behavioral finance specific tags
+        bf_topics = ["informed trading", "smart money", "institutional herding", 
+                     "positive feedback trading", "retail attention", "disposition effect"]
+        for topic in bf_topics:
+            if topic.lower() in title.lower():
+                paper["tags"].append(topic.title())
+        if not paper["tags"]:
+            paper["tags"].append("Behavioral Finance")
+        
+        papers.append(paper)
+    
+    return papers
+
 def load_uploads():
     """Load user-uploaded papers from uploads.json"""
     if os.path.exists(UPLOADS_JSON):
@@ -170,6 +262,7 @@ def build():
     all_papers = []
     counts = {"search": 0, "upload": 0}
     
+    # Parse QVAR papers
     md_files = sorted(glob.glob(os.path.join(MEMORY_DIR, "*.md")), reverse=True)
     for mf in md_files:
         try:
@@ -178,6 +271,17 @@ def build():
             counts["search"] += len(papers)
         except Exception as e:
             print(f"⚠️  Skip {os.path.basename(mf)}: {e}")
+    
+    # Parse behavioral finance papers
+    bf_files = sorted(glob.glob(os.path.join(BF_DIR, "*.md")), reverse=True)
+    for mf in bf_files:
+        try:
+            papers = parse_behavioral_finance_md(mf)
+            all_papers.extend(papers)
+            counts["search"] += len(papers)
+            print(f"   📚 Behavioral finance: {len(papers)} papers from {os.path.basename(mf)}")
+        except Exception as e:
+            print(f"⚠️  Skip BF {os.path.basename(mf)}: {e}")
     
     uploads = load_uploads()
     for up in uploads:
