@@ -1,0 +1,19 @@
+{
+  "date": "2026-07-08",
+  "type": "postmarket",
+  "source": "cron_empty_response",
+  "title": "台股收盤速報 — 2026/07/08（三）",
+  "sections": [
+    {
+      "title": "⚠️ 資料異常",
+      "content": "上游 cron job (39f732630e4d) 於 13:37 執行完畢，但 Response 僅回傳『報告完成』，無實際數據內容。\n\n可能原因：\n1. 盤後數據源暫時不可用（twstock.realtime / yfinance）\n2. API 回傳異常或為休市日\n3. cron agent 執行失敗但未正確拋出錯誤\n\n預計等上游 cron a3b9c8d7e6f5（每日 22:15 籌碼整理）運行後，嘗試補齊完整數據。"
+    }
+  ],
+  "meta": {
+    "data_date": "2026-07-08",
+    "cron_run": "2026-07-08T13:37:09+08:00",
+    "status": "empty_response",
+    "source_job": "39f732630e4d",
+    "note": "上游收盤速報未產出實際內容，僅保留占位記錄。"
+  }
+}
