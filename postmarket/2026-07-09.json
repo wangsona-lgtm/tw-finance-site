@@ -8,7 +8,7 @@
     "index": {
       "name": "加權指數",
       "close": 45354.61,
-      "change": -379.80,
+      "change": -379.8,
       "change_pct": -0.83,
       "open": 45805.62,
       "high": 46064.06,
@@ -18,7 +18,7 @@
     "otc_index": {
       "name": "櫃買 OTC",
       "close": 424.99,
-      "change": 3.60,
+      "change": 3.6,
       "change_pct": 0.85
     },
     "electronics_index": {
@@ -40,42 +40,177 @@
       "usd_twd": 32.075,
       "prev_close": 32.108,
       "change": -0.033,
-      "change_pct": -0.10,
+      "change_pct": -0.1,
       "high": 32.17,
-      "low": 32.00,
+      "low": 32.0,
       "direction": "台幣升值"
     }
   },
   "stocks": [
-    {"symbol": "2330", "name": "台積電", "close": 2415.0, "change": -50.00, "change_pct": -2.03, "volume": 26936},
-    {"symbol": "2454", "name": "聯發科", "close": 3925.0, "change": -70.00, "change_pct": -1.75, "volume": 5670},
-    {"symbol": "2317", "name": "鴻海", "close": 237.5, "change": 0.00, "change_pct": 0.00, "volume": 38718},
-    {"symbol": "2308", "name": "台達電", "close": 1880.0, "change": -5.00, "change_pct": -0.27, "volume": 7821},
-    {"symbol": "2382", "name": "廣達", "close": 373.5, "change": -3.50, "change_pct": -0.93, "volume": 13757},
-    {"symbol": "2303", "name": "聯電", "close": 156.0, "change": -7.00, "change_pct": -4.29, "volume": 58120},
-    {"symbol": "2891", "name": "中信金", "close": 69.9, "change": -1.40, "change_pct": -1.96, "volume": 58983},
-    {"symbol": "2882", "name": "國泰金", "close": 96.3, "change": -1.70, "change_pct": -1.73, "volume": 22706},
-    {"symbol": "2881", "name": "富邦金", "close": 124.5, "change": -1.50, "change_pct": -1.19, "volume": 25196},
-    {"symbol": "3711", "name": "日月光投控", "close": 677.0, "change": 52.00, "change_pct": 8.32, "volume": 30902},
-    {"symbol": "2379", "name": "瑞昱", "close": 840.0, "change": 23.00, "change_pct": 2.82, "volume": 6864},
-    {"symbol": "5880", "name": "合庫金", "close": 25.15, "change": 0.05, "change_pct": 0.20, "volume": 16408},
-    {"symbol": "3008", "name": "大立光", "close": 3950.0, "change": 0.00, "change_pct": 0.00, "volume": 1512}
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "close": 2415.0,
+      "change": -50.0,
+      "change_pct": -2.03,
+      "volume": 26936
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "close": 3925.0,
+      "change": -70.0,
+      "change_pct": -1.75,
+      "volume": 5670
+    },
+    {
+      "symbol": "2317",
+      "name": "鴻海",
+      "close": 237.5,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "volume": 38718
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "close": 1880.0,
+      "change": -5.0,
+      "change_pct": -0.27,
+      "volume": 7821
+    },
+    {
+      "symbol": "2382",
+      "name": "廣達",
+      "close": 373.5,
+      "change": -3.5,
+      "change_pct": -0.93,
+      "volume": 13757
+    },
+    {
+      "symbol": "2303",
+      "name": "聯電",
+      "close": 156.0,
+      "change": -7.0,
+      "change_pct": -4.29,
+      "volume": 58120
+    },
+    {
+      "symbol": "2891",
+      "name": "中信金",
+      "close": 69.9,
+      "change": -1.4,
+      "change_pct": -1.96,
+      "volume": 58983
+    },
+    {
+      "symbol": "2882",
+      "name": "國泰金",
+      "close": 96.3,
+      "change": -1.7,
+      "change_pct": -1.73,
+      "volume": 22706
+    },
+    {
+      "symbol": "2881",
+      "name": "富邦金",
+      "close": 124.5,
+      "change": -1.5,
+      "change_pct": -1.19,
+      "volume": 25196
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投控",
+      "close": 677.0,
+      "change": 52.0,
+      "change_pct": 8.32,
+      "volume": 30902
+    },
+    {
+      "symbol": "2379",
+      "name": "瑞昱",
+      "close": 840.0,
+      "change": 23.0,
+      "change_pct": 2.82,
+      "volume": 6864
+    },
+    {
+      "symbol": "5880",
+      "name": "合庫金",
+      "close": 25.15,
+      "change": 0.05,
+      "change_pct": 0.2,
+      "volume": 16408
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光",
+      "close": 3950.0,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "volume": 1512
+    }
   ],
   "sectors": {
     "strong": [
-      {"name": "電腦及周邊類指數", "change_pct": -0.19, "note": "跌幅最輕，伺服器組裝相對抗跌"},
-      {"name": "航運類指數", "change_pct": -0.42, "note": "貨櫃三雄持穩"},
-      {"name": "光電類指數", "change_pct": -0.75, "note": "面板族群跌幅有限"},
-      {"name": "食品類指數", "change_pct": -0.77, "note": "防禦型資金流入"},
-      {"name": "觀光類指數", "change_pct": -0.77, "note": "內需撐盤"}
+      {
+        "name": "電腦及周邊類指數",
+        "change_pct": -0.19,
+        "note": "跌幅最輕，伺服器組裝相對抗跌"
+      },
+      {
+        "name": "航運類指數",
+        "change_pct": -0.42,
+        "note": "貨櫃三雄持穩"
+      },
+      {
+        "name": "光電類指數",
+        "change_pct": -0.75,
+        "note": "面板族群跌幅有限"
+      },
+      {
+        "name": "食品類指數",
+        "change_pct": -0.77,
+        "note": "防禦型資金流入"
+      },
+      {
+        "name": "觀光類指數",
+        "change_pct": -0.77,
+        "note": "內需撐盤"
+      }
     ],
     "weak": [
-      {"name": "鋼鐵類指數", "change_pct": -2.45, "note": "跌幅最深，原物料需求疑慮"},
-      {"name": "紡織類指數", "change_pct": -2.37, "note": "持續走弱"},
-      {"name": "電子零組件類指數", "change_pct": -2.31, "note": "被動元件、PCB 賣壓沉重"},
-      {"name": "通信網路類指數", "change_pct": -2.17, "note": "網通族群回檔"},
-      {"name": "化學類指數", "change_pct": -1.90, "note": "塑化下游跟跌"},
-      {"name": "油電燃氣類指數", "change_pct": -1.53, "note": "油價走弱影響"}
+      {
+        "name": "鋼鐵類指數",
+        "change_pct": -2.45,
+        "note": "跌幅最深，原物料需求疑慮"
+      },
+      {
+        "name": "紡織類指數",
+        "change_pct": -2.37,
+        "note": "持續走弱"
+      },
+      {
+        "name": "電子零組件類指數",
+        "change_pct": -2.31,
+        "note": "被動元件、PCB 賣壓沉重"
+      },
+      {
+        "name": "通信網路類指數",
+        "change_pct": -2.17,
+        "note": "網通族群回檔"
+      },
+      {
+        "name": "化學類指數",
+        "change_pct": -1.9,
+        "note": "塑化下游跟跌"
+      },
+      {
+        "name": "油電燃氣類指數",
+        "change_pct": -1.53,
+        "note": "油價走弱影響"
+      }
     ]
   },
   "analysis": {
@@ -95,6 +230,304 @@
     "data_date": "2026-07-09",
     "generated_at": "2026-07-09T13:40:00+08:00",
     "source": "TWSE / twstock.realtime / yfinance",
-    "note": "收盤速報，不包含三大法人買賣超及期貨選擇權籌碼"
+    "note": "收盤速報 + 盤後籌碼分析（含三大法人買賣超、期貨選擇權籌碼、強弱勢股）"
+  },
+  "institutional_data": {
+    "data_date": "2026-07-09",
+    "report_time": "2026-07-09 16:12",
+    "source": "TWSE / TAIFEX / yfinance",
+    "institutional_trades": {
+      "summary": {
+        "total_buy_ntd": 411823000000,
+        "total_sell_ntd": 451217000000,
+        "net_ntd": -393940000000,
+        "net_str": "-393.94 億",
+        "interpretation": "三大法人合計賣超 393.94 億，外資為賣壓主力"
+      },
+      "breakdown": [
+        {
+          "category": "自營商(自行買賣)",
+          "buy_ntd": 9495000000,
+          "sell_ntd": 11531000000,
+          "net_ntd": -2036000000,
+          "net_str": "-20.36 億",
+          "direction": "sell"
+        },
+        {
+          "category": "自營商(避險)",
+          "buy_ntd": 27743000000,
+          "sell_ntd": 33377000000,
+          "net_ntd": -5635000000,
+          "net_str": "-56.35 億",
+          "direction": "sell"
+        },
+        {
+          "category": "投信",
+          "buy_ntd": 25020000000,
+          "sell_ntd": 9610000000,
+          "net_ntd": 15410000000,
+          "net_str": "+154.10 億",
+          "direction": "buy"
+        },
+        {
+          "category": "外資及陸資",
+          "buy_ntd": 349565000000,
+          "sell_ntd": 396698000000,
+          "net_ntd": -47133000000,
+          "net_str": "-471.33 億",
+          "direction": "sell"
+        }
+      ]
+    },
+    "futures_positions": {
+      "data_date": "2026-07-08",
+      "note": "期貨籌碼數據為前一日(7/08)資料",
+      "tx_net_positions": [
+        {
+          "trader": "自營商",
+          "oi_net": 3311,
+          "long_oi": 8047,
+          "short_oi": 4736,
+          "direction": "long"
+        },
+        {
+          "trader": "投信",
+          "oi_net": 69987,
+          "long_oi": 76013,
+          "short_oi": 6026,
+          "direction": "long"
+        },
+        {
+          "trader": "外資及陸資",
+          "oi_net": -81268,
+          "long_oi": 5632,
+          "short_oi": 86900,
+          "direction": "short"
+        }
+      ],
+      "interpretation": "外資期貨淨空單 81,268 口為近期高水位，投信多單 69,987 口與外資對作"
+    },
+    "options_data": {
+      "data_date": "2026-07-08",
+      "put_call_ratio": {
+        "volume_pc": 91.04,
+        "volume_pc_str": "91.04%",
+        "volume_interpretation": "中性偏多（買權交易較熱絡）",
+        "oi_pc": 129.81,
+        "oi_pc_str": "129.81%",
+        "oi_interpretation": "偏空（PUT 未平倉大於 CALL）"
+      },
+      "foreign_options_oi": {
+        "call_long_oi": 6905,
+        "call_short_oi": 6306,
+        "call_net": 599,
+        "call_direction": "long",
+        "put_long_oi": 18725,
+        "put_short_oi": 11889,
+        "put_net": 6836,
+        "put_direction": "long"
+      },
+      "interpretation": "OI P/C 129.81% > 100%，PUT 籌碼集中，避險情緒濃"
+    },
+    "market_breadth": {
+      "listed": {
+        "up": 5597,
+        "limit_up": 133,
+        "down": 4719,
+        "limit_down": 128,
+        "flat": 814
+      },
+      "otc": {
+        "up": 411,
+        "limit_up": 22,
+        "down": 552,
+        "limit_down": 2,
+        "flat": 74
+      },
+      "note": "漲家數大於跌家數，下跌集中在權值股非全面性"
+    },
+    "strong_stocks": [
+      {
+        "symbol": "2408",
+        "name": "南亞科",
+        "close": 435.5,
+        "change_pct": 9.97,
+        "volume": 85459,
+        "sector": "DRAM/記憶體"
+      },
+      {
+        "symbol": "6449",
+        "name": "鈺邦",
+        "close": 352.0,
+        "change_pct": 10.0,
+        "volume": 2433,
+        "sector": "固態電容"
+      },
+      {
+        "symbol": "8039",
+        "name": "台虹",
+        "close": 154.0,
+        "change_pct": 10.0,
+        "volume": 16602,
+        "sector": "軟板材料"
+      },
+      {
+        "symbol": "3006",
+        "name": "晶豪科",
+        "close": 237.0,
+        "change_pct": 9.98,
+        "volume": 21297,
+        "sector": "IC設計"
+      },
+      {
+        "symbol": "1536",
+        "name": "和大",
+        "close": 55.0,
+        "change_pct": 10.0,
+        "volume": 13866,
+        "sector": "汽車傳動"
+      },
+      {
+        "symbol": "3661",
+        "name": "世芯-KY",
+        "close": 4210.0,
+        "change_pct": 3.56,
+        "volume": 1517,
+        "sector": "ASIC/IP"
+      },
+      {
+        "symbol": "3711",
+        "name": "日月光投控",
+        "close": 677.0,
+        "change_pct": 8.32,
+        "volume": 31941,
+        "sector": "封測"
+      }
+    ],
+    "weak_stocks": [
+      {
+        "symbol": "4739",
+        "name": "康普",
+        "close": 99.0,
+        "change_pct": -10.0,
+        "volume": 8083,
+        "sector": "電池材料"
+      },
+      {
+        "symbol": "6715",
+        "name": "嘉基",
+        "close": 391.5,
+        "change_pct": -10.0,
+        "volume": 1356,
+        "sector": "高速傳輸"
+      },
+      {
+        "symbol": "1326",
+        "name": "台化",
+        "close": 60.0,
+        "change_pct": -7.26,
+        "volume": 59118,
+        "sector": "塑化"
+      },
+      {
+        "symbol": "1314",
+        "name": "中石化",
+        "close": 8.9,
+        "change_pct": -8.25,
+        "volume": 155533,
+        "sector": "石化"
+      },
+      {
+        "symbol": "1409",
+        "name": "新纖",
+        "close": 26.55,
+        "change_pct": -9.23,
+        "volume": 77595,
+        "sector": "紡織"
+      },
+      {
+        "symbol": "1301",
+        "name": "台塑",
+        "close": 54.8,
+        "change_pct": -5.52,
+        "volume": 56581,
+        "sector": "塑化"
+      },
+      {
+        "symbol": "2303",
+        "name": "聯電",
+        "close": 156.0,
+        "change_pct": -4.29,
+        "volume": 59926,
+        "sector": "晶圓代工"
+      }
+    ],
+    "exchange_rate_update": {
+      "usd_twd": 32.1359,
+      "direction": "台幣貶值 +0.25%",
+      "note": "外資賣超 471 億配合台幣走弱，資金外流壓力顯著"
+    },
+    "upcoming_events": {
+      "today_ex_dividend": [
+        {
+          "symbol": "2412",
+          "name": "中華電",
+          "dividend": 5.2
+        },
+        {
+          "symbol": "1513",
+          "name": "中興電",
+          "dividend": 6.0
+        },
+        {
+          "symbol": "2492",
+          "name": "華新科",
+          "dividend": 2.5
+        },
+        {
+          "symbol": "3045",
+          "name": "台灣大",
+          "dividend": 4.74
+        },
+        {
+          "symbol": "3044",
+          "name": "健鼎",
+          "dividend": 12.7
+        },
+        {
+          "symbol": "6605",
+          "name": "帝寶",
+          "dividend": 6.5
+        },
+        {
+          "symbol": "6781",
+          "name": "AES-KY",
+          "dividend": 19.1
+        }
+      ],
+      "upcoming_ex_dividend": [
+        {
+          "date": "2026-07-10",
+          "event": "中信金(2891)除息 2.5 元 / 聯詠(3034)除息 23 元"
+        },
+        {
+          "date": "2026-07-13",
+          "event": "聯強(2347)除息 4.2 元 / 永豐餘(1907)除息 1.0 元"
+        },
+        {
+          "date": "2026-07-14",
+          "event": "遠東新(1402)除息 1.25 元 / 陽明(2609)除息 2.0 元 / 大成鋼(2027)除息 1.5 元"
+        },
+        {
+          "date": "2026-07-15",
+          "event": "英業達(2356)除息 2.0 元"
+        },
+        {
+          "date": "2026-07-16",
+          "event": "廣達(2382)除息 15.6 元 / 王品(2727)除息 16.12 元 / 漢唐(2404)除息 40 元 / 亞泥(1102)除息 2.3 元"
+        }
+      ]
+    },
+    "outlook": "外資大賣 471 億壓制下大盤下跌 0.83%，櫃買逆勢 +0.85%。僅權值股下跌、OTC 與大盤背離。記憶體/ASIC 強勢、傳產塑化重挫。外資期貨淨空單高檔，關注明日外資是否持續提款"
   }
 }
