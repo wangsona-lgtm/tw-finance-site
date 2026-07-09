@@ -1,0 +1,121 @@
+{
+  "date": "2026-07-10",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 7月10日（五）",
+  "sections": [
+    {
+      "title": "Return To War: Iran Fires Ballistic Missiles At Kuwait, Bahrain, Qatar, Jordan, After US Struck 170 Iranian Targets",
+      "category": "geopolitics",
+      "summary": "伊朗反擊：彈道飛彈射向科威特、巴林、卡達、約旦，美軍24小時內打擊逾170個伊朗目標。在美國對伊朗發動連續第二夜的大規模空襲後，德黑蘭展開前所未有的報復行動—伊朗革命衛隊（IRGC）宣稱已對巴林、科威特和卡達的「美軍基地與戰略中心」發射彈道飛彈與無人機。約旦軍方證實攔截了至少8枚飛越其領空的伊朗飛彈。美國中央司令部表示過去兩天的打擊規模已達6月底衝突升級時的約14倍。伊朗則試圖強制執行霍爾木茲海峽的航運管制協議，數艘國際商船遭攻擊。油價維持在戰前高位之上，避險情緒持續籠罩市場。",
+      "url": "https://www.zerohedge.com/geopolitical/return-war-iran-sends-ballistic-missiles-kuwait-bahrain-qatar-jordan-after-us-struck",
+      "timestamp": "2026-07-10",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg"
+      ]
+    },
+    {
+      "title": "French Security Services On High Alert For Morocco-France World Cup Semi-Final: 'Get Ready For Riots & Violence'",
+      "category": "geopolitics",
+      "summary": "法國升級警戒：摩洛哥對戰法國世界盃四強賽前夕，當局憂爆發暴亂。法國政府對即將登場的世界盃四強賽繃緊神經。摩洛哥隊中有多名出生於法國或效力法甲俱樂部的球員。摩洛哥裔是法國第二大非歐洲裔族群，加上法國曾是摩洛哥的殖民保護國，族群間長期存在緊張關係。部分評論員預測無論賽果如何，多個歐洲城市都可能爆發暴力事件。",
+      "url": "https://www.zerohedge.com/geopolitical/french-security-services-high-alert-morocco-france-world-cup-semi-final-get-ready",
+      "timestamp": "2026-07-10",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_4.jpg"
+      ]
+    },
+    {
+      "title": "New Models, Momentum, & Memory Support Stocks As Oil Slides On Hormuz Hopes",
+      "category": "market",
+      "summary": "AI動能與記憶體股撐盤，油價因霍爾木茲和談希望回落。伊朗緊張局勢一夜之間急劇升溫，但交易員重拾舊劇本—湧入AI生態系股票，受惠於OpenAI GPT 5.6、Meta Muse Spark 1.1和SpaceX Grok 4.5等新模型發布。那斯達克領漲美股主要指數。油市似乎將昨晚的空襲視為「高潮」，油價回落。黃金與比特幣反彈，美元與公債殖利率則同步走低。",
+      "url": "https://www.zerohedge.com/markets/new-models-momentum-memory-support-stocks-oil-slides-hormuz-hopes",
+      "timestamp": "2026-07-10",
+      "images": []
+    },
+    {
+      "title": "Stocks and bonds bid while crude is sold as Trump said Iran wants to make a deal - Newsquawk US Market Wrap",
+      "category": "market",
+      "summary": "川普稱伊朗有意談判，股債齊漲、原油遭拋售。美股週四收高，雖然美軍持續打擊伊朗目標且伊朗發動報復，但風險情緒在美國總統川普表示「伊朗已聯繫美方、想要達成協議」後顯著改善。原油價格在大部分交易時段下跌。不過收盤前伊朗南部及布什爾傳出爆炸聲，油價收窄跌幅。數據方面初請與續請失業金人數變化不大；聯準會威廉姆斯重申對物價穩定的承諾；美國成屋銷售意外下滑；中國CPI低於預期。",
+      "url": "https://www.zerohedge.com/markets/stocks-and-bonds-bid-while-crude-sold-trump-said-iran-wants-make-deal-newsquawk-us-market",
+      "timestamp": "2026-07-10",
+      "images": []
+    },
+    {
+      "title": "US stocks traded higher, driven by tech, despite continued strikes - Newsquawk Daily Asia-Pac Opening News",
+      "category": "market",
+      "summary": "無視持續空襲，美股科技股領漲。美股週四在科技股帶領下收高。雖然美軍夜間打擊多個伊朗目標且伊朗發動反擊，但市場對外交解決仍抱有希望。報導指出美國高級官員否認美軍在最近幾小時內對伊朗發動攻擊，而伊朗方面則否認有爆炸發生。週五亞太盤焦點：日本PPI（6月）與澳洲標售。",
+      "url": "https://www.zerohedge.com/markets/us-stocks-traded-higher-driven-tech-despite-continued-strikes-newsquawk-daily-asia-pac",
+      "timestamp": "2026-07-10",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_4.jpg"
+      ]
+    },
+    {
+      "title": "US, Japan, And South Korea Push SMR Exports For 'Energy Security Needs'",
+      "category": "market",
+      "summary": "美日韓聯手推動小型核電廠出口，劍指中俄核能技術霸權。在安卡拉北約峰會期間美日韓簽署三邊合作備忘錄（MOC），目標是加速在印太地區部署小型模組化反應爐（SMR）。美國同時承諾額外投入超過1,000萬美元至國務院的FIRST計畫。這是美國持續推動核電技術出口的延續，旨在與盟友建立至少20項民用核能合作協議（「123協議」），以對抗俄羅斯和中國在全球核能市場的影響力。",
+      "url": "https://www.zerohedge.com/markets/us-japan-and-south-korea-push-smr-exports-energy-security-needs",
+      "timestamp": "2026-07-10",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg"
+      ]
+    },
+    {
+      "title": "'Results Were Tempered': Pepsi Blames US Snack Slump On Cash-Strapped Consumers",
+      "category": "market",
+      "summary": "百事財報失色：美國零食銷售下滑，歸咎於消費者錢包緊縮。百事可樂第二季北美食品部門業績不如預期，北美食品部門營收下滑2%，銷量持平，儘管公司年初已將部分品牌價格調降高達15%以吸引勞動階級消費者。百事重申全年財測，調整後每股盈餘2.20美元略高於市場預期。北美疲弱由國際業務彌補。公司同時調漲部分小包裝售價，並擴大蛋白質與纖維產品線。",
+      "url": "https://www.zerohedge.com/markets/results-were-tempered-pepsi-blames-us-snack-slump-cash-strapped-consumers",
+      "timestamp": "2026-07-10",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_9_img_4.png",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_9_img_5.png"
+      ]
+    },
+    {
+      "title": "Starbucks Using AI To Build Software Replacing Applications It Buys From Microsoft, IBM",
+      "category": "market",
+      "summary": "星巴克用AI自建軟體，取代向微軟與IBM採購的應用系統。星巴克正在利用AI開發內部工具，可能取代目前向微軟和IBM採購的部分軟體—包括微軟的庫存管理系統和IBM的設備維護工具。消息發布當日微軟跌2.4%、IBM重挫5.2%。星巴克每年花費約4億美元在技術供應商上，自建軟體將是巨大的成本節省。",
+      "url": "https://www.zerohedge.com/markets/starbucks-using-ai-build-software-replacing-applications-it-buys-microsoft-ibm",
+      "timestamp": "2026-07-10",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_4.jpg"
+      ]
+    },
+    {
+      "title": "Strong 30Y Bond Auction Stops Through For First Time Since March",
+      "category": "market",
+      "summary": "30年期公債拍賣強勁，自3月以來首次「stop-through」。美國財政部標售220億美元30年期公債，得標殖利率5.058%（2007年以來最高），為自3月以來首次出現「stop-through」。投標倍數2.44倍優於過去六次續發的平均2.39倍。間接投標人（外國買家）獲得77.74%的配發比例，為歷史次高紀錄。這是2026年以來最強勁的公債拍賣之一。",
+      "url": "https://www.zerohedge.com/markets/strong-30y-bond-auction-stops-through-first-time-march",
+      "timestamp": "2026-07-10",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_11_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_11_img_5.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_11_img_6.jpg"
+      ]
+    },
+    {
+      "title": "These Are The Most And Least Crowded Hedge Fund Stocks And Themes",
+      "category": "market",
+      "summary": "高盛最新發布的對沖基金擁擠度監測報告指出，美國板塊的擁擠度正在表面之下快速演變。能源與醫療保健設備在過去一週經歷了最大的方向性輪轉—雙雙轉向共識性多頭，而半導體板塊的多空持倉同時在加劇。",
+      "url": "https://www.zerohedge.com/markets/these-are-most-and-least-crowded-hedge-fund-stocks-and-themes",
+      "timestamp": "2026-07-10",
+      "images": []
+    },
+    {
+      "title": "'Take A Shot On The Long Side Of Semis/Momo'; Top Goldman Quant Sees Less Leverage, Cleaner Positioning",
+      "category": "market",
+      "summary": "高盛ETF與自訂籃子波動交易主管Shawn Tuteja表示，標普500指數年底目標8,000+點「並非什麼具爭議性的觀點」。EPS取中間值385美元並給予20.5倍本益比，指數將達8,000點以上。他建議投資人關注半導體與動能股的做多機會，認為當前的槓桿水準與持倉結構比以往更健康。",
+      "url": "https://www.zerohedge.com/markets/take-shot-long-side-semismomo-top-goldman-quant-sees-less-leverage-cleaner-positioning",
+      "timestamp": "2026-07-10",
+      "images": []
+    },
+    {
+      "title": "'Macro To Micro': JPMorgan Traders Lay Out Bull & Bear Case From Here",
+      "category": "market",
+      "summary": "摩根大通市場情報部門維持「戰術性看多」立場。他們認為儘管霍爾木茲海峽的波折可能帶來短期波動，但宏觀與微觀基本面仍然強勁，不足以支撐近期轉為看空。文章同時列出多頭與空頭觀點的關鍵論據。",
+      "url": "https://www.zerohedge.com/markets/macro-micro-jpmorgan-traders-lay-out-bull-bear-case-here",
+      "timestamp": "2026-07-10",
+      "images": []
+    }
+  ]
+}
