@@ -112,6 +112,10 @@
     "file": "tw-finance-site/postmarket/2026-07-08.json"
   },
   {
+    "date": "2026-07-09",
+    "file": "tw-finance-site/postmarket/2026-07-09.json"
+  },
+  {
     "date": "list",
     "file": "tw-finance-site/postmarket/list.json"
   }

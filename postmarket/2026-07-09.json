@@ -1,0 +1,100 @@
+{
+  "date": "2026-07-09",
+  "type": "postmarket_report",
+  "source": "twse_api",
+  "report_time": "2026-07-09 13:37:37",
+  "title": "台股收盤速報 — 2026/07/09（四）",
+  "summary": {
+    "index": {
+      "name": "加權指數",
+      "close": 45354.61,
+      "change": -379.80,
+      "change_pct": -0.83,
+      "open": 45805.62,
+      "high": 46064.06,
+      "low": 45352.41,
+      "prev_close": 45734.41
+    },
+    "otc_index": {
+      "name": "櫃買 OTC",
+      "close": 424.99,
+      "change": 3.60,
+      "change_pct": 0.85
+    },
+    "electronics_index": {
+      "name": "電子指數",
+      "close": 23756.95,
+      "change": -285.81,
+      "change_pct": -1.19
+    },
+    "volume": {
+      "total_amount_ntd": 944341000000,
+      "total_amount_str": "NT$ 9,443.41 億",
+      "total_shares": 10336477,
+      "total_trades": 3056795,
+      "prev_amount_ntd": 1004560000000,
+      "prev_amount_str": "NT$ 10,045.60 億",
+      "change_pct": -6.02
+    },
+    "exchange_rate": {
+      "usd_twd": 32.075,
+      "prev_close": 32.108,
+      "change": -0.033,
+      "change_pct": -0.10,
+      "high": 32.17,
+      "low": 32.00,
+      "direction": "台幣升值"
+    }
+  },
+  "stocks": [
+    {"symbol": "2330", "name": "台積電", "close": 2415.0, "change": -50.00, "change_pct": -2.03, "volume": 26936},
+    {"symbol": "2454", "name": "聯發科", "close": 3925.0, "change": -70.00, "change_pct": -1.75, "volume": 5670},
+    {"symbol": "2317", "name": "鴻海", "close": 237.5, "change": 0.00, "change_pct": 0.00, "volume": 38718},
+    {"symbol": "2308", "name": "台達電", "close": 1880.0, "change": -5.00, "change_pct": -0.27, "volume": 7821},
+    {"symbol": "2382", "name": "廣達", "close": 373.5, "change": -3.50, "change_pct": -0.93, "volume": 13757},
+    {"symbol": "2303", "name": "聯電", "close": 156.0, "change": -7.00, "change_pct": -4.29, "volume": 58120},
+    {"symbol": "2891", "name": "中信金", "close": 69.9, "change": -1.40, "change_pct": -1.96, "volume": 58983},
+    {"symbol": "2882", "name": "國泰金", "close": 96.3, "change": -1.70, "change_pct": -1.73, "volume": 22706},
+    {"symbol": "2881", "name": "富邦金", "close": 124.5, "change": -1.50, "change_pct": -1.19, "volume": 25196},
+    {"symbol": "3711", "name": "日月光投控", "close": 677.0, "change": 52.00, "change_pct": 8.32, "volume": 30902},
+    {"symbol": "2379", "name": "瑞昱", "close": 840.0, "change": 23.00, "change_pct": 2.82, "volume": 6864},
+    {"symbol": "5880", "name": "合庫金", "close": 25.15, "change": 0.05, "change_pct": 0.20, "volume": 16408},
+    {"symbol": "3008", "name": "大立光", "close": 3950.0, "change": 0.00, "change_pct": 0.00, "volume": 1512}
+  ],
+  "sectors": {
+    "strong": [
+      {"name": "電腦及周邊類指數", "change_pct": -0.19, "note": "跌幅最輕，伺服器組裝相對抗跌"},
+      {"name": "航運類指數", "change_pct": -0.42, "note": "貨櫃三雄持穩"},
+      {"name": "光電類指數", "change_pct": -0.75, "note": "面板族群跌幅有限"},
+      {"name": "食品類指數", "change_pct": -0.77, "note": "防禦型資金流入"},
+      {"name": "觀光類指數", "change_pct": -0.77, "note": "內需撐盤"}
+    ],
+    "weak": [
+      {"name": "鋼鐵類指數", "change_pct": -2.45, "note": "跌幅最深，原物料需求疑慮"},
+      {"name": "紡織類指數", "change_pct": -2.37, "note": "持續走弱"},
+      {"name": "電子零組件類指數", "change_pct": -2.31, "note": "被動元件、PCB 賣壓沉重"},
+      {"name": "通信網路類指數", "change_pct": -2.17, "note": "網通族群回檔"},
+      {"name": "化學類指數", "change_pct": -1.90, "note": "塑化下游跟跌"},
+      {"name": "油電燃氣類指數", "change_pct": -1.53, "note": "油價走弱影響"}
+    ]
+  },
+  "analysis": {
+    "direction": "偏空",
+    "key_points": [
+      "大盤開高走低，高低差達 712 點，上方賣壓沉重",
+      "半導體領跌：台積電-2.03%、聯電-4.29%",
+      "櫃買獨強：OTC 逆勢+0.85%，資金轉向中小型股",
+      "量縮整理：成交值9,443億較昨日-6%",
+      "亮點：日月光+8.32%、瑞昱+2.82%",
+      "台幣小幅升值至32.075，未見明顯外資匯出"
+    ],
+    "outlook": "短線關注明日是否守住45,000整數關卡及外資籌碼動向"
+  },
+  "full_report_md": "📊 台股收盤報告 — 2026/07/09 (四)\n\n## 1. 加權指數\n- 收盤：45,354.61 🔴 -379.80 (-0.83%)\n- 開盤 45,805.62 | 最高 46,064.06 | 最低 45,352.41\n\n## 2. 三大指數\n- 加權：45,354.61 🔴 -0.83%\n- 櫃買OTC：424.99 🟢 +0.85%\n- 電子指數：23,756.95 🔴 -1.19%\n\n## 3. 權值股\n- 台積電 2,415.0 🔴 -2.03%\n- 聯發科 3,925.0 🔴 -1.75%\n- 鴻海 237.5 ⚪ 0.00%\n- 台達電 1,880.0 🔴 -0.27%\n- 廣達 373.5 🔴 -0.93%\n- 聯電 156.0 🔴 -4.29%\n- 中信金 69.9 🔴 -1.96%\n- 國泰金 96.3 🔴 -1.73%\n- 富邦金 124.5 🔴 -1.19%\n- 日月光投控 677.0 🟢 +8.32% 🏆\n- 瑞昱 840.0 🟢 +2.82%\n\n## 4. 成交量\n- 今日：NT$ 9,443.41 億\n- 昨日：NT$ 10,045.60 億\n- 增減：🔴 -6.02%\n\n## 5. 匯率\n- USD/TWD：32.075 🟢 台幣升值\n- 昨收 32.108 | 高 32.17 | 低 32.00\n\n## 6. 盤勢總評\n大盤開高走低，高低差712點，半導體領跌。櫃買逆勢收紅+0.85%，資金轉向中小型股。量縮至9,443億。日月光大漲+8.32%為盤面亮點。",
+  "meta": {
+    "data_date": "2026-07-09",
+    "generated_at": "2026-07-09T13:40:00+08:00",
+    "source": "TWSE / twstock.realtime / yfinance",
+    "note": "收盤速報，不包含三大法人買賣超及期貨選擇權籌碼"
+  }
+}
