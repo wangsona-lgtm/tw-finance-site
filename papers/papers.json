@@ -1,6 +1,6 @@
 {
   "total": 110,
-  "updated": "2026-07-09 15:35:13",
+  "updated": "2026-07-10 09:31:28",
   "topics": [
     "AI/科技",
     "其他",
@@ -805,7 +805,7 @@
         "來源：Mayer et al. arXiv 全文、Jiang et al. MDPI 全文、Wiley/Elsevier 頁面"
       ],
       "type": "upload",
-      "id": "upload-2026-07-06-9752"
+      "id": "upload-2026-07-06-9442"
     },
     {
       "title": "The Mediating Role of Globalization in the Nexus Between CO₂ Emissions, GHGs, and Economic Growth",
@@ -847,56 +847,7 @@
         "【限制】僅G20不可外推；Baron&Kenny檢定力較低；年資料無法捕捉短期動態；未控制各國環境法規差異"
       ],
       "type": "upload",
-      "id": "upload-2026-06-30-9998"
-    },
-    {
-      "title": "Financial development and renewable energy consumption: a novel view under the moderating role of institutional quality across APEC economies",
-      "authors": "Chowdhury, M.A.S., An, M. & Hedvicakova, M.",
-      "year": "2026",
-      "journal": "Humanities and Social Sciences Communications (Nature), Article in Press",
-      "doi": "10.1057/s41599-026-07998-z",
-      "date": "2026-06-30",
-      "tags": [
-        "panel",
-        "quantile regression",
-        "IQ",
-        "APEC",
-        "moderation",
-        "REC",
-        "SDG"
-      ],
-      "topics": [
-        "潔淨能源",
-        "氣候風險/政策",
-        "金融市場",
-        "宏觀總體"
-      ],
-      "pdf": "uploads/Chowdhury_FD_IQ_REC_APEC_2026.pdf",
-      "notes": [
-        "樣本：12 APEC 經濟體 (澳、中、香港、日、韓、馬、墨、菲、星、泰、美、越)，2002–2021，240 obs",
-        "資料庫：World Development Indicators (WB)",
-        "方法：固定效果 + Panel Quantile Regression (Q.25/Q.50/Q.75/Q.95) + SYS-GMM/MMQR/Driscoll-Kraay 穩健性",
-        "---",
-        "【變數】DV=REC(再生能源消費%總最終能源), IV=FD1(國內信貸%GDP)+FD2(股票交易%GDP), Moderator=IQ(PCA合成6項WGI指標), Controls=EI(能源密集度), TO(貿易開放度), TI(技術創新)",
-        "---",
-        "【H1】FD→REC: Q.50係數−0.5386*(p<0.10), FE係數−0.5466***(p<0.01) → FD對REC為負向顯著，金融體系偏向傳統能源投資",
-        "【H2】FD×IQ→REC: APEC交互項係數+0.7815***(p<0.01)，高所得組+0.7899***(p<0.01)，中高所得組+0.1242*(p<0.10) → IQ正向調節FD-REC關係",
-        "---",
-        "【IQ直接】IQ→REC: 係數不顯著，IQ無直接顯著影響",
-        "【EI】EI→REC: FE係數−0.5531**(p<0.05)，能源密集度越高REC越低",
-        "【TO】TO→REC: 係數正值但不顯著，貿易開放度單獨不直接促REC",
-        "【TI】TI→REC: FE係數−0.3353***(p<0.01)，技術創新反而抑制REC(與再生能源目標脫鉤)",
-        "---",
-        "【診斷】CSD顯著, HS異質斜率, LLC/IPS單根I(0), Pedroni共整合(pp<0.05), Granger因果全顯著(無內生性), Hausman FE=23.12***(p<0.001), VIF<3",
-        "---",
-        "【理論】Energy Transition Theory + Institutional Theory 雙支柱",
-        "---",
-        "【政策意涵】1)金融資源需重新導向綠色金融(綠債、補貼、稅務優惠)；2)強化制度品質(透明+監管效率+問責)吸引再生能源投資；3)高EI經濟體須投資能效技術；4)利用貿易開放降低綠色技術關稅壁壘；5)技術創新須對齊再生能源目標",
-        "---",
-        "【限制】僅12國、未納碳價與政治風險、未考慮非線性與門檻效應、IQ多維度未拆解"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-30-5880"
+      "id": "upload-2026-06-30-9200"
     },
     {
       "title": "Green innovation and the CO₂ emissions gap: New evidence from OECD economies",
@@ -950,7 +901,56 @@
         "【限制】僅OECD、專利指標未必反映技術擴散與採用、消費基礎排放有量測誤差"
       ],
       "type": "upload",
-      "id": "upload-2026-06-30-3292"
+      "id": "upload-2026-06-30-8473"
+    },
+    {
+      "title": "Financial development and renewable energy consumption: a novel view under the moderating role of institutional quality across APEC economies",
+      "authors": "Chowdhury, M.A.S., An, M. & Hedvicakova, M.",
+      "year": "2026",
+      "journal": "Humanities and Social Sciences Communications (Nature), Article in Press",
+      "doi": "10.1057/s41599-026-07998-z",
+      "date": "2026-06-30",
+      "tags": [
+        "panel",
+        "quantile regression",
+        "IQ",
+        "APEC",
+        "moderation",
+        "REC",
+        "SDG"
+      ],
+      "topics": [
+        "潔淨能源",
+        "氣候風險/政策",
+        "金融市場",
+        "宏觀總體"
+      ],
+      "pdf": "uploads/Chowdhury_FD_IQ_REC_APEC_2026.pdf",
+      "notes": [
+        "樣本：12 APEC 經濟體 (澳、中、香港、日、韓、馬、墨、菲、星、泰、美、越)，2002–2021，240 obs",
+        "資料庫：World Development Indicators (WB)",
+        "方法：固定效果 + Panel Quantile Regression (Q.25/Q.50/Q.75/Q.95) + SYS-GMM/MMQR/Driscoll-Kraay 穩健性",
+        "---",
+        "【變數】DV=REC(再生能源消費%總最終能源), IV=FD1(國內信貸%GDP)+FD2(股票交易%GDP), Moderator=IQ(PCA合成6項WGI指標), Controls=EI(能源密集度), TO(貿易開放度), TI(技術創新)",
+        "---",
+        "【H1】FD→REC: Q.50係數−0.5386*(p<0.10), FE係數−0.5466***(p<0.01) → FD對REC為負向顯著，金融體系偏向傳統能源投資",
+        "【H2】FD×IQ→REC: APEC交互項係數+0.7815***(p<0.01)，高所得組+0.7899***(p<0.01)，中高所得組+0.1242*(p<0.10) → IQ正向調節FD-REC關係",
+        "---",
+        "【IQ直接】IQ→REC: 係數不顯著，IQ無直接顯著影響",
+        "【EI】EI→REC: FE係數−0.5531**(p<0.05)，能源密集度越高REC越低",
+        "【TO】TO→REC: 係數正值但不顯著，貿易開放度單獨不直接促REC",
+        "【TI】TI→REC: FE係數−0.3353***(p<0.01)，技術創新反而抑制REC(與再生能源目標脫鉤)",
+        "---",
+        "【診斷】CSD顯著, HS異質斜率, LLC/IPS單根I(0), Pedroni共整合(pp<0.05), Granger因果全顯著(無內生性), Hausman FE=23.12***(p<0.001), VIF<3",
+        "---",
+        "【理論】Energy Transition Theory + Institutional Theory 雙支柱",
+        "---",
+        "【政策意涵】1)金融資源需重新導向綠色金融(綠債、補貼、稅務優惠)；2)強化制度品質(透明+監管效率+問責)吸引再生能源投資；3)高EI經濟體須投資能效技術；4)利用貿易開放降低綠色技術關稅壁壘；5)技術創新須對齊再生能源目標",
+        "---",
+        "【限制】僅12國、未納碳價與政治風險、未考慮非線性與門檻效應、IQ多維度未拆解"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-30-7848"
     },
     {
       "title": "Impact of Geopolitical Risk and Economic Globalization on Turkey's Environmental Sustainability: Novel Quantile-on-quantile KRLS Method",
@@ -998,7 +998,7 @@
         "【限制】僅土耳其單國、結果不可外推、年轉季資料可能有測量誤差"
       ],
       "type": "upload",
-      "id": "upload-2026-06-30-2835"
+      "id": "upload-2026-06-30-5373"
     },
     {
       "title": "Revisiting Trade-sign Long-memory and Square-root Law Price Impact",
@@ -1024,32 +1024,7 @@
         "arXiv q-fin new 2026-06"
       ],
       "type": "upload",
-      "id": "upload-2026-06-23-8621"
-    },
-    {
-      "title": "The Mathematics of Modeling the Future",
-      "authors": "Miquel Noguer i Alonso",
-      "year": "2026",
-      "journal": "arXiv:2606.20977 [q-fin.MF]",
-      "doi": "",
-      "date": "2026-06-23",
-      "tags": [
-        "方法論"
-      ],
-      "topics": [
-        "方法論",
-        "AI/科技"
-      ],
-      "pdf": "uploads/Mathematics_of_Modeling_Future_Noguer_2026.pdf",
-      "notes": [
-        "從 filtration、conditional expectation、Markov kernel 到 Kolmogorov equations 的統一數學框架",
-        "提出 forecasting calculus：tower property → semigroup law, Ito's formula → backward equation",
-        "Wasserstein gradient flow + Fisher-Rao 幾何下的密度演化",
-        "附 Gaussian OU / CIR 過程的顯式範例",
-        "arXiv q-fin new 2026-06"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-23-7264"
+      "id": "upload-2026-06-23-5510"
     },
     {
       "title": "Reinforcement Learning for Risk-Sensitive Investment Management: a Free Energy--Entropy Duality Approach",
@@ -1075,7 +1050,32 @@
         "arXiv q-fin new 2026-06"
       ],
       "type": "upload",
-      "id": "upload-2026-06-23-2614"
+      "id": "upload-2026-06-23-3907"
+    },
+    {
+      "title": "The Mathematics of Modeling the Future",
+      "authors": "Miquel Noguer i Alonso",
+      "year": "2026",
+      "journal": "arXiv:2606.20977 [q-fin.MF]",
+      "doi": "",
+      "date": "2026-06-23",
+      "tags": [
+        "方法論"
+      ],
+      "topics": [
+        "方法論",
+        "AI/科技"
+      ],
+      "pdf": "uploads/Mathematics_of_Modeling_Future_Noguer_2026.pdf",
+      "notes": [
+        "從 filtration、conditional expectation、Markov kernel 到 Kolmogorov equations 的統一數學框架",
+        "提出 forecasting calculus：tower property → semigroup law, Ito's formula → backward equation",
+        "Wasserstein gradient flow + Fisher-Rao 幾何下的密度演化",
+        "附 Gaussian OU / CIR 過程的顯式範例",
+        "arXiv q-fin new 2026-06"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-23-2483"
     },
     {
       "title": "The interplay of financial development, oil prices, and CO2 emissions in shaping renewable energy consumption in emerging nations: An evidence from panel quantile regression",
@@ -1104,7 +1104,7 @@
         "FDI→REC+, CO2→REC-(高分位)"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-809"
+      "id": "upload-2026-06-16-8278"
     },
     {
       "title": "Assessing the effects of green innovation, renewable energy, and environmental policy stringency on ecological and material footprints in G7 economies",
@@ -1133,7 +1133,7 @@
         "首篇聯合分析EF+MF驅動因子於G7"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-7356"
+      "id": "upload-2026-06-16-7613"
     },
     {
       "title": "The nexus between climate policy uncertainty and load capacity factor in China with the moderating role of financial development",
@@ -1161,7 +1161,7 @@
         "FD 在不確定時期可透過三渠道維持綠色投資"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-4164"
+      "id": "upload-2026-06-16-7056"
     },
     {
       "title": "Sustainable energy transition toward a zero-carbon future in major Global South economies: Roles of green innovation, institutions, and geopolitical risk",
@@ -1190,7 +1190,7 @@
         "SDG-7 進展取決於技術能力+制度韌性"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-2976"
+      "id": "upload-2026-06-16-6529"
     },
     {
       "title": "Spillover across varying Regional and Economic Realities: Evaluating the Hedging potential of Demographic Traits",
@@ -1218,7 +1218,7 @@
         "Peer Review 版本，DOI 暫為 xxxxx"
       ],
       "type": "upload",
-      "id": "upload-2026-06-12-3548"
+      "id": "upload-2026-06-12-9670"
     },
     {
       "id": "2026-06-10-9",
@@ -2700,27 +2700,27 @@
       "notes": []
     },
     {
-      "title": "Climate Policy Uncertainty and Renewable Energy Consumption in China",
-      "authors": "Zheng, Wang, Moldovan, Mihit & Nicolescu",
+      "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
+      "authors": "Ben Salah, Arouri, Klibi & Smaoui",
       "year": "2026",
-      "journal": "Sustainability (MDPI), 18, 5460",
-      "doi": "10.3390/su18115460",
+      "journal": "Sustainability (MDPI), 18, 5196",
+      "doi": "10.3390/su18105196",
       "date": "2026-06-05",
-      "tags": [
-        "QARDL"
-      ],
+      "tags": [],
       "topics": [
-        "氣候風險/政策",
-        "潔淨能源"
+        "碳市場/碳交易",
+        "能源市場",
+        "宏觀總體"
       ],
-      "pdf": "uploads/China_CPU_Renewable_Energy.pdf",
+      "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
       "notes": [
-        "CPU→REC 有 Granger 因果（雙向時變不對稱）",
-        "使用滾窗 Granger 因果檢定 + 雙向因果分析",
-        "控制 EPU（經濟政策不確定性）、原油價格"
+        "使用 STIRPAT + 固定效果 panel 模型",
+        "EKC 假說在海灣六國成立",
+        "能源消費是 CO₂ 排放最大驅動因子",
+        "建議 GCC 國家加速再生能源轉型"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-8070"
+      "id": "upload-2026-06-05-8364"
     },
     {
       "title": "Climate Policy Uncertainty and Load Capacity Factor in China",
@@ -2744,7 +2744,29 @@
         "A-ARDL 共整合檢定 + Fourier KPSS 結構斷點單根檢定"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-8023"
+      "id": "upload-2026-06-05-6947"
+    },
+    {
+      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
+      "authors": "Sumba",
+      "year": "2026",
+      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
+      "doi": "10.1016/j.iref.2026.105445",
+      "date": "2026-06-05",
+      "tags": [],
+      "topics": [
+        "潔淨能源",
+        "宏觀總體"
+      ],
+      "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
+      "notes": [
+        "動態面板門檻模型 (DPT)+ 工具變數",
+        "EKC 假說在發展中國家成立",
+        "再生能源可加速 EKC 轉折",
+        "制度品質調節 EKC 形狀和轉折點"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-05-4796"
     },
     {
       "title": "jQIRF / jQFEVD — 聯合分量脈衝響應函數 & 聯合分量預測誤差變異數分解（方法論文）",
@@ -2767,30 +2789,30 @@
         "延伸應用於中國航空股波動（Transport Research 2024）"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-4254"
+      "id": "upload-2026-06-05-400"
     },
     {
-      "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
-      "authors": "Ben Salah, Arouri, Klibi & Smaoui",
+      "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
+      "authors": "Huang, Liu & Yu",
       "year": "2026",
-      "journal": "Sustainability (MDPI), 18, 5196",
-      "doi": "10.3390/su18105196",
+      "journal": "Systems (MDPI), 14, 559",
+      "doi": "10.3390/systems14050559",
       "date": "2026-06-05",
       "tags": [],
       "topics": [
         "碳市場/碳交易",
-        "能源市場",
-        "宏觀總體"
+        "綠債/ESG"
       ],
-      "pdf": "uploads/GCC_Energy_CO2_EKC.pdf",
+      "pdf": "uploads/China_CETS_ESG_Construction.pdf",
       "notes": [
-        "使用 STIRPAT + 固定效果 panel 模型",
-        "EKC 假說在海灣六國成立",
-        "能源消費是 CO₂ 排放最大驅動因子",
-        "建議 GCC 國家加速再生能源轉型"
+        "方法：PSM-DID（傾向得分匹配+雙重差分）",
+        "CETS 使營造企業 ESG 分數提高約 0.30 分",
+        "綠色技術創新中介效果 5.9%（部分中介）",
+        "政府補貼正向調節政策效果",
+        "異質性：僅國有企業與東部地區顯著"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-3856"
+      "id": "upload-2026-06-05-3578"
     },
     {
       "title": "Toward Carbon Neutrality in Vietnam: Analyzing the Role of Renewable Energy Consumption and Economic Growth Using Wavelet Coherence and Quantile-on-Quantile Approaches",
@@ -2814,52 +2836,30 @@
         "GDP 成長在不同分量下對 CO₂ 效果不一致"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-3298"
+      "id": "upload-2026-06-05-3481"
     },
     {
-      "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
-      "authors": "Huang, Liu & Yu",
+      "title": "Climate Policy Uncertainty and Renewable Energy Consumption in China",
+      "authors": "Zheng, Wang, Moldovan, Mihit & Nicolescu",
       "year": "2026",
-      "journal": "Systems (MDPI), 14, 559",
-      "doi": "10.3390/systems14050559",
+      "journal": "Sustainability (MDPI), 18, 5460",
+      "doi": "10.3390/su18115460",
       "date": "2026-06-05",
-      "tags": [],
-      "topics": [
-        "碳市場/碳交易",
-        "綠債/ESG"
+      "tags": [
+        "QARDL"
       ],
-      "pdf": "uploads/China_CETS_ESG_Construction.pdf",
+      "topics": [
+        "氣候風險/政策",
+        "潔淨能源"
+      ],
+      "pdf": "uploads/China_CPU_Renewable_Energy.pdf",
       "notes": [
-        "方法：PSM-DID（傾向得分匹配+雙重差分）",
-        "CETS 使營造企業 ESG 分數提高約 0.30 分",
-        "綠色技術創新中介效果 5.9%（部分中介）",
-        "政府補貼正向調節政策效果",
-        "異質性：僅國有企業與東部地區顯著"
+        "CPU→REC 有 Granger 因果（雙向時變不對稱）",
+        "使用滾窗 Granger 因果檢定 + 雙向因果分析",
+        "控制 EPU（經濟政策不確定性）、原油價格"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-2384"
-    },
-    {
-      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
-      "authors": "Sumba",
-      "year": "2026",
-      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
-      "doi": "10.1016/j.iref.2026.105445",
-      "date": "2026-06-05",
-      "tags": [],
-      "topics": [
-        "潔淨能源",
-        "宏觀總體"
-      ],
-      "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
-      "notes": [
-        "動態面板門檻模型 (DPT)+ 工具變數",
-        "EKC 假說在發展中國家成立",
-        "再生能源可加速 EKC 轉折",
-        "制度品質調節 EKC 形狀和轉折點"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-05-1960"
+      "id": "upload-2026-06-05-2888"
     }
   ]
 }
