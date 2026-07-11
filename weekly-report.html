@@ -51,7 +51,7 @@ body { font-family:'Noto Sans TC',sans-serif; background:var(--bg); color:var(--
 </head>
 <body>
 <div class="header">
-  <h1>📅 每週周報 (COT 原油·黃金·未平倉)</h1>
+  <h1>📅 每週周報 (COT 原油·黃金·公債)</h1>
   <a href="./">← 回首頁</a>
 </div>
 <div class="container" id="weekly-container">
@@ -87,7 +87,7 @@ async function loadWeekly() {
               <p>${s.content}</p>
             </div>
           `).join('') : ''}
-          ${detail.chart ? `<img class="chart-img" src="./周報/${detail.chart}" alt="COT Chart">` : ''}
+          ${detail.charts ? detail.charts.map(c => `<img class="chart-img" src="./周報/${c}" alt="COT Chart">`).join('') : (detail.chart ? `<img class="chart-img" src="./周報/${detail.chart}" alt="COT Chart">` : '')}
           <div class="meta">${detail.meta ? JSON.stringify(detail.meta).replace(/["{}]/g,'').replace(/,/g,' | ') : ''}</div>
         </div>`;
       } catch(e) {
