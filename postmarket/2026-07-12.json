@@ -1,0 +1,259 @@
+{
+  "date": "2026-07-12",
+  "source": "Yahoo Finance / 美股週末回顧",
+  "last_trading_day": "2026-07-10（五）",
+  "week": "2026-07-06 ~ 2026-07-10",
+  "indices": [
+    {
+      "name": "S&P 500",
+      "ticker": "^GSPC",
+      "close": 7575.39,
+      "daily_pct": 0.42,
+      "weekly_pct": 0.50,
+      "signal": "up"
+    },
+    {
+      "name": "道瓊",
+      "ticker": "^DJI",
+      "close": 52637.01,
+      "daily_pct": 0.29,
+      "weekly_pct": -0.79,
+      "signal": "down"
+    },
+    {
+      "name": "NASDAQ",
+      "ticker": "^IXIC",
+      "close": 26281.61,
+      "daily_pct": 0.29,
+      "weekly_pct": 0.61,
+      "signal": "up"
+    },
+    {
+      "name": "羅素2000",
+      "ticker": "^RUT",
+      "close": 2977.81,
+      "daily_pct": -0.49,
+      "weekly_pct": -1.05,
+      "signal": "down"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "^SOX",
+      "close": 12967.16,
+      "daily_pct": 0.06,
+      "weekly_pct": 0.52,
+      "signal": "up"
+    }
+  ],
+  "megatech": [
+    {
+      "name": "NVDA",
+      "close": 210.96,
+      "daily_pct": 4.03,
+      "weekly_pct": 7.88,
+      "signal": "up"
+    },
+    {
+      "name": "AAPL",
+      "close": 315.32,
+      "daily_pct": -0.28,
+      "weekly_pct": 0.85,
+      "signal": "up"
+    },
+    {
+      "name": "MSFT",
+      "close": 385.10,
+      "daily_pct": 0.19,
+      "weekly_pct": -0.42,
+      "signal": "down"
+    },
+    {
+      "name": "AMZN",
+      "close": 245.34,
+      "daily_pct": -0.69,
+      "weekly_pct": 0.48,
+      "signal": "up"
+    },
+    {
+      "name": "GOOGL",
+      "close": 357.18,
+      "daily_pct": -0.48,
+      "weekly_pct": -2.53,
+      "signal": "down"
+    },
+    {
+      "name": "META",
+      "close": 669.21,
+      "daily_pct": 5.97,
+      "weekly_pct": 11.48,
+      "signal": "up"
+    },
+    {
+      "name": "TSLA",
+      "close": 407.76,
+      "daily_pct": 0.30,
+      "weekly_pct": -2.86,
+      "signal": "down"
+    },
+    {
+      "name": "TSM",
+      "close": 434.11,
+      "daily_pct": -0.65,
+      "weekly_pct": -3.91,
+      "signal": "down"
+    },
+    {
+      "name": "AMD",
+      "close": 557.89,
+      "daily_pct": 2.04,
+      "weekly_pct": 1.06,
+      "signal": "up"
+    },
+    {
+      "name": "AVGO",
+      "close": 399.97,
+      "daily_pct": -0.28,
+      "weekly_pct": 6.97,
+      "signal": "up"
+    }
+  ],
+  "sector_etfs": [
+    {
+      "name": "XLF (金融)",
+      "close": 55.71,
+      "daily_pct": 0.31,
+      "weekly_pct": -0.77,
+      "signal": "down"
+    },
+    {
+      "name": "XLK (科技)",
+      "close": 185.78,
+      "daily_pct": 0.23,
+      "weekly_pct": 1.20,
+      "signal": "up"
+    },
+    {
+      "name": "XLE (能源)",
+      "close": 55.08,
+      "daily_pct": 0.47,
+      "weekly_pct": 3.67,
+      "signal": "up"
+    },
+    {
+      "name": "XLV (醫療)",
+      "close": 160.84,
+      "daily_pct": -0.82,
+      "weekly_pct": -0.69,
+      "signal": "down"
+    },
+    {
+      "name": "XLI (工業)",
+      "close": 181.92,
+      "daily_pct": 0.45,
+      "weekly_pct": -1.96,
+      "signal": "down"
+    },
+    {
+      "name": "XLP (消費必需品)",
+      "close": 84.12,
+      "daily_pct": 1.11,
+      "weekly_pct": 0.02,
+      "signal": "up"
+    },
+    {
+      "name": "XLY (非必需消費)",
+      "close": 117.24,
+      "daily_pct": 0.33,
+      "weekly_pct": -0.65,
+      "signal": "down"
+    },
+    {
+      "name": "XLU (公用事業)",
+      "close": 45.41,
+      "daily_pct": 0.62,
+      "weekly_pct": 0.24,
+      "signal": "up"
+    },
+    {
+      "name": "XLB (原物料)",
+      "close": 50.89,
+      "daily_pct": 1.25,
+      "weekly_pct": -2.10,
+      "signal": "down"
+    },
+    {
+      "name": "SMH (半導體)",
+      "close": 611.03,
+      "daily_pct": 0.54,
+      "weekly_pct": 1.11,
+      "signal": "up"
+    }
+  ],
+  "macro": {
+    "DXY": {
+      "name": "美元指數",
+      "value": 100.97,
+      "daily_pct": 0.03,
+      "weekly_pct": 0.12
+    },
+    "Gold": {
+      "name": "黃金",
+      "value": 4104.10,
+      "daily_pct": -0.64,
+      "weekly_pct": -1.23
+    },
+    "WTI": {
+      "name": "原油",
+      "value": 71.41,
+      "daily_pct": -0.93,
+      "weekly_pct": 4.17
+    },
+    "BTC": {
+      "name": "比特幣",
+      "value": 64127,
+      "daily_pct": 1.48,
+      "weekly_pct": 0.21
+    },
+    "10Y": {
+      "name": "10年債殖利率",
+      "value": "4.57%",
+      "daily_pct": 0.66,
+      "weekly_pct": 0.88
+    },
+    "VIX": {
+      "name": "VIX恐慌指數",
+      "value": 15.03,
+      "daily_pct": -5.11,
+      "weekly_pct": -3.47
+    }
+  },
+  "week_highlights": {
+    "strongest_sector": "XLE (能源 +3.67%)",
+    "weakest_sector": "XLB (原物料 -2.10%)",
+    "best_stock": "META (+11.48%)",
+    "worst_stock": "TSM (-3.91%)",
+    "key_theme": "V型反轉週，S&P 500 週三觸底後連兩日反彈收漲；META 暴漲11.48% 為最大亮點，AI 主線穩固；能源板塊受油價大漲+4.17%帶動"
+  },
+  "weekend_summary": {
+    "major_events": [
+      "本週 S&P 500 呈現 V 型反轉，週一至週三下跌觸及 7,421.82 低點，隨後週四週五強彈收復失地",
+      "META +11.48% 領漲七巨頭，市場對其 AI 變現能力持續樂觀",
+      "NVDA +7.88% 突破 $210，受 Blackwell 架構與 AI 晶片需求支撐",
+      "原油本週大漲 4.17% 至 $71.41，OPEC+ 減產與夏季旺季需求推動",
+      "TSM -3.91% 為本週最弱大型股，地緣政治風險與半導體管制壓力持續",
+      "美元指數 DXY 在 101 附近整理，10年債殖利率升至 4.57%",
+      "VIX 從週高 18.91 回落至 15.03，市場情緒顯著回穩"
+    ]
+  },
+  "monday_outlook": {
+    "direction": "中性偏多",
+    "summary": "上週美股 V 型反轉，S&P 500 週漲 0.50%、NASDAQ 週漲 0.61%。META +11.48% 為最強大型股，AI 主題持續主導。能源板塊 XLE +3.67% 受油價大漲帶動最強。小型股羅素2000 週跌 -1.05% 顯示市場廣度不足。下週最大變數為週三 CPI 數據，決定聯準會降息路徑預期。期貨溢價約 +0.59% 為正常基差水準。",
+    "focus": [
+      "週三 7/15：6月 CPI 消費者物價指數（下週最大變數🔥）",
+      "週四 7/16：6月 PPI + 初領失業救濟金",
+      "整週：聯準會官員密集談話",
+      "整週：Q2 財報季預告（銀行股先行）",
+      "週五 7/17：密西根大學消費者信心初值"
+    ]
+  }
+}
