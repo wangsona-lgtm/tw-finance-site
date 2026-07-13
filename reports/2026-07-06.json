@@ -95,6 +95,12 @@
         "note": "7/3 美國獨立紀念日休市，數據參考7/2收盤與CFD報價",
         "source": "Yahoo Finance / Trading Economics / CME FedWatch"
       }
+    },
+    {
+      "type": "premarket-analysis",
+      "title": "📊 台股盤前分析 | 2026-07-06（一）",
+      "content": "# Cron Job: 台股盤前分析 (FAILED)\n\n**Job ID:** 2edfc497e5ad\n**Run Time:** 2026-07-06 07:08:31\n**Schedule:** 0 7 * * 1-5\n\n## Prompt\n\n[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatically delivered to the user — do NOT use send_message or try to deliver the output yourself. Just produce your report/output as your final response and the system handles the rest. SILENT: If there is genuinely nothing new to report, respond with exactly \"[SILENT]\" (nothing else) to suppress delivery. Never combine [SILENT] with content — either report your findings normally, or say [SILENT] and nothing more.]\n\n請整理今天（台灣時間）的台股盤前分析，包含以下內容：\n\n## 第一部分：隔夜美股與總經\n用 yfinance 抓取昨天（前一個交易日）美股完整數據；用 twstock 抓取台股相關數據：\n1. **三大指數**：S&P 500 (^GSPC)、道瓊 (^DJI)、NASDAQ (^IXIC)、羅素2000 (^RUT)、費城半導體 (^SOX)\n2. **重磅科技股**：NVDA、AAPL、MSFT、AMZN、GOOGL、META、TSLA、TSM、AMD、AVGO\n3. **板塊ETF**：XLF、XLK、XLE、XLV、XLI、XLP、XLY、XLU、XLB、SMH\n4. **總經商品**：美元指數 (DX-Y.NYB)、黃金 (GC=F)、原油 (CL=F)、比特幣 (BTC-USD)、10年債殖利率 (^TNX)、VIX (^VIX)\n\n## 第二部分：台股盤前重點\n1. **台指期夜盤**：查詢台指期貨夜盤收盤價與漲跌\n2. **台積電ADR**：TSM 昨日收盤價與盤後表現，計算與2330溢價\n3. **外資期貨籌碼**：如有資料，整理外資台指期淨多單變化\n4. **今日重要事件**：當日可能影響台股的國際事件（聯準會動向、原油、匯率等）\n5. **關鍵價位**：預測開盤方向、關鍵支撐/壓力與族群\n\n## 第三部分：今日推薦個股\n根據以上分析，推薦2-4檔今日可關注的個股，附上簡短理由。\n\n## 第四部分：昨日推薦檢討\n讀取 ~/.hermes/recommendations/ 目錄中最新日期的檢討紀錄，將之前的推薦結果與實際表現進行比對檢討，誠實標註✅命中或❌失誤，並分析原因與改進方向。\n\n格式要求：清晰易讀，重點用 **bold** 標示，漲跌用 emoji 🟢🔴 標示。\n注意：yfinance 抓取昨天日期可用 datetime.now() - timedelta(days=1) 算出，要確認當天是交易日，若是週末則抓週五。\n\n## Error\n\n```\nRuntimeError: HTTP 429: Weekly usage limit reached. Resets in 51min. To continue using this model now, enable usage from your available balance: https://opencode.ai/workspace/wrk_01KV1YC2YREYG88BYGT3QVHP8R/go\n```",
+      "icon": "🌅"
     }
   ],
   "meta": {
