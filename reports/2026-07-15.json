@@ -1,0 +1,103 @@
+{
+  "date": "2026-07-15",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 7月15日（三）",
+  "sections": [
+    {
+      "title": "IRGC Vows 'Not A Drop Of Oil & Gas Will Be Exported' From Region Amid Sustained Cross-Gulf Fighting — 伊朗革命衛隊揚言「一滴油氣都不准出口」，海灣衝突持續升溫",
+      "category": "geopolitics",
+      "summary": "伊朗與美國在波斯灣的軍事衝突持續升溫。伊朗革命衛隊（IRGC）透過官方媒體發表聲明，揚言「只要美國邪惡勢力留在該地區，一滴油氣都不准出口」。與此同時，美國中央司令部（CENTCOM）對伊朗發動新一輪空襲，打擊其攻擊商船的能力。川普政府宣布對伊朗港口實施全面封鎖，並放棄原本的20%通行費計畫，改以貿易與投資協議取代。荷姆茲海峽多艘油輪遭襲擊，造成船員傷亡，Stolt Tankers 管理的化學品船引擎室起火。ABC 報導美國對伊朗的空襲已持續數小時。IRGC 強調伊朗在戰時必須「完全控制荷姆茲海峽」。區域衝突進一步擴大，傳出胡塞武裝向沙烏地阿拉伯發射飛彈。Polymarket 賭盤顯示，認為荷姆茲海峽交通能在8月31日前恢復正常的機率僅12%。",
+      "url": "https://www.zerohedge.com/geopolitical/iran-launches-brazen-attacks-more-tankers-hormuz-killing-crewmembers-after-araghchi",
+      "timestamp": "2026-07-15",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_6.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Big-Banks Good, Breadth Bad, Big-Blue Ugly; Bitcoin, Bullion, & Bonds Bid On Benign-Flation — 銀行好、廣度差、藍籌慘；CPI降溫推升比特幣、黃金、債券",
+      "category": "market",
+      "summary": "今日市場多空交錯：銀行財報優於預期（大銀行表現佳）、但 IBM 發布震撼預警導致股價暴跌、CPI 數據降溫緩解鷹派擔憂、伊朗衝突推升油價、川普言論與 Warsh 的國會證詞交織。最終多數股指下跌（市場廣度惡化），公債殖利率與升息預期雙雙下滑。黃金、比特幣與原油同步走高。整體呈現「銀行好、廣度差、藍籌慘」的格局。核心矛盾在於通膨放緩與地緣風險之間的拉鋸。",
+      "url": "https://www.zerohedge.com/markets/big-banks-good-breadth-bad-big-blue-ugly-bitcoin-bullion-bonds-bid-benign-flation",
+      "timestamp": "2026-07-15",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Healthcare Stocks Ready To Star In Rotation Trade — 醫療保健股準備成為市場輪動新星",
+      "category": "market",
+      "summary": "Bloomberg 市場策略師 Michael Msika 分析指出，醫療保健股有望成為市場輪動中的大贏家。隨著資金從成長型與科技股轉向防禦性板塊，醫療保健產業的基本面展望正在改善，具備成為資金避風港的條件。在宏觀不確定性升高的環境下，醫療保健股的防禦屬性與穩定現金流將吸引機構資金進駐。",
+      "url": "https://www.zerohedge.com/markets/healthcare-stocks-ready-star-rotation-trade",
+      "timestamp": "2026-07-15",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Rubio Pledges To Dismantle International Criminal Court's Threat To US Sovereignty — Rubio誓言瓦解國際刑事法院對美國主權的威脅",
+      "category": "geopolitics",
+      "summary": "美國國務卿 Rubio 宣布啟動一場「瓦解國際刑事法院（ICC）對美國主權威脅」的外交行動。國務院7月13日聲明指出，考慮採取的措施包括：聯繫外國政府揭露 ICC 的濫權行為、呼籲各國退出 ICC、撤銷 ICC 人員簽證與實施旅行禁令、加強對 ICC 及附屬機構的制裁、對拒絕拒絕 ICC 裁決的依賴美援國家加大施壓。聲明強調「在瓦解 ICC 對美國人威脅的行動中，沒有任何外交選項會被排除」。ICC 成立於2002年，旨在起訴種族滅絕、戰爭罪與危害人類罪。美國從未加入 ICC，但 ICC 規約賦予其對非成員國國民在成員國領土上犯罪的管轄權。Rubio 早在2024年12月即表示 ICC 對以色列發出逮捕令是「政治化行動」，為所有國家樹立危險先例。",
+      "url": "https://www.zerohedge.com/geopolitical/rubio-pledges-dismantle-international-criminal-courts-threat-us-sovereignty",
+      "timestamp": "2026-07-15",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Offload Risks Onto The Bottom 90% And Immiseration Follows — 風險向下轉嫁底層90%，貧困化隨之而來",
+      "category": "market",
+      "summary": "Charles Hugh Smith 在其部落格發表深度分析，闡述過去50年美國經濟的本質——風險持續從頂層向底層90%轉嫁。核心論點：現行體制將收益私有化、成本社會化──前10%的人獲取絕大多數利益，而成本、損失與風險則被轉嫁給底層90%大眾和生態環境。數據顯示：底層50%家庭（約1.7億人）僅擁有全國金融資產的2.5%，而頂層0.1%擁有16.6%（是底層50%的6.6倍）。關鍵機制在於體制偏袒資本而非勞動：工資收入需繳納15.3%社保/醫療稅加上最高22%所得稅，資本利得稅僅20%且僅在賣出時課徵。富人透過抵押資產借款來規避資本利得稅，進一步擴大財富差距。作者認為這種結構性不公導致了「貧困化」（immiseration）的必然結果。",
+      "url": "https://www.zerohedge.com/markets/offload-risks-bottom-90-and-immiseration-follows",
+      "timestamp": "2026-07-15",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_5.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Stocks and bonds bid as soft US CPI trims hawkish bets — Newsquawk US Market Wrap — 美國CPI降溫削弱鷹派押注，股債雙漲",
+      "category": "market",
+      "summary": "7月14日美國市場全面上揚，股債雙漲。核心驅動力是低於預期的 CPI 報告（所有指標均較預期涼爽），大幅削弱了近期 Fed 官員的鷹派言論（如 Waller 曾警告若核心通膨持續強勁將考慮近期升息）。CPI 降溫後美債殖利率與美元即時下行，美股收復盤初因 IBM 財報預警造成的跌幅。油價上漲則受美伊衝突持續升級推動。Fed 主席 Warsh 在眾議院作證時維持雙重使命承諾與2%通膨目標。Fed 官員 Goolsbee 稱6月 CPI「出奇溫和」，但強調不能過度反應於單月數據。焦點轉向即將公布的中國活動數據、歐元區工業生產、美國 PPI、以及 Fed 褐皮書。",
+      "url": "https://www.zerohedge.com/markets/stocks-and-bonds-bid-soft-us-cpi-trims-hawkish-bets-newsquawk-us-market-wrap",
+      "timestamp": "2026-07-15",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Lucid Calls Bankruptcy Report 'Completely False' As Shares Stage V-Shaped Recovery — Lucid駁斥破產傳聞，股價V型反彈",
+      "category": "market",
+      "summary": "電動車新創 Lucid 股價上演驚天逆轉。Electric-Vehicles.com 報導稱 Lucid 正考慮下市或聲請第11章破產保護，顧問公司 AlixPartners 已被要求評估這些方案。消息一出，LCID 股價盤中暴跌近50%，多次觸發交易熔斷。然而 Lucid 公關主管 Nick Twork 在 X 平台強烈否認，稱報導「完全錯誤」，公司流動性充足可支撐營運至明年，且未成立任何特別委員會探討這些方案。AlixPartners 僅協助公司改善營運，從未建議破產。在否認聲明發布後，股價在尾盤上演 V 型反彈。值得注意的是，Lucid 放空比例高達37.22%（約6,360萬股），空頭可能利用暴跌進行回補。",
+      "url": "https://www.zerohedge.com/markets/lucid-crashes-report-going-private-or-chapter-11",
+      "timestamp": "2026-07-15",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_6.png",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_7.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Big Blew It! IBM Crashes Most Since '60s Amid CapEx Woes; Goldman Warns Over 'Software Bear Case' — IBM暴跌創60年代以來最大跌幅，高盛警告「軟體熊市」",
+      "category": "market",
+      "summary": "IBM 發布第二季初步財報預警，震撼華爾街。Q2 營收預估僅172億美元（低於預期的178億），EPS 僅2.93美元（低於預期的3.02）。CEO Arvind Krishna 歸咎於「客戶資本支出優先級轉變」——企業正在將預算大舉轉向 AI 基礎設施（伺服器、儲存、記憶體），排擠傳統 IT 服務與軟體採購。IBM 股價盤初暴跌24%，若收盤維持此跌幅將創1968年以來最大單日跌幅。Goldman Sachs 分析師對此發出「軟體熊市」警告，認為這可能預示著其他 IT 服務與軟體公司將面臨類似壓力。UBS 分析師指出 AI 帶動的基礎設施搶購潮正在導致企業延後或取消傳統軟體採購。此趨勢被認為是整個企業科技板塊的系統性風險訊號。",
+      "url": "https://www.zerohedge.com/markets/ibm-crashes-most-1987-customers-abruptly-shift-capex-spending",
+      "timestamp": "2026-07-15",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_4.png",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_7.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "The Stock Market's Breadth Keeps Getting Narrower — 美股市場廣度持續惡化",
+      "category": "market",
+      "summary": "Bloomberg 宏觀策略師 Simon White 指出，美國大型股指數的集中度持續攀升，使市場更容易受到衝擊。少數權值股主導指數表現的現象日益極端，市場廣度持續惡化。當集中度達到極端水平時，任何針對這些權值股的負面衝擊都可能引發市場劇烈波動。",
+      "url": "https://www.zerohedge.com/markets/stock-markets-breadth-keeps-getting-narrower",
+      "timestamp": "2026-07-15",
+      "images": [],
+      "premium": true
+    }
+  ]
+}
