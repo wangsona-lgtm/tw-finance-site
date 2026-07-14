@@ -99,5 +99,215 @@
       "images": [],
       "premium": true
     }
-  ]
+  ],
+  "premarket_analysis": {
+    "title": "台股盤前分析 — 2026-07-15（週三）",
+    "generated_at": "2026-07-15 07:10 CST",
+    "summary": "美股半導體強彈，SOX +2.54%、NVDA +4.06% 領漲科技股，VIX -3.85% 恐慌降溫。台股昨遭恐慌性殺盤後留下長下影線，今日可望隨費半強彈展開技術性反彈。",
+    "overnight_us": {
+      "summary": "四大指數全數收紅，費半 +2.54% 為領頭羊",
+      "indexes": {
+        "S&P 500": {
+          "close": 7543.59,
+          "change_pct": 0.38,
+          "direction": "up"
+        },
+        "道瓊": {
+          "close": 52508.27,
+          "change_pct": 0.02,
+          "direction": "up"
+        },
+        "NASDAQ": {
+          "close": 26107.01,
+          "change_pct": 0.9,
+          "direction": "up"
+        },
+        "羅素2000": {
+          "close": 2964.76,
+          "change_pct": 0.39,
+          "direction": "up"
+        },
+        "費城半導體": {
+          "close": 12661.93,
+          "change_pct": 2.54,
+          "direction": "up"
+        }
+      },
+      "key_stocks": {
+        "NVDA": {
+          "close": 211.8,
+          "change_pct": 4.06,
+          "direction": "up"
+        },
+        "TSM": {
+          "close": 420.39,
+          "change_pct": -0.28,
+          "direction": "down",
+          "after_hours": 0.48
+        },
+        "AMD": {
+          "close": 548.13,
+          "change_pct": 2.57,
+          "direction": "up"
+        },
+        "GOOGL": {
+          "close": 359.51,
+          "change_pct": 1.99,
+          "direction": "up"
+        },
+        "AAPL": {
+          "close": 314.86,
+          "change_pct": -0.77,
+          "direction": "down"
+        },
+        "MSFT": {
+          "close": 384.93,
+          "change_pct": -1.55,
+          "direction": "down"
+        }
+      },
+      "sectors": {
+        "SMH": {
+          "name": "半導體",
+          "change_pct": 2.51,
+          "direction": "up",
+          "rank": "最強"
+        },
+        "XLK": {
+          "name": "科技",
+          "change_pct": 1.29,
+          "direction": "up",
+          "rank": "強"
+        },
+        "XLV": {
+          "name": "醫療",
+          "change_pct": -1.93,
+          "direction": "down",
+          "rank": "最弱"
+        },
+        "XLP": {
+          "name": "必需消費",
+          "change_pct": -1.38,
+          "direction": "down",
+          "rank": "弱"
+        }
+      },
+      "macro": {
+        "美元指數": {
+          "close": 100.94,
+          "change_pct": -0.33,
+          "direction": "down"
+        },
+        "黃金期貨": {
+          "close": 4055.3,
+          "change_pct": 1.46,
+          "direction": "up"
+        },
+        "原油期貨": {
+          "close": 79.93,
+          "change_pct": 2.29,
+          "direction": "up"
+        },
+        "比特幣": {
+          "close": 64875.58,
+          "change_pct": 4.24,
+          "direction": "up"
+        },
+        "10年債殖利率": {
+          "close": 4.585,
+          "change_pct": -0.52,
+          "direction": "down"
+        },
+        "VIX": {
+          "close": 16.5,
+          "change_pct": -3.85,
+          "direction": "down"
+        }
+      }
+    },
+    "tw_market": {
+      "prior_close": 44737.95,
+      "prior_change": -642.57,
+      "prior_change_pct": -1.42,
+      "prior_low": 43654.04,
+      "prior_volume_bnt": 1178.6,
+      "note": "開高走低巨幅震盪，恐慌殺盤後留長下影線，止跌訊號"
+    },
+    "tsm_adr": {
+      "adr_close": 420.39,
+      "adr_change_pct": -0.28,
+      "after_hours_pct": 0.48,
+      "tw_close": 2420.0,
+      "premium_pct": 12.91,
+      "note": "ADR收跌但盤後轉正，溢價12.91%顯示外資仍看好"
+    },
+    "trading_plan": {
+      "direction": "偏多",
+      "open_range": "44,800 ~ 45,200",
+      "support_1": 44200,
+      "support_2": 43654,
+      "resistance_1": 45000,
+      "resistance_2": 45380,
+      "key_events": [
+        "本週 Fed 褐皮書（Beige Book）",
+        "7/16（四）美國 CPI 數據",
+        "7/17（五）美國 PPI 數據",
+        "原油 $79.93 逼近 $80 大關"
+      ],
+      "strong_sectors": [
+        "半導體權值股",
+        "AI/伺服器",
+        "石化/塑化"
+      ]
+    },
+    "recommendations": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "direction": "偏多",
+        "entry": 2420,
+        "target": "2,460~2,500",
+        "stop": 2380,
+        "reasoning": "SOX強彈 + TSM ADR盤後轉正，2420為區間下緣具強支撐"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "direction": "偏多（反彈操作）",
+        "entry": "3,600~3,660",
+        "target": "3,780~3,850",
+        "stop": 3550,
+        "reasoning": "昨日恐慌暴跌-4.31%為超跌反彈信號"
+      },
+      {
+        "ticker": "6505",
+        "name": "台塑化",
+        "direction": "偏多（續抱/部分獲利）",
+        "entry": "64以下",
+        "target": "68~70",
+        "stop": 63.0,
+        "reasoning": "原油續漲至$79.93創近期新高，石化利差擴大"
+      },
+      {
+        "ticker": "00635U",
+        "name": "期元大S&P黃金",
+        "direction": "逢低布局",
+        "entry": "4,000~4,050",
+        "target": "4,150~4,200",
+        "stop": "-3%",
+        "reasoning": "黃金+1.46%自$4,000反彈，美元跌破101有利金價"
+      }
+    ],
+    "review_summary": {
+      "prev_hits": "6505台塑化 +12.59%（連續命中）、1301台塑 +5.65%",
+      "prev_misses": "6669緯穎 -2.68%、3711日月光 -5.32%",
+      "lesson": "低基期+實質催化劑(油價)為最有效策略；高溢價半導體股在大盤劇烈回檔時跌幅加倍"
+    },
+    "risks": [
+      "今晚美國CPI公布前夕，市場可能觀望，反彈幅度受限",
+      "原油$80關卡可能引發獲利了結",
+      "長下影線需確認今日能站穩44,800以上",
+      "外資期現貨同步偏空，反彈若無量恐只是技術性修正"
+    ]
+  }
 }
