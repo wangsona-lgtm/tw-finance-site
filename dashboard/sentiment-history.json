@@ -238,5 +238,17 @@
     "pc_oi_ratio": 124.42,
     "futures_foreign_net": "-561,082",
     "futures_total_net": "-847,470"
+  },
+  {
+    "date": "2026-07-14",
+    "inst": {
+      "foreign": -51892812507,
+      "investment_trust": 14824152263,
+      "dealer_total": -38291146262
+    },
+    "pc_ratio": 91.77,
+    "pc_oi_ratio": 99.31,
+    "futures_foreign_net": "-561,082",
+    "futures_total_net": "-847,470"
   }
 ]
