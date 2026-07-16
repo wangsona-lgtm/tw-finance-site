@@ -1,0 +1,121 @@
+{
+  "date": "2026-07-17",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 7月17日（五）",
+  "sections": [
+    {
+      "title": "Good Sentiment, Bad (Home) Sales, Ugly Semis; Stocks, Bonds, & Gold Weak Amid Summer Doldrums — 數據好壞參半：信心強、房市弱、半導體慘，股債金同步走低",
+      "category": "market",
+      "summary": "Earnings 季開跑，但市場陷入夏季低迷。美國 7 月 NAHB 房屋市場指數降至 41（前值 43），低於預期，反映房市持續不振；但 6 月零售銷售月增 0.1%（預期 0.0%），符合預期；初領失業金人數降至 23.6 萬（預期 24.0 萬），就業市場仍穩健。整體呈現「硬數據弱、軟數據強」的總經矛盾格局。半導體板塊持續承壓，拖累大盤。債市與黃金同步走弱，反映市場對聯準會政策路徑仍無共識。在夏季交易量縮減的背景下，市場缺乏明確方向。",
+      "url": "https://www.zerohedge.com/markets/good-sentiment-bad-home-sales-ugly-semis-stocks-bonds-gold-weak-amid-summer-doldrums",
+      "timestamp": "2026-07-17",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "US Launches 6th Consecutive Night Of Strikes On Iran Amid Threats Of 'Infrastructure For Infrastructure' War — 美軍連續第六晚空襲伊朗，「基礎設施換基礎設施」戰爭威脅升溫",
+      "category": "geopolitics",
+      "summary": "美國中央司令部宣布對伊朗發動第六波空襲，這是自川普總統下令打擊伊朗以來連續第六晚的軍事行動。伊朗最高領袖哈米尼的顧問發出「基礎設施換基礎設施」的戰爭威脅，暗示伊朗將報復攻擊美國及其盟友的基礎設施目標。IRGC 強調伊朗在戰時必須「完全控制荷姆茲海峽」。伊朗宣布將於近期舉行大規模軍事演習，測試新型彈道飛彈與無人機。與此同時，多艘油輪在波斯灣遭襲擊，Stolt Tankers 管理的化學品船引擎室起火。區域衝突正從波斯灣向紅海擴散。",
+      "url": "https://www.zerohedge.com/geopolitical/iran-warns-us-infrastructure-infrastructure-war-will-control-hormuz-unbreakable-read",
+      "timestamp": "2026-07-17",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_5.jpg"
+      ],
+      "premium": false
+    },
+    {
+      "title": "'Shock Risk Is Real': BofA Quants Warn As Stock/Index Vol Spread Nears DotCom Extremes — 美銀量化團隊警告：個股/指數波動率差逼近網路泡沫極限，衝擊風險真實存在",
+      "category": "market",
+      "summary": "美銀首席量化分析師 Riddhi Prasad 發布報告，警告個股與指數之間的波動率差距正在逼近網路泡沫時代的極端水準。指數波動率（VIX）維持在低檔，但個股選擇權隱含波動率持續攀升，顯示市場對大型權值股存在高度不確定性，而指數層面的恐慌反而被大盤權重股掩蓋。此波動率背離極端水準，一旦發生衝擊事件，個股層面的波動將迅速擴散至指數層面。報告標題直指「衝擊風險是真實的」（Shock Risk Is Real），提醒投資人對目前看似平靜的大盤保持警惕。",
+      "url": "https://www.zerohedge.com/markets/shock-risk-real-bofa-quants-warns-stockindex-vol-spread-nears-dotcom-extremes",
+      "timestamp": "2026-07-17",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "What To Know About Iran's Pickaxe Mountain — 伊朗「鎬山」核設施：你需要知道的事",
+      "category": "geopolitics",
+      "summary": "科學與國際安全研究所（ISIS）發表專文，詳解伊朗「鎬山」（Pickaxe Mountain）核設施。川普總統在 Hugh Hewitt 節目中明確表示該設施在美國打擊清單上。Pickaxe Mountain 是伊朗最具戰略價值的核設施之一，位於深山地底，具備極強的防護能力。該設施的主要功能包括：離心機製造與儲存、濃縮鈾生產與儲存、以及核武器相關研發。文章詳細分析了該設施的地理位置、技術規格、防禦工事、以及美軍可能採取的打擊方案（包括 B2 轟炸機搭載 MOP 鑽地炸彈）。分析指出，成功摧毀 Pickaxe Mountain 需要情報精準定位與多次穿透打擊。",
+      "url": "https://www.zerohedge.com/geopolitical/what-know-about-irans-pickaxe-mountain",
+      "timestamp": "2026-07-17",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_5.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_6.jpg"
+      ],
+      "premium": false
+    },
+    {
+      "title": "Market Is So Risk-On That Path Higher Looks Tough — 市場風險偏好已極度樂觀，上漲空間有限",
+      "category": "market",
+      "summary": "Bloomberg 市場策略師 Michael Msika 指出，看漲的股權投資人已完全擁抱 Goldilocks 情境（經濟不過熱也不過冷），風險偏好指標觸及極端水準，以至於難以判斷什麼因素能觸發下一波上漲。市場對聯準會降息的預期已在價格中充分反映，美債殖利率曲線走陡反映市場預期通膨仍具韌性。散戶投資人情緒指標達到多年高點，機構投資人的現金水位降至歷史低點。在幾乎沒有剩餘買盤動能的情況下，市場更容易受到負面意外衝擊。作者提示過度樂觀本身即為風險。",
+      "url": "https://www.zerohedge.com/markets/market-so-risk-path-higher-looks-tough",
+      "timestamp": "2026-07-17",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "Netflix & Spill: Streamer Smashed To 2 Year Low After Forecast Misses Across The Board — Netflix 全面低於預期，股價暴跌至兩年新低",
+      "category": "market",
+      "summary": "Netflix 發布財報後股價暴跌至兩年新低。自去年 7 月歷史高點 $134 以來，NFLX 已累計下跌近 50%。Q2 業績全面低於預期：營收 98.7 億美元（預期 101.2 億）、EPS $4.12（預期 $4.56）、新增訂戶僅 340 萬（預期 510 萬）。管理層將財測下調歸因於：競爭加劇（Disney+、Max、Apple TV+ 持續搶佔市佔）、內容成本上升、以及北美市場接近飽和。管理層透露正在考慮推出低價廣告方案以挽回用戶。股價盤後繼續下跌，分析師紛紛下調目標價。這可能是串流媒體產業從成長期轉向成熟期的又一個信號。",
+      "url": "https://www.zerohedge.com/markets/netflix-spill-streamer-smashed-2-year-low-after-forecast-misses-across-board",
+      "timestamp": "2026-07-17",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_5.png"
+      ],
+      "premium": false
+    },
+    {
+      "title": "Watch Live: All Eyes On SpaceX's First Starship Launch Since Its IPO — SpaceX IPO 後首次 Starship 發射，全球關注",
+      "category": "market",
+      "summary": "SpaceX 預定於週四晚間進行 Starship 火箭的第 13 次試飛，這是該公司於 6 月完成首次公開募股（IPO）以來的首次發射任務。根據 ABC 報導，這次發射備受市場關注——SpaceX IPO 定價 $42 每股，掛牌後股價一度飆升至 $78，目前回落至 $55 附近。本次 Starship 任務的成敗將直接影響市場對 SpaceX 估值與技術實力的判斷。發射視窗將於美東時間晚間開放，全程直播。",
+      "url": "https://www.zerohedge.com/markets/all-eyes-spacexs-first-starship-launch-its-ipo",
+      "timestamp": "2026-07-17",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_4.jpg"
+      ],
+      "premium": false
+    },
+    {
+      "title": "Indices hit by AI stocks but breadth remains positive — Newsquawk US Market Wrap — AI股拖累指數，但市場廣度仍為正值",
+      "category": "market",
+      "summary": "美股收盤走低，科技權值股續跌拖累指數，但中小型股表現穩健，市場廣度維持正值。總經方面：美國 6 月零售銷售符合預期、初領失業金人數下降；Fed 官員 Logan 表示需要「適度提高」政策利率以應對通膨壓力。IBM 暴跌拖累道瓊；Netflix 財報遜於預期拖累串流媒體板塊。VIX 指數小幅回升至 17.5。原油價格在地緣風險升溫下維持高檔，黃金在 $4,000 關卡附近整理。市場正消化 AI 資本支出轉向對傳統 IT 服務的衝擊效應。",
+      "url": "https://www.zerohedge.com/markets/indices-hit-ai-stocks-breadth-remains-positive-newsquawk-us-market-wrap",
+      "timestamp": "2026-07-17",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "Iran Tells Houthis To Close Red Sea Energy Chokepoint If Trump Bombs Power Grid — 伊朗要求胡塞封鎖紅海能源咽喉，若川普轟炸伊朗電網",
+      "category": "geopolitics",
+      "summary": "伊朗已向葉門胡塞武裝下達指令：如果美國總統川普下令轟炸伊朗電網，胡塞就必須關閉 Bab el-Mandeb 海峽這條紅海能源運輸咽喉。胡塞武裝長期以來一直警告其有能力關閉紅海石油航線，但迄今在不斷擴大的海灣區域衝突中保持克制，衝突焦點主要集中在伊朗本土。此指令意味著衝突將從波斯灣蔓延至紅海，形成兩線作戰的格局。Bab el-Mandeb 海峽是全球最重要的石油運輸通道之一，每天約有 400 萬桶原油和石油產品通過此處。若被封鎖，將對全球能源供應鏈造成毀滅性打擊，油價可能飆升至三位數。",
+      "url": "https://www.zerohedge.com/geopolitical/iran-tells-houthis-close-red-sea-energy-chokepoint-if-trump-bombs-power-grid",
+      "timestamp": "2026-07-17",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_4.jpg"
+      ],
+      "premium": false
+    },
+    {
+      "title": "'The AI Market Has Become A Rubber Band': Top Goldman Traders On 'Potential Breaking Points' — 「AI市場已成為橡皮筋」：高盛頂級交易員談潛在斷裂點",
+      "category": "market",
+      "summary": "高盛 EMEA 股權對沖基金主管 Mark Wilson 與 EMEA 股權流動中介主管 Rich Privorotsky 聯合撰文，探討超大型企業（MAMAA：微軟、亞馬遜、Alphabet、Meta）AI 資本支出的可持續性。核心問題：超大型企業投入數千億美元（經常超過營運現金流）於 AI 基礎設施，能否獲得足夠的投資回報率？他們指出這是一場經典的基礎設施軍備競賽，類似過去雲端/搜尋時代的建設週期——先行者佔有優勢，但過度投資的風險也真實存在。文章標題「橡皮筋」暗示市場已拉伸到極限，臨界點可能隨時到來。",
+      "url": "https://www.zerohedge.com/markets/ai-market-has-become-rubber-band-top-goldman-traders-path-ai-roi",
+      "timestamp": "2026-07-17",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "A Headwind For Equities Going Forward; JPMorgan Sees The Need For Deleveraging In ETFs — 摩根大通：股市面臨去槓桿逆風，ETF 與融資帳戶將進一步縮減",
+      "category": "market",
+      "summary": "摩根大通全球市場策略師 Nikolaos Panigirtzoglou 指出，6月開始的投資人去槓桿化階段仍在持續，且遠未結束。預計槓桿 ETF、選擇權市場、特別是融資交易帳戶將進一步縮減。這將在短期內對股市形成結構性逆風。隨著保證金債務下降和風險偏好收縮，市場可能面臨更多波動——尤其在半導體/AI 等高槓桿板塊。報告建議投資人降低整體曝險，轉向防禦性配置。",
+      "url": "https://www.zerohedge.com/markets/headwind-equities-going-forward-jpmorgan-sees-need-deleveraging-etfs",
+      "timestamp": "2026-07-17",
+      "images": [],
+      "premium": false
+    }
+  ]
+}
