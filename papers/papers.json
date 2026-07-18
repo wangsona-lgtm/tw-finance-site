@@ -1,6 +1,6 @@
 {
   "total": 112,
-  "updated": "2026-07-17 09:31:36",
+  "updated": "2026-07-18 09:30:26",
   "topics": [
     "AI/科技",
     "其他",
@@ -18,30 +18,6 @@
     "金融市場"
   ],
   "papers": [
-    {
-      "title": "Differential impact of multiple risks on green and conventional bond markets: Evidence from multifractal analysis",
-      "authors": "Shi, Fengyuan; Guo, Yaoqi",
-      "year": "2025",
-      "journal": "Research in International Business and Finance, 77, 102932",
-      "doi": "https://doi.org/10.1016/j.ribaf.2025.102932",
-      "date": "2026-07-11",
-      "tags": [
-        "MF-ADCCA",
-        "MF-DCCA",
-        "multifractal",
-        "green bonds",
-        "uncertainty"
-      ],
-      "topics": [
-        "綠債/ESG",
-        "方法論",
-        "宏觀總體"
-      ],
-      "pdf": "pdfs/Shi_Guo_2025_RIBAF_multifractal_bonds.pdf",
-      "notes": "## 📋 Summary\n從 multifractal 視角探討 EPU、GPR、VIX、OVX 四種不確定性對綠色債券與傳統債券市場的差異化影響。使用 MF-ADCCA（不對稱多重分形去趨勢互相關分析）與 risk-conduction MF-DCCA，樣本 2016-07-05 至 2023-02-27 共 1,568 筆日資料。\n\n## 🔑 Variables\n- **不確定性指標**: EPU（經濟政策不確定性）、GPR（地緣政治風險）、VIX（市場波動）、OVX（原油波動）\n- **債券市場**: SPGB（S&P 綠色債券指數）、SPCB（S&P 傳統債券指數）\n\n## 📊 Data Sources\n- EPU/GPR: policyuncertainty.com\n- VIX/OVX: investing.com\n- SPGB/SPCB: spglobal.com\n\n## 🛠️ Methodology\n- MF-ADCCA: 不對稱多重分形去趨勢互相關分析（Cao et al., 2014）\n- MF-DCCA with risk conduction: 基於風險傳導的多重分形去趨勢互相關分析（Cao et al., 2017; Cao & Zhou, 2019）\n- 穩健性: Legendre 變換取得 multifractal spectrum\n\n## 🎯 Key Findings\n1. **不確定性與債券市場間的 multifractal 相關性存在異質性**，取決於不確定性領域、債券類型、時間序列趨勢和波動大小\n2. **大型波動是 multifractal 的主要來源**；小型波動下相關性較弱\n3. **債券市場必須關注經濟與地緣政治領域的風險**（EPU/GPR 上升→債券價格下跌，antipersistent），而在市場與能源領域可規避風險（VIX/OVX 上升→資金逃往債券，persistent）\n4. **綠色債券普遍比傳統債券更具風險規避能力**：在不確定性上升時（向上趨勢），綠債的 antipersistence 較弱（下跌幅度較小）\n5. 風險傳導方向：VIX→債券市場（短期），EPU←→債券市場（長期雙向），GPR 主要受債券市場傳導\n\n## 📐 RIBAF 寫作特徵\n- Section 2 不叫 Literature Review，而是 \"The relationship between uncertainties and bond markets\"（主題式回顧）\n- Introduction 最後一段給出 paper structure 導航\n- Discussion (Section 5) 獨立於 Conclusion (Section 6)\n- Discussion 回答「為什麼」：Why do green bonds differ? Why do different uncertainties have diverse relationships?\n- 少用 \"we\"，多用 \"this study\"、\"the results reveal\"\n- 圖表極豐富：Fig 1-16，Table 1-4\n\n## 💡 投稿參考價值\n這篇是綠債×不確定性投稿 RIBAF 的經典模板。如果你的文章用 QVAR/TVP-VAR 分析多重風險對綠債/傳統債券的影響，這篇的架構可以直接借鏡，特別是 Section 2 主題式回顧 + Section 5 獨立 Discussion 的結構。",
-      "type": "upload",
-      "id": "upload-2026-07-11-858"
-    },
     {
       "title": "Volatility and co-movement between ESG and non-ESG futures and uncertainty indices: Evidence from wavelet coherence and GARCH models",
       "authors": "Mosionek-Schweda, Magdalena; Chylińska, Marta",
@@ -66,7 +42,31 @@
       "pdf": "pdfs/MosionekSchweda_Chylinska_2026_RIBAF_ESG_futures.pdf",
       "notes": "## 📋 Summary\n使用 wavelet coherence 與 GARCH 模型分析 ESG 期貨與傳統指數期貨的波動性及與不確定性指標（VIX、GPR、EPU）的共動關係。樣本 2021-01-02 至 2025-05-23 共 1,145 筆日資料。特別關注 COVID-19 後期、烏克蘭戰爭及 2025 年美國關稅衝擊（Liberation Day）等事件。\n\n## 🔑 Variables\n- **ESG 期貨**: FSEG（STOXX Europe 600 ESG-X）、FSSX（EURO STOXX 50 ESG）、ESG（E-mini S&P 500 ESG）\n- **傳統期貨**: FXXP（STOXX 600）、STTX（EURO STOXX 50）、ES（E-mini S&P 500）\n- **不確定性指標**: VIX（CBOE 波動率）、GPR（地緣政治風險）、EPU（經濟政策不確定性）\n\n## 📊 Data Sources\n- LSEG Workspace（通過 University of Gdańsk 合作協議）\n- GPR: matteoiacoviello.com/gpr.htm\n- EPU: FRED\n\n## 🛠️ Methodology\n- Wavelet coherence（Morlet + Paul 兩種 mother wavelet 穩健性檢驗）\n- Univariate GARCH（波動聚類與持續性）\n- GARCH-X（加入 ΔVIX 為外生變數）\n- Rolling Spearman correlation（30/60/120 天窗口）\n- Decile-based correlation（分位數條件相關）\n\n## 🎯 Key Findings\n1. **H1 ✓**: ESG 與非 ESG 期貨高度正相關（Spearman ρ=0.91-0.996），但對不確定性衝擊的反應不同\n2. **H2 ✓**: VIX 對期貨報酬的影響最強且最一致；GPR 和 EPU 的影響較弱且不穩定\n3. **H3 部分支持**: ESG 期貨的波動持續性略低於傳統期貨（GARCH β 係數差異），顯示相對韌性，但並非 safe haven\n4. **H4 ✓**: 烏克蘭戰爭（2022）和 2025 美國關稅衝擊（4 月 Liberation Day）顯著增加波動性；2025 關稅事件是樣本期內波動最大的事件\n5. ESG 期貨不應被歸類為 safe haven，但提供差異化的波動動態\n\n## 🏛️ 事件驅動分析\n- **2022 烏克蘭戰爭**: 2021 年底至 2023 年中波動升高，與通膨飆升及美歐連續升息相關\n- **2025/4/2 Liberation Day**: Trump 簽署 10% 基礎關稅 + 對歐盟 20%、中國 34% 的對等關稅；ESG 和 ES 期貨波動在 4/10-11 達到樣本期間最高點\n\n## 📐 RIBAF 寫作特徵（與 Shi & Guo 差異）\n- Data 獨立成 Section 3（Shi 是把 data 放 Section 4.1）\n- 明確提出 4 組假設 H1-H4，並在 Conclusion 逐一驗證\n- Conclusion 極長：發現摘要→假設驗證→貢獻（First/Second/Third/Fourth）→政策意涵→限制→未來研究\n- 使用 \"our paper\"、\"we\"（比 Shi 更個人化）\n- 引用 2025 年即時事件，證明 RIBAF 接受時效性強的事件分析\n- Limitations 寫得誠實：wavelet 不證明因果、2025 關稅為短期事件、建議未來用 DCC-MGARCH\n\n## 💡 投稿參考價值\n這篇證明 RIBAF 接受 explicit hypotheses + 事件驅動框架 + 多方法穩健性檢驗。如果你的文章有明確的假設檢定 + 用 TVP-VAR 捕捉時變關係 + QVAR 做分位數條件分析，可以同時借鏡兩篇的優點：Shi 的主題式文獻回顧 + Mosionek-Schweda 的假設結構和事件分析。",
       "type": "upload",
-      "id": "upload-2026-07-11-606"
+      "id": "upload-2026-07-11-7515"
+    },
+    {
+      "title": "Differential impact of multiple risks on green and conventional bond markets: Evidence from multifractal analysis",
+      "authors": "Shi, Fengyuan; Guo, Yaoqi",
+      "year": "2025",
+      "journal": "Research in International Business and Finance, 77, 102932",
+      "doi": "https://doi.org/10.1016/j.ribaf.2025.102932",
+      "date": "2026-07-11",
+      "tags": [
+        "MF-ADCCA",
+        "MF-DCCA",
+        "multifractal",
+        "green bonds",
+        "uncertainty"
+      ],
+      "topics": [
+        "綠債/ESG",
+        "方法論",
+        "宏觀總體"
+      ],
+      "pdf": "pdfs/Shi_Guo_2025_RIBAF_multifractal_bonds.pdf",
+      "notes": "## 📋 Summary\n從 multifractal 視角探討 EPU、GPR、VIX、OVX 四種不確定性對綠色債券與傳統債券市場的差異化影響。使用 MF-ADCCA（不對稱多重分形去趨勢互相關分析）與 risk-conduction MF-DCCA，樣本 2016-07-05 至 2023-02-27 共 1,568 筆日資料。\n\n## 🔑 Variables\n- **不確定性指標**: EPU（經濟政策不確定性）、GPR（地緣政治風險）、VIX（市場波動）、OVX（原油波動）\n- **債券市場**: SPGB（S&P 綠色債券指數）、SPCB（S&P 傳統債券指數）\n\n## 📊 Data Sources\n- EPU/GPR: policyuncertainty.com\n- VIX/OVX: investing.com\n- SPGB/SPCB: spglobal.com\n\n## 🛠️ Methodology\n- MF-ADCCA: 不對稱多重分形去趨勢互相關分析（Cao et al., 2014）\n- MF-DCCA with risk conduction: 基於風險傳導的多重分形去趨勢互相關分析（Cao et al., 2017; Cao & Zhou, 2019）\n- 穩健性: Legendre 變換取得 multifractal spectrum\n\n## 🎯 Key Findings\n1. **不確定性與債券市場間的 multifractal 相關性存在異質性**，取決於不確定性領域、債券類型、時間序列趨勢和波動大小\n2. **大型波動是 multifractal 的主要來源**；小型波動下相關性較弱\n3. **債券市場必須關注經濟與地緣政治領域的風險**（EPU/GPR 上升→債券價格下跌，antipersistent），而在市場與能源領域可規避風險（VIX/OVX 上升→資金逃往債券，persistent）\n4. **綠色債券普遍比傳統債券更具風險規避能力**：在不確定性上升時（向上趨勢），綠債的 antipersistence 較弱（下跌幅度較小）\n5. 風險傳導方向：VIX→債券市場（短期），EPU←→債券市場（長期雙向），GPR 主要受債券市場傳導\n\n## 📐 RIBAF 寫作特徵\n- Section 2 不叫 Literature Review，而是 \"The relationship between uncertainties and bond markets\"（主題式回顧）\n- Introduction 最後一段給出 paper structure 導航\n- Discussion (Section 5) 獨立於 Conclusion (Section 6)\n- Discussion 回答「為什麼」：Why do green bonds differ? Why do different uncertainties have diverse relationships?\n- 少用 \"we\"，多用 \"this study\"、\"the results reveal\"\n- 圖表極豐富：Fig 1-16，Table 1-4\n\n## 💡 投稿參考價值\n這篇是綠債×不確定性投稿 RIBAF 的經典模板。如果你的文章用 QVAR/TVP-VAR 分析多重風險對綠債/傳統債券的影響，這篇的架構可以直接借鏡，特別是 Section 2 主題式回顧 + Section 5 獨立 Discussion 的結構。",
+      "type": "upload",
+      "id": "upload-2026-07-11-517"
     },
     {
       "id": "bf-2026-07-07-9",
@@ -855,7 +855,55 @@
         "來源：Mayer et al. arXiv 全文、Jiang et al. MDPI 全文、Wiley/Elsevier 頁面"
       ],
       "type": "upload",
-      "id": "upload-2026-07-06-5568"
+      "id": "upload-2026-07-06-8481"
+    },
+    {
+      "title": "Impact of Geopolitical Risk and Economic Globalization on Turkey's Environmental Sustainability: Novel Quantile-on-quantile KRLS Method",
+      "authors": "Awan, A., Jahanger, A., Emran Hossain, M., Meo, M.S. & Yusoff, N.Y.b.M.",
+      "year": "2026",
+      "journal": "Politická ekonomie, 74(3), 490–514",
+      "doi": "10.18267/j.polek.1505",
+      "date": "2026-06-30",
+      "tags": [
+        "QQKRLS",
+        "quantile-on-quantile",
+        "geopolitical risk",
+        "globalization",
+        "Turkey",
+        "energy"
+      ],
+      "topics": [
+        "碳市場/碳交易",
+        "能源市場",
+        "地緣政治/國防",
+        "方法論"
+      ],
+      "pdf": "uploads/Awan_Geopolitical_Globalization_Turkey_CO2_2026.pdf",
+      "notes": [
+        "樣本：土耳其，1970–2019，年資料頻率轉換為季資料（quadratic match-sum），約200 obs",
+        "資料庫：WB (CO₂/GDPPC/NRR/REN), KOF (EGI), GPRH (GPRI)",
+        "方法：QQKRLS (Quantile-on-Quantile Kernel-based Regularized Least Squares) + QQR 穩健性",
+        "---",
+        "【DV】CO₂ = ln(人均CO₂排放，噸/人)",
+        "【IV】EGI=經濟全球化指數(KOF), GPRI=地緣政治風險指數, NRR=自然資源租金%GDP, GDPPC=人均GDP, REN=再生能源%最終能源",
+        "---",
+        "【EGI→CO₂】低分位(0.05-0.35)弱正相關，中分位(0.40-0.65)正相關轉強，高分位又轉弱 → 全球化在中度排放水準時環境成本最明顯",
+        "【GDPPC→CO₂】整體強正相關(低-高分位CO₂×中-高分位GDPPC) → 經濟成長=排碳增加",
+        "【GPRI→CO₂】整體正相關，中高分位(0.40-0.80)最強 → 地緣緊張排擠環保優先序",
+        "【NRR→CO₂】整體負相關(低-高分位NRR×中低分位CO₂)，僅極低分位正相關 → 土耳其自然資源(森林碳匯)有助減排",
+        "【REN→CO₂】複雜：低CO₂分位強負相關，中分位轉弱甚至轉正，高分位負相關再現 → 再生能源在低排放階段最有效",
+        "---",
+        "【前提檢定】JB常態檢定全拒絕(H0=常態), BDS非線性檢定全顯著(p<0.01), 參數穩定性Max-F/Exp-F/Ave-F通過",
+        "【穩健性】QQR 非參數雙變量分位數-on-分位數迴歸 → 結果與QQKRLS一致",
+        "---",
+        "【貢獻】1)首次在土耳其用QQKRLS研究EGI×GPRI對CO₂非線性效果；2)QQKRLS優勢：捕捉非線性+正則化防止過擬合+機器學習適應力",
+        "---",
+        "【政策意涵】1)貿易協定納入環境條款+高碳進口課稅+低碳進口獎勵；2)提升制度品質紓緩地緣風險對環境的負面影響；3)推廣再生能源R&D+公私合作+補貼稅制；4)經濟成長不應減產，應轉向低碳生產路徑",
+        "---",
+        "【限制】僅土耳其單國、結果不可外推、年轉季資料可能有測量誤差"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-30-8346"
     },
     {
       "title": "The Mediating Role of Globalization in the Nexus Between CO₂ Emissions, GHGs, and Economic Growth",
@@ -897,7 +945,7 @@
         "【限制】僅G20不可外推；Baron&Kenny檢定力較低；年資料無法捕捉短期動態；未控制各國環境法規差異"
       ],
       "type": "upload",
-      "id": "upload-2026-06-30-8511"
+      "id": "upload-2026-06-30-7954"
     },
     {
       "title": "Green innovation and the CO₂ emissions gap: New evidence from OECD economies",
@@ -951,55 +999,7 @@
         "【限制】僅OECD、專利指標未必反映技術擴散與採用、消費基礎排放有量測誤差"
       ],
       "type": "upload",
-      "id": "upload-2026-06-30-7484"
-    },
-    {
-      "title": "Impact of Geopolitical Risk and Economic Globalization on Turkey's Environmental Sustainability: Novel Quantile-on-quantile KRLS Method",
-      "authors": "Awan, A., Jahanger, A., Emran Hossain, M., Meo, M.S. & Yusoff, N.Y.b.M.",
-      "year": "2026",
-      "journal": "Politická ekonomie, 74(3), 490–514",
-      "doi": "10.18267/j.polek.1505",
-      "date": "2026-06-30",
-      "tags": [
-        "QQKRLS",
-        "quantile-on-quantile",
-        "geopolitical risk",
-        "globalization",
-        "Turkey",
-        "energy"
-      ],
-      "topics": [
-        "碳市場/碳交易",
-        "能源市場",
-        "地緣政治/國防",
-        "方法論"
-      ],
-      "pdf": "uploads/Awan_Geopolitical_Globalization_Turkey_CO2_2026.pdf",
-      "notes": [
-        "樣本：土耳其，1970–2019，年資料頻率轉換為季資料（quadratic match-sum），約200 obs",
-        "資料庫：WB (CO₂/GDPPC/NRR/REN), KOF (EGI), GPRH (GPRI)",
-        "方法：QQKRLS (Quantile-on-Quantile Kernel-based Regularized Least Squares) + QQR 穩健性",
-        "---",
-        "【DV】CO₂ = ln(人均CO₂排放，噸/人)",
-        "【IV】EGI=經濟全球化指數(KOF), GPRI=地緣政治風險指數, NRR=自然資源租金%GDP, GDPPC=人均GDP, REN=再生能源%最終能源",
-        "---",
-        "【EGI→CO₂】低分位(0.05-0.35)弱正相關，中分位(0.40-0.65)正相關轉強，高分位又轉弱 → 全球化在中度排放水準時環境成本最明顯",
-        "【GDPPC→CO₂】整體強正相關(低-高分位CO₂×中-高分位GDPPC) → 經濟成長=排碳增加",
-        "【GPRI→CO₂】整體正相關，中高分位(0.40-0.80)最強 → 地緣緊張排擠環保優先序",
-        "【NRR→CO₂】整體負相關(低-高分位NRR×中低分位CO₂)，僅極低分位正相關 → 土耳其自然資源(森林碳匯)有助減排",
-        "【REN→CO₂】複雜：低CO₂分位強負相關，中分位轉弱甚至轉正，高分位負相關再現 → 再生能源在低排放階段最有效",
-        "---",
-        "【前提檢定】JB常態檢定全拒絕(H0=常態), BDS非線性檢定全顯著(p<0.01), 參數穩定性Max-F/Exp-F/Ave-F通過",
-        "【穩健性】QQR 非參數雙變量分位數-on-分位數迴歸 → 結果與QQKRLS一致",
-        "---",
-        "【貢獻】1)首次在土耳其用QQKRLS研究EGI×GPRI對CO₂非線性效果；2)QQKRLS優勢：捕捉非線性+正則化防止過擬合+機器學習適應力",
-        "---",
-        "【政策意涵】1)貿易協定納入環境條款+高碳進口課稅+低碳進口獎勵；2)提升制度品質紓緩地緣風險對環境的負面影響；3)推廣再生能源R&D+公私合作+補貼稅制；4)經濟成長不應減產，應轉向低碳生產路徑",
-        "---",
-        "【限制】僅土耳其單國、結果不可外推、年轉季資料可能有測量誤差"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-30-5401"
+      "id": "upload-2026-06-30-2873"
     },
     {
       "title": "Financial development and renewable energy consumption: a novel view under the moderating role of institutional quality across APEC economies",
@@ -1048,58 +1048,7 @@
         "【限制】僅12國、未納碳價與政治風險、未考慮非線性與門檻效應、IQ多維度未拆解"
       ],
       "type": "upload",
-      "id": "upload-2026-06-30-103"
-    },
-    {
-      "title": "The Mathematics of Modeling the Future",
-      "authors": "Miquel Noguer i Alonso",
-      "year": "2026",
-      "journal": "arXiv:2606.20977 [q-fin.MF]",
-      "doi": "",
-      "date": "2026-06-23",
-      "tags": [
-        "方法論"
-      ],
-      "topics": [
-        "方法論",
-        "AI/科技"
-      ],
-      "pdf": "uploads/Mathematics_of_Modeling_Future_Noguer_2026.pdf",
-      "notes": [
-        "從 filtration、conditional expectation、Markov kernel 到 Kolmogorov equations 的統一數學框架",
-        "提出 forecasting calculus：tower property → semigroup law, Ito's formula → backward equation",
-        "Wasserstein gradient flow + Fisher-Rao 幾何下的密度演化",
-        "附 Gaussian OU / CIR 過程的顯式範例",
-        "arXiv q-fin new 2026-06"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-23-6471"
-    },
-    {
-      "title": "Reinforcement Learning for Risk-Sensitive Investment Management: a Free Energy--Entropy Duality Approach",
-      "authors": "Sebastien Lleo, Wolfgang Runggaldier",
-      "year": "2026",
-      "journal": "arXiv:2606.20903 [q-fin.PM]",
-      "doi": "",
-      "date": "2026-06-23",
-      "tags": [
-        "RL",
-        "continuous-time"
-      ],
-      "topics": [
-        "金融市場",
-        "AI/科技"
-      ],
-      "pdf": "uploads/RL_Risk_Sensitive_Investment_Lleo_2026.pdf",
-      "notes": [
-        "free energy-entropy duality → risk-sensitive 資產配置改寫為 stochastic differential game",
-        "continuous-time q-learning actor-critic 求解",
-        "fractional Kelly decomposition 的經濟解釋",
-        "美股實證: portfolio actor 學習精確度高",
-        "arXiv q-fin new 2026-06"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-23-4674"
+      "id": "upload-2026-06-30-1677"
     },
     {
       "title": "Revisiting Trade-sign Long-memory and Square-root Law Price Impact",
@@ -1125,7 +1074,58 @@
         "arXiv q-fin new 2026-06"
       ],
       "type": "upload",
-      "id": "upload-2026-06-23-1351"
+      "id": "upload-2026-06-23-8984"
+    },
+    {
+      "title": "Reinforcement Learning for Risk-Sensitive Investment Management: a Free Energy--Entropy Duality Approach",
+      "authors": "Sebastien Lleo, Wolfgang Runggaldier",
+      "year": "2026",
+      "journal": "arXiv:2606.20903 [q-fin.PM]",
+      "doi": "",
+      "date": "2026-06-23",
+      "tags": [
+        "RL",
+        "continuous-time"
+      ],
+      "topics": [
+        "金融市場",
+        "AI/科技"
+      ],
+      "pdf": "uploads/RL_Risk_Sensitive_Investment_Lleo_2026.pdf",
+      "notes": [
+        "free energy-entropy duality → risk-sensitive 資產配置改寫為 stochastic differential game",
+        "continuous-time q-learning actor-critic 求解",
+        "fractional Kelly decomposition 的經濟解釋",
+        "美股實證: portfolio actor 學習精確度高",
+        "arXiv q-fin new 2026-06"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-23-5039"
+    },
+    {
+      "title": "The Mathematics of Modeling the Future",
+      "authors": "Miquel Noguer i Alonso",
+      "year": "2026",
+      "journal": "arXiv:2606.20977 [q-fin.MF]",
+      "doi": "",
+      "date": "2026-06-23",
+      "tags": [
+        "方法論"
+      ],
+      "topics": [
+        "方法論",
+        "AI/科技"
+      ],
+      "pdf": "uploads/Mathematics_of_Modeling_Future_Noguer_2026.pdf",
+      "notes": [
+        "從 filtration、conditional expectation、Markov kernel 到 Kolmogorov equations 的統一數學框架",
+        "提出 forecasting calculus：tower property → semigroup law, Ito's formula → backward equation",
+        "Wasserstein gradient flow + Fisher-Rao 幾何下的密度演化",
+        "附 Gaussian OU / CIR 過程的顯式範例",
+        "arXiv q-fin new 2026-06"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-23-2657"
     },
     {
       "title": "The interplay of financial development, oil prices, and CO2 emissions in shaping renewable energy consumption in emerging nations: An evidence from panel quantile regression",
@@ -1154,7 +1154,7 @@
         "FDI→REC+, CO2→REC-(高分位)"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-705"
+      "id": "upload-2026-06-16-9792"
     },
     {
       "title": "Sustainable energy transition toward a zero-carbon future in major Global South economies: Roles of green innovation, institutions, and geopolitical risk",
@@ -1183,7 +1183,35 @@
         "SDG-7 進展取決於技術能力+制度韌性"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-5249"
+      "id": "upload-2026-06-16-5466"
+    },
+    {
+      "title": "The nexus between climate policy uncertainty and load capacity factor in China with the moderating role of financial development",
+      "authors": "Özbek, Şahin & Bayar",
+      "year": "2026",
+      "journal": "Discover Sustainability",
+      "doi": "10.1007/s43621-026-03409-0",
+      "date": "2026-06-16",
+      "tags": [
+        "A-ARDL",
+        "FMOLS",
+        "DOLS",
+        "LCF",
+        "CPU"
+      ],
+      "topics": [
+        "氣候風險/政策",
+        "碳市場/碳交易"
+      ],
+      "pdf": "uploads/CPU_LCF_China_Ozbek_2026.pdf",
+      "notes": [
+        "A-ARDL + FMOLS + DOLS 三種方法互補驗證",
+        "1990-2021, 中國",
+        "FD 和 CPU 各自降低環境品質，但交互項 FD×CPU 改善環境品質",
+        "FD 在不確定時期可透過三渠道維持綠色投資"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-16-175"
     },
     {
       "title": "Assessing the effects of green innovation, renewable energy, and environmental policy stringency on ecological and material footprints in G7 economies",
@@ -1212,35 +1240,7 @@
         "首篇聯合分析EF+MF驅動因子於G7"
       ],
       "type": "upload",
-      "id": "upload-2026-06-16-1759"
-    },
-    {
-      "title": "The nexus between climate policy uncertainty and load capacity factor in China with the moderating role of financial development",
-      "authors": "Özbek, Şahin & Bayar",
-      "year": "2026",
-      "journal": "Discover Sustainability",
-      "doi": "10.1007/s43621-026-03409-0",
-      "date": "2026-06-16",
-      "tags": [
-        "A-ARDL",
-        "FMOLS",
-        "DOLS",
-        "LCF",
-        "CPU"
-      ],
-      "topics": [
-        "氣候風險/政策",
-        "碳市場/碳交易"
-      ],
-      "pdf": "uploads/CPU_LCF_China_Ozbek_2026.pdf",
-      "notes": [
-        "A-ARDL + FMOLS + DOLS 三種方法互補驗證",
-        "1990-2021, 中國",
-        "FD 和 CPU 各自降低環境品質，但交互項 FD×CPU 改善環境品質",
-        "FD 在不確定時期可透過三渠道維持綠色投資"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-16-1692"
+      "id": "upload-2026-06-16-1623"
     },
     {
       "title": "Spillover across varying Regional and Economic Realities: Evaluating the Hedging potential of Demographic Traits",
@@ -1268,7 +1268,7 @@
         "Peer Review 版本，DOI 暫為 xxxxx"
       ],
       "type": "upload",
-      "id": "upload-2026-06-12-4882"
+      "id": "upload-2026-06-12-189"
     },
     {
       "id": "2026-06-10-9",
@@ -2770,30 +2770,52 @@
         "控制 EPU（經濟政策不確定性）、原油價格"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-9852"
+      "id": "upload-2026-06-05-970"
     },
     {
-      "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
-      "authors": "Huang, Liu & Yu",
+      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
+      "authors": "Sumba",
       "year": "2026",
-      "journal": "Systems (MDPI), 14, 559",
-      "doi": "10.3390/systems14050559",
+      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
+      "doi": "10.1016/j.iref.2026.105445",
       "date": "2026-06-05",
       "tags": [],
       "topics": [
-        "碳市場/碳交易",
-        "綠債/ESG"
+        "潔淨能源",
+        "宏觀總體"
       ],
-      "pdf": "uploads/China_CETS_ESG_Construction.pdf",
+      "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
       "notes": [
-        "方法：PSM-DID（傾向得分匹配+雙重差分）",
-        "CETS 使營造企業 ESG 分數提高約 0.30 分",
-        "綠色技術創新中介效果 5.9%（部分中介）",
-        "政府補貼正向調節政策效果",
-        "異質性：僅國有企業與東部地區顯著"
+        "動態面板門檻模型 (DPT)+ 工具變數",
+        "EKC 假說在發展中國家成立",
+        "再生能源可加速 EKC 轉折",
+        "制度品質調節 EKC 形狀和轉折點"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-9742"
+      "id": "upload-2026-06-05-7651"
+    },
+    {
+      "title": "jQIRF / jQFEVD — 聯合分量脈衝響應函數 & 聯合分量預測誤差變異數分解（方法論文）",
+      "authors": "Thomas F. P. Wiesen, Paul M. Beaumont",
+      "year": "2023",
+      "journal": "Empirical Economics",
+      "doi": "10.1007/s00181-023-02496-6",
+      "date": "2026-06-05",
+      "tags": [
+        "jQIRF",
+        "jQFEVD"
+      ],
+      "topics": [
+        "方法論"
+      ],
+      "pdf": "",
+      "notes": [
+        "jIRF：所有變數同時受相關衝擊的聯合反應路徑",
+        "jFEVD：所有變數同時衝擊對預測誤差的聯合貢獻",
+        "延伸應用於中國航空股波動（Transport Research 2024）"
+      ],
+      "type": "upload",
+      "id": "upload-2026-06-05-6308"
     },
     {
       "title": "Climate Policy Uncertainty and Load Capacity Factor in China",
@@ -2817,29 +2839,30 @@
         "A-ARDL 共整合檢定 + Fourier KPSS 結構斷點單根檢定"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-838"
+      "id": "upload-2026-06-05-4222"
     },
     {
-      "title": "Renewable Energy, Institutional Quality & EKC Dynamics in Developing Countries",
-      "authors": "Sumba",
+      "title": "Does China's CETS Enhance ESG Performance in Construction Enterprises?",
+      "authors": "Huang, Liu & Yu",
       "year": "2026",
-      "journal": "International Review of Economics and Finance (Elsevier), 109, 105445",
-      "doi": "10.1016/j.iref.2026.105445",
+      "journal": "Systems (MDPI), 14, 559",
+      "doi": "10.3390/systems14050559",
       "date": "2026-06-05",
       "tags": [],
       "topics": [
-        "潔淨能源",
-        "宏觀總體"
+        "碳市場/碳交易",
+        "綠債/ESG"
       ],
-      "pdf": "uploads/Sumba_Renewable_Energy_EKC_Developing_Countries.pdf",
+      "pdf": "uploads/China_CETS_ESG_Construction.pdf",
       "notes": [
-        "動態面板門檻模型 (DPT)+ 工具變數",
-        "EKC 假說在發展中國家成立",
-        "再生能源可加速 EKC 轉折",
-        "制度品質調節 EKC 形狀和轉折點"
+        "方法：PSM-DID（傾向得分匹配+雙重差分）",
+        "CETS 使營造企業 ESG 分數提高約 0.30 分",
+        "綠色技術創新中介效果 5.9%（部分中介）",
+        "政府補貼正向調節政策效果",
+        "異質性：僅國有企業與東部地區顯著"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-6622"
+      "id": "upload-2026-06-05-2411"
     },
     {
       "title": "Toward Carbon Neutrality in Vietnam: Analyzing the Role of Renewable Energy Consumption and Economic Growth Using Wavelet Coherence and Quantile-on-Quantile Approaches",
@@ -2863,30 +2886,7 @@
         "GDP 成長在不同分量下對 CO₂ 效果不一致"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-4428"
-    },
-    {
-      "title": "jQIRF / jQFEVD — 聯合分量脈衝響應函數 & 聯合分量預測誤差變異數分解（方法論文）",
-      "authors": "Thomas F. P. Wiesen, Paul M. Beaumont",
-      "year": "2023",
-      "journal": "Empirical Economics",
-      "doi": "10.1007/s00181-023-02496-6",
-      "date": "2026-06-05",
-      "tags": [
-        "jQIRF",
-        "jQFEVD"
-      ],
-      "topics": [
-        "方法論"
-      ],
-      "pdf": "",
-      "notes": [
-        "jIRF：所有變數同時受相關衝擊的聯合反應路徑",
-        "jFEVD：所有變數同時衝擊對預測誤差的聯合貢獻",
-        "延伸應用於中國航空股波動（Transport Research 2024）"
-      ],
-      "type": "upload",
-      "id": "upload-2026-06-05-1931"
+      "id": "upload-2026-06-05-2282"
     },
     {
       "title": "Energy Consumption, Economic Growth, and CO₂ Emissions in GCC Countries: Panel Evidence and the EKC",
@@ -2909,7 +2909,7 @@
         "建議 GCC 國家加速再生能源轉型"
       ],
       "type": "upload",
-      "id": "upload-2026-06-05-1736"
+      "id": "upload-2026-06-05-1196"
     }
   ]
 }

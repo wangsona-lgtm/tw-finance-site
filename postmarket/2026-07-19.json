@@ -1,0 +1,91 @@
+{
+  "date": "2026-07-19",
+  "generated_at": "2026-07-19T07:05:00+08:00",
+  "report_type": "weekend_review",
+  "last_trading_day": "2026-07-17 (Friday)",
+  "data_source": "Yahoo Finance (web_fetch)",
+  "indices": {
+    "^GSPC": { "name": "S&P 500", "close": 7457.69, "change_pct": -1.01, "note": "週線收黑" },
+    "^DJI": { "name": "道瓊工業", "close": 52146.42, "change_pct": -0.77, "note": "" },
+    "^IXIC": { "name": "NASDAQ", "close": 25520.24, "change_pct": -1.40, "note": "科技股領跌" },
+    "^RUT": { "name": "羅素2000", "close": 2962.22, "change_pct": -0.42, "note": "" },
+    "^SOX": { "name": "費城半導體", "close": null, "change_pct": -1.63, "note": "半導體賣壓沉重" }
+  },
+  "stocks": {
+    "NVDA": { "name": "NVIDIA", "close": 202.81, "prev_close": 207.40, "change_pct": -2.21, "note": "" },
+    "AAPL": { "name": "Apple", "close": 333.74, "prev_close": 333.26, "change_pct": 0.14, "note": "唯一收紅" },
+    "MSFT": { "name": "Microsoft", "close": 393.82, "prev_close": 401.10, "change_pct": -1.82, "note": "" },
+    "AMZN": { "name": "Amazon", "close": 247.23, "prev_close": 249.89, "change_pct": -1.06, "note": "" },
+    "GOOGL": { "name": "Alphabet", "close": 346.77, "prev_close": 354.46, "change_pct": -2.17, "note": "" },
+    "META": { "name": "Meta", "close": 646.01, "prev_close": 664.54, "change_pct": -2.79, "note": "上週強漲後回調" },
+    "TSLA": { "name": "Tesla", "close": 380.84, "prev_close": 391.06, "change_pct": -2.61, "note": "Q2財報7/22" },
+    "TSM": { "name": "TSMC", "close": 398.37, "prev_close": 409.74, "change_pct": -2.77, "note": "地緣風險" },
+    "AMD": { "name": "AMD", "close": 495.76, "prev_close": 500.94, "change_pct": -1.03, "note": "" },
+    "AVGO": { "name": "Broadcom", "close": 370.83, "prev_close": 374.46, "change_pct": -0.97, "note": "" }
+  },
+  "etfs": {
+    "XLF": { "name": "金融", "close": 56.26, "change_pct": -0.86 },
+    "XLK": { "name": "科技", "close": 175.59, "change_pct": -1.09 },
+    "XLE": { "name": "能源", "close": 57.68, "change_pct": 1.16, "note": "最強板塊，油價支撐" },
+    "XLV": { "name": "醫療", "close": 161.09, "change_pct": -0.44 },
+    "XLI": { "name": "工業", "close": 179.41, "change_pct": -0.41 },
+    "XLP": { "name": "必需消費", "close": 85.19, "change_pct": -0.72 },
+    "XLY": { "name": "非必需消費", "close": 115.44, "change_pct": -1.62, "note": "最弱板塊" },
+    "XLU": { "name": "公用事業", "close": 45.17, "change_pct": -0.66 },
+    "XLB": { "name": "原物料", "close": 50.53, "change_pct": -0.71 },
+    "SMH": { "name": "半導體", "close": 556.53, "change_pct": -2.18, "note": "AI晶片賣壓" }
+  },
+  "macro": {
+    "GC=F": { "name": "黃金", "close": 4018.80, "change_pct": 0.67, "note": "避險買盤" },
+    "CL=F": { "name": "原油", "close": null, "change_pct": null, "note": "上週大漲後高檔震盪" },
+    "BTC-USD": { "name": "比特幣", "close": 64715.18, "change_pct": 1.22, "note": "" },
+    "^VIX": { "name": "VIX恐慌指數", "close": 18.77, "change_pct": 12.19, "note": "恐慌大幅升溫" },
+    "^TNX": { "name": "10年債殖利率", "close": null, "change_pct": null, "note": "上週CPI後一度跳水" },
+    "DX-Y.NYB": { "name": "美元指數", "close": null, "change_pct": null, "note": "區間震盪" }
+  },
+  "futures": {
+    "ES=F": { "name": "S&P 500 期貨", "close": 7497.75, "change_pct": -1.06, "note": "週五收盤（週日電子盤未開）" }
+  },
+  "weekend_events": [
+    {
+      "category": "國際總經",
+      "title": "6月CPI低於預期",
+      "detail": "美國6月CPI創六年最大月跌幅，降溫超預期，強化聯準會年內降息預期，但Kevin Warsh證詞未釋放明確鴿派訊號"
+    },
+    {
+      "category": "地緣政治",
+      "title": "美國對伊朗持續軍事打擊",
+      "detail": "美國與伊朗交火持續，伊朗攻擊荷姆茲海峽油輪，油價上週飆升後高檔震盪，Strait of Hormuz 通航安全受威脅"
+    },
+    {
+      "category": "科技/產業",
+      "title": "半導體板塊全面下殺",
+      "detail": "AI晶片股延續跌勢，Nvidia/Meta/TSM等權值股週五跌幅2-3%，費半指數週跌逾1.6%，市場擔憂AI投資回報放緩"
+    },
+    {
+      "category": "財報焦點",
+      "title": "下週科技巨頭密集財報",
+      "detail": "Tesla (7/22)、Google (7/22)、Microsoft (7/29)、Meta (7/29)、Apple (7/30) 將陸續公佈Q2財報"
+    },
+    {
+      "category": "總經前瞻",
+      "title": "下週關注：PPI、消費者信心",
+      "detail": "週四6月PPI及初領失業金、週五7月密大消費者信心初值為本週重點數據"
+    }
+  ],
+  "outlook": {
+    "direction": "中性偏空",
+    "summary": "週五全面收黑，半導體領跌，VIX飆升12%至18.77。中東戰事推升油價，但科技股獲利了結壓力大。下週Tesla/Google財報為市場焦點，若財報優於預期可能帶動反彈",
+    "key_levels": {
+      "sp500_support": 7400,
+      "sp500_resistance": 7550
+    },
+    "focus_events": [
+      "7/22 (三) Tesla Q2 財報",
+      "7/22 (三) Google Q2 財報",
+      "7/23 (四) 6月PPI",
+      "7/24 (五) 7月密大消費者信心",
+      "7/29 (三) Microsoft/Meta 財報"
+    ]
+  }
+}
