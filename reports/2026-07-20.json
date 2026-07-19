@@ -1,0 +1,105 @@
+{
+  "date": "2026-07-20",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 7月20日（一）",
+  "sections": [
+    {
+      "title": "US-Iran Tit-For-Tat Spirals Towards Broader Conflict — 美伊以牙還牙升級，逐步滑向更大規模衝突",
+      "category": "geopolitics",
+      "summary": "美伊臨時停火協議已化為灰燼，雙方衝突進入第八天。美軍對伊朗 Qeshm 島及南部城市 Shadegan、Sirik、Hajiabad 發動打擊，德黑蘭則以無人機和飛彈攻擊美國在科威特、卡達、巴林的基地及關鍵基礎設施。科威特電力部發出警告，其電力和海水淡化廠連續第二天遭伊朗投射物攻擊。美軍中央司令部表示最新攻擊旨在削弱伊朗在荷姆茲海峽的攻勢能力。以色列安全內閣部長 Itamar Ben Gvir 公開表示希望川普總統「狠狠打擊伊朗」，外界關注以色列是否會重新加入戰局。",
+      "url": "https://www.zerohedge.com/geopolitical/us-iran-tit-tat-spirals-towards-broader-conflict",
+      "timestamp": "2026-07-20",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_0_img_4.png",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_0_img_5.png",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_0_img_6.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Zelensky Boasts Of Hits On 3 Russian 'Shadow Fleet' Tankers After Kiev Military Depot Leveled — 澤倫斯基宣布擊中三艘俄羅斯「影子艦隊」油輪，此前基輔軍事基地遭夷平",
+      "category": "geopolitics",
+      "summary": "俄羅斯連夜向基輔發動戰爭以來最大規模彈道飛彈襲擊，共發射 41 枚各型飛彈。烏克蘭軍用裝備生產商 UKRTAC 的製造設施和倉庫被直接命中、全部摧毀，所幸無人傷亡，但首都多處遭波及，至少 1 人死亡、16 人受傷。烏克蘭外長 Sybiha 描述該攻擊涉及約四打彈道飛彈。澤倫斯基表示烏軍持續反擊，包括攻擊俄羅斯南部 Stavropol 地區的三座油庫及一座燃料設施，並在黑海擊中三艘俄羅斯「影子艦隊」油輪，稱之為「烏克蘭的遠程制裁」。",
+      "url": "https://www.zerohedge.com/geopolitical/zelensky-boasts-hits-3-russian-shadow-fleet-tankers-after-kiev-military-depot-strike",
+      "timestamp": "2026-07-20",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Traders Stunned By Momentum Meltdown As Earnings Quality Problem Simmers Under The Surface — 動能股崩潰震撼交易員，獲利品質問題暗流湧動",
+      "category": "market",
+      "summary": "S&P 500 上週收於 7,457.69，緊貼 50 日均線（7,464），較 200 日均線（6,985）高出約 6.8%，距 6 月 2 日歷史高點 7,620 約 2%。14 日 RSI 為 48.8，中性未過度；但 MACD 出現四月低點以來首次死亡交叉，柱狀圖轉負，屬於技術性修正預警。關鍵對比：動能 ETF（MTUM）單週暴跌約 6%，RSI 降至 41；等權重 S&P 卻於週中創歷史新高，羅素 2000 表現優於納斯達克。作者認為這不是整體市場崩跌，而是極度集中的「動能股修正」——AI/半導體高 Beta 股資金正輪動至其他板塊。",
+      "url": "https://www.zerohedge.com/geopolitical/traders-stunned-momentum-meltdown-earnings-quality-problem-simmers-under-surface",
+      "timestamp": "2026-07-20",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_5.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Overloaded: From Trinkets To Compute And Market Structure — 過載：從小玩意到運算與市場結構",
+      "category": "market",
+      "summary": "作者上週警告市場處於「多重轉折點」後，局勢進一步惡化：(1) 伊朗衝突升級，布蘭特原油從 70 美元飆升至近 90 美元；(2) AI 支出轉折點：費城半導體指數單週暴跌 10%，為最關鍵的利空信號；(3) 俄烏戰爭仍持續，但作者相對樂觀；(4) 日圓利差交易雖上週平靜，但日圓升值仍是市場重大風險；(5) 加密貨幣與 DATCo 在波動中展現穩定性，正在築底；(6) 通膨方面，CPI 數據支持九月降息預期，但核心通膨因 shelter inflation 計算方式而被人為推高。作者認為市場正被多重力量拉扯，短期波動將持續加劇。",
+      "url": "https://www.zerohedge.com/markets/overloaded-trinkets-compute-and-market-structure",
+      "timestamp": "2026-07-20",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_5.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Hartnett: This Is The Biggest Mag7 Surprise That Could Spark A Full-Blown Market Crash — Hartnett：這是可能引爆全面崩盤的最大 Mag7 驚喜",
+      "category": "market",
+      "summary": "美銀首席投資官 Michael Hartnett 再次發出警告。他去年 12 月預警美銀賣出訊號觸發後，市場盤整兩個月，隨後在 3 月 29 日暴跌至年內低點——而 Hartnett 當天宣布「賣出訊號結束，政策恐慌開始」，正是 S&P 的市場底部。本文揭示 Hartnett 眼中 Mag7（七大科技巨頭）最大的意外風險：某個可能顛覆市場對 AI/科技股集體樂觀預期的變數，可能引發全面崩盤。內容因付費牆限制僅有極短預覽。",
+      "url": "https://www.zerohedge.com/markets/hartnett-biggest-mag7-surprise-could-spark-full-blown-market-crash",
+      "timestamp": "2026-07-20",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "The Day Democrats Return To Wall Street — 民主黨重返華爾街的那一天",
+      "category": "market",
+      "summary": "作者（自稱共和黨人）指出市場正將當前政治環境無限外推，忽略了民主黨可能在今年秋天奪回眾議院、甚至 2028 年贏回白宮的風險。川普政府對白領犯罪的「赦免式」監管哲學（加密貨幣、高頻交易等領域）被視為永久狀態，但這並非必然。民主黨的最佳競選武器已呼之欲出：腐敗、內線交易、政治盟友特赦、監管俘獲——川普反而替對手打造了完美議題。一旦政權輪替，當前金融市場的諸多「寬鬆監管紅利」將面臨全面重新定價。",
+      "url": "https://www.zerohedge.com/markets/day-democrats-return-wall-street",
+      "timestamp": "2026-07-20",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Here's The 2 Trades That Goldman's Top Quant Trader Suggests To Navigate This 'Market Of Stocks' — 高盛頂尖量化交易員建議的兩筆交易：如何在「個股市場」中航行",
+      "category": "market",
+      "summary": "儘管面臨荷姆茲海峽地緣風險、持續通膨、高利率及即將到來的中期選舉，美國市場（至少指數層面）表現出驚人的韌性。地緣政治風險（以原油波動率為代理變數）正在上升，但等權重 S&P 500 本週創下歷史新高。高盛頂尖量化交易員提出兩筆建議交易，應對當前「Market of Stocks」（個股分化市場）的環境。內容因付費牆限制僅有極短預覽。",
+      "url": "https://www.zerohedge.com/markets/heres-2-trades-goldmans-top-quant-trader-suggests-navigate-market-stocks",
+      "timestamp": "2026-07-20",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Morgan Stanley: Gamma vs Theta — 摩根士丹利：Gamma 與 Theta 之戰",
+      "category": "market",
+      "summary": "摩根士丹利固定收益研究全球主管 Andrew Sheets 借用《奧德賽》中 Scylla 與 Charybdis（雙重險境）的典故，比喻當前投資人與央行面臨的雙重困境。Gamma（對沖波動的成本與風險）與 Theta（時間衰減）之間的權衡，正成為市場結構的核心矛盾。文章沿用荷馬史詩的隱喻，探討在波動率環境改變下，市場參與者如何在兩種截然不同的風險之間做出選擇。內容因付費牆限制僅有極短預覽。",
+      "url": "https://www.zerohedge.com/markets/morgan-stanley-gamma-vs-theta",
+      "timestamp": "2026-07-20",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Mamdani's New York: West Side Homeless Camp Stretching 12 Blocks Now Allegedly Stealing City Power — Mamdani 的紐約：西側遊民帳篷綿延 12 個街區，涉嫌竊取市電",
+      "category": "market",
+      "summary": "曼哈頓西側的遊民帳篷營地從 34 街延伸到 46 街（約 12 個街區），靠近無畏號航艦博物館和林肯隧道入口。有居民被目擊擅自接入市電線路為臨時住所供電，警方要求其斷開連接，並查獲延長線和電源排插。公車司機和當地工作者表示營地近幾週持續擴大，垃圾堆積迫使乘客站到馬路上。市長 Zohran Mamdani 為其政策辯護，稱優先目標是將遊民安置到收容所和永久住房，而非簡單驅散，然而實際效果似乎有限。",
+      "url": "https://www.zerohedge.com/markets/west-side-nyc-homeless-camp-now-allegedly-stealing-city-power",
+      "timestamp": "2026-07-20",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg"
+      ],
+      "premium": true
+    }
+  ]
+}
