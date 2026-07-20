@@ -1,0 +1,91 @@
+{
+  "date": "2026-07-20",
+  "generated_at": "2026-07-20T14:10:00+08:00",
+  "report_type": "postmarket_analysis",
+  "trading_day": "2026-07-20 (Monday)",
+  "data_source": "Yahoo Finance + TWSE",
+  "indices": {
+    "TAIEX": { "name": "加權指數", "close": 42449.70, "change_pct": -0.52, "note": "量縮反彈無力" },
+    "OTC": { "name": "櫃買指數", "close": 378.44, "change_pct": -7.02, "note": "中小型股重災區" },
+    "ES=F": { "name": "S&P 500 期貨(亞洲盤)", "close": 7498.00, "change_pct": 0.54, "note": "較週五現貨" },
+    "CL=F": { "name": "原油期貨", "close": 83.74, "change_pct": 1.50, "note": "延續漲勢" },
+    "GC=F": { "name": "黃金期貨", "close": 4013.40, "change_pct": null, "note": "高檔震盪" }
+  },
+  "recommendations": {
+    "6505": {
+      "name": "台塑化",
+      "direction": "偏多",
+      "recommended_price": 81.30,
+      "close": 77.70,
+      "change_pct": -4.43,
+      "verdict": "❌ 失誤",
+      "analysis": "油價續漲至$83.74但台塑化不漲反跌，前期累計+38.3%漲幅(自07/10推薦58.8)引發獲利回吐，未啟動分批停利機制"
+    },
+    "2881": {
+      "name": "富邦金",
+      "direction": "偏多(防禦)",
+      "recommended_price": 124.50,
+      "close": 123.50,
+      "change_pct": -0.80,
+      "verdict": "⏳ 中性",
+      "analysis": "跌幅與大盤相當(-0.52%)，金融防禦在大盤中度回檔時保護力有限"
+    },
+    "00632R": {
+      "name": "元大台灣50反1",
+      "direction": "短多續抱",
+      "recommended_price": 10.83,
+      "close": 10.90,
+      "change_pct": 0.65,
+      "verdict": "✅ 命中",
+      "analysis": "大盤續跌-0.52%，反1連兩日命中(+6.80%/+0.65%)，成交量大增至1.98億股，避險情緒濃厚"
+    },
+    "1301": {
+      "name": "台塑",
+      "direction": "偏多(石化補漲)",
+      "recommended_price": 62.80,
+      "close": 60.60,
+      "change_pct": -3.50,
+      "verdict": "❌ 失誤",
+      "analysis": "石化補漲邏輯失靈，6505大跌帶動1301跟跌而非補漲。龍頭回檔時同族群落後股通常跟跌"
+    }
+  },
+  "review_stats": {
+    "total": 4,
+    "hit": 1,
+    "neutral": 1,
+    "miss": 2,
+    "hit_rate_pct": 25.0,
+    "effective_hit_rate_pct": 33.3
+  },
+  "momentum_scan": {
+    "scan_time": "2026-07-20 14:04",
+    "scan_range": 223,
+    "total_limit_up": 3,
+    "verdict": "動能極度疲弱，為近期最低漲停數",
+    "industries": {
+      "PCB_CCL": {
+        "count": 1,
+        "stocks": {
+          "8291O": { "name": "尚茂電子", "close": 33.05, "consecutive_limit_up": 4, "cumulative_pct": 32.7, "note": "🔥🔥🔥🔥 第4根，獨立走勢" }
+        }
+      },
+      "semiconductor": {
+        "count": 1,
+        "stocks": {
+          "3532": { "name": "台勝科(Formosa Sumco)", "close": 466.00, "consecutive_limit_up": 2, "cumulative_pct": 9.9, "note": "🟡 第2根，半導體逆勢連2根" }
+        }
+      },
+      "machinery_automation": {
+        "count": 1,
+        "stocks": {
+          "4566": { "name": "時碩(Global Tek)", "close": 66.60, "consecutive_limit_up": 2, "cumulative_pct": 9.9, "note": "🟡 第2根，中小型機電股逆勢突圍" }
+        }
+      }
+    }
+  },
+  "lessons_added": [
+    "漲幅>30%後自動啟動分批停利 — 6505從58.8到81.3(+38.3%)後即使有新利多也應先獲利了結",
+    "龍頭回檔時同族群落後股跟跌非補漲 — 6505回檔→1301跌更重(-3.50%)"
+  ],
+  "summary": "TAIEX僅跌-0.52%看似止穩，但OTC-7.02%才是真相，資金持續撤離中小型股。石化利多鈍化轉獲利了結模式。223檔僅3漲停，動能極度疲弱。7/28-29 FOMC前市場謹慎。"
+}
