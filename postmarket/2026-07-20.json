@@ -1,15 +1,76 @@
 {
   "date": "2026-07-20",
-  "generated_at": "2026-07-20T14:10:00+08:00",
+  "generated_at": "2026-07-20T16:11:30+08:00",
+  "updated_at": "2026-07-20T16:11:30+08:00",
   "report_type": "postmarket_analysis",
   "trading_day": "2026-07-20 (Monday)",
-  "data_source": "Yahoo Finance + TWSE",
+  "data_source": "Yahoo Finance + TWSE + TAIFEX",
   "indices": {
-    "TAIEX": { "name": "加權指數", "close": 42449.70, "change_pct": -0.52, "note": "量縮反彈無力" },
-    "OTC": { "name": "櫃買指數", "close": 378.44, "change_pct": -7.02, "note": "中小型股重災區" },
+    "TAIEX": { "name": "加權指數", "close": 42449.70, "change_pct": -0.52, "high": 43084.51, "low": 41967.75, "note": "量縮反彈無力，日內高低差1,117點" },
+    "OTC": { "name": "櫃買指數", "close": 378.44, "change_pct": -7.02, "note": "中小型股重災區（上週五數據）" },
     "ES=F": { "name": "S&P 500 期貨(亞洲盤)", "close": 7498.00, "change_pct": 0.54, "note": "較週五現貨" },
     "CL=F": { "name": "原油期貨", "close": 83.74, "change_pct": 1.50, "note": "延續漲勢" },
     "GC=F": { "name": "黃金期貨", "close": 4013.40, "change_pct": null, "note": "高檔震盪" }
+  },
+  "institutional_investors": {
+    "data_date": "2026-07-20",
+    "source": "TWSE BFI82U",
+    "summary": "三大法人合計買超+5.01億，投信大買+146.49億撐盤，外資續賣-60.84億但賣壓銳減",
+    "detail": [
+      { "name": "自營商(自行買賣)", "buy_100M": 126.68, "sell_100M": 121.04, "net_100M": 5.64, "signal": "buy" },
+      { "name": "自營商(避險)", "buy_100M": 528.63, "sell_100M": 614.91, "net_100M": -86.28, "signal": "sell" },
+      { "name": "投信", "buy_100M": 356.86, "sell_100M": 210.37, "net_100M": 146.49, "signal": "buy" },
+      { "name": "外資及陸資(不含外資自營商)", "buy_100M": 4439.65, "sell_100M": 4500.48, "net_100M": -60.84, "signal": "sell" },
+      { "name": "外資自營商", "buy_100M": 0.0, "sell_100M": 0.0, "net_100M": 0.0, "signal": "neutral" },
+      { "name": "合計", "buy_100M": 5451.81, "sell_100M": 5446.80, "net_100M": 5.01, "signal": "buy" }
+    ],
+    "futures_options": {
+      "data_date": "20260717",
+      "note": "TAIFEX今日數據尚未更新（通常17:00-18:00公布），以下為上週五數據",
+      "foreign_taiex_futures": {
+        "net_oi": -86189,
+        "long_oi": 6867,
+        "short_oi": 93056,
+        "prev_net_oi": -84453,
+        "change": -1736,
+        "signal": "bearish"
+      },
+      "total_futures_net_oi": {
+        "dealer": 4666,
+        "investment_trust": 75215,
+        "foreign": -86189,
+        "total": -6308,
+        "signal": "bearish"
+      },
+      "put_call_ratio": {
+        "volume_pct": 83.63,
+        "oi_pct": 92.94,
+        "volume_signal": "bearish",
+        "oi_signal": "neutral",
+        "prev_volume_pct": 88.01,
+        "prev_oi_pct": 93.37
+      },
+      "verdict": "中性偏空"
+    }
+  },
+  "forex": {
+    "usdtwd": 32.310,
+    "change_pct": -0.17,
+    "prev_close": 32.365,
+    "note": "台幣微升，外資賣壓大幅縮減下匯市壓力緩和"
+  },
+  "key_stocks": {
+    "2330": { "name": "台積電", "close": 2320.0, "change_pct": 1.31, "note": "領漲撐盤龍頭" },
+    "2317": { "name": "鴻海", "close": 234.5, "change_pct": 0.21, "note": "平盤附近震盪" },
+    "2454": { "name": "聯發科", "close": 3340.0, "change_pct": -0.89, "note": "小幅回檔" },
+    "2308": { "name": "台達電", "close": 1705.0, "change_pct": -2.01, "note": "電子權值續弱" },
+    "2382": { "name": "廣達", "close": 316.0, "change_pct": -2.92, "note": "AI概念股補跌" },
+    "2303": { "name": "聯電", "close": 130.0, "change_pct": -9.72, "note": "連兩日暴跌近跌停" },
+    "2881": { "name": "富邦金", "close": 123.5, "change_pct": -0.80, "note": "金融權值抗跌" },
+    "2882": { "name": "國泰金", "close": 94.0, "change_pct": -0.32, "note": "平盤" },
+    "2891": { "name": "中信金", "close": 61.5, "change_pct": -0.97, "note": "小幅回檔" },
+    "2886": { "name": "兆豐金", "close": 48.2, "change_pct": 1.26, "note": "連續強勢，避險轉進" },
+    "5880": { "name": "合庫金", "close": 25.5, "change_pct": 0.59, "note": "銀行股抗跌" }
   },
   "recommendations": {
     "6505": {
@@ -87,5 +148,5 @@
     "漲幅>30%後自動啟動分批停利 — 6505從58.8到81.3(+38.3%)後即使有新利多也應先獲利了結",
     "龍頭回檔時同族群落後股跟跌非補漲 — 6505回檔→1301跌更重(-3.50%)"
   ],
-  "summary": "TAIEX僅跌-0.52%看似止穩，但OTC-7.02%才是真相，資金持續撤離中小型股。石化利多鈍化轉獲利了結模式。223檔僅3漲停，動能極度疲弱。7/28-29 FOMC前市場謹慎。"
+  "summary": "TAIEX僅跌-0.52%看似止穩，但實為大跌後弱勢整理。投信大買+146.49億撐盤，外資續賣但賣壓銳減至-60.84億。台積電+1.31%領漲，聯電-9.72%連兩日幾近跌停。三大法人合計僅+5.01億，動能分歧。期貨外資淨空單擴大至-86,189口。7/28-29 FOMC前市場謹慎。"
 }
