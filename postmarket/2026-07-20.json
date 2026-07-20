@@ -1,28 +1,91 @@
 {
   "date": "2026-07-20",
   "generated_at": "2026-07-20T16:11:30+08:00",
-  "updated_at": "2026-07-20T16:11:30+08:00",
+  "updated_at": "2026-07-20T22:13:20+08:00",
   "report_type": "postmarket_analysis",
   "trading_day": "2026-07-20 (Monday)",
   "data_source": "Yahoo Finance + TWSE + TAIFEX",
   "indices": {
-    "TAIEX": { "name": "加權指數", "close": 42449.70, "change_pct": -0.52, "high": 43084.51, "low": 41967.75, "note": "量縮反彈無力，日內高低差1,117點" },
-    "OTC": { "name": "櫃買指數", "close": 378.44, "change_pct": -7.02, "note": "中小型股重災區（上週五數據）" },
-    "ES=F": { "name": "S&P 500 期貨(亞洲盤)", "close": 7498.00, "change_pct": 0.54, "note": "較週五現貨" },
-    "CL=F": { "name": "原油期貨", "close": 83.74, "change_pct": 1.50, "note": "延續漲勢" },
-    "GC=F": { "name": "黃金期貨", "close": 4013.40, "change_pct": null, "note": "高檔震盪" }
+    "TAIEX": {
+      "name": "加權指數",
+      "close": 42449.7,
+      "change_pct": -0.52,
+      "high": 43084.51,
+      "low": 41967.75,
+      "note": "量縮反彈無力，日內高低差1,117點"
+    },
+    "OTC": {
+      "name": "櫃買指數",
+      "close": 378.44,
+      "change_pct": -7.02,
+      "note": "中小型股重災區（上週五數據）"
+    },
+    "ES=F": {
+      "name": "S&P 500 期貨(亞洲盤)",
+      "close": 7498.0,
+      "change_pct": 0.54,
+      "note": "較週五現貨"
+    },
+    "CL=F": {
+      "name": "原油期貨",
+      "close": 83.74,
+      "change_pct": 1.5,
+      "note": "延續漲勢"
+    },
+    "GC=F": {
+      "name": "黃金期貨",
+      "close": 4013.4,
+      "change_pct": null,
+      "note": "高檔震盪"
+    }
   },
   "institutional_investors": {
     "data_date": "2026-07-20",
     "source": "TWSE BFI82U",
     "summary": "三大法人合計買超+5.01億，投信大買+146.49億撐盤，外資續賣-60.84億但賣壓銳減",
     "detail": [
-      { "name": "自營商(自行買賣)", "buy_100M": 126.68, "sell_100M": 121.04, "net_100M": 5.64, "signal": "buy" },
-      { "name": "自營商(避險)", "buy_100M": 528.63, "sell_100M": 614.91, "net_100M": -86.28, "signal": "sell" },
-      { "name": "投信", "buy_100M": 356.86, "sell_100M": 210.37, "net_100M": 146.49, "signal": "buy" },
-      { "name": "外資及陸資(不含外資自營商)", "buy_100M": 4439.65, "sell_100M": 4500.48, "net_100M": -60.84, "signal": "sell" },
-      { "name": "外資自營商", "buy_100M": 0.0, "sell_100M": 0.0, "net_100M": 0.0, "signal": "neutral" },
-      { "name": "合計", "buy_100M": 5451.81, "sell_100M": 5446.80, "net_100M": 5.01, "signal": "buy" }
+      {
+        "name": "自營商(自行買賣)",
+        "buy_100M": 126.68,
+        "sell_100M": 121.04,
+        "net_100M": 5.64,
+        "signal": "buy"
+      },
+      {
+        "name": "自營商(避險)",
+        "buy_100M": 528.63,
+        "sell_100M": 614.91,
+        "net_100M": -86.28,
+        "signal": "sell"
+      },
+      {
+        "name": "投信",
+        "buy_100M": 356.86,
+        "sell_100M": 210.37,
+        "net_100M": 146.49,
+        "signal": "buy"
+      },
+      {
+        "name": "外資及陸資(不含外資自營商)",
+        "buy_100M": 4439.65,
+        "sell_100M": 4500.48,
+        "net_100M": -60.84,
+        "signal": "sell"
+      },
+      {
+        "name": "外資自營商",
+        "buy_100M": 0.0,
+        "sell_100M": 0.0,
+        "net_100M": 0.0,
+        "signal": "neutral"
+      },
+      {
+        "name": "合計",
+        "buy_100M": 5451.81,
+        "sell_100M": 5446.8,
+        "net_100M": 5.01,
+        "signal": "buy"
+      }
     ],
     "futures_options": {
       "data_date": "20260717",
@@ -54,30 +117,85 @@
     }
   },
   "forex": {
-    "usdtwd": 32.310,
+    "usdtwd": 32.31,
     "change_pct": -0.17,
     "prev_close": 32.365,
     "note": "台幣微升，外資賣壓大幅縮減下匯市壓力緩和"
   },
   "key_stocks": {
-    "2330": { "name": "台積電", "close": 2320.0, "change_pct": 1.31, "note": "領漲撐盤龍頭" },
-    "2317": { "name": "鴻海", "close": 234.5, "change_pct": 0.21, "note": "平盤附近震盪" },
-    "2454": { "name": "聯發科", "close": 3340.0, "change_pct": -0.89, "note": "小幅回檔" },
-    "2308": { "name": "台達電", "close": 1705.0, "change_pct": -2.01, "note": "電子權值續弱" },
-    "2382": { "name": "廣達", "close": 316.0, "change_pct": -2.92, "note": "AI概念股補跌" },
-    "2303": { "name": "聯電", "close": 130.0, "change_pct": -9.72, "note": "連兩日暴跌近跌停" },
-    "2881": { "name": "富邦金", "close": 123.5, "change_pct": -0.80, "note": "金融權值抗跌" },
-    "2882": { "name": "國泰金", "close": 94.0, "change_pct": -0.32, "note": "平盤" },
-    "2891": { "name": "中信金", "close": 61.5, "change_pct": -0.97, "note": "小幅回檔" },
-    "2886": { "name": "兆豐金", "close": 48.2, "change_pct": 1.26, "note": "連續強勢，避險轉進" },
-    "5880": { "name": "合庫金", "close": 25.5, "change_pct": 0.59, "note": "銀行股抗跌" }
+    "2330": {
+      "name": "台積電",
+      "close": 2320.0,
+      "change_pct": 1.31,
+      "note": "領漲撐盤龍頭"
+    },
+    "2317": {
+      "name": "鴻海",
+      "close": 234.5,
+      "change_pct": 0.21,
+      "note": "平盤附近震盪"
+    },
+    "2454": {
+      "name": "聯發科",
+      "close": 3340.0,
+      "change_pct": -0.89,
+      "note": "小幅回檔"
+    },
+    "2308": {
+      "name": "台達電",
+      "close": 1705.0,
+      "change_pct": -2.01,
+      "note": "電子權值續弱"
+    },
+    "2382": {
+      "name": "廣達",
+      "close": 316.0,
+      "change_pct": -2.92,
+      "note": "AI概念股補跌"
+    },
+    "2303": {
+      "name": "聯電",
+      "close": 130.0,
+      "change_pct": -9.72,
+      "note": "連兩日暴跌近跌停"
+    },
+    "2881": {
+      "name": "富邦金",
+      "close": 123.5,
+      "change_pct": -0.8,
+      "note": "金融權值抗跌"
+    },
+    "2882": {
+      "name": "國泰金",
+      "close": 94.0,
+      "change_pct": -0.32,
+      "note": "平盤"
+    },
+    "2891": {
+      "name": "中信金",
+      "close": 61.5,
+      "change_pct": -0.97,
+      "note": "小幅回檔"
+    },
+    "2886": {
+      "name": "兆豐金",
+      "close": 48.2,
+      "change_pct": 1.26,
+      "note": "連續強勢，避險轉進"
+    },
+    "5880": {
+      "name": "合庫金",
+      "close": 25.5,
+      "change_pct": 0.59,
+      "note": "銀行股抗跌"
+    }
   },
   "recommendations": {
     "6505": {
       "name": "台塑化",
       "direction": "偏多",
-      "recommended_price": 81.30,
-      "close": 77.70,
+      "recommended_price": 81.3,
+      "close": 77.7,
       "change_pct": -4.43,
       "verdict": "❌ 失誤",
       "analysis": "油價續漲至$83.74但台塑化不漲反跌，前期累計+38.3%漲幅(自07/10推薦58.8)引發獲利回吐，未啟動分批停利機制"
@@ -85,9 +203,9 @@
     "2881": {
       "name": "富邦金",
       "direction": "偏多(防禦)",
-      "recommended_price": 124.50,
-      "close": 123.50,
-      "change_pct": -0.80,
+      "recommended_price": 124.5,
+      "close": 123.5,
+      "change_pct": -0.8,
       "verdict": "⏳ 中性",
       "analysis": "跌幅與大盤相當(-0.52%)，金融防禦在大盤中度回檔時保護力有限"
     },
@@ -95,7 +213,7 @@
       "name": "元大台灣50反1",
       "direction": "短多續抱",
       "recommended_price": 10.83,
-      "close": 10.90,
+      "close": 10.9,
       "change_pct": 0.65,
       "verdict": "✅ 命中",
       "analysis": "大盤續跌-0.52%，反1連兩日命中(+6.80%/+0.65%)，成交量大增至1.98億股，避險情緒濃厚"
@@ -103,9 +221,9 @@
     "1301": {
       "name": "台塑",
       "direction": "偏多(石化補漲)",
-      "recommended_price": 62.80,
-      "close": 60.60,
-      "change_pct": -3.50,
+      "recommended_price": 62.8,
+      "close": 60.6,
+      "change_pct": -3.5,
       "verdict": "❌ 失誤",
       "analysis": "石化補漲邏輯失靈，6505大跌帶動1301跟跌而非補漲。龍頭回檔時同族群落後股通常跟跌"
     }
@@ -127,19 +245,37 @@
       "PCB_CCL": {
         "count": 1,
         "stocks": {
-          "8291O": { "name": "尚茂電子", "close": 33.05, "consecutive_limit_up": 4, "cumulative_pct": 32.7, "note": "🔥🔥🔥🔥 第4根，獨立走勢" }
+          "8291O": {
+            "name": "尚茂電子",
+            "close": 33.05,
+            "consecutive_limit_up": 4,
+            "cumulative_pct": 32.7,
+            "note": "🔥🔥🔥🔥 第4根，獨立走勢"
+          }
         }
       },
       "semiconductor": {
         "count": 1,
         "stocks": {
-          "3532": { "name": "台勝科(Formosa Sumco)", "close": 466.00, "consecutive_limit_up": 2, "cumulative_pct": 9.9, "note": "🟡 第2根，半導體逆勢連2根" }
+          "3532": {
+            "name": "台勝科(Formosa Sumco)",
+            "close": 466.0,
+            "consecutive_limit_up": 2,
+            "cumulative_pct": 9.9,
+            "note": "🟡 第2根，半導體逆勢連2根"
+          }
         }
       },
       "machinery_automation": {
         "count": 1,
         "stocks": {
-          "4566": { "name": "時碩(Global Tek)", "close": 66.60, "consecutive_limit_up": 2, "cumulative_pct": 9.9, "note": "🟡 第2根，中小型機電股逆勢突圍" }
+          "4566": {
+            "name": "時碩(Global Tek)",
+            "close": 66.6,
+            "consecutive_limit_up": 2,
+            "cumulative_pct": 9.9,
+            "note": "🟡 第2根，中小型機電股逆勢突圍"
+          }
         }
       }
     }
@@ -148,5 +284,455 @@
     "漲幅>30%後自動啟動分批停利 — 6505從58.8到81.3(+38.3%)後即使有新利多也應先獲利了結",
     "龍頭回檔時同族群落後股跟跌非補漲 — 6505回檔→1301跌更重(-3.50%)"
   ],
-  "summary": "TAIEX僅跌-0.52%看似止穩，但實為大跌後弱勢整理。投信大買+146.49億撐盤，外資續賣但賣壓銳減至-60.84億。台積電+1.31%領漲，聯電-9.72%連兩日幾近跌停。三大法人合計僅+5.01億，動能分歧。期貨外資淨空單擴大至-86,189口。7/28-29 FOMC前市場謹慎。"
+  "summary": "TAIEX僅跌-0.52%看似止穩，但實為大跌後弱勢整理。投信大買+146.49億撐盤，外資續賣但賣壓銳減至-60.84億。台積電+1.31%領漲，聯電-9.72%連兩日幾近跌停。三大法人合計僅+5.01億，動能分歧。期貨外資淨空單擴大至-86,189口。7/28-29 FOMC前市場謹慎。",
+  "complete_holdings": {
+    "data_date": "2026-07-20",
+    "data_time": "22:05",
+    "source": "TWSE BFI82U + T86 + TWT93U + MI_MARGN",
+    "market_overview": {
+      "taiex": {
+        "close": 42449.7,
+        "change_pct": -0.52,
+        "high": 43084.51,
+        "low": 41967.75
+      },
+      "otc": {
+        "close": 378.44,
+        "change_pct": -7.02
+      }
+    },
+    "institutions_detail": {
+      "foreign_top_buy": [
+        {
+          "id": "3481",
+          "name": "群創",
+          "net_shares": 34660612
+        },
+        {
+          "id": "2884",
+          "name": "玉山金",
+          "net_shares": 24102093
+        },
+        {
+          "id": "00990A",
+          "name": "主動元大AI新經濟",
+          "net_shares": 20863600
+        },
+        {
+          "id": "00631L",
+          "name": "元大台灣50正2",
+          "net_shares": 17447814
+        },
+        {
+          "id": "2409",
+          "name": "友達",
+          "net_shares": 16469466
+        },
+        {
+          "id": "00988A",
+          "name": "主動統一全球創新",
+          "net_shares": 14593042
+        },
+        {
+          "id": "2618",
+          "name": "長榮航",
+          "net_shares": 13269522
+        },
+        {
+          "id": "00982A",
+          "name": "主動群益台灣強棒",
+          "net_shares": 11548758
+        },
+        {
+          "id": "3231",
+          "name": "緯創",
+          "net_shares": 11142193
+        },
+        {
+          "id": "6505",
+          "name": "台塑化",
+          "net_shares": 11002422
+        }
+      ],
+      "foreign_top_sell": [
+        {
+          "id": "0050",
+          "name": "元大台灣50",
+          "net_shares": -97368426
+        },
+        {
+          "id": "00403A",
+          "name": "主動統一升級50",
+          "net_shares": -65222676
+        },
+        {
+          "id": "2887",
+          "name": "台新新光金",
+          "net_shares": -63153407
+        },
+        {
+          "id": "6770",
+          "name": "力積電",
+          "net_shares": -24369309
+        },
+        {
+          "id": "0056",
+          "name": "元大高股息",
+          "net_shares": -23175636
+        },
+        {
+          "id": "2890",
+          "name": "永豐金",
+          "net_shares": -21031702
+        },
+        {
+          "id": "2880",
+          "name": "華南金",
+          "net_shares": -15752639
+        },
+        {
+          "id": "2834",
+          "name": "臺企銀",
+          "net_shares": -14852515
+        },
+        {
+          "id": "2885",
+          "name": "元大金",
+          "net_shares": -14012731
+        },
+        {
+          "id": "2892",
+          "name": "第一金",
+          "net_shares": -13241442
+        }
+      ],
+      "it_top_buy": [
+        {
+          "id": "2887",
+          "name": "台新新光金",
+          "net_shares": 54328430
+        },
+        {
+          "id": "2880",
+          "name": "華南金",
+          "net_shares": 12696484
+        },
+        {
+          "id": "2890",
+          "name": "永豐金",
+          "net_shares": 12085510
+        },
+        {
+          "id": "2892",
+          "name": "第一金",
+          "net_shares": 10269153
+        },
+        {
+          "id": "2801",
+          "name": "彰銀",
+          "net_shares": 9803000
+        },
+        {
+          "id": "1303",
+          "name": "南亞",
+          "net_shares": 8675803
+        },
+        {
+          "id": "2542",
+          "name": "興富發",
+          "net_shares": 7357000
+        },
+        {
+          "id": "2886",
+          "name": "兆豐金",
+          "net_shares": 7047179
+        },
+        {
+          "id": "1216",
+          "name": "統一",
+          "net_shares": 6533298
+        },
+        {
+          "id": "2891",
+          "name": "中信金",
+          "net_shares": 6340001
+        }
+      ],
+      "it_top_sell": [
+        {
+          "id": "3481",
+          "name": "群創",
+          "net_shares": -22851947
+        },
+        {
+          "id": "2303",
+          "name": "聯電",
+          "net_shares": -13501846
+        },
+        {
+          "id": "2618",
+          "name": "長榮航",
+          "net_shares": -6457925
+        },
+        {
+          "id": "6005",
+          "name": "群益證",
+          "net_shares": -5018000
+        },
+        {
+          "id": "2356",
+          "name": "英業達",
+          "net_shares": -3992504
+        },
+        {
+          "id": "2353",
+          "name": "宏碁",
+          "net_shares": -3816520
+        },
+        {
+          "id": "2105",
+          "name": "正新",
+          "net_shares": -3163113
+        },
+        {
+          "id": "9904",
+          "name": "寶成",
+          "net_shares": -3091869
+        },
+        {
+          "id": "2882",
+          "name": "國泰金",
+          "net_shares": -2505887
+        },
+        {
+          "id": "4938",
+          "name": "和碩",
+          "net_shares": -2490663
+        }
+      ],
+      "key_stocks_detail": [
+        {
+          "id": "2891",
+          "name": "中信金",
+          "foreign_net": 6376598,
+          "it_net": 6340001,
+          "dealer_net": 5196542,
+          "total_net": 17913141
+        },
+        {
+          "id": "2409",
+          "name": "友達",
+          "foreign_net": 16469466,
+          "it_net": 45855,
+          "dealer_net": -1215862,
+          "total_net": 15299459
+        },
+        {
+          "id": "3231",
+          "name": "緯創",
+          "foreign_net": 11142193,
+          "it_net": -1380751,
+          "dealer_net": 2184081,
+          "total_net": 11945523
+        },
+        {
+          "id": "3481",
+          "name": "群創",
+          "foreign_net": 34660612,
+          "it_net": -22851947,
+          "dealer_net": -345673,
+          "total_net": 11462992
+        },
+        {
+          "id": "6505",
+          "name": "台塑化",
+          "foreign_net": 11002422,
+          "it_net": 76460,
+          "dealer_net": 38420,
+          "total_net": 11117302
+        },
+        {
+          "id": "2382",
+          "name": "廣達",
+          "foreign_net": 5295581,
+          "it_net": 2091470,
+          "dealer_net": 1301001,
+          "total_net": 8688052
+        },
+        {
+          "id": "2882",
+          "name": "國泰金",
+          "foreign_net": 8311903,
+          "it_net": -2505887,
+          "dealer_net": 1907715,
+          "total_net": 7713731
+        },
+        {
+          "id": "5880",
+          "name": "合庫金",
+          "foreign_net": 5330969,
+          "it_net": -23351,
+          "dealer_net": 2132937,
+          "total_net": 7440555
+        },
+        {
+          "id": "2881",
+          "name": "富邦金",
+          "foreign_net": -1554649,
+          "it_net": 5882895,
+          "dealer_net": 1344875,
+          "total_net": 5673121
+        },
+        {
+          "id": "2330",
+          "name": "台積電",
+          "foreign_net": -1672128,
+          "it_net": 1048697,
+          "dealer_net": 4625837,
+          "total_net": 4002406
+        },
+        {
+          "id": "2317",
+          "name": "鴻海",
+          "foreign_net": 60865,
+          "it_net": 449800,
+          "dealer_net": 3411614,
+          "total_net": 3922279
+        },
+        {
+          "id": "2886",
+          "name": "兆豐金",
+          "foreign_net": -9985009,
+          "it_net": 7047179,
+          "dealer_net": 5930389,
+          "total_net": 2992559
+        },
+        {
+          "id": "2454",
+          "name": "聯發科",
+          "foreign_net": 663357,
+          "it_net": 2094,
+          "dealer_net": 353667,
+          "total_net": 1019118
+        },
+        {
+          "id": "2308",
+          "name": "台達電",
+          "foreign_net": -840177,
+          "it_net": 202338,
+          "dealer_net": 478254,
+          "total_net": -159585
+        },
+        {
+          "id": "1301",
+          "name": "台塑",
+          "foreign_net": -4995594,
+          "it_net": -14100,
+          "dealer_net": -284386,
+          "total_net": -5294080
+        },
+        {
+          "id": "6770",
+          "name": "力積電",
+          "foreign_net": -24369309,
+          "it_net": 290000,
+          "dealer_net": -2634568,
+          "total_net": -26713877
+        },
+        {
+          "id": "2303",
+          "name": "聯電",
+          "foreign_net": -9126349,
+          "it_net": -13501846,
+          "dealer_net": -16137484,
+          "total_net": -38765679
+        }
+      ]
+    },
+    "short_selling": {
+      "top_borrow_sell": [
+        {
+          "id": "00403A",
+          "name": "主動統一升級50",
+          "sell_shares": 28588000,
+          "return_shares": 176000
+        },
+        {
+          "id": "2409",
+          "name": "友達",
+          "sell_shares": 23482000,
+          "return_shares": 1326000
+        },
+        {
+          "id": "00631L",
+          "name": "元大台灣50正2",
+          "sell_shares": 13864000,
+          "return_shares": 3294000
+        },
+        {
+          "id": "3481",
+          "name": "群創",
+          "sell_shares": 11693000,
+          "return_shares": 850000
+        },
+        {
+          "id": "00632R",
+          "name": "元大台灣50反1",
+          "sell_shares": 10253000,
+          "return_shares": 651000
+        },
+        {
+          "id": "00685L",
+          "name": "群益臺灣加權正2",
+          "sell_shares": 9720000,
+          "return_shares": 2702000
+        },
+        {
+          "id": "2303",
+          "name": "聯電",
+          "sell_shares": 9393000,
+          "return_shares": 400000
+        },
+        {
+          "id": "00637L",
+          "name": "元大滬深300正2",
+          "sell_shares": 7456000,
+          "return_shares": 308000
+        },
+        {
+          "id": "2344",
+          "name": "華邦電",
+          "sell_shares": 6745000,
+          "return_shares": 141000
+        },
+        {
+          "id": "1303",
+          "name": "南亞",
+          "sell_shares": 5370000,
+          "return_shares": 0
+        }
+      ]
+    },
+    "verdict": "🔶 外資賣超61億 / 🟢 投信大買146億護盤 / 散戶撤退(融資-189.3億) / 🟢 融券回補25,438張",
+    "margin": {
+      "type": "融資",
+      "date": "2026-07-20",
+      "prev_balance_100M": 5879.63,
+      "balance_100M": 5690.36,
+      "change_100M": -189.27,
+      "change_note": "-189.27億",
+      "prev_shares_zhang": 9348875,
+      "shares_zhang": 9270939,
+      "change_shares_zhang": -77936
+    },
+    "margin_short": {
+      "type": "融券",
+      "date": "2026-07-20",
+      "prev_shares_zhang": 236300,
+      "shares_zhang": 210862,
+      "change_shares_zhang": -25438,
+      "change_note": "-25,438張"
+    },
+    "summary": "三大法人合計買超5.01億，外資賣超60.84億，投信買超146.49億。 融資減少189.27億，融券減少25,438張。"
+  }
 }
