@@ -1,0 +1,271 @@
+{
+  "date": "2026-07-21",
+  "generated_at": "2026-07-21T13:41:56+08:00",
+  "updated_at": "2026-07-21T13:41:56+08:00",
+  "report_type": "postmarket_analysis",
+  "trading_day": "2026-07-21 (Tuesday)",
+  "data_source": "Yahoo Finance + TWSE",
+  "indices": {
+    "TAIEX": {
+      "name": "加權指數",
+      "close": 44089.41,
+      "open": 42566.93,
+      "high": 44177.588820000004,
+      "low": 42566.93,
+      "change": 1639.71,
+      "change_pct": 3.86,
+      "signal": "buy",
+      "note": "強勁反彈，收復前日跌幅"
+    }
+  },
+  "fx": {
+    "USD_TWD": {
+      "rate": 32.26,
+      "change": -0.05,
+      "signal": "buy",
+      "note": "台幣微升"
+    }
+  },
+  "stocks": {
+    "2330.TW": {
+      "name": "台積電",
+      "close": 2400.0,
+      "open": 2350.0,
+      "high": 2470.0,
+      "low": 2290.0,
+      "change_pct": 3.45,
+      "signal": "buy"
+    },
+    "2454.TW": {
+      "name": "聯發科",
+      "close": 3670.0,
+      "open": 3435.0,
+      "high": 3790.0,
+      "low": 3240.0,
+      "change_pct": 9.88,
+      "signal": "buy"
+    },
+    "2317.TW": {
+      "name": "鴻海",
+      "close": 245.5,
+      "open": 238.0,
+      "high": 247.0,
+      "low": 230.5,
+      "change_pct": 4.69,
+      "signal": "buy"
+    },
+    "2308.TW": {
+      "name": "台達電",
+      "close": 1835.0,
+      "open": 1735.0,
+      "high": 1935.0,
+      "low": 1665.0,
+      "change_pct": 7.62,
+      "signal": "buy"
+    },
+    "2382.TW": {
+      "name": "廣達",
+      "close": 321.5,
+      "open": 319.5,
+      "high": 384.0,
+      "low": 309.0,
+      "change_pct": 1.74,
+      "signal": "buy"
+    },
+    "2412.TW": {
+      "name": "中華電",
+      "close": 138.0,
+      "open": 138.0,
+      "high": 140.0,
+      "low": 133.0,
+      "change_pct": -0.72,
+      "signal": "sell"
+    },
+    "2881.TW": {
+      "name": "富邦金",
+      "close": 123.0,
+      "open": 124.0,
+      "high": 130.0,
+      "low": 122.0,
+      "change_pct": -0.4,
+      "signal": "sell"
+    },
+    "2882.TW": {
+      "name": "國泰金",
+      "close": 95.3,
+      "open": 94.9,
+      "high": 98.7,
+      "low": 93.4,
+      "change_pct": 1.38,
+      "signal": "buy"
+    },
+    "2303.TW": {
+      "name": "聯電",
+      "close": 134.5,
+      "open": 130.0,
+      "high": 168.0,
+      "low": 125.5,
+      "change_pct": 3.46,
+      "signal": "buy"
+    },
+    "2002.TW": {
+      "name": "中鋼",
+      "close": 18.85,
+      "open": 18.6,
+      "high": 18.95,
+      "low": 18.45,
+      "change_pct": 1.62,
+      "signal": "buy"
+    },
+    "1301.TW": {
+      "name": "台塑",
+      "close": 62.7,
+      "open": 61.3,
+      "high": 68.6,
+      "low": 60.0,
+      "change_pct": 3.47,
+      "signal": "buy"
+    },
+    "1303.TW": {
+      "name": "南亞",
+      "close": 193.5,
+      "open": 194.0,
+      "high": 230.0,
+      "low": 179.5,
+      "change_pct": 3.75,
+      "signal": "buy"
+    },
+    "6505.TW": {
+      "name": "台塑化",
+      "close": 85.4,
+      "open": 80.0,
+      "high": 85.4,
+      "low": 66.1,
+      "change_pct": 9.91,
+      "signal": "buy"
+    },
+    "1326.TW": {
+      "name": "台化",
+      "close": 68.2,
+      "open": 65.0,
+      "high": 73.0,
+      "low": 63.7,
+      "change_pct": 6.23,
+      "signal": "buy"
+    },
+    "3711.TW": {
+      "name": "日月光投控",
+      "close": 632.0,
+      "open": 610.0,
+      "high": 696.0,
+      "low": 577.0,
+      "change_pct": 5.86,
+      "signal": "buy"
+    },
+    "6669.TW": {
+      "name": "緯穎",
+      "close": 4995.0,
+      "open": 4825.0,
+      "high": 5160.0,
+      "low": 4620.0,
+      "change_pct": 6.62,
+      "signal": "buy"
+    },
+    "3008.TW": {
+      "name": "大立光",
+      "close": 3950.0,
+      "open": 3925.0,
+      "high": 4370.0,
+      "low": 3795.0,
+      "change_pct": 1.94,
+      "signal": "buy"
+    },
+    "3231.TW": {
+      "name": "緯創",
+      "close": 149.5,
+      "open": 145.0,
+      "high": 150.5,
+      "low": 139.0,
+      "change_pct": 4.18,
+      "signal": "buy"
+    },
+    "2357.TW": {
+      "name": "華碩",
+      "close": 738.0,
+      "open": 700.0,
+      "high": 738.0,
+      "low": 688.0,
+      "change_pct": 7.27,
+      "signal": "buy"
+    },
+    "2379.TW": {
+      "name": "瑞昱",
+      "close": 738.0,
+      "open": 710.0,
+      "high": 783.0,
+      "low": 689.0,
+      "change_pct": 4.09,
+      "signal": "buy"
+    },
+    "3034.TW": {
+      "name": "聯詠",
+      "close": 477.0,
+      "open": 462.5,
+      "high": 480.5,
+      "low": 452.0,
+      "change_pct": 4.15,
+      "signal": "buy"
+    },
+    "4904.TW": {
+      "name": "遠傳",
+      "close": 102.5,
+      "open": 104.5,
+      "high": 107.0,
+      "low": 94.9,
+      "change_pct": -1.91,
+      "signal": "sell"
+    },
+    "3045.TW": {
+      "name": "台灣大",
+      "close": 112.0,
+      "open": 111.5,
+      "high": 113.5,
+      "low": 108.5,
+      "change_pct": 0.0,
+      "signal": "neutral"
+    },
+    "2891.TW": {
+      "name": "中信金",
+      "close": 62.7,
+      "open": 61.5,
+      "high": 65.3,
+      "low": 60.7,
+      "change_pct": 1.95,
+      "signal": "buy"
+    },
+    "5871.TW": {
+      "name": "中租-KY",
+      "close": 122.5,
+      "open": 121.5,
+      "high": 123.0,
+      "low": 116.5,
+      "change_pct": 0.0,
+      "signal": "neutral"
+    }
+  },
+  "summary": {
+    "taiex_change": "+3.86%",
+    "up_stocks": 20,
+    "down_stocks": 3,
+    "total_tracked": 25,
+    "market_breadth": "強勢",
+    "highlights": [
+      "加權指數收 44,089，漲 +3.86%，反彈收復昨失地",
+      "權值股全面大漲，聯發科(+9.88%)、台塑化(+9.91%)漲近10%",
+      "台積電(+3.45%)重返2400元",
+      "美元/台幣 32.26，台幣小幅升值",
+      "追蹤25檔權值股中 20 漲 3 跌 2 平"
+    ],
+    "flat_stocks": 2
+  }
+}
