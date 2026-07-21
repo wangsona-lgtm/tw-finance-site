@@ -507,5 +507,323 @@
       "7/21: 0050除息0.6元、0056除息1.35元、00929除息0.38元",
       "7/28-29: FOMC利率決策會議"
     ]
+  },
+  "full_cron_analysis": {
+    "generated_at": "2026-07-21T22:14:31+08:00",
+    "data_source": "Yahoo Finance + TWSE BFI82U + TAIFEX OpenAPI + Goodinfo",
+    "indices": {
+      "TAIEX": {
+        "close": 44232.87,
+        "change": 1783.17,
+        "change_pct": 4.2,
+        "high": 44232.87,
+        "low": 42566.93,
+        "volume_ntd_billion": 8356
+      },
+      "TSM_ADR": {
+        "close_usd": 415.26,
+        "change_pct": 3.23,
+        "premium_pct": 11.43
+      }
+    },
+    "three_institutional_detailed": {
+      "date": "2026-07-21",
+      "summary": {
+        "total_buy_100m": 4301.51,
+        "total_sell_100m": 4138.61,
+        "total_net_100m": 162.89,
+        "total_net_label": "+162.89億"
+      },
+      "breakdown": [
+        {
+          "name": "外資及陸資",
+          "buy_100m": 3517.68,
+          "sell_100m": 3560.99,
+          "net_100m": -43.32,
+          "signal": "sell"
+        },
+        {
+          "name": "投信",
+          "buy_100m": 391.69,
+          "sell_100m": 220.55,
+          "net_100m": 171.14,
+          "signal": "buy"
+        },
+        {
+          "name": "自營商(自行買賣)",
+          "buy_100m": 98.58,
+          "sell_100m": 84.6,
+          "net_100m": 13.97,
+          "signal": "buy"
+        },
+        {
+          "name": "自營商(避險)",
+          "buy_100m": 293.56,
+          "sell_100m": 272.46,
+          "net_100m": 21.1,
+          "signal": "buy"
+        },
+        {
+          "name": "合計",
+          "buy_100m": 4301.51,
+          "sell_100m": 4138.61,
+          "net_100m": 162.89,
+          "signal": "buy"
+        }
+      ],
+      "analysis": "投信大買+171.14億為今日最大買盤力量！外資小幅賣超43.32億，相對於昨日大盤賣壓已明顯收斂。自營商合計買超35.07億，整體法人偏多。外資今日實際交易轉為淨多單。"
+    },
+    "futures_options_detailed": {
+      "data_date": "2026-07-21",
+      "trading_summary": {
+        "total_futures_net_oi": "+19,187口",
+        "total_futures_net_amount_100m": 277.93,
+        "total_options_net_oi": "+6,013口"
+      },
+      "details": [
+        {
+          "institution": "外資",
+          "futures_net_oi": 5938,
+          "options_net_oi": -1941,
+          "futures_amount_100m": 118.86
+        },
+        {
+          "institution": "投信",
+          "futures_net_oi": 3127,
+          "options_net_oi": -158,
+          "futures_amount_100m": 276.66
+        },
+        {
+          "institution": "自營商",
+          "futures_net_oi": 10122,
+          "options_net_oi": 8112,
+          "futures_amount_100m": -117.59
+        }
+      ],
+      "open_interest": {
+        "foreign_tx_net_oi": -446048,
+        "foreign_tx_oi_change": "+4,943口（空單回補）",
+        "trust_tx_net_oi": 88505,
+        "trust_tx_oi_change": "+3,127口（多單加碼）",
+        "total_tx_net_oi": -656980,
+        "total_options_net_oi": -6123
+      },
+      "analysis": "外資期貨空單雖仍高達44.6萬口，但較前日減碼近5,000口，且今日實際交易為淨多單。投信持續偏多。整體籌碼結構較上週改善。"
+    },
+    "margin_trading": {
+      "data_date": "2026-07-21",
+      "margin_buy": {
+        "amount_100m": 5764.96,
+        "change_100m": 74.61,
+        "shares": 9359440,
+        "change_shares": 88486
+      },
+      "short_selling": {
+        "shares": 212614,
+        "change_shares": 1752
+      },
+      "shorts_to_margin_ratio": 2.27,
+      "individual_margin_changes": {
+        "2330台積電": {
+          "margin_shares_change": "-2.5萬",
+          "short_shares_change": "+29萬"
+        },
+        "2317鴻海": {
+          "margin_shares_change": "+11.7萬",
+          "short_shares_change": "-240萬"
+        },
+        "2882國泰金": {
+          "margin_shares_change": "+0.1萬",
+          "short_shares_change": "+8萬"
+        },
+        "2382廣達": {
+          "margin_shares_change": "-11.6萬",
+          "short_shares_change": "+158萬"
+        },
+        "6505台塑化": {
+          "margin_shares_change": "+47.4萬",
+          "short_shares_change": "+25萬"
+        }
+      },
+      "analysis": "融資單日增加74.6億、融券微增，散戶在大漲日明顯追價。台塑化融資大增47.4萬張配合今日+9.91%大漲，高融資可能帶來隔日震盪。"
+    },
+    "market_strength": {
+      "limit_up_count": 13,
+      "previous_limit_up_count": 3,
+      "assessment": "動能明顯回暖，13檔漲停(前日僅3檔)",
+      "strong_sectors": [
+        {
+          "sector": "半導體/IC設計",
+          "count": 5,
+          "max_streak": "2根↑",
+          "stocks": "健策(3653)、創意(3443)、海華(3694)"
+        },
+        {
+          "sector": "IP/IC設計",
+          "count": 4,
+          "max_streak": "2根↑",
+          "stocks": "愛普(6531)、芯鼎(6695)、力智(6719)、迅杰(6243)"
+        },
+        {
+          "sector": "PCB/CCL",
+          "count": 3,
+          "max_streak": "5根↑🔥",
+          "stocks": "尚茂(5根)、聯茂(6213)、台光電(2383)"
+        },
+        {
+          "sector": "網通",
+          "count": 1,
+          "max_streak": "2根↑",
+          "stocks": "事欣科(4916)"
+        }
+      ],
+      "weak_sectors": [
+        "特斯拉供應鏈 — TSLA美股續弱",
+        "蘋概股 — AAPL前日-2.14%"
+      ]
+    },
+    "individual_stock_review": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "result": "hit",
+        "pre_market_recom": "2,300~2,320低接，目標2,380~2,400",
+        "close": 2410.0,
+        "change_pct": 3.88,
+        "institutional_net_shares": "+6,163,070股",
+        "institutional_net_amount_100m": 148.6,
+        "foreign_trading": "+497.6萬股（約119.9億買超）",
+        "analysis": "ADR溢價+11.43%、外資轉買超、投信同步買超，籌碼面與技術面雙重支持。盤前推薦邏輯完美驗證。"
+      },
+      {
+        "ticker": "2882",
+        "name": "國泰金",
+        "result": "hit",
+        "pre_market_recom": "金融股輪動",
+        "close": 95.8,
+        "change_pct": 1.91,
+        "institutional_net_shares": "+10,640,583股",
+        "institutional_net_amount_100m": 10.2,
+        "foreign_trading": "+1,238.5萬股（約11.87億買超）",
+        "analysis": "外資大買為主力，投信小幅調節。金融股在大漲日Beta較低，資金集中在電子。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "result": "not_recommended_but_up",
+        "pre_market_recom": "未推薦",
+        "close": 246.0,
+        "change_pct": 4.9,
+        "institutional_net_shares": "+26,966,203股",
+        "institutional_net_amount_100m": 66.3,
+        "foreign_trading": "+2,263.5萬股（約55.68億買超）",
+        "analysis": "外資今日買超最大個股之一，三大法人合計約66.3億。法人明顯進場承接。"
+      },
+      {
+        "ticker": "6505",
+        "name": "台塑化",
+        "result": "neutral",
+        "pre_market_recom": "觀望(等止跌)",
+        "close": 85.4,
+        "change_pct": 9.91,
+        "institutional_net_shares": "+1,624,262股",
+        "institutional_net_amount_100m": 1.39,
+        "foreign_trading": "+155.6萬股（約1.33億）",
+        "analysis": "觀望錯失強彈，油價4.25+1.23%。前日量縮下跌非量增，今日強彈符合量縮回調後反彈邏輯。"
+      },
+      {
+        "ticker": "2382",
+        "name": "廣達",
+        "result": "hit",
+        "pre_market_recom": "短多(MSFT概念)",
+        "close": 324.0,
+        "change_pct": 2.53,
+        "institutional_net_shares": "+7,732,448股",
+        "institutional_net_amount_100m": null,
+        "foreign_trading": "+593.6萬股",
+        "analysis": "外資+投信同步買超，法人一致偏多。AI供應鏈題材有籌碼面背書。"
+      }
+    ],
+    "overnight_market": {
+      "sp500": {
+        "close": 7480.64,
+        "change_pct": "+0.50%",
+        "impact": "正面"
+      },
+      "nasdaq": {
+        "close": 25719.03,
+        "change_pct": "+0.83%",
+        "impact": "正面"
+      },
+      "dow": {
+        "close": 52143.17,
+        "change_pct": "+0.59%",
+        "impact": "正面"
+      },
+      "sox": {
+        "close": 12150.56,
+        "change_pct": "+3.46%",
+        "impact": "強力正面"
+      },
+      "tsm_adr": {
+        "close": 415.26,
+        "change_pct": "+3.23%",
+        "impact": "強力正面"
+      },
+      "vix": {
+        "close": 17.84,
+        "change_pct": "-4.34%",
+        "assessment": "恐慌降溫"
+      }
+    },
+    "weekly_events": [
+      {
+        "date": "7/22 (三)",
+        "event": "美國6月成屋銷售",
+        "importance": "⭐⭐"
+      },
+      {
+        "date": "7/24 (五)",
+        "event": "耐久財訂單",
+        "importance": "⭐⭐⭐"
+      },
+      {
+        "date": "7/24 (五)",
+        "event": "密大消費者信心指數(7月終值)",
+        "importance": "⭐⭐⭐"
+      },
+      {
+        "date": "7/28-29",
+        "event": "FOMC利率決策會議",
+        "importance": "⭐⭐⭐🚀"
+      }
+    ],
+    "summary_assessment": {
+      "market_direction": "short_term_bullish",
+      "technical": {
+        "signal": "偏多",
+        "detail": "收最高+4.20%，價量齊揚"
+      },
+      "foreign_cash": {
+        "signal": "中性",
+        "detail": "小賣43億，較前日收斂"
+      },
+      "foreign_futures": {
+        "signal": "改善中",
+        "detail": "空單44.6萬口+4,943口減碼"
+      },
+      "trust": {
+        "signal": "強力偏多",
+        "detail": "現貨大買171億+期貨多單8.9萬口"
+      },
+      "margin_risk": {
+        "signal": "短線過熱風險",
+        "detail": "融資大增74.6億，散戶追價"
+      },
+      "us_guidance": {
+        "signal": "強力正面",
+        "detail": "費半+3.46%、TSM+3.23%"
+      }
+    }
   }
 }
