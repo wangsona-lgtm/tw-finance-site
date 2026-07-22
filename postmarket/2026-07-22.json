@@ -44,7 +44,7 @@
       "open": null,
       "high": 4000.0,
       "low": 3850.0,
-      "change_pct": 4.90,
+      "change_pct": 4.9,
       "signal": "buy",
       "note": "一度觸及4,000大關，量增1.9x重返3,800"
     },
@@ -159,7 +159,7 @@
       "foreign_put_net_oi": 6770,
       "pc_ratio_volume": 1.2001,
       "pc_ratio_oi": 1.0632,
-      "pc_ratio_volume_prev": 0.8910,
+      "pc_ratio_volume_prev": 0.891,
       "pc_ratio_oi_prev": 0.8272,
       "note": "P/C Ratio急升至120%，避險情緒濃厚"
     }
@@ -202,5 +202,251 @@
       "P/C Ratio躍升至120%，避險情緒悶燒",
       "美元/台幣32.375，台幣小貶與股市脫鉤"
     ]
-  }
+  },
+  "full_cron_analysis": {
+    "generated_at": "2026-07-22T22:05:00+08:00",
+    "data_source": "Yahoo Finance + TWSE BFI82U + TAIFEX OpenAPI + TWSE MI_MARGN",
+    "indices": {
+      "TAIEX": {
+        "close": 44825.78,
+        "change": 592.91,
+        "change_pct": 1.34,
+        "high": 45323.75,
+        "low": 44513.75,
+        "volume_ntd_billion": 1016,
+        "assessment": "連兩日反彈共+2,376點，站回44,800"
+      },
+      "TSM_ADR": {
+        "close_usd": 418.97,
+        "change_pct": -1.33,
+        "premium_pct": 13.16,
+        "assessment": "ADR小幅回落-1.33%，溢價仍維持13%以上"
+      },
+      "USD_TWD": {
+        "rate": 32.403,
+        "change_pct": 0.39,
+        "assessment": "台幣續貶至32.4，與股市反彈脫鉤"
+      }
+    },
+    "three_institutional_detailed": {
+      "date": "2026-07-22",
+      "summary": {
+        "total_buy_100m": 4919.54,
+        "total_sell_100m": 4581.05,
+        "total_net_100m": 338.49,
+        "total_net_label": "+338.49億"
+      },
+      "breakdown": [
+        {
+          "name": "外資及陸資",
+          "buy_100m": 4101.68,
+          "sell_100m": 3928.24,
+          "net_100m": 173.44,
+          "signal": "buy"
+        },
+        {
+          "name": "投信",
+          "buy_100m": 388.53,
+          "sell_100m": 199.5,
+          "net_100m": 189.03,
+          "signal": "buy"
+        },
+        {
+          "name": "自營商(自行買賣)",
+          "buy_100m": 94.59,
+          "sell_100m": 129.15,
+          "net_100m": -34.55,
+          "signal": "sell"
+        },
+        {
+          "name": "自營商(避險)",
+          "buy_100m": 334.73,
+          "sell_100m": 324.15,
+          "net_100m": 10.57,
+          "signal": "buy"
+        },
+        {
+          "name": "合計",
+          "buy_100m": 4919.54,
+          "sell_100m": 4581.05,
+          "net_100m": 338.49,
+          "signal": "buy"
+        }
+      ],
+      "analysis": "三大法人合計買超338.49億！外資續買173.44億（連兩日回補）、投信大買189.03億為最大買盤來源，自營商避險小幅買超10.57億，自行買賣減碼34.55億。整體法人偏多力道較前日更加強勁。"
+    },
+    "futures_options_detailed": {
+      "data_date": "2026-07-22",
+      "trading_summary": {
+        "total_futures_net_oi": "+1,125口",
+        "total_options_net_oi": "+9,106口"
+      },
+      "tx_contract": {
+        "name": "臺股期貨(TX)",
+        "details": [
+          {
+            "institution": "自營商",
+            "today_trade_net": -65,
+            "open_interest_net": 1139
+          },
+          {
+            "institution": "投信",
+            "today_trade_net": 53,
+            "open_interest_net": 75623
+          },
+          {
+            "institution": "外資",
+            "today_trade_net": 465,
+            "open_interest_net": -76595
+          }
+        ]
+      },
+      "foreign_summary": {
+        "tx_net_oi": -76595,
+        "tx_today_net": 465,
+        "small_tx_net_oi": 423,
+        "micro_tx_net_oi": 6377,
+        "approximate_total_tx_equivalent_net_oi": -69795,
+        "analysis": "外資台指期淨空單約-76,595口（大台），加計小台+423口、微台+6,377口，等效淨空單約-69,795口。相較前日(-78,490口)空單明顯回補約8,695口。"
+      },
+      "options": {
+        "total_net_oi": -3905,
+        "foreign_tx_options_net_oi": -2318,
+        "analysis": "選擇權整體中性偏空，外資臺指選擇權淨空2,318口"
+      }
+    },
+    "margin_trading": {
+      "data_date": "2026-07-22",
+      "margin_buy": {
+        "amount_100m": 5828.24,
+        "change_100m": 63.27,
+        "shares": 9354572,
+        "change_shares": -4867
+      },
+      "short_selling": {
+        "shares": 206549,
+        "change_shares": -6065
+      },
+      "shorts_to_margin_ratio": 2.21,
+      "analysis": "融資續增63.27億至5,828億，散戶追價意願仍強。融券則減少6,065張，空方回補。券資比略降至2.21%。"
+    },
+    "market_strength": {
+      "data_source": "TWSE + 現有資料",
+      "strong_sectors": [
+        {
+          "sector": "半導體/IC設計",
+          "stocks": "聯發科(2454)+4.9%、聯詠(3034)+5.25%、日月光(3711)+3.63%"
+        },
+        {
+          "sector": "AI/伺服器",
+          "stocks": "廣達(2382)+1.54%、緯穎(6669)反彈"
+        },
+        {
+          "sector": "金融",
+          "stocks": "中信金(2891)+2.07%、國泰金(2882)+1.04%"
+        }
+      ],
+      "weak_sectors": [
+        "台積電(2330)開高走低收-0.41%，漲多休息",
+        "兆豐金(2886)-0.82%，少數收跌金融股",
+        "特斯拉供應鏈受TSLA美股影響持續偏弱"
+      ]
+    },
+    "individual_stock_review": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "close": 2400.0,
+        "change_pct": -0.41,
+        "analysis": "開高2,440後走低收2,400(-0.41%)，漲多休息格局。前日+3.88%後今日回調屬正常。ADR收$418.97(-1.33%)，溢價13.16%仍高。法人方面外資續買173億、投信續買189億，整體偏多格局未變。"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "close": 3850.0,
+        "change_pct": 4.9,
+        "analysis": "一度觸及4,000大關(+6.8%)，收斂至3,850(+4.9%)。量增1.9x重返3,800以上，為今日最強權值股。籌碼面需確認法人動向。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "close": 251.5,
+        "change_pct": 2.24,
+        "analysis": "創反彈高點259後收251.5(+2.24%)，成交量6,755萬張。前日外資大買+55.68億，今日續強。"
+      },
+      {
+        "ticker": "2303",
+        "name": "聯電",
+        "close": 139.0,
+        "change_pct": 3.35,
+        "analysis": "從130低點連彈兩日至139，二線晶圓代工補漲。"
+      },
+      {
+        "ticker": "3711",
+        "name": "日月光投控",
+        "close": 656.0,
+        "change_pct": 3.63,
+        "analysis": "半導體封測反彈，收復650關卡。"
+      }
+    ],
+    "overnight_market": {
+      "data_time": "2026-07-22 US close",
+      "S&P500": {
+        "close": 7511.71,
+        "change_pct": 0.03
+      },
+      "NASDAQ": {
+        "close": 25765.17,
+        "change_pct": -0.28
+      },
+      "道瓊": {
+        "close": 52416.09,
+        "change_pct": 0.37
+      },
+      "費城半導體": {
+        "close": 12332.54,
+        "change_pct": -0.19
+      },
+      "WTI原油": {
+        "close": 86.99,
+        "change_pct": 2.45
+      },
+      "VIX": {
+        "close": 16.92,
+        "change_pct": -0.76
+      },
+      "BTC": {
+        "close": 65934.52,
+        "change_pct": -0.86
+      },
+      "assessment": "美股漲跌互見，S&P持平、NASDAQ小跌。費半微跌-0.19%反映台積電ADR回落。油價因中東局勢再漲+2.45%至86.99。VIX續降至16.92，恐慌情緒持續降溫。"
+    },
+    "weekly_events": [
+      "🗓️ 7/22(三) 美國6月成屋銷售",
+      "🗓️ 7/24(五) 耐久財訂單、密大消費者信心指數(7月終值)",
+      "🏛️ 7/28-29 FOMC利率決策會議 (市場定價30bp緊縮)",
+      "🌍 美伊衝突第10天，荷姆茲海峽油輪遭襲",
+      "💡 台積電宣布2027年調漲先進與成熟製程最多10%",
+      "📊 GOOGL、TSLA重磅科技股財報登場"
+    ],
+    "summary_assessment": {
+      "taiex_change": "+1.34% (+592.91)",
+      "volume_ntd_billion": 1016,
+      "institutional_net_ntd_billion": 338.49,
+      "institutional_signal": "buy",
+      "futures_signal": "neutral_improving",
+      "fx_signal": "neutral_bearish",
+      "overall_assessment": "短線反彈延續，中線審慎樂觀",
+      "highlights": [
+        "加權指數收44,825.78，+592.91點(+1.34%)，連兩日反彈共+2,376",
+        "三大法人合計買超338.49億（外資+173.44億、投信+189.03億、自營避險+10.57億）",
+        "外資台指期淨空單降至約-69,800口(等效)，較前日回補約8,700口",
+        "融資續增63.27億至5,828億，散戶持續追價",
+        "TSM ADR收$418.97(-1.33%)，溢價13.16%仍高",
+        "美股漲跌互見，費半-0.19%、油價因中東局勢再漲+2.45%",
+        "VIX續降至16.92，恐慌情緒持續降溫"
+      ]
+    }
+  },
+  "updated_at": "2026-07-22T22:05:00+08:00"
 }
