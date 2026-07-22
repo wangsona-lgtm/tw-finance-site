@@ -1,0 +1,128 @@
+{
+  "date": "2026-07-23",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 7月23日（四）",
+  "sections": [
+    {
+      "title": "IRGC To Trump: Strike Iran's Infrastructure, We'll Shut Off The Gulf's Power — 伊朗革命衛隊對川普放話：若你炸我基建，我就切斷整個波斯灣的電力",
+      "category": "geopolitics",
+      "summary": "中東局勢急遽升溫。川普政府發出最後通牒：伊朗每攻擊一次航運，美國就轟炸一座伊朗橋樑或發電廠。對此，IRGC 航太指揮官 Mousavi 強硬回應：若美國攻擊伊朗基礎設施，伊朗將打擊整個區域內美國利益相關的能源設施，甚至切斷美國盟友的電力供應。伊朗已宣稱對巴林、沙烏地阿拉伯和約境內的美國相關目標發動了飛彈攻擊。同時伊朗否認在 Pickaxe Mountain 進行核活動，稱美國指控為「捏造的藉口」。受此消息推動，油價持續攀升。Polymarket 上關於「荷姆茲海峽交通能否在8月31日前恢復正常」的賭盤顯示 86% 參與者投「否」。",
+      "url": "https://www.zerohedge.com/geopolitical/iran-blasts-us-fabricated-pretext-hit-pickaxe-mountain-launches-more-attacks-bahrain",
+      "timestamp": "2026-07-23",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_0_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "House Narrowly Passes $1.15 Trillion Defense Bill That Integrates US Military Tech & Supply Chains With Israel — 眾院以216-212驚險通過1.15兆美元國防授權法案，整合美以軍事科技與供應鏈",
+      "category": "geopolitics",
+      "summary": "美國眾議院以 216-212 的接近票數通過 FY2027 國防授權法案（NDAA），總額高達 1.15 兆美元，送交參議院。僅有 6 名民主黨投贊成、7 名共和黨投反對 — 是近年來兩黨分歧最嚴重的必須通過法案之一。法案核心內容包括：將美以國防工業與供應鏈整合、附帶 SAVE America Act（郵件投票限制與選民身份查驗），以及川普推動的國防總支出提升至 1.5 兆美元的目標。民主黨反對理由包括未經國會授權的對伊戰爭、以及削減國內項目來支付國防開支。值得注意的是，停止對烏克蘭軍援的修正案以 76-350 壓倒性被否決。",
+      "url": "https://www.zerohedge.com/geopolitical/today-congress-votes-integrate-us-military-tech-supply-chains-israel",
+      "timestamp": "2026-07-23",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Jim Quinn Warns \"We've Already Entered This Fourth Turning's Global War...\" — Jim Quinn 警告：「我們已進入第四轉折的全球戰爭階段」",
+      "category": "geopolitics",
+      "summary": "長期關注 Strauss-Howe 世代理論的分析師 Jim Quinn 在 ZeroHedge 發表長文，指出美國已完全進入「第四轉折」（Fourth Turning）的危機戰爭階段。他回顧一年前自己的預測，驚嘆世界在短短一年內發生的劇變程度，並批判川普從上任初期的反戰立場大幅轉向 — 如今同時在伊朗、烏克蘭等多條戰線升級衝突。Quinn 引用 Neil Howe 的預測，認為這次危機週期可能延伸到 2030 年代初，比上一輪大蕭條/二戰的 17 年更長。他警告最壞情境下，絕望的國家可能動用大規模殺傷性武器，導致多座城市毀滅、數百萬人死亡、數千萬人流離失所。",
+      "url": "https://www.zerohedge.com/geopolitical/jim-quinn-warns-weve-already-enter-fourth-turnings-global-war",
+      "timestamp": "2026-07-23",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "MegaCaps Dump Into Earnings, Bullion & Bond Yields Jump As Oil Puts July Rate-Hike Back On Table — 超級權重股在財報前遭拋售，黃金、公債殖利率跳升，油價將7月升息重新搬上檯面",
+      "category": "market",
+      "summary": "中東連續第 11 天的攻擊事件將原油推至六週高點，進而拉高美國公債殖利率、曲線趨平。7月升息的可能性再度被討論。股市方面動盪整理，超級權重科技股的短線軋空漲幅蒸發，0DTE 交易者在 GOOGL/TSLA 財報前大量賣出。黃金隨美元持平而走高，比特幣下跌。油價上漲帶動能源股走強，但整體市場呈現混雜格局。",
+      "url": "https://www.zerohedge.com/markets/megacaps-dump-earnings-bullion-bond-yields-jump-oil-puts-july-rate-hike-back-table",
+      "timestamp": "2026-07-23",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Google Tumbles After Boosting 2026 Capex Guidance Again — Google 再次上修 2026 資本支出指引，股價跳水",
+      "category": "market",
+      "summary": "Google 母公司 Alphabet 盤後公布 Q2 財報，雖然雲端業務營收 247.7 億美元（年增 82%）超預期，但搜尋廣告收入 632.7 億美元略低於預期。最重要的利空來自資本支出指引：Alphabet 將 FY2026 資本支出從原本的 1800-1900 億美元上調至 1950-2050 億美元，且 FY2027 仍將「顯著增長」。公司還表示 Q3 將擴大使用第三方 AI 算力，這將帶來「適度的利潤壓力」。市場對此反應激烈，盤後股價一度暴跌 4%。此前的預覽文章中，分析師即警告買方對資本支出的期望（3250-3750 億美元）遠高於賣方共識（2500 億美元），存在明顯的下行風險。",
+      "url": "https://www.zerohedge.com/markets/google-dips-after-search-revenues-miss-capex-guidance-awaited",
+      "timestamp": "2026-07-23",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Despite Big Bounce In Revenues, TSLA Shares Drop After Disappointing Earnings — 營收大幅反彈但獲利遜色，特斯拉股價下跌",
+      "category": "market",
+      "summary": "特斯拉 Q2 財報好壞參半：營收 282 億美元（年增 28%，超預期 264 億美元），但 EPS 僅 0.33 美元（年減 18%，遠低於預期 0.51 美元），主因 AI 研發支出和 R&D 投入拉低利潤。公司宣布歷史首次達到過去 12 個月營收 1000 億美元，淨利 11.1 億美元。出貨量 48 萬輛（年增 25%），汽車毛利率 16.3%（優於去年同期的 15% 但低於 Q1 的 19.2%）。FSD 活躍訂閱達 148 萬（年增 56%）。重點前瞻：Optimus Bot 產線已在安裝中，Cybercab 已開始量產，Tesla Semi 處於「試運行」階段。但市場仍對利潤率壓力和競爭態勢表示擔憂。",
+      "url": "https://www.zerohedge.com/markets/despite-big-bounce-revenues-tsla-shares-drop-after-disappointing-earnings",
+      "timestamp": "2026-07-23",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Stocks Meander With Tech Sold Ahead Of Key Earnings — Newsquawk US Market Wrap — 美股盤整科技股走弱，市場屏息等待關鍵財報",
+      "category": "market",
+      "summary": "週三美股小幅漲跌互見，羅素 2000 指數領跌，納斯達克同步表現落後。市場在 GOOGL、IBM、TSLA 盤後財報發布前以橫盤整理為主。類股表現分化：公用事業、能源、原物料走高；非必需消費、通訊服務、醫療保健走弱。中東局勢持續升級推升油價。宏觀方面：EIA 原油庫存意外增加，但 SPR 持續下降；英國通膨數據好壞參半；日本銀行可能加速升息；Qatar Energy 可能將 LNG 不可抗力延長至10月。債市方面，20年期公債拍賣需求疲弱。未來關注：歐洲央行政策決議、ECB Lagarde 講話，以及英特爾、洛克希德·馬丁、SAP 等重要財報。",
+      "url": "https://www.zerohedge.com/markets/stocks-meander-tech-sold-ahead-key-earnings-newsuqawk-us-market-wrap",
+      "timestamp": "2026-07-23",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "High Factor Volatility Is Here To Stay: Goldman's Pasquariello Suggests 'Simplify Your Portfolio' — 高因子波動將持續：高盛建議「簡化投資組合」",
+      "category": "market",
+      "summary": "高盛對沖基金業務負責人 Tony Pasquariello 表示，當前交易環境仍然「高敞開、高強度」，市場特徵已明顯改變。他認為因子波動率持續偏高的格局短期不會改變，建議投資者「簡化投資組合」以應對當前的高波動環境。這與近期市場中因子輪動加快、量化策略表現分化的現象一致。",
+      "url": "https://www.zerohedge.com/markets/high-factor-volatility-here-stay-goldmans-pasquariello-suggests-simplify-your-portfolio",
+      "timestamp": "2026-07-23",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "GOOGL Preview: Sky High Capex Expectations \"Point To Downside Risk\"; Tesla Also On Deck — Google 財報預覽：高到天際的資本支出預期是下行風險",
+      "category": "market",
+      "summary": "ZeroHedge 在 Alphabet 財報前發布預覽分析。UBS 與 JPM 分析師均指出市場關注兩大重點：資本支出指引與 AI 變現能力（monetization）。關鍵矛盾在於買方對資本支出的期望區間高達 3250-3750 億美元，遠超賣方共識的 2500 億美元。JPM 科技分析師認為 Google 需要重新確立其在 AI 實驗室的領先地位，但在當前高度競爭環境下難度頗大。任何低於「天文數字」的資本支出預測都可能讓市場失望 — 這在盤後財報中得到印證。",
+      "url": "https://www.zerohedge.com/markets/googl-preview-sky-high-capex-expectations-point-downside-risk-tesla-also-deck",
+      "timestamp": "2026-07-23",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Video Game Market Tanks As Studio, Console Stocks Sink; Can GTA VI Revive Industry? — 遊戲市場崩跌：工作室與主機股重挫，GTA VI 能挽救產業嗎？",
+      "category": "market",
+      "summary": "美國遊戲市場遭遇寒冬。6 月產業整體支出年減 21%，創 2022 年以來最大單月跌幅。Roundhill 遊戲 ETF 今年以來下跌 14.8%，僅 EA 勉強維持正報酬。主機支出暴跌 62%，內容購買降至 39 億美元、低於 Switch 2 上市前水準。任天堂股價從去年夏季高點腰斬逾 50%，已宣布全球漲價。Xbox CEO 證實裁員 3,000 人並坦言「業務不健康」。Sony 表示不再願意以「大幅虧損」賣 PlayStation。唯一亮點是訂閱制收入仍在成長。市場寄望 Take-Two 今年秋季的 GTA VI 能拯救產業，但單靠一款遊戲能否逆轉整個產業結構性下滑仍是巨大問號。",
+      "url": "https://www.zerohedge.com/markets/video-game-market-tanks-studio-console-stocks-sink-can-gta-v1-revive-industry",
+      "timestamp": "2026-07-23",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_10_img_4.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "A Fed Rate-Hike Would Be A Serious Mistake — 聯準會若在此時升息將是嚴重錯誤",
+      "category": "market",
+      "summary": "Daniel Lacalle 撰文警告 Fed 若在 7 月升息將鑄成大錯。他指出最新通膨與就業數據並不支持升息：6 月 CPI 月減 0.4%，年率降至 3.5%；核心 CPI 月增持平成 2.6%，為 2021 年 3 月以來最低。持續將利率維持在 neutral rate 以上已使美國經濟損失近 100 萬個就業機會，中小企業融資成本高達 6%-12% APR，信貸幾乎無法取得。升息不僅無法解決由貨幣供給與政府支出驅動的通膨，還會進一步傷害家庭與小型企業。他認為 Fed 若在數據顯示通膨降溫時仍升息，將是對過去恐慌而非未來證據的反應。",
+      "url": "https://www.zerohedge.com/markets/july-back-table-fed-rate-hike-would-be-serious-mistake",
+      "timestamp": "2026-07-23",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_11_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "AI's Off-Balance-Sheet Time-Bomb Goes Mainstream: Leverage Might Be Much Worse Than It Looks — AI 表外定時炸彈進入主流視野：槓桿可能比表面更糟",
+      "category": "market",
+      "summary": "ZeroHedge 一個月前曾在付費報告中揭露 AI 生態系統中鮮為人知的巨額表外風險：除了一般的 1.1-1.4 兆美元資本支出外，還有約 1 兆美元的長期採購承諾（long-term purchase commitments）與超過 8000 億美元的租賃承諾（lease commitments），合計高達 1.8 兆美元的表外營運槓桿。如今這一觀點開始進入主流討論。核心問題在於：當市場僅關注 hyperscaler 的 Capex 數字時，實際上的總槓桿遠大於資產負債表上所呈現的規模。若 AI 需求放緩或貨幣環境收緊，這些表外負債將形成巨大的去槓桿風險。",
+      "url": "https://www.zerohedge.com/markets/ais-balance-sheet-time-bomb-goes-mainstream-leverage-might-be-much-worse-it-looks",
+      "timestamp": "2026-07-23",
+      "images": [],
+      "premium": true
+    }
+  ]
+}
