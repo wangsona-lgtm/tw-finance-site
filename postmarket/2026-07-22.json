@@ -1,0 +1,92 @@
+{
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T13:40:00+08:00",
+  "report_type": "postmarket_analysis",
+  "trading_day": "2026-07-22 (Wednesday)",
+  "data_source": "Yahoo Finance + TWSE + tw_momentum_monitor.py",
+  "indices": {
+    "TAIEX": {
+      "name": "加權指數",
+      "close": 44776.32,
+      "open": 44513.75,
+      "high": 45323.75,
+      "low": 44513.75,
+      "change": 543.45,
+      "change_pct": 1.23,
+      "signal": "buy",
+      "note": "連兩日反彈站穩44,700關卡"
+    }
+  },
+  "fx": {
+    "USD_TWD": {
+      "rate": 32.333,
+      "change": 0.0571,
+      "change_pct": 0.18,
+      "signal": "sell",
+      "note": "台幣小幅走弱"
+    }
+  },
+  "stocks": {
+    "2330.TW": {
+      "name": "台積電",
+      "close": 2395.0,
+      "open": null,
+      "high": 2445.0,
+      "low": 2390.0,
+      "change_pct": -0.62,
+      "signal": "sell",
+      "note": "漲多休息微跌，唯一收跌權值股"
+    },
+    "2454.TW": {
+      "name": "聯發科",
+      "close": 3865.0,
+      "open": null,
+      "high": 4000.0,
+      "low": 3850.0,
+      "change_pct": 5.31,
+      "signal": "buy",
+      "note": "一度觸及4,000大關，權值股最強"
+    },
+    "2317.TW": {
+      "name": "鴻海",
+      "close": 253.5,
+      "open": null,
+      "high": 259.0,
+      "low": 248.0,
+      "change_pct": 3.05,
+      "signal": "buy",
+      "note": "放量逾6.2萬張"
+    },
+    "2308.TW": {
+      "name": "台達電",
+      "close": 1880.0,
+      "open": null,
+      "high": 1950.0,
+      "low": 1880.0,
+      "change_pct": 2.45,
+      "signal": "buy"
+    },
+    "2382.TW": {
+      "name": "廣達",
+      "close": 329.0,
+      "open": null,
+      "high": 335.0,
+      "low": 326.0,
+      "change_pct": 1.54,
+      "signal": "buy"
+    }
+  },
+  "summary": {
+    "taiex_change": "+1.23%",
+    "volume_ntd_billion": null,
+    "market_breadth": "反彈延續",
+    "highlights": [
+      "加權指數收44,776.32，+543.45點(+1.23%)，連兩日反彈",
+      "聯發科一度觸及4,000元大關+5.31%最強",
+      "台積電微跌0.62%漲多休息",
+      "電子指數+1.79%領軍",
+      "櫃買ETF 006201 +4.75%暗示中小型股活躍",
+      "美元/台幣32.333，台幣小幅走弱+0.18%"
+    ]
+  }
+}
