@@ -1,92 +1,206 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T13:40:00+08:00",
+  "generated_at": "2026-07-22T16:15:00+08:00",
   "report_type": "postmarket_analysis",
   "trading_day": "2026-07-22 (Wednesday)",
-  "data_source": "Yahoo Finance + TWSE + tw_momentum_monitor.py",
+  "data_source": "Yahoo Finance + TWSE + TAIFEX OpenAPI",
   "indices": {
     "TAIEX": {
       "name": "加權指數",
-      "close": 44776.32,
+      "close": 44825.78,
       "open": 44513.75,
       "high": 45323.75,
       "low": 44513.75,
-      "change": 543.45,
-      "change_pct": 1.23,
+      "change": 592.91,
+      "change_pct": 1.34,
+      "volume_ntd_billion": 1016,
       "signal": "buy",
-      "note": "連兩日反彈站穩44,700關卡"
+      "note": "連兩日反彈共+2,376點，站回44,800"
     }
   },
   "fx": {
     "USD_TWD": {
-      "rate": 32.333,
-      "change": 0.0571,
-      "change_pct": 0.18,
+      "rate": 32.375,
+      "change": 0.099,
+      "change_pct": 0.31,
       "signal": "sell",
-      "note": "台幣小幅走弱"
+      "note": "台幣小貶，與股市反彈脫鉤"
     }
   },
   "stocks": {
     "2330.TW": {
       "name": "台積電",
-      "close": 2395.0,
-      "open": null,
+      "close": 2400.0,
+      "open": 2440.0,
       "high": 2445.0,
       "low": 2390.0,
-      "change_pct": -0.62,
+      "change_pct": -0.41,
       "signal": "sell",
-      "note": "漲多休息微跌，唯一收跌權值股"
+      "note": "開高走低收黑K，唯一收跌權值股"
     },
     "2454.TW": {
       "name": "聯發科",
-      "close": 3865.0,
+      "close": 3850.0,
       "open": null,
       "high": 4000.0,
       "low": 3850.0,
-      "change_pct": 5.31,
+      "change_pct": 4.90,
       "signal": "buy",
-      "note": "一度觸及4,000大關，權值股最強"
+      "note": "一度觸及4,000大關，量增1.9x重返3,800"
+    },
+    "3711.TW": {
+      "name": "日月光投控",
+      "close": 656.0,
+      "change_pct": 3.63,
+      "signal": "buy",
+      "note": "半導體封測反彈"
+    },
+    "2303.TW": {
+      "name": "聯電",
+      "close": 139.0,
+      "change_pct": 3.35,
+      "signal": "buy",
+      "note": "從130低點連彈兩日"
+    },
+    "3034.TW": {
+      "name": "聯詠",
+      "close": 501.0,
+      "change_pct": 5.25,
+      "signal": "buy",
+      "note": "突破500關卡"
     },
     "2317.TW": {
       "name": "鴻海",
-      "close": 253.5,
+      "close": 251.5,
       "open": null,
       "high": 259.0,
       "low": 248.0,
-      "change_pct": 3.05,
+      "change_pct": 2.24,
       "signal": "buy",
-      "note": "放量逾6.2萬張"
+      "note": "創反彈高，量6,755萬張"
     },
     "2308.TW": {
       "name": "台達電",
       "close": 1880.0,
-      "open": null,
-      "high": 1950.0,
-      "low": 1880.0,
       "change_pct": 2.45,
       "signal": "buy"
     },
-    "2382.TW": {
-      "name": "廣達",
-      "close": 329.0,
-      "open": null,
-      "high": 335.0,
-      "low": 326.0,
-      "change_pct": 1.54,
+    "2891.TW": {
+      "name": "中信金",
+      "close": 64.0,
+      "change_pct": 2.07,
       "signal": "buy"
+    },
+    "2886.TW": {
+      "name": "兆豐金",
+      "close": 48.2,
+      "change_pct": -0.82,
+      "signal": "sell",
+      "note": "少數收跌金融股"
     }
   },
+  "institutional_investors": {
+    "summary": "三大法人合計買超319.38億，外資與投信同步大買",
+    "total_buy_ntd_billion": 479.536,
+    "total_sell_ntd_billion": 447.598,
+    "total_net_ntd_billion": 31.938,
+    "data_date": "2026-07-22",
+    "details": [
+      {
+        "name": "外資及陸資",
+        "buy_ntd_billion": 400.291,
+        "sell_ntd_billion": 382.947,
+        "net_ntd_billion": 17.344,
+        "direction": "buy",
+        "note": "連兩日大幅回補"
+      },
+      {
+        "name": "投信",
+        "buy_ntd_billion": 36.314,
+        "sell_ntd_billion": 19.322,
+        "net_ntd_billion": 16.992,
+        "direction": "buy",
+        "note": "ETF挹注＋集團作帳"
+      },
+      {
+        "name": "自營商-自行買賣",
+        "buy_ntd_billion": 9.459,
+        "sell_ntd_billion": 12.915,
+        "net_ntd_billion": -3.455,
+        "direction": "sell",
+        "note": "小幅調節"
+      },
+      {
+        "name": "自營商-避險",
+        "buy_ntd_billion": 33.472,
+        "sell_ntd_billion": 32.415,
+        "net_ntd_billion": 1.057,
+        "direction": "buy",
+        "note": "中性偏多"
+      }
+    ]
+  },
+  "futures_options": {
+    "data_date": "2026-07-21",
+    "data_note": "TAIFEX今日完整數據尚未上線，以下為昨日(7/21)資料",
+    "foreign_tx_net_oi": -78490,
+    "foreign_tx_net_change": -198,
+    "foreign_tx_note": "外資臺股期貨仍有7.8萬口淨空單",
+    "foreign_small_tx_net_oi": 3154,
+    "foreign_micro_tx_net_oi": 5185,
+    "institutional_summary": {
+      "proprietary_net_oi": -297584,
+      "investment_trust_net_oi": 86403,
+      "foreign_net_oi": -451922,
+      "total_net_oi": -663103
+    },
+    "options": {
+      "foreign_call_net_oi": 915,
+      "foreign_put_net_oi": 6770,
+      "pc_ratio_volume": 1.2001,
+      "pc_ratio_oi": 1.0632,
+      "pc_ratio_volume_prev": 0.8910,
+      "pc_ratio_oi_prev": 0.8272,
+      "note": "P/C Ratio急升至120%，避險情緒濃厚"
+    }
+  },
+  "market_breadth": {
+    "advance": 530,
+    "decline": 464,
+    "unchanged": 68,
+    "stocks_limit_up": 30,
+    "stocks_limit_down": 2,
+    "breadth_ratio": 1.14,
+    "note": "上漲家數多於下跌，惟漲跌比僅1.14偏低"
+  },
+  "events_tomorrow": {
+    "date": "2026-07-23",
+    "items": [
+      "除權息旺季，查證交所除權除息預告表",
+      "各公司法說會排程請參公開資訊觀測站",
+      "留意美股科技股(NVDA/AMD/TSM ADR)動向",
+      "FOMC動向、美元指數對亞幣影響",
+      "加權指數月線約45,200~45,500區間，能否站穩45,000為短線關鍵",
+      "外資期貨空單若未明顯回補，反彈延續性審慎"
+    ]
+  },
   "summary": {
-    "taiex_change": "+1.23%",
-    "volume_ntd_billion": null,
-    "market_breadth": "反彈延續",
+    "taiex_change": "+1.34% (+592.91)",
+    "volume_ntd_billion": 1016,
+    "market_breadth": "上漲530家/下跌464家，漲跌比1.14:1",
+    "institutional_net_ntd_billion": 31.938,
+    "institutional_signal": "buy",
+    "futures_signal": "sell",
+    "fx_signal": "neutral_bearish",
+    "overall_assessment": "短線反彈強勁，中線審慎",
     "highlights": [
-      "加權指數收44,776.32，+543.45點(+1.23%)，連兩日反彈",
-      "聯發科一度觸及4,000元大關+5.31%最強",
-      "台積電微跌0.62%漲多休息",
-      "電子指數+1.79%領軍",
-      "櫃買ETF 006201 +4.75%暗示中小型股活躍",
-      "美元/台幣32.333，台幣小幅走弱+0.18%"
+      "加權指數收44,825.78，+592.91點(+1.34%)，連兩日反彈共+2,376點",
+      "三大法人同步買超319億（外資+173.44億、投信+169.92億）",
+      "聯發科一度觸及4,000元大關+4.90%最強",
+      "台積電開高走低收2,400(-0.41%)漲多休息",
+      "外資期貨仍有7.8萬口淨空單，期現貨不同調",
+      "P/C Ratio躍升至120%，避險情緒悶燒",
+      "美元/台幣32.375，台幣小貶與股市脫鉤"
     ]
   }
 }
