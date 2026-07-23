@@ -1,0 +1,368 @@
+{
+  "date": "2026-07-23",
+  "generated_at": "2026-07-23T16:14:14+08:00",
+  "report_type": "postmarket_analysis",
+  "trading_day": "2026-07-23 (Thursday)",
+  "data_source": "TWSE + Yahoo Finance + TAIFEX OpenAPI",
+  "indices": {
+    "TAIEX": {
+      "name": "加權指數",
+      "close": 44850.81,
+      "open": 44899.04,
+      "high": 45089.82,
+      "low": 44340.76,
+      "change": 25.03,
+      "change_pct": 0.06,
+      "volume_ntd_billion": null,
+      "signal": "neutral",
+      "note": "盤中震盪逾700點，終場小漲25點，力守44,800"
+    }
+  },
+  "fx": {
+    "USD_TWD": {
+      "rate": 32.269,
+      "change": -0.056,
+      "change_pct": -0.17,
+      "signal": "neutral",
+      "note": "台幣微升，區間震盪格局不變"
+    }
+  },
+  "stocks": {
+    "2330.TW": {
+      "name": "台積電",
+      "close": 2405.0,
+      "open": 2385.0,
+      "high": 2405.0,
+      "low": 2370.0,
+      "change_pct": 0.21,
+      "volume": 25264375,
+      "signal": "neutral",
+      "note": "尾盤拉抬收平盤之上，守住2,400"
+    },
+    "2454.TW": {
+      "name": "聯發科",
+      "close": 3875.0,
+      "open": 3950.0,
+      "high": 4050.0,
+      "low": 3850.0,
+      "change_pct": 0.65,
+      "volume": 8420455,
+      "signal": "neutral",
+      "note": "一度觸及4,000後收斂，震盪劇烈"
+    },
+    "2317.TW": {
+      "name": "鴻海",
+      "close": 257.5,
+      "open": 256.5,
+      "high": 259.5,
+      "low": 253.5,
+      "change_pct": 2.39,
+      "volume": 63530823,
+      "signal": "buy",
+      "note": "續創反彈高，量能溫和"
+    },
+    "2303.TW": {
+      "name": "聯電",
+      "close": 138.5,
+      "open": 141.0,
+      "high": 142.5,
+      "low": 135.5,
+      "change_pct": -0.36,
+      "volume": 113977447,
+      "signal": "neutral",
+      "note": "開高走低，爆量1.14億股"
+    },
+    "3711.TW": {
+      "name": "日月光投控",
+      "close": 649.0,
+      "open": 656.0,
+      "high": 665.0,
+      "low": 637.0,
+      "change_pct": -1.07,
+      "volume": 14816114,
+      "signal": "sell",
+      "note": "高檔回檔逾1%"
+    },
+    "3034.TW": {
+      "name": "聯詠",
+      "close": 503.0,
+      "open": 501.0,
+      "high": 509.0,
+      "low": 495.0,
+      "change_pct": 0.4,
+      "volume": 4406545,
+      "signal": "neutral",
+      "note": "穩守500關卡"
+    },
+    "2881.TW": {
+      "name": "富邦金",
+      "close": 128.5,
+      "open": 129.0,
+      "high": 129.5,
+      "low": 126.5,
+      "change_pct": 1.18,
+      "volume": 16200358,
+      "signal": "buy",
+      "note": "金控穩步走升"
+    },
+    "2882.TW": {
+      "name": "國泰金",
+      "close": 97.3,
+      "open": 97.8,
+      "high": 98.5,
+      "low": 96.4,
+      "change_pct": 0.52,
+      "volume": 15917195,
+      "signal": "neutral",
+      "note": "狹幅震盪"
+    },
+    "2002.TW": {
+      "name": "中鋼",
+      "close": 19.1,
+      "open": 19.0,
+      "high": 19.45,
+      "low": 19.0,
+      "change_pct": 1.33,
+      "volume": 88994039,
+      "signal": "buy",
+      "note": "底部反彈"
+    },
+    "1301.TW": {
+      "name": "台塑",
+      "close": 66.2,
+      "open": 64.8,
+      "high": 69.8,
+      "low": 64.7,
+      "change_pct": 4.25,
+      "volume": 163448684,
+      "signal": "buy",
+      "note": "爆量強彈，台塑四寶中最強"
+    },
+    "1303.TW": {
+      "name": "南亞",
+      "close": 197.0,
+      "open": 210.5,
+      "high": 217.0,
+      "low": 194.0,
+      "change_pct": -5.29,
+      "volume": 120867988,
+      "signal": "sell",
+      "note": "開高走低暴跌，年線保衛戰"
+    },
+    "1326.TW": {
+      "name": "台化",
+      "close": 71.7,
+      "open": 71.7,
+      "high": 77.6,
+      "low": 70.8,
+      "change_pct": 1.56,
+      "volume": 160331281,
+      "signal": "buy",
+      "note": "爆量1.6億股，劇烈震盪"
+    },
+    "2412.TW": {
+      "name": "中華電",
+      "close": 138.0,
+      "open": null,
+      "high": null,
+      "low": null,
+      "change_pct": -0.36,
+      "volume": 10874337,
+      "signal": "neutral",
+      "note": "電信股小跌"
+    },
+    "3008.TW": {
+      "name": "大立光",
+      "close": 4140.0,
+      "open": null,
+      "high": null,
+      "low": null,
+      "change_pct": 3.5,
+      "volume": 1533015,
+      "signal": "buy",
+      "note": "光學股反彈"
+    },
+    "3231.TW": {
+      "name": "緯創",
+      "close": 173.5,
+      "open": null,
+      "high": null,
+      "low": null,
+      "change_pct": 5.79,
+      "volume": 217639999,
+      "signal": "buy",
+      "note": "AI伺服器概念強勢噴出"
+    },
+    "2603.TW": {
+      "name": "長榮",
+      "close": 203.5,
+      "open": null,
+      "high": null,
+      "low": null,
+      "change_pct": -1.21,
+      "volume": 6135275,
+      "signal": "sell",
+      "note": "航運股疲弱"
+    }
+  },
+  "institutional_investors": {
+    "source": "TWSE 三大法人買賣金額統計表",
+    "date": "2026-07-23",
+    "data": [
+      {
+        "type": "自營商(自行買賣)",
+        "buy_ntd": 11641564657,
+        "sell_ntd": 8674174285,
+        "net_ntd": 2967390372,
+        "note": "自行買賣買超29.7億"
+      },
+      {
+        "type": "自營商(避險)",
+        "buy_ntd": 26616576338,
+        "sell_ntd": 25390061942,
+        "net_ntd": 1226514396,
+        "note": "避險買超12.3億"
+      },
+      {
+        "type": "自營商合計",
+        "buy_ntd": 38278132995,
+        "sell_ntd": 34064236227,
+        "net_ntd": 4213904768,
+        "note": "自營商整體買超42.1億"
+      },
+      {
+        "type": "投信",
+        "buy_ntd": 26027075350,
+        "sell_ntd": 20690125434,
+        "net_ntd": 5336949916,
+        "note": "投信買超53.4億"
+      },
+      {
+        "type": "外資及陸資",
+        "buy_ntd": 357394498961,
+        "sell_ntd": 350436585686,
+        "net_ntd": 6957913275,
+        "note": "外資買超69.6億"
+      },
+      {
+        "type": "合計",
+        "buy_ntd": 421679715306,
+        "sell_ntd": 405190947347,
+        "net_ntd": 16488767959,
+        "note": "三大法人合計買超164.9億"
+      }
+    ],
+    "summary": {
+      "total_net_ntd": 16488767959,
+      "total_net_hundred_million": 164.9,
+      "foreign_net_hundred_million": 69.6,
+      "investment_trust_net_hundred_million": 53.4,
+      "dealer_net_hundred_million": 42.1,
+      "assessment": "三大法人同步買超，外資終止連賣轉買，投信延續作帳行情"
+    }
+  },
+  "futures_and_options": {
+    "note": "TAIFEX 期貨選擇權數據（2026-07-22 參考值，今日數據尚未公布）",
+    "date": "2026-07-22",
+    "tx_futures_net_oi": {
+      "foreign_net_oi": -464526,
+      "foreign_net_value_millions": -859695,
+      "investment_trust_net_oi": 87085,
+      "dealer_net_oi": -295590
+    },
+    "put_call_ratio": {
+      "date": "2026-07-22",
+      "volume_ratio_pct": 104.5,
+      "oi_ratio_pct": 118.24,
+      "assessment": "P/C比>100，避險情緒偏濃"
+    },
+    "note2": "今日盤後期貨籌碼預計16:30後公布"
+  },
+  "market_summary": {
+    "open": "開盤44,899（平高盤）",
+    "high": "盤中最高45,089（10:00前）",
+    "low": "盤中最低44,340（午盤前急殺）",
+    "close": "收盤44,850（尾盤拉抬）",
+    "range": "全日震盪749點",
+    "change": "+25.03點 (+0.06%)",
+    "five_day_trend": "從7/17低點42,671反彈至44,850，累積反彈+2,179點(+5.1%)",
+    "key_observation": "今日開高走低再拉尾盤，走勢與昨日類似但振幅加大。台積電守住2,400貢獻指數，但南亞暴跌-5.29%拖累。整體成交量明顯放大，個股強弱分明。"
+  },
+  "top_movers": {
+    "strong": [
+      {
+        "symbol": "3231.TW",
+        "name": "緯創",
+        "change_pct": 5.79,
+        "reason": "AI伺服器展望佳"
+      },
+      {
+        "symbol": "1301.TW",
+        "name": "台塑",
+        "change_pct": 4.25,
+        "reason": "四寶領頭羊，股東會行情"
+      },
+      {
+        "symbol": "3008.TW",
+        "name": "大立光",
+        "change_pct": 3.5,
+        "reason": "光學反彈"
+      },
+      {
+        "symbol": "2317.TW",
+        "name": "鴻海",
+        "change_pct": 2.39,
+        "reason": "續創反彈高"
+      },
+      {
+        "symbol": "2382.TW",
+        "name": "廣達",
+        "change_pct": 2.13,
+        "reason": "AI PC題材"
+      }
+    ],
+    "weak": [
+      {
+        "symbol": "1303.TW",
+        "name": "南亞",
+        "change_pct": -5.29,
+        "reason": "高檔獲利了結賣壓"
+      },
+      {
+        "symbol": "2618.TW",
+        "name": "長榮航",
+        "change_pct": -2.97,
+        "reason": "油價反彈影響"
+      },
+      {
+        "symbol": "3044.TW",
+        "name": "健鼎",
+        "change_pct": -2.75,
+        "reason": "PCB族群回檔"
+      },
+      {
+        "symbol": "3661.TW",
+        "name": "世芯-KY",
+        "change_pct": -2.23,
+        "reason": "ASIC概念獲利了結"
+      },
+      {
+        "symbol": "2603.TW",
+        "name": "長榮",
+        "change_pct": -1.21,
+        "reason": "SCFI指數走弱"
+      }
+    ]
+  },
+  "events": {
+    "ex_dividend": [],
+    "investor_conferences": [],
+    "capital_changes": [],
+    "notes": [
+      "今日三大法人同步買超，外資轉買為觀察重點",
+      "台塑四寶走勢分歧（台塑+4.25% vs 南亞-5.29%），留意集團作帳",
+      "緯創爆量2.18億張飆漲5.79%，AI族群人氣回溫",
+      "本週五（7/24）美國PCE公布，留意國際股市波動"
+    ]
+  }
+}
