@@ -364,5 +364,251 @@
       "緯創爆量2.18億張飆漲5.79%，AI族群人氣回溫",
       "本週五（7/24）美國PCE公布，留意國際股市波動"
     ]
-  }
+  },
+  "full_cron_analysis": {
+    "generated_at": "2026-07-23T22:13:01+08:00",
+    "data_source": "Yahoo Finance + TWSE BFI82U + TAIFEX totalTableDate + TWSE MI_MARGN",
+    "indices": {
+      "TAIEX": {
+        "close": 44850.81,
+        "change": 25.03,
+        "change_pct": 0.06,
+        "high": 45089.82,
+        "low": 44340.76,
+        "volume_ntd_billion": null,
+        "assessment": "開高走低拉尾盤，全日震盪749點後僅小漲25點"
+      },
+      "TSM_ADR": {
+        "close_usd": 418.75,
+        "change_pct": -0.58,
+        "premium_pct": 13.5,
+        "assessment": "TSM ADR收$418.75(-0.58%)，溢價約13.5%"
+      },
+      "USD_TWD": {
+        "rate": 32.269,
+        "change_pct": -0.17,
+        "assessment": "台幣微升32.27，區間整理"
+      }
+    },
+    "three_institutional_detailed": {
+      "date": "2026-07-23",
+      "summary": {
+        "total_buy_100m": 4329.8,
+        "total_sell_100m": 4144.58,
+        "total_net_100m": 185.22,
+        "total_net_label": "+185.22億"
+      },
+      "breakdown": [
+        {
+          "name": "自營商(自行買賣)",
+          "buy_100m": 116.42,
+          "sell_100m": 86.74,
+          "net_100m": 29.67,
+          "signal": "buy"
+        },
+        {
+          "name": "自營商(避險)",
+          "buy_100m": 266.17,
+          "sell_100m": 253.9,
+          "net_100m": 12.27,
+          "signal": "buy"
+        },
+        {
+          "name": "投信",
+          "buy_100m": 284.32,
+          "sell_100m": 210.62,
+          "net_100m": 73.7,
+          "signal": "buy"
+        },
+        {
+          "name": "外資及陸資",
+          "buy_100m": 3662.89,
+          "sell_100m": 3593.31,
+          "net_100m": 69.58,
+          "signal": "buy"
+        },
+        {
+          "name": "合計",
+          "buy_100m": 4329.8,
+          "sell_100m": 4144.58,
+          "net_100m": 185.22,
+          "signal": "buy"
+        }
+      ],
+      "analysis": "三大法人合計買超185.22億！外資買超69.58億（連三日回補）、投信大買73.70億持續作帳力道最強。自營商自行買賣+29.67億轉買，避險+12.27億。整體法人偏多但力道較前日(338億)減弱。"
+    },
+    "futures_options_detailed": {
+      "data_date": "2026-07-23",
+      "source": "TAIFEX 三大法人期貨未平倉（全市場合計）",
+      "tx_contract": {
+        "name": "臺股期貨綜合(TX+小型+微型等)",
+        "details": [
+          {
+            "institution": "自營商",
+            "today_trade_net": -8143,
+            "open_interest_net": -303786
+          },
+          {
+            "institution": "投信",
+            "today_trade_net": 242,
+            "open_interest_net": 87327
+          },
+          {
+            "institution": "外資",
+            "today_trade_net": 3426,
+            "open_interest_net": -461100
+          }
+        ]
+      },
+      "foreign_summary": {
+        "all_futures_net_oi": -461100,
+        "all_futures_net_value_millions": -851311,
+        "tx_today_net": 3426,
+        "tx_prev_net_oi": -464526,
+        "tx_change_from_prev": 3426,
+        "analysis": "外資整體期貨淨空單約-461,100口（全市場合計），較前日(-464,526口)小幅回補約3,426口。空單水位仍高，短線避險心態偏濃。"
+      },
+      "options": {
+        "note": "選擇權三大法人數據未即時取得（TAIFEX網站改版），以下為參考值",
+        "analysis": "選擇權數據待TAIFEX更新後補登"
+      }
+    },
+    "margin_trading": {
+      "data_date": "2026-07-23",
+      "source": "TWSE MI_MARGN",
+      "margin_buy": {
+        "amount_100m": 5826.26,
+        "change_100m": -1.97,
+        "shares": 9349915,
+        "change_shares": -4657
+      },
+      "short_selling": {
+        "shares": 208647,
+        "change_shares": 2098
+      },
+      "shorts_to_margin_ratio": 2.23,
+      "analysis": "融資微減1.97億至5,826億，為連日增加後首見縮減，散戶追價意願降溫。融券則增加2,098張至208,647張，空方小幅加碼。券資比略升至2.23%。"
+    },
+    "market_strength": {
+      "data_source": "TWSE + yfinance",
+      "strong_sectors": [
+        {
+          "sector": "AI/伺服器",
+          "stocks": "緯創(3231)+5.79%、鴻海(2317)+2.39%、廣達(2382)+2.13%"
+        },
+        {
+          "sector": "塑化/傳產",
+          "stocks": "台塑(1301)+4.25%、台化(1326)+1.56%、中鋼(2002)+1.33%"
+        },
+        {
+          "sector": "光學/鏡頭",
+          "stocks": "大立光(3008)+3.50%"
+        }
+      ],
+      "weak_sectors": [
+        "南亞(1303)暴跌-5.29%，開高走低爆量1.2億股",
+        "日月光(3711)-1.07%，高檔回檔",
+        "長榮(2603)-1.21%，航運股續弱",
+        "聯電(2303)-0.36%，半導體二線股轉弱"
+      ]
+    },
+    "individual_stock_review": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "close": 2405.0,
+        "change_pct": 0.21,
+        "analysis": "開盤2,385後一路拉抬至2,405收(+0.21%)，尾盤買盤進場守住2,400整數關卡。外資續買69.6億、投信買73.7億，法人偏多格局未變。TSM ADR收$418.75(-0.58%)，溢價13.5%。"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "close": 3875.0,
+        "change_pct": 0.65,
+        "analysis": "開3,950後一度衝上4,050(+5.2%)，但午盤急殺回3,875收(+0.65%)，上下震幅達200元。高檔獲利了結賣壓浮現。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "close": 257.5,
+        "change_pct": 2.39,
+        "analysis": "續創反彈高，收257.5逼近260關卡。成交量6,353萬張溫和擴增，AI伺服器展望持續推升股價。"
+      },
+      {
+        "ticker": "1301",
+        "name": "台塑",
+        "close": 66.2,
+        "change_pct": 4.25,
+        "analysis": "爆量1.63億股強彈4.25%，為台塑四寶最強。底部反彈訊號明確，但需留意南亞暴跌顯示集團內部輪動。"
+      },
+      {
+        "ticker": "3231",
+        "name": "緯創",
+        "close": 173.5,
+        "change_pct": 5.79,
+        "analysis": "爆量2.18億張飆漲5.79%，AI伺服器概念人氣回溫，為今日最強勢個股之一。"
+      }
+    ],
+    "overnight_market": {
+      "data_time": "2026-07-22 US close (7/23 Asia)",
+      "S&P500": {
+        "close": 7420.27,
+        "change_pct": -1.05
+      },
+      "NASDAQ": {
+        "close": 25206.83,
+        "change_pct": -1.88
+      },
+      "道瓊": {
+        "close": 51671.38,
+        "change_pct": -1.05
+      },
+      "費城半導體": {
+        "close": 12410.96,
+        "change_pct": 0.0
+      },
+      "WTI原油": {
+        "close": 91.54,
+        "change_pct": 5.42
+      },
+      "VIX": {
+        "close": 18.79,
+        "change_pct": 12.92
+      },
+      "BTC": {
+        "close": 64882.0,
+        "change_pct": -1.84
+      },
+      "assessment": "美股全面下跌，S&P-1.05%、NASDAQ-1.88%，科技股領跌。費半持平收12,411。VIX急彈12.92%至18.79，恐慌情緒升溫。油價大漲5.42%至91.54，中東局勢持續升溫。BTC回落-1.84%至64,882。"
+    },
+    "weekly_events": [
+      "🗓️ 7/24(五) 美國PCE物價指數公布（聯準會偏好通膨指標）",
+      "🏛️ 7/28-29 FOMC利率決策會議（市場關注降息路徑）",
+      "🌍 美伊衝突第11天，荷姆茲海峽情勢持續緊張",
+      "💰 油價突破91美元，全球通膨壓力再起",
+      "📊 台塑集團除權息旺季，留意集團作帳動向",
+      "📈 加權指數月線約45,200~45,500，能否站穩45,000為短線關鍵"
+    ],
+    "summary_assessment": {
+      "taiex_change": "+0.06% (+25.03)",
+      "volume_ntd_billion": "N/A (yfinance Volume=0)",
+      "institutional_net_ntd_billion": 185.22,
+      "institutional_signal": "buy",
+      "futures_signal": "neutral_heavy_short",
+      "fx_signal": "neutral",
+      "overall_assessment": "短線反彈延續但動能減弱，中線審慎",
+      "highlights": [
+        "加權指數收44,850.81，+25.03點(+0.06%)，全日震盪749點後幾乎平盤",
+        "盤中最高45,089、最低44,340，開高走低再拉尾盤，走勢分歧",
+        "三大法人合計買超185.22億（外資+69.58億、投信+73.70億、自營+41.94億）",
+        "外資期貨淨空單約-461,100口（全市場合計），較前日小幅回補3,426口",
+        "融資微減1.97億至5,826億，散戶追價意願首見降溫",
+        "TSM ADR收$418.75(-0.58%)，溢價13.5%",
+        "美股全面下跌(S&P-1.05%、NASDAQ-1.88%)，VIX急升12.92%至18.79",
+        "油價因中東局勢大漲5.42%至91.54",
+        "投信買超73.7億為7月以來最大買超日之一，作帳行情延續"
+      ]
+    }
+  },
+  "updated_at": "2026-07-23T22:13:01+08:00"
 }
