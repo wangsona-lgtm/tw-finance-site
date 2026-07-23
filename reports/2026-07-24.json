@@ -1,0 +1,85 @@
+{
+  "date": "2026-07-24",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 7月24日（五）",
+  "sections": [
+    {
+      "title": "Hypershrinkers & Hormuz Hell: Oil Soars, Tech Wrecks, Rate-Hike Odds Rip — 荷姆茲海峽地獄與科技股重挫：油價飆升、利率預期急轉",
+      "category": "market",
+      "summary": "宏觀與微觀雙重衝擊引發市場動盪。油價在油輪遭襲與川普威脅驅動下突破性上漲，帶動實質利率與美元/日圓走高。科技股方面，Alphabet（GOOGL）財報引發超大權值股（Hyperscalers）全面下跌，但動能股仍受追捧。利率期貨市場重新定價升息預期，推升公債殖利率與美元，打壓黃金。比特幣隨科技股下跌。整體市場呈現強烈風險趨避特徵。",
+      "url": "https://www.zerohedge.com/markets/hypershrinkers-hormuz-hell-oil-soars-tech-wrecks-rate-hike-odds-rip",
+      "timestamp": "2026-07-24",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Trump \"Close\" To Ordering \"Massive Attack Greater Than Anything Before\" On Iran — 川普：即將下令「前所未有的最大規模攻擊」伊朗",
+      "category": "geopolitics",
+      "summary": "中東局勢急遽升溫。川普在接受 Axios 專訪時表示，正認真考慮重啟對伊朗的大規模作戰行動，規模將超越「史詩之怒行動」（Operation Epic Fury）開戰首日。川普稱：「我正在考慮一場大規模攻擊，比以往任何時候都大。我即將做出決定。」他強調以色列「兩分鐘內就會加入」，但美國不靠別人也行。伊朗方面，伊拉克總理 Zaidi 赴德黑蘭斡旋，攜帶停火提案，但伊朗領導層尚未接受最新方案。胡塞武裝則宣布攻擊兩艘沙烏地油輪，並威脅下一步將攻擊沙烏地阿美（Aramco）設施，紅海成為繼荷姆茲海峽後的第二個全球能源咽喉瓶頸。布蘭特原油重返 100 美元關卡。Rubio 國務卿稱伊朗「在乞求協議」，但伊朗外長 Araghchi 反擊：「問題是美國的態度。」",
+      "url": "https://www.zerohedge.com/geopolitical/trump-will-hold-iran-accountable-future-houthi-shipping-attacks-rubio-says-us-not",
+      "timestamp": "2026-07-24",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_5.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_6.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_7.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_8.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "From Cash To Trash, Rinse And Repeat — 從現金到垃圾，循環往復：法幣的宿命",
+      "category": "market",
+      "summary": "Frank Giustra 撰文以美國獨立戰爭時期的大陸幣（Continental dollar）為引，探討法定貨幣的宿命。1775 年誕生的大陸幣因無錨定、無可信擔保、無限量印刷，最終導致惡性通膨——1781 年兌換銀幣比率已達 500-1000 比 1。英軍更大量偽造以加速崩潰，催生了「not worth a Continental」成語。文章將歷史教訓對照當代：各國央行無止境的貨幣擴張、債務貨幣化，加上現代的「cash to trash」循環。核心論點：歷史一再證明，脫離實物錨定的法幣體系最終都走向購買力蒸發。自 1971 年美元脫離黃金以來，購買力已蒸發約 85%。美元儲備地位、美國制度韌性等「這次不一樣」的藉口，歷史記錄並不友善。",
+      "url": "https://www.zerohedge.com/markets/cash-trash-rinse-and-repeat",
+      "timestamp": "2026-07-24",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Intel Saves The Tech Day, Sees 15-Year High For Sales Growth, \"Unprecedented Demand\" — Intel 財報逆襲救市：15年最快營收成長，AI需求前所未見",
+      "category": "market",
+      "summary": "在科技股因 Alphabet 與 Tesla 財報重挫之際，Intel 執行長 Lip-Bu Tan 以優於預期的第二季成績單挽救了市場情緒。財報全面超標：EPS 0.42 美元（預期 0.21 美元）、營收 161 億美元（預期 144.2 億美元），創下 2011 年以來最快季度營收成長率。第三季財測同樣優於預期：預估 EPS 0.38 美元、營收 158-168 億美元（分析師預期 151 億美元）。Tan 表示：「AI 正驅動前所未有的運算需求。」Intel 同時宣布將大幅增加資本支出，目標明年「顯著增加」，積極轉型為晶圓代工廠。14A 製程進度超前，但關鍵代工客戶仍未公布。盤後股價漲約 10%。",
+      "url": "https://www.zerohedge.com/markets/intel-saves-tech-day-sees-15-year-high-sales-growth-unprecedented-demand",
+      "timestamp": "2026-07-24",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_5.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_6.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Stocks Hit On Tech Earnings While Brent Reclaims USD 100/bbl — Newsquawk US Market Wrap — 科技財報重創股市，布蘭特原油收復 100 美元",
+      "category": "market",
+      "summary": "週四市場全面風險趨避。科技股領跌：Alphabet（GOOGL）提高資本支出計畫引發市場對科技巨頭過度支出的擔憂，自由現金流轉負與利潤率壓力導致股價重挫；Tesla（TSLA）因獲利不如預期大跌。不過記憶體類股因受惠於高資本支出展望而逆勢上揚。原油則因地緣政治急遽升溫暴漲：胡塞攻擊沙烏地油輪、美軍 B-1 轟炸機首次轟炸伊朗目標。伊朗拒絕接受 10 天停火提案，科威特與約旦傳出爆炸聲。布蘭特原油正式收復 100 美元關卡（收 100.69 美元）。失業金請領人數降至 18.7 萬（1969 年以來最低），市場對聯準會年底前升息預期升至 38 個基點（約一次半升息）。美元隨公債殖利率走強，黃金下跌。",
+      "url": "https://www.zerohedge.com/markets/stocks-hit-tech-earnings-while-brent-reclaims-usd-100bbl-newsquawk-us-market-wrap",
+      "timestamp": "2026-07-24",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "\"A Bridge Too Far\": Middle East Set For A Massive Escalation — 「一座太遠的橋」：中東準備大規模升級",
+      "category": "geopolitics",
+      "summary": "荷蘭合作銀行分析師 Michael Every 警告中東正走向大規模升級。川普日前警告：伊朗每向荷姆茲海峽船隻發射一枚飛彈、火箭或無人機，美國就摧毀一座伊朗橋梁或發電廠。IRGC 隨後通報油輪在荷姆茲海峽爆炸起火，科威特遭無人機攻擊。胡塞同時宣稱攻擊兩艘沙國油輪，紅海也成為全球能源咽喉要點。美軍正大規模增兵，重型轟炸機待命。伊朗 Ghalibaf 表示「若伊朗安全不受保障，整個區域都不會有安全」，形同宣布若本土遭襲將攻擊整個區域基建。更危險的是，伊朗攻擊美國 CIA 設施引發美方對俄羅斯參與的懷疑，可能將俄烏戰爭與中東衝突進一步連結。英國已開始撤離駐伊外交人員，保加利亞允許美軍使用其領土。",
+      "url": "https://www.zerohedge.com/markets/bridge-too-far-middle-east-set-massive-escalation",
+      "timestamp": "2026-07-24",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Watch: Ukraine, Iran Tensions Run High In Rare Rubio-Lavrov Meeting — 罕見 Rubio-Lavrov 直接會談，烏克蘭與伊朗緊張交織",
+      "category": "geopolitics",
+      "summary": "美國國務卿 Rubio 與俄羅斯外長 Lavrov 在馬尼拉東協外長會議期間舉行罕見直接會談。Rubio 承認和平努力「不成功或至少沒有成果」，但強調川普政府仍致力於尋找雙方都能接受的解決方案。Lavrov 則強調「進一步武裝烏克蘭不可接受」，指責歐洲國家試圖「戰略擊敗」俄羅斯。會中出現尷尬場面：記者提問 Lavrov 俄羅斯何時停止攻擊烏克蘭、以及 Rubio 是否會要求 Lavrov 說明俄羅斯是否幫助伊朗鎖定美軍目標時，美方工作人員立即將記者請出會場。Rubio 強烈反駁俄羅斯協助伊朗的情報指控，稱「媒體報導？喔，那一定是真的。」此舉顯示美國不願在此次會談中將伊朗問題與俄羅斯綁定。",
+      "url": "https://www.zerohedge.com/geopolitical/watch-ukraine-iran-tensions-run-high-rare-rubio-lavrov-meeting",
+      "timestamp": "2026-07-24",
+      "images": [],
+      "premium": true
+    }
+  ]
+}
