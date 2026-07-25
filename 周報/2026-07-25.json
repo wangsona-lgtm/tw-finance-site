@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-25",
+  "weekNum": "W30",
+  "title": "COT 週報：原油空頭回補、黃金多頭堅挺、公債全曲線淨空創高",
+  "period": "數據截至 2026-07-21 (CFTC COT 第29筆週資料)",
+  "summary": "本週投機資金出現顯著分化。WTI 原油投機空頭大舉回補（-11,253 口）帶動淨部位回升至 +81,689 口，但商業端依然偏空。黃金淨多頭小幅降溫至 183,910 口，仍處極高水位，資金明顯偏好貴金屬。公債期貨方面，5Y 空頭回補規模最大（+20,954），但 10Y 遭全面翻空（淨空單大增 48,031），30Y 空頭持續累積，六檔合計投機淨空達 -3,953,404 口，市場定價 Higher for Longer。曲線呈現 Bear Steepening。",
+  "sections": [
+    {
+      "title": "🛢️ WTI 原油 (NYMEX)",
+      "type": "cot_summary",
+      "data": {
+        "total_oi": 1864487,
+        "oi_change": -11009,
+        "net_position": 81689,
+        "net_change": 19006,
+        "long": 310182,
+        "long_change": 7753,
+        "short": 228493,
+        "short_change": -11253,
+        "spread": 580934
+      },
+      "analysis": "投機空頭大舉回補（-11k）帶動淨部位顯著回升，但整體仍低於一個月前的 110,531 口。商業端依然偏空（商用空單 1,004,895 > 多單 896,294），油價上行空間恐受限。"
+    },
+    {
+      "title": "🥇 黃金 (COMEX)",
+      "type": "cot_summary",
+      "data": {
+        "total_oi": 383368,
+        "oi_change": -321,
+        "net_position": 183910,
+        "net_change": -2772,
+        "long": 224785,
+        "long_change": -2525,
+        "short": 40875,
+        "short_change": 247,
+        "spread": 31983
+      },
+      "analysis": "淨多頭小幅降溫但仍處極高水位（183,910 口），多頭略有獲利了結。商用端對鎖倉位維持穩定（空單 293,656）。整體黃金投機情緒依然樂觀。"
+    },
+    {
+      "title": "🏛️ 公債期貨 — 投機淨部位",
+      "type": "treasury_table",
+      "data": [
+        {"contract": "2Y", "oi": 4335075, "net": -1154597, "weekly_change": 2880, "ratio": "0.3:1"},
+        {"contract": "5Y", "oi": 6153513, "net": -1273329, "weekly_change": 20954, "ratio": "0.3:1"},
+        {"contract": "10Y", "oi": 5272703, "net": -879706, "weekly_change": -48031, "ratio": "0.4:1"},
+        {"contract": "U10Y", "oi": 2418834, "net": -137632, "weekly_change": 8004, "ratio": "0.6:1"},
+        {"contract": "30Y", "oi": 1842498, "net": -186790, "weekly_change": -7734, "ratio": "0.5:1"},
+        {"contract": "UB", "oi": 2446567, "net": -321350, "weekly_change": 3057, "ratio": "0.3:1"}
+      ],
+      "analysis": "全曲線六檔合計投機淨空達 -3,953,404 口，為近年最大淨空水位。10Y 遭全面翻空，淨空單大增 48,031 口；5Y 空頭回補幅度最大（+20,954）；30Y 空頭從 6/30 的 -90,780 惡化至 -186,790。曲線持續 Bear Steepening。"
+    },
+    {
+      "title": "🔍 關鍵觀察",
+      "type": "key_observations",
+      "items": [
+        "🛢️ 原油空頭回補行情啟動：投機空單單週大減 11,253 口，為近期最大減幅，帶動淨部位反彈 +19k。但 4 週前淨多尚有 110k，回補能否延續是油價方向關鍵。",
+        "🥇 黃金投機多頭仍極度擁擠：淨部位 183,910 口是 WTI 的 2.25 倍，資金明顯偏好貴金屬勝過能源。黃金淨多自 6/30 起維持在 184k–194k 高檔。",
+        "🏛️ 公債曲線 Bear Steepening：前端（2Y/5Y）空頭同步回補暗示升息預期已到頂；中段（10Y）全面翻空跌最深；長端（30Y）空頭四週翻倍。市場定價 Higher for Longer + 期限溢價擴張。",
+        "🔄 跨資產：黃金淨多 184k vs 原油淨多 82k，資金從能源撤向避險資產。公債全曲線淨空 -3.95M 口創近年高，債市情緒極度悲觀。",
+        "📅 四巫日 (6/19) 影響已淡化，下一季為 9/18。CFTC 年報第 29 筆資料連續性良好。"
+      ]
+    }
+  ],
+  "charts": ["cot_oil_gold_weekly.png", "cot_treasury_weekly.png"],
+  "meta": {
+    "cot_date": "2026-07-21",
+    "source": "CFTC COT Report",
+    "report_week": 29,
+    "generated_at": "2026-07-25T08:30:00+08:00"
+  }
+}
