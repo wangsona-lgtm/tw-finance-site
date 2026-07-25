@@ -1,0 +1,388 @@
+{
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T07:05:00+08:00",
+  "report_type": "weekend_recap",
+  "trading_week": "2026-07-20 (Mon) ~ 2026-07-24 (Fri)",
+  "last_trading_day": "2026-07-24 (Friday)",
+  "data_source": "Yahoo Finance + ZeroHedge + Fed Watch Cron",
+  "summary": "上週美股漲跌互見，S&P 500 持平-0.42%，NASDAQ 週跌-2.09%。週五費半暴跌-4.25% 最為慘烈。原油因荷姆茲海峽/紅海雙重封鎖飆漲至 $89.31，布蘭特一度破 $100。週末川普暫停對伊空襲，阿曼代表團抵德黑蘭展開談判。本週 FOMC（7/29）+ GDP + PCE 三連發，為超級事件週。",
+
+  "indices": {
+    "SP500": {
+      "name": "S&P 500",
+      "ticker": "^GSPC",
+      "close": 7411.98,
+      "daily_change_pct": 0.05,
+      "weekly_change_pct": -0.42,
+      "signal": "neutral",
+      "note": "週五微漲+0.05%，本週累計小跌-0.42%，能源/防禦撐盤，科技拖累"
+    },
+    "DJI": {
+      "name": "道瓊工業",
+      "ticker": "^DJI",
+      "close": 51947.25,
+      "daily_change_pct": 0.46,
+      "weekly_change_pct": 0.21,
+      "signal": "buy",
+      "note": "傳統藍籌相對強勢，本週唯一收漲的主要指數"
+    },
+    "NASDAQ": {
+      "name": "NASDAQ",
+      "ticker": "^IXIC",
+      "close": 24975.82,
+      "daily_change_pct": -0.64,
+      "weekly_change_pct": -2.09,
+      "signal": "sell",
+      "note": "科技股承壓，本週累計下跌逾-2%，AI/半導體賣壓明顯"
+    },
+    "RUT": {
+      "name": "羅素2000",
+      "ticker": "^RUT",
+      "close": 2930.00,
+      "daily_change_pct": -0.35,
+      "weekly_change_pct": -0.42,
+      "signal": "neutral",
+      "note": "小型股震盪偏弱"
+    },
+    "SOX": {
+      "name": "費城半導體",
+      "ticker": "^SOX",
+      "close": 11818.88,
+      "daily_change_pct": -4.25,
+      "weekly_change_pct": 0.64,
+      "signal": "sell",
+      "note": "🔥 週五暴跌-4.25%，本週仍收漲+0.64%但尾盤急殺預告科技股動盪"
+    }
+  },
+
+  "tech_stocks": {
+    "NVDA": {
+      "name": "NVIDIA",
+      "close": 211.14,
+      "daily_change_pct": -1.45,
+      "weekly_change_pct": -8.15,
+      "signal": "sell",
+      "note": "本週累計重挫-8.15%，AI 領頭羊獲利了結賣壓"
+    },
+    "AAPL": {
+      "name": "Apple",
+      "close": 248.32,
+      "daily_change_pct": -0.18,
+      "weekly_change_pct": -1.22,
+      "signal": "neutral",
+      "note": "平穩偏弱"
+    },
+    "MSFT": {
+      "name": "Microsoft",
+      "close": 495.60,
+      "daily_change_pct": -0.43,
+      "weekly_change_pct": -1.68,
+      "signal": "neutral",
+      "note": "盤整格局"
+    },
+    "AMZN": {
+      "name": "Amazon",
+      "close": 238.05,
+      "daily_change_pct": 0.17,
+      "weekly_change_pct": 0.83,
+      "signal": "neutral",
+      "note": "本週相對穩健"
+    },
+    "GOOGL": {
+      "name": "Alphabet",
+      "close": 186.42,
+      "daily_change_pct": 0.06,
+      "weekly_change_pct": 0.09,
+      "signal": "neutral",
+      "note": "持平"
+    },
+    "META": {
+      "name": "Meta",
+      "close": 612.88,
+      "daily_change_pct": -0.81,
+      "weekly_change_pct": -3.15,
+      "signal": "sell",
+      "note": "本週偏弱"
+    },
+    "TSLA": {
+      "name": "Tesla",
+      "close": 264.72,
+      "daily_change_pct": -0.94,
+      "weekly_change_pct": -3.87,
+      "signal": "sell",
+      "note": "持續下探"
+    },
+    "TSM": {
+      "name": "台積電 ADR",
+      "close": 195.24,
+      "daily_change_pct": -5.11,
+      "weekly_change_pct": -4.73,
+      "signal": "sell",
+      "note": "🔥 ADR 折價擴大 14%，上週五單日大跌-5.11%"
+    },
+    "AMD": {
+      "name": "AMD",
+      "close": 162.18,
+      "daily_change_pct": -2.00,
+      "weekly_change_pct": -4.98,
+      "signal": "sell",
+      "note": "半導體類股全面承壓"
+    },
+    "AVGO": {
+      "name": "Broadcom",
+      "close": 215.44,
+      "daily_change_pct": -1.74,
+      "weekly_change_pct": -5.26,
+      "signal": "sell",
+      "note": "半導體領跌"
+    }
+  },
+
+  "sector_etfs": {
+    "XLU": {
+      "name": "公用事業",
+      "close": 81.52,
+      "daily_change_pct": 0.15,
+      "weekly_change_pct": 3.00,
+      "best_weekly": true,
+      "signal": "buy",
+      "note": "🏆 本週最強板塊，防禦性資金流入"
+    },
+    "XLE": {
+      "name": "能源",
+      "close": 94.48,
+      "daily_change_pct": 0.85,
+      "weekly_change_pct": 2.90,
+      "best_weekly": false,
+      "signal": "buy",
+      "note": "油價助攻，能源板塊強勢"
+    },
+    "XLI": {
+      "name": "工業",
+      "close": 128.33,
+      "daily_change_pct": 0.48,
+      "weekly_change_pct": 2.55,
+      "signal": "buy",
+      "note": "工業類股穩步走升"
+    },
+    "XLV": {
+      "name": "醫療保健",
+      "close": 167.18,
+      "daily_change_pct": -0.06,
+      "weekly_change_pct": 2.08,
+      "signal": "buy",
+      "note": "防禦輪動持續"
+    },
+    "XLF": {
+      "name": "金融",
+      "close": 49.73,
+      "daily_change_pct": 0.42,
+      "weekly_change_pct": 0.48,
+      "signal": "neutral",
+      "note": "狹幅震盪"
+    },
+    "XLK": {
+      "name": "科技",
+      "close": 240.55,
+      "daily_change_pct": -0.82,
+      "weekly_change_pct": 0.10,
+      "signal": "neutral",
+      "note": "幾乎持平"
+    },
+    "XLP": {
+      "name": "必需消費",
+      "close": 82.76,
+      "daily_change_pct": 0.14,
+      "weekly_change_pct": -0.86,
+      "signal": "neutral",
+      "note": "必需消費意外偏弱"
+    },
+    "XLY": {
+      "name": "非必需消費",
+      "close": 202.61,
+      "daily_change_pct": -0.44,
+      "weekly_change_pct": -0.33,
+      "signal": "neutral",
+      "note": "消費類股偏弱"
+    },
+    "XLB": {
+      "name": "原物料",
+      "close": 87.65,
+      "daily_change_pct": -0.21,
+      "weekly_change_pct": -0.95,
+      "signal": "neutral",
+      "note": "偏弱"
+    },
+    "SMH": {
+      "name": "半導體",
+      "close": 251.72,
+      "daily_change_pct": -3.27,
+      "weekly_change_pct": -2.18,
+      "signal": "sell",
+      "note": "📉 本週最弱板塊，週五急殺-3.27%"
+    }
+  },
+
+  "macro": {
+    "DXY": {
+      "name": "美元指數",
+      "ticker": "DX-Y.NYB",
+      "close": 101.47,
+      "daily_change_pct": 0.04,
+      "weekly_change_pct": 0.48,
+      "signal": "neutral",
+      "note": "101.5 附近狹幅整理，油價飆升支撐美元"
+    },
+    "GOLD": {
+      "name": "黃金",
+      "ticker": "GC=F",
+      "close": 4067.60,
+      "daily_change_pct": 0.52,
+      "weekly_change_pct": 1.43,
+      "signal": "buy",
+      "note": "滯脹環境+地緣風險，黃金穩步創高"
+    },
+    "CRUDE": {
+      "name": "WTI 原油",
+      "ticker": "CL=F",
+      "close": 89.31,
+      "daily_change_pct": -3.12,
+      "weekly_change_pct": 7.31,
+      "signal": "buy",
+      "note": "🔥 本週暴漲+7.31%，荷姆茲/紅海雙重封鎖，布蘭特一度破$100"
+    },
+    "BTC": {
+      "name": "比特幣",
+      "ticker": "BTC-USD",
+      "close": 64314,
+      "daily_change_pct": 0.34,
+      "weekly_change_pct": -3.29,
+      "signal": "sell",
+      "note": "避險情緒下加密貨幣承壓"
+    },
+    "TNX": {
+      "name": "10年債殖利率",
+      "ticker": "^TNX",
+      "close": 4.679,
+      "daily_change_pct": -0.51,
+      "weekly_change_pct": 0.12,
+      "signal": "neutral",
+      "note": "4.68% 附近，利率預期穩定"
+    },
+    "VIX": {
+      "name": "VIX 恐慌指數",
+      "ticker": "^VIX",
+      "close": 18.58,
+      "daily_change_pct": -0.64,
+      "weekly_change_pct": -0.38,
+      "signal": "warning",
+      "note": "⚠️ 仍在警戒區（18.6），但未達恐慌門檻（20）"
+    }
+  },
+
+  "weekend_events": {
+    "geopolitical": [
+      {
+        "title": "Trump Pauses Iran Strikes; Omani Delegation in Tehran",
+        "summary": "川普週五晚間下令暫停對伊朗空襲，阿曼官員抵德黑蘭就重啟荷姆茲海峽展開談判，傳已取得進展。同時沙烏地空襲葉門胡塞目標後，胡塞反擊攻擊沙烏地南部省份及煉油廠。紅海 Bab al-Mandeb 封鎖持續。",
+        "impact": "油價短線回跌壓力（談判預期），但若破局將重返 $100+。地緣風險雙面刃。",
+        "severity": "high"
+      },
+      {
+        "title": "Iran Guards Stop 4 Ships at Hormuz",
+        "summary": "伊朗革命衛隊稱過去24小時內警告射擊後攔截4艘試圖通行荷姆茲海峽的船隻。美英計劃下週在倫敦召開高階國際會議，組建荷姆茲海峽海上護航聯盟。",
+        "impact": "海峽通行持續中斷，航運/保險成本飆升",
+        "severity": "high"
+      },
+      {
+        "title": "Pakistan Mediates US-Iran Talks",
+        "summary": "巴基斯坦在中國推動下探索重啟美伊談判路徑，障礙仍高。",
+        "impact": "外交管道維持開放，但短期內達成協議難度大",
+        "severity": "medium"
+      }
+    ],
+    "macro_fed": [
+      {
+        "title": "Fed FOMC 決議倒數（7/29）",
+        "summary": "本週三 FOMC 會議，市場共識維持利率 3.50%-3.75% 不變。但 CPI 降溫後油價飆升可能影響 Fed 前瞻立場。FedWatch 顯示 7 月按兵不動 ~90%。",
+        "impact": "若 Fed 鷹派（暗示9月升息），將衝擊風險資產",
+        "severity": "very_high"
+      },
+      {
+        "title": "Fed官員鷹派立場佔上風",
+        "summary": "Warsh 主席上任首場記者會將於 FOMC 會後登場，市場高度關注其對通膨/油價衝擊的最新評估。",
+        "impact": "Warsh 講話基調將決定下半年利率路徑預期",
+        "severity": "high"
+      }
+    ],
+    "markets": [
+      {
+        "title": "Goldman: 'Start Nibbling' Gold",
+        "summary": "高盛分析師 Pasquariello 建議投資者開始小額買進黃金，指出短期市場難度高，一個重要的歷史類比值得關注。",
+        "impact": "避險情緒升溫，黃金 $4,067 仍有上行空間",
+        "severity": "medium"
+      },
+      {
+        "title": "Hyperscaler Credit Selloff",
+        "summary": "超大規模企業（Hyperscaler）信貸遭拋售，市場對 AI 資本支出回報的擔憂加劇。本週資產表現：油價↑、殖利率↑、美元↑、股市↓、比特幣↓。",
+        "impact": "科技股賣壓可能延續至週一",
+        "severity": "medium"
+      },
+      {
+        "title": "Brent Crude Briefly Breaches $100",
+        "summary": "布蘭特原油本週一度突破 $100/桶，最終收 $96.78。Goldman 警告若荷姆茲危機深化，油價可能升至 $120+。",
+        "impact": "能源通膨+滯脹交易主導市場情緒",
+        "severity": "high"
+      }
+    ]
+  },
+
+  "monday_outlook": {
+    "overall_direction": "caution",
+    "bullish_factors": [
+      "川普暫停空襲 + 阿曼斡旋 = 地緣風險短線降溫",
+      "油價上週五回跌 -3.12%，緩解通膨壓力",
+      "CPI 降溫至 3.5% 支撐 Fed 按兵不動預期",
+      "S&P 500 上週五收漲 +0.05%，尾盤買盤支撐"
+    ],
+    "bearish_factors": [
+      "SOX 週五暴跌 -4.25%，半導體賣壓恐延續",
+      "TSM ADR 折價 14%，台股週一台積電承壓",
+      "Hyperscaler 信貸遭拋售，AI 回報疑慮升溫",
+      "FOMC 週三登場前市場趨向保守",
+      "胡塞攻擊沙烏地南部，紅海戰線擴大"
+    ],
+    "watchlist": [
+      "FOMC 週三決議 + Warsh 記者會（最大催化劑）",
+      "週四 GDP Q2 Advance & 6月 PCE 雙爆發",
+      "阿曼-伊朗談判進展：荷姆茲海峽重啟時程",
+      "沙烏地-胡塞衝突是否升級為第二戰線",
+      "科技股獲利了結是否擴散至整體市場"
+    ],
+    "futures": {
+      "ES_F": {
+        "name": "S&P 500 期貨",
+        "status": "unavailable_weekend",
+        "note": "期貨週末休市，週日晚間 6PM ET 開盤"
+      },
+      "oil_fundamental": {
+        "note": "布蘭特 $96.78，Goldman 風險情境 $120+；JPMorgan 警示汽油價格逼近談判觸發點",
+        "sentiment": "bullish_short_term"
+      }
+    },
+    "key_events_this_week": [
+      "週三 7/29：FOMC 利率決議 + Warsh 主席記者會 🚨",
+      "週四 7/30：Q2 GDP (Advance) + 6月 PCE + 初領失業金 🚨🚨",
+      "週五 7/31：就業成本指數 (ECI) Q2 + 密大消費者信心終值"
+    ]
+  },
+
+  "trading_signals": {
+    "overall_risk": "high",
+    "recommended_position": "defensive",
+    "top_sectors": ["XLU (公用事業)", "XLE (能源)", "XLV (醫療保健)"],
+    "avoid_sectors": ["SMH (半導體)", "XLK (科技)"],
+    "asset_allocation_note": "降低科技股曝險，增持防禦型板塊；黃金在滯脹環境下仍有上行空間；原油短線偏多但注意談判風險",
+    "taiwan_stock_impact": "台股上週五暴跌 -2.67% 收 43,654，SOX 拖累台積電 ADR 折價 14%，週一台股前半仍有賣壓。若 FOMC 釋出鴿派訊號，可能利空出盡反彈。"
+  }
+}
