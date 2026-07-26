@@ -1,7 +1,7 @@
 {
   "date": "2026-07-27",
   "type": "daily-reports",
-  "source": "zerohedge",
+  "source": "zerohedge + premarket",
   "title": "ZeroHedge 每日導讀 — 7月27日（一）",
   "sections": [
     {
@@ -88,6 +88,276 @@
         "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_5.jpg"
       ],
       "premium": false
+    },
+    {
+      "title": "📊 台股盤前分析 — 2026-07-27（週一）",
+      "category": "premarket",
+      "summary": "🔴 SOX -4.25% 費半暴跌、原油 -5.05% 回吐、外資淨空單 -464,609 口極度偏空。S&P 500平盤顯示資金輪動而非全面恐慌。本週聚焦FOMC+科技巨頭財報。",
+      "timestamp": "2026-07-27",
+      "premarket": {
+        "timestamp": "2026-07-27 07:11 CST",
+        "direction": "🔴 偏空開低",
+        "tone": "半導體全面崩跌，油價反轉，台股面臨第二波壓力",
+        "market_status": {
+          "tw_index_prev_close": "43,654.84",
+          "tw_index_change": "-2.67%",
+          "tw_index_prev_close_label": "加權指數（07/24）",
+          "us_sp500": "7,411.98",
+          "us_sp500_change": "+0.05%",
+          "us_nasdaq": "24,975.82",
+          "us_nasdaq_change": "-0.64%",
+          "us_sox": "11,818.88",
+          "us_sox_change": "-4.25%",
+          "us_dow": "51,947.25",
+          "us_dow_change": "+0.46%",
+          "us_russell2000": "2,930.00",
+          "us_russell2000_change": "-0.35%"
+        },
+        "megatechs": {
+          "strong": [
+            {
+              "ticker": "AAPL",
+              "close": "$333.02",
+              "change": "+3.53%",
+              "note": "iPhone 17 備貨消息推動"
+            },
+            {
+              "ticker": "GOOGL",
+              "close": "$319.74",
+              "change": "+0.65%"
+            },
+            {
+              "ticker": "MSFT",
+              "close": "$381.70",
+              "change": "+0.03%"
+            }
+          ],
+          "weak": [
+            {
+              "ticker": "AMD",
+              "close": "$521.95",
+              "change": "-3.29%"
+            },
+            {
+              "ticker": "TSM",
+              "close": "$403.41",
+              "change": "-2.93%"
+            },
+            {
+              "ticker": "AVGO",
+              "close": "$381.92",
+              "change": "-2.69%"
+            },
+            {
+              "ticker": "TSLA",
+              "close": "$313.03",
+              "change": "-2.08%"
+            },
+            {
+              "ticker": "META",
+              "close": "$595.19",
+              "change": "-1.80%"
+            },
+            {
+              "ticker": "NVDA",
+              "close": "$206.84",
+              "change": "-0.92%"
+            },
+            {
+              "ticker": "AMZN",
+              "close": "$232.11",
+              "change": "-0.66%"
+            }
+          ]
+        },
+        "sector_etfs": {
+          "strongest": [
+            {
+              "ticker": "XLB",
+              "name": "原物料",
+              "change": "+1.93%"
+            },
+            {
+              "ticker": "XLP",
+              "name": "必需消費",
+              "change": "+1.11%"
+            },
+            {
+              "ticker": "XLF",
+              "name": "金融",
+              "change": "+0.86%"
+            }
+          ],
+          "weakest": [
+            {
+              "ticker": "SMH",
+              "name": "半導體",
+              "change": "-3.27%"
+            },
+            {
+              "ticker": "XLK",
+              "name": "科技",
+              "change": "-1.44%"
+            }
+          ]
+        },
+        "commodities": {
+          "usd_index": {
+            "close": "101.32",
+            "change": "-0.15%"
+          },
+          "gold": {
+            "close": "$4,091.90",
+            "change": "+0.60%"
+          },
+          "crude": {
+            "close": "$84.80",
+            "change": "-5.05%",
+            "note": "完全回吐週四漲幅"
+          },
+          "bitcoin": {
+            "close": "$65,414.92",
+            "change": "+1.72%"
+          },
+          "tnx_10y": {
+            "close": "4.68%",
+            "change": "-0.43%"
+          },
+          "vix": {
+            "close": "18.58",
+            "change": "-0.64%"
+          }
+        },
+        "tw_focus": {
+          "tw_index": {
+            "close": "43,654.84",
+            "change": "-2.67%"
+          },
+          "tsmc_2330": {
+            "close": "2,350",
+            "change": "-2.29%"
+          },
+          "tsmc_adr": {
+            "close": "$403.41",
+            "change": "-2.93%"
+          },
+          "tsmc_adr_premium": "10.86%",
+          "tsmc_adr_implied_twd": "2,605",
+          "fx_usdtwd": "32.299",
+          "foreign_futures_net_short": "464,609口",
+          "foreign_futures_memo": "極度偏空，近期新高",
+          "pc_ratio": "112.70%"
+        },
+        "this_week_events": [
+          {
+            "date": "7/27 (一)",
+            "event": "無重大美國數據"
+          },
+          {
+            "date": "7/28 (二)",
+            "event": "微軟 MSFT 財報 ⭐",
+            "impact": "AI 風向球"
+          },
+          {
+            "date": "7/29 (三)",
+            "event": "Meta META 財報 ⭐",
+            "impact": "廣告+AI"
+          },
+          {
+            "date": "7/30 (四)",
+            "event": "AAPL+AMZN 財報 + Q2 GDP ⭐⭐"
+          },
+          {
+            "date": "7/30~31",
+            "event": "FOMC 利率決策 ⭐⭐⭐",
+            "impact": "本週最重要事件"
+          }
+        ],
+        "key_levels": {
+          "open_estimate": "43,200~43,500",
+          "resistance_1": "43,654（上週五收盤）",
+          "resistance_2": "44,200~44,400",
+          "support_1": "42,800~43,000",
+          "support_2": "42,449（前波低點）"
+        },
+        "strong_sectors": [
+          "蘋概股（2324 仁寶、2474 可成、4958 臻鼎-KY）— AAPL +3.53%",
+          "原物料/鋼鐵（2002 中鋼）— XLB +1.93%",
+          "金融（2881 富邦金、2882 國泰金）— XLF +0.86%",
+          "避險工具（00632R 反1）"
+        ],
+        "avoid_sectors": [
+          "半導體權值（2330 台積電、2454 聯發科、3711 日月光）",
+          "石化/塑膠（6505 台塑化、1301 台塑、1326 台化）",
+          "AI 伺服器/散熱（財報前觀望賣壓）"
+        ],
+        "recommendations": [
+          {
+            "ticker": "2002 中鋼",
+            "direction": "偏多",
+            "entry_zone": "18.8~19.0",
+            "target": "19.5~20.0",
+            "stop": "18.2",
+            "reason": "XLB +1.93%最強板塊，大盤-2.67%時+1.06%逆勢，低基期防禦"
+          },
+          {
+            "ticker": "00632R 反1",
+            "direction": "避險",
+            "entry_zone": "輕倉3~5%",
+            "target": "10.7~10.9",
+            "stop": "10.3",
+            "reason": "SOX -4.25%+外資空單-464k口壓抑台股，短線避險"
+          },
+          {
+            "ticker": "2474 可成 / 2324 仁寶",
+            "direction": "偏多",
+            "entry_zone": "小量布局",
+            "stop": "-3%",
+            "reason": "AAPL +3.53%唯一強勢，上週已超賣"
+          },
+          {
+            "ticker": "2330 台積電",
+            "direction": "觀察",
+            "entry_zone": "等FOMC後或回測2,250~2,300",
+            "reason": "TSM ADR $403→隱含$2,605(+10.86%溢價)但SOX -4.25%影響延續"
+          }
+        ],
+        "prior_review": {
+          "date": "07/24",
+          "results": [
+            {
+              "ticker": "6505 台塑化",
+              "direction": "偏多",
+              "pnl": "-7.94%",
+              "result": "❌ 失誤",
+              "lesson": "原油單日+6%暴漲極易回調，前日已漲+9.52%不應追高"
+            },
+            {
+              "ticker": "1301 台塑",
+              "direction": "偏多",
+              "pnl": "-5.29%",
+              "result": "❌ 失誤",
+              "lesson": "系統性風險下補漲邏輯無效"
+            },
+            {
+              "ticker": "2330 台積電",
+              "direction": "偏多",
+              "pnl": "-0.21%",
+              "result": "⏳ 中性",
+              "lesson": "相對強勢但未達目標"
+            },
+            {
+              "ticker": "00632R 反1",
+              "direction": "避險",
+              "pnl": "+2.13%",
+              "result": "✅ 命中"
+            }
+          ],
+          "hit_rate": "25%（1/4）"
+        },
+        "generated_at": "2026-07-27 07:11 CST",
+        "source": "hermes-cron-2edfc497e5ad"
+      }
     }
   ]
 }
