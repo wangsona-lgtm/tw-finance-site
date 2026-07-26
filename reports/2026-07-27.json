@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-27",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 7月27日（一）",
+  "sections": [
+    {
+      "title": "Hartnett: Bonds Finally Bringing The Heat — 債券市場終於帶來壓力",
+      "category": "market",
+      "summary": "高盛的頂級衍生品交易員 Brian Garrett 呼應了近一年來的警告：AI 股票的真正風險並非來自股市本身，而是來自債券市場。近期信用利差急劇擴大，市場對超大規模資本支出（hyperscaler capex）回報率的擔憂蔓延至信貸領域，正在打壓半導體/記憶體類股。資本支出洪流可能撞上牆壁，引爆市場崩盤——因為 hyperscaler 資本支出已成為全球信貸脈衝的主要來源。",
+      "url": "https://www.zerohedge.com/markets/hartnett-bonds-finally-bringing-heat",
+      "timestamp": "2026-07-27",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Iran Blasts \"Freeloader\" Zelensky For Ordering Deadly Attack On Caspian Vessel — 伊朗痛斥「寄生蟲」澤倫斯基在以色列授意下下令攻擊裏海船隻",
+      "category": "geopolitics",
+      "summary": "伊朗指控烏克蘭攻擊裏海的一艘伊朗商船，造成1名船員死亡、1人受傷。澤倫斯基公開宣稱「在裏海水域取得了非常好的長程打擊成果」，目標是運送伊朗軍火的船隻和軍艦。伊朗外長 Araghchi 痛批這是「公然違反聯合國憲章」、是「在以色列授意下」所為，目的是「將歐洲拖入戰爭」，更稱澤倫斯基為「基輔的寄生蟲」。Araghchi 分別與歐盟外交代表 Kallas 和俄羅斯外長拉夫羅夫通話，強調此事「不能沒有回應」。俄烏衝突與美伊衝突合流的風險正在上升，但目前仍處於低度可能性。Polymarket 上「美伊在8月31日前有效停火」的機率為 75%（是）vs 26%（否）。",
+      "url": "https://www.zerohedge.com/geopolitical/iran-oman-hold-hormuz-talks-us-pauses-airstrikes-second-day",
+      "timestamp": "2026-07-27",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.png",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_5.jpg"
+      ],
+      "premium": false
+    },
+    {
+      "title": "FOMO = Fear Of Momentum: \"How Much More Pain, Is The Billion Dollar Question\" — FOMO = 恐懼動能：「還要多少痛苦」才是關鍵問題",
+      "category": "market",
+      "summary": "全球股市上週大致收平，但表面數字掩蓋了底層波動。Goldman 交易員 Benny Quek 指出，市場長期以來一直忽略正在進行的衝突、油價波動和利率變動——但現在三者同時發力，爭奪市場注意力。",
+      "url": "https://www.zerohedge.com/markets/fomo-fear-momentum-how-much-more-pain-billion-dollar-question",
+      "timestamp": "2026-07-27",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "The AI Capex Bill Comes Due — AI 資本支出的帳單來了",
+      "category": "market",
+      "summary": "S&P 500 上週四跌破 50 日均線（7,467），收在 7,411.98，為數月來首次明確跌破該線。14 日 RSI 處於 40 多，未達超賣區，意味還有下行空間。MACD 訊號線一週前即交叉轉空，且差距持續擴大——這是回調的早期階段。正面訊號：超大規模企業（hyperscaler）與半導體之間的緊密連動已斷裂，晶片股上週在大型股被拋售的同時表現相對抗跌。200 日均線在 7,001，標普仍高出約 6%。若回調至 50 日均線或 7 月收盤低點 7,354 附近，在上升趨勢中仍屬正常。關鍵防線是 200 日均線——一旦失守，格局將改變。作者維持 AI 組合的目標權重（不加碼），等待下週 hyperscaler 財報出爐後再決定是否加倉。",
+      "url": "https://www.zerohedge.com/markets/ai-capex-bill-comes-due",
+      "timestamp": "2026-07-27",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_5.jpg"
+      ],
+      "premium": false
+    },
+    {
+      "title": "No Country For Old Trends: BTIG Warns Of \"More Dangerous Regime\" Imminent — BTIG 警告：「更危險的市場機制」即將來臨",
+      "category": "market",
+      "summary": "儘管 SPX 在 7400-7500 區間持續盤整，BTIG 首席技術市場策略師 Jonathan Krinsky 指出，表面下已出現明顯的防禦性輪動：低波動股票正在突破，而高 Beta 股票正在崩跌。指數橫盤掩蓋了內部結構的惡化，「更危險的市場機制」可能即將確立。",
+      "url": "https://www.zerohedge.com/markets/no-country-old-trends-btig-warns-more-dangerous-regime-imminent",
+      "timestamp": "2026-07-27",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "\"Now Taking Reservations For 2031 Delivery\": GE Vernova Gas Turbine Backlog Climbs To 116 GW — GE Vernova 燃氣渦輪機訂單積壓攀升至 116 GW",
+      "category": "market",
+      "summary": "GE Vernova Q2 營收與訂單實現雙位數成長，Power 和 Electrification 部門持續強勁：總訂單積壓 $1,760 億（較 Q2 2025 的 $1,290 億大幅成長），燃氣渦輪機訂單積壓 116 GW（高於 Q1 的 100 GW），Electrification 部門訂單積壓 $410 億（年增 69%），風力設備訂單年減 40%，美國陸域風電需求持續疲軟。CEO Scott Strazik 表示年底燃氣渦輪積壓將達 125 GW。客戶結構越來越多元化：約 100 個實體遍布 26 國，約 80% 為傳統公用事業客戶、20% 為資料中心客戶。公司現在已在接受 2031 年交貨的預訂。競爭對手 Siemens 和 Mitsubishi Heavy Industries 同樣接到 4-5 年後的訂單。",
+      "url": "https://www.zerohedge.com/markets/now-taking-reservations-2031-delivery-ge-vernova-gas-turbine-backlog-climbs-116-gw",
+      "timestamp": "2026-07-27",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_4.jpg"
+      ],
+      "premium": false
+    },
+    {
+      "title": "US State Department Issues Travel Advisory For Belgium — 美國國務院針對比利時發布旅遊警示",
+      "category": "geopolitics",
+      "summary": "美國國務院更新比利時旅遊警示（維持 Level 2：提高警覺），新增對犯罪和社會動盪的警告。恐怖組織「受到恐怖組織啟發的人員」有意攻擊海外美國人，包括在歐洲。攻擊手段包括刀具、車輛和槍枝，目標通常是防護薄弱的公共場所：宗教場所、學校、購物中心、大眾運輸、飯店、餐廳、大型公共活動。街頭犯罪（搶劫、扒竊）在主要城市普遍存在，尤其是電車、火車站、布魯塞爾地鐵夜間、餐廳等公共區域。犯罪團夥經常以團隊方式作案。行李盜竊在火車上（尤其是布魯塞爾-阿姆斯特丹路線）大量增加。",
+      "url": "https://www.zerohedge.com/geopolitical/us-state-department-issues-travel-advisory-belgium",
+      "timestamp": "2026-07-27",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_4.jpg"
+      ],
+      "premium": false
+    },
+    {
+      "title": "France Recorded 5,000 Excess Deaths During Heat Wave: Officials — 法國官方：熱浪期間記錄到 5,000 例超額死亡",
+      "category": "geopolitics",
+      "summary": "法國公共衛生署統計，6月17日至7月2日的熱浪期間，全因超額死亡估計達 5,764 例。其中超過一半發生在 6月25日至27日，75 歲以上老年人佔三分之二。巴黎氣溫達 40.1°C，Saintes 地區達 43.8°C，Île-de-France（大巴黎區）記錄近 2,000 例超額死亡。EuroMOMO 監測網絡報告，同期全歐洲超額死亡超過 10,000 例。法國公共衛生署指出這是初步估計。雖然數字驚人，但仍未達到 2003 年熱浪（估計 14,802 人死亡）的規模。",
+      "url": "https://www.zerohedge.com/geopolitical/france-recorded-5000-excess-deaths-during-heat-wave-officials",
+      "timestamp": "2026-07-27",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_5.jpg"
+      ],
+      "premium": false
+    }
+  ]
+}
