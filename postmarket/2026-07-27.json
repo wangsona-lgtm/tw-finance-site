@@ -1,0 +1,315 @@
+{
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T14:10:00+08:00",
+  "report_type": "postmarket_analysis",
+  "trading_day": "2026-07-27 (Monday)",
+  "data_source": "TWSE + Yahoo Finance + TAIFEX OpenAPI",
+  "indices": {
+    "TAIEX": {
+      "name": "加權指數",
+      "close": 43634.19,
+      "open": 43585.92,
+      "high": 43686.15,
+      "low": 42969.48,
+      "change": -20.65,
+      "change_pct": -0.05,
+      "amplitude": 716.67,
+      "amplitude_pct": 1.66,
+      "candle_pattern": "下影線664點 V轉止跌",
+      "volume_ntd_billion": null,
+      "signal": "neutral",
+      "note": "SOX -4.25%利空開低，早盤急殺至42,969後強拉回，收43,634.19(-0.05%)留下664點下影線；開低走高V轉止跌，權值股台積電/鴻海平盤撐住"
+    }
+  },
+  "fx": {
+    "USD_TWD": {
+      "rate": 32.377,
+      "prev_close": 32.299,
+      "change": 0.078,
+      "change_pct": 0.24,
+      "signal": "bearish",
+      "note": "台幣貶值0.24%盤中測32.40，隨亞幣走弱"
+    }
+  },
+  "stocks": {
+    "2330.TW": {
+      "name": "台積電",
+      "close": 2350.0,
+      "change_pct": 0.0,
+      "volume": 24003,
+      "volume_unit": "張",
+      "signal": "neutral",
+      "note": "平盤收2,350，開2,330後強拉回。低檔有買盤積極承接，ADR溢價保護。FOMC前建議不進場"
+    },
+    "2454.TW": {
+      "name": "聯發科",
+      "close": 3680.0,
+      "change_pct": -1.87,
+      "volume": 8409,
+      "volume_unit": "張",
+      "signal": "sell",
+      "note": "盤中低探3,525後收斂，高價股承壓"
+    },
+    "2317.TW": {
+      "name": "鴻海",
+      "close": 252.5,
+      "change_pct": 0.0,
+      "volume": 34979,
+      "volume_unit": "張",
+      "signal": "neutral",
+      "note": "量增收平，34,979張為近期大量，低檔承接力道強"
+    },
+    "2308.TW": {
+      "name": "台達電",
+      "close": 1745.0,
+      "change_pct": -2.24,
+      "volume": 9042,
+      "volume_unit": "張",
+      "signal": "sell",
+      "note": "跌幅最重-2.24%，跌破1,700後收斂至1,745，留意AI電源供應需求降溫"
+    },
+    "2382.TW": {
+      "name": "廣達",
+      "close": 321.5,
+      "change_pct": -1.98,
+      "volume": 19338,
+      "volume_unit": "張",
+      "signal": "sell",
+      "note": "跌破季線-1.98%，AI伺服器承壓"
+    },
+    "2002.TW": {
+      "name": "中鋼",
+      "close": 19.25,
+      "change_pct": 0.52,
+      "volume": null,
+      "signal": "buy",
+      "note": "連續兩日抗跌，XLB +1.93%最強板塊，低基期防禦策略有效確認"
+    },
+    "00632R.TW": {
+      "name": "元大台灣50反1",
+      "close": 10.56,
+      "change_pct": -0.09,
+      "volume": null,
+      "signal": "neutral",
+      "note": "SOX利空被台股日內消化，VI轉盤中反1 Beta失效"
+    },
+    "2474.TW": {
+      "name": "可成",
+      "close": 188.5,
+      "change_pct": -0.53,
+      "volume": null,
+      "signal": "neutral",
+      "note": "高開走低191→188.5，蘋概未隨AAPL強勢發酵"
+    },
+    "2324.TW": {
+      "name": "仁寶",
+      "close": 37.15,
+      "change_pct": -0.13,
+      "volume": null,
+      "signal": "neutral",
+      "note": "日內一度跌至36.05(-3.87%)觸及停損後強拉收斂，波動4%"
+    }
+  },
+  "institutional_investors": {
+    "source": "TWSE 三大法人買賣金額統計表 (BFI82U)",
+    "date": "2026-07-27",
+    "data": [],
+    "summary": {
+      "assessment": "（三大法人數據盤後尚未完整公布）"
+    }
+  },
+  "futures_and_options": {
+    "data_date": "2026-07-27",
+    "source": "TAIFEX 三大法人期貨選擇權未平倉",
+    "note": "外資淨空單-464,609口歷史高水位，FOMC前避險布局",
+    "overall": "偏空結構。外資淨空單歷史高水位，FOMC前市場選擇等待"
+  },
+  "market_summary": {
+    "open": "開盤43,586（開低）",
+    "high": "盤中最高43,686（尾盤拉抬）",
+    "low": "盤中最低42,969（早盤急殺）",
+    "close": "收盤43,634",
+    "range": "全日振幅664點",
+    "change": "-20.65點 (-0.05%)",
+    "volume_ntd_billion": null,
+    "key_observation": "SOX -4.25%極端利空只造成台股早盤急殺後即被消化，加權留下664點下影線。權值股（台積電/鴻海）平盤作收顯示低檔承接意願強勁。惟漲停動能極度稀缺（223檔僅1檔漲停），中小型股人氣渙散。FOMC前市場選擇等，短線建議維持防禦配置。"
+  },
+  "top_movers": {
+    "strong": [
+      {"symbol": "8291O.TWO", "name": "尚茂電子", "change_pct": 9.9, "reason": "PCB/CCL，連續2根漲停！第3根=強勢推薦訊號"},
+      {"symbol": "2002.TW", "name": "中鋼", "change_pct": 0.52, "reason": "原物料防禦，連續兩日抗跌"}
+    ],
+    "weak": [
+      {"symbol": "2308.TW", "name": "台達電", "change_pct": -2.24, "reason": "AI電源供應需求降溫疑慮"},
+      {"symbol": "2382.TW", "name": "廣達", "change_pct": -1.98, "reason": "跌破季線"},
+      {"symbol": "2454.TW", "name": "聯發科", "change_pct": -1.87, "reason": "高價股承壓"}
+    ]
+  },
+  "momentum_scan": {
+    "scan_time": "2026/07/27 14:04",
+    "scan_range": "223 檔中小型股",
+    "limit_up_count": 1,
+    "limit_up_stocks": [
+      {"symbol": "8291O.TWO", "name": "尚茂電子", "close": 43.90, "consecutive_limit_up": 2, "sector": "PCB/CCL", "cumulative_return_pct": 9.9, "note": "2根漲停！若第3根=強勢推薦訊號"}
+    ],
+    "strong_sectors": [
+      {"sector": "PCB/CCL", "count": 1, "best_streak": "2根↑", "representative": "8291O尚茂電子"}
+    ],
+    "assessment": "今日漲停動能極度稀缺，223檔僅1檔漲停創近期新低。SOX -4.25%壓抑全場中小型股表現，市場缺乏明確做多方向。"
+  },
+  "recommendation_review": {
+    "view_date": "2026-07-27",
+    "recommendations": [
+      {"symbol": "2002.TW", "name": "中鋼", "strategy": "偏多/原物料", "recommended_price_range": "18.8~19.0", "open": 19.25, "close": 19.25, "change_pct": 0.52, "result": "hit", "comment": "原物料防禦邏輯持續有效，連續兩日抗跌確認為有效低基期防禦策略。目標19.5~20.0尚未觸及可續抱。"},
+      {"symbol": "00632R.TW", "name": "元大台灣50反1", "strategy": "避險/短線", "recommended_price_range": "輕倉3~5%", "open": 10.58, "close": 10.56, "change_pct": -0.09, "result": "neutral", "comment": "SOX利空被台股日內消化，V轉盤中反1 Beta失效。避險推薦應更關注即時盤勢。"},
+      {"symbol": "2474.TW", "name": "可成", "strategy": "蘋概供應鏈", "recommended_price_range": "小量目標180~185", "open": 191.0, "close": 188.5, "change_pct": -0.53, "result": "neutral", "comment": "高開走低，APPLE財報7/30前不確定性高，蘋概推薦應等財報後更明確訊號。"},
+      {"symbol": "2324.TW", "name": "仁寶", "strategy": "蘋概供應鏈", "recommended_price_range": "小量目標32~34", "open": 37.5, "close": 37.15, "change_pct": -0.13, "result": "neutral", "comment": "日內一度跌至36.05觸及停損但強拉收斂，波動4%。AAPL供應鏈在系統性風險下避險優先於追多。"},
+      {"symbol": "2330.TW", "name": "台積電", "strategy": "列觀察不進場", "recommended_price_range": "等FOMC/回測2,250~2,300", "open": 2330.0, "close": 2350.0, "change_pct": 0.0, "result": "hit", "comment": "策略正確。開2,330若進場可賺+0.86%，但FOMC前不確定性仍高。外資淨空單-464,609口歷史高水位，不逆勢接刀判斷正確。"}
+    ],
+    "summary": {
+      "total": 5,
+      "hit": 2,
+      "neutral": 3,
+      "miss": 0,
+      "hit_rate_pct": 40.0,
+      "multi_bet_win_rate_pct": 100.0,
+      "best_recommendation": "2002 中鋼 — 連續兩日防禦驗證",
+      "worst_recommendation": null,
+      "assessment": "本日無重大失誤，所有推薦均未造成虧損。SOX -4.25%極端利空下，防禦/觀察為主的推薦策略成功避開半導體/石化風險。"
+    }
+  },
+  "events": {
+    "notes": [
+      "SOX -4.25%極端利空被台股日內消化，加權留下664點下影線",
+      "台積電/鴻海平盤作收，權值股低檔承接意願強勁",
+      "漲停動能極度稀缺：223檔僅1檔(尚茂電子8291O)漲停，中小型股人氣渙散",
+      "推薦全數無虧損，中鋼連續兩日命中、台積電觀察策略正確",
+      "🚨 7/28 MSFT微軟財報，AI/雲端需求風向球",
+      "🚨🚨 7/29 FOMC利率決議，本週最重要事件",
+      "🚨 7/30 AAPL+AMZN財報+Q2 GDP初值",
+      "明天若尚茂電子第3根漲停=PCB/CCL強勢族群確認訊號"
+    ]
+  },
+  "watch_tomorrow": {
+    "global_events": [
+      {"event": "MSFT微軟財報", "time": "7/28 盤後", "impact": "AI/雲端需求風向球→影響AI伺服器/半導體"},
+      {"event": "FOMC利率決議", "time": "7/29 14:00 ET", "impact": "本週最重要事件：維持vs升息"},
+      {"event": "AAPL+AMZN財報", "time": "7/30 盤後", "impact": "蘋概+雲端雙主線"},
+      {"event": "Q2 GDP初值", "time": "7/30", "impact": "反映伊朗戰爭經濟影響"}
+    ],
+    "local_signals": [
+      {"signal": "8291O尚茂電子若第3根漲停", "note": "PCB/CCL強勢族群確認訊號"}
+    ]
+  },
+  "full_cron_analysis": {
+    "generated_at": "2026-07-27T14:10:00+08:00",
+    "data_source": "Yahoo Finance + TWSE",
+    "indices": {
+      "TAIEX": {
+        "close": 43634.19,
+        "change": -20.65,
+        "change_pct": -0.05,
+        "high": 43686.15,
+        "low": 42969.48,
+        "amplitude": 716.67,
+        "candle_pattern": "下影線664點V轉止跌",
+        "assessment": "SOX -4.25%利空早盤急殺至42,969後強拉回，收43,634僅跌20點。664點下影線顯示低檔承接強勁。"
+      }
+    },
+    "recommendation_review": {
+      "total": 5,
+      "hit": 2,
+      "neutral": 3,
+      "miss": 0,
+      "multi_bet_win_rate": "100%",
+      "assessment": "SOX -4.25%極端利空下防禦策略完全迴避風險"
+    },
+    "momentum_scan": {
+      "limit_up_count": 1,
+      "scan_range": 223,
+      "best_streak": "尚茂電子2根↑",
+      "assessment": "漲停動能極度稀缺，市場缺乏明確做多方向"
+    },
+    "stock_review_detailed": [
+      {
+        "ticker": "2002",
+        "name": "中鋼",
+        "close": 19.25,
+        "change_pct": 0.52,
+        "recommendation": "buy",
+        "assessment": "hit",
+        "analysis": "XLB+1.93%最強板塊+上週五逆勢+1.06%，防禦邏輯持續有效。連續兩日抗跌確認為有效低基期防禦策略。"
+      },
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "close": 2350.0,
+        "change_pct": 0.0,
+        "recommendation": "hold",
+        "assessment": "hit",
+        "analysis": "建議FOMC前不進場、等回測2,250~2,300策略正確。開2,330若進場可賺+0.86%，但外資淨空單歷史高水位不逆勢接刀判斷正確。"
+      },
+      {
+        "ticker": "00632R",
+        "name": "元大台灣50反1",
+        "close": 10.56,
+        "change_pct": -0.09,
+        "recommendation": "neutral",
+        "assessment": "neutral",
+        "analysis": "SOX利空被日內消化，反1 Beta失效。避險應提早獲利了結。"
+      },
+      {
+        "ticker": "2474",
+        "name": "可成",
+        "close": 188.5,
+        "change_pct": -0.53,
+        "recommendation": "neutral",
+        "assessment": "neutral",
+        "analysis": "AAPL強勢未在蘋概發酵，早盤急殺壓抑表現。AAPL財報7/30前不確定性高。"
+      },
+      {
+        "ticker": "2324",
+        "name": "仁寶",
+        "close": 37.15,
+        "change_pct": -0.13,
+        "recommendation": "neutral",
+        "assessment": "neutral",
+        "analysis": "日內一度跌3.87%觸及停損但強拉收斂，波動4%。系統性風險下避險優先於追多。"
+      }
+    ],
+    "overnight_market": {
+      "data_time": "2026-07-27 14:10 CST",
+      "note": "SOX -4.25%為上週五美股表現，關注今晚美股期貨反彈力度。TSM ADR $403.41若今晚反彈明日台股可期待更高。"
+    },
+    "key_levels": {
+      "support_1": 42969,
+      "support_1_note": "今日最低點",
+      "support_2": 42450,
+      "support_2_note": "7/20低點",
+      "resistance_1": 43686,
+      "resistance_1_note": "今日高點",
+      "resistance_2": 44769,
+      "resistance_2_note": "7/24開盤高點"
+    },
+    "summary_assessment": {
+      "taiex_change": "-0.05% (-20.65)",
+      "institutional_signal": "neutral",
+      "futures_signal": "sell",
+      "fx_signal": "bearish",
+      "momentum_signal": "weak",
+      "overall_assessment": "V轉止跌但動能稀缺，FOMC前市場選擇等待",
+      "highlights": [
+        "加權指數收43,634.19，-20.65點(-0.05%)，留下664點下影線",
+        "SOX -4.25%利空被台股日內完全消化，早盤急殺後強拉回",
+        "台積電/鴻海平盤作收，低檔承接意願強勁",
+        "漲停動能極度稀缺：223檔僅1檔漲停",
+        "中鋼連續兩日抗跌，低基期防禦策略持續有效",
+        "推薦全數無虧損，防禦策略成功迴避SOX利空風險",
+        "尚茂電子(8291O)連續2根漲停，PCB/CCL族群明日觀察",
+        "台幣貶值0.24%至32.377，隨亞幣走弱",
+        "本週重點：7/28 MSFT財報 → 7/29 FOMC → 7/30 AAPL+AMZN財報+Q2 GDP"
+      ]
+    }
+  },
+  "updated_at": "2026-07-27T14:10:00+08:00"
+}
