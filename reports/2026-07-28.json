@@ -1,0 +1,235 @@
+{
+  "date": "2026-07-28",
+  "type": "daily-reports",
+  "source": "zerohedge + premarket",
+  "title": "ZeroHedge 每日導讀 — 7月28日（二）",
+  "sections": [
+    {
+      "title": "Trump Ready For 'Strong Military Action' If Talks Fail, With Saudi Aramco Under Houthi Fire",
+      "category": "geopolitics",
+      "summary": "Trump 預告若談判破裂將恢復強硬軍事行動，沙烏地阿美同時遭胡塞攻擊。Trump 向 Axios 透露，美方暫停對伊朗打擊是為了給外交一次機會，但警告若談判失敗將恢復並擴大軍事行動。胡塞武裝宣稱對沙烏地阿美 Abqaiq 煉油設施發動無人機攻擊。荷莫茲海峽油輪觸雷爆炸事件後交通逐步恢復。伊朗否認有與美方直接談判。Polymarket 賭盤顯示僅 13% 認為荷莫茲海峽交通能在 8/31 前恢復正常。",
+      "url": "https://www.zerohedge.com/geopolitical/saudi-aramco-targeted-including-sprawling-abqaiq-facility-tehran-aligned-militants",
+      "timestamp": "2026-07-28",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_5.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_6.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "'I Almost Cried' - Documentary Video Trove Shows Lindsey Graham's Joy At Start Of Iran War",
+      "category": "geopolitics",
+      "summary": "已故參議員 Lindsey Graham 紀錄片最新曝光片段顯示，當 Trump 宣布對伊朗發動大規模打擊時，Graham 在其參院辦公室內看著 Fox News 報導興奮到幾乎落淚，對攝影團隊說：「我們做到了」。該片段在社交媒體上引發巨大爭議，進一步鞏固其作為「戰爭推手」的歷史評價。",
+      "url": "https://www.zerohedge.com/geopolitical/i-almost-cried-documentary-video-trove-shows-lindsey-grahams-joy-start-iran-war",
+      "timestamp": "2026-07-28",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Putin Admits Escalation: Enemies Unable To Defeat Russia On Battlefield, Resort To 'Open Terrorism'",
+      "category": "geopolitics",
+      "summary": "烏克蘭長程無人機攻擊近期明顯轉向，攻擊俄羅斯本土的 Wildberries 倉儲物流中心和札波羅熱度假營地（造成至少 12 平民死亡）。普丁在克里姆林宮會議上表示，敵人無法在戰場擊敗俄羅斯，轉向對人民使用公開恐怖手段。",
+      "url": "https://www.zerohedge.com/geopolitical/putin-admits-escalation-enemies-unable-defeat-russia-battlefield-resort-open-terrorism",
+      "timestamp": "2026-07-28",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Stocks Sink Despite Hormuz Hopes As China Sparks Chipmaker Chunder Into Busy Week",
+      "category": "market",
+      "summary": "週一股市上演兩極反轉。Trump 暫停對伊打擊的消息一度推高股市、壓低油價，但中國兩大利空（CXMT 擴產 + 國產 DUV 曝光設備量產）引發半導體類股重挫，SOX -2.81%。道瓊勉強收漲 +0.07%。WTI 原油從戰時高點回落至 $82。10Y 殖利率 4.64%。市場目光轉向本週 FOMC（38% 升息機率定價）、BoE、BoJ 超級央行週。",
+      "url": "https://www.zerohedge.com/markets/stocks-sink-despite-hormuz-hopes-china-sparks-chipmaker-chunder-busy-week",
+      "timestamp": "2026-07-28",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "US Treasury Sells $139BN In Two Polar Opposite Auctions: A Stellar 2Y And A Dismal 5Y",
+      "category": "market",
+      "summary": "FOMC 決議前夕，財政部拍賣 $690 億 2Y 與 $700 億 5Y 公債結果完全相反。2Y 拍賣強勁（投標倍數 2.662 為 1 月以來最高），5Y 拍賣慘烈（連續第 14 次 tailing 創歷史紀錄，外國需求降至一年低點）。短債需求強勁 vs 中長債無人問津，反映市場對 Fed 利率路徑的深層分歧。",
+      "url": "https://www.zerohedge.com/markets/us-treasury-sells-139bn-two-polar-opposite-auctions-stellar-2y-and-dismal-5y",
+      "timestamp": "2026-07-28",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_5.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_6.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_7.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Stocks mixed while crude tumbles to pause in US/Iran strikes - Newsquawk US Market Wrap",
+      "category": "market",
+      "summary": "美伊軍事暫停 → 油價暴跌（WTI 回 $82），股市早盤上漲後回落。耐久財訂單不如預期。週二關注 ADP 就業、消費者信心、Q2 GDP 初值。超級央行週起跑：FOMC、BoJ、BoE 輪番登場。本週超級財報：PayPal、Boeing、UPS、Ford 以及 Mag-7 財報密集公佈。",
+      "url": "https://www.zerohedge.com/markets/stocks-mixed-while-crude-tumbles-pause-usiran-strikes-newsquawk-us-market-wrap",
+      "timestamp": "2026-07-28",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Mapping SpaceX's Lockup Expirations: HSBC Calculates When The Shares Could Hit The Market",
+      "category": "market",
+      "summary": "SpaceX 股價持續探底，盤中觸及 $110.21 歷史新低。HSBC 分析師提供解鎖時間表：8 月 6 日將有約 9.12 億股可公開交易，使自由流通量從 4.9% 暴增至 11.8%。供給量近乎翻倍，形成巨大賣壓隱憂。",
+      "url": "https://www.zerohedge.com/markets/mapping-spacexs-lockup-expirations-hsbc-calculates-when-shares-could-hit-market",
+      "timestamp": "2026-07-28",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_11_img_4.png",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_11_img_5.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "BMO Says Return Of Mexican Cattle Is 'Clear Positive' For Two Beaten-Down Meatpackers",
+      "category": "market",
+      "summary": "USDA 宣布將於 8 月 24 日起逐步解除為期一年的墨西哥活牛進口禁令。BMO 分析師指出對 Tyson Foods（TSN）和 JBS 是明確利多，屠宰產能利用率將改善 10%-11%。",
+      "url": "https://www.zerohedge.com/markets/bmo-says-return-mexican-cattle-clear-positive-two-beaten-down-meatpackers",
+      "timestamp": "2026-07-28",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_4.png",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_5.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "'Close To An Inflection Point': Deutsche Bank Simplifies WTF Is Happening In Japan",
+      "category": "market",
+      "summary": "德銀外匯策略師提出大膽問題：如果日本即將再次變強盛富裕？報告聚焦日本財政政策、產業戰略與日圓走勢。日本以購買力平價衡量已成為全球最便宜的已開發經濟體，日圓資產可能迎來長期重估。",
+      "url": "https://www.zerohedge.com/markets/close-inflection-point-deutsche-bank-simplifies-wtf-happening-japan",
+      "timestamp": "2026-07-28",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "BTIG Warns 'Still A Long Way To Go In AI Correction'",
+      "category": "market",
+      "summary": "Nvidia 與 OpenAI 洽談 $2500 億資料中心融資擔保消息一度帶動樂觀情緒，但半導體類股由紅翻黑（SOX -2.81%）。BTIG 首席技術策略師 Krinsky 強調價格行為比新聞更重要，由漲轉跌是危險信號，AI 修正仍有下行空間。NVDA -5.57% 最弱。",
+      "url": "https://www.zerohedge.com/markets/btig-warns-still-long-way-go-ai-correction",
+      "timestamp": "2026-07-28",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Goldman's One-Delta Desk Weighs 'High Degree Of Policy Reflexivity' Versus Hyperscaler Debt Doubts",
+      "category": "market",
+      "summary": "高盛 One-Delta 交易部門評估當前市場處於高度政策反身性階段——政策變動迅速影響市場、市場反過來制約政策選擇。Hyperscaler 超大規模雲端業者的債務可持續性疑慮正在升溫。油價回落至 $82 反映地緣政治溢價消退速度超預期。",
+      "url": "https://www.zerohedge.com/markets/goldmans-one-delta-desk-weighs-high-degree-policy-reflexivity-versus-hyperscaler-debt",
+      "timestamp": "2026-07-28",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "The Dispersion Unwind Arrives: What Does Dealer Gamma Say Into MegaCap Earnings",
+      "category": "market",
+      "summary": "SpotGamma 報告指出市場正在經歷離散度解除（Dispersion Unwind），即個股波動率相對於指數波動率的差距正在收窄。這通常發生在 MegaCap 財報前夕，對選擇權交易策略有重大影響。做市商 Gamma 曝險將加劇 MegaCap 股票的財報後波動。",
+      "url": "https://www.zerohedge.com/markets/dispersion-unwind-arrives-what-does-dealer-gamma-say-megacap-earnings",
+      "timestamp": "2026-07-28",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 — 2026-07-28（週二）",
+      "category": "premarket",
+      "summary": "🔴 半導體續跌（SOX -2.81%、NVDA -5.57%、AMD -6.17%），油價回穩 $82 但中國晶片自給利空發酵。本週 FOMC + Mag-7 財報超級週，市場情緒極度脆弱。台積電 ADR $399.09 隱含溢價收斂。",
+      "timestamp": "2026-07-28",
+      "premarket": {
+        "timestamp": "2026-07-28 07:12 CST",
+        "direction": "🔴 偏空震盪",
+        "tone": "半導體寒風再襲，中國晶片自給威脅升級，FOMC 前市場防禦",
+        "market_status": {
+          "tw_index_prev_close": "43,654.84",
+          "tw_index_change": "-2.67%（07/24 收）",
+          "us_sp500": "7,413.18",
+          "us_sp500_change": "-0.68%",
+          "us_nasdaq": "24,932.08",
+          "us_nasdaq_change": "-1.21%",
+          "us_sox": "11,554.88",
+          "us_sox_change": "-2.81%",
+          "us_dow": "52,210.08",
+          "us_dow_change": "+0.07%",
+          "us_russell2000": "2,948.03",
+          "us_russell2000_change": "+0.12%"
+        },
+        "megatechs": {
+          "strong": [
+            { "ticker": "AAPL", "close": "$336.91", "change": "+0.60%", "note": "iPhone 17 備貨續撐" },
+            { "ticker": "GOOGL", "close": "$326.56", "change": "+0.47%" },
+            { "ticker": "MSFT", "close": "$389.10", "change": "-0.25%", "note": "財報前夕窄幅整理" }
+          ],
+          "weak": [
+            { "ticker": "AMD", "close": "$494.95", "change": "-6.17%", "note": "中國 CXMT 擴產 + DUV 自給衝擊" },
+            { "ticker": "NVDA", "close": "$196.51", "change": "-5.57%", "note": "$2,500 億融資利多無效" },
+            { "ticker": "META", "close": "$593.87", "change": "-2.20%" },
+            { "ticker": "AMZN", "close": "$231.39", "change": "-1.83%" },
+            { "ticker": "TSM", "close": "$399.09", "change": "-1.72%" },
+            { "ticker": "AVGO", "close": "$383.22", "change": "-1.69%" },
+            { "ticker": "TSLA", "close": "$309.22", "change": "-1.28%" }
+          ]
+        },
+        "sector_etfs": {
+          "strongest": [
+            { "ticker": "XLP", "name": "必需消費", "change": "+1.11%" },
+            { "ticker": "XLF", "name": "金融", "change": "+0.21%" },
+            { "ticker": "XLV", "name": "醫療", "change": "+0.24%" }
+          ],
+          "weakest": [
+            { "ticker": "SMH", "name": "半導體", "change": "-2.95%" },
+            { "ticker": "XLK", "name": "科技", "change": "-1.99%" },
+            { "ticker": "XLU", "name": "公用事業", "change": "-0.96%" }
+          ]
+        },
+        "commodities": {
+          "usd_index": { "close": "101.51", "change": "+0.19%" },
+          "gold": { "close": "$4,074.00", "change": "-0.22%" },
+          "crude": { "close": "$82.11", "change": "+0.13%", "note": "美伊暫停打擊，油價自戰時高點回吐約 -8%" },
+          "bitcoin": { "close": "$63,741", "change": "-2.44%" },
+          "tnx_10y": { "close": "4.64%", "change": "-0.43%" },
+          "vix": { "close": "18.67", "change": "+5.96%", "note": "避險情緒升溫" }
+        },
+        "tw_focus": {
+          "tsmc_2330": { "close": "2,350", "change": "0.00%（平盤）" },
+          "tsmc_adr": { "close": "$399.09", "change": "-1.72%" },
+          "tsmc_adr_premium": "8.17%",
+          "tsmc_adr_implied_twd": "2,542",
+          "fx_usdtwd": "32.301",
+          "this_week_events": [
+            { "date": "7/28 (二)", "event": "MSFT 財報 ⭐", "impact": "AI 風向球" },
+            { "date": "7/29 (三)", "event": "META 財報 ⭐ + FOMC 利率決議 ⭐⭐⭐" },
+            { "date": "7/30 (四)", "event": "AAPL + AMZN 財報 ⭐⭐ + Q2 GDP ⭐⭐" },
+            { "date": "7/30~31", "event": "BoJ / BoE 利率決議" },
+            { "date": "本週", "event": "Mag-7 超級財報週" }
+          ]
+        },
+        "key_levels": {
+          "open_estimate": "43,000~43,400",
+          "resistance_1": "43,654（上週五收盤）",
+          "resistance_2": "44,200~44,400",
+          "support_1": "42,800~43,000",
+          "support_2": "42,449（前波低點）"
+        },
+        "strong_sectors": [
+          "金融（2881 富邦金、2882 國泰金）— XLF +0.21% 防禦性",
+          "蘋概股（2324 仁寶、2474 可成）— AAPL +0.60% 續撐",
+          "避險工具（00632R 反1）— VIX +5.96%"
+        ],
+        "avoid_sectors": [
+          "半導體權值（2330 台積電、2454 聯發科、3711 日月光）— SOX -2.81% + 中國晶片利空",
+          "AI 散熱/伺服器族群 — NVDA -5.57% 財報前觀望",
+          "石化/塑膠（6505 台塑化）— 油價波動劇烈"
+        ],
+        "recommendations": [
+          { "ticker": "00632R 反1", "direction": "避險", "entry_zone": "輕倉 3~5%", "target": "10.7~10.9", "stop": "10.3", "reason": "VIX +5.96% + 半導體賣壓 + FOMC 前不確定性" },
+          { "ticker": "2881 富邦金 / 2882 國泰金", "direction": "偏多", "entry_zone": "小量布局", "stop": "-3%", "reason": "XLF +0.21% 防禦性強，低波動輪動" },
+          { "ticker": "AAPL 概念（2474 可成）", "direction": "偏多", "entry_zone": "小量", "stop": "-3%", "reason": "AAPL +0.60% 唯一大型股走強" },
+          { "ticker": "2330 台積電", "direction": "觀察", "entry_zone": "等 FOMC 後或回測 2,250~2,300", "reason": "ADR $399 隱含 $2,542（+8.17% 溢價收斂），但 SOX 續跌壓力未解除" }
+        ],
+        "generated_at": "2026-07-28 07:12 CST",
+        "source": "hermes-cron-2edfc497e5ad"
+      }
+    }
+  ]
+}
