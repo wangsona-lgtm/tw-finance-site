@@ -113,9 +113,87 @@
   "institutional_investors": {
     "source": "TWSE 三大法人買賣金額統計表 (BFI82U)",
     "date": "2026-07-27",
-    "data": [],
+    "url": "https://www.twse.com.tw/fund/BFI82U",
+    "data": [
+      {
+        "category": "自營商(自行買賣)",
+        "buy": 7980397827,
+        "buy_str": "7,980,397,827",
+        "buy_億": 7.98,
+        "sell": 8422385517,
+        "sell_str": "8,422,385,517",
+        "sell_億": 8.42,
+        "net": -441987690,
+        "net_str": "-441,987,690",
+        "net_億": -0.44
+      },
+      {
+        "category": "自營商(避險)",
+        "buy": 27395954468,
+        "buy_str": "27,395,954,468",
+        "buy_億": 27.4,
+        "sell": 34810951202,
+        "sell_str": "34,810,951,202",
+        "sell_億": 34.81,
+        "net": -7414996734,
+        "net_str": "-7,414,996,734",
+        "net_億": -7.41
+      },
+      {
+        "category": "自營商合計",
+        "buy": 35376352295,
+        "buy_str": "35,376,352,295",
+        "buy_億": 35.38,
+        "sell": 43233336719,
+        "sell_str": "43,233,336,719",
+        "sell_億": 43.23,
+        "net": -7856984424,
+        "net_str": "-7,856,984,424",
+        "net_億": -7.86
+      },
+      {
+        "category": "投信",
+        "buy": 15269315646,
+        "buy_str": "15,269,315,646",
+        "buy_億": 15.27,
+        "sell": 15548483179,
+        "sell_str": "15,548,483,179",
+        "sell_億": 15.55,
+        "net": -279167533,
+        "net_str": "-279,167,533",
+        "net_億": -0.28
+      },
+      {
+        "category": "外資及陸資",
+        "buy": 326956623296,
+        "buy_str": "326,956,623,296",
+        "buy_億": 326.96,
+        "sell": 318916373438,
+        "sell_str": "318,916,373,438",
+        "sell_億": 318.92,
+        "net": 8040249858,
+        "net_str": "8,040,249,858",
+        "net_億": 80.4
+      },
+      {
+        "category": "合計",
+        "buy": 377602291237,
+        "buy_str": "377,602,291,237",
+        "buy_億": 377.6,
+        "sell": 377698193336,
+        "sell_str": "377,698,193,336",
+        "sell_億": 377.7,
+        "net": -95902099,
+        "net_str": "-95,902,099",
+        "net_億": -0.1
+      }
+    ],
     "summary": {
-      "assessment": "（三大法人數據盤後尚未完整公布）"
+      "外資": "買超 +80.40億（終止連日賣超，呼應V轉止跌，早盤急殺後低接）",
+      "投信": "賣超 -0.28億（小幅調節）",
+      "自營商": "賣超 -7.86億（避險賣壓-74.15億為主力，顯示避險需求降溫）",
+      "合計": "三大法人幾乎持平(-0.10億)，市場資金動能中性",
+      "assessment": "外資轉買+80.40億為本日亮點，呼應台股664點下影線V轉。外資在SOX-4.25%利空下趁早盤急殺進場低接權值股。自營商避險大賣-74.15億反映FOMC前避險部位獲利了結。整體資金動能中性偏正面。"
     }
   },
   "futures_and_options": {
@@ -136,13 +214,38 @@
   },
   "top_movers": {
     "strong": [
-      {"symbol": "8291O.TWO", "name": "尚茂電子", "change_pct": 9.9, "reason": "PCB/CCL，連續2根漲停！第3根=強勢推薦訊號"},
-      {"symbol": "2002.TW", "name": "中鋼", "change_pct": 0.52, "reason": "原物料防禦，連續兩日抗跌"}
+      {
+        "symbol": "8291O.TWO",
+        "name": "尚茂電子",
+        "change_pct": 9.9,
+        "reason": "PCB/CCL，連續2根漲停！第3根=強勢推薦訊號"
+      },
+      {
+        "symbol": "2002.TW",
+        "name": "中鋼",
+        "change_pct": 0.52,
+        "reason": "原物料防禦，連續兩日抗跌"
+      }
     ],
     "weak": [
-      {"symbol": "2308.TW", "name": "台達電", "change_pct": -2.24, "reason": "AI電源供應需求降溫疑慮"},
-      {"symbol": "2382.TW", "name": "廣達", "change_pct": -1.98, "reason": "跌破季線"},
-      {"symbol": "2454.TW", "name": "聯發科", "change_pct": -1.87, "reason": "高價股承壓"}
+      {
+        "symbol": "2308.TW",
+        "name": "台達電",
+        "change_pct": -2.24,
+        "reason": "AI電源供應需求降溫疑慮"
+      },
+      {
+        "symbol": "2382.TW",
+        "name": "廣達",
+        "change_pct": -1.98,
+        "reason": "跌破季線"
+      },
+      {
+        "symbol": "2454.TW",
+        "name": "聯發科",
+        "change_pct": -1.87,
+        "reason": "高價股承壓"
+      }
     ]
   },
   "momentum_scan": {
@@ -150,21 +253,84 @@
     "scan_range": "223 檔中小型股",
     "limit_up_count": 1,
     "limit_up_stocks": [
-      {"symbol": "8291O.TWO", "name": "尚茂電子", "close": 43.90, "consecutive_limit_up": 2, "sector": "PCB/CCL", "cumulative_return_pct": 9.9, "note": "2根漲停！若第3根=強勢推薦訊號"}
+      {
+        "symbol": "8291O.TWO",
+        "name": "尚茂電子",
+        "close": 43.9,
+        "consecutive_limit_up": 2,
+        "sector": "PCB/CCL",
+        "cumulative_return_pct": 9.9,
+        "note": "2根漲停！若第3根=強勢推薦訊號"
+      }
     ],
     "strong_sectors": [
-      {"sector": "PCB/CCL", "count": 1, "best_streak": "2根↑", "representative": "8291O尚茂電子"}
+      {
+        "sector": "PCB/CCL",
+        "count": 1,
+        "best_streak": "2根↑",
+        "representative": "8291O尚茂電子"
+      }
     ],
     "assessment": "今日漲停動能極度稀缺，223檔僅1檔漲停創近期新低。SOX -4.25%壓抑全場中小型股表現，市場缺乏明確做多方向。"
   },
   "recommendation_review": {
     "view_date": "2026-07-27",
     "recommendations": [
-      {"symbol": "2002.TW", "name": "中鋼", "strategy": "偏多/原物料", "recommended_price_range": "18.8~19.0", "open": 19.25, "close": 19.25, "change_pct": 0.52, "result": "hit", "comment": "原物料防禦邏輯持續有效，連續兩日抗跌確認為有效低基期防禦策略。目標19.5~20.0尚未觸及可續抱。"},
-      {"symbol": "00632R.TW", "name": "元大台灣50反1", "strategy": "避險/短線", "recommended_price_range": "輕倉3~5%", "open": 10.58, "close": 10.56, "change_pct": -0.09, "result": "neutral", "comment": "SOX利空被台股日內消化，V轉盤中反1 Beta失效。避險推薦應更關注即時盤勢。"},
-      {"symbol": "2474.TW", "name": "可成", "strategy": "蘋概供應鏈", "recommended_price_range": "小量目標180~185", "open": 191.0, "close": 188.5, "change_pct": -0.53, "result": "neutral", "comment": "高開走低，APPLE財報7/30前不確定性高，蘋概推薦應等財報後更明確訊號。"},
-      {"symbol": "2324.TW", "name": "仁寶", "strategy": "蘋概供應鏈", "recommended_price_range": "小量目標32~34", "open": 37.5, "close": 37.15, "change_pct": -0.13, "result": "neutral", "comment": "日內一度跌至36.05觸及停損但強拉收斂，波動4%。AAPL供應鏈在系統性風險下避險優先於追多。"},
-      {"symbol": "2330.TW", "name": "台積電", "strategy": "列觀察不進場", "recommended_price_range": "等FOMC/回測2,250~2,300", "open": 2330.0, "close": 2350.0, "change_pct": 0.0, "result": "hit", "comment": "策略正確。開2,330若進場可賺+0.86%，但FOMC前不確定性仍高。外資淨空單-464,609口歷史高水位，不逆勢接刀判斷正確。"}
+      {
+        "symbol": "2002.TW",
+        "name": "中鋼",
+        "strategy": "偏多/原物料",
+        "recommended_price_range": "18.8~19.0",
+        "open": 19.25,
+        "close": 19.25,
+        "change_pct": 0.52,
+        "result": "hit",
+        "comment": "原物料防禦邏輯持續有效，連續兩日抗跌確認為有效低基期防禦策略。目標19.5~20.0尚未觸及可續抱。"
+      },
+      {
+        "symbol": "00632R.TW",
+        "name": "元大台灣50反1",
+        "strategy": "避險/短線",
+        "recommended_price_range": "輕倉3~5%",
+        "open": 10.58,
+        "close": 10.56,
+        "change_pct": -0.09,
+        "result": "neutral",
+        "comment": "SOX利空被台股日內消化，V轉盤中反1 Beta失效。避險推薦應更關注即時盤勢。"
+      },
+      {
+        "symbol": "2474.TW",
+        "name": "可成",
+        "strategy": "蘋概供應鏈",
+        "recommended_price_range": "小量目標180~185",
+        "open": 191.0,
+        "close": 188.5,
+        "change_pct": -0.53,
+        "result": "neutral",
+        "comment": "高開走低，APPLE財報7/30前不確定性高，蘋概推薦應等財報後更明確訊號。"
+      },
+      {
+        "symbol": "2324.TW",
+        "name": "仁寶",
+        "strategy": "蘋概供應鏈",
+        "recommended_price_range": "小量目標32~34",
+        "open": 37.5,
+        "close": 37.15,
+        "change_pct": -0.13,
+        "result": "neutral",
+        "comment": "日內一度跌至36.05觸及停損但強拉收斂，波動4%。AAPL供應鏈在系統性風險下避險優先於追多。"
+      },
+      {
+        "symbol": "2330.TW",
+        "name": "台積電",
+        "strategy": "列觀察不進場",
+        "recommended_price_range": "等FOMC/回測2,250~2,300",
+        "open": 2330.0,
+        "close": 2350.0,
+        "change_pct": 0.0,
+        "result": "hit",
+        "comment": "策略正確。開2,330若進場可賺+0.86%，但FOMC前不確定性仍高。外資淨空單-464,609口歷史高水位，不逆勢接刀判斷正確。"
+      }
     ],
     "summary": {
       "total": 5,
@@ -192,13 +358,32 @@
   },
   "watch_tomorrow": {
     "global_events": [
-      {"event": "MSFT微軟財報", "time": "7/28 盤後", "impact": "AI/雲端需求風向球→影響AI伺服器/半導體"},
-      {"event": "FOMC利率決議", "time": "7/29 14:00 ET", "impact": "本週最重要事件：維持vs升息"},
-      {"event": "AAPL+AMZN財報", "time": "7/30 盤後", "impact": "蘋概+雲端雙主線"},
-      {"event": "Q2 GDP初值", "time": "7/30", "impact": "反映伊朗戰爭經濟影響"}
+      {
+        "event": "MSFT微軟財報",
+        "time": "7/28 盤後",
+        "impact": "AI/雲端需求風向球→影響AI伺服器/半導體"
+      },
+      {
+        "event": "FOMC利率決議",
+        "time": "7/29 14:00 ET",
+        "impact": "本週最重要事件：維持vs升息"
+      },
+      {
+        "event": "AAPL+AMZN財報",
+        "time": "7/30 盤後",
+        "impact": "蘋概+雲端雙主線"
+      },
+      {
+        "event": "Q2 GDP初值",
+        "time": "7/30",
+        "impact": "反映伊朗戰爭經濟影響"
+      }
     ],
     "local_signals": [
-      {"signal": "8291O尚茂電子若第3根漲停", "note": "PCB/CCL強勢族群確認訊號"}
+      {
+        "signal": "8291O尚茂電子若第3根漲停",
+        "note": "PCB/CCL強勢族群確認訊號"
+      }
     ]
   },
   "full_cron_analysis": {
@@ -311,5 +496,5 @@
       ]
     }
   },
-  "updated_at": "2026-07-27T14:10:00+08:00"
+  "updated_at": "2026-07-27T16:05:00+08:00"
 }
