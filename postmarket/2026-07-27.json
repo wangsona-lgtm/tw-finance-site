@@ -34,8 +34,8 @@
   "stocks": {
     "2330.TW": {
       "name": "台積電",
-      "close": 2350.0,
-      "change_pct": 0.0,
+      "close": 2350,
+      "change_pct": 0,
       "volume": 24003,
       "volume_unit": "張",
       "signal": "neutral",
@@ -43,7 +43,7 @@
     },
     "2454.TW": {
       "name": "聯發科",
-      "close": 3680.0,
+      "close": 3680,
       "change_pct": -1.87,
       "volume": 8409,
       "volume_unit": "張",
@@ -53,7 +53,7 @@
     "2317.TW": {
       "name": "鴻海",
       "close": 252.5,
-      "change_pct": 0.0,
+      "change_pct": 0,
       "volume": 34979,
       "volume_unit": "張",
       "signal": "neutral",
@@ -61,7 +61,7 @@
     },
     "2308.TW": {
       "name": "台達電",
-      "close": 1745.0,
+      "close": 1745,
       "change_pct": -2.24,
       "volume": 9042,
       "volume_unit": "張",
@@ -198,9 +198,50 @@
   },
   "futures_and_options": {
     "data_date": "2026-07-27",
-    "source": "TAIFEX 三大法人期貨選擇權未平倉",
-    "note": "外資淨空單-464,609口歷史高水位，FOMC前避險布局",
-    "overall": "偏空結構。外資淨空單歷史高水位，FOMC前市場選擇等待"
+    "source": "TAIFEX OpenAPI — 三大法人期貨選擇權未平倉",
+    "note": "外資臺指期淨空單 76,260 口，部位偏大；P/C OI Ratio 112.70% 顯示 PUT 避險部位仍多",
+    "外資臺指期淨部位_TX": {
+      "多單OI": 7107,
+      "空單OI": 83367,
+      "淨額": -76260,
+      "淨額文字": "-76,260 口",
+      "方向": "偏空"
+    },
+    "外資小型臺指_MTX": {
+      "多單OI": 1053,
+      "空單OI": 4278,
+      "淨額": -3225,
+      "淨額文字": "-3,225 口"
+    },
+    "外資微型臺指": {
+      "多單OI": 3321,
+      "空單OI": 2547,
+      "淨額": 774,
+      "淨額文字": "+774 口"
+    },
+    "外資選擇權_TXO": {
+      "CALL買方OI": 5075,
+      "PUT買方OI": 13740,
+      "CALL賣方OI": 4452,
+      "PUT賣方OI": 10764,
+      "CALL淨額": 623,
+      "PUT淨額": 2976
+    },
+    "PC_Ratio": {
+      "成交量_PC_Ratio_pct": 97.1,
+      "未平倉_PC_Ratio_pct": 112.7,
+      "前日成交量_PC_Ratio_pct": 104.64,
+      "前日未平倉_PC_Ratio_pct": 119.11
+    },
+    "三大法人期貨淨額總計": {
+      "自營商期貨淨OI": -322291,
+      "自營商選擇權淨OI": 510,
+      "投信期貨淨OI": 84684,
+      "投信選擇權淨OI": -2122,
+      "外資期貨淨OI": -464609,
+      "外資選擇權淨OI": -2372
+    },
+    "overall": "偏空架構。外資臺指期淨空單 76,260 口，部位偏大；P/C OI Ratio 112.70% 顯示 PUT 避險部位仍多。今晚 TAIFEX 更新後判斷外資是否減持空單。"
   },
   "market_summary": {
     "open": "開盤43,586（開低）",
@@ -303,7 +344,7 @@
         "name": "可成",
         "strategy": "蘋概供應鏈",
         "recommended_price_range": "小量目標180~185",
-        "open": 191.0,
+        "open": 191,
         "close": 188.5,
         "change_pct": -0.53,
         "result": "neutral",
@@ -325,9 +366,9 @@
         "name": "台積電",
         "strategy": "列觀察不進場",
         "recommended_price_range": "等FOMC/回測2,250~2,300",
-        "open": 2330.0,
-        "close": 2350.0,
-        "change_pct": 0.0,
+        "open": 2330,
+        "close": 2350,
+        "change_pct": 0,
         "result": "hit",
         "comment": "策略正確。開2,330若進場可賺+0.86%，但FOMC前不確定性仍高。外資淨空單-464,609口歷史高水位，不逆勢接刀判斷正確。"
       }
@@ -337,8 +378,8 @@
       "hit": 2,
       "neutral": 3,
       "miss": 0,
-      "hit_rate_pct": 40.0,
-      "multi_bet_win_rate_pct": 100.0,
+      "hit_rate_pct": 40,
+      "multi_bet_win_rate_pct": 100,
       "best_recommendation": "2002 中鋼 — 連續兩日防禦驗證",
       "worst_recommendation": null,
       "assessment": "本日無重大失誤，所有推薦均未造成虧損。SOX -4.25%極端利空下，防禦/觀察為主的推薦策略成功避開半導體/石化風險。"
@@ -428,8 +469,8 @@
       {
         "ticker": "2330",
         "name": "台積電",
-        "close": 2350.0,
-        "change_pct": 0.0,
+        "close": 2350,
+        "change_pct": 0,
         "recommendation": "hold",
         "assessment": "hit",
         "analysis": "建議FOMC前不進場、等回測2,250~2,300策略正確。開2,330若進場可賺+0.86%，但外資淨空單歷史高水位不逆勢接刀判斷正確。"
@@ -496,5 +537,35 @@
       ]
     }
   },
-  "updated_at": "2026-07-27T16:05:00+08:00"
+  "updated_at": "2026-07-27T16:15:00+08:00",
+  "margin_short": {
+    "data_date": "2026-07-24 (週五最新公布)",
+    "note": "7/27 信用交易資料約 14:30 後公布，尚未上線",
+    "margin_buy": {
+      "前日餘額_億": 5826.26,
+      "今日餘額_億": 5770.6,
+      "增減_億": -55.66,
+      "方向": "減少"
+    },
+    "short_sell": {
+      "前日張數": 208646,
+      "今日張數": 204754,
+      "增減張數": -3892,
+      "方向": "減少"
+    }
+  },
+  "postmarket_cron_source": {
+    "generated_at": "2026-07-27T16:12:07+08:00",
+    "file": "/home/nutc/.hermes/cron/output/8a869bd74983/2026-07-27_16-12-07.md",
+    "sections": [
+      "盤勢回顧",
+      "三大法人買賣超",
+      "期貨籌碼(TAIFEX)",
+      "匯率",
+      "強勢/弱勢股",
+      "融資融券",
+      "美股參考",
+      "明日注意"
+    ]
+  }
 }
