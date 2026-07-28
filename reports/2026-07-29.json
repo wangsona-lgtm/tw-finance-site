@@ -1,0 +1,77 @@
+{
+  "date": "2026-07-29",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 7月29日（三）",
+  "sections": [
+    {
+      "title": "Semis Slammed, Momo Mullered, & AI Credit Cracks; Black Gold & Bond Yields Drop On Deal Hopes",
+      "category": "market",
+      "summary": "首爾股市隔夜血洗，KOSPI 延續前日晶片股的恐慌性拋售。美國期貨開盤表現慘淡，但隨即因「美伊協議即將達成」的傳聞迅速反彈，帶動油價下跌（美元、殖利率、升息機率同步走低），股市與比特幣上漲。然而伊朗隨後否認和談進展，油價自低點反彈，股市漲幅收斂，動能股年至今報酬已轉負。半導體指數持續探底，AI 相關信貸市場開始出現裂縫——AI 巨頭大規模發債的後遺症正逐步顯現。",
+      "url": "https://www.zerohedge.com/markets/semis-slammed-momo-mullered-ai-credit-cracks-black-gold-bond-yields-drop-deal-hopes",
+      "timestamp": "2026-07-29",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Houthis Fire On Saudi Vessel, More Ships Make U-Turns, After 'MoU Revival' Hype Returns",
+      "category": "geopolitics",
+      "summary": "荷姆茲海峽間接談判持續進行，傳出可能恢復先前破裂的諒解備忘錄（MoU）協議。但航運數據顯示荷姆茲海峽幾乎無油輪通行。伊朗副外交部長重申：除非阿曼接受其條件，否則荷姆茲海峽持續關閉。同時紅海局勢再度升溫——胡塞武裝週二宣布向一艘違反封鎖的沙烏地油輪發射彈道飛彈，聲稱迫使該船掉頭。與此同時，中國正與胡塞武裝直接談判以確保其船隻安全通行。美國中央司令部數據顯示，美軍已攔截並轉向 18 艘商船、癱瘓 2 艘、登船檢查 2 艘。以色列總理納坦雅胡在白宮會見川普時確認：對伊朗重建核設施的進一步打擊「無可避免」。",
+      "url": "https://www.zerohedge.com/geopolitical/war-pause-holds-trump-vows-destroy-pickaxe-mountain-if-no-deal-oman-pushes-hormuz",
+      "timestamp": "2026-07-29",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.png"
+      ],
+      "premium": false
+    },
+    {
+      "title": "This Is The Chart That Jensen Huang Does Not Want You To See",
+      "category": "market",
+      "summary": "ZeroHedge 早在 2025 年 10 月便警告 AI 已成為「債務泡沫」，如今這顆未爆彈正在加速引爆。核心論點：AI 超規模企業（NVDA、ORCL、AMZN、MSFT 等）為支撐天文數字的資本支出，大規模發債融資，形成前所未有的「債務超級循環」。一系列時間線揭露：6 月 NVIDIA 發行 200 億美元債券、7 月 Amazon 再賣 250 億美元債券。高盛已開始建議客戶對沖 AI 債務泡沫。更令人擔憂的是，高達 1.8 兆美元的表外負債（租賃、雲端合約等）隱藏在資產負債表之外，實際槓桿遠比帳面上更為驚人。NVDA 的 CDS（信用違約互換）利差急劇擴張，信貸市場的「拋售恐慌」已蔓延至 hyperscaler 債券市場。",
+      "url": "https://www.zerohedge.com/markets/chart-jensen-huang-does-not-want-you-see",
+      "timestamp": "2026-07-29",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Stocks mixed amid AI rout as oil plummets on US-Iran optimism - Newsquawk US Market Wrap",
+      "category": "market",
+      "summary": "7月28日（二）收盤：美股漲跌互見 — S&P 500 微漲、道瓊表現最佳，但那斯達克 100 明顯落後。半導體 ETF（SOXX）與記憶體 ETF（DRAM）雙雙大跌，追隨韓國 KOSPI 單日暴跌 10% 的腳步，全球 AI 交易持續承受巨大壓力。等權重 S&P 500（RSP）上漲，顯示市場廣度仍佳——科技股雖遭屠殺，醫療保健、消費必需品、原材料等防禦性板塊領漲。油價方面：中東調解方稱美國與伊朗「接近達成協議」，加上 OPEC+ 預計維持 2026 年產量不變，原油價格急挫。美元與殖利率同步走低。7 月美國消費者信心指數低於預期。可口可樂財報優於預期；康寧營收與展望令人失望；Visa 宣布裁員 7%。本週焦點：聯準會 7 月利率決議、微軟/Meta/Arm/高通等科技巨頭財報。",
+      "url": "https://www.zerohedge.com/markets/stocks-mixed-amid-ai-rout-oil-plummets-us-iran-optimism-newsquawk-us-market-wrap",
+      "timestamp": "2026-07-29",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Tate Brothers To Remain In Jail In Miami As They Fight Extradition To UK",
+      "category": "geopolitics",
+      "summary": "佛羅里達聯邦法官週一裁定，社群媒體網紅 Andrew Tate 與 Tristan Tate 將在邁阿密監獄至少再拘留兩週，等待 8 月 13 日的拘留聽證會。兩人於 7 月 18 日被捕，正面臨英國當局以強姦與性販運罪名提出的引渡請求。辯護律師 Joseph McBride 表示將全力抗辯，稱此案「出於政治動機」，並指英國方面「除了指控別無證據」。英國須在 9 月中之前向美國國務院提交完整引渡支持文件。Andrew Tate 在獄中仍透過律師以「Pony Express」方式持續在社群媒體上發聲。",
+      "url": "https://www.zerohedge.com/geopolitical/tate-brothers-remain-jail-miami-they-fight-extradition-uk",
+      "timestamp": "2026-07-29",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "It's A Live Fed Meeting Whatever Breakevens Say",
+      "category": "market",
+      "summary": "Bloomberg 宏觀策略師 Simon White 撰文指出：實際物價壓力遠比 TIPS 盈虧平衡通膨率所暗示的更為嚴峻——TIPS 市場流動性正在惡化，導致通膨預期指標失真。因此，聯準會本週（7月會議）升息的機率比市場定價要高得多。",
+      "url": "https://www.zerohedge.com/markets/its-live-fed-meeting-whatever-breakevens-say",
+      "timestamp": "2026-07-29",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "\"Don't Go Chasing Waterfalls\": BTIG Warns This Is Not The Spot To Press Shorts In Semis",
+      "category": "market",
+      "summary": "費城半導體指數（SOX）從 6 月 22 日的歷史高點已下跌約 26%——正好是回吐了自 3 月 30 日以來整個漲幅的 50%。BTIG 策略師指出，雖然半導體跌勢慘烈，但在這個位置上追空風險極高，因為 50% 回檔在技術面上常是強勁反彈點。",
+      "url": "https://www.zerohedge.com/markets/dont-go-chasing-waterfalls-btig-warns-not-spot-press-shorts-semis",
+      "timestamp": "2026-07-29",
+      "images": [],
+      "premium": true
+    }
+  ]
+}
