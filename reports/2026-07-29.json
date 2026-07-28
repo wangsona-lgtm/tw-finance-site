@@ -1,8 +1,8 @@
 {
   "date": "2026-07-29",
   "type": "daily-reports",
-  "source": "zerohedge",
-  "title": "ZeroHedge 每日導讀 — 7月29日（三）",
+  "source": "zerohedge + premarket",
+  "title": "ZeroHedge 每日導讀 — 7月29日（三）+ 盤前分析",
   "sections": [
     {
       "title": "Semis Slammed, Momo Mullered, & AI Credit Cracks; Black Gold & Bond Yields Drop On Deal Hopes",
@@ -72,6 +72,247 @@
       "timestamp": "2026-07-29",
       "images": [],
       "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 — 2026-07-29（週三）",
+      "category": "premarket",
+      "summary": "🔴 半導體繼續探底（SOX -4.49%、AMD -8.15%），台股 7/28 提前反映暴跌：2454 -9.92%、2308 -9.97%、2317 -5.93%。今日 FOMC 利率決議 + META 財報 超級變數。道瓊 +1.03% 逆勢撐盤，防禦性板塊領漲（XLV +2.36%、XLP +1.99%）。台積電 ADR $392.31 隱含溢價擴大至 ~11.4%。",
+      "timestamp": "2026-07-29",
+      "premarket": {
+        "timestamp": "2026-07-29 07:10 CST",
+        "direction": "🔴 偏空震盪，開低機率高",
+        "tone": "半導體風暴持續升級，FOMC 決議前市場極度脆弱，防禦為上",
+        "market_status": {
+          "tw_index_prev_close": "43,634.19（7/27 收）",
+          "tw_index_change": "7/28 權值股重挫，預估開盤跳空下探",
+          "us_sp500": "7,428.78",
+          "us_sp500_change": "+0.21%",
+          "us_nasdaq": "24,876.91",
+          "us_nasdaq_change": "-0.22%",
+          "us_sox": "11,035.68",
+          "us_sox_change": "-4.49%",
+          "us_dow": "52,747.32",
+          "us_dow_change": "+1.03%",
+          "us_russell2000": "2,953.80",
+          "us_russell2000_change": "+0.20%"
+        },
+        "megatechs": {
+          "strong": [
+            {
+              "ticker": "GOOGL",
+              "close": "$333.71",
+              "change": "+2.19%",
+              "note": "強勢領漲"
+            },
+            {
+              "ticker": "AAPL",
+              "close": "$340.08",
+              "change": "+0.94%",
+              "note": "iPhone 17 備貨動能持續"
+            },
+            {
+              "ticker": "MSFT",
+              "close": "$393.35",
+              "change": "+1.09%",
+              "note": "財報後上漲"
+            }
+          ],
+          "weak": [
+            {
+              "ticker": "AMD",
+              "close": "$454.62",
+              "change": "-8.15%",
+              "note": "中國半導體自給衝擊持續擴大"
+            },
+            {
+              "ticker": "NVDA",
+              "close": "$197.01",
+              "change": "+0.25%",
+              "note": "勉強持平，BTIG 警告追空風險高"
+            },
+            {
+              "ticker": "TSLA",
+              "close": "$307.44",
+              "change": "-0.58%"
+            },
+            {
+              "ticker": "META",
+              "close": "$593.41",
+              "change": "-0.08%",
+              "note": "今日盤後財報 ⭐"
+            },
+            {
+              "ticker": "TSM",
+              "close": "$392.31",
+              "change": "-1.70%"
+            },
+            {
+              "ticker": "AVGO",
+              "close": "$380.91",
+              "change": "-0.60%"
+            },
+            {
+              "ticker": "AMZN",
+              "close": "$230.86",
+              "change": "-0.23%"
+            }
+          ]
+        },
+        "sector_etfs": {
+          "strongest": [
+            {
+              "ticker": "XLV",
+              "name": "醫療",
+              "change": "+2.36%"
+            },
+            {
+              "ticker": "XLP",
+              "name": "必需消費",
+              "change": "+1.99%"
+            },
+            {
+              "ticker": "XLB",
+              "name": "原物料",
+              "change": "+1.85%"
+            }
+          ],
+          "weakest": [
+            {
+              "ticker": "SMH",
+              "name": "半導體",
+              "change": "-3.45%"
+            },
+            {
+              "ticker": "XLK",
+              "name": "科技",
+              "change": "-1.84%"
+            },
+            {
+              "ticker": "XLE",
+              "name": "能源",
+              "change": "-1.35%"
+            }
+          ]
+        },
+        "commodities": {
+          "usd_index": {
+            "close": "101.39",
+            "change": "-0.08%"
+          },
+          "gold": {
+            "close": "$4,017.90",
+            "change": "-1.39%",
+            "note": "避險資金轉向美元資產"
+          },
+          "crude": {
+            "close": "$82.65",
+            "change": "+0.05%",
+            "note": "美伊協議展望不明，油價暫時持穩"
+          },
+          "bitcoin": {
+            "close": "$63,545",
+            "change": "-0.28%"
+          },
+          "tnx_10y": {
+            "close": "4.60%",
+            "change": "-0.80%"
+          },
+          "vix": {
+            "close": "18.21",
+            "change": "-2.46%",
+            "note": "恐慌情緒略有緩解"
+          }
+        },
+        "tw_focus": {
+          "tsmc_2330": {
+            "close": "2,280",
+            "change": "-2.98%"
+          },
+          "tsmc_adr": {
+            "close": "$392.31",
+            "change": "-1.70%"
+          },
+          "tsmc_adr_premium": "11.36%",
+          "tsmc_adr_implied_twd": "2539",
+          "fx_usdtwd": "32.361",
+          "today_events": [
+            {
+              "date": "7/29 (三)",
+              "event": "FOMC 利率決議（台灣時間 7/30 凌晨2:00）⭐⭐⭐",
+              "impact": "市場定價 38% 升息機率"
+            },
+            {
+              "date": "7/29 (三)",
+              "event": "META 財報（盤後）⭐⭐",
+              "impact": "AI 廣告收入動能指標"
+            },
+            {
+              "date": "7/29 (三)",
+              "event": "BoJ 利率決議（週四）",
+              "impact": "日圓走勢影響亞股"
+            },
+            {
+              "date": "7/30 (四)",
+              "event": "AAPL + AMZN 財報 ⭐⭐ + Q2 GDP ⭐⭐",
+              "impact": "Mag-7 財報連發"
+            },
+            {
+              "date": "本週",
+              "event": "MSFT 財報（已公布）+ 超級央行週",
+              "impact": "市場波動率極高"
+            }
+          ]
+        },
+        "key_levels": {
+          "open_estimate": "41,500~42,000（觀察美股期貨亞洲盤方向）",
+          "resistance_1": "43,000（心理關卡）",
+          "resistance_2": "43,654（7/24~7/27 收盤區間）",
+          "support_1": "41,500（7/28 台股重挫後支撐）",
+          "support_2": "40,500~40,800（季線支撐區）"
+        },
+        "strong_sectors": [
+          "醫療保健（美時、泰博）— XLV +2.36% 全球防禦輪動",
+          "消費必需品（統一、全家）— XLP +1.99% 防禦性資金簇擁",
+          "金融（2881 富邦金、2882 國泰金）— XLF +1.27% 提供支撐，但台股金融 7/28 已率先下跌需留意"
+        ],
+        "avoid_sectors": [
+          "半導體權值（2330 台積電 2,280、2454 聯發科 -9.92%、3711 日月光）— SOX -4.49% 續破底",
+          "AI 伺服器/散熱（2317 鴻海 -5.93%、2308 台達電 -9.97%）— AMD -8.15% 拖累",
+          "石化/塑膠（6505 台塑化）— XLE -1.35%，油價戰後復甦不明"
+        ],
+        "recommendations": [
+          {
+            "ticker": "00632R 反1",
+            "direction": "避險",
+            "entry_zone": "輕倉 3~5%",
+            "target": "10.8~11.2",
+            "stop": "10.0",
+            "reason": "SOX 續破底 + FOMC 前不確定性 + AMD -8.15% 半導體風暴"
+          },
+          {
+            "ticker": "醫療保健族群",
+            "direction": "偏多",
+            "entry_zone": "小量布局",
+            "stop": "-3%",
+            "reason": "XLV +2.36% 全球防禦性資金輪動明確"
+          },
+          {
+            "ticker": "生技 ETF（如 00678 生技）",
+            "direction": "偏多",
+            "entry_zone": "小量",
+            "stop": "-3%",
+            "reason": "防禦避險 + 醫療板塊全球領漲"
+          },
+          {
+            "ticker": "2330 台積電",
+            "direction": "觀察",
+            "entry_zone": "等 FOMC + 財報週結束後 2,100~2,200 區間",
+            "reason": "ADR $392.31 隱含 2,539（溢價 11.4%），但 SOX 續跌 + AMD -8.15% 壓力未解除，勿摸底"
+          }
+        ],
+        "generated_at": "2026-07-29 07:10 CST",
+        "source": "openclaw-cron-88d95290"
+      }
     }
   ]
 }
