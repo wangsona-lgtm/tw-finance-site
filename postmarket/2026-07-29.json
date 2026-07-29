@@ -1,6 +1,6 @@
 {
   "date": "2026-07-29",
-  "updated_at": "2026-07-29T14:10:00+08:00",
+  "updated_at": "2026-07-29T16:18:12+08:00",
   "summary": {
     "taiex": {
       "close": 40039.18,
@@ -10,9 +10,9 @@
       "open": 41491.48,
       "high": 41698.39,
       "low": 39384.85,
-      "volume_yi": null,
+      "volume_yi": 11400,
       "volume_yest_yi": 8725.75,
-      "volume_chg_pct": null
+      "volume_chg_pct": 30.6
     },
     "otc": {
       "close": null,
@@ -32,32 +32,32 @@
       "chg": null,
       "pct": null
     },
-    "usd_twd": 32.423
+    "usd_twd": 32.387
   },
   "sectors": [],
   "stocks": [
     {
       "code": "2330",
       "name": "台積電",
-      "close": 2210.0,
-      "chg": -70.0,
-      "pct": -3.07,
+      "close": 2200.0,
+      "chg": -80.0,
+      "pct": -3.51,
       "vol_zhang": null
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "close": 3120.0,
-      "chg": -195.0,
-      "pct": -5.88,
+      "close": 3150.0,
+      "chg": -170.0,
+      "pct": -4.98,
       "vol_zhang": null
     },
     {
       "code": "2317",
       "name": "鴻海",
-      "close": 235.5,
-      "chg": -2.5,
-      "pct": -1.05,
+      "close": 237.0,
+      "chg": -1.0,
+      "pct": -0.42,
       "vol_zhang": null
     },
     {
@@ -71,9 +71,9 @@
     {
       "code": "2382",
       "name": "廣達",
-      "close": 308.0,
-      "chg": -5.5,
-      "pct": -1.75,
+      "close": null,
+      "chg": null,
+      "pct": null,
       "vol_zhang": null
     },
     {
@@ -87,9 +87,9 @@
     {
       "code": "2882",
       "name": "國泰金",
-      "close": 94.2,
-      "chg": -1.2,
-      "pct": -1.26,
+      "close": 94.1,
+      "chg": -1.3,
+      "pct": -1.36,
       "vol_zhang": null
     },
     {
@@ -103,9 +103,9 @@
     {
       "code": "1303",
       "name": "南亞",
-      "close": 141.5,
-      "chg": -15.5,
-      "pct": -9.87,
+      "close": null,
+      "chg": null,
+      "pct": null,
       "vol_zhang": null
     },
     {
@@ -119,57 +119,73 @@
     {
       "code": "2412",
       "name": "中華電",
-      "close": 140.5,
-      "chg": -0.5,
-      "pct": -0.35,
+      "close": null,
+      "chg": null,
+      "pct": null,
       "vol_zhang": null
     },
     {
       "code": "3008",
       "name": "大立光",
-      "close": 3870.0,
-      "chg": -30.0,
-      "pct": -0.77,
+      "close": null,
+      "chg": null,
+      "pct": null,
       "vol_zhang": null
     },
     {
-      "code": "3443",
-      "name": "創意",
-      "close": null,
-      "chg": null,
-      "pct": -9.97,
-      "vol_zhang": null
-    },
-    {
-      "code": "3037",
-      "name": "欣興",
-      "close": null,
-      "chg": null,
+      "code": "3661",
+      "name": "世芯-KY",
+      "close": 2805.0,
+      "chg": -310.0,
       "pct": -9.95,
+      "vol_zhang": null
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "close": 879.0,
+      "chg": -97.0,
+      "pct": -9.94,
       "vol_zhang": null
     },
     {
       "code": "3711",
       "name": "日月光投控",
-      "close": null,
-      "chg": null,
+      "close": 499.0,
+      "chg": -55.0,
       "pct": -9.93,
       "vol_zhang": null
     },
     {
-      "code": "2603",
-      "name": "長榮",
-      "close": null,
-      "chg": null,
-      "pct": 1.25,
+      "code": "2344",
+      "name": "華邦電",
+      "close": 130.0,
+      "chg": -14.0,
+      "pct": -9.72,
+      "vol_zhang": null
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "close": 102.5,
+      "chg": -11.0,
+      "pct": -9.69,
       "vol_zhang": null
     },
     {
       "code": "3034",
       "name": "聯詠",
-      "close": null,
-      "chg": null,
+      "close": 505.0,
+      "chg": 12.5,
       "pct": 2.54,
+      "vol_zhang": null
+    },
+    {
+      "code": "2357",
+      "name": "華碩",
+      "close": 761.0,
+      "chg": 26.0,
+      "pct": 3.54,
       "vol_zhang": null
     }
   ],
@@ -180,21 +196,84 @@
   },
   "institutional_investors": {
     "source": "TWSE 三大法人買賣金額統計表 (BFI82U)",
-    "date": null,
+    "date": "2026-07-29",
     "url": "https://www.twse.com.tw/fund/BFI82U",
-    "data": [],
+    "data": [
+      {
+        "name": "自營商(自行買賣)",
+        "buy_yi": 145.01,
+        "sell_yi": 155.24,
+        "net_yi": -10.23,
+        "yest_net_yi": -12.26,
+        "change": "略縮小"
+      },
+      {
+        "name": "自營商(避險)",
+        "buy_yi": 666.47,
+        "sell_yi": 842.22,
+        "net_yi": -175.76,
+        "yest_net_yi": -305.04,
+        "change": "縮小"
+      },
+      {
+        "name": "投信",
+        "buy_yi": 226.24,
+        "sell_yi": 135.30,
+        "net_yi": 90.94,
+        "yest_net_yi": 16.12,
+        "change": "大增"
+      },
+      {
+        "name": "外資及陸資",
+        "buy_yi": 4614.45,
+        "sell_yi": 4836.97,
+        "net_yi": -222.52,
+        "yest_net_yi": -874.85,
+        "change": "大幅縮小"
+      }
+    ],
     "summary": {
-      "note": "三大法人買賣超數據尚未公布（約 14:30 後更新）"
+      "total_buy_yi": 5652.17,
+      "total_sell_yi": 5969.74,
+      "total_net_yi": -317.57,
+      "yest_total_net_yi": -1176.03,
+      "note": "整體賣壓從 -1,176 億大幅縮至 -318 億。投信大舉加碼 +90.9 億，政府護盤跡象明顯。外資賣壓從 -875 億縮至 -223 億，殺盤力道減弱。"
     }
   },
   "futures_and_options": {
-    "date": null,
-    "note": "今日 TAIFEX 數據尚未更新",
+    "date": "2026-07-28",
+    "note": "期交所數據通常於收盤後 16:00~17:00 更新。以下為最新可取得之 7/28 數據，7/29 數據尚未公布。",
     "source": "TAIFEX OpenAPI",
-    "foreign_tx_net_oi": null,
+    "foreign_tx_net_oi": -82255,
+    "foreign_tx_net_oi_text": "外資台指期淨空單 -82,255 口（契約金額 -6,840.8 億元）",
+    "foreign_tx_small_net_oi": -3100,
+    "foreign_tx_micro_net_oi": -4081,
     "foreign_tx_oi_change": null,
-    "foreign_tx_net_oi_text": "資料尚未公布",
-    "assessment": "外資台指期淨空單水位待更新"
+    "assessment": "外資台指期仍持淨空單 8.2 萬口，偏空結構尚未扭轉。",
+    "major_institutions": {
+      "futures_net_oi": {
+        "dealer": -335161,
+        "sitc": 80791,
+        "foreign": -446136
+      },
+      "options_net_oi": {
+        "dealer": -11401,
+        "sitc": -1951,
+        "foreign": -3748
+      }
+    },
+    "foreign_options": {
+      "call_net_oi": 2296,
+      "put_net_oi": 6025,
+      "note": "外資選擇權 PUT OI > CALL OI，避險／偏空佈局"
+    },
+    "pc_ratio": {
+      "date": "2026-07-28",
+      "volume_pc": 91.97,
+      "oi_pc": 89.37,
+      "trend": "持續走低，PUT 未平倉占比明顯上升",
+      "assessment": "市場避險／看跌情緒濃厚"
+    }
   },
   "margin_short": {
     "date": null,
@@ -209,20 +288,22 @@
     "short_note": ""
   },
   "key_observations": [
-    "🚨 台股連續第二日重挫！加權指數收 40,039，大跌 -1,564 點 (-3.76%)，兩日累計跌 3,595 點 (-8.24%)",
-    "盤中最低觸及 39,384.85，一度摜破四萬大關",
-    "半導體為重災區 — 創意(-9.97%)、欣興(-9.95%)、南電(-9.94%)、南亞科(-9.94%)、日月光(-9.93%)逼近跌停",
-    "台積電收 2,210 (-3.07%) 相對抗跌，聯發科跌破 3,200 收 3,120 (-5.88%)",
-    "南亞 (-9.87%) 領跌塑膠族群，台化 (-4.93%) 跟進",
-    "防禦股逆勢抗跌：聯詠 (+2.54%)、長榮 (+1.25%)、統一 (+0.65%)、瑞昱 (+0.96%)",
-    "台幣同步走貶至 32.423，盤中一度觸及 32.527",
-    "TSM ADR 溢價 +15.1%，暗示市場預期可能出現技術性反彈",
-    "OTC 櫃買、成交量、三大法人數據待 14:00-14:30 後更新",
-    "FOMC 利率決議在即，外資持續撤離壓力未減"
+    "🚨 台股連續第三日重挫！加權指數收 40,039，大跌 -1,564 點 (-3.76%)，連四黑",
+    "盤中最低觸及 39,384.85，一度摜破四萬大關，創年內新低",
+    "成交金額暴衝至 1.14 兆元，為近期最大量，停損/斷頭賣壓出籠",
+    "近 5 日自高點 44,850 累計跌幅達 12.2%，7 月以來自高點 47,395 已跌 17.2%",
+    "半導體為重災區：世芯-KY(-9.95%)、南電(-9.94%)、日月光(-9.93%)、聯電(-9.69%)",
+    "台積電收 2,200 (-3.51%) 相對抗跌，聯發科收 3,150 (-4.98%)",
+    "外資賣壓從昨日 -875 億大幅縮減至 -223 億，投信大舉加碼 +90.9 億（護盤）",
+    "整體三大法人賣超 -317.57 億（昨 -1,176 億），賣壓大幅減輕",
+    "台幣同步走貶至 32.387，盤中一度觸及 32.527",
+    "抗跌防禦股：華碩(+3.54%)、聯詠(+2.54%)、遠傳(+0.47%)",
+    "僅 3 檔漲停，為近月最低漲停數，極端恐慌市場",
+    "外資台指期淨空單 -82,255 口，P/C Ratio OI 降至 89.37%"
   ],
   "market_assessment": {
-    "signal": "極度偏空",
-    "key_risk": "連續兩日暴跌後融資斷頭連鎖效應 + FOMC 利率決議 + 外資持續提款風險",
+    "signal": "極度偏空但短線止穩跡象浮現",
+    "key_risk": "連續三日暴跌後融資斷頭連鎖效應 + 費半兩週跌 11% + 外資期貨空單 8.2 萬口",
     "support_levels": [
       "39,384（今日盤中低點）",
       "40,039（今日收盤）",
@@ -232,37 +313,37 @@
       "41,000~41,500（今日跳空缺口上緣）",
       "41,603（7/28 收盤）"
     ],
-    "strategy": "高度防禦，連續兩日累跌 -8.24% 為極端超賣，短線 RSI 已進入超賣區。FOMC 前不建議摸底，但 ADR 溢價 +15% 暗示反彈動能累積中。觀察今晚美股 SOX 及 FOMC 聲明方向。",
+    "strategy": "外資賣壓從 -875 億縮至 -223 億為正面訊號；投信 +90.9 億為顯著護盤。成交量飆至 1.14 兆，通常量能見頂後短線有反彈契機。惟外資期貨空單 8.2 萬口、P/C Ratio 89% 顯示偏空結構未扭轉。關注今晚費半能否止跌及 FOMC 動向。",
     "us_market_context": {
-      "sox_two_day_pct": null,
+      "sox_two_day_pct": -11.08,
       "vix": null,
       "wti_crude": null,
-      "note": "美股期貨亞洲盤持續承壓"
+      "note": "費半指數 5 日重挫 11%，為台股此波急跌主要外部因素"
     }
   },
   "tsmc_adr": {
     "tsm_close_7_28": 392.31,
-    "tsm_change_7_28_pct": null,
+    "tsm_change_7_28_pct": -1.7,
     "tsm_intraday_7_29": null,
     "tsm_intraday_pct": null,
-    "tw_2330_close": 2210,
+    "tw_2330_close": 2200,
     "adr_converted_twd": 2544,
     "premium_pct": 15.1,
-    "usd_twd": 32.423,
+    "usd_twd": 32.387,
     "note": "ADR 溢價 15.1% 維持高位，提供反彈預期"
   },
   "market_breadth": {
     "up_stocks": null,
     "down_stocks": null,
-    "limit_up": null,
+    "limit_up": 3,
     "limit_down": null,
     "up_down_ratio": null,
-    "note": "市場廣度數據尚未公布"
+    "note": "僅 3 檔漲停，為近月最低漲停數。極端恐慌市場下中小型股全面熄火。"
   },
   "postmarket_analysis": {
     "date": "2026-07-29",
     "title": "台股收盤檢討 + 動能掃描",
-    "taiex_summary": "收 40,039.18 🔴 -3.76%（-1,564 點），連續第二日重挫，兩日累計 -3,595 點 (-8.24%)，盤中最低 39,384.85",
+    "taiex_summary": "收 40,039.18 🔴 -3.76%（-1,564 點），連續三日重挫，連四黑，盤中最低 39,384.85。成交 1.14 兆暴量。",
     "recommendation_review": [
       {
         "code": "2002",
@@ -414,10 +495,11 @@
       ]
     },
     "key_events": [
+      "FOMC 利率決議 (7/30-31)",
       "META 財報盤後",
       "AAPL/AMZN 財報明日",
-      "FOMC 7/30-31 利率決議"
+      "明日 21 檔除權息（統一、智邦、力成、統一超等）"
     ],
-    "strategy_summary": "防禦策略勝出（中鋼 -0.26% 跑贏大盤 +3.50%、反1 +3.16%）。極端超賣兩日 -8.24%，短線 RSI 進入超賣區。FOMC 前不建議摸底，但 ADR 溢價 +15% 暗示反彈動能累積。"
+    "strategy_summary": "防禦策略勝出。外資賣壓從 -875 億縮至 -223 億為正面訊號；投信 +90.9 億為顯著護盤。成交量飆至 1.14 兆通常量能見頂後短線反彈契機。惟外資期貨 8.2 萬口空單、P/C 89% 偏空結構未扭轉。關注今夜美股 SOX 及 FOMC。"
   }
 }
