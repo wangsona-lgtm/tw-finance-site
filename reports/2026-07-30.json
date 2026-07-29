@@ -1,8 +1,8 @@
 {
   "date": "2026-07-30",
   "type": "daily-reports",
-  "source": "zerohedge",
-  "title": "ZeroHedge 每日導讀 — 7月30日（四）",
+  "source": "zerohedge + premarket",
+  "title": "ZeroHedge 每日導讀 — 7月30日（四）+ 盤前分析",
   "sections": [
     {
       "title": "'Hawkish' Hold, AI Angst, & Tehran Tremors Trigger Tantrum Amid Massive Market De-Grossing",
@@ -140,6 +140,248 @@
         "/home/nutc/.hermes/cron/output/zerohedge/images/article_11_img_4.png"
       ],
       "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 — 2026-07-30（週四）",
+      "category": "premarket",
+      "summary": "",
+      "timestamp": "2026-07-30",
+      "premarket": {
+        "timestamp": "2026-07-30 07:10 CST",
+        "direction": "🔴 劇烈震盪偏空 — 美股隔夜全面重挫，SOX -5.33% 半導體續崩，VIX 爆衝 +13.45%",
+        "tone": "FOMC 鷹派按兵不動 + AI 財報 Meta 盤後暴跌 + 地緣風險油價暴漲 → 全球去槓桿加速",
+        "market_status": {
+          "us_sp500": "$7316.15",
+          "us_sp500_change": "-1.52%",
+          "us_nasdaq": "$24442.94",
+          "us_nasdaq_change": "-1.74%",
+          "us_sox": "$10447.49",
+          "us_sox_change": "-5.33%",
+          "us_dow": "$51594.14",
+          "us_dow_change": "-2.19%",
+          "us_russell2000": "$2906.31",
+          "us_russell2000_change": "-1.61%"
+        },
+        "megatechs": {
+          "strong": [
+            {
+              "ticker": "GOOGL",
+              "close": "$336.71",
+              "change": "+0.90%",
+              "note": "強勢"
+            }
+          ],
+          "weak": [
+            {
+              "ticker": "AMD",
+              "close": "$429.56",
+              "change": "-5.51%",
+              "note": "中國半導體自給衝擊"
+            },
+            {
+              "ticker": "TSM",
+              "close": "$374.67",
+              "change": "-4.50%"
+            },
+            {
+              "ticker": "NVDA",
+              "close": "$190.01",
+              "change": "-3.55%",
+              "note": "半導體風暴核心"
+            },
+            {
+              "ticker": "TSLA",
+              "close": "$298.32",
+              "change": "-2.97%"
+            },
+            {
+              "ticker": "AVGO",
+              "close": "$370.32",
+              "change": "-2.78%"
+            },
+            {
+              "ticker": "AMZN",
+              "close": "$226.65",
+              "change": "-1.82%",
+              "note": "今晚財報 ⭐⭐"
+            },
+            {
+              "ticker": "META",
+              "close": "$585.61",
+              "change": "-1.31%",
+              "note": "財報後暴跌，CapEx 上修+營收指引差"
+            },
+            {
+              "ticker": "MSFT",
+              "close": "$390.54",
+              "change": "-0.71%",
+              "note": "財報後 Cloud 營收強勁"
+            },
+            {
+              "ticker": "AAPL",
+              "close": "$338.19",
+              "change": "-0.56%",
+              "note": "iPhone 17 備貨動能"
+            }
+          ]
+        },
+        "sector_etfs": {
+          "strongest": [
+            {
+              "ticker": "XLE",
+              "name": "能源",
+              "change": "+1.88%"
+            },
+            {
+              "ticker": "XLP",
+              "name": "必需消費",
+              "change": "+0.34%"
+            },
+            {
+              "ticker": "XLV",
+              "name": "醫療",
+              "change": "-0.61%"
+            }
+          ],
+          "weakest": [
+            {
+              "ticker": "SMH",
+              "name": "半導體",
+              "change": "-4.79%"
+            },
+            {
+              "ticker": "XLI",
+              "name": "工業",
+              "change": "-3.19%"
+            },
+            {
+              "ticker": "XLK",
+              "name": "科技",
+              "change": "-2.64%"
+            }
+          ]
+        },
+        "commodities": {
+          "usd_index": {
+            "close": "$100.80",
+            "change": "-0.57%"
+          },
+          "gold": {
+            "close": "$4147.20",
+            "change": "+2.75%",
+            "note": "避險買盤推升 +2.75%，伊朗緊張加持"
+          },
+          "crude": {
+            "close": "$84.43",
+            "change": "+6.52%",
+            "note": "伊朗+紅海戰事升級，暴衝 +6.52%"
+          },
+          "bitcoin": {
+            "close": "$63,819",
+            "change": "-0.08%"
+          },
+          "tnx_10y": {
+            "close": "4.62%",
+            "change": "+0.39%"
+          },
+          "vix": {
+            "close": "$20.66",
+            "change": "+13.45%",
+            "note": "恐慌指數爆量跳升，市場極度不安"
+          }
+        },
+        "tw_focus": {
+          "tsmc_2330": {
+            "close": "—（開盤前）",
+            "change": "—"
+          },
+          "tsmc_adr": {
+            "close": "$374.67",
+            "change": "-4.50%"
+          },
+          "tsmc_adr_premium": "—",
+          "tsmc_adr_implied_twd": "—（開盤後估算）",
+          "fx_usdtwd": "約 32.4（參考前日）",
+          "today_events": [
+            {
+              "date": "7/30（四）",
+              "event": "US Q2 GDP ⭐⭐",
+              "impact": "市場預期放緩，若低於預期將增加 Fed 降息壓力"
+            },
+            {
+              "date": "7/30（四）",
+              "event": "AAPL + AMZN 財報（盤後）⭐⭐⭐",
+              "impact": "Mag-7 最後兩大巨頭，AI 資本支出 vs 營收動能檢驗"
+            },
+            {
+              "date": "7/31（五）",
+              "event": "BoJ 利率決議 ⭐⭐⭐",
+              "impact": "日圓走勢影響亞洲資金流向"
+            },
+            {
+              "date": "本週",
+              "event": "FOMC 鷹派 hold（已公布）+ 財報週持續",
+              "impact": "市場波動率極高"
+            }
+          ]
+        },
+        "key_levels": {
+          "open_estimate": "42,500~43,000（美股期貨亞洲盤需觀察，SOX 隔夜續崩 -5.33% 壓力大）",
+          "resistance_1": "44,000（前日收盤/心理關卡）",
+          "resistance_2": "44,850（7/23 收盤高點）",
+          "support_1": "41,500（7/28 重挫低點）",
+          "support_2": "40,500~40,800（季線支撐區）"
+        },
+        "strong_sectors": [
+          "能源（6505 台塑化、1314 中石化）— XLE +1.88% 油價暴漲直接受惠",
+          "必需消費（統一、全家）— XLP +0.34% 防禦性資金少量流入",
+          "黃金概念（00635U 元大黃金等）— 金價 +2.75% 避險資金簇擁"
+        ],
+        "avoid_sectors": [
+          "半導體權值（2330 台積電、2454 聯發科、3711 日月光）— SOX -5.33%、SMH -4.79%，隔夜續崩",
+          "AI 伺服器/散熱（2317 鴻海、2308 台達電）— AMD -5.51%、NVDA -3.55% 繼續探底",
+          "工業/航運 — XLI -3.19%，全球衰退預期升溫"
+        ],
+        "recommendations": [
+          {
+            "ticker": "00632R 反1",
+            "direction": "避險",
+            "entry_zone": "輕倉 3~5%",
+            "target": "10.5~11.0",
+            "stop": "9.8",
+            "reason": "SOX 續崩 -5.33%、VIX 13.45%、油價暴漲 +6.52% 地緣+半導體雙殺"
+          },
+          {
+            "ticker": "能源類股（6505 台塑化、1301 台塑）",
+            "direction": "偏多",
+            "entry_zone": "小量布局",
+            "stop": "-3%",
+            "reason": "XLE +1.88% + 油價暴漲 6.52%，伊朗/紅海戰事無緩和跡象"
+          },
+          {
+            "ticker": "黃金 ETF（00635U 元大黃金）",
+            "direction": "偏多",
+            "entry_zone": "小量",
+            "stop": "-2%",
+            "reason": "金價 +2.75%，地緣避險明確"
+          },
+          {
+            "ticker": "2330 台積電",
+            "direction": "觀察",
+            "entry_zone": "等 AAPL/AMZN 財報 + 半導體落底訊號",
+            "target": "—",
+            "stop": "—",
+            "reason": "ADR -4.50%，SOX -5.33%，短線風險仍高"
+          },
+          {
+            "ticker": "金融（2881 富邦金、2882 國泰金）",
+            "direction": "觀察偏空",
+            "entry_zone": "暫時避開",
+            "stop": "—",
+            "reason": "XLF -1.60%，降息預期壓縮銀行利差"
+          }
+        ]
+      }
     }
   ]
 }
