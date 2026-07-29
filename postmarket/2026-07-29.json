@@ -1,6 +1,6 @@
 {
   "date": "2026-07-29",
-  "updated_at": "2026-07-29T13:40:00+08:00",
+  "updated_at": "2026-07-29T14:10:00+08:00",
   "summary": {
     "taiex": {
       "close": 40039.18,
@@ -97,7 +97,7 @@
       "name": "台塑",
       "close": 55.6,
       "chg": -1.9,
-      "pct": -3.30,
+      "pct": -3.3,
       "vol_zhang": null
     },
     {
@@ -258,5 +258,166 @@
     "limit_down": null,
     "up_down_ratio": null,
     "note": "市場廣度數據尚未公布"
+  },
+  "postmarket_analysis": {
+    "date": "2026-07-29",
+    "title": "台股收盤檢討 + 動能掃描",
+    "taiex_summary": "收 40,039.18 🔴 -3.76%（-1,564 點），連續第二日重挫，兩日累計 -3,595 點 (-8.24%)，盤中最低 39,384.85",
+    "recommendation_review": [
+      {
+        "code": "2002",
+        "name": "中鋼",
+        "direction": "偏多/原物料防禦",
+        "rec_price": 19.0,
+        "close": 18.95,
+        "pct": -0.26,
+        "vs_market": 3.5,
+        "result": "✅ 命中",
+        "note": "大盤 -3.76% 下僅跌 -0.26%，相對跑贏 +3.50%。防禦力連續兩日經受極端檢驗。"
+      },
+      {
+        "code": "00632R",
+        "name": "元大台灣50反1",
+        "direction": "避險/短線操作",
+        "rec_price": 11.08,
+        "close": 11.43,
+        "pct": 3.16,
+        "vs_market": 6.92,
+        "result": "✅ 命中 🎯",
+        "note": "收 11.43 超越目標上緣，盤中最高 11.67 (+5.3%)。反1從低點 10.35 已漲 +10.4%，FOMC 後可能快速回吐。"
+      },
+      {
+        "code": "2330",
+        "name": "台積電",
+        "direction": "偏多/超賣反彈",
+        "rec_price": 2280,
+        "close": 2200,
+        "pct": -3.51,
+        "vs_market": 0.25,
+        "result": "⏳ 中性",
+        "note": "收 2,200 恰在買入區間下緣，盤中最低 2,180 未觸停損 2,150。等 FOMC 催化劑。"
+      },
+      {
+        "code": "2454",
+        "name": "聯發科",
+        "direction": "觀察/不進場",
+        "rec_price": 3315,
+        "close": 3150,
+        "pct": -4.98,
+        "vs_market": -1.22,
+        "result": "✅ 正確判斷",
+        "note": "盤中破 3,000 最低 2,990，完美避開 -4.98%。SOX 兩日 -8.74% 時半導體切忌摸底。"
+      }
+    ],
+    "cumulative_performance": [
+      {
+        "code": "2002",
+        "name": "中鋼 🛡️",
+        "rec_date": "07/17",
+        "rec_price": 18.65,
+        "latest_price": 18.95,
+        "cum_pct": 1.61,
+        "trend": "⏳→✅→✅→⏳→✅"
+      },
+      {
+        "code": "00632R",
+        "name": "反1 ⚡",
+        "rec_date": "07/24",
+        "rec_price": 10.57,
+        "latest_price": 11.43,
+        "cum_pct": 8.14,
+        "trend": "✅→✅→✅→✅"
+      },
+      {
+        "code": "2474",
+        "name": "可成",
+        "rec_date": "07/27",
+        "rec_price": 186,
+        "latest_price": 184.5,
+        "cum_pct": -0.81,
+        "trend": "→⏳"
+      },
+      {
+        "code": "2324",
+        "name": "仁寶",
+        "rec_date": "07/27",
+        "rec_price": 36.1,
+        "latest_price": 34.7,
+        "cum_pct": -3.88,
+        "trend": "→❌"
+      },
+      {
+        "code": "2330",
+        "name": "2330 (觀察)",
+        "rec_date": "07/27",
+        "rec_price": null,
+        "latest_price": 2200,
+        "cum_pct": 0,
+        "trend": "✅"
+      },
+      {
+        "code": "2454",
+        "name": "2454 (觀察)",
+        "rec_date": "07/29",
+        "rec_price": null,
+        "latest_price": 3150,
+        "cum_pct": 0,
+        "trend": "✅"
+      }
+    ],
+    "momentum_scan": {
+      "total_limit_up": 3,
+      "note": "僅 3 檔漲停，為近月最低漲停數。極端恐慌市場下中小型股全面熄火。",
+      "industries": [
+        {
+          "rank": 1,
+          "industry": "其他",
+          "limit_up_count": 2,
+          "max_consecutive": "3根↑",
+          "representative": "6226 光鼎, 6668 中揚光"
+        },
+        {
+          "rank": 2,
+          "industry": "半導體/IC設計",
+          "limit_up_count": 1,
+          "max_consecutive": "2根↑",
+          "representative": "3504 Young Optics"
+        }
+      ],
+      "day2_limit_up": [
+        {
+          "code": "3504",
+          "name": "Young Optics",
+          "industry": "半導體/IC設計",
+          "close": 68.6,
+          "cum_pct": 9.9,
+          "note": "明天第3根為推薦訊號"
+        },
+        {
+          "code": "6668",
+          "name": "中揚光",
+          "industry": "其他",
+          "close": 37.15,
+          "cum_pct": 9.9,
+          "note": "明天第3根為推薦訊號"
+        }
+      ],
+      "day3_limit_up": [
+        {
+          "code": "6226",
+          "name": "光鼎 (Para Light)",
+          "close": 22.55,
+          "cum_pct": 20.9,
+          "risk": "🔴🔴🔴 中高風險",
+          "note": "連3根漲停，累計 +20.9%，僅供已持倉者參考"
+        }
+      ]
+    },
+    "key_events": [
+      "META 財報盤後",
+      "AAPL/AMZN 財報明日",
+      "FOMC 7/30-31 利率決議"
+    ],
+    "strategy_summary": "防禦策略勝出（中鋼 -0.26% 跑贏大盤 +3.50%、反1 +3.16%）。極端超賣兩日 -8.24%，短線 RSI 進入超賣區。FOMC 前不建議摸底，但 ADR 溢價 +15% 暗示反彈動能累積。"
   }
 }
