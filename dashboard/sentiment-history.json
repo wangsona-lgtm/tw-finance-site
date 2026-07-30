@@ -351,12 +351,12 @@
     "date": "2026-07-29",
     "inst": {
       "foreign": -22251858551,
-      "investment_trust": 9093862951,
+      "investment_trust": 5705652231,
       "dealer_total": -18599014431
     },
     "pc_ratio": 100.21,
     "pc_oi_ratio": 84.29,
-    "futures_foreign_net": "-446,136",
-    "futures_total_net": "-698,555"
+    "futures_foreign_net": "-415,908",
+    "futures_total_net": "-638,260"
   }
 ]
