@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-30",
+  "updated_at": "2026-07-30T13:40:00+08:00",
+  "summary": {
+    "taiex": {
+      "close": 39933.30,
+      "yest": 40039.18,
+      "chg": -105.88,
+      "pct": -0.26,
+      "open": 40048.94,
+      "high": 41155.42,
+      "low": 39404.65,
+      "volume_yi": null,
+      "volume_yest_yi": 11492,
+      "volume_chg_pct": null
+    },
+    "otc": {
+      "close": null,
+      "yest": null,
+      "chg": null,
+      "pct": null
+    },
+    "electronics": {
+      "close": null,
+      "yest": null,
+      "chg": null,
+      "pct": null
+    },
+    "financial": {
+      "close": null,
+      "yest": null,
+      "chg": null,
+      "pct": null
+    },
+    "usd_twd": 32.441
+  },
+  "sectors": [],
+  "stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "close": 2205.0,
+      "chg": 5.0,
+      "pct": 0.23,
+      "vol_zhang": 44328
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "close": 3235.0,
+      "chg": 85.0,
+      "pct": 2.70,
+      "vol_zhang": 13482
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "close": 229.5,
+      "chg": -7.5,
+      "pct": -3.16,
+      "vol_zhang": 74039
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "close": 1530.0,
+      "chg": 35.0,
+      "pct": 2.34,
+      "vol_zhang": 21703
+    },
+    {
+      "code": "2382",
+      "name": "廣達",
+      "close": 279.0,
+      "chg": -30.5,
+      "pct": -9.85,
+      "vol_zhang": 57411
+    }
+  ],
+  "yesterday": {
+    "taiex_close": 40039.18,
+    "total_value_yi": null,
+    "total_vol_shares": null
+  },
+  "key_observations": [
+    "加權指數連三日下跌但跌勢收斂，收 39,933 🔴 -0.26%（-106 點）",
+    "盤中劇烈震盪，高低差達 1,750 點（39,404 ~ 41,155）",
+    "聯發科 +2.70%、台達電 +2.34% 權值股撐盤",
+    "金融股全面走強成避風港：合庫金 +3.45%、玉山金 +3.29%、兆豐金 +3.21%",
+    "廣達 -9.85% 幾乎跌停，組裝代工賣壓最重",
+    "台幣續貶至 32.441，近一週從 32.299 貶值 0.44%",
+    "台積電 ADR 溢價 +10.25%（TSM $374.67 vs 2,205.0）",
+    "成交量尚未公布，待 14:00~14:30 TWSE 更新"
+  ],
+  "market_assessment": {
+    "signal": "連日重挫後跌勢趨緩，盤中 V 轉待確認",
+    "key_risk": "外資動向 + 費半連續重挫 + 台幣續貶壓力",
+    "support_levels": [
+      "39,404（今日盤中低點）",
+      "39,384（7/29 盤中低點）"
+    ],
+    "resistance_levels": [
+      "40,039（7/29 收盤）",
+      "41,155（今日盤中高點）"
+    ],
+    "strategy": "跌幅從 -2,030 → -1,564 → -105 逐步收斂，但盤中仍劇烈波動。金融股成資金避風港。關注今晚美股及 FOMC 動向。",
+    "us_market_context": {
+      "snp_close": 7316.1,
+      "nasdaq_close": 24442.9,
+      "dj_close": 51594.1,
+      "sox_close": 10447.5,
+      "sox_pct": -5.33,
+      "note": "美股 7/29 持續重挫，費半 -5.33%，為台股主要外部壓力"
+    }
+  },
+  "tsmc_adr": {
+    "tsm_close": 374.67,
+    "tsm_change_pct": -4.50,
+    "tw_2330_close": 2205.0,
+    "adr_converted_twd": 2430.93,
+    "premium_pct": 10.25,
+    "usd_twd": 32.441,
+    "note": "台積電 ADR 溢價 +10.25%，持續提供反彈預期"
+  }
+}
