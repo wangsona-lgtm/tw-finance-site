@@ -100,6 +100,79 @@
       "timestamp": "2026-07-31",
       "images": [],
       "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-07-31 (週五)",
+      "category": "premarket",
+      "timestamp": "2026-07-31",
+      "summary": "SOX +8.19% 報復性反彈 + MSFT +15.51% 財報核爆 + VIX 跌破 18 = 台股強彈開局。積極作多半導體權值，立即出清避險部位。",
+      "market_context": {
+        "us_close": "2026-07-30",
+        "sox": 11302.99,
+        "sox_change_pct": 8.19,
+        "vix": 17.09,
+        "vix_change_pct": -17.28,
+        "msft_change_pct": 15.51,
+        "tsm_adr": 403.31,
+        "tsm_adr_change_pct": 7.64,
+        "taiex_prev_close": 39933.3,
+        "taiex_prev_change_pct": -0.26,
+        "usdtwd": 32.394,
+        "adr_premium_pct": 18.5,
+        "key_theme": "SOX +8.19% 報復性反彈 + MSFT +15.51% 財報核爆 + VIX 跌破 18 = 台股強彈開局。積極作多半導體權值，立即出清避險部位。"
+      },
+      "recommendations": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "direction": "積極作多",
+          "strategy": "ADR 溢價 +18.50% 極高溢價 + SOX +8.19%，今日開高 +3%~+5% 預期",
+          "recommend_price": 2205,
+          "target": "2300~2350",
+          "stop_loss": 2150,
+          "recommend_reason": "SOX +8.19% 半導體全面反攻/TSM ADR +7.64% 站回 $403/ADR 溢價 +18.50% 為近期最高"
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "direction": "偏多",
+          "strategy": "SOX 報復性反彈 + 昨日已率先反攻 +2.70%",
+          "recommend_price": 3235,
+          "target": "3400~3500",
+          "stop_loss": 3050,
+          "recommend_reason": "半導體全面反攻主將/昨日率先反彈優於大盤/台股第二大權值外資回補必買"
+        },
+        {
+          "symbol": "3231",
+          "name": "緯創",
+          "direction": "偏多/補漲",
+          "strategy": "MSFT +15.51% 財報效應最大台股受惠者，昨日 -5.60% 提供低接機會",
+          "recommend_price": 160.0,
+          "target": "172~178",
+          "stop_loss": 152,
+          "recommend_reason": "MSFT 伺服器代工廠/MSFT +15.51% 直接反映雲端AI需求超預期/昨跌因不知 MSFT 財報"
+        },
+        {
+          "symbol": "2002",
+          "name": "中鋼",
+          "direction": "中性偏多/防禦",
+          "strategy": "市場反彈初期不對稱博弈，低基期安全選擇",
+          "recommend_price": 18.95,
+          "target": "19.5~20.0",
+          "stop_loss": 18.0,
+          "recommend_reason": "連續四日防禦力驗證/FOMC 不確定性提供下行保護/低基期高殖利率安全邊際"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-07-30",
+        "total": 4,
+        "hit": 2,
+        "correct_watch": 1,
+        "miss": 1,
+        "hit_rate_pct": 66.7,
+        "best": "2002 中鋼 (平盤, vs 大盤 +0.26%) + 00632R 反1 (+0.52%)",
+        "worst": "6505 台塑化 (-4.28%, 價格引用錯誤 + 利多出盡)"
+      }
     }
   ]
 }
