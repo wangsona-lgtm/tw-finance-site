@@ -1,0 +1,105 @@
+{
+  "date": "2026-07-31",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 7月31日（五）",
+  "sections": [
+    {
+      "title": "Bonds & Big-Tech Bounce Back From Fed-Cred-Carnage; Dollar Dumped, Gold Jumped",
+      "category": "market",
+      "summary": "歷經聯準會「信用摧毀式」的暴跌後，股債雙雙反彈。背後驅動力來自微觀面（MSFT、三星優異EPS）與宏觀面（PCE溫和、GDP疲弱、消費強勁、初領失業金數據穩健）。另一方面，一家大型AI避險基金爆倉後被迫清算（由Citadel接手），反而提振了「抄底」信心，市場認為動能股屠殺可能告一段落。殖利率下滑（加上升息預期降溫）拖累美元走低，日銀干預更進一步壓低美元，推動黃金走強。加密貨幣跟隨科技股上漲。關鍵問題：這是「緩解性反彈」還是真正的趨勢反轉？\n\n重點摘錄：\n• 科技股與公債同步反彈，擺脫前日FOMC引發的恐慌\n• 大型AI槓桿基金清算由Citadel承接，市場解讀為利空出盡\n• 美元受日銀干預與Fed鴿派預期雙重打壓，黃金走高",
+      "url": "https://www.zerohedge.com/markets/bonds-big-tech-bounce-back-fed-cred-carnage-dollar-dumped-gold-jumped",
+      "timestamp": "2026-07-31",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "John Cleese: 'Some Cultures Are Better Than Others'",
+      "category": "geopolitics",
+      "summary": "《蒙地蟒蛇》傳奇巨星約翰·克里斯（John Cleese）明確表態，自稱「文化主義者」（culturalist），認為某些文化優於其他文化。他在X平台上公開支持英國改革黨領袖Rupert Lowe，並反擊「種族主義」標籤：「我不是種族主義者，我是文化主義者。我偏好那些不提倡石刑、孌童、毆妻、女性割禮和斬首反對者的文化。你可以說我老派……」該貼文獲得超過一千萬次瀏覽。此事件反映了英國在大量移民與平行社會衝擊下，對於文化基礎的辯論日益升溫。\n\n重點摘錄：\n• 約翰·克里斯明確區分「種族主義」與「文化主義」，引發千萬流量討論\n• Rupert Lowe獲克里斯公開背書，稱其「比其他領袖更值得信任」\n• 英國文化認同危機在移民與社會分裂背景下持續發酵",
+      "url": "https://www.zerohedge.com/geopolitical/john-cleese-some-cultures-are-better-others",
+      "timestamp": "2026-07-31",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "'Situational Bewareness': Star AI Investor Dumps Assets To Citadel After Massive Levered Bets Blow Up",
+      "category": "market",
+      "summary": "2021年Archegos崩盤的現代翻版。名為Situational Awareness的AI避險基金——一度管理450億美元的科技基金——因總回報互換（TRS）保證金追繳，被迫清算其公開持股組合。Ken Griffin的Citadel以折價承接了整批資產。基金現縮水至約100億美元（全數為私募部位）。創辦人Leopold本週末將與Anthropic的Chief of Staff結婚。值得注意的是，Situational Awareness未出售其私募AI投資組合，其中包括Anthropic的大量股權。摩根士丹利、高盛、Jane Street、摩根大通、法國巴黎銀行、瑞銀、德意志銀行、美銀等大型交易對手均涉入其中。\n\n重點摘錄：\n• 450億美元AI基金因TRS槓桿爆倉，Citadel低價承接\n• 私募AI資產（含Anthropic巨額持股）未出售，保留核心價值\n• 多家華爾街大行作為TRS對手方涉入，系統性風險擔憂再起",
+      "url": "https://www.zerohedge.com/markets/archegos-20-former-openai-employees-fund-seeks-fresh-cash-after-levered-bets-blow",
+      "timestamp": "2026-07-31",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_5.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Apple Tumbles On China, Service Revenue Miss",
+      "category": "market",
+      "summary": "蘋果公布截至6月30日的第三財季財報，表面數字亮眼但實則藏憂：EPS $2.02（年增29%），營收$1,094.2億（年增16%）；iPhone營收$542.5億（年增22%），Mac營收$103.5億（年增29%）。然而中國市場營收不及預期，服務業務營收亦未達標。這是Tim Cook任內最後一次財報電話會議，即將交棒John Ternus。儘管整體獲利超標，但中國需求疲軟與服務收入放緩令投資者憂慮，股價應聲下跌。\n\n重點摘錄：\n• 蘋果整體營收與iPhone銷售均超預期，但中國與服務部門表現疲軟\n• Tim Cook最後一次主持財報會議，執行長交接在即\n• 關稅與晶片成本壓力對利潤率的影響仍是市場關注焦點",
+      "url": "https://www.zerohedge.com/markets/apple-tumbles-china-service-revenue-miss",
+      "timestamp": "2026-07-31",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_5.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Bank Of Japan Confirms Yen Intervention, Fed Conducted 'Rate Check'",
+      "category": "market",
+      "summary": "日圓在跌至40年新低164/USD後突然強力反彈，日經新聞證實日本政府與央行聯手干預外匯市場（買日圓、賣美元）。更值得關注的是，美國貨幣當局同步進行了「利率檢查」（rate check）——這是干預前的預備步驟，意味著美日聯手打壓美元漲勢。日圓從164急升至160以下，波動幅度與4月的大規模干預相當。\n\n重點摘錄：\n• 日銀與日本財務省聯手干預匯市，日圓從40年低點164急拉\n• Fed同步進行「利率檢查」，暗示美日聯合干預行動\n• 干預規模與4月相當，顯示日本官方捍衛匯率的決心",
+      "url": "https://www.zerohedge.com/markets/japanic-yen-suddenly-spikes-stoking-intervention-speculation",
+      "timestamp": "2026-07-31",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Amazon Jumps On Solid AWS Growth And Profit, Even As Outlook Disappoints And Free Cash Flow Turns Negative",
+      "category": "market",
+      "summary": "亞馬遜在微軟強勁財報後的科技反彈中公布成績。AWS營收穩健成長31%至406億美元，利潤率維持健康水準，股價應聲上漲。然而潛在隱憂浮現：自由現金流連續第二季為負值，AI資本支出持續侵蝕現金流；財測令市場失望，AI支出狂潮的可持續性受到質疑。亞馬遜目前是大型科技股中最便宜的之一，本益比低於10年均值1.6個標準差。市場目前對AI超大規模運算商的現金流前景看法分歧。\n\n重點摘錄：\n• AWS營收穩健成長31%，但自由現金流連兩季為負引發擔憂\n• AI資本支出狂潮的可持續性成市場核心辯論\n• 亞馬遜估值處於歷史低位，為科技七雄中最便宜",
+      "url": "https://www.zerohedge.com/markets/amazon-jumps-solid-aws-growth-and-profit-even-outlook-disappoints-and-free-cash-flow-turns",
+      "timestamp": "2026-07-31",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_5.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Strong Microsoft Earnings Allow Tech To Rebound - Newsquawk US Market Wrap",
+      "category": "market",
+      "summary": "美股從FOMC會議觸發的拋售中強勁反彈。科技股指數飆漲超過5%，其中微軟創下約18年來最大單日漲幅（+15.5%），Azure與CoPilot強勁成長功不可沒。半導體ETF（SMH）反彈6.9%，DRAM相關ETF飆漲16.7%。微軟優於預期的財報、明確的AI變現路線圖、以及未擴大資本支出計畫，為市場注入強心針。同日其他事件：美國對伊朗發動新一輪打擊、Q2 GDP下修、PCE符合預期、META獲利未達標。焦點轉向今日BoJ利率決策。\n\n重點摘錄：\n• 微軟單日漲15.5%，創18年紀錄，Azure與CoPilot驅動成長\n• 科技股全面反彈，半導體指數脫離27%月跌幅\n• 美國對伊朗軍事打擊持續，地緣風險未減",
+      "url": "https://www.zerohedge.com/markets/strong-microsoft-earnings-allow-tech-rebound-newsquawk-us-market-wrap",
+      "timestamp": "2026-07-31",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "US Intel Chiefs Back Trump's Claim China Interfered In American Elections",
+      "category": "geopolitics",
+      "summary": "美國四大情報與安全機構首長——國家情報總監辦公室（ODNI）、國家安全局（NSA）、中央情報局（CIA）、國土安全部（DHS）——共同為川普關於中國干預美國大選的說法背書。白宮政府透明任務小組發布的事實清單指出，中國及其代理人購買、竊取或駭取了多達2.2億美國人的選民登記數據，其中包括部分非公開資訊。情報機構的定義明確指出，外國干預選舉「不需要實際改變選舉結果」，僅針對選民登記基礎設施或數據即構成干預行為。\n\n重點摘錄：\n• ODNI、NSA、CIA、DHS四大情報機構首長聯合背書中國干預指控\n• 多達2.2億美國選民數據遭到中國獲取，包含非公開資訊\n• 情報機構定義：干預選舉無需改變結果，僅攻擊選民數據即構成干預",
+      "url": "https://www.zerohedge.com/geopolitical/us-intel-chiefs-back-trumps-claim-china-interfered-american-elections",
+      "timestamp": "2026-07-31",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_5.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Comms Is Key: Restoring Credibility After Fed's Benign Neglect Adds Uncertainty To Bond Yields",
+      "category": "market",
+      "summary": "Fed主席Kevin Warsh領導下的聯準會正逐步放棄前瞻指引，回歸「最低限度溝通」策略。簡短的FOMC會後聲明搭配主席「市場應自行判斷利率走向」的立場，正在將期限溢價重新加回公債殖利率中。此舉被解讀為Fed試圖重建公信力——在前任長期過度依賴指引後，市場已習慣於被引導方向。如今的模糊策略雖然增加了短期不確定性，但長期而言可能讓市場恢復更健康的價格發現功能。\n\n重點摘錄：\n• Fed在Warsh領導下放棄前瞻指引，回歸最小溝通策略\n• 期限溢價重新回到公債殖利率，增加市場不確定性\n• 此舉意在修復Fed公信力，但短期波動性勢必上升",
+      "url": "https://www.zerohedge.com/markets/comms-key-restoring-credibility-after-feds-benign-neglect-adds-uncertainty-bond-yields",
+      "timestamp": "2026-07-31",
+      "images": [],
+      "premium": true
+    }
+  ]
+}
