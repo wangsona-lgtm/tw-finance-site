@@ -1,6 +1,6 @@
 {
   "date": "2026-07-30",
-  "updated_at": "2026-07-30T14:11:22+08:00",
+  "updated_at": "2026-07-30T22:05:00+08:00",
   "summary": {
     "taiex": {
       "close": 39933.3,
@@ -274,6 +274,171 @@
         "SOX 能否站回 10,700",
         "外資期貨淨空單變化"
       ]
+    }
+  },
+  "positions": {
+    "generated_at": "2026-07-30T22:05:00+08:00",
+    "source_note": "因原排程 cron output 未產出，由 22:05 調度直接從 TWSE API 抓取",
+    "三大法人買賣超": {
+      "date": "2026-07-30",
+      "total": {
+        "自營商_自行買賣": {
+          "buy_yi": 116.0,
+          "sell_yi": 121.0,
+          "diff_yi": -5.0
+        },
+        "自營商_避險": {
+          "buy_yi": 426.7,
+          "sell_yi": 574.0,
+          "diff_yi": -147.2
+        },
+        "投信": {
+          "buy_yi": 283.0,
+          "sell_yi": 143.0,
+          "diff_yi": 140.0
+        },
+        "外資": {
+          "buy_yi": 4985.1,
+          "sell_yi": 5468.2,
+          "diff_yi": -483.1
+        },
+        "三大法人合計": {
+          "buy_yi": 5810.7,
+          "sell_yi": 6306.2,
+          "diff_yi": -495.4
+        }
+      },
+      "highlight": "外資連日賣超但縮減至-483億，投信罕見大買+140億（7月新高），避險賣壓-147億仍重"
+    },
+    "個股法人買賣超": {
+      "2330_台積電": {
+        "foreign_shares": -3957455,
+        "trust_shares": 939367,
+        "dealer_shares": 191400,
+        "dealer_hedge_shares": 1446133,
+        "total_diff_shares": -1380555,
+        "note": "外資續賣396萬股但已較前日收斂，投信+自營合計買超257萬股"
+      },
+      "2317_鴻海": {
+        "foreign_shares": -33608017,
+        "trust_shares": 307892,
+        "dealer_shares": 293614,
+        "dealer_hedge_shares": 467246,
+        "total_diff_shares": -32539265,
+        "note": "外資鉅額賣超3,361萬股為今日最重，鴻海為外資提款重點"
+      },
+      "2454_聯發科": {
+        "foreign_shares": -2585805,
+        "trust_shares": 430877,
+        "dealer_shares": 147086,
+        "dealer_hedge_shares": 202003,
+        "total_diff_shares": -1805839,
+        "note": "外資續賣258萬股"
+      },
+      "2308_台達電": {
+        "foreign_shares": -1198399,
+        "trust_shares": 532063,
+        "dealer_shares": 162683,
+        "dealer_hedge_shares": 218815,
+        "total_diff_shares": -284838,
+        "note": "外資小賣120萬股，投信+53萬股護盤"
+      },
+      "2382_廣達": {
+        "foreign_shares": -27311038,
+        "trust_shares": 227635,
+        "dealer_shares": 75851,
+        "dealer_hedge_shares": 476243,
+        "total_diff_shares": -26531309,
+        "note": "外資鉅額賣超2,731萬股，廣達為代工組裝中殺盤最重標的"
+      },
+      "2882_國泰金": {
+        "foreign_shares": 3984802,
+        "trust_shares": 2752377,
+        "dealer_shares": 216539,
+        "dealer_hedge_shares": 689994,
+        "total_diff_shares": 7643712,
+        "note": "三大法人全面買超！外資+投信同步加碼，金融防禦共識強"
+      },
+      "2002_中鋼": {
+        "foreign_shares": 13814222,
+        "trust_shares": 59000,
+        "dealer_shares": 116000,
+        "dealer_hedge_shares": 155042,
+        "total_diff_shares": 14144264,
+        "note": "外資大買1,381萬股，防禦型資金持續流入"
+      },
+      "2886_兆豐金": {
+        "foreign_shares": 10567419,
+        "trust_shares": 3502863,
+        "dealer_shares": 975755,
+        "dealer_hedge_shares": 1984194,
+        "total_diff_shares": 16269250,
+        "note": "三大法人全面買超，金融防禦共識最高"
+      }
+    },
+    "外資買超前5": [
+      {
+        "stock": "5880 合庫金",
+        "diff_shares": 42650495
+      },
+      {
+        "stock": "2618 長榮航",
+        "diff_shares": 30788518
+      },
+      {
+        "stock": "2884 玉山金",
+        "diff_shares": 28515494
+      },
+      {
+        "stock": "2834 臺企銀",
+        "diff_shares": 27497714
+      },
+      {
+        "stock": "2344 華邦電",
+        "diff_shares": 36320840
+      }
+    ],
+    "外資賣超重點": [
+      {
+        "stock": "2317 鴻海",
+        "diff_shares": -33608017
+      },
+      {
+        "stock": "2382 廣達",
+        "diff_shares": -27311038
+      },
+      {
+        "stock": "2330 台積電",
+        "diff_shares": -3957455
+      },
+      {
+        "stock": "2454 聯發科",
+        "diff_shares": -2585805
+      }
+    ],
+    "期貨籌碼": {
+      "status": "unavailable",
+      "note": "TEJ API 配額限制，無法取得台指期外資淨多單數據。建議參考 TAIFEX 官網。"
+    },
+    "資券餘額": {
+      "status": "unavailable",
+      "note": "TWSE 資券餘額 API (TWT93U) 回傳 404，無法取得今日融資融券數據。"
+    },
+    "投信動向分析": {
+      "verdict": "投信今日大買+140億為近期罕見，護盤/季底作帳意圖明顯",
+      "重點買超": [
+        "2886 兆豐金 +350萬股",
+        "2882 國泰金 +275萬股",
+        "2890 永豐金 +129萬股",
+        "2881 富邦金 +89萬股"
+      ],
+      "策略解讀": "投信全面加碼金融股為今日最大護盤力量，半導體僅小幅承接"
+    },
+    "籌碼總評": {
+      "foreign_verdict": "外資賣超-483億連續第N日提款，但金額較前日(-222億)擴大，主因系統性賣壓",
+      "trust_verdict": "投信+140億逆勢大買，金融股為主要護盤標的，半導體僅小幅承接",
+      "dealer_verdict": "自營避險-147億顯示程式交易/避險盤仍在出場，避險情緒未消",
+      "key_observation": "三大法人合計-495億為近一週最大淨賣超，但投信強勁護盤使跌勢收斂。金融股資金集中度持續提高。"
     }
   }
 }
