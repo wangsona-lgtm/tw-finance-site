@@ -1,0 +1,115 @@
+{
+  "date": "2026-08-09",
+  "generated_at": "2026-08-09T07:05:00+08:00",
+  "title": "美股週末回顧 — 2026年8月9日",
+  "market_date": "2026-08-07（週五）",
+  "indices": {
+    "sp500": { "price": 7757.64, "change_points": 47.68, "change_pct": 0.62, "week_pct": 0.27, "direction": "up" },
+    "dow": { "price": 54036.93, "change_points": 151.83, "change_pct": 0.28, "week_pct": -0.09, "direction": "up" },
+    "nasdaq": { "price": 26690.62, "change_points": 342.27, "change_pct": 1.30, "week_pct": 0.40, "direction": "up" },
+    "russell2000": { "price": 3034.49, "change_points": 32.94, "change_pct": 1.10, "week_pct": -0.08, "direction": "up" },
+    "sox": { "price": 12356.79, "change_points": 308.10, "change_pct": 2.56, "week_pct": 1.46, "direction": "up", "rank": "最強" }
+  },
+  "key_stocks": {
+    "NVDA": { "price": 223.96, "change_pct": 2.27, "week_pct": 5.67, "direction": "up", "note": "本週最強" },
+    "AAPL": { "price": 313.33, "change_pct": 0.29, "week_pct": 1.28, "direction": "up" },
+    "MSFT": { "price": 499.99, "change_pct": 0.03, "week_pct": 1.46, "direction": "up" },
+    "AMZN": { "price": 274.48, "change_pct": 0.82, "week_pct": -1.06, "direction": "up" },
+    "GOOGL": { "price": 354.30, "change_pct": -0.96, "week_pct": -6.18, "direction": "down", "note": "本週重挫" },
+    "META": { "price": 592.10, "change_pct": 0.37, "week_pct": 0.71, "direction": "up" },
+    "TSLA": { "price": 328.58, "change_pct": 2.83, "week_pct": 0.38, "direction": "up" },
+    "TSM": { "price": 420.04, "change_pct": 0.44, "week_pct": 0.69, "direction": "up" },
+    "AMD": { "price": 483.36, "change_pct": -1.21, "week_pct": -6.79, "direction": "down", "note": "本週最弱" },
+    "AVGO": { "price": 427.76, "change_pct": 1.71, "week_pct": 2.30, "direction": "up" }
+  },
+  "sector_etfs": {
+    "XLV": { "name": "醫療", "price": 165.68, "change_pct": 0.75, "week_pct": 2.21, "direction": "up", "rank": "本週最強" },
+    "XLB": { "name": "原物料", "price": 52.86, "change_pct": 1.32, "week_pct": 1.65, "direction": "up" },
+    "XLY": { "name": "可選消費", "price": 119.86, "change_pct": 1.49, "week_pct": 1.33, "direction": "up" },
+    "SMH": { "name": "半導體", "price": 582.70, "change_pct": 1.96, "week_pct": 1.21, "direction": "up" },
+    "XLK": { "name": "科技", "price": 187.97, "change_pct": 1.42, "week_pct": 0.57, "direction": "up" },
+    "XLP": { "name": "必需消費", "price": 85.12, "change_pct": 0.01, "week_pct": -0.29, "direction": "down" },
+    "XLI": { "name": "工業", "price": 185.18, "change_pct": 0.23, "week_pct": -0.65, "direction": "down" },
+    "XLF": { "name": "金融", "price": 57.60, "change_pct": -0.36, "week_pct": -0.48, "direction": "down" },
+    "XLU": { "name": "公用事業", "price": 43.61, "change_pct": 0.53, "week_pct": -1.13, "direction": "down" },
+    "XLE": { "name": "能源", "price": 57.50, "change_pct": -1.13, "week_pct": -1.74, "direction": "down", "rank": "本週最弱" }
+  },
+  "macro": {
+    "dollar_index": { "price": 99.60, "change_pct": -0.37, "week_pct": -0.29, "direction": "down" },
+    "gold": { "price": 4340.70, "change_pct": 2.33, "week_pct": 5.99, "direction": "up", "note": "本週暴漲" },
+    "oil": { "price": 78.18, "change_pct": 1.15, "week_pct": 3.18, "direction": "up" },
+    "bitcoin": { "price": 64894, "change_pct": 0.00, "week_pct": 1.31, "direction": "flat" },
+    "t10_yield": { "price": 4.66, "change_pct": -0.01, "week_pct": 0.71, "direction": "down" },
+    "vix": { "price": 14.90, "change_pct": -1.65, "week_pct": -9.70, "direction": "down", "note": "恐慌降溫" }
+  },
+  "weekend_events": {
+    "macro": [
+      "美國參議院通過臨時撥款法案，暫緩政府停擺風險",
+      "參議院安排下週二8/11 14:00 ET 表決 Clarity Act（加密貨幣法案）",
+      "加拿大在貿易磋商中向美國讓步，希望阻止50%關稅",
+      "中國多家上市公司宣布收到美國關稅退稅",
+      "IMF駐華首席代表：中國服務消費增長強勁且後勁十足"
+    ],
+    "geopolitics": [
+      "美伊衝突仍處博弈中段，伊朗不徵霍爾木茲海峽過境費",
+      "伊朗官員稱美軍使用磷彈轟炸伊朗多地",
+      "阿曼以東海域船隻遭襲起火，土耳其推遲黑海船隻通行",
+      "美軍中央司令部司令訪以色列討論多戰線局勢",
+      "烏美就愛國者導彈供應達成協議",
+      "美愛國者導彈庫存不足1700枚"
+    ],
+    "tech_industry": [
+      "Berkshire 13F：66%持股集中AXP/AAPL/BAC/GOOGL/KO",
+      "美國能源公司起訴數據中心開發商，指控電費轉嫁",
+      "鐘睒睒：感性消費被線上平台扼殺，呼吁限制平台能力"
+    ],
+    "commodities": [
+      "黃金單週暴漲5.99%（$4095→$4341），地緣風險+美元走弱",
+      "白銀本週大漲9.8%（$57.67→$63.33）",
+      "原油本週+3.18%至$78.18，中東局勢支撐",
+      "美元指數收99.60，持續偏弱"
+    ],
+    "other": [
+      "颱風白海豚影響中國7省市",
+      "日本岩手縣近海5.6級地震",
+      "飛天茅台自營門店價格上調至1760元/瓶"
+    ]
+  },
+  "outlook": {
+    "futures": {
+      "ES=F": { "price": 7779.75, "change_pct": 0.58, "week_pct": 0.18 },
+      "NQ=F": { "price": 29834.75, "change_pct": 1.18, "week_pct": -0.10 },
+      "YM=F": { "price": 54152.00, "change_pct": 0.26, "week_pct": -0.21 },
+      "RTY=F": { "price": 3041.60, "change_pct": 1.08, "week_pct": -0.10 }
+    },
+    "prediction": "小幅高開至持平",
+    "bullish": [
+      "VIX本週大降-9.70%至14.90，恐慌消退",
+      "參議院通過臨時撥款法案，消除停擺風險",
+      "美伊談判進展，霍爾木茲海峽過境費不徵收",
+      "費半與NASDAQ週五強勢收盤，動能延續",
+      "半導體板塊週五全面反彈"
+    ],
+    "bearish": [
+      "中東局勢仍不穩定，伊朗稱美軍使用磷彈",
+      "黃金本週暴漲5.99%，資金流向避險",
+      "XLE能源板塊本週最弱，加美貿易摩擦升溫",
+      "AMD、GOOGL本週大跌逾6%，可能拖累科技板塊"
+    ],
+    "next_week_focus": [
+      { "date": "2026-08-11", "event": "參議院表決Clarity Act", "impact": "加密貨幣板塊" },
+      { "date": "8月中", "event": "特朗普計劃加徵加拿大50%關稅期限", "impact": "北美貿易供應鏈" },
+      { "date": "持續", "event": "美伊談判進展", "impact": "油價、軍工、海運" },
+      { "date": "持續", "event": "烏美愛國者導彈供應細節", "impact": "軍工板塊LMT/RTX/NOC" },
+      { "date": "持續", "event": "颱風白海豚影響", "impact": "供應鏈、航運" }
+    ],
+    "key_observations": [
+      "醫療XLV若延續強勢，確認市場防禦偏好升溫",
+      "黃金若持續突破，避險情緒主導將利空科技成長股",
+      "半導體週五強勢反彈，週一能否延續是試金石",
+      "GOOGL、AMD本週雙雙重挫逾6%，若續跌可能形成中期下行趨勢",
+      "VIX持續走低至14.90，過度樂觀時需警惕突發事件",
+      "黃金+原油同時走強，通常為通膨+地緣風險升溫訊號"
+    ]
+  }
+}
