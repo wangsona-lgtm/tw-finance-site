@@ -96,14 +96,110 @@
         "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_4.jpg"
       ],
       "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-08-10 (星期一)",
+      "category": "premarket",
+      "timestamp": "2026-08-10",
+      "summary": "🟢 美股全紅撐腰、ADR溢價擴大至+14.24%，但外資連賣+期貨空單高企（-87,911口），高檔震盪格局，開盤偏多、追高需謹慎。",
+      "market_context": {
+        "us_close": "2026-08-07",
+        "spx": 7757.64,
+        "spx_change_pct": 0.62,
+        "dow": 54036.93,
+        "dow_change_pct": 0.28,
+        "nasdaq": 26690.62,
+        "nasdaq_change_pct": 1.3,
+        "rut": 3034.49,
+        "rut_change_pct": 1.1,
+        "sox": 12356.79,
+        "sox_change_pct": 2.56,
+        "vix": 14.9,
+        "vix_change_pct": -1.65,
+        "tsm_adr": 420.04,
+        "tsm_adr_change_pct": 0.44,
+        "tsm_adr_afterhours": 420.95,
+        "taiex_prev_close": 44225.91,
+        "taiex_prev_change_pct": -0.38,
+        "usdtwd": 32.23,
+        "adr_premium_pct": 14.24,
+        "adr_premium_afterhours_pct": 14.49,
+        "foreign_futures_oi": -87911,
+        "foreign_cash_sell": 40.7,
+        "gold": 4403.0,
+        "gold_change_pct": 1.44,
+        "oil": 78.81,
+        "oil_change_pct": 0.81,
+        "btc": 64990,
+        "btc_change_pct": 0.13,
+        "tnx_pct": 4.66,
+        "tnx_change_pct": -0.21,
+        "usd_index": 99.63,
+        "expected_open": "44,400 ~ 44,600 (+0.4%~+0.8%)",
+        "support": "44,000 (整數關卡+上週低點43,941)",
+        "resistance": "44,612 (Aug5高點，突破即新高)",
+        "key_theme": "美股全紅（SOX +2.56% 最強）+ ADR溢價擴大至+14.24% = 開盤偏多；但外資現貨連賣+期貨空單-87,911口高企，高檔震盪格局，低接不追高。"
+      },
+      "recommendations": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "direction": "偏多/低接不追高",
+          "strategy": "ADR溢價+14.24%（盤後+14.49%）擴大 + SOX +2.56% 半導體強勢，2,340-2,360低接",
+          "recommend_price": 2350,
+          "target": "2410~2450",
+          "stop_loss": 2320,
+          "recommend_reason": "ADR溢價從+10.65%擴大至+14.24%為近期高位/SOX+2.56%夜盤偏多/2330於2320~2405區間震盪，低接風險有限"
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海",
+          "direction": "偏多/補漲續航",
+          "strategy": "外資上週買超1,014萬股（約+25.64億）成資金避風港，週五拉回260為低接機會",
+          "recommend_price": 259,
+          "target": "265~272",
+          "stop_loss": 252,
+          "recommend_reason": "外資在台積電獲利了結時的資金避風港/上週+2.77%表現穩健/Aug6盤中曾觸265目標"
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "direction": "觀望/等回檔",
+          "strategy": "連兩日漲停後動能顯著降溫，等回測3,800支撐量縮再低接",
+          "recommend_price": 3825,
+          "target": "4000~4100",
+          "stop_loss": 3750,
+          "recommend_reason": "從4,000高點回落至3,900動能衰竭/不建議追高/3,800支撐為關鍵觀察點"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-08-04",
+        "tracking_period": "2026-08-04 ~ 2026-08-07",
+        "total": 4,
+        "hit": 2,
+        "correct_watch": 0,
+        "miss": 2,
+        "hit_rate_pct": 50.0,
+        "positive_return": 1,
+        "positive_return_pct": 25.0,
+        "best": "2317 鴻海 (+2.77%, 盤中觸265目標低標, 外資買超邏輯驗證)",
+        "worst": "3231 緯創 (-1.34%, 8/4盤中198命中目標後四日反轉, 缺乏移動停利)",
+        "lessons": [
+          "ADR溢價不再單獨作為買入訊號，需配合外資現貨動向確認",
+          "連兩日漲停後不追高，應至少回檔一日再評估進場",
+          "動能股達目標後須設定移動停利，避免利潤回吐",
+          "低基期補漲+外資買盤為最可靠策略，優先使用"
+        ]
+      }
     }
   ],
   "stats": {
-    "total": 9,
+    "total": 10,
     "market": 6,
     "geopolitics": 3,
     "premium": 9,
-    "images": 5
+    "images": 5,
+    "premarket": 1
   },
   "key_themes": [
     "伊朗局勢升溫 — 荷姆茲海峽僵局 + 處決異見雙線並行",
