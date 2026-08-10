@@ -101,14 +101,106 @@
       "timestamp": "2026-08-11",
       "images": [],
       "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-08-11 (星期二)",
+      "category": "premarket",
+      "timestamp": "2026-08-11",
+      "summary": "🔴 費半重跌-2.94%、原油暴漲+5.01%（Hormuz供應風險）、黃金飆至$4,458避險升溫；昨日台股大漲+1.59%至44,928後，今日面臨獲利了結+半導體回測雙重壓力，開平至小跌，能源/塑化有輪動機會。",
+      "market_context": {
+        "us_close": "2026-08-10",
+        "spx": 7753.11,
+        "spx_change_pct": -0.06,
+        "dow": 53975.98,
+        "dow_change_pct": -0.11,
+        "nasdaq": 26605.36,
+        "nasdaq_change_pct": -0.32,
+        "rut": 3017.4,
+        "rut_change_pct": -0.56,
+        "sox": 11993.86,
+        "sox_change_pct": -2.94,
+        "vix": 15.46,
+        "vix_change_pct": 3.76,
+        "tsm_adr": 418.47,
+        "tsm_adr_change_pct": -0.37,
+        "taiex_prev_close": 44928,
+        "taiex_prev_change_pct": 1.59,
+        "usdtwd": 32.227,
+        "adr_premium_pct": 13.33,
+        "foreign_futures_oi": -89201,
+        "gold": 4457.9,
+        "gold_change_pct": 2.7,
+        "oil": 82.1,
+        "oil_change_pct": 5.01,
+        "btc": 63938,
+        "btc_change_pct": -1.4,
+        "tnx_pct": 4.7,
+        "tnx_change_pct": 0.84,
+        "usd_index": 99.81,
+        "expected_open": "44,800 ~ 45,000（約平盤，開平至小跌）",
+        "support": "44,500 → 44,000（整數關卡）",
+        "resistance": "45,219（前高，突破即新高）",
+        "key_theme": "費半重跌-2.94%（NVDA/AMD同跌-2.86%）+ 原油暴漲+5.01%（Hormuz海峽供應風險）+ 黃金$4,458避險升溫 + 外資期貨淨空單-89,201口高企；昨日大漲+1.59%後獲利了結+半導體回測雙重壓力，開平至小跌，能源/塑化受惠油價，AI電源管理動能延續但漲停股需等回檔進場。"
+      },
+      "recommendations": [
+        {
+          "symbol": "2317",
+          "name": "鴻海",
+          "direction": "偏多/穩健加碼",
+          "strategy": "低基期補漲+外資避風港，AI伺服器ODM不受SOX直接衝擊，262~265區間分批",
+          "recommend_price": 263,
+          "target": "268~275",
+          "stop_loss": 256,
+          "recommend_reason": "連續兩週命中的低基期補漲策略（命中率最高）/外資替代台積電的避風港標的/費半-2.94%對ODM本質影響有限/AI伺服器題材持續"
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "direction": "偏多/動能延續（高風險）",
+          "strategy": "等盤中回檔1,750~1,800再進場，切勿追開盤",
+          "recommend_price": 1775,
+          "target": "1850~1950",
+          "stop_loss": 1700,
+          "recommend_reason": "昨日漲停+10%，AI電源管理為當前最強子題材/漲停量能萎縮（9.4M vs 8/4的20M）籌碼穩定/⚠️漲停次日獲利了結風險極高必須等回檔/SOX雖跌但電源管理非純半導體關聯度低"
+        },
+        {
+          "symbol": "6505",
+          "name": "台塑化",
+          "direction": "偏多/原油受惠",
+          "strategy": "油價暴漲+5.01%至$82.10（Hormuz供應擔憂），昨日先跌今日反彈補漲",
+          "recommend_price": 69,
+          "target": "72~76",
+          "stop_loss": 66,
+          "recommend_reason": "原油暴漲+5.01%（Hormuz海峽風險）/昨日-2.82%在油價大漲前先被賣，有望反彈補漲/美股能源板塊+4.66%帶動/煉油裂解價差擴大直接受惠/需確認油價非單日事件，若今晚回落需停損"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-08-10",
+        "tracking_period": "2026-08-10",
+        "total": 3,
+        "hit": 1,
+        "correct_watch": 0,
+        "miss": 2,
+        "hit_rate_pct": 33.3,
+        "positive_return": 3,
+        "positive_return_pct": 100.0,
+        "best": "2317 鴻海 (+1.73%, 盤中觸266.5進入目標區265~272, 低基期補漲+外資策略再度驗證)",
+        "worst": "2330 台積電 (+0.42%, 目標2410~2450未達且落後大盤1.17pp, ADR溢價策略第三週失靈)",
+        "lessons": [
+          "ADR溢價正式降級為「觀察指標」而非「買入訊號」，連續三週失靈",
+          "低基期補漲+外資青睞維持為核心選股邏輯，提高配置權重",
+          "連漲停後動能衰竭期目標應保守下修（如2454改3,950~4,000），加入成交量萎縮確認條件"
+        ]
+      }
     }
   ],
   "stats": {
-    "total": 10,
+    "total": 11,
     "premium": 10,
     "market": 8,
     "geopolitics": 2,
-    "withImages": 4
+    "withImages": 4,
+    "premarket": 1
   },
   "keyThemes": [
     "NVDA 5000 億美元 AI 融資 — 史上最大離表 SPV，引發「循環融資」泡沫擔憂",
