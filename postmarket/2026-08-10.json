@@ -1,0 +1,438 @@
+{
+  "date": "2026-08-10",
+  "generated_at": "2026-08-10T13:42:00+08:00",
+  "title": "台股收盤速報 — 2026-08-10",
+  "market": "TWSE",
+  "indices": {
+    "TAIEX": {
+      "close": 45011.03,
+      "change": 785.12,
+      "pct": 1.78,
+      "open": 44540.71,
+      "high": 45219.4,
+      "low": 44540.71,
+      "prev_close": 44225.91,
+      "direction": "up"
+    },
+    "OTC": {
+      "close": null,
+      "note": "櫃買指數 yfinance未提供，盤中報+2.04%至392.01"
+    },
+    "ITEQ": {
+      "name": "ITEQ (台灣電子ETF替代)",
+      "close": 65.96,
+      "change": 1.7,
+      "pct": 2.64,
+      "direction": "up"
+    }
+  },
+  "key_stocks": {
+    "2330": {
+      "name": "台積電",
+      "close": 2390.0,
+      "change": 20.0,
+      "pct": 0.84,
+      "direction": "up"
+    },
+    "2454": {
+      "name": "聯發科",
+      "close": 3970.0,
+      "change": 70.0,
+      "pct": 1.79,
+      "direction": "up"
+    },
+    "2317": {
+      "name": "鴻海",
+      "close": 264.5,
+      "change": 4.5,
+      "pct": 1.73,
+      "direction": "up"
+    },
+    "2308": {
+      "name": "台達電",
+      "close": 1815.0,
+      "change": 165.0,
+      "pct": 10.0,
+      "direction": "up"
+    },
+    "2382": {
+      "name": "廣達",
+      "close": 312.5,
+      "change": 14.5,
+      "pct": 4.87,
+      "direction": "up"
+    },
+    "2891": {
+      "name": "中信金",
+      "close": 66.5,
+      "change": 0.9,
+      "pct": 1.37,
+      "direction": "up"
+    },
+    "2881": {
+      "name": "富邦金",
+      "close": 129.0,
+      "change": 2.0,
+      "pct": 1.57,
+      "direction": "up"
+    },
+    "2882": {
+      "name": "國泰金",
+      "close": 100.5,
+      "change": 1.1,
+      "pct": 1.11,
+      "direction": "up"
+    },
+    "2892": {
+      "name": "第一金",
+      "close": 35.05,
+      "change": -0.5,
+      "pct": -1.41,
+      "direction": "down"
+    },
+    "2884": {
+      "name": "玉山金",
+      "close": 37.8,
+      "change": -0.35,
+      "pct": -0.92,
+      "direction": "down"
+    },
+    "2885": {
+      "name": "元大金",
+      "close": 68.5,
+      "change": 0.8,
+      "pct": 1.18,
+      "direction": "up"
+    },
+    "2886": {
+      "name": "兆豐金",
+      "close": 51.0,
+      "change": 0.1,
+      "pct": 0.2,
+      "direction": "up"
+    },
+    "2890": {
+      "name": "永豐金",
+      "close": 39.0,
+      "change": 0.05,
+      "pct": 0.13,
+      "direction": "up"
+    },
+    "1303": {
+      "name": "南亞",
+      "close": 186.0,
+      "change": -2.0,
+      "pct": -1.06,
+      "direction": "down"
+    },
+    "1326": {
+      "name": "台化",
+      "close": 58.9,
+      "change": 0.0,
+      "pct": 0.0,
+      "direction": "flat"
+    },
+    "1301": {
+      "name": "台塑",
+      "close": 55.7,
+      "change": -0.1,
+      "pct": -0.18,
+      "direction": "down"
+    },
+    "1216": {
+      "name": "統一",
+      "close": 75.5,
+      "change": -0.2,
+      "pct": -0.26,
+      "direction": "down"
+    },
+    "3008": {
+      "name": "大立光",
+      "close": 4400.0,
+      "change": 15.0,
+      "pct": 0.34,
+      "direction": "up"
+    },
+    "2379": {
+      "name": "瑞昱",
+      "close": 757.0,
+      "change": 7.0,
+      "pct": 0.93,
+      "direction": "up"
+    },
+    "2303": {
+      "name": "聯電",
+      "close": 123.0,
+      "change": 7.0,
+      "pct": 6.03,
+      "direction": "up"
+    },
+    "3231": {
+      "name": "緯創",
+      "close": 193.0,
+      "change": 9.5,
+      "pct": 5.18,
+      "direction": "up"
+    },
+    "2408": {
+      "name": "南亞科",
+      "close": 502.0,
+      "change": 45.0,
+      "pct": 9.85,
+      "direction": "up"
+    },
+    "2474": {
+      "name": "可成",
+      "close": 200.5,
+      "change": 13.0,
+      "pct": 6.93,
+      "direction": "up"
+    },
+    "2388": {
+      "name": "威盛",
+      "close": 80.8,
+      "change": 2.9,
+      "pct": 3.72,
+      "direction": "up"
+    },
+    "2301": {
+      "name": "光寶科",
+      "close": 271.5,
+      "change": 24.5,
+      "pct": 9.92,
+      "direction": "up"
+    },
+    "2327": {
+      "name": "國巨",
+      "close": 572.0,
+      "change": 32.0,
+      "pct": 5.93,
+      "direction": "up"
+    },
+    "3481": {
+      "name": "群創",
+      "close": 52.3,
+      "change": 4.75,
+      "pct": 9.99,
+      "direction": "up"
+    },
+    "2409": {
+      "name": "友達",
+      "close": 27.0,
+      "change": 2.45,
+      "pct": 9.98,
+      "direction": "up"
+    },
+    "6116": {
+      "name": "彩晶",
+      "close": 14.9,
+      "change": 1.35,
+      "pct": 9.96,
+      "direction": "up"
+    },
+    "8046": {
+      "name": "南電",
+      "close": 1125.0,
+      "change": 45.0,
+      "pct": 4.17,
+      "direction": "up"
+    },
+    "3037": {
+      "name": "欣興",
+      "close": 988.0,
+      "change": 33.0,
+      "pct": 3.46,
+      "direction": "up"
+    },
+    "3711": {
+      "name": "合勤控",
+      "close": 630.0,
+      "change": 45.0,
+      "pct": 7.69,
+      "direction": "up"
+    },
+    "4938": {
+      "name": "和碩",
+      "close": 89.5,
+      "change": 2.4,
+      "pct": 2.76,
+      "direction": "up"
+    },
+    "2354": {
+      "name": "鴻準",
+      "close": 63.1,
+      "change": 1.3,
+      "pct": 2.1,
+      "direction": "up"
+    },
+    "2360": {
+      "name": "致茂",
+      "close": 2035.0,
+      "change": 5.0,
+      "pct": 0.25,
+      "direction": "up"
+    },
+    "2459": {
+      "name": "敦吉",
+      "close": 66.1,
+      "change": 0.9,
+      "pct": 1.38,
+      "direction": "up"
+    },
+    "2302": {
+      "name": "麗正",
+      "close": 42.65,
+      "change": -0.25,
+      "pct": -0.58,
+      "direction": "down"
+    },
+    "6505": {
+      "name": "台塑化",
+      "close": 69.6,
+      "change": -1.4,
+      "pct": -1.97,
+      "direction": "down"
+    },
+    "2207": {
+      "name": "和泰車",
+      "close": 515.0,
+      "change": -1.0,
+      "pct": -0.19,
+      "direction": "down"
+    },
+    "3532": {
+      "name": "台嘉晶",
+      "close": 284.0,
+      "change": -28.5,
+      "pct": -9.12,
+      "direction": "down"
+    }
+  },
+  "gainers_top10": [
+    {
+      "id": "2308",
+      "name": "台達電",
+      "pct": 10.0
+    },
+    {
+      "id": "3481",
+      "name": "群創",
+      "pct": 9.99
+    },
+    {
+      "id": "2409",
+      "name": "友達",
+      "pct": 9.98
+    },
+    {
+      "id": "6116",
+      "name": "彩晶",
+      "pct": 9.96
+    },
+    {
+      "id": "2301",
+      "name": "光寶科",
+      "pct": 9.92
+    },
+    {
+      "id": "2408",
+      "name": "南亞科",
+      "pct": 9.85
+    },
+    {
+      "id": "3711",
+      "name": "合勤控",
+      "pct": 7.69
+    },
+    {
+      "id": "2474",
+      "name": "可成",
+      "pct": 6.93
+    },
+    {
+      "id": "2303",
+      "name": "聯電",
+      "pct": 6.03
+    },
+    {
+      "id": "2327",
+      "name": "國巨",
+      "pct": 5.93
+    }
+  ],
+  "losers_top5": [
+    {
+      "id": "2884",
+      "name": "玉山金",
+      "pct": -0.92
+    },
+    {
+      "id": "1303",
+      "name": "南亞",
+      "pct": -1.06
+    },
+    {
+      "id": "2892",
+      "name": "第一金",
+      "pct": -1.41
+    },
+    {
+      "id": "6505",
+      "name": "台塑化",
+      "pct": -1.97
+    },
+    {
+      "id": "3532",
+      "name": "台嘉晶",
+      "pct": -9.12
+    }
+  ],
+  "us_ref": {
+    "TSM": {
+      "name": "台積電ADR",
+      "close": 420.04,
+      "change": 1.84,
+      "pct": 0.44
+    },
+    "NVDA": {
+      "name": "輝達",
+      "close": 223.96,
+      "change": 4.97,
+      "pct": 2.27
+    },
+    "AAPL": {
+      "name": "Apple",
+      "close": 313.33,
+      "change": 0.92,
+      "pct": 0.29
+    },
+    "AMD": {
+      "name": "AMD",
+      "close": 483.36,
+      "change": -5.92,
+      "pct": -1.21
+    },
+    "ASML": {
+      "name": "ASML",
+      "close": 1740.99,
+      "change": 36.62,
+      "pct": 2.15
+    }
+  },
+  "fx": {
+    "USDTWD": {
+      "close": 32.21,
+      "change": 0.0032,
+      "direction": "up"
+    }
+  },
+  "notes": [
+    "台達電(2308)開盤即漲停+10%至1815元，AI散熱/電源題材火熱",
+    "面板雙虎群創(+9.99%)、友達(+9.98%)近漲停",
+    "光寶科(+9.92%)、南亞科(+9.85%)強勢漲停",
+    "記憶體族群聯電(+5.60%)、南亞科(+9.85%)聯袂走強",
+    "傳產相對弱勢：南亞(-1.60%)、台塑化(-1.83%)、第一金(-1.69%)",
+    "加權指數收復45,000點關卡，開盤44,540後一路走高",
+    "資料來源：yfinance (^TWII, 個股Ticker)，盤中速報：鉅亨網/經濟日報"
+  ]
+}
