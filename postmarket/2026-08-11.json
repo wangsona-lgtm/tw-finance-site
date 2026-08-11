@@ -1,23 +1,234 @@
 {
   "date": "2026-08-11",
-  "title": "台股收盤速報 — 2026-08-11",
-  "generated_at": "2026-08-11T13:42:30.495975+08:00",
-  "sections": [
-    {
-      "title": "📊 加權指數",
-      "content": "收盤 45120.72 點\n🟢 漲 192 點（+0.43%）\n開高低：44883.90 / 45195.41 / 44652.06\n昨收：44928.76"
+  "title": "台股盤後籌碼分析 — 2026-08-11（週二）",
+  "generated_at": "2026-08-11T16:10:00+08:00",
+  "market": "TWSE",
+
+  "summary": {
+    "taiex": {
+      "close": 45120.72,
+      "change": 191.96,
+      "change_pct": 0.43,
+      "direction": "up",
+      "open": 44883.90,
+      "high": 45195.41,
+      "low": 44652.06,
+      "previous_close": 44928.76
     },
-    {
-      "title": "🏭 權值股",
-      "content": "台積電(2330): 2,400 元 (+20, +0.84%)\nTSM ADR: 418.47 (-0.37%)\nADR 溢價: ~+13.3%"
+    "broad_index": {
+      "name": "寶島股價指數",
+      "close": 50045.53,
+      "change": 199.01,
+      "change_pct": 0.40
     },
-    {
-      "title": "💵 匯率",
-      "content": "USD/TWD: 32.24\n台幣微貶，對外資方面影響有限"
+    "tai50": {
+      "name": "臺灣50指數",
+      "close": 41877.82,
+      "change": 235.02,
+      "change_pct": 0.56
     },
-    {
-      "title": "📅 盤後資訊",
-      "content": "三大法人買賣超待 16:00 公布\n期貨籌碼待 18:00 後更新\n融資融券餘額待 21:30 後更新"
+    "trading_stats": {
+      "total_volume": 9729632,
+      "total_volume_unit": "千股",
+      "total_value": 8957.30,
+      "total_value_unit": "億元",
+      "total_trades": 4473265,
+      "prev_total_value": 8804.41
+    },
+    "fx_usdtwd": 32.267,
+    "fx_change": 0.032,
+    "fx_change_pct": 0.10,
+    "fx_direction": "up"
+  },
+
+  "indices": {
+    "發行量加權股價指數": {
+      "close": 45120.72,
+      "change": 191.96,
+      "change_pct": 0.43,
+      "direction": "up"
+    },
+    "寶島股價指數": {
+      "close": 50045.53,
+      "change": 199.01,
+      "change_pct": 0.40,
+      "direction": "up"
+    },
+    "臺灣50指數": {
+      "close": 41877.82,
+      "change": 235.02,
+      "change_pct": 0.56,
+      "direction": "up"
+    },
+    "資訊科技指數": {
+      "close": 87885.11,
+      "change": 588.82,
+      "change_pct": 0.67,
+      "direction": "up"
+    },
+    "電子工業類指數": {
+      "close": 2876.73,
+      "change": 15.54,
+      "change_pct": 0.54,
+      "direction": "up"
+    },
+    "半導體類指數": {
+      "close": 1529.65,
+      "change": 8.90,
+      "change_pct": 0.59,
+      "direction": "up"
+    },
+    "金融保險類指數": {
+      "close": 3174.73,
+      "change": -36.30,
+      "change_pct": -1.13,
+      "direction": "down"
     }
+  },
+
+  "stocks": {
+    "2330": { "name": "台積電", "close": 2395.0, "change": 15.0, "change_pct": 0.63, "direction": "up" },
+    "2454": { "name": "聯發科", "close": 4020.0, "change": 60.0, "change_pct": 1.52, "direction": "up" },
+    "2317": { "name": "鴻海", "close": 263.0, "change": -1.5, "change_pct": -0.57, "direction": "down" },
+    "2308": { "name": "台達電", "close": 1805.0, "change": -10.0, "change_pct": -0.55, "direction": "down" },
+    "2382": { "name": "廣達", "close": 315.5, "change": 2.0, "change_pct": 0.64, "direction": "up" },
+    "3008": { "name": "大立光", "close": 4355.0, "change": -45.0, "change_pct": -1.02, "direction": "down" },
+    "2303": { "name": "聯電", "close": 123.0, "change": 0.0, "change_pct": 0.00, "direction": "flat" },
+    "3231": { "name": "緯創", "close": 191.0, "change": -2.0, "change_pct": -1.04, "direction": "down" },
+    "2408": { "name": "南亞科", "close": 489.0, "change": -13.0, "change_pct": -2.59, "direction": "down" },
+    "3481": { "name": "群創", "close": 50.1, "change": -2.2, "change_pct": -4.21, "direction": "down" },
+    "2409": { "name": "友達", "close": 26.1, "change": -0.9, "change_pct": -3.33, "direction": "down" },
+    "6116": { "name": "彩晶", "close": 14.2, "change": -0.7, "change_pct": -4.70, "direction": "down" },
+    "2301": { "name": "光寶科", "close": 268.5, "change": -3.0, "change_pct": -1.10, "direction": "down" },
+    "2327": { "name": "國巨", "close": 617.0, "change": 44.0, "change_pct": 7.68, "direction": "up" },
+    "3711": { "name": "合勤控", "close": 629.0, "change": -1.0, "change_pct": -0.16, "direction": "down" },
+    "2474": { "name": "可成", "close": 206.0, "change": 5.0, "change_pct": 2.49, "direction": "up" },
+    "2881": { "name": "富邦金", "close": 128.0, "change": -0.5, "change_pct": -0.39, "direction": "down" },
+    "2882": { "name": "國泰金", "close": 99.6, "change": -1.4, "change_pct": -1.39, "direction": "down" }
+  },
+
+  "sector_performance": {
+    "gainers": [
+      { "name": "生技醫療類指數", "change": 3.95, "change_pct": 4.03 },
+      { "name": "居家生活類指數", "change": 3.21, "change_pct": 3.13 },
+      { "name": "化學生技醫療類指數", "change": 5.29, "change_pct": 3.11 },
+      { "name": "油電燃氣類指數", "change": 2.37, "change_pct": 2.51 },
+      { "name": "運動休閒類指數", "change": 1.33, "change_pct": 2.23 },
+      { "name": "塑膠化工類指數", "change": 22.26, "change_pct": 2.14 },
+      { "name": "玻璃陶瓷類指數", "change": 2.70, "change_pct": 2.06 },
+      { "name": "電子零組件類指數", "change": 16.63, "change_pct": 1.88 },
+      { "name": "塑膠類指數", "change": 4.81, "change_pct": 1.52 },
+      { "name": "其他類指數", "change": 3.86, "change_pct": 1.41 }
+    ],
+    "losers": [
+      { "name": "綠能環保類指數", "change": -3.17, "change_pct": -2.26 },
+      { "name": "光電類指數", "change": -1.20, "change_pct": -1.89 },
+      { "name": "電子通路類指數", "change": -5.41, "change_pct": -1.39 },
+      { "name": "金融保險類指數", "change": -36.30, "change_pct": -1.13 },
+      { "name": "通信網路類指數", "change": -2.26, "change_pct": -0.96 },
+      { "name": "建材營造類指數", "change": -3.70, "change_pct": -0.81 }
+    ]
+  },
+
+  "us_ref": {
+    "S&P500": { "close": 7753.11, "change": -4.53, "change_pct": -0.06 },
+    "Nasdaq": { "close": 26605.36, "change": -85.26, "change_pct": -0.32 },
+    "Dow": { "close": 53975.98, "change": -60.95, "change_pct": -0.11 },
+    "SOX": { "close": 11993.86, "change": -362.93, "change_pct": -2.94 },
+    "VIX": { "close": 15.43, "change": -0.03, "change_pct": -0.19 },
+    "TSM": { "close": 418.47, "change": -1.57, "change_pct": -0.37 },
+    "NVDA": { "close": 217.55, "change": -6.41, "change_pct": -2.86 },
+    "AAPL": { "close": 308.26, "change": -4.80, "change_pct": -1.53 },
+    "AMD": { "close": 469.56, "change": -13.80, "change_pct": -2.86 }
+  },
+
+  "postmarket": {
+    "institutional_trading": {
+      "foreign": { "buy_100m": 3490.00, "sell_100m": 3266.71, "net_100m": 223.29 },
+      "investment_trust": { "buy_100m": 169.66, "sell_100m": 135.76, "net_100m": 33.90 },
+      "proprietary": { "buy_100m": 341.05, "sell_100m": 316.45, "net_100m": 24.61 },
+      "total": { "buy_100m": 4000.70, "sell_100m": 3718.92, "net_100m": 281.79 }
+    },
+
+    "futures_positions": {
+      "as_of_date": "20260810 (期交所延遲更新，最新為前日資料)",
+      "foreign_tx_oi_net": { "oi": -89201, "interpretation": "外資台指期淨空單維持高檔" },
+      "trust_tx_oi_net": { "oi": 83751, "interpretation": "投信多單持續持有" },
+      "proprietary_tx_oi_net": { "oi": 1679, "interpretation": "自營商偏多" },
+      "foreign_all_futures_oi_net": -509518,
+      "put_call_ratio": {
+        "volume_ratio_pct": 114.87,
+        "oi_ratio_pct": 117.38,
+        "put_volume": 114188,
+        "call_volume": 99406,
+        "put_oi": 85342,
+        "call_oi": 72704,
+        "interpretation": "P/C OI >117%，偏空氛圍維持"
+      }
+    },
+
+    "next_day_events": [
+      "美國 7 月 CPI 數據將於 08/12（週三）台灣時間 20:30 公布",
+      "SOX 半導體指數單日重挫 -2.94%，留意台股電子族群連動",
+      "金融保險類 -1.13% 弱勢，國泰金(-1.39%)、富邦金(-0.39%)，觀察是否延續",
+      "VIX 15.43 低檔震盪，系統性風險暫可控",
+      "外資現貨買超 +223 億但期貨 OI 淨空單 -509,518 口，留意外資兩面手法"
+    ],
+
+    "market_assessment": {
+      "text": "加權指數收 45,120.72 點（+191.96 / +0.43%），站上 45,000 整數關卡。面K線開高走高收紅，成交值 8,957 億元（較前日 8,804 億增溫）。三大法人合計買超 281.79 億，外資現貨買超 223 億為最大亮點，投信延續買超 33.90 億。然外資台指期 OI 淨空單高達 -509,518 口（-89,201 口 TX），現貨買超 + 期貨偏空的兩面手法需留意。強勢族群集中在生技醫療(+4.03%)、居家生活(+3.13%)、油電燃氣(+2.51%)，傳產防禦與題材股表態；金融(-1.13%)、光電(-1.89%)、綠能環保(-2.26%)弱勢。面板雙虎群創(-4.21%)、友達(-3.33%)在前日漲停後拉回明顯。TSM ADR 溢價 +12.76%，SOX 重挫 -2.94% 對台股半導體形成壓力。"
+    }
+  },
+
+  "full_chip_data": {
+    "margin_short": {
+      "as_of_date": "2026-08-10 (08/11 融資融券資料尚未更新，期交所延遲)",
+      "margin_balance_shares": 9003223,
+      "margin_balance_change": 16786,
+      "margin_balance_amount_100m": 5452.96,
+      "margin_balance_amount_change_100m": 76.31,
+      "short_balance_shares": 202632,
+      "short_balance_change": 9892
+    },
+
+    "market_breadth": {
+      "tse_advances": 385,
+      "tse_limit_up": 13,
+      "tse_declines": 588,
+      "tse_limit_down": 4,
+      "tse_unchanged": 102,
+      "overall_advances": 4713,
+      "overall_limit_up": 97,
+      "overall_declines": 7407,
+      "overall_limit_down": 101,
+      "advance_decline_ratio": "0.65 (下跌家數多於上漲)"
+    },
+
+    "strong_sectors": [
+      "生技醫療(+4.03%)",
+      "居家生活(+3.13%)",
+      "油電燃氣(+2.51%)",
+      "塑膠化工(+2.14%)",
+      "電子零組件(+1.88%)"
+    ],
+    "weak_sectors": [
+      "綠能環保(-2.26%)",
+      "光電(-1.89%)",
+      "電子通路(-1.39%)",
+      "金融保險(-1.13%)",
+      "通信網路(-0.96%)"
+    ],
+
+    "overall_assessment": {
+      "text": "三大法人合計買超 281.79 億，外資買超 223.29 億為主軸。台積電收 2,395(+0.63%)表現溫和，ADR 溢價 +12.76% 但美國 SOX 重挫 -2.94% 形成 AI/半導體族群壓力。國巨(+7.68%)為今日權值股最大亮點，面板族群在昨日的全面漲停後拉回。金融類股走弱(-1.13%)拖累指數漲幅。整體盤面呈「傳產強、金融弱、電子分化」格局。漲跌家數 385:588 仍偏空（下跌家數多於上漲），指數上漲主要由權值股帶動。融資融券資料以 08/10 為基準：融資餘額 9,003,223 張(+16,786)，融資金額 5,452.96 億(+76.31 億)，融券餘額 202,632 張(+9,892)。"
+    }
+  },
+
+  "notes": [
+    "資料來源：TWSE BFI82U（三大法人）、MI_INDEX type=IND/MS（指數/統計）、FMTQIK（成交資訊）、TAIFEX OpenAPI（期貨法人）、yfinance（個股/ADR/美股）",
+    "TAIFEX 期貨法人數據日期為 20260810（期交所今日盤後資料通常 18:00-20:00 後更新，本次 16:00 抓取為前日最新可用資料）",
+    "融資融券 MI_MARGN 今日資料尚未上線，使用 08/10 數據",
+    "ADR premium 計算：418.47 × 32.267 ÷ 5 ÷ 2395 - 1 = +12.76%",
+    "US 市場數據為 08/10（週一）收盤"
   ]
 }
