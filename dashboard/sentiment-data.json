@@ -1,39 +1,7 @@
 {
-  "updated": "2026-08-10T16:05:05.791211",
-  "today": "20260810",
-  "institution": {
-    "date": "20260810",
-    "自營商": {
-      "buy": 35447978911,
-      "sell": 22258014153,
-      "diff": 13189964758
-    },
-    "投信": {
-      "buy": 16221682632,
-      "sell": 13237316434,
-      "diff": 2984366198
-    },
-    "外資及陸資": {
-      "buy": 326532363026,
-      "sell": 274817477894,
-      "diff": 51714885132
-    },
-    "外資自營商": {
-      "buy": 0,
-      "sell": 0,
-      "diff": 0
-    },
-    "合計": {
-      "buy": 388856308796,
-      "sell": 315688931509,
-      "diff": 73167377287
-    },
-    "自營商合計": {
-      "buy": 46102263138,
-      "sell": 27634137181,
-      "diff": 18468125957
-    }
-  },
+  "updated": "2026-08-11T11:19:52.316113",
+  "today": "20260811",
+  "institution": {},
   "pc_ratio": {
     "date": "2026/8/10",
     "call_vol": 114188,
@@ -45,9 +13,9 @@
   },
   "futures": {
     "note": "期貨(全部合約) Net OI per TAIFEX",
-    "last_seen_date": "2026/08/07",
-    "foreign_tx_net": "-502,906",
-    "total_inst_futures_net": "-679,159"
+    "last_seen_date": "2026/08/10",
+    "foreign_tx_net": "-509,518",
+    "total_inst_futures_net": "-690,818"
   },
-  "error": null
+  "error": "Institution: Expecting value: line 1 column 1 (char 0)"
 }
