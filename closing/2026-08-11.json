@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-11",
+  "dayOfWeek": "二",
+  "marketStatus": "closed",
+  "index": {
+    "name": "TAIEX 加權指數",
+    "close": 45120.72,
+    "change": 191.96,
+    "changePercent": 0.43,
+    "open": 44883.9,
+    "high": 45195.41,
+    "low": 44652.06,
+    "prevClose": 44928.76,
+    "volume": 0,
+    "feature": "🟢 漲 192 點（+0.43%）"
+  },
+  "stocks": [],
+  "summary": "今日台股收盤 45120.72 點，🟢 漲 192 點（+0.43%）。台積電收 2,400 元（+0.84%）領潮。最高 45,195.41，最低 44,652.06。"
+}
