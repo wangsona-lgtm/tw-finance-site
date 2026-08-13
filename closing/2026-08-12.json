@@ -4,15 +4,15 @@
   "marketStatus": "closed",
   "index": {
     "name": "TAIEX 加權指數",
-    "close": 45986.5,
-    "change": 468.43,
-    "changePercent": 1.03,
+    "close": 45967.35,
+    "change": 449.28,
+    "changePercent": 0.99,
     "open": 45676.54,
     "high": 46216.41,
     "low": 45676.54,
     "prevClose": 45518.07,
     "volume": 0,
-    "feature": "🟢 漲 468 點（+1.03%）"
+    "feature": "🟢 漲 449 點（+0.99%）"
   },
   "stocks": [
     {
