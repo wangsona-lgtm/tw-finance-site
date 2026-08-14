@@ -37,13 +37,24 @@ def get_twse_inst(date_str):
         buy = int(r[1].replace(',',''))
         sell = int(r[2].replace(',',''))
         diff = int(r[3].replace(',',''))
-        key = name.replace('(不含外資自營商)','').replace('(自行買賣)','').replace('(避險)','')
+        if '外資及陸資' in name:
+            key = 'foreign'
+        elif name == '投信':
+            key = 'trust'
+        elif '自營商' in name and '避險' not in name and '自行買賣' not in name:
+            key = 'dealer'
+        elif '自行買賣' in name:
+            key = 'dealer_self'
+        elif '避險' in name:
+            key = 'dealer_hedge'
+        else:
+            continue
         result[key] = {'buy': buy, 'sell': sell, 'diff': diff}
     # Calculate totals for dealer (自行買賣 + 避險)
     dealer_buy = sum(int(r[1].replace(',','')) for r in data.get('data',[]) if '自營商' in r[0] and '外資' not in r[0])
     dealer_sell = sum(int(r[2].replace(',','')) for r in data.get('data',[]) if '自營商' in r[0] and '外資' not in r[0])
     dealer_diff = sum(int(r[3].replace(',','')) for r in data.get('data',[]) if '自營商' in r[0] and '外資' not in r[0])
-    result['自營商合計'] = {'buy': dealer_buy, 'sell': dealer_sell, 'diff': dealer_diff}
+    result['dealer_total'] = {'buy': dealer_buy, 'sell': dealer_sell, 'diff': dealer_diff}
     
     # 備註：原「自營商」key 會被後者覆蓋（因為 (自行買賣) 和 (避險) 都對應到同一 key）
     return result
@@ -101,6 +112,37 @@ def get_tx_futures(dt):
         print(f'TAIFEX futures API error: {e}')
         return None
 
+def get_institutional_oi():
+    """Fetch futures/options open interest split by the three institutions."""
+    url = 'https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDividedByFuturesAndOptionsBytheDate'
+    try:
+        req = urllib.request.Request(url, headers=H)
+        resp = urllib.request.urlopen(req, context=ctx, timeout=15)
+        data = json.loads(resp.read().decode('utf-8'))
+        if not isinstance(data, list) or not data:
+            return None
+        items = []
+        name_map = {'自營商': 'dealer', '投信': 'trust', '外資及陸資': 'foreign'}
+        for row in data:
+            name = name_map.get(row.get('Item', ''))
+            if not name:
+                continue
+            def iv(key):
+                return int(row.get(key, 0) or 0)
+            items.append({
+                'name': name,
+                'futures_long': iv('FuturesOpenInterest(Long)'),
+                'futures_short': iv('FuturesOpenInterest(Short)'),
+                'futures_net': iv('FuturesOpenInterest(Net)'),
+                'options_long': iv('OptionsOpenInterest(Long)'),
+                'options_short': iv('OptionsOpenInterest(Short)'),
+                'options_net': iv('OptionsOpenInterest(Net)'),
+            })
+        return {'date': data[0].get('Date', ''), 'items': items}
+    except Exception as e:
+        print(f'TAIFEX institutional OI API error: {e}')
+        return None
+
 def main():
     today = datetime.datetime.today()
     today_str = today.strftime('%Y%m%d')
@@ -111,6 +153,7 @@ def main():
         'institution': {},
         'pc_ratio': {},
         'futures': {},
+        'institutional_oi': {},
         'error': None
     }
     
@@ -161,6 +204,11 @@ def main():
             'foreign_tx_net': '',
             'total_inst_futures_net': '',
         }
+
+    # 4. Futures/options open interest split by institution
+    oi = get_institutional_oi()
+    if oi:
+        output['institutional_oi'] = oi
     
     # Save
     with open(OUT, 'w', encoding='utf-8') as f:
@@ -178,9 +226,9 @@ def main():
         entry = {
             'date': actual_date[:4]+'-'+actual_date[4:6]+'-'+actual_date[6:8],
             'inst': {
-                'foreign': inst.get('外資及陸資', {}).get('diff', 0),
-                'investment_trust': inst.get('投信', {}).get('diff', 0),
-                'dealer_total': inst.get('自營商合計', {}).get('diff', 0)
+                'foreign': inst.get('foreign', {}).get('diff', 0),
+                'investment_trust': inst.get('trust', {}).get('diff', 0),
+                'dealer_total': inst.get('dealer_total', {}).get('diff', 0)
             },
             'pc_ratio': output.get('pc_ratio', {}).get('pc_vol_ratio', 0),
             'pc_oi_ratio': output.get('pc_ratio', {}).get('pc_oi_ratio', 0),
@@ -200,9 +248,9 @@ def main():
     with open(HIST, 'w', encoding='utf-8') as f:
         json.dump(hist, f, ensure_ascii=False, indent=2)
     
-    print('OK: 外資', f'{inst.get("外資及陸資",{}).get("diff","N/A"):,}' if inst else 'N/A', '元')
-    print('OK: 投信', f'{inst.get("投信",{}).get("diff","N/A"):,}' if inst else 'N/A', '元')
-    print('OK: 自營商', f'{inst.get("自營商合計",{}).get("diff","N/A"):,}' if inst else 'N/A', '元')
+    print('OK: 外資', f'{inst.get("foreign",{}).get("diff","N/A"):,}' if inst else 'N/A', '元')
+    print('OK: 投信', f'{inst.get("trust",{}).get("diff","N/A"):,}' if inst else 'N/A', '元')
+    print('OK: 自營商', f'{inst.get("dealer_total",{}).get("diff","N/A"):,}' if inst else 'N/A', '元')
     print('PC:', output.get('pc_ratio', {}).get('pc_vol_ratio', 'N/A'))
     print(f'History entries: {len(hist)}')
 
