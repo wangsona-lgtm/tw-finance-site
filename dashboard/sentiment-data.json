@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14T10:59:43.095324",
+  "updated": "2026-08-14T11:05:03.258821",
   "today": "20260814",
   "institution": {
     "date": "20260813",
@@ -44,10 +44,10 @@
     "pc_oi_ratio": 112.03
   },
   "futures": {
-    "note": "期貨(全部合約) Net OI per TAIFEX",
-    "last_seen_date": "2026/08/13",
-    "foreign_tx_net": "-503,662",
-    "total_inst_futures_net": "-687,987"
+    "note": "Futures data unavailable",
+    "last_seen_date": "",
+    "foreign_tx_net": "",
+    "total_inst_futures_net": ""
   },
   "error": null
 }
