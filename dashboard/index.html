@@ -177,6 +177,7 @@ table.compact td, table.compact th { padding:4px 6px; font-size:12px; }
   <hr><h3>📊 選擇權籌碼</h3>
   <div id="optionsSummary">載入中...</div>
   <div class="chart-container" id="optionsChartWrap" style="height:250px;display:none;"><canvas id="optionsChart"></canvas></div>
+  <div id="institutionalOiSummary" style="margin-top:12px;">載入中...</div>
   
   <br><hr><br>
   <h3>📅 本週每日籌碼比較</h3>
@@ -878,13 +879,14 @@ async function loadSentimentData() {
   try { renderInstitutions(); } catch(e) { console.warn('inst err:', e); }
   try { renderFutures(); } catch(e) { console.warn('fut err:', e); }
   try { renderOptions(); } catch(e) { console.warn('opt err:', e); }
+  try { renderInstitutionalOi(); } catch(e) { console.warn('oi err:', e); }
   try { renderWeeklySentiment(); } catch(e) { console.warn('weekly err:', e); }
   
   // Async refresh from server in background (updates embedded data if newer)
   try {
     const cb = '?t=' + Date.now();
     const resp = await fetch(SENTIMENT_DATA_FILE + cb);
-    if (resp.ok) { sentimentData = await resp.json(); renderInstitutions(); renderFutures(); renderOptions(); }
+    if (resp.ok) { sentimentData = await resp.json(); renderInstitutions(); renderFutures(); renderOptions(); renderInstitutionalOi(); }
     const resp2 = await fetch(SENTIMENT_HISTORY_FILE + cb);
     if (resp2.ok) { sentimentHistory = await resp2.json(); renderWeeklySentiment(); }
   } catch(e) {
@@ -1078,6 +1080,20 @@ function renderOptions() {
 }
 
 // ===== 本週每日籌碼比較 =====
+// ===== 三大法人期貨／選擇權未平倉量 =====
+function renderInstitutionalOi() {
+  const el = document.getElementById('institutionalOiSummary');
+  const oi = sentimentData?.institutional_oi;
+  if (!oi || !oi.items || !oi.items.length) {
+    el.innerHTML = '<div class="card"><h3>三大法人未平倉量</h3><div class="sub">尚未取得 TAIFEX 官方資料</div></div>';
+    return;
+  }
+  const num = v => Number(v || 0).toLocaleString('zh-TW');
+  const signed = v => `<span style="color:${Number(v) >= 0 ? '#d32f2f' : '#1976D2'}">${Number(v) >= 0 ? '+' : ''}${num(v)}</span>`;
+  const labels = { foreign: '外資及陸資', trust: '投信', dealer: '自營商' };
+  el.innerHTML = `<div class="card"><h3>📌 三大法人期貨／選擇權未平倉量（口數）</h3><div style="overflow-x:auto;margin-top:8px;"><table style="width:100%;border-collapse:collapse;font-size:13px;"><thead><tr><th style="text-align:left;">身份別</th><th>期貨多方</th><th>期貨空方</th><th>期貨淨額</th><th>選擇權多方</th><th>選擇權空方</th><th>選擇權淨額</th></tr></thead><tbody>${oi.items.map(r => `<tr><td style="text-align:left;font-weight:600;">${labels[r.name] || r.name}</td><td>${num(r.futures_long)}</td><td>${num(r.futures_short)}</td><td>${signed(r.futures_net)}</td><td>${num(r.options_long)}</td><td>${num(r.options_short)}</td><td>${signed(r.options_net)}</td></tr>`).join('')}</tbody></table></div><div style="margin-top:8px;font-size:12px;color:var(--text2);">📅 ${oi.date || '-'}｜資料來源：TAIFEX OpenAPI「三大法人-區分期貨與選擇權二類-依日期」</div></div>`;
+}
+
 function renderWeeklySentiment() {
   const body = document.getElementById('weeklySentimentBody');
   const note = document.getElementById('weeklySentimentNote');
