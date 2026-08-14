@@ -1,53 +1,85 @@
 {
-  "updated": "2026-08-14T14:28:51.188310",
+  "updated": "2026-08-14T19:32:59.638875",
   "today": "20260814",
   "institution": {
-    "date": "20260813",
-    "自營商": {
-      "buy": 41691722620,
-      "sell": 29888947276,
-      "diff": 11802775344
+    "date": "20260814",
+    "dealer_self": {
+      "buy": 11160429833,
+      "sell": 13896418209,
+      "diff": -2735988376
     },
-    "投信": {
-      "buy": 28305817016,
-      "sell": 29807555301,
-      "diff": -1501738285
+    "dealer_hedge": {
+      "buy": 37989612273,
+      "sell": 36914812006,
+      "diff": 1074800267
     },
-    "外資及陸資": {
-      "buy": 435459348263,
-      "sell": 359764831688,
-      "diff": 75694516575
+    "trust": {
+      "buy": 26480037999,
+      "sell": 19283718809,
+      "diff": 7196319190
     },
-    "外資自營商": {
+    "foreign": {
+      "buy": 427876353162,
+      "sell": 382525022741,
+      "diff": 45351330421
+    },
+    "dealer": {
       "buy": 0,
       "sell": 0,
       "diff": 0
     },
-    "合計": {
-      "buy": 519522901014,
-      "sell": 430269371319,
-      "diff": 89253529695
-    },
-    "自營商合計": {
-      "buy": 55757735735,
-      "sell": 40696984330,
-      "diff": 15060751405
+    "dealer_total": {
+      "buy": 49150042106,
+      "sell": 50811230215,
+      "diff": -1661188109
     }
   },
   "pc_ratio": {
-    "date": "2026/8/13",
-    "call_vol": 131507,
-    "put_vol": 123785,
-    "pc_vol_ratio": 106.24,
-    "call_oi": 82705,
-    "put_oi": 73822,
-    "pc_oi_ratio": 112.03
+    "date": "2026/8/14",
+    "call_vol": 326821,
+    "put_vol": 316754,
+    "pc_vol_ratio": 103.18,
+    "call_oi": 65051,
+    "put_oi": 56564,
+    "pc_oi_ratio": 115.0
   },
   "futures": {
     "note": "期貨(全部合約) Net OI per TAIFEX",
     "last_seen_date": "2026/08/13",
     "foreign_tx_net": "-503,662",
     "total_inst_futures_net": "-687,987"
+  },
+  "institutional_oi": {
+    "date": "20260813",
+    "items": [
+      {
+        "name": "dealer",
+        "futures_long": 148653,
+        "futures_short": 428967,
+        "futures_net": -280314,
+        "options_long": 48025,
+        "options_short": 52498,
+        "options_net": -4473
+      },
+      {
+        "name": "trust",
+        "futures_long": 99723,
+        "futures_short": 3734,
+        "futures_net": 95989,
+        "options_long": 0,
+        "options_short": 2840,
+        "options_net": -2840
+      },
+      {
+        "name": "foreign",
+        "futures_long": 260751,
+        "futures_short": 764413,
+        "futures_net": -503662,
+        "options_long": 27342,
+        "options_short": 24645,
+        "options_net": 2697
+      }
+    ]
   },
   "error": null
 }
