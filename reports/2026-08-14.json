@@ -15,7 +15,7 @@
     },
     {
       "title": "Tehran's Houthi Proxies Attack Saudi Aramco Again, Crude Spikes, As Iran's Military Command To Be 'More Aggressive'",
-      "category": "geopolitical",
+      "category": "geopolitics",
       "summary": "**摘要：** 葉門胡塞武裝以無人機攻擊沙烏地阿美石油（Aramco）位於吉贊的煉油廠，導致油價跳漲。美國國防部長赫格塞斯表態美軍可「無限期」維持對伊朗港口的封鎖，伊朗則誓言以消耗戰應對，並根據阿曼協議執行自身的海峽管理協議。伊朗革命衛隊高層 Mohammad Reza Naqdi 等強硬派在軍方人事改組後，對媒體表達更進取的立場。外交陷入僵局——美方實施「極限施壓 2.0」切斷伊朗銀行帳戶與數位貨幣，伊朗指稱美方誤判情勢。\n**重點摘錄：**\n• 胡塞再次以無人機襲擊沙國煉油廠，原油跳漲\n• 美軍聲稱可無限期維持伊朗港口封鎖，雙方陷入消耗戰\n• 德黑蘭改組軍方高層朝更進取方向傾斜，外交死局",
       "url": "https://www.zerohedge.com/geopolitical/iran-reorganized-military-be-more-aggressive-protracted-conflict-after-us-has-long",
       "timestamp": "2026-08-14",
@@ -60,7 +60,7 @@
     },
     {
       "title": "English Village Will Have Six Migrant Men To Every Woman",
-      "category": "geopolitical",
+      "category": "geopolitics",
       "summary": "**摘要：** 北約克郡一個約 600 人的小村準備在附近廢棄 RAF Linton-on-Ouse 空軍基地安置約 1,200 名單身男性難民，當地女性將被六比一壓倒性超出。工黨 MP Rachael Maskell 發出警報，指該基地鄰近小學與托兒所、每日僅四班公車到 York、且水電、汙水容量與電力嚴重不足。這是政府將約 3,750 人分散至三座前軍事基地、以清空難民旅館的廣泛計畫之一。類似計畫在 2022 年已因地方強烈反抗而擱置，如今重新啟動。保守黨地方議員 Malcolm Taylor 形容「一顆手榴彈被丟進來」。\n**重點摘錄：**\n• 600 人小村將被 1,200 名單身男性難民「淹沒」，性別比 6:1\n• 選址就在小學與托兒所旁，基建不足已被2022年報告確認\n• 政策重啓源於工黨清空難民旅館的壓力",
       "url": "https://www.zerohedge.com/geopolitical/english-village-will-have-six-migrant-men-every-woman",
       "timestamp": "2026-08-14",
@@ -69,12 +69,119 @@
     },
     {
       "title": "The Great Decline Of Britain",
-      "category": "geopolitical",
+      "category": "geopolitics",
       "summary": "**摘要：** 評論家 Steve Watson 通過 James Melville 大量紀錄的街景照，描繪英國公共基礎設施的可見衰退——滿街垃圾、人行道雜草叢生、百萬坑洞、堵塞排水溝、骯髒路標。居民現在竟自發清除路標、清理垃圾、修補坑洞，因為「被paid做的人不做」。地方政府收入年年靠 Council Tax 上漲，但最基本的維護服務無法交付。作者將此歸因於稅收被挪用至意識形態項目，基礎設施被棄之不顧。Melville 指出問題在 COVID 之後尤為明顯，「幾乎每個地方」都在惡化。\n**重點摘錄：**\n• 英國街道「肉眼可見」衰退：百萬坑洞、堵塞排水溝、雜草滿街\n• 居民與學童自發清理公共設施，因為 Council 不做\n• Council Tax 上漲但基本維護缺位——稅收支向意識形態項目\n🔑 **今日主線：** 通縮數據降溫但地緣風險升溫——PPI 走軟推低利率，但伊朗-葉門-沙烏地的消耗戰在霍爾木茲兩側同時熱化，油價雙向震盪。美國極限施壓 2.0 切斷伊朗金融管道，沙國煉油廠遭無人機襲擊。科技方面 Nvidia 被警告算力供過於求隱憂。S&P 500 創新高，但成交量偏淡，凌晨將迎零售銷售與 Fitch 英國評級考驗。",
       "url": "https://www.zerohedge.com/geopolitical/great-decline-britain",
       "timestamp": "2026-08-14",
       "images": [],
       "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-08-14 (星期五)",
+      "category": "premarket",
+      "timestamp": "2026-08-14",
+      "summary": "🟢 美股四大指數全紅收漲（NASDAQ +0.81% 領漲、SOX +0.46% 止穩）；VIX 14.50 低位、美元走弱 -0.25%、10Y 殖利率回落至 4.641%，大環境偏多。台股 8/13 大漲 +1.11% 至 46,021 後 8/14 回檔 -0.46% 至 45,811 屬正常獲利了結；週五結算日留意換倉波動。AI 伺服器 ODM（2382 廣達逆勢上漲）與電源管理（2308 台達電收平盤防禦）為相對強勢族群；外資期貨淨空單 -86,249 口仍持續避險，大盤上攻需外資持續轉多確認。",
+      "market_context": {
+        "us_close": "2026-08-13",
+        "spx": 7799.0,
+        "spx_change_pct": 0.65,
+        "dow": 53840.0,
+        "dow_change_pct": 0.13,
+        "nasdaq": 26803.0,
+        "nasdaq_change_pct": 0.81,
+        "rut": 3052.9,
+        "rut_change_pct": 0.24,
+        "sox": 12456.0,
+        "sox_change_pct": 0.46,
+        "vix": 14.5,
+        "vix_change_pct": -0.89,
+        "tsm_adr": 430.49,
+        "tsm_adr_change_pct": 0.31,
+        "taiex_prev_close": 46021.48,
+        "taiex_prev_change_pct": 1.11,
+        "usdtwd": 31.979,
+        "adr_premium_pct": 14.96,
+        "foreign_futures_oi": -86249,
+        "gold": 4407.7,
+        "gold_change_pct": 1.01,
+        "oil": 81.69,
+        "oil_change_pct": 0.54,
+        "btc": 62816,
+        "btc_change_pct": -0.93,
+        "tnx_pct": 4.641,
+        "tnx_change_pct": -0.88,
+        "usd_index": 99.71,
+        "expected_open": "45,800 ~ 46,000（區間震盪，週五結算日留意換倉波動）",
+        "support": "45,500 → 45,200",
+        "resistance": "46,402.60（前高）",
+        "key_theme": "VIX 14.50 低位 + 美元走弱 -0.25% + 殖利率回落至 4.641% 大環境偏多；半導體回穩（NVDA +0.54% / SOX +0.46% / SMH +0.73%）；AI 伺服器 ODM 與電源管理相對強勢族群（2382 廣達 8/14 逆勢上漲 +0.77%、2308 台達電收平盤防禦）；外資現貨買超 +756.9 億但期貨淨空單 -86,249 口仍持續避險；週五結算日波動加大；ADR 溢價 +14.96% 但 2330 跌 -1.64% 第 6 週失靈已永久降級為觀察指標。"
+      },
+      "recommendations": [
+        {
+          "symbol": "2382",
+          "name": "廣達",
+          "direction": "偏多/AI 伺服器 ODM 延續",
+          "strategy": "8/14 逆勢上漲 +0.77% 領先大盤 1.23pp，AI 伺服器 ODM 代工題材持續燃燒，320~325 區間分批進場",
+          "recommend_price": 322,
+          "target": "335~345",
+          "stop_loss": 312,
+          "recommend_reason": "8/14 逆勢上漲 +0.77% 對比大盤跌 -0.46%（領先 1.23pp）/近 5 日漲 +7.5%/ODM 相對半導體直接暴露較低受 SOX 波動影響有限/外資資金正輪動至 ODM 落後補漲股"
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "direction": "偏多/AI 電源管理強勢防禦",
+          "strategy": "等盤中回檔 1,850~1,880 再進場，RSI 偏高超買切勿追高",
+          "recommend_price": 1865,
+          "target": "1950~2000",
+          "stop_loss": 1780,
+          "recommend_reason": "AI 電源管理為當前最強多週子題材/8/14 大盤跌 -0.46% 台達電收平盤展現防禦性機構買盤護航/5 日已漲 +13.6% 追高風險大需設好止損/已連續命中驗證回檔進場策略有效"
+        },
+        {
+          "symbol": "2454",
+          "name": "聯發科",
+          "direction": "偏多/突破回測觀察",
+          "strategy": "4,150~4,200 回測支撐區進場，守穩 4,200 頸線則續攻",
+          "recommend_price": 4175,
+          "target": "4300~4400",
+          "stop_loss": 4050,
+          "recommend_reason": "8/13 突破 4,000 心理關卡（+5.3% 至 4,225）/目前在 4,200 附近回測突破頸線/AI 手機+邊緣 AI 題材長期趨勢不變/⚠️ 需嚴守 4,050 止損，跌破 4,000 則為假突破"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-08-11",
+        "tracking_period": "2026-08-11 ~ 2026-08-14（3 日追蹤）",
+        "total": 3,
+        "hit": 1,
+        "correct_watch": 1,
+        "miss": 1,
+        "hit_rate_pct": 66.7,
+        "positive_return": 2,
+        "positive_return_pct": 66.7,
+        "best": "2308 台達電 (+5.6%, 8/13 盤中 1,915 進入目標區 1,850~1,950，8/14 深入 1,975，AI 電源管理動能延續策略明確命中)",
+        "worst": "2317 鴻海 (目標命中但完全逆轉，8/12 盤中 270.5 進入目標區 268~275 後 8/13 暴跌 -8.0 至 262，8/14 逼近止損 256，缺乏 trailing stop)",
+        "lessons": [
+          "Trailing Stop 是必修課 — 2317 目標達成後完全回吐，連續驗證 skill rule #6，動能股目標達成後必須啟動 -3% 移動止損鎖定利潤",
+          "AI 電源管理（2308）多週主題持續性強，回檔進場策略是最佳進場方式（已連續命中）",
+          "ADR 溢價 +14.96% → 2330 跌 -1.64%，第 6 週驗證失靈，正式降級為觀察指標不再作為買入訊號",
+          "原油單日暴漲事件的受惠效果被高估（6505 邊際觸及），油價回落後塑化股缺乏持續上攻動能",
+          "相對強勢股（如 2382 廣達 8/14 逆勢上漲）是選股的 best signal 之一"
+        ]
+      }
     }
+  ],
+  "stats": {
+    "total": 9,
+    "premium": 8,
+    "market": 5,
+    "geopolitics": 3,
+    "withImages": 0,
+    "premarket": 1
+  },
+  "keyThemes": [
+    "NVDA 5000 億美元 AI 融資副作用初現 — 算力供過於求隱憂浮現，但 ODM 與電源管理族群相對強勢",
+    "霍爾木茲海峽消耗戰升溫 — 葉門 Houthi 襲擊沙國 Aramco 煉油廠，美國極限施壓 2.0 切斷伊朗金融管道",
+    "台股 8/14 回檔 -0.46% 屬正常獲利了結 — VIX 14.50 低位 + 美元走弱 + 殖利率回落，大環境偏多",
+    "ADR 溢價 +14.96% 但 2330 跌 -1.64%，第 6 週失靈已永久降級為觀察指標，AI 電源管理（2308）連續命中驗證為核心策略"
   ]
 }
