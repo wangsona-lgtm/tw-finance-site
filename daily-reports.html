@@ -377,6 +377,123 @@ function renderReport(data) {
         html += `<div class="section-title">${sec.icon||'📊'} ${sec.title}</div>`;
       }
 
+      // ═══ ZeroHedge article (category: market/geopolitics) ═══
+      if (sec.category === 'market' || sec.category === 'geopolitics') {
+        const catIcon = sec.category === 'market' ? '📈' : '🌍';
+        const catLabel = sec.category === 'market' ? '市場/財經' : '地緣政治';
+        if (sec.summary) {
+          html += `<div class="market-summary" style="font-size:14px;line-height:1.8;">${sec.summary.replace(/\n/g,'<br>')}</div>`;
+        }
+        if (sec.url) {
+          html += `<div style="margin-top:8px;"><a href="${sec.url}" target="_blank" style="font-size:12px;color:var(--accent);">🔗 閱讀全文 ↗</a>${sec.premium ? ' <span style="font-size:11px;color:var(--yellow);">🔒 Premium</span>' : ''}</div>`;
+        }
+        if (sec.images && sec.images.length > 0) {
+          sec.images.forEach(img => {
+            if (img && !img.startsWith('http')) {
+              const fname = img.split('/').pop();
+              html += `<div style="margin-top:8px;"><img src="zerohedge/images/${fname}" style="max-width:100%;border-radius:8px;border:1px solid var(--border);" loading="lazy"></div>`;
+            }
+          });
+        }
+        html += `</div>`;
+        return; // skip other rendering for ZeroHedge articles
+      }
+
+      // ═══ Premarket analysis (category: premarket) ═══
+      if (sec.category === 'premarket') {
+        // Summary
+        if (sec.summary) {
+          html += `<div class="watch-box" style="margin-bottom:16px;">${sec.summary}</div>`;
+        }
+
+        // Market context cards
+        if (sec.market_context) {
+          const mc = sec.market_context;
+          html += `<div class="section-title" style="font-size:14px;">🌏 隔夜美股與總經</div>`;
+          html += `<div class="market-card">`;
+          const mkItem = (label, val, chg) => {
+            const isPos = String(chg||'').startsWith('+') || (typeof chg === 'number' && chg > 0);
+            const isNeg = String(chg||'').startsWith('-') || (typeof chg === 'number' && chg < 0);
+            return `<div class="market-item"><div class="label">${label}</div><div class="value ${isPos?'green':isNeg?'red':''}">${val||'—'}</div>${chg!=null?`<div class="sub ${isPos?'green':isNeg?'red':''}">${chg>0?'+':''}${chg}</div>`:''}</div>`;
+          };
+          if (mc.spx) html += mkItem('S&P 500', mc.spx, mc.spx_change_pct);
+          if (mc.dow) html += mkItem('道瓊', mc.dow, mc.dow_change_pct);
+          if (mc.nasdaq) html += mkItem('NASDAQ', mc.nasdaq, mc.nasdaq_change_pct);
+          if (mc.rut) html += mkItem('羅素2000', mc.rut, mc.rut_change_pct);
+          if (mc.sox) html += mkItem('費半', mc.sox, mc.sox_change_pct);
+          if (mc.vix) html += mkItem('VIX', mc.vix, mc.vix_change_pct);
+          if (mc.tsm_adr) html += mkItem('TSM ADR', mc.tsm_adr, mc.tsm_adr_change_pct);
+          if (mc.gold) html += mkItem('黃金', mc.gold, mc.gold_change_pct);
+          if (mc.oil) html += mkItem('原油', mc.oil, mc.oil_change_pct);
+          if (mc.btc) html += mkItem('BTC', mc.btc, mc.btc_change_pct);
+          if (mc.tnx_pct) html += mkItem('10Y殖利率', mc.tnx_pct + '%', mc.tnx_change_pct);
+          if (mc.usd_index) html += mkItem('美元指數', mc.usd_index, '');
+          html += `</div>`;
+
+          // Taiwan market
+          html += `<div class="section-title" style="font-size:14px;margin-top:16px;">🇹🇼 台股盤前重點</div>`;
+          html += `<div class="market-card">`;
+          if (mc.taiex_prev_close) html += mkItem('昨日收盤', mc.taiex_prev_close, mc.taiex_prev_change_pct);
+          if (mc.usdtwd) html += mkItem('USD/TWD', mc.usdtwd, '');
+          if (mc.adr_premium_pct) html += mkItem('ADR溢價', mc.adr_premium_pct + '%', '');
+          if (mc.foreign_futures_oi) html += mkItem('外資期貨淨部位', mc.foreign_futures_oi, '');
+          html += `</div>`;
+
+          // Key levels
+          if (mc.expected_open || mc.support || mc.resistance) {
+            html += `<div class="watch-box" style="margin-top:12px;">`;
+            if (mc.expected_open) html += `<div><strong>預估開盤：</strong>${mc.expected_open}</div>`;
+            if (mc.support) html += `<div><strong>支撐：</strong>${mc.support}</div>`;
+            if (mc.resistance) html += `<div><strong>壓力：</strong>${mc.resistance}</div>`;
+            if (mc.key_theme) html += `<div style="margin-top:4px;font-size:12px;color:var(--text2);">${mc.key_theme}</div>`;
+            html += `</div>`;
+          }
+        }
+
+        // Recommendations
+        if (sec.recommendations && sec.recommendations.length > 0) {
+          html += `<div class="section-title" style="font-size:14px;margin-top:16px;">🎯 今日推薦個股</div>`;
+          sec.recommendations.forEach(s => {
+            html += `<div class="stock-card">
+              <div class="header" onclick="this.parentElement.classList.toggle('open')">
+                <span class="code">${s.symbol}</span>
+                <span class="name">${s.name}</span>
+                <span style="font-size:11px;color:var(--accent);flex:1;">${s.direction||''}</span>
+                <span style="font-size:16px;color:var(--text2);">▾</span>
+              </div>
+              <div class="body">
+                <div class="stock-detail">
+                  <div class="item"><div class="q">建議買價</div><div class="a">${s.recommend_price||'—'}</div></div>
+                  <div class="item"><div class="q">目標</div><div class="a">${s.target||'—'}</div></div>
+                  <div class="item"><div class="q">止損</div><div class="a" style="color:var(--red);">${s.stop_loss||'—'}</div></div>
+                  <div class="item"><div class="q">策略</div><div class="a">${s.strategy||''}</div></div>
+                  <div class="item"><div class="q">理由</div><div class="a" style="font-size:12px;">${s.recommend_reason||''}</div></div>
+                </div>
+              </div>
+            </div>`;
+          });
+        }
+
+        // Previous day review
+        if (sec.previous_day_review) {
+          const rv = sec.previous_day_review;
+          html += `<div class="section-title" style="font-size:14px;margin-top:16px;">📋 推薦檢討（${rv.date||''}）</div>`;
+          html += `<div class="summary-card" style="margin-top:8px;">`;
+          if (rv.total != null) html += `<div class="item"><div class="label">推薦數</div><div class="value">${rv.total}</div></div>`;
+          if (rv.hit != null) html += `<div class="item"><div class="label">✅ 命中</div><div class="value" style="color:var(--green);">${rv.hit}</div></div>`;
+          if (rv.miss != null) html += `<div class="item"><div class="label">❌ 失誤</div><div class="value" style="color:var(--red);">${rv.miss}</div></div>`;
+          if (rv.hit_rate_pct != null) html += `<div class="item"><div class="label">命中率</div><div class="value">${rv.hit_rate_pct}%</div></div>`;
+          html += `</div>`;
+          if (rv.best) html += `<div class="watch-box" style="margin-top:8px;"><strong>🏆 最佳：</strong>${rv.best}</div>`;
+          if (rv.worst) html += `<div class="watch-box" style="margin-top:4px;"><strong>⚠️ 最差：</strong>${rv.worst}</div>`;
+          if (rv.lessons && rv.lessons.length > 0) {
+            html += `<div style="margin-top:8px;font-size:12px;color:var(--text2);"><strong>教訓：</strong><ul style="margin-top:4px;padding-left:20px;">${rv.lessons.map(l=>`<li>${l}</li>`).join('')}</ul></div>`;
+          }
+        }
+        html += `</div>`;
+        return; // skip other rendering for premarket
+      }
+
       // Stats cards
       if (sec.stats) {
         html += `<div class="market-card">`;
@@ -557,6 +674,14 @@ function renderReport(data) {
       html += `<div style="margin-top:8px;font-size:12px;color:var(--text3);">🧹 ${momentum.note}</div>`;
     }
     html += `</div>`;
+  }
+
+  // ═══ Key themes (top-level) ═══
+  if (data.keyThemes && data.keyThemes.length > 0) {
+    html += `<div class="section"><div class="section-title">🔑 核心主題</div>`;
+    html += `<ul style="padding-left:20px;line-height:2;">`;
+    data.keyThemes.forEach(t => { html += `<li style="font-size:13px;color:var(--text);">💡 ${t}</li>`; });
+    html += `</ul></div>`;
   }
 
   document.getElementById('reportInner').innerHTML = html;
