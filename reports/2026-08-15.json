@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-15",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 8月15日（六）",
+  "sections": [
+    {
+      "title": "Nomura's McElligott Spots A $300 Billion \"Coiled Spring\" Of \"Exotic\" Market Chaos",
+      "category": "market",
+      "summary": "過去一週市場沉浸在「鴿派四連發」的歡樂氛圍中——軟性的非農就業、溫和的 CPI、不咬人的 PPI、以及週五令人失望的零售銷售——推動股市在極低成交量下創下歷史新高。但野村的 Charlie McElligott 注意到了市場「管道」出了問題。\n他的觀察：鴿派數據全面出籠，油價卻因伊朗/荷莫茲海峽「什麼都沒發生的混亂泥沼」而異常平靜，但債券卻找不到任何買家。存續期無人青睞，殖利率曲線持續熊陡化（bear-steepening），利率波動率無人理會。在沒有人掌舵的情況下，市場沿著阻力最小的路徑漂移——也就是往上。\nMcElligott 點出的核心風險是「誰來買債券」正演變為「擠出風險」（crowding-out risk）：當財政赤字持續擴大、發債量居高不下，而聯準會又不再擴表，龐大的供給將壓迫市場吸收能力。他形容有約 3000 億美元的「異類」（exotic）結構性部位如同捲簧般蓄勢待發，一旦觸發可能引發跨資產連鎖拋售。\n**重點摘錄：**\n• 鴿派數據推升股市新高，但債市出現結構性壓力——殖利率曲線熊陡化、存續期無買家\n• 「誰來買債券」問題升級為「擠出風險」，財政供給壓迫市場吸收能力\n• 約 3000 億美元異類結構性部位如「捲簧」蓄勢，可能引發跨資產連鎖效應",
+      "url": "https://www.zerohedge.com/markets/nomuras-mcelligott-spots-300-billion-coiled-spring-exotic-market-chaos",
+      "timestamp": "2026-08-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "'Goldi-Stocks' & The Treasury Bears: Schizophrenic Cross-Asset Chaos Spread This Week",
+      "category": "market",
+      "summary": "本週市場呈現典型的「精神分裂」跨資產格局。一方面，美國通膨降溫與成長數據走弱，壓垮了近期的聯準會升息預期，帶動債券殖利率與美元走低——但殖利率曲線卻因財政與融資恐懼而陡峭化。另一方面，AI 基礎設施類股財報支撐股市逼近歷史高點（科技股跑贏、必需消費落後、動量股回歸），而伊朗/荷莫茲海峽緊張局勢推升油價大漲，使能源股成為本週最大贏家。\n文章點出有趣的對比：比特幣本週被「像嬰兒海豹一樣棒打」（clubbed like a baby seal），而「野蠻遺跡」黃金反而表現更佳。整體而言，這是很長一段時間以來第一個「安靜的星期」——成交量與波動率明顯退潮。但表面平靜下，股債之間的分歧信號（股市金髮論 vs. 債市空頭）正在擴大。\n**重點摘錄：**\n• 通膨降溫 + 成長走弱壓垮升息預期，殖利率下行但曲線陡峭化——財政/融資擔憂主導\n• AI 財報支撐科技股、地緣風險推升能源股；比特幣重挫、黃金跑贏\n• 表面平靜但股債信號分歧擴大，「金髮姑娘股市」與國債空頭並存",
+      "url": "https://www.zerohedge.com/markets/goldilocks-stocks-treasury-bears-schizophrenic-cross-asset-chaos-spread-week",
+      "timestamp": "2026-08-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "Dollar sold after weak Retail Sales and UoM but yields rise - Newsquawk US Market Wrap",
+      "category": "market",
+      "summary": "**市場快照：** 股市小跌、公債下跌、原油上漲、美元下跌、黃金上漲。\n週五美股在清淡交投中溫和走低，那斯達克表現最差，羅素 2000 逆勢收高，等權 S&P 500 持平。板塊表現分歧：能源股隨油價走強而表現突出，科技與醫療保健落後。\n美國數據偏軟但對市場的持續影響有限。7 月零售銷售意外下滑，密大消費者信心指數顯著回落——當前狀況與預期雙雙下滑。然而，1 年通膨預期從 4.2% 微升至 4.3%，5 年維持在 3.3%。殖利率在軟數據下反常上升（熊陡化），安靜交投中無明顯催化劑，可能受油價走強與近期通膨預期上升推動。聯準會定價變化不大，9 月按兵不動機率仍在 67% 左右。\n油價因荷莫茲海峽無人機攻擊油輪消息走高；商務部長 Bessent 表示美國將對伊朗實施「前所未有的措施」。日本央行傳考慮加速後續升息。AMAT（應用材料）財報未能提振市場。\n**重點摘錄：**\n• 零售銷售意外下滑 + 密大消費者信心顯著回落，但 1 年通膨預期微升至 4.3%\n• 殖利率反常上升（熊陡化），9 月 Fed 按兵不動機率約 67%\n• 荷莫茲海峽油輪遭無人機攻擊推升油價；Bessent 宣稱對伊朗「前所未有的措施」",
+      "url": "https://www.zerohedge.com/markets/dollar-sold-after-weak-retail-sales-and-uom-yields-rise-newsquawk-us-market-wrap",
+      "timestamp": "2026-08-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "US Lost 25% Of Its Reaper Drones In Iran War, Officials Estimate",
+      "category": "geopolitical",
+      "summary": "《華盛頓郵報》報導，美國國防官員透露美軍在伊朗戰爭期間至少損失 45 架 MQ-9 收割者（Reaper）無人機，約佔五角大廈機隊的 25%。\nMQ-9 由 General Atomics 製造，每架造價 3000 萬至 5000 萬美元，是高度先進的監視與獵殺一體平台，可連續飛行 27 小時以上，部分型號超過 40 小時。45 架的損失意味著超過 10 億美元的硬體在伊朗戰相關行動中被擊落或墜毀。此外，美軍在波灣基地遭伊朗攻擊時也曾損失停放中的飛機，包括更昂貴的大型空中加油機。\n報導指出收割者為何易被擊落：它們在荷莫茲海峽周邊大量部署，但飛行速度慢且常在低高度運作，使其成為伊朗軍方及葉門、伊拉克代理人的相對容易目標。荷莫茲海峽是關鍵航運要道，也是衝突的主要閃點與談判持久和平的核心障礙。\n官員也補充，並非所有損失的收割者都是被擊落的——部分因其他原因墜毀。但 25% 的機隊折損率凸顯了在高強度對抗環境中，大型、昂貴、低速無人機的生存能力問題。\n**重點摘錄：**\n• 美軍在伊朗戰中損失至少 45 架 MQ-9 收割者無人機，佔機隊 25%，硬體損失逾 10 億美元\n• 收割者低速低高度飛行，在荷莫茲海峽易遭伊朗及代理人擊落\n• 損失率凸顯大型昂貴無人機在高強度對抗環境的生存能力問題",
+      "url": "https://www.zerohedge.com/geopolitical/us-lost-25-its-reaper-drones-iran-war-officials-estimate",
+      "timestamp": "2026-08-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "Boeing Unveils Cheap Radar Seeker Built From Off-The-Shelf Parts",
+      "category": "market",
+      "summary": "波音在阿拉巴馬州 Huntsville 舉行的太空與飛彈防禦研討會上展示了一款「超低成本尋標器」（Ultra Low-Cost Seeker, ULCS）。尋標器安裝於飛彈或炸彈鼻錐，負責定位目標並導引武器，是精導武器中最昂貴的部件之一。波音的論點是：尋標器成本限制了軍方能採購的精導武器數量。\nULCS 是主動尋標器——發射自身雷達信號而非依賴外部飛機或地面站的照射。關鍵在於它大量使用改裝自商用市場的現成零件（COTS），而非昂貴的軍規專用零件。最大賣點是跨武器平台重用：ULCS 可應用於防空攔截彈、導引炸彈與巡弋飛彈，不需為每種武器設計不同尋標器。\n今年夏天波音已完成多項測試：在無反射室驗證感測器、搭載 Beechcraft 1900 在陸海上方追蹤目標、在 Spaceport America 從地面追蹤無人機，並以火箭搭載發射追蹤揣帶反射器的無人機。ULCS 在每次測試中承受加速度與振動，均成功偵測與追蹤目標。\n此研發呼應了五角大廈面對武器庫存消耗（如前述收割者無人機損失 25%）後對低成本、可大規模生產的精導武器的迫切需求。\n**重點摘錄：**\n• 波音超低成本主動雷達尋標器（ULCS）大量使用商用現成零件，可跨彈種重用\n• 已完成陸海空多項測試，全程成功偵測與追蹤目標\n• 呼應五角大廈武器庫存消耗後對低成本可量產精導武器的需求\n付費文章（premium）4 篇｜圖片 1 張",
+      "url": "https://www.zerohedge.com/markets/boeing-unveils-cheap-radar-seeker-built-shelf-parts",
+      "timestamp": "2026-08-15",
+      "images": [],
+      "premium": false
+    }
+  ]
+}

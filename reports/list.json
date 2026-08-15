@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-15",
+    "file": "tw-finance-site/reports/2026-08-15.json"
+  },
+  {
+    "date": "2026-08-14",
+    "file": "tw-finance-site/reports/2026-08-14.json"
+  },
+  {
     "date": "2026-08-11",
     "file": "tw-finance-site/reports/2026-08-11.json"
   },
@@ -158,9 +166,5 @@
   {
     "date": "2026-07-15",
     "file": "tw-finance-site/reports/2026-07-15.json"
-  },
-  {
-    "date": "list",
-    "file": "tw-finance-site/reports/list.json"
   }
 ]

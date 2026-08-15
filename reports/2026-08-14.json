@@ -1,0 +1,80 @@
+{
+  "date": "2026-08-14",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 8月14日（五）",
+  "sections": [
+    {
+      "title": "Disinflation, Deal-Doubts, & Doubling-Down: Bond Yields Drop, Oil Slop, Tech Pops",
+      "category": "market",
+      "summary": "**摘要：** 繼 CPI 之後，7 月 PPI 同樣降溫，市場對升息預期進一步下調（已不足一碼），推動美債殖利率走低。科技股在韓國買盤回流帶動下開高，引發 gamma squeeze，但日內被反向 fade，科技仍相對跑贏。油價在需求預期走弱與地緣交易（葉門拖鞋軍襲擊沙國煉油廠）之間反覆震盪；裂解價差因烏俄煉油廠持續受損而大幅擴大。美元收平，黃金與比特幣盤後下挫。韓國 KOSPI 連四漲，自 7 月低點反彈 30%。\n**重點摘錄：**\n• PPI 降溫確認通縮趨勢，升息預期幾乎歸零\n• 煉油裂解價差因烏俄煉油廠中斷而爆開\n• KOSPI 自 7 月低點反彈 30%，韓國散户回場",
+      "url": "https://www.zerohedge.com/markets/disinflation-deal-doubts-doubling-down-bond-yields-drop-oil-slop-tech-pops",
+      "timestamp": "2026-08-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Tehran's Houthi Proxies Attack Saudi Aramco Again, Crude Spikes, As Iran's Military Command To Be 'More Aggressive'",
+      "category": "geopolitical",
+      "summary": "**摘要：** 葉門胡塞武裝以無人機攻擊沙烏地阿美石油（Aramco）位於吉贊的煉油廠，導致油價跳漲。美國國防部長赫格塞斯表態美軍可「無限期」維持對伊朗港口的封鎖，伊朗則誓言以消耗戰應對，並根據阿曼協議執行自身的海峽管理協議。伊朗革命衛隊高層 Mohammad Reza Naqdi 等強硬派在軍方人事改組後，對媒體表達更進取的立場。外交陷入僵局——美方實施「極限施壓 2.0」切斷伊朗銀行帳戶與數位貨幣，伊朗指稱美方誤判情勢。\n**重點摘錄：**\n• 胡塞再次以無人機襲擊沙國煉油廠，原油跳漲\n• 美軍聲稱可無限期維持伊朗港口封鎖，雙方陷入消耗戰\n• 德黑蘭改組軍方高層朝更進取方向傾斜，外交死局",
+      "url": "https://www.zerohedge.com/geopolitical/iran-reorganized-military-be-more-aggressive-protracted-conflict-after-us-has-long",
+      "timestamp": "2026-08-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Nvidia Deal Is Beginning Of End For AI Compute Boom",
+      "category": "market",
+      "summary": "**摘要：** 前 Bloomberg 宏觀策略師 Simon White 指出，Nvidia 擬將資料中心轉化為可投資資產的方案，可能導致 AI 算力嚴重供過於求，尤其在 outcome-based pricing（績效計費）成為行业標準的情況下，capex 回收週期將被拉長、毛利率壓縮，最終引爆算力泡沫的收場階段。\n**重點摘錄：**\n• Nvidia 將資料中心轉為可投資資產的方案恐製造算力過剩\n• Outcome-based pricing 比傳統租賃模式更易壓低回報\n• 此交易可能是 AI 算力盛世的「終局之始」",
+      "url": "https://www.zerohedge.com/markets/nvidia-deal-beginning-end-ai-compute-boom",
+      "timestamp": "2026-08-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Equities lacklustre with catalysts light, USD weakens despite firmer Oil prices (Newsquawk US Market Open)",
+      "category": "market",
+      "summary": "**摘要：** 美股期貨在夏季低量中持平。美國財長 Bessent 宣布對伊朗實施「前所未有措施」、極限施壓 2.0。UKMTO 通報一艘油輪在霍爾木茲海峽遭無人機擊中，UAE ADNOC 也確認旗下兩艘船在週四遇襲。歐股普遍走軟，DAX 40 因 SAP 上漲逆勢走強。亞洲方面，記憶體晶片（Kioxia +3.8%、SK Hynix +3.3%）因 Sandisk 投資者日看好前景而上漲。Applied Materials 盤後下挫逾 5%，拉高空間被超越。今日聚焦：美國零售銷售（7月）、密大消費信心初值、亞特蘭大 Fed GDP（Q3）、Fitch 英國主權評級。\n**重點摘錄：**\n• 美財長宣布對伊朗極限施壓 2.0，鎖定銀行帳戶與數位貨幣\n• 霍爾木茲海峽船隻接連遇襲，原油維持高檔\n• 今日重點數據：零售銷售、密大信心、英國 Fitch 評級",
+      "url": "https://www.zerohedge.com/markets/equities-lacklustre-catalysts-light-usd-weakens-despite-firmer-oil-prices-newsquawk-us",
+      "timestamp": "2026-08-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Europe primed for a firm after strong US lead; NZD rebounds, USD weaker (Newsquawk EU Market Open)",
+      "category": "market",
+      "summary": "**摘要：** 歐股期貨暗示小幅高開（Euro Stoxx 50 +0.3%）。APAC 股票好壞參半——S&P 500 前夜創歷史新高，但亞太僅部分承接。DXY 隔夜微弱，10 年美債期貨在 PPI 走軟、殖利率曲線走陡後喘息。原油期貨在葉門襲擊後陷入震盪。紐元反彈、美元更弱。今日展望重點：德國批發物價（7月）、法國通膨終值（7月）、歐盟 GDP 第二估（Q2）、貿易收支（6月）、美國零售銷售（7月）、密大信心、亞特蘭大 Fed GDP、Fitch 英國評級。Farage 贏得 Clacton 補選，Gilt 無反應。\n**重點摘錄：**\n• S&P 500 創歷史新高，亞太承接有限\n• 紐元反彈、美元持續走弱（Brent +0.9% 也未能提振 DXY）\n• Farage 贏得 Clacton 補選，英債殖利率按兵不動",
+      "url": "https://www.zerohedge.com/markets/europe-primed-firm-after-strong-us-lead-nzd-rebounds-usd-weaker-newsquawk-eu-market-open",
+      "timestamp": "2026-08-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Meet The Red State Corridor Behind America's Top Boomtowns",
+      "category": "market",
+      "summary": "**摘要：** SmartAsset 研究超過 400 個人口 6.5 萬以上的城市，發現全美排名第一、第二的 boomtown 都在德州 I-35 公路上——Georgetown 第一、New Braunfels 第二，相距不到 80 英里。New Braunfels 五年內住宅存量增 40%、勞動力擴張 32%、Comal 郡實質 GDP 年複合成長 6.8%，高於全美幾乎所有郡。人口估計 122,492 人（2025/7）。Leander 排第四、Lewisville 第五，德州包攬前五中的四席。Williamson 郡（Georgetown 所在地）的複合成長率比 Comal 更快。此走廊串連 San Antonio → Austin → Dallas，十年來吸收大量州內遷入人口。\n**重點摘錄：**\n• 全美 top 2 boomtown 都在 I-35 走廊，相距 <80 英里\n• New Braunfels：五年住宅 +40%、勞動力 +32%、GDP CAGR 6.8%\n• 德州獨霸前五中四席，陽光帶人口紅利集中 I-35",
+      "url": "https://www.zerohedge.com/markets/meet-red-state-corridor-behind-americas-top-boomtowns",
+      "timestamp": "2026-08-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "English Village Will Have Six Migrant Men To Every Woman",
+      "category": "geopolitical",
+      "summary": "**摘要：** 北約克郡一個約 600 人的小村準備在附近廢棄 RAF Linton-on-Ouse 空軍基地安置約 1,200 名單身男性難民，當地女性將被六比一壓倒性超出。工黨 MP Rachael Maskell 發出警報，指該基地鄰近小學與托兒所、每日僅四班公車到 York、且水電、汙水容量與電力嚴重不足。這是政府將約 3,750 人分散至三座前軍事基地、以清空難民旅館的廣泛計畫之一。類似計畫在 2022 年已因地方強烈反抗而擱置，如今重新啟動。保守黨地方議員 Malcolm Taylor 形容「一顆手榴彈被丟進來」。\n**重點摘錄：**\n• 600 人小村將被 1,200 名單身男性難民「淹沒」，性別比 6:1\n• 選址就在小學與托兒所旁，基建不足已被2022年報告確認\n• 政策重啓源於工黨清空難民旅館的壓力",
+      "url": "https://www.zerohedge.com/geopolitical/english-village-will-have-six-migrant-men-every-woman",
+      "timestamp": "2026-08-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "The Great Decline Of Britain",
+      "category": "geopolitical",
+      "summary": "**摘要：** 評論家 Steve Watson 通過 James Melville 大量紀錄的街景照，描繪英國公共基礎設施的可見衰退——滿街垃圾、人行道雜草叢生、百萬坑洞、堵塞排水溝、骯髒路標。居民現在竟自發清除路標、清理垃圾、修補坑洞，因為「被paid做的人不做」。地方政府收入年年靠 Council Tax 上漲，但最基本的維護服務無法交付。作者將此歸因於稅收被挪用至意識形態項目，基礎設施被棄之不顧。Melville 指出問題在 COVID 之後尤為明顯，「幾乎每個地方」都在惡化。\n**重點摘錄：**\n• 英國街道「肉眼可見」衰退：百萬坑洞、堵塞排水溝、雜草滿街\n• 居民與學童自發清理公共設施，因為 Council 不做\n• Council Tax 上漲但基本維護缺位——稅收支向意識形態項目\n🔑 **今日主線：** 通縮數據降溫但地緣風險升溫——PPI 走軟推低利率，但伊朗-葉門-沙烏地的消耗戰在霍爾木茲兩側同時熱化，油價雙向震盪。美國極限施壓 2.0 切斷伊朗金融管道，沙國煉油廠遭無人機襲擊。科技方面 Nvidia 被警告算力供過於求隱憂。S&P 500 創新高，但成交量偏淡，凌晨將迎零售銷售與 Fitch 英國評級考驗。",
+      "url": "https://www.zerohedge.com/geopolitical/great-decline-britain",
+      "timestamp": "2026-08-14",
+      "images": [],
+      "premium": true
+    }
+  ]
+}
