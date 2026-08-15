@@ -64,11 +64,15 @@ try {
   if ($LASTEXITCODE -ne 0) { throw 'git add failed' }
   $changes = (& git -C $RepoDir diff --cached --name-only)
   if ($changes) {
-    & git -C $RepoDir commit -m "chore: refresh sentiment data $(Get-Date -Format yyyy-MM-dd)" *>&1 | Tee-Object -FilePath $log -Append
-    if ($LASTEXITCODE -ne 0) { throw 'git commit failed' }
+    $commitOutput = & git -C $RepoDir commit -m "chore: refresh sentiment data $(Get-Date -Format yyyy-MM-dd)" 2>&1
+    $commitExit = $LASTEXITCODE
+    $commitOutput | ForEach-Object { Add-Content -Path $log -Value $_ }
+    if ($commitExit -ne 0) { throw 'git commit failed' }
   }
-  & git -C $RepoDir push origin main *>&1 | Tee-Object -FilePath $log -Append
-  if ($LASTEXITCODE -ne 0) { throw 'git push failed' }
+  $pushOutput = & git -C $RepoDir push origin main 2>&1
+  $pushExit = $LASTEXITCODE
+  $pushOutput | ForEach-Object { Add-Content -Path $log -Value $_ }
+  if ($pushExit -ne 0) { throw 'git push failed' }
   Add-Content -Path $log -Value "[$(Get-Date -Format o)] SUCCESS"
 }
 catch {
