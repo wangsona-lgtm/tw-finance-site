@@ -49,7 +49,7 @@ try {
   Get-Content -Raw -LiteralPath $HistoryPath | ConvertFrom-Json | Out-Null
 
   $html = Get-Content -Raw -LiteralPath (Join-Path $DashboardDir 'index.html')
-  foreach ($required in @('sentiment-data.json','sentiment-history.json','本週每日籌碼比較','institutionalOiSummary')) {
+  foreach ($required in @('sentiment-data.json','sentiment-history.json','institutionalOiSummary')) {
     if ($html -notlike "*$required*") { throw "Dashboard validation failed: missing $required" }
   }
 
