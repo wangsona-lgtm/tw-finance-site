@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-18",
+    "file": "tw-finance-site/reports/2026-08-18.json",
+    "title": "ZeroHedge 每日導讀 — 8月18日（二）",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-08-17",
+    "file": "tw-finance-site/reports/2026-08-17.json",
+    "title": "ZeroHedge 每日導讀 — 8月17日（一）",
+    "dayOfWeek": "一"
+  },
+  {
     "date": "2026-08-15",
     "file": "tw-finance-site/reports/2026-08-15.json",
     "title": "ZeroHedge 每日導讀 — 8月15日（六）",
