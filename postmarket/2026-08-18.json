@@ -1,0 +1,454 @@
+{
+  "date": "2026-08-18",
+  "title": "TAIEX Post-Market Flow Analysis - 2026-08-18 (Tue)",
+  "generated_at": "2026-08-18T16:05:00+08:00",
+  "market": "TWSE",
+  "summary": {
+    "taiex": {
+      "close": 45308.68,
+      "change": -548.59,
+      "change_pct": -1.20,
+      "direction": "down",
+      "open": 45922.40,
+      "high": 46064.09,
+      "low": 45225.42,
+      "previous_close": 45857.27
+    },
+    "broad_index": {
+      "name": "Fortune Island Stock Index",
+      "close": 50232.47,
+      "change": -632.19,
+      "change_pct": -1.24
+    },
+    "tai50": {
+      "name": "Taiwan 50 Index",
+      "close": 41997.80,
+      "change": -507.63,
+      "change_pct": -1.19
+    },
+    "trading_stats": {
+      "total_volume": 10305079770,
+      "total_volume_unit": "shares",
+      "total_value": 9976.10,
+      "total_value_unit": "100M NTD",
+      "total_trades": 5224255,
+      "prev_total_value": 9810.55
+    },
+    "fx_usdtwd": 31.90,
+    "fx_change": -0.09,
+    "fx_change_pct": -0.28,
+    "fx_direction": "down"
+  },
+  "indices": {
+    "TAIEX": {
+      "close": 45308.68,
+      "change": -548.59,
+      "change_pct": -1.20,
+      "direction": "down"
+    },
+    "Fortune Island Index": {
+      "close": 50232.47,
+      "change": -632.19,
+      "change_pct": -1.24,
+      "direction": "down"
+    },
+    "Taiwan 50 Index": {
+      "close": 41997.80,
+      "change": -507.63,
+      "change_pct": -1.19,
+      "direction": "down"
+    },
+    "Electronics Index": {
+      "close": 2887.68,
+      "change": -44.58,
+      "change_pct": -1.52,
+      "direction": "down"
+    },
+    "Semiconductor Index": {
+      "close": 1515.60,
+      "change": -22.72,
+      "change_pct": -1.48,
+      "direction": "down"
+    },
+    "Financial Insurance Index": {
+      "close": 3178.56,
+      "change": 22.91,
+      "change_pct": 0.73,
+      "direction": "up"
+    },
+    "Computer Peripheral Index": {
+      "close": 450.23,
+      "change": -9.04,
+      "change_pct": -1.97,
+      "direction": "down"
+    },
+    "Shipping Index": {
+      "close": 206.50,
+      "change": 4.23,
+      "change_pct": 2.09,
+      "direction": "up"
+    },
+    "Oil Gas Electricity Index": {
+      "close": 97.90,
+      "change": 0.98,
+      "change_pct": 1.01,
+      "direction": "up"
+    },
+    "Food Index": {
+      "close": 1926.04,
+      "change": 16.23,
+      "change_pct": 0.85,
+      "direction": "up"
+    }
+  },
+  "stocks": {
+    "2330": {
+      "name": "Taiwan Semi",
+      "close": 2380.0,
+      "change": -20.0,
+      "change_pct": -0.83,
+      "direction": "down"
+    },
+    "2308": {
+      "name": "Delta Elec",
+      "close": 1820.0,
+      "change": -65.0,
+      "change_pct": -3.45,
+      "direction": "down",
+      "note": "Stop loss hit at 1820"
+    },
+    "6505": {
+      "name": "Formosa Petrochem",
+      "close": 72.0,
+      "change": 0.9,
+      "change_pct": 1.27,
+      "direction": "up",
+      "note": "Intraday high 76.2 hit target zone"
+    },
+    "2454": {
+      "name": "MediaTek",
+      "close": 4050.0,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "2317": {
+      "name": "Hon Hai",
+      "close": 255.0,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "2382": {
+      "name": "Quanta",
+      "close": 333.5,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "3008": {
+      "name": "Largan",
+      "close": 5070.0,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "2303": {
+      "name": "UMC",
+      "close": 121.5,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "2408": {
+      "name": "Nanya Tech",
+      "close": 524.0,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "2409": {
+      "name": "AUO",
+      "close": 27.25,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "3481": {
+      "name": "InnoLux",
+      "close": 51.2,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "2327": {
+      "name": "Yageo",
+      "close": 608.0,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "2881": {
+      "name": "Fubon Fin",
+      "close": 125.5,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    },
+    "2882": {
+      "name": "Cathay Fin",
+      "close": 98.1,
+      "change": 0,
+      "change_pct": 0,
+      "direction": "flat"
+    }
+  },
+  "sector_performance": {
+    "gainers": [
+      {"name": "Shipping", "change_pct": 2.09},
+      {"name": "Oil Gas Electricity", "change_pct": 1.01},
+      {"name": "Food", "change_pct": 0.85},
+      {"name": "Financial Insurance", "change_pct": 0.73},
+      {"name": "Rubber", "change_pct": 0.54},
+      {"name": "Trade Retail", "change_pct": 0.53},
+      {"name": "Steel", "change_pct": 0.06}
+    ],
+    "losers": [
+      {"name": "Glass Ceramics", "change_pct": -3.49},
+      {"name": "Electrical Cable", "change_pct": -2.59},
+      {"name": "Computer Peripheral", "change_pct": -1.97},
+      {"name": "Other Electronics", "change_pct": -1.73},
+      {"name": "Electronic Components", "change_pct": -1.69},
+      {"name": "Green Energy", "change_pct": -1.75},
+      {"name": "Electronics", "change_pct": -1.52},
+      {"name": "Semiconductor", "change_pct": -1.48},
+      {"name": "Cement Ceramics", "change_pct": -1.42},
+      {"name": "Electrical Machinery", "change_pct": -1.51},
+      {"name": "Communication Network", "change_pct": -1.13},
+      {"name": "Chemicals", "change_pct": -1.18},
+      {"name": "Information Service", "change_pct": -1.00}
+    ]
+  },
+  "us_ref": {
+    "S&P500": {
+      "close": 7785.76,
+      "change": -13.23,
+      "change_pct": -0.17
+    },
+    "Nasdaq": {
+      "close": 26729.16,
+      "change": -73.87,
+      "change_pct": -0.28
+    },
+    "SOX": {
+      "close": 12417.05,
+      "change": -38.95,
+      "change_pct": -0.31
+    },
+    "VIX": {
+      "close": 15.90,
+      "change": 1.65,
+      "change_pct": 11.58
+    },
+    "DJI": {
+      "close": 53732.41,
+      "change": -107.58,
+      "change_pct": -0.20
+    },
+    "TSM": {
+      "close": 430.97,
+      "change": 4.62,
+      "change_pct": 1.08
+    }
+  },
+  "postmarket": {
+    "institutional_trading": {
+      "foreign": {
+        "buy_100m": 3709.94,
+        "sell_100m": 3829.80,
+        "net_100m": -119.86
+      },
+      "investment_trust": {
+        "buy_100m": 408.44,
+        "sell_100m": 351.82,
+        "net_100m": 56.63
+      },
+      "proprietary": {
+        "buy_100m": 338.88,
+        "sell_100m": 514.95,
+        "net_100m": -176.07,
+        "self_net": -21.73,
+        "hedge_net": -154.34
+      },
+      "total": {
+        "buy_100m": 4457.26,
+        "sell_100m": 4696.57,
+        "net_100m": -239.30
+      }
+    },
+    "futures_positions": {
+      "as_of_date": "20260817 (TAIFEX latest available - Tuesday 8/18 data publishes 18:00-20:00)",
+      "foreign_tx_oi_net": {
+        "oi": -83474,
+        "interpretation": "Foreign net short TX futures -83,474 contracts, slightly reduced from -85,179 on 8/14"
+      },
+      "trust_tx_oi_net": {
+        "oi": 78013,
+        "interpretation": "Investment trust net long TX futures +78,013 contracts, slightly reduced from +80,335"
+      },
+      "proprietary_tx_oi_net": {
+        "oi": 1021,
+        "interpretation": "Proprietary net long TX futures +1,021 contracts"
+      },
+      "foreign_all_futures_oi_net": -477114,
+      "foreign_all_options_oi_net": -2230,
+      "foreign_options_call_oi_net": 1549,
+      "foreign_options_put_oi_net": 3721,
+      "put_call_ratio": {
+        "volume_ratio_pct": 126.34,
+        "oi_ratio_pct": 117.16,
+        "put_volume": 105692,
+        "call_volume": 83656,
+        "put_oi": 85059,
+        "call_oi": 72603,
+        "interpretation": "P/C OI ratio 117.16% bearish (up from 115.00%); P/C volume ratio 126.34% elevated hedging. Both above 100% indicates put buying > call buying. Volume ratio jumped from 103.18% to 126.34% - fear rising."
+      }
+    },
+    "margin_data": {
+      "as_of_date": "2026-08-17 (MI_MARGN for 8/18 not yet available at 16:00 - OpenAPI MI_MARGN returns 8/17 data)",
+      "margin_balance_shares": 8867617,
+      "margin_balance_value_yi": 5501.02,
+      "margin_balance_change_shares": -50667,
+      "short_balance_shares": 218218,
+      "short_balance_change_shares": -4609,
+      "note": "MI_MARGN endpoint for 8/18 returned 'no matching data' at 16:00. OpenAPI per-stock margin data aggregated from 1,294 stocks matches 8/17 legacy data. Margin balance decreased -50,667 shares (continuing deleveraging). Short balance decreased -4,609 shares."
+    },
+    "market_breadth": {
+      "overall_advances": 3415,
+      "overall_limit_up": 66,
+      "overall_declines": 8821,
+      "overall_limit_down": 116,
+      "overall_unchanged": 588,
+      "stock_advances": 219,
+      "stock_limit_up": 7,
+      "stock_declines": 798,
+      "stock_limit_down": 0,
+      "stock_unchanged": 60,
+      "advance_decline_ratio": "0.27 (extreme decliner dominance, 798 down vs 219 up - breadth collapse)"
+    },
+    "adr_premium": {
+      "tsm_adr_close": 430.97,
+      "tsm_adr_volume": 7248242,
+      "usdtwd": 31.90,
+      "adr_implied_twd": 2749.59,
+      "tw2330_close": 2380.0,
+      "premium_pct": 15.53,
+      "interpretation": "ADR premium +15.53% (expanded from +14.27% in premarket). ADR strategy 0/6 hit rate - permanently retired as buy signal. 2330 fell -0.83% despite expanding premium. Premium now above +15% threshold but VIX > 15 and foreign spot selling -119.86B - exception conditions NOT met."
+    },
+    "next_day_events": [
+      "8/18 is Tuesday - next session is Wednesday 8/19",
+      "US markets Monday close: S&P -0.17%, Nasdaq -0.28%, SOX -0.31%, VIX 15.90 (+11.58% spike)",
+      "Foreign spot SOLD -119.86B NTD (reversal from +454.47B buy on 8/17) while TX futures still net short -83,474",
+      "Investment trust net bought +56.63B NTD (supportive, but overwhelmed by foreign + proprietary selling)",
+      "Proprietary net sold -176.07B (self -21.73B, hedge -154.34B) - hedging pressure intense",
+      "Total institutional net sell -239.30B NTD - largest net sell in recent weeks",
+      "P/C volume ratio spiked to 126.34% (from 103.18%) - fear hedging surge",
+      "Semiconductor -1.48%, Electronics -1.52%, Computer Peripheral -1.97% led losses",
+      "Shipping +2.09%, Oil/Gas +1.01%, Food +0.85%, Financial Insurance +0.73% were gainers - defensive rotation",
+      "Breadth collapse: 798 stocks down vs 219 up (A/D ratio 0.27), 116 limit down overall",
+      "2308 Delta Electronics hit stop loss at 1820 (-3.45%) - 2 consecutive days of decline from 2005 high",
+      "6505 Formosa Petrochem intraday high 76.2 hit target zone but closed 72.0 (+1.27%) - oil rally signal worked",
+      "VIX spike +11.58% to 15.90 - fear rising, all bullish recommendations for 8/19 must carry risk warning",
+      "TAIEX volume 9,976B NTD (up from 9,811B on 8/17 but still below 11,000B threshold)"
+    ],
+    "market_assessment": {
+      "text": "TAIEX crashed -1.20% (-548.59 pts) to 45,308.68, breaking below the 45,500 support. Open-high-close-low pattern: opened 45,922 near prev close, intraday high 46,064, then relentless selling to close near the low of 45,225. Three institutions net sold -239.30B NTD - foreign -119.86B (reversal from +454.47B buy on Monday), proprietary -176.07B (hedge -154.34B), only trust +56.63B provided support. Futures: foreign TX OI net short -83,474 (slightly reduced), P/C volume ratio spiked to 126.34% from 103.18% - fear hedging surge. VIX +11.58% to 15.90 confirms rising fear. Semiconductor -1.48%, Electronics -1.52%, Computer Peripheral -1.97% led losses. Defensive sectors gained: Shipping +2.09%, Oil/Gas +1.01%, Financials +0.73%. Breadth collapse: 798 down vs 219 up stocks, 116 limit down. Recommendation results: 2330 MISS (-0.83%), 2308 MISS (-3.45%, stop hit), 6505 HIT (intraday target hit). 2/3 misses on VIX spike day - confirms Rule 9 (VIX >5% spike = downgrade all bullish)."
+    }
+  },
+  "recommendation_review": {
+    "source": "2026-08-18 premarket recommendations",
+    "date_reviewed": "2026-08-18",
+    "reviews": [
+      {
+        "symbol": "2330",
+        "name": "TSMC",
+        "direction": "bullish/semi_divergence",
+        "recommend_price": 2395,
+        "target": "2420-2445",
+        "stop_loss": 2370,
+        "today_close": 2380.0,
+        "today_open": 2415.0,
+        "today_high": 2415.0,
+        "today_low": 2375.0,
+        "change_pct": -0.83,
+        "verdict": "MISS",
+        "analysis": "Opened 2415 near target zone lower bound but immediately sold off. Close 2380 near stop loss 2370. VIX +11.58% spike overwhelmed SOX divergence signal. ADR premium expanded to +15.53% but 2330 still fell - confirms ADR premium is not a buy signal."
+      },
+      {
+        "symbol": "6505",
+        "name": "Formosa Petrochem",
+        "direction": "bullish/oil_rally_momentum",
+        "recommend_price": 73.0,
+        "target": "76-80",
+        "stop_loss": 70.0,
+        "today_close": 72.0,
+        "today_open": 71.3,
+        "today_high": 76.2,
+        "today_low": 71.3,
+        "change_pct": 1.27,
+        "verdict": "HIT",
+        "analysis": "Intraday high 76.2 touched target zone lower bound (76-80). Entry near 73 gave +4.4% intraday profit. However, close fell to 72.0 (-1.4% from entry) - classic commodity spike-and-reverse. Trailing stop essential. Oil rally signal successfully transmitted to refining stock despite broad market selloff."
+      },
+      {
+        "symbol": "2308",
+        "name": "Delta Electronics",
+        "direction": "bullish/ai_power_continuation",
+        "recommend_price": 1885,
+        "target": "1950-2000",
+        "stop_loss": 1820,
+        "today_close": 1820.0,
+        "today_open": 1900.0,
+        "today_high": 1905.0,
+        "today_low": 1820.0,
+        "change_pct": -3.45,
+        "verdict": "MISS",
+        "analysis": "Severe miss. Opened 1900, sold off to close 1820 = exactly at stop loss. Two consecutive declining days (2005->1885->1820), highs lowering (2005->1905), closes lowering (1885->1820). Prior day's spike-and-reverse warning was not acted upon - confirms Rule 10 (衝高回落 >3% = auto-downgrade next day)."
+      }
+    ],
+    "summary": {
+      "total": 3,
+      "hits": 1,
+      "misses": 2,
+      "hit_rate_pct": 33.3
+    }
+  },
+  "momentum_scan": {
+    "scan_time": "2026-08-18 14:01",
+    "limit_up_count": 2,
+    "sector_leaders": [
+      {"sector": "Other", "count": 2, "stocks": ["6225 aiPlex 7-day limit-up (+144.7%)", "6226 Para Light 2-day"]}
+    ],
+    "note": "Only 2 limit-ups today (vs 3 on 8/17). 6225 aiPlex 7 consecutive limit-ups - extreme risk. Market breadth extremely weak with 798 decliners vs 219 advancers."
+  },
+  "sections": [
+    {"title": "📊 加權指數", "content": "收盤 45,308.68 點, 跌 548.59 點 (-1.20%)\n開盤 45,922.40 / 最高 46,064.09 / 最低 45,225.42\n成交量 9,976 億元 (較昨日 9,811 億略增)\n開高走低重挫，盤中高點接近昨收後賣壓湧現，收在接近全日低點"},
+    {"title": "🏛️ 三大法人買賣超", "content": "外資: 買進 3,710 億 / 賣出 3,830 億 / 淨賣超 -119.86 億\n投信: 買進 408 億 / 賣出 352 億 / 淨買超 +56.63 億\n自營商: 買進 339 億 / 賣出 515 億 / 淨賣超 -176.07 億 (自行買賣 -21.73 億, 避險 -154.34 億)\n合計: 淨賣超 -239.30 億\n\n外資從昨日 +454 億大買翻轉為 -120 億賣超，自營商避險大賣 -154 億，投信 +57 億獨木難支"},
+    {"title": "📊 期貨未平倉", "content": "外資台指期 OI 淨額: -83,474 口 (較 8/14 -85,179 略減空單)\n投信台指期 OI 淨額: +78,013 口\n自營商台指期 OI 淨額: +1,021 口\n外資全部期貨 OI 淨額: -477,114 口\n外資選擇權 OI 淨額: -2,230 口 (CALL +1,549 / PUT +3,721)\n\nP/C 成交量比: 126.34% (較昨日 103.18% 大幅飆升)\nP/C 未平倉比: 117.16% (較昨日 115.00% 上升)\n選擇權賣權買進大幅增加，避險需求激增"},
+    {"title": "💰 融資融券", "content": "融資餘額: 8,867,617 張 (約 5,501 億元) - 較前日減少 50,667 張\n融券餘額: 218,218 張 - 較前日減少 4,609 張\n\n(8/18 盤後 MI_MARGN 尚未公布，以上為 OpenAPI 8/17 資料)\n融資持續減碼，散戶去槓桿進行中"},
+    {"title": "💵 匯率與 ADR", "content": "USD/TWD: 31.90 (-0.28%) 台幣升值\nTSM ADR: 430.97 (+1.08%) (8/17 美股收盤)\nADR 隱含台股價: 2,749.59 元\nADR 溢價: +15.53% (持續擴大)\n\n⚠️ ADR 溢價策略 0/6 命中率，已永久退役為買進信號\n溢價雖擴大至 +15.53%，但外資現貨賣超 -120 億，VIX > 15，例外條件不成立"},
+    {"title": "🇺🇸 隔夜美股", "content": "S&P 500: 7,785.76 (-0.17%)\nNasdaq: 26,729.16 (-0.28%)\nDow Jones: 53,732.41 (-0.20%)\nSOX 費半: 12,417.05 (-0.31%)\nVIX: 15.90 (+11.58%) ⚠️ 恐慌飆升\n\nVIX 單日飆升 +11.58% 為高優先級風險信號，壓過所有隔夜正向因素"},
+    {"title": "📈 盤面強弱", "content": "上漲類股: 航運 +2.09%, 油電燃氣 +1.01%, 食品 +0.85%, 金融保險 +0.73%, 橡膠 +0.54%\n下跌類股: 玻璃陶瓷 -3.49%, 電器電纜 -2.59%, 電腦週邊 -1.97%, 綠能環保 -1.75%, 其他電子 -1.73%, 電子零組件 -1.69%, 電子工業 -1.52%, 機電 -1.51%, 半導體 -1.48%\n\n漲跌家數: 上市股票 219 漲 / 798 跌 (漲停 7 / 跌停 0)\n全市場 3,415 漲 / 8,821 跌 (漲停 66 / 跌停 116)\nA/D 比率 0.27 - 極端跌勢主導，盤面崩潰"},
+    {"title": "📋 個股推薦檢討", "content": "2330 台積電: 推薦 2395 / 收盤 2380 / -0.83% → ❌失誤\n  開高 2415 接近目標後下殺，盤中低點 2375 距停損僅 5 點\n6505 台塑化: 推薦 73.0 / 收盤 72.0 / +1.27% → ✅命中\n  盤中高點 76.2 觸及目標區下緣，原油 rally 信號成功傳導\n2308 台達電: 推薦 1885 / 收盤 1820 / -3.45% → ❌失誤\n  開高 1900 後一路下殺，收在停損價 1820，連兩日高點降低\n\n命中率: 1/3 = 33.3% (VIX 飆升日 2/3 失誤，驗證 Rule 9)"},
+    {"title": "📅 明日注意", "content": "1. VIX 飆升至 15.90 (+11.58%) - 所有偏多推薦須加風險警示或降級\n2. 外資現貨翻賣 -120 億 + 期貨仍空 -83,474 口 - 雙重偏空\n3. P/C 成交量比飆至 126.34% - 避險情緒急升\n4. TAIEX 跌破 45,500 支撐，下一支撐看 45,000 整數關卡\n5. 2308 台達電連兩日衝高回落 (2005→1885→1820) - 短期下降趨勢確認\n6. 防禦族群: 航運、油電燃氣、金融保險 - 資金避風港\n7. 6225 天瀚連 7 漲停 (+144.7%) - 極端風險不碰\n8. 留意美國週二盤後是否延續跌勢，VIX 是否回落至 15 以下\n9. ADR 溢價 +15.53% 但外資賣超 - 不構成買進條件\n10. 市場寬度崩潰 (A/D 0.27) - 系統性風險升溫，提高現金比例"}
+  ],
+  "notes": [
+    "Data sources: TWSE BFI82U (institutional), MI_INDEX type=IND/MS (indices/stats), FMTQIK (trading info), TAIFEX OpenAPI (futures), yfinance (stocks/ADR/US), TWSE OpenAPI MI_MARGN (margin)",
+    "TAIFEX futures data dated 20260817 (Monday - Tuesday 8/18 data publishes 18:00-20:00)",
+    "MI_MARGN for 8/18 not available at 16:00 - used OpenAPI per-stock margin aggregated from 1,294 stocks (matches 8/17 legacy data)",
+    "ADR premium calculation: 430.97 x 31.90 / 5 / 2380 - 1 = +15.53%",
+    "US market data from Monday 8/17 close (latest completed US session)",
+    "TSM ADR volume 7.25M shares (above 3M threshold - regular session data)",
+    "Stock prices for non-key stocks may be from 8/17 close (yfinance lag on some TW tickers)",
+    "Recommendation review uses 2026-08-18 premarket recommendations (3 stocks: 2330, 6505, 2308)"
+  ]
+}
