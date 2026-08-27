@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Fetch sentiment data (three institutional + TAIFEX PC ratio) and save to JSON."""
 import urllib.request, urllib.parse, json, os, datetime, ssl
-import re, html
+import re, html, csv, io
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-H = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'}
+H = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36', 'Accept': 'application/json'}
 DIR = os.path.dirname(__file__)
 OUT = os.path.join(DIR, 'sentiment-data.json')
 HIST = os.path.join(DIR, 'sentiment-history.json')
@@ -20,9 +20,34 @@ def fetch(url, data=None):
     raw = resp.read()
     # Try UTF-8 first, then Big5
     try:
-        return raw.decode('utf-8', errors='replace')
+        return raw.decode('utf-8-sig', errors='replace')
     except:
         return raw.decode('big5', errors='replace')
+
+def parse_taifex_openapi(raw):
+    """Parse the TAIFEX endpoint's JSON or current UTF-8 CSV response."""
+    text = raw.decode('utf-8-sig', errors='replace')
+    try:
+        data = json.loads(text)
+        if isinstance(data, list):
+            return data
+    except json.JSONDecodeError:
+        pass
+    rows = []
+    for row in csv.DictReader(io.StringIO(text)):
+        def val(label):
+            return row.get(label, '0').strip() or '0'
+        rows.append({
+            'Date': val('日期'),
+            'Item': val('身份別'),
+            'FuturesOpenInterest(Long)': val('期貨多方未平倉口數'),
+            'FuturesOpenInterest(Short)': val('期貨空方未平倉口數'),
+            'FuturesOpenInterest(Net)': val('期貨多空未平倉口數淨額'),
+            'OptionsOpenInterest(Long)': val('選擇權多方未平倉口數'),
+            'OptionsOpenInterest(Short)': val('選擇權空方未平倉口數'),
+            'OptionsOpenInterest(Net)': val('選擇權多空未平倉口數淨額'),
+        })
+    return rows
 
 def get_twse_inst(date_str):
     """Fetch three major institutional data from TWSE."""
@@ -90,8 +115,7 @@ def get_tx_futures(dt):
     try:
         req = urllib.request.Request(url, headers=H)
         resp = urllib.request.urlopen(req, context=ctx, timeout=15)
-        raw = resp.read().decode('utf-8')
-        data = json.loads(raw)
+        data = parse_taifex_openapi(resp.read())
         if not isinstance(data, list) or len(data) == 0:
             return None
         # TAIFEX API returns data for the latest date available, not filtered by input dt.
@@ -118,7 +142,7 @@ def get_institutional_oi():
     try:
         req = urllib.request.Request(url, headers=H)
         resp = urllib.request.urlopen(req, context=ctx, timeout=15)
-        data = json.loads(resp.read().decode('utf-8'))
+        data = parse_taifex_openapi(resp.read())
         if not isinstance(data, list) or not data:
             return None
         items = []
