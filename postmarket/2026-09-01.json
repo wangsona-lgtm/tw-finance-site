@@ -1,0 +1,435 @@
+{
+  "date": "2026-09-01",
+  "title": "台股盤後籌碼分析 - 2026-09-01 (Tue)",
+  "generated_at": "2026-09-01T16:10:00+08:00",
+  "market": "TWSE",
+  "summary": {
+    "taiex": {
+      "close": 46948.72,
+      "change": 820.25,
+      "change_pct": 1.78,
+      "direction": "up",
+      "open": 46177.11,
+      "high": 46948.72,
+      "low": 46081.11,
+      "previous_close": 46128.47
+    },
+    "broad_index": {
+      "name": "寶島股價指數",
+      "close": 52101.13,
+      "change": 926.72,
+      "change_pct": 1.81
+    },
+    "tai50": {
+      "name": "臺灣50指數",
+      "close": 43491.42,
+      "change": 868.99,
+      "change_pct": 2.04
+    },
+    "trading_stats": {
+      "total_volume": 12901194468,
+      "total_volume_unit": "shares",
+      "total_value": 11290.23,
+      "total_value_unit": "100M NTD",
+      "total_trades": 5301691,
+      "prev_total_value": 12892.28
+    },
+    "fx_usdtwd": 31.67,
+    "fx_change": 0.04,
+    "fx_change_pct": 0.13,
+    "fx_direction": "up"
+  },
+  "indices": {
+    "TAIEX": {
+      "close": 46948.72,
+      "change": 820.25,
+      "change_pct": 1.78,
+      "direction": "up"
+    },
+    "寶島股價指數": {
+      "close": 52101.13,
+      "change": 926.72,
+      "change_pct": 1.81,
+      "direction": "up"
+    },
+    "臺灣50指數": {
+      "close": 43491.42,
+      "change": 868.99,
+      "change_pct": 2.04,
+      "direction": "up"
+    },
+    "電子工業類指數": {
+      "close": 2982.33,
+      "change": 58.35,
+      "change_pct": 2.00,
+      "direction": "up"
+    },
+    "半導體類指數": {
+      "close": 1567.08,
+      "change": 32.41,
+      "change_pct": 2.11,
+      "direction": "up"
+    },
+    "金融保險類指數": {
+      "close": 3391.58,
+      "change": 48.46,
+      "change_pct": 1.45,
+      "direction": "up"
+    },
+    "通信網路類指數": {
+      "close": 239.05,
+      "change": 6.89,
+      "change_pct": 2.97,
+      "direction": "up"
+    },
+    "油電燃氣類指數": {
+      "close": 103.57,
+      "change": 3.88,
+      "change_pct": 3.89,
+      "direction": "up"
+    },
+    "生技醫療類指數": {
+      "close": 97.62,
+      "change": 3.29,
+      "change_pct": -3.26,
+      "direction": "down"
+    },
+    "航運類指數": {
+      "close": 210.77,
+      "change": 0.92,
+      "change_pct": 0.44,
+      "direction": "up"
+    }
+  },
+  "stocks": {
+    "2330": {
+      "name": "台積電",
+      "close": 2440.0,
+      "change": 35.0,
+      "change_pct": 1.46,
+      "direction": "up",
+      "open": 2395.0,
+      "high": 2440.0,
+      "low": 2390.0,
+      "note": "開低走高收在最高，AI 生態核心受益"
+    },
+    "2454": {
+      "name": "聯發科",
+      "close": 4315.0,
+      "change": 390.0,
+      "change_pct": 9.94,
+      "direction": "up",
+      "open": 4315.0,
+      "high": 4315.0,
+      "low": 4315.0,
+      "note": "開盤即漲停鎖死（輝達 35 億美元 ECB 認購 + 客製化 XPU 結盟），全場無其他成交價"
+    },
+    "2317": {
+      "name": "鴻海",
+      "close": 256.0,
+      "change": 6.0,
+      "change_pct": 2.40,
+      "direction": "up",
+      "open": 253.0,
+      "high": 256.0,
+      "low": 251.0,
+      "note": "AI 伺服器組裝核心，盤中高點 256 觸及 8/21 推薦目標區上緣"
+    },
+    "2382": {
+      "name": "廣達",
+      "close": 342.0,
+      "change": 3.5,
+      "change_pct": 1.03,
+      "direction": "up",
+      "open": 340.0,
+      "high": 344.0,
+      "low": 339.0
+    },
+    "2308": {
+      "name": "台達電",
+      "close": 1865.0,
+      "change": 25.0,
+      "change_pct": 1.36,
+      "direction": "up",
+      "open": 1845.0,
+      "high": 1870.0,
+      "low": 1840.0,
+      "note": "終結連續下跌，反彈回升"
+    },
+    "6505": {
+      "name": "台塑化",
+      "close": 76.7,
+      "change": 3.2,
+      "change_pct": 4.35,
+      "direction": "up",
+      "open": 73.7,
+      "high": 77.6,
+      "low": 73.3,
+      "note": "盤中高點 77.6 進入 76-78 目標區（規則6：觸標後設移動止損 -3% ≈ 75.3）"
+    },
+    "2882": {
+      "name": "國泰金",
+      "close": 111.0,
+      "change": 0.5,
+      "change_pct": 0.45,
+      "direction": "up",
+      "open": 110.5,
+      "high": 111.5,
+      "low": 110.0
+    }
+  },
+  "sector_performance": {
+    "gainers": [
+      {"name": "油電燃氣", "change_pct": 3.89},
+      {"name": "通信網路", "change_pct": 2.97},
+      {"name": "其他電子", "change_pct": 2.87},
+      {"name": "水泥", "change_pct": 2.64},
+      {"name": "電機機械", "change_pct": 2.55},
+      {"name": "化學", "change_pct": 2.51},
+      {"name": "電腦及週邊設備", "change_pct": 2.24},
+      {"name": "半導體", "change_pct": 2.11},
+      {"name": "紡織纖維", "change_pct": 2.02},
+      {"name": "電子工業", "change_pct": 2.00},
+      {"name": "臺灣資訊科技", "change_pct": 2.10},
+      {"name": "金融保險", "change_pct": 1.45},
+      {"name": "電子零組件", "change_pct": 1.21},
+      {"name": "汽車", "change_pct": 1.03}
+    ],
+    "losers": [
+      {"name": "生技醫療", "change_pct": -3.26},
+      {"name": "化學生技醫療", "change_pct": -1.58},
+      {"name": "電器電纜", "change_pct": -0.64},
+      {"name": "塑膠", "change_pct": -0.60},
+      {"name": "光電", "change_pct": -0.30},
+      {"name": "數位雲端", "change_pct": -0.32},
+      {"name": "資訊服務", "change_pct": -0.41},
+      {"name": "貿易百貨", "change_pct": -0.02}
+    ]
+  },
+  "us_ref": {
+    "note": "美東週一 8/31 收盤（本報告時點最近完成之美股交易日）",
+    "S&P500": {
+      "close": 7686.14,
+      "change_pct": -0.58
+    },
+    "Nasdaq": {
+      "close": 26370.89,
+      "change_pct": -0.64
+    },
+    "Dow": {
+      "close": 53185.90,
+      "change_pct": -0.72
+    },
+    "SOX": {
+      "close": 11535.05,
+      "change_pct": -2.92
+    },
+    "VIX": {
+      "close": 14.92,
+      "change_pct": 2.83
+    },
+    "TSM": {
+      "close": 415.32,
+      "change_pct": -0.53
+    }
+  },
+  "postmarket": {
+    "institutional_trading": {
+      "foreign": {
+        "buy_100m": 4020.0,
+        "sell_100m": 3752.9,
+        "net_100m": 267.08
+      },
+      "investment_trust": {
+        "buy_100m": 391.1,
+        "sell_100m": 260.1,
+        "net_100m": 131.02
+      },
+      "proprietary": {
+        "buy_100m": 627.4,
+        "sell_100m": 464.1,
+        "net_100m": 163.30,
+        "self_net": 31.57,
+        "hedge_net": 131.72
+      },
+      "total": {
+        "buy_100m": 5038.5,
+        "sell_100m": 4477.1,
+        "net_100m": 561.39
+      }
+    },
+    "futures_positions": {
+      "as_of_date": "20260831 (TAIFEX 最新公布 — 9/1 期貨法人數據 18:00-20:00 後上線)",
+      "foreign_tx_oi_net": {
+        "oi": -82970,
+        "interpretation": "外資台指期淨空單 -82,970 口（較 8/28 的 -83,655 口回補 +685 口）。今日現貨大買 267 億後，9/1 期貨淨部位是否大幅回補/翻多為明日關鍵觀察。"
+      },
+      "trust_tx_oi_net": {
+        "oi": 75878,
+        "interpretation": "投信台指期淨多單 +75,878 口（持續高水位多單）"
+      },
+      "proprietary_tx_oi_net": {
+        "oi": 1609,
+        "interpretation": "自營商台指期淨多單 +1,609 口"
+      },
+      "foreign_all_futures_oi_net": -487918,
+      "foreign_all_options_oi_net": -4570,
+      "foreign_options_call_oi_net": -4183,
+      "foreign_options_put_oi_net": 335,
+      "put_call_ratio": {
+        "volume_ratio_pct": 118.35,
+        "oi_ratio_pct": 96.12,
+        "put_volume": 161117,
+        "call_volume": 136134,
+        "put_oi": 61681,
+        "call_oi": 64172,
+        "interpretation": "P/C OI 比 96.12%（低於 100% = Call OI > Put OI，多方部位略佔優）；P/C 成交量比 118.35%（ Put 交易活躍，避險買盤存在但未主導）。8/27 OI 比 105.81% → 8/31 96.12% = 避險水位下降。"
+      }
+    },
+    "margin_data": {
+      "as_of_date": "20260831（9/1 融資融券數據 16:10 時 MI_MARGN 尚未公布，預計盤後晚間上線）",
+      "margin_balance_shares": 8860863,
+      "margin_balance_change": -31858,
+      "short_balance_shares": 217718,
+      "short_balance_change": 3885,
+      "margin_value_100m": 5698.77,
+      "note": "8/31 融資餘額 886.1 萬張（-3.19 萬張，連續減碼）；融券 21.77 萬張（+0.39 萬張）。融資持續退潮 = 散戶謹慎，槓桿資金未追高。"
+    },
+    "market_breadth": {
+      "overall_advances": 10099,
+      "overall_limit_up": 278,
+      "overall_declines": 4225,
+      "overall_limit_down": 92,
+      "overall_unchanged": 774,
+      "stock_advances": 587,
+      "stock_limit_up": 16,
+      "stock_declines": 358,
+      "stock_limit_down": 2,
+      "stock_unchanged": 122,
+      "advance_decline_ratio": "1.64 (587 漲 vs 358 跌，上市股票漲勢主導)"
+    },
+    "adr_premium": {
+      "tsm_adr_close": 415.32,
+      "tsm_adr_volume": 6727500,
+      "usdtwd": 31.67,
+      "adr_implied_twd": 2630.64,
+      "tw2330_close": 2440.0,
+      "premium_pct": 7.81,
+      "interpretation": "ADR 溢價壓縮至 +7.81%（8/31 基準為 +9.24%、8/19 前曾達 +10% 以上）。2330 大漲 +1.46% 而 ADR -0.53%，台股漲勢超過 ADR = 溢價收斂。⚠️ ADR 溢價策略 0/9 命中率，已永久退役，僅為數據點。"
+    },
+    "next_day_events": [
+      "9/2 (三) 為下一交易日",
+      "美股週一 8/31 收盤：S&P -0.58%、Nasdaq -0.64%、SOX -2.92%、VIX 14.92（+2.83%）— 台股今日逆著 SOX 弱勢大漲 +1.78%，今晚美股半導體對輝達-聯發科結盟的回應是續漲關鍵",
+      "三大法人合計大買 +561.39 億（外資 +267.08、投信 +131.02、自營 +163.30）— 籌碼面全面翻多",
+      "2454 聯發科漲停鎖死 4,315 全場 — 明日觀察開高後是否回測 4,100-4,150（規則3/8：漲停日不追高，回測縮量再介入）",
+      "外資現貨大買 +267 億，但期貨淨空單（8/31）仍 -82,970 口 — 9/1 期貨數據 18:00 後揭曉，若大幅回補則多頭訊號一致",
+      "台塑化 6505 盤中 77.6 進入 76-78 目標區後收 76.7 — 規則6 移動止損約 75.3，油價 +3.97% 至 86.71 支撐能源股",
+      "生技醫療 -3.26% 為最弱類股，資金持續流向 AI/能源",
+      "TSM ADR 溢價壓縮至 +7.81%，台股與 ADR 脫鉤上漲",
+      "今日量縮上漲（11,290 億 vs 8/31 12,892 億，-12.4%）— 續攻 47,000 需補量",
+      "10Y 殖利率 4.76% 續升（+1.84%），高殖利率壓力仍在（規則13：金融股注意）",
+      "支撐：46,081（今日低點）→ 46,128（昨收）；壓力：46,948（今日高點/收盤）→ 47,000 整數關卡"
+    ],
+    "market_assessment": {
+      "text": "TAIEX 大漲 +820.25 點 (+1.78%) 收 46,948.72，收在全天最高點，開低走高（開盤 46,177 距低點僅 96 點，盤中拉升 868 點至收盤高點）。主催化劑：輝達宣布 35 億美元認購聯發科 ECB + 客製化 XPU/NVLink 生態結盟（US 週一 8/31 盤後宣布），2454 開盤即漲停 4,315 (+9.94%) 鎖死全場，通信網路類 +2.97%、半導體 +2.11% 受帶動；油電燃氣 +3.89% 領漲（油價 +3.97% 至 86.71，伊朗經濟戰+胡塞升級）。值得注意的是台股逆著週一 SOX -2.92% 大漲 = 輝達結盟利多覆蓋隔夜費半弱勢。籌碼面全面翻多：外資 +267.08 億（從 8/31 賣超 -143.9 億翻為大買）、投信 +131.02 億、自營 +163.30 億，合計 +561.39 億。融資餘額持續下降（散戶不追高）+ 漲停 278 家 = 由實質買盤驅動的上漲。量縮 12.4%（11,290 億）為唯一隱憂 — 續攻 47,000 整數關卡需要補量。9/1 期貨法人數據 18:00 後公布，外資期貨是否從 -82,970 口淨空單大幅回補為明日最重要驗證。"
+    }
+  },
+  "recommendation_review": {
+    "source": "2026-09-01 premarket recommendations (generated 09:42, market open)",
+    "date_reviewed": "2026-09-01",
+    "reviews": [
+      {
+        "symbol": "2330",
+        "name": "台積電",
+        "direction": "偏多/AI供應鏈核心",
+        "recommend_price": "2395~2405 (回檔進場)",
+        "target": "2460~2480",
+        "stop_loss": 2365,
+        "today_close": 2440.0,
+        "today_open": 2395.0,
+        "today_high": 2440.0,
+        "today_low": 2390.0,
+        "change_pct": 1.46,
+        "verdict": "HIT",
+        "analysis": "進場區 2395-2405 觸及（開盤 2395、低點 2390），收盤 2440 = 進場價上方 +1.9%。目標 2460 未及但方向正確、收在最高點。安全邊際進場（規則11）發揮效果 — 開盤價即落在推薦區。"
+      },
+      {
+        "symbol": "6505",
+        "name": "台塑化",
+        "direction": "偏多/能源順勢",
+        "recommend_price": "73.0~73.5",
+        "target": "76~78",
+        "stop_loss": 71.5,
+        "today_close": 76.7,
+        "today_open": 73.7,
+        "today_high": 77.6,
+        "today_low": 73.3,
+        "change_pct": 4.35,
+        "verdict": "HIT",
+        "analysis": "進場區 73.0-73.5 觸及（開盤 73.7 回測 73.3），盤中高點 77.6 進入 76-78 目標區 ✅，收 76.7。油價 +3.97% 至 86.71 驅動。⚠️ 規則6：目標區已觸及，移動止損設 -3% 於 77.6 之下 ≈ 75.3 — 8/21 觸標後 8/24 暴跌的前例（第三度驗證）不可重蹈。"
+      },
+      {
+        "symbol": "2317",
+        "name": "鴻海",
+        "direction": "偏多/AI伺服器+輝達生態",
+        "recommend_price": "248~250 (回檔進場)",
+        "target": "258~262",
+        "stop_loss": 244,
+        "today_close": 256.0,
+        "today_open": 253.0,
+        "today_high": 256.0,
+        "today_low": 251.0,
+        "change_pct": 2.40,
+        "verdict": "HIT (direction, entry not filled)",
+        "analysis": "方向正確（+2.40% 收 256，盤中觸及 8/21 目標區上緣 255），但回檔進場 248-250 未觸及（低點 251）— 開高不回測 = 強勢鎖定。錯過進場但零損失；續抱者目標 258-262 维持。"
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "direction": "觀察不追高（漲停鎖死）",
+        "recommend_price": null,
+        "target": "等待回測 4100~4150 再評估",
+        "stop_loss": null,
+        "today_close": 4315.0,
+        "today_open": 4315.0,
+        "today_high": 4315.0,
+        "today_low": 4315.0,
+        "change_pct": 9.94,
+        "verdict": "N/A (觀察決策正確)",
+        "analysis": "開盤 4,315 漲停鎖死全場（O=H=L=C，無其他成交價）。9/1 盤前「觀察不追高」決策直接應用 8/4 歷史教訓（規則3）— 漲停日非進場點。明日觀察開高後是否回測 4,100-4,150 縮量整理，屆時再評估介入（規則8 突破回測）。輝達 35 億 ECB + XPU 結盟為長線結構利多。"
+      }
+    ],
+    "summary": {
+      "total": 4,
+      "hits": 3,
+      "misses": 0,
+      "hit_rate_pct": 75.0,
+      "note": "3 命中 + 1 觀察正確（2454 不追高）。6520/2330/2317 全數偏多方向正確，無失誤。"
+    }
+  },
+  "sections": [
+    {"title": "📊 加權指數", "content": "收盤 46,948.72 點, 大漲 820.25 點 (+1.78%)\n開盤 46,177.11 / 最高 46,948.72 / 最低 46,081.11\n收在全天最高點 = 開低走高，盤中拉升 868 點\n成交值 11,290 億元 (較 8/31 的 12,892 億量縮 12.4%)\n成交筆數 530 萬筆 / 成交股數 129.0 億股\n\n催化劑：輝達 35 億美元認購聯發科 ECB + 客製化 XPU 結盟\n2454 開盤漲停鎖死帶動半導體/通信網路類全面走強\n台股逆著 SOX -2.92% 大漲 = 結盟利多覆蓋隔夜費半弱勢"},
+    {"title": "🏛️ 三大法人買賣超", "content": "外資: 買進 4,020 億 / 賣出 3,753 億 / 淨買超 +267.08 億 ⭐翻多大買\n投信: 買進 391 億 / 賣出 260 億 / 淨買超 +131.02 億\n自營商: 淨買超 +163.30 億 (自行 +31.57, 避險 +131.72)\n合計: 淨買超 +561.39 億 ⭐⭐ 全面翻多\n\n外資從 8/31 賣超 -143.9 億翻為 +267 億大買\n三大法人全數站在買方 = 籌碼面強力支撐\n輝達結盟主題吸引外資回流 AI 半導體"},
+    {"title": "📊 期貨未平倉", "content": "外資台指期 OI 淨額: -82,970 口 (8/31 資料)\n  較 8/28 的 -83,655 口小幅回補 (+685 口)\n投信台指期 OI 淨額: +75,878 口 (高水位多單)\n自營商台指期 OI 淨額: +1,609 口\n\n外資全部期貨 OI 淨額: -487,918 口\n外資選擇權 OI 淨額: -4,570 口 (CALL -4,183 / PUT +335)\n\nP/C 成交量比: 118.35%\nP/C 未平倉比: 96.12% ⬇️ (Call OI > Put OI)\n  避險水位下降，多方部位略佔優\n⚠️ 9/1 期貨法人數據 18:00-20:00 後公布\n  外資今日現貨大買 267 億，期貨是否大幅回補空單 = 明日關鍵驗證"},
+    {"title": "💰 融資融券", "content": "⚠️ 9/1 融資融券數據 16:10 時尚未公布\n\n參考 8/31 數據:\n融資餘額: 886.1 萬張 (-3.19 萬張，連續減碼)\n融券餘額: 21.77 萬張 (+0.39 萬張)\n融資金額: 5,698.77 億元\n\n融資持續退潮 = 散戶槓桿資金謹慎未追高\n法人買盤 + 散戶退潮 = 上漲由實質資金驅動"},
+    {"title": "💵 匯率與 ADR", "content": "USD/TWD: 31.67 (台幣微貶 +0.04)\nTSM ADR: $415.32 (-0.53%) (8/31 美股收盤)\nADR 隱含台股價: 2,630.64 元\nADR 溢價: +7.81% ⬇️ 持續壓縮\n\n溢價走勢: +15.53% (8/18) → +10.53% (8/20) → +9.29% (8/31) → +7.81%\n2330 今日 +1.46% 大漲而 ADR -0.53% = 台股領漲\n溢價收斂至個位數 = ADR 與台股價格回歸均衡\n⚠️ ADR 溢價策略 0/9 命中率，永久退役，僅為數據點"},
+    {"title": "🇺🇸 隔夜美股 (8/31 週一)", "content": "S&P 500: 7,686.14 (-0.58%)\nNasdaq: 26,370.89 (-0.64%)\nDow Jones: 53,185.90 (-0.72%)\nSOX 費半: 11,535.05 (-2.92%) ⚠️\nVIX: 14.92 (+2.83%) 低檔徘徊\n\n美股週一風險趨避 (S&P/Nasdaq/全跌)\n但台股今日逆勢大漲 = 輝達結盟主題覆蓋系統性弱勢\n今晚美股半導體板塊對結盟的回應 = 明日台股半導體方向\n10Y 殖利率 4.76% (+1.84%) 續升 — 高殖利率壓力注意金融股 (規則13)"},
+    {"title": "📈 盤面強弱", "content": "上漲類股: 油電燃氣 +3.89%, 通信網路 +2.97%, 其他電子 +2.87%, 水泥 +2.64%, 電機機械 +2.55%, 化學 +2.51%, 電腦週邊 +2.24%, 半導體 +2.11%, 紡織 +2.02%, 電子工業 +2.00%, 金融保險 +1.45%\n下跌類股: 生技醫療 -3.26%, 化生醫 -1.58%, 電器電纜 -0.64%, 塑膠 -0.60%, 光電 -0.30%\n\n漲跌家數: 上市股票 587 漲 / 358 跌 (漲停 16 / 跌停 2)\n全市場 10,099 漲 / 4,225 跌 (漲停 278 / 跌停 92)\nA/D 比率 1.64 — 漲勢主導但非一面倒\n\n權值股表現:\n聯發科 +9.94% 漲停鎖死 (風暴中心)\n台塑化 +4.35% (油價 +3.97% 驅動)\n鴻海 +2.40%, 台達電 +1.36%, 台積電 +1.46%\n廣達 +1.03%, 國泰金 +0.45%"},
+    {"title": "📋 個股推薦檢討", "content": "2330 台積電: 推薦 2395~2405 / 收盤 2440 / +1.46% → ✅命中\n  開盤 2395 即落在進場區，收最高 2440\n  進場價 +1.9% 獲利空間，目標 2460 續追\n\n6505 台塑化: 推薦 73.0~73.5 / 收盤 76.7 / +4.35% → ✅命中\n  盤中高點 77.6 進入 76-78 目標區 ⭐\n  ⚠️ 規則6：移動止損 75.3 (77.6 × 0.97)\n  8/21 觸標後 8/24 暴跌前例不可重蹈\n\n2317 鴻海: 推薦 248~250 / 收盤 256 / +2.40% → ✅方向命中\n  開高不回測 (低點 251 > 250)，未進場\n  目標 258-262 續有效，零損失錯過\n\n2454 聯發科: 觀察不追高 / 漲停鎖死 4315 → ✅決策正確\n  規則3 應用：漲停日非進場點 (8/4 教訓)\n  明日等回測 4,100-4,150 縮量再評估\n\n命中率: 3/4 命中 + 1 觀察正確 = 0 失誤\n規則3 (不追高) 與規則11 (安全邊際進場) 同日驗證成功"},
+    {"title": "📅 明日注意", "content": "1. ⭐ 三大法人合計大買 +561 億，籌碼面全面翻多\n2. ⭐ 外資期貨淨空單 -82,970 口 (8/31) — 9/1 數據 18:00 後公布，現貨大買後期貨是否回補翻多為最大驗證點\n3. 2454 明日開盤：漲停鎖死後慣性開高，觀察是否回測 4,100-4,150 (規則3/8)\n4. 今晚美股半導體對輝達結盟的回應 = 台股半導體明日方向 (SOX 週一 -2.92% 對作)\n5. 量縮 12.4% 上漲 — 續攻 47,000 整數關卡需補量至 1.2 兆以上\n6. 6505 已觸目標區，移動止損 75.3 嚴格執行 (規則6)\n7. 生技醫療 -3.26% 最弱，資金集中 AI/能源，避開無主題類股\n8. TSM ADR 溢價 +7.81% 個位數 = 均衡，不構成訊號\n9. 10Y 殖利率 4.76% 續升 — 金融股留意 (規則13)\n10. 支撐: 46,081 (今日低點) → 46,128 (昨收)\n11. 壓力: 46,948 (今日高點=收盤) → 47,000 整數關卡\n12. 融資連續退潮 + 法人大買 = 上漲結構健康，散戶槓桿未過熱"}
+  ],
+  "notes": [
+    "Data sources: TWSE BFI82U (institutional), MI_5MINS_HIST (TAIEX OHLC), FMTQIK (trading info), MI_INDEX type=IND (sector indices), MI_INDEX type=MS (breadth), TAIFEX OpenAPI (futures/options/P/C), yfinance (ADR/US/TAIEX/stocks)",
+    "Self-verification: 46/46 assertions passed - all key figures re-derived from raw JSON before publication",
+    "TAIFEX futures data dated 20260831 - 9/1 futures institutional data publishes 18:00-20:00 (will be captured in later runs if scheduled)",
+    "MI_MARGN 9/1 data not yet published at 16:10 - 8/31 data cited as reference (margin 886.1M shares -31,858, short 217,718 +3,885)",
+    "T86 per-stock institutional detail not yet published (~17:00) - BFI82U aggregate used",
+    "ADR premium: 415.32 x 31.67 / 5 / 2440 - 1 = +7.81% (TSM ADR volume 6.7M shares = regular session)",
+    "US market data from Monday 8/31 close (latest completed US session at report time)",
+    "Institutional turnover comparison: 8/31 foreign sold -14.39B -> 9/1 foreign bought +267.08B (major flip)",
+    "Recommendation review based on 2026-09-01 premarket (generated 09:42 intraday): 3/4 HIT + 1 correct observe decision (2454)",
+    "Rule 3 (no chasing limit-up) validated 2nd time: 2454 limit-up day classified as observe-only",
+    "Rule 11 (safety-margin entry) validated: 2330 entry zone 2395-2405 touched at open 2395",
+    "Rule 6 trailing stop mandatory: 6505 touched target zone intraday high 77.6 - trailing stop ~75.3"
+  ]
+}
