@@ -1,296 +1,296 @@
 [
- {
-  "date": "2026-09-01",
-  "file": "tw-finance-site/reports/2026-09-01.json",
-  "title": "ZeroHedge 每日導讀 — 9月1日（二）+ 盤前分析",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-08-21",
-  "file": "tw-finance-site/reports/2026-08-21.json",
-  "title": "ZeroHedge 每日導讀 — 8月21日（五）+ 盤前分析",
-  "dayOfWeek": "五"
- },
- {
-  "date": "2026-08-20",
-  "file": "tw-finance-site/reports/2026-08-20.json",
-  "title": "ZeroHedge 每日導讀 — 8月20日（四）+ 盤前分析",
-  "dayOfWeek": "四"
- },
- {
-  "date": "2026-08-19",
-  "file": "tw-finance-site/reports/2026-08-19.json",
-  "title": "ZeroHedge 每日導讀 — 8月19日（三）",
-  "dayOfWeek": "三"
- },
- {
-  "date": "2026-08-18",
-  "file": "tw-finance-site/reports/2026-08-18.json",
-  "title": "ZeroHedge 每日導讀 — 8月18日（二）",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-08-17",
-  "file": "tw-finance-site/reports/2026-08-17.json",
-  "title": "ZeroHedge 每日導讀 — 8月17日（一）",
-  "dayOfWeek": "一"
- },
- {
-  "date": "2026-08-15",
-  "file": "tw-finance-site/reports/2026-08-15.json",
-  "title": "ZeroHedge 每日導讀 — 8月15日（六）",
-  "dayOfWeek": "六"
- },
- {
-  "date": "2026-08-14",
-  "file": "tw-finance-site/reports/2026-08-14.json",
-  "title": "ZeroHedge 每日導讀 — 8月14日（五）",
-  "dayOfWeek": "五"
- },
- {
-  "date": "2026-08-11",
-  "file": "tw-finance-site/reports/2026-08-11.json",
-  "title": "ZeroHedge 每日導讀 — 8月11日（二）",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-08-10",
-  "file": "tw-finance-site/reports/2026-08-10.json",
-  "title": "ZeroHedge 每日導讀 — 8月10日（日）",
-  "dayOfWeek": "一"
- },
- {
-  "date": "2026-08-04",
-  "file": "tw-finance-site/reports/2026-08-04.json",
-  "title": "ZeroHedge 每日導讀 — 8月4日（二）",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-07-31",
-  "file": "tw-finance-site/reports/2026-07-31.json",
-  "title": "ZeroHedge 每日導讀 — 7月31日（五）",
-  "dayOfWeek": "五"
- },
- {
-  "date": "2026-07-30",
-  "file": "tw-finance-site/reports/2026-07-30.json",
-  "title": "ZeroHedge 每日導讀 — 7月30日（四）+ 盤前分析",
-  "dayOfWeek": "四"
- },
- {
-  "date": "2026-07-29",
-  "file": "tw-finance-site/reports/2026-07-29.json",
-  "title": "ZeroHedge 每日導讀 — 7月29日（三）+ 盤前分析",
-  "dayOfWeek": "三"
- },
- {
-  "date": "2026-07-28",
-  "file": "tw-finance-site/reports/2026-07-28.json",
-  "title": "ZeroHedge 每日導讀 — 7月28日（二）",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-07-27",
-  "file": "tw-finance-site/reports/2026-07-27.json",
-  "title": "ZeroHedge 每日導讀 — 7月27日（一）",
-  "dayOfWeek": "一"
- },
- {
-  "date": "2026-07-24",
-  "file": "tw-finance-site/reports/2026-07-24.json",
-  "title": "ZeroHedge 每日導讀 — 7月24日（五）",
-  "dayOfWeek": "五"
- },
- {
-  "date": "2026-07-23",
-  "file": "tw-finance-site/reports/2026-07-23.json",
-  "title": "ZeroHedge 每日導讀 — 7月23日（四）",
-  "dayOfWeek": "四"
- },
- {
-  "date": "2026-07-22",
-  "file": "tw-finance-site/reports/2026-07-22.json",
-  "title": "ZeroHedge 每日導讀 — 7月22日（三）",
-  "dayOfWeek": "三"
- },
- {
-  "date": "2026-07-21",
-  "file": "tw-finance-site/reports/2026-07-21.json",
-  "title": "ZeroHedge 每日導讀 — 7月21日（二）",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-07-20",
-  "file": "tw-finance-site/reports/2026-07-20.json",
-  "title": "ZeroHedge 每日導讀 — 7月20日（一）",
-  "dayOfWeek": "一"
- },
- {
-  "date": "2026-07-17",
-  "file": "tw-finance-site/reports/2026-07-17.json",
-  "title": "ZeroHedge 每日導讀 — 7月17日（五）",
-  "dayOfWeek": "五"
- },
- {
-  "date": "2026-07-16",
-  "file": "tw-finance-site/reports/2026-07-16.json",
-  "title": "ZeroHedge 每日導讀 — 7月16日（四）",
-  "dayOfWeek": "四"
- },
- {
-  "date": "2026-06-09-zh",
-  "file": "tw-finance-site/reports/2026-06-09-zh.json",
-  "title": "",
-  "dayOfWeek": ""
- },
- {
-  "date": "2026-06-10",
-  "file": "tw-finance-site/reports/2026-06-10.json",
-  "title": "",
-  "dayOfWeek": "三"
- },
- {
-  "date": "2026-06-11",
-  "file": "tw-finance-site/reports/2026-06-11.json",
-  "title": "",
-  "dayOfWeek": "四"
- },
- {
-  "date": "2026-06-12",
-  "file": "tw-finance-site/reports/2026-06-12.json",
-  "title": "",
-  "dayOfWeek": "五"
- },
- {
-  "date": "2026-06-15",
-  "file": "tw-finance-site/reports/2026-06-15.json",
-  "title": "",
-  "dayOfWeek": "一"
- },
- {
-  "date": "2026-06-16",
-  "file": "tw-finance-site/reports/2026-06-16.json",
-  "title": "",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-06-17",
-  "file": "tw-finance-site/reports/2026-06-17.json",
-  "title": "",
-  "dayOfWeek": "三"
- },
- {
-  "date": "2026-06-18",
-  "file": "tw-finance-site/reports/2026-06-18.json",
-  "title": "盤前分析：SOX 反彈 +1.38%，半導體止穩，VIX 跳升至 18.44",
-  "dayOfWeek": "四"
- },
- {
-  "date": "2026-06-22",
-  "file": "tw-finance-site/reports/2026-06-22.json",
-  "title": "盤前分析：台股週一狂飆 +1,276 點站上 47K，台積電 2,510 天價，AI 晶片 vs 超大型股大分歧",
-  "dayOfWeek": "一"
- },
- {
-  "date": "2026-06-23",
-  "file": "tw-finance-site/reports/2026-06-23.json",
-  "title": "盤前分析：AI 超大型股崩跌拖累那指 -1.28%，台股開高走低回測 47K，KOSPI 暴殺 10%",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-06-24",
-  "file": "tw-finance-site/reports/2026-06-24.json",
-  "title": "",
-  "dayOfWeek": "三"
- },
- {
-  "date": "2026-06-25",
-  "file": "tw-finance-site/reports/2026-06-25.json",
-  "title": "ZeroHedge 每日導讀 — 6月25日（四）：Micron 財報、Fed 壓力測試、中東局勢、共和黨內戰",
-  "dayOfWeek": "四"
- },
- {
-  "date": "2026-06-26",
-  "file": "tw-finance-site/reports/2026-06-26.json",
-  "title": "台股盤前分析 — 6月26日：SOX +3.59% 半導體強彈，ADR 溢價 +15.79% 護航",
-  "dayOfWeek": "五"
- },
- {
-  "date": "2026-06-29",
-  "file": "tw-finance-site/reports/2026-06-29.json",
-  "title": "台股盤前分析 — 6月29日：暴跌後止穩關鍵 — 台指期夜盤逆勢 +543 點",
-  "dayOfWeek": "一"
- },
- {
-  "date": "2026-06-30",
-  "file": "tw-finance-site/reports/2026-06-30.json",
-  "title": "ZeroHedge 導讀 — 2026-06-30（二）",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-07-01",
-  "file": "tw-finance-site/reports/2026-07-01.json",
-  "title": "ZeroHedge 導讀 — 2026-07-01（三）",
-  "dayOfWeek": "三"
- },
- {
-  "date": "2026-07-02",
-  "file": "tw-finance-site/reports/2026-07-02.json",
-  "title": "ZeroHedge 導讀 — 2026-07-02（四）",
-  "dayOfWeek": "四"
- },
- {
-  "date": "2026-07-03",
-  "file": "tw-finance-site/reports/2026-07-03.json",
-  "title": "ZeroHedge 導讀 + 盤前分析 — 2026-07-03（五）",
-  "dayOfWeek": "五"
- },
- {
-  "date": "2026-07-06",
-  "file": "tw-finance-site/reports/2026-07-06.json",
-  "title": "ZeroHedge 每日導讀",
-  "dayOfWeek": "一"
- },
- {
-  "date": "2026-07-07",
-  "file": "tw-finance-site/reports/2026-07-07.json",
-  "title": "ZeroHedge 每日導讀",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-07-09",
-  "file": "tw-finance-site/reports/2026-07-09.json",
-  "title": "ZeroHedge 每日導讀 — 7月9日（四）",
-  "dayOfWeek": "四"
- },
- {
-  "date": "2026-07-10",
-  "file": "tw-finance-site/reports/2026-07-10.json",
-  "title": "ZeroHedge 每日導讀 — 7月10日（五）",
-  "dayOfWeek": "五"
- },
- {
-  "date": "2026-07-13",
-  "file": "tw-finance-site/reports/2026-07-13.json",
-  "title": "ZeroHedge 每日導讀 — 7月13日（一）",
-  "dayOfWeek": "一"
- },
- {
-  "date": "2026-07-14",
-  "file": "tw-finance-site/reports/2026-07-14.json",
-  "title": "ZeroHedge 每日導讀 — 7月14日（二）",
-  "dayOfWeek": "二"
- },
- {
-  "date": "2026-07-15",
-  "file": "tw-finance-site/reports/2026-07-15.json",
-  "title": "ZeroHedge 每日導讀 — 7月15日（三）",
-  "dayOfWeek": "三"
- },
- {
-  "date": "2026-09-02",
-  "file": "tw-finance-site/reports/2026-09-02.json",
-  "title": "台股盤前分析 — 9月2日（三）",
-  "dayOfWeek": "三"
- }
+  {
+    "date": "2026-09-02",
+    "file": "tw-finance-site/reports/2026-09-02.json",
+    "title": "ZeroHedge 每日導讀 — 9月2日（三）+ 盤前分析",
+    "dayOfWeek": "三"
+  },
+  {
+    "date": "2026-09-01",
+    "file": "tw-finance-site/reports/2026-09-01.json",
+    "title": "ZeroHedge 每日導讀 — 9月1日（二）+ 盤前分析",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-08-21",
+    "file": "tw-finance-site/reports/2026-08-21.json",
+    "title": "ZeroHedge 每日導讀 — 8月21日（五）+ 盤前分析",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-08-20",
+    "file": "tw-finance-site/reports/2026-08-20.json",
+    "title": "ZeroHedge 每日導讀 — 8月20日（四）+ 盤前分析",
+    "dayOfWeek": "四"
+  },
+  {
+    "date": "2026-08-19",
+    "file": "tw-finance-site/reports/2026-08-19.json",
+    "title": "ZeroHedge 每日導讀 — 8月19日（三）",
+    "dayOfWeek": "三"
+  },
+  {
+    "date": "2026-08-18",
+    "file": "tw-finance-site/reports/2026-08-18.json",
+    "title": "ZeroHedge 每日導讀 — 8月18日（二）",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-08-17",
+    "file": "tw-finance-site/reports/2026-08-17.json",
+    "title": "ZeroHedge 每日導讀 — 8月17日（一）",
+    "dayOfWeek": "一"
+  },
+  {
+    "date": "2026-08-15",
+    "file": "tw-finance-site/reports/2026-08-15.json",
+    "title": "ZeroHedge 每日導讀 — 8月15日（六）",
+    "dayOfWeek": "六"
+  },
+  {
+    "date": "2026-08-14",
+    "file": "tw-finance-site/reports/2026-08-14.json",
+    "title": "ZeroHedge 每日導讀 — 8月14日（五）",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-08-11",
+    "file": "tw-finance-site/reports/2026-08-11.json",
+    "title": "ZeroHedge 每日導讀 — 8月11日（二）",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-08-10",
+    "file": "tw-finance-site/reports/2026-08-10.json",
+    "title": "ZeroHedge 每日導讀 — 8月10日（日）",
+    "dayOfWeek": "一"
+  },
+  {
+    "date": "2026-08-04",
+    "file": "tw-finance-site/reports/2026-08-04.json",
+    "title": "ZeroHedge 每日導讀 — 8月4日（二）",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-07-31",
+    "file": "tw-finance-site/reports/2026-07-31.json",
+    "title": "ZeroHedge 每日導讀 — 7月31日（五）",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-07-30",
+    "file": "tw-finance-site/reports/2026-07-30.json",
+    "title": "ZeroHedge 每日導讀 — 7月30日（四）+ 盤前分析",
+    "dayOfWeek": "四"
+  },
+  {
+    "date": "2026-07-29",
+    "file": "tw-finance-site/reports/2026-07-29.json",
+    "title": "ZeroHedge 每日導讀 — 7月29日（三）+ 盤前分析",
+    "dayOfWeek": "三"
+  },
+  {
+    "date": "2026-07-28",
+    "file": "tw-finance-site/reports/2026-07-28.json",
+    "title": "ZeroHedge 每日導讀 — 7月28日（二）",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-07-27",
+    "file": "tw-finance-site/reports/2026-07-27.json",
+    "title": "ZeroHedge 每日導讀 — 7月27日（一）",
+    "dayOfWeek": "一"
+  },
+  {
+    "date": "2026-07-24",
+    "file": "tw-finance-site/reports/2026-07-24.json",
+    "title": "ZeroHedge 每日導讀 — 7月24日（五）",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-07-23",
+    "file": "tw-finance-site/reports/2026-07-23.json",
+    "title": "ZeroHedge 每日導讀 — 7月23日（四）",
+    "dayOfWeek": "四"
+  },
+  {
+    "date": "2026-07-22",
+    "file": "tw-finance-site/reports/2026-07-22.json",
+    "title": "ZeroHedge 每日導讀 — 7月22日（三）",
+    "dayOfWeek": "三"
+  },
+  {
+    "date": "2026-07-21",
+    "file": "tw-finance-site/reports/2026-07-21.json",
+    "title": "ZeroHedge 每日導讀 — 7月21日（二）",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-07-20",
+    "file": "tw-finance-site/reports/2026-07-20.json",
+    "title": "ZeroHedge 每日導讀 — 7月20日（一）",
+    "dayOfWeek": "一"
+  },
+  {
+    "date": "2026-07-17",
+    "file": "tw-finance-site/reports/2026-07-17.json",
+    "title": "ZeroHedge 每日導讀 — 7月17日（五）",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-07-16",
+    "file": "tw-finance-site/reports/2026-07-16.json",
+    "title": "ZeroHedge 每日導讀 — 7月16日（四）",
+    "dayOfWeek": "四"
+  },
+  {
+    "date": "2026-06-09-zh",
+    "file": "tw-finance-site/reports/2026-06-09-zh.json",
+    "title": "",
+    "dayOfWeek": ""
+  },
+  {
+    "date": "2026-06-10",
+    "file": "tw-finance-site/reports/2026-06-10.json",
+    "title": "",
+    "dayOfWeek": "三"
+  },
+  {
+    "date": "2026-06-11",
+    "file": "tw-finance-site/reports/2026-06-11.json",
+    "title": "",
+    "dayOfWeek": "四"
+  },
+  {
+    "date": "2026-06-12",
+    "file": "tw-finance-site/reports/2026-06-12.json",
+    "title": "",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-06-15",
+    "file": "tw-finance-site/reports/2026-06-15.json",
+    "title": "",
+    "dayOfWeek": "一"
+  },
+  {
+    "date": "2026-06-16",
+    "file": "tw-finance-site/reports/2026-06-16.json",
+    "title": "",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-06-17",
+    "file": "tw-finance-site/reports/2026-06-17.json",
+    "title": "",
+    "dayOfWeek": "三"
+  },
+  {
+    "date": "2026-06-18",
+    "file": "tw-finance-site/reports/2026-06-18.json",
+    "title": "盤前分析：SOX 反彈 +1.38%，半導體止穩，VIX 跳升至 18.44",
+    "dayOfWeek": "四"
+  },
+  {
+    "date": "2026-06-22",
+    "file": "tw-finance-site/reports/2026-06-22.json",
+    "title": "盤前分析：台股週一狂飆 +1,276 點站上 47K，台積電 2,510 天價，AI 晶片 vs 超大型股大分歧",
+    "dayOfWeek": "一"
+  },
+  {
+    "date": "2026-06-23",
+    "file": "tw-finance-site/reports/2026-06-23.json",
+    "title": "盤前分析：AI 超大型股崩跌拖累那指 -1.28%，台股開高走低回測 47K，KOSPI 暴殺 10%",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-06-24",
+    "file": "tw-finance-site/reports/2026-06-24.json",
+    "title": "",
+    "dayOfWeek": "三"
+  },
+  {
+    "date": "2026-06-25",
+    "file": "tw-finance-site/reports/2026-06-25.json",
+    "title": "ZeroHedge 每日導讀 — 6月25日（四）：Micron 財報、Fed 壓力測試、中東局勢、共和黨內戰",
+    "dayOfWeek": "四"
+  },
+  {
+    "date": "2026-06-26",
+    "file": "tw-finance-site/reports/2026-06-26.json",
+    "title": "台股盤前分析 — 6月26日：SOX +3.59% 半導體強彈，ADR 溢價 +15.79% 護航",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-06-29",
+    "file": "tw-finance-site/reports/2026-06-29.json",
+    "title": "台股盤前分析 — 6月29日：暴跌後止穩關鍵 — 台指期夜盤逆勢 +543 點",
+    "dayOfWeek": "一"
+  },
+  {
+    "date": "2026-06-30",
+    "file": "tw-finance-site/reports/2026-06-30.json",
+    "title": "ZeroHedge 導讀 — 2026-06-30（二）",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-07-01",
+    "file": "tw-finance-site/reports/2026-07-01.json",
+    "title": "ZeroHedge 導讀 — 2026-07-01（三）",
+    "dayOfWeek": "三"
+  },
+  {
+    "date": "2026-07-02",
+    "file": "tw-finance-site/reports/2026-07-02.json",
+    "title": "ZeroHedge 導讀 — 2026-07-02（四）",
+    "dayOfWeek": "四"
+  },
+  {
+    "date": "2026-07-03",
+    "file": "tw-finance-site/reports/2026-07-03.json",
+    "title": "ZeroHedge 導讀 + 盤前分析 — 2026-07-03（五）",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-07-06",
+    "file": "tw-finance-site/reports/2026-07-06.json",
+    "title": "ZeroHedge 每日導讀",
+    "dayOfWeek": "一"
+  },
+  {
+    "date": "2026-07-07",
+    "file": "tw-finance-site/reports/2026-07-07.json",
+    "title": "ZeroHedge 每日導讀",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-07-09",
+    "file": "tw-finance-site/reports/2026-07-09.json",
+    "title": "ZeroHedge 每日導讀 — 7月9日（四）",
+    "dayOfWeek": "四"
+  },
+  {
+    "date": "2026-07-10",
+    "file": "tw-finance-site/reports/2026-07-10.json",
+    "title": "ZeroHedge 每日導讀 — 7月10日（五）",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-07-13",
+    "file": "tw-finance-site/reports/2026-07-13.json",
+    "title": "ZeroHedge 每日導讀 — 7月13日（一）",
+    "dayOfWeek": "一"
+  },
+  {
+    "date": "2026-07-14",
+    "file": "tw-finance-site/reports/2026-07-14.json",
+    "title": "ZeroHedge 每日導讀 — 7月14日（二）",
+    "dayOfWeek": "二"
+  },
+  {
+    "date": "2026-07-15",
+    "file": "tw-finance-site/reports/2026-07-15.json",
+    "title": "ZeroHedge 每日導讀 — 7月15日（三）",
+    "dayOfWeek": "三"
+  }
 ]
