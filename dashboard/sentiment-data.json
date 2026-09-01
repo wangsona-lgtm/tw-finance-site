@@ -1,85 +1,58 @@
 {
-  "updated": "2026-09-01T07:26:17.677796",
-  "today": "20260901",
-  "institution": {
-    "date": "20260831",
-    "dealer_self": {
-      "buy": 11411944087,
-      "sell": 12590911731,
-      "diff": -1178967644
-    },
-    "dealer_hedge": {
-      "buy": 28804260530,
-      "sell": 35078250496,
-      "diff": -6273989966
-    },
-    "trust": {
-      "buy": 21442471301,
-      "sell": 25442903419,
-      "diff": -4000432118
-    },
-    "foreign": {
-      "buy": 656605456872,
-      "sell": 670997800734,
-      "diff": -14392343862
-    },
-    "dealer": {
-      "buy": 0,
-      "sell": 0,
-      "diff": 0
-    },
-    "dealer_total": {
-      "buy": 40216204617,
-      "sell": 47669162227,
-      "diff": -7452957610
-    }
+ "updated": "2026-09-01T22:10:00+08:00",
+ "today": "20260901",
+ "institution": {
+  "date": "20260901",
+  "dealer_self": {
+   "diff": 3157119019.0
   },
-  "pc_ratio": {
-    "date": "2026/8/31",
-    "call_vol": 161117,
-    "put_vol": 136134,
-    "pc_vol_ratio": 118.35,
-    "call_oi": 61681,
-    "put_oi": 64172,
-    "pc_oi_ratio": 96.12
+  "dealer_hedge": {
+   "diff": 13172419772.0
   },
-  "futures": {
-    "note": "期貨(全部合約) Net OI per TAIFEX",
-    "last_seen_date": "2026/08/31",
-    "foreign_tx_net": "-487,918",
-    "total_inst_futures_net": "-660,090"
+  "trust": {
+   "diff": 13600256976.0
   },
-  "institutional_oi": {
-    "date": "20260831",
-    "items": [
-      {
-        "name": "dealer",
-        "futures_long": 107523,
-        "futures_short": 371207,
-        "futures_net": -263684,
-        "options_long": 46916,
-        "options_short": 41800,
-        "options_net": 5116
-      },
-      {
-        "name": "trust",
-        "futures_long": 95182,
-        "futures_short": 3670,
-        "futures_net": 91512,
-        "options_long": 5,
-        "options_short": 4483,
-        "options_net": -4478
-      },
-      {
-        "name": "foreign",
-        "futures_long": 212826,
-        "futures_short": 700744,
-        "futures_net": -487918,
-        "options_long": 10896,
-        "options_short": 15466,
-        "options_net": -4570
-      }
-    ]
+  "foreign": {
+   "diff": 26707598883.0
   },
-  "error": null
+  "total": {
+   "diff": 56637394650.0
+  }
+ },
+ "pc_ratio": {
+  "date": "2026/8/31",
+  "call_vol": 161117,
+  "put_vol": 136134,
+  "pc_vol_ratio": 118.35,
+  "call_oi": 61681,
+  "put_oi": 64172,
+  "pc_oi_ratio": 96.12
+ },
+ "futures": {
+  "note": "期貨(全部合約) Net OI per TAIFEX",
+  "last_seen_date": "2026/08/31",
+  "foreign_tx_net": "-487,918",
+  "total_inst_futures_net": "-660,090"
+ },
+ "institutional_oi": {
+  "date": "2026/09/01",
+  "source": "TAIFEX futContractsDate + optContractsDate (www)",
+  "foreign_tx_oi_net": -78706,
+  "foreign_tx_oi_change_vs_831": 4264,
+  "foreign_tx_vol_net": 4251,
+  "trust_tx_oi_net": 76027,
+  "dealer_tx_oi_net": -990,
+  "foreign_txo_options_oi_net": -5067
+ },
+ "error": null,
+ "margin": {
+  "date": "20260901",
+  "margin_balance_shares": 8896994,
+  "margin_change": 37099,
+  "short_balance_shares": 220835,
+  "short_change": 3117,
+  "margin_value_yi": 5781.15,
+  "sb_lending_balance_shares": 31097827986,
+  "sb_lending_change_shares": -370692700
+ }
 }
