@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-09-03",
+    "file": "tw-finance-site/reports/2026-09-03.json",
+    "title": "ZeroHedge 每日導讀 — 9月3日（四）+ 盤前分析",
+    "dayOfWeek": "四"
+  },
+  {
     "date": "2026-09-02",
     "file": "tw-finance-site/reports/2026-09-02.json",
     "title": "ZeroHedge 每日導讀 — 9月2日（三）+ 盤前分析",
@@ -146,43 +152,43 @@
   {
     "date": "2026-06-09-zh",
     "file": "tw-finance-site/reports/2026-06-09-zh.json",
-    "title": "",
-    "dayOfWeek": ""
+    "title": "2026-06-09-zh 每日導讀",
+    "dayOfWeek": "二"
   },
   {
     "date": "2026-06-10",
     "file": "tw-finance-site/reports/2026-06-10.json",
-    "title": "",
+    "title": "2026-06-10 每日導讀",
     "dayOfWeek": "三"
   },
   {
     "date": "2026-06-11",
     "file": "tw-finance-site/reports/2026-06-11.json",
-    "title": "",
+    "title": "2026-06-11 每日導讀",
     "dayOfWeek": "四"
   },
   {
     "date": "2026-06-12",
     "file": "tw-finance-site/reports/2026-06-12.json",
-    "title": "",
+    "title": "2026-06-12 每日導讀",
     "dayOfWeek": "五"
   },
   {
     "date": "2026-06-15",
     "file": "tw-finance-site/reports/2026-06-15.json",
-    "title": "",
+    "title": "2026-06-15 每日導讀",
     "dayOfWeek": "一"
   },
   {
     "date": "2026-06-16",
     "file": "tw-finance-site/reports/2026-06-16.json",
-    "title": "",
+    "title": "2026-06-16 每日導讀",
     "dayOfWeek": "二"
   },
   {
     "date": "2026-06-17",
     "file": "tw-finance-site/reports/2026-06-17.json",
-    "title": "",
+    "title": "2026-06-17 每日導讀",
     "dayOfWeek": "三"
   },
   {
@@ -206,7 +212,7 @@
   {
     "date": "2026-06-24",
     "file": "tw-finance-site/reports/2026-06-24.json",
-    "title": "",
+    "title": "2026-06-24 每日導讀",
     "dayOfWeek": "三"
   },
   {
