@@ -39,7 +39,24 @@ def get_target_date():
         return prev_trading_day(tw)
     return tw
 
-target = get_target_date()
+# ── 1b. Authoritative date from STOCK_DAY_ALL (TWSE) ──────────────
+# TWSE publishes the ROC date in its data; use it as source of truth
+# so running at 13:35 (right after close) captures TODAY, and running
+# before TWSE updates still labels data with its real date.
+target = get_target_date()  # fallback: clock-based guess
+sda_path_probe = os.path.join(DATA_DIR, 'STOCK_DAY_ALL.json')
+if os.path.exists(sda_path_probe):
+    try:
+        with open(sda_path_probe) as f:
+            _probe = json.load(f)
+        if _probe:
+            roc_date = str(_probe[0].get('Date', ''))
+            if len(roc_date) == 7:  # e.g. 1150902
+                y = int(roc_date[:3]) + 1911
+                target = datetime(y, int(roc_date[3:5]), int(roc_date[5:7]))
+    except Exception:
+        pass
+
 date_iso = target.strftime('%Y-%m-%d')
 date_roc = target.strftime('%Y%m%d')   # 1150612 for ROC
 date_tpex = target.strftime('%Y%m%d')  # same for TPEx
@@ -48,9 +65,38 @@ day_of_week = dow_map[target.weekday()]
 
 print(f'Target date: {date_iso} (ROC {date_roc}, {day_of_week})')
 
-# ── 1. TAIEX index from Yahoo Finance ─────────────────────────────
+# ── 1. TAIEX index ────────────────────────────────────────────────
+# Prefer TWSE MI_INDEX official close (Yahoo's close is often None
+# right after market close, which produced 0 / -100% bugs).
 index_data = {}
 try:
+    mi_path = os.path.join(DATA_DIR, 'MI_INDEX.json')
+    with open(mi_path) as f:
+        mi_rows = json.load(f)
+    for row in mi_rows:
+        if row.get('指數') == '發行量加權股價指數' or '發行量加權' in str(row.get('指數', '')):
+            c = float(row['收盤指數'])
+            chg = -abs(float(row['漲跌點數'])) if row.get('漲跌') == '-' else abs(float(row['漲跌點數']))
+            chg_pct = -abs(float(row['漲跌百分比'])) if row.get('漲跌') == '-' else abs(float(row['漲跌百分比']))
+            prev = c - chg
+            # open/high/low for 加權指數 not in this table row; fetch from MI_INDEX20 or leave 0
+            index_data = {
+                'name': 'TAIEX 加權指數',
+                'close': round(c, 2),
+                'change': round(chg, 2),
+                'changePercent': round(chg_pct, 2),
+                'open': 0, 'high': 0, 'low': 0,
+                'prevClose': round(prev, 2),
+                'volume': 0,
+                'feature': f'{"🟢" if chg>=0 else "🔴"} {"漲" if chg>=0 else "跌"} {abs(chg):.0f} 點（{chg_pct:+.2f}%）'
+            }
+            print(f'  ✅ TAIEX (TWSE MI_INDEX): {c:.0f} ({chg:+.0f}, {chg_pct:+.2f}%)')
+            break
+except Exception as e:
+    print(f'  ⚠️ TWSE MI_INDEX parse failed: {e}')
+
+if not index_data:
+  try:
     url = 'https://query1.finance.yahoo.com/v8/finance/chart/%5ETWII?range=2d&interval=1d'
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     resp = urllib.request.urlopen(req, timeout=15)
@@ -58,6 +104,10 @@ try:
     r = chart['chart']['result'][0]
     ts = r['timestamp']
     q = r['indicators']['quote'][0]
+    # last bar must have a real close (Yahoo may still emit None bars)
+    closes = q['close']
+    if closes and closes[-1] is None:
+        raise ValueError('Yahoo close is None (market data not finalized)')
     t = time.gmtime(ts[-1] + 28800)
     idx_date = time.strftime('%Y-%m-%d', t)
 
@@ -83,8 +133,8 @@ try:
             'volume': int(v),
             'feature': f'{"🟢" if chg>=0 else "🔴"} {"漲" if chg>=0 else "跌"} {abs(chg):.0f} 點（{chg_pct:+.2f}%）'
         }
-        print(f'  ✅ TAIEX: {c:.0f} ({chg:+.0f}, {chg_pct:+.2f}%)')
-except Exception as e:
+        print(f'  ✅ TAIEX (Yahoo): {c:.0f} ({chg:+.0f}, {chg_pct:+.2f}%)')
+  except Exception as e:
     print(f'  ⚠️ TAIEX fetch failed: {e}')
 
 # ── 2. TWSE listed stocks (上市) ───────────────────────────────────
