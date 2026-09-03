@@ -45,67 +45,275 @@
     "fx_direction": "up"
   },
   "indices": {
-    "TAIEX": {"close": 45857.66, "change": -307.06, "change_pct": -0.67, "direction": "down"},
-    "寶島股價指數": {"close": 50838.28, "change_pct": -0.82, "direction": "down"},
-    "臺灣50指數": {"close": 42533.33, "change_pct": -0.23, "direction": "down"},
-    "臺灣中型100指數": {"close": 35582.59, "change_pct": -1.84, "direction": "down"},
-    "電子工業類指數": {"close": 2895.81, "change_pct": -0.85, "direction": "down"},
-    "半導體類指數": {"close": 1532.13, "change_pct": -0.16, "direction": "down"},
-    "金融保險類指數": {"close": 3481.59, "change_pct": 2.19, "direction": "up"},
-    "航運類指數": {"close": 212.14, "change_pct": 1.42, "direction": "up"},
-    "光電類指數": {"close": 75.61, "change_pct": -5.24, "direction": "down"},
-    "塑膠類指數": {"close": 375.01, "change_pct": -5.45, "direction": "down"},
-    "油電燃氣類指數": {"close": 103.34, "change_pct": -2.41, "direction": "down"},
-    "未含電子指數": {"close": 25458.24, "change_pct": 0.12, "direction": "up"}
+    "TAIEX": {
+      "close": 45857.66,
+      "change": -307.06,
+      "change_pct": -0.67,
+      "direction": "down"
+    },
+    "寶島股價指數": {
+      "close": 50838.28,
+      "change_pct": -0.82,
+      "direction": "down"
+    },
+    "臺灣50指數": {
+      "close": 42533.33,
+      "change_pct": -0.23,
+      "direction": "down"
+    },
+    "臺灣中型100指數": {
+      "close": 35582.59,
+      "change_pct": -1.84,
+      "direction": "down"
+    },
+    "電子工業類指數": {
+      "close": 2895.81,
+      "change_pct": -0.85,
+      "direction": "down"
+    },
+    "半導體類指數": {
+      "close": 1532.13,
+      "change_pct": -0.16,
+      "direction": "down"
+    },
+    "金融保險類指數": {
+      "close": 3481.59,
+      "change_pct": 2.19,
+      "direction": "up"
+    },
+    "航運類指數": {
+      "close": 212.14,
+      "change_pct": 1.42,
+      "direction": "up"
+    },
+    "光電類指數": {
+      "close": 75.61,
+      "change_pct": -5.24,
+      "direction": "down"
+    },
+    "塑膠類指數": {
+      "close": 375.01,
+      "change_pct": -5.45,
+      "direction": "down"
+    },
+    "油電燃氣類指數": {
+      "close": 103.34,
+      "change_pct": -2.41,
+      "direction": "down"
+    },
+    "未含電子指數": {
+      "close": 25458.24,
+      "change_pct": 0.12,
+      "direction": "up"
+    }
   },
   "sector_performance": {
     "strongest": [
-      {"name": "金融保險類", "pct": 2.19},
-      {"name": "航運類", "pct": 1.42},
-      {"name": "綠能環保類", "pct": 1.05},
-      {"name": "生技醫療類", "pct": 0.41},
-      {"name": "建材營造類", "pct": 0.37}
+      {
+        "name": "金融保險類",
+        "pct": 2.19
+      },
+      {
+        "name": "航運類",
+        "pct": 1.42
+      },
+      {
+        "name": "綠能環保類",
+        "pct": 1.05
+      },
+      {
+        "name": "生技醫療類",
+        "pct": 0.41
+      },
+      {
+        "name": "建材營造類",
+        "pct": 0.37
+      }
     ],
     "weakest": [
-      {"name": "塑膠類", "pct": -5.45},
-      {"name": "光電類", "pct": -5.24},
-      {"name": "玻璃陶瓷類", "pct": -3.48},
-      {"name": "塑膠化工類", "pct": -3.43},
-      {"name": "電子零組件類", "pct": -2.82}
+      {
+        "name": "塑膠類",
+        "pct": -5.45
+      },
+      {
+        "name": "光電類",
+        "pct": -5.24
+      },
+      {
+        "name": "玻璃陶瓷類",
+        "pct": -3.48
+      },
+      {
+        "name": "塑膠化工類",
+        "pct": -3.43
+      },
+      {
+        "name": "電子零組件類",
+        "pct": -2.82
+      }
     ],
     "note": "金融/航運/傳產防禦板塊領漲，塑膠、光電（面板/記憶體周邊）重挫。資金明顯自電子中小型股輪動至金融與航運，屬防禦型輪動。"
   },
   "stocks": {
-    "2330": {"name": "台積電", "close": 2390.0, "change": 5.0, "change_pct": 0.21, "direction": "up", "open": 2385.0, "high": 2400.0, "low": 2380.0, "note": "相對抗跌，外資現貨仍賣超 -96 萬股（約 -23 億）"},
-    "2454": {"name": "聯發科", "close": 4340.0, "change": 65.0, "change_pct": 1.52, "direction": "up", "open": 4400.0, "high": 4420.0, "low": 4290.0, "note": "NVIDIA 結盟題材延燒，外資大買 +50.9 億、投信 +19.6 億，三大法人全買"},
-    "2317": {"name": "鴻海", "close": 247.5, "change": -3.5, "change_pct": -1.39, "direction": "down", "open": 253.5, "high": 254.5, "low": 247.5, "note": "收在全天最低，尾盤無承接"},
-    "2308": {"name": "台達電", "close": 1760.0, "change": 30.0, "change_pct": 1.73, "direction": "up", "open": 1735.0, "high": 1810.0, "low": 1725.0, "note": "外資 +37.1 億買超，逆勢走強"},
-    "2382": {"name": "廣達", "close": 335.0, "change": -2.0, "change_pct": -0.59, "direction": "down", "open": 339.5, "high": 342.5, "low": 332.5, "note": "投信 +27.4 億持續買超（連續買超核心）"},
-    "2408": {"name": "南亞科", "close": 477.5, "change": -40.5, "change_pct": -7.82, "direction": "down", "open": 533.0, "high": 539.0, "low": 477.5, "note": "外資殺盤重心 -164.3 億，記憶體族群重挫"},
-    "8046": {"name": "南電", "close": 1080.0, "change": -120.0, "change_pct": -10.0, "direction": "down", "note": "跌停，外資 -53.2 億、投信 -25.0 億同步調節"},
-    "2882": {"name": "國泰金", "close": 112.5, "change": 3.5, "change_pct": 3.21, "direction": "up", "note": "金融領頭羊，外資持續買超"},
-    "2603": {"name": "長榮", "close": 239.0, "change": 4.5, "change_pct": 1.92, "direction": "up", "note": "航運族群資金避風港"},
-    "6505": {"name": "台塑化", "close": 76.5, "change": -2.2, "change_pct": -2.8, "direction": "down", "open": 78.1, "high": 79.9, "low": 76.1, "note": "昨日跳空漲後回吐，油價題材動能一日行情"}
+    "2330": {
+      "name": "台積電",
+      "close": 2390.0,
+      "change": 5.0,
+      "change_pct": 0.21,
+      "direction": "up",
+      "open": 2385.0,
+      "high": 2400.0,
+      "low": 2380.0,
+      "note": "相對抗跌，外資現貨仍賣超 -96 萬股（約 -23 億）"
+    },
+    "2454": {
+      "name": "聯發科",
+      "close": 4340.0,
+      "change": 65.0,
+      "change_pct": 1.52,
+      "direction": "up",
+      "open": 4400.0,
+      "high": 4420.0,
+      "low": 4290.0,
+      "note": "NVIDIA 結盟題材延燒，外資大買 +50.9 億、投信 +19.6 億，三大法人全買"
+    },
+    "2317": {
+      "name": "鴻海",
+      "close": 247.5,
+      "change": -3.5,
+      "change_pct": -1.39,
+      "direction": "down",
+      "open": 253.5,
+      "high": 254.5,
+      "low": 247.5,
+      "note": "收在全天最低，尾盤無承接"
+    },
+    "2308": {
+      "name": "台達電",
+      "close": 1760.0,
+      "change": 30.0,
+      "change_pct": 1.73,
+      "direction": "up",
+      "open": 1735.0,
+      "high": 1810.0,
+      "low": 1725.0,
+      "note": "外資 +37.1 億買超，逆勢走強"
+    },
+    "2382": {
+      "name": "廣達",
+      "close": 335.0,
+      "change": -2.0,
+      "change_pct": -0.59,
+      "direction": "down",
+      "open": 339.5,
+      "high": 342.5,
+      "low": 332.5,
+      "note": "投信 +27.4 億持續買超（連續買超核心）"
+    },
+    "2408": {
+      "name": "南亞科",
+      "close": 477.5,
+      "change": -40.5,
+      "change_pct": -7.82,
+      "direction": "down",
+      "open": 533.0,
+      "high": 539.0,
+      "low": 477.5,
+      "note": "外資殺盤重心 -164.3 億，記憶體族群重挫"
+    },
+    "8046": {
+      "name": "南電",
+      "close": 1080.0,
+      "change": -120.0,
+      "change_pct": -10.0,
+      "direction": "down",
+      "note": "跌停，外資 -53.2 億、投信 -25.0 億同步調節"
+    },
+    "2882": {
+      "name": "國泰金",
+      "close": 112.5,
+      "change": 3.5,
+      "change_pct": 3.21,
+      "direction": "up",
+      "note": "金融領頭羊，外資持續買超"
+    },
+    "2603": {
+      "name": "長榮",
+      "close": 239.0,
+      "change": 4.5,
+      "change_pct": 1.92,
+      "direction": "up",
+      "note": "航運族群資金避風港"
+    },
+    "6505": {
+      "name": "台塑化",
+      "close": 76.5,
+      "change": -2.2,
+      "change_pct": -2.8,
+      "direction": "down",
+      "open": 78.1,
+      "high": 79.9,
+      "low": 76.1,
+      "note": "昨日跳空漲後回吐，油價題材動能一日行情"
+    }
   },
   "us_ref": {
     "note": "美東週三 9/2 收盤（本報告時點最近完成之美股交易日）",
-    "S&P500": {"close": 7666.6, "change_pct": 0.46},
-    "Nasdaq": {"close": 26217.83, "change_pct": 0.45},
-    "Dow": {"close": 53061.95, "change_pct": 0.56},
-    "SOX": {"close": 11339.25, "change_pct": 0.45},
-    "VIX": {"close": 15.4, "change_pct": 1.32},
-    "TSM": {"close": 415.5, "change_pct": 0.36}
+    "S&P500": {
+      "close": 7666.6,
+      "change_pct": 0.46
+    },
+    "Nasdaq": {
+      "close": 26217.83,
+      "change_pct": 0.45
+    },
+    "Dow": {
+      "close": 53061.95,
+      "change_pct": 0.56
+    },
+    "SOX": {
+      "close": 11339.25,
+      "change_pct": 0.45
+    },
+    "VIX": {
+      "close": 15.4,
+      "change_pct": 1.32
+    },
+    "TSM": {
+      "close": 415.5,
+      "change_pct": 0.36
+    }
   },
   "postmarket": {
     "institutional_trading": {
       "as_of_date": "20260903",
       "source": "TWSE BFI82U 官方",
-      "foreign": {"buy": 3283.11, "sell": 3764.57, "net": -481.46},
-      "trust": {"buy": 196.98, "sell": 185.56, "net": 11.42},
-      "dealer_own": {"buy": 103.17, "sell": 159.95, "net": -56.79},
-      "dealer_hedge": {"buy": 276.67, "sell": 386.96, "net": -110.29},
+      "foreign": {
+        "buy": 3283.11,
+        "sell": 3764.57,
+        "net": -481.46
+      },
+      "trust": {
+        "buy": 196.98,
+        "sell": 185.56,
+        "net": 11.42
+      },
+      "dealer_own": {
+        "buy": 103.17,
+        "sell": 159.95,
+        "net": -56.79
+      },
+      "dealer_hedge": {
+        "buy": 276.67,
+        "sell": 386.96,
+        "net": -110.29
+      },
       "dealer_total": -167.08,
-      "total": {"buy": 3859.92, "sell": 4497.03, "net": -637.12},
+      "total": {
+        "buy": 3859.92,
+        "sell": 4497.03,
+        "net": -637.12
+      },
       "interpretation": "外資連續第二日大賣（9/2 -913.55 億 → 9/3 -481.46 億），賣壓減半但方向不變；投信小買 +11.42 億撐盤力道有限；自營商自行買賣 + 避險合計 -167.08 億。三大法人合計賣超 -637.12 億。"
     },
     "futures_positions": {
@@ -207,6 +415,12 @@
         "verdict": "✅ 命中（觀察策略正確）",
         "detail": "開高 4400 反彈 +1.52% 收 4340，未觸及回測區也未出現止跌訊號 — 『無訊號不介入』紀律正確。今日外資 +50.9 億大買，籌碼轉健康，維持觀察：若回測 4200 帶量不破可考慮轉介入。"
       }
+    ],
+    "new_rules": [
+      "跳空漲次日進場：加『回檔幅度 <2%』與『開盤 30 分鐘不再破低』量價確認條件",
+      "收盤價 = 當日最低 → 隔日進場一律順延至觀察（尾盤零承接訊號）",
+      "個股映射利多（如 NVDA→鴻海）介入前先驗 20 日滾動相關係數，鈍化則不適用",
+      "外資連續賣超日：回檔接多策略預設降級為『觀察優先』 — 風險警告須與推薦方向一致"
     ]
   },
   "sections": [
@@ -236,7 +450,11 @@
     },
     {
       "title": "🎯 推薦檢討（0 命中 / 1 部分 / 1 失誤）",
-      "content": "台塑化 ❌：回檔進場區 76.5~77.5 觸及但當日即套（收 76.5，-2.8%）— 跳空漲後深度回檔本身即動能轉弱訊號。\n鴻海 ⚠️：247~250 進場區觸及，但收盤收在全天最低 247.5 — 尾盤無承接，新規則：收盤 = 當日最低 → 隔日順延觀察。\n聯發科 ✅ 觀察正確：開高反彈未觸回測區，『無訊號不介入』紀律避險成功；今日外資 +50.9 億大買，籌碼轉健康。\n本日教訓：跳空開高 + 外資現貨連續賣壓組合下，回檔接多策略勝率低 — 風險警告與推薦方向須一致。"
+      "content": "台塑化 ❌：回檔進場區 76.5~77.5 觸及但當日即套（收 76.5，-2.8%）— 跳空漲後深度回檔本身即動能轉弱訊號。\n鴻海 ⚠️：247~250 進場區觸及，但收盤收在全天最低 247.5 — 尾盤無承接，新規則：收盤 = 當日最低 → 隔日順延觀察。\n聯發科 ✅ 觀察正確：開高反彈未觸回測區，『無訊號不介入』紀律避險成功；今日外資 +50.9 億大買，籌碼轉健康。\n本日教訓：跳空開高 + 外資現貨連續賣壓組合下，回檔接多策略勝率低 — 風險警告與推薦方向須一致。\n新增規則（本日教訓落實）：① 跳空漲次日進場需回檔 <2% + 開盤 30 分鐘不破低；② 收盤=當日最低 → 隔日順延觀察；③ 映射利多前驗 20 日滾動相關；④ 外資連續賣超日，回檔接多預設降級為『觀察優先』。"
+    },
+    {
+      "title": "🚀 中小型股動能掃描",
+      "content": "tw_momentum_monitor.py（18:31）掃描監控清單 200+ 檔中小型股：今日無漲停 — 連續漲停動能完全熄火（全市場漲停 47 家 vs 跌停 168 家，漲停皆在監控清單外）。\n權值股 20 檔抽樣輪動結構：\n強勢：國泰金 +3.21%、萬海 +3.12%、兆豐金 +2.86%、長榮 +1.92%、台達電(2308) +1.73%\n弱勢：南亞科 -7.82%、台塑化 -2.80%、0050 -2.07%、台塑 -1.65%\n解讀：資金從電子權值（0050 -2.07%、鴻海 -1.39%）撤出，輪動至金融+航運 — 防禦型輪動而非攻擊型動能市。小型股無漲停 + 大盤開高走低 + 外資連續賣壓，短線市場風險偏好明顯收縮。\n⚠️ 維護：監控清單 71 檔已失效（6200~6300 區間為主，yfinance 回報 delisted/no data），需重建否則覆蓋率持續下降。"
     },
     {
       "title": "📅 明日注意（9/4 週五）",
@@ -250,6 +468,75 @@
     "融資融券：9/3 MI_MARGN 18:40 仍未上線（多路徑重試失敗），採用 9/2 最新官方值並註明。",
     "外資/投信個股買賣超 = T86（9/3 已上線）× MI_INDEX Table 8 收盤價估算（過濾 ETF/權證），與 BFI82U 官方方向一致。",
     "TAIEX OHLC = MI_5MINS_HIST 官方（非 yfinance ^TWII）。",
-    "自我驗證：26 項斷言全數通過（法人金額、指數四價、期貨 OI、ADR 溢價、櫃買漲跌、T86 與 BFI82U 方向一致性）。"
-  ]
+    "自我驗證：26 項斷言全數通過（法人金額、指數四價、期貨 OI、ADR 溢價、櫃買漲跌、T86 與 BFI82U 方向一致性）。",
+    "19:00 追加：18:32 盤後 cron 之動能掃描（tw_momentum_monitor.py）章節與推薦檢討新規則；2308 原掃描輸出誤植為華邦電，已依 TWSE 官方收盤校正為台達電（+1.73% 一致）。"
+  ],
+  "momentum_scan": {
+    "source": "tw_momentum_monitor.py（18:31 執行；18:32 cron 輸出）",
+    "watchlist": "200+ 檔中小型股監控清單",
+    "limit_up_in_watchlist": 0,
+    "finding": "監控清單內今日無漲停，連續漲停動能完全熄火",
+    "rotation_type": "防禦型輪動（電子權值 → 金融+航運）",
+    "strong_sample": [
+      {
+        "name": "國泰金",
+        "symbol": "2882",
+        "pct": 3.21,
+        "sector": "金融"
+      },
+      {
+        "name": "萬海",
+        "symbol": "2615",
+        "pct": 3.12,
+        "sector": "航運"
+      },
+      {
+        "name": "兆豐金",
+        "symbol": "2886",
+        "pct": 2.86,
+        "sector": "金融"
+      },
+      {
+        "name": "長榮",
+        "symbol": "2603",
+        "pct": 1.92,
+        "sector": "航運"
+      },
+      {
+        "name": "台達電",
+        "symbol": "2308",
+        "pct": 1.73,
+        "sector": "電子（電源）",
+        "note": "原掃描輸出誤植為華邦電，已依 TWSE 官方收盤校正"
+      }
+    ],
+    "weak_sample": [
+      {
+        "name": "南亞科",
+        "symbol": "2408",
+        "pct": -7.82,
+        "sector": "記憶體"
+      },
+      {
+        "name": "台塑化",
+        "symbol": "6505",
+        "pct": -2.8,
+        "sector": "石化"
+      },
+      {
+        "name": "0050",
+        "symbol": "0050",
+        "pct": -2.07,
+        "sector": "ETF"
+      },
+      {
+        "name": "台塑",
+        "symbol": "1301",
+        "pct": -1.65,
+        "sector": "塑化"
+      }
+    ],
+    "maintenance_warning": "監控清單 71 檔失效（6200~6300 區間為主，yfinance 回報 delisted/no data），需重建否則掃描覆蓋率持續下降"
+  },
+  "updated_at": "2026-09-03T19:00:00+08:00"
 }
