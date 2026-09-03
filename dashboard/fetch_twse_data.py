@@ -57,6 +57,55 @@ for name, url in endpoints.items():
     except Exception as e:
         print(f'  {name}: {e}')
 
+# ── Fallback: OpenAPI often updates 1-2 hrs after close (still yesterday's data).
+# If STOCK_DAY_ALL from OpenAPI is stale, fetch the same-day CSV from
+# www.twse.com.tw rwd (updates ~14:00) and convert to OpenAPI schema.
+target_roc = (target.year - 1911) * 10000 + target.month * 100 + target.day
+try:
+    with open(DATA_DIR / 'STOCK_DAY_ALL.json', encoding='utf-8') as f:
+        _sda = json.load(f)
+    _sda_date = str(_sda[0].get('Date', '')) if _sda else ''
+except Exception:
+    _sda_date = ''
+if _sda_date != str(target_roc):
+    print(f'  OpenAPI STOCK_DAY_ALL stale (date={_sda_date}), trying rwd CSV for {date_str}...')
+    try:
+        r = requests.get(
+            f'https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_ALL?date={date_str}',
+            timeout=60)
+        if r.status_code == 200 and r.text.strip().startswith('日期'):
+            import csv, io
+            rows = list(csv.DictReader(io.StringIO(r.text)))
+            mapped = []
+            for row in rows:
+                if str(row.get('日期', '')).strip() != str(target_roc):
+                    continue
+                def _num(v):
+                    return v.replace(',', '') if v else v
+                mapped.append({
+                    'Date': str(row['日期']).strip(),
+                    'Code': row['證券代號'].strip(),
+                    'Name': row['證券名稱'].strip(),
+                    'TradeVolume': _num(row['成交股數']),
+                    'TradeValue': _num(row['成交金額']),
+                    'OpeningPrice': row['開盤價'].strip(),
+                    'HighestPrice': row['最高價'].strip(),
+                    'LowestPrice': row['最低價'].strip(),
+                    'ClosingPrice': row['收盤價'].strip(),
+                    'Change': row['漲跌價差'].strip(),
+                    'Transaction': _num(row['成交筆數']),
+                })
+            if mapped:
+                with open(DATA_DIR / 'STOCK_DAY_ALL.json', 'w', encoding='utf-8') as f:
+                    json.dump(mapped, f, ensure_ascii=False)
+                print(f'  STOCK_DAY_ALL: rwd fallback OK, {len(mapped)} items (ROC {target_roc})')
+            else:
+                print('  STOCK_DAY_ALL: rwd CSV has no rows for target date')
+        else:
+            print(f'  STOCK_DAY_ALL: rwd fallback HTTP {r.status_code} (not CSV)')
+    except Exception as e:
+        print(f'  STOCK_DAY_ALL: rwd fallback failed: {e}')
+
 # Margin RWD - try multiple dates with fallback
 def prev_td(dt):
     dt = dt - timedelta(days=1)

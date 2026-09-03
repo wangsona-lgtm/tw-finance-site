@@ -73,6 +73,11 @@ try:
     mi_path = os.path.join(DATA_DIR, 'MI_INDEX.json')
     with open(mi_path) as f:
         mi_rows = json.load(f)
+    # ── Guard: reject stale MI_INDEX (OpenAPI lags 1-2h after close) ──
+    _mi_roc = str((mi_rows[0].get('日期', '') or '').strip()) if mi_rows else ''
+    _target_roc = str((target.year - 1911) * 10000 + target.month * 100 + target.day)
+    if _mi_roc != _target_roc:
+        raise ValueError(f'MI_INDEX stale (date={_mi_roc}, want {_target_roc})')
     for row in mi_rows:
         if row.get('指數') == '發行量加權股價指數' or '發行量加權' in str(row.get('指數', '')):
             c = float(row['收盤指數'])
@@ -94,6 +99,44 @@ try:
             break
 except Exception as e:
     print(f'  ⚠️ TWSE MI_INDEX parse failed: {e}')
+
+# ── 1b. FMTQIK official fallback (TWSE rwd, updates ~14:00) ────────
+if not index_data:
+    try:
+        fmtqik_url = f'https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date={date_roc}&response=json'
+        req = urllib.request.Request(fmtqik_url, headers={'User-Agent': 'Mozilla/5.0'})
+        d = json.loads(urllib.request.urlopen(req, timeout=15).read())
+        if d.get('stat') == 'OK':
+            rows = d.get('data', [])
+            want_roc = f"{target.year-1911}/{target.month:02d}/{target.day:02d}"
+            row = None
+            for r in rows:
+                if str(r[0]).strip() == want_roc:
+                    row = r
+                    break
+            if row:
+                # fields: 日期, 成交股數, 成交金額, 成交筆數, 加權指數, 漲跌點數
+                c = float(str(row[4]).replace(',', ''))
+                chg = float(str(row[5]).replace(',', ''))
+                chg_pct = round(chg / (c - chg) * 100, 2)
+                index_data = {
+                    'name': 'TAIEX 加權指數',
+                    'close': c,
+                    'change': round(chg, 2),
+                    'changePercent': chg_pct,
+                    'open': 0, 'high': 0, 'low': 0,
+                    'prevClose': round(c - chg, 2),
+                    'volume': int(str(row[0]).replace(',', '')) if False else 0,
+                    'tradeValue': float(str(row[2]).replace(',', '')),
+                    'feature': f'{"🟢" if chg>=0 else "🔴"} {"漲" if chg>=0 else "跌"} {abs(chg):.0f} 點（{chg_pct:+.2f}%）'
+                }
+                print(f'  ✅ TAIEX (TWSE FMTQIK): {c:.2f} ({chg:+.2f}, {chg_pct:+.2f}%)')
+            else:
+                print(f'  ⚠️ FMTQIK: no row for {want_roc}')
+        else:
+            print(f'  ⚠️ FMTQIK stat={d.get("stat")}')
+    except Exception as e:
+        print(f'  ⚠️ FMTQIK fetch failed: {e}')
 
 if not index_data:
   try:
@@ -184,11 +227,20 @@ else:
 
 # ── 3. TPEx OTC stocks (上櫃) ──────────────────────────────────────
 otc_stocks = []
+tpex_url = f'https://www.tpex.org.tw/web/stock/aftertrading/daily_close_quotes/stk_quote_result.php?l=zh-tw&d={date_tpex}&stk=ALL'
+tpex_data = None
+for _attempt in range(4):
+    try:
+        req = urllib.request.Request(tpex_url, headers={'User-Agent': 'Mozilla/5.0'})
+        resp = urllib.request.urlopen(req, timeout=30)
+        tpex_data = json.loads(resp.read())
+        break
+    except Exception as e:
+        print(f'  ⚠️ TPEx attempt {_attempt+1} failed: {e}')
+        time.sleep(5)
 try:
-    tpex_url = f'https://www.tpex.org.tw/web/stock/aftertrading/daily_close_quotes/stk_quote_result.php?l=zh-tw&d={date_tpex}&stk=ALL'
-    req = urllib.request.Request(tpex_url, headers={'User-Agent': 'Mozilla/5.0'})
-    resp = urllib.request.urlopen(req, timeout=15)
-    tpex_data = json.loads(resp.read())
+    if tpex_data is None:
+        raise RuntimeError('TPEx failed after retries')
 
     for table in tpex_data.get('tables', []):
         title = table.get('title', '')
