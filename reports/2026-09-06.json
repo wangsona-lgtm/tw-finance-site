@@ -1,0 +1,100 @@
+{
+  "date": "2026-09-06",
+  "type": "daily-reports",
+  "source": "fed-watch",
+  "title": "Fed Watch 聯準會動向 — 9月6日（日）",
+  "sections": [
+    {
+      "title": "Fed Watch｜今日重點摘要",
+      "icon": "🏛️",
+      "content": "【已確認事實】截至本報告擷取時點（2026-09-06，台北時間），聯準會官方 News & Events 頁面的最後更新仍為 9 月 4 日；過去 24 小時未見新的 FOMC 聲明、會議紀要、經濟預測或政策官員談話。這代表沒有新的已確認利率決定。\n\n【今日制度性變化】9 月 15–16 日 FOMC 會議前的外部溝通靜默期，已於美東 9 月 5 日 00:00 開始。靜默期限制 FOMC 參與者對政策觀點的公開溝通，並不代表已做成任何利率決定。\n\n【本報分析】短期內市場將較少從官員發言取得新方向，重心轉向即將公布的通膨資料與利率期貨定價；應避免把政策溝通的暫時安靜解讀為偏鴿或偏鷹。"
+    },
+    {
+      "title": "Fed Watch｜最新政策訊號與官員立場",
+      "icon": "🗣️",
+      "content": "【最近已確認官方立場】Governor Christopher J. Waller 於 9 月 3 日表示，雖然通膨仍明顯高於 FOMC 2% 目標，但近期數據出現通膨降溫跡象；若未來兩週數據延續改善，他傾向支持維持目前聯邦基金利率目標區間。若 8 月資料顯示改善只是短暫現象，9 月 15–16 日會議升息可能適當。\n\n【準確解讀】這是以後續資料為條件的個人判斷，不是 FOMC 的預先承諾，亦非全體委員的共同立場。靜默期開始後，本輪會議前不宜預期新的官員政策指引。"
+    },
+    {
+      "title": "Fed Watch｜利率路徑與期貨定價",
+      "icon": "📈",
+      "content": "【市場定價，非官方預測】本次未取得可獨立核驗的 CME FedWatch 即時快照，因此不把舊數字當成最新機率。最新可追溯的已公布參考點是 9 月 4 日美國就業報告後，Reuters 報導的 9 月會議升息 25 個基點隱含機率為 58.4%（報導發稿時點）；該數字會隨期貨交易持續變動。\n\n【本報分析】在美國勞動節假日前後市場流動性較低、官方發言又進入靜默期的情況下，下一次更有資訊含量的重新定價，可能來自 9 月 8 日起恢復發布的利率資料，以及 9 月 10 日 PPI、9 月 11 日 CPI。"
+    },
+    {
+      "title": "Fed Watch｜市場影響與情境",
+      "icon": "🌐",
+      "content": "【已確認市場表現｜9 月 4 日美股收盤】強於預期的 8 月就業報告後，S&P 500 跌 0.4%、道瓊跌 0.5%、Nasdaq 跌 0.3%，2 年期美債殖利率升至 4.37%。這是前一交易日反映較高利率預期的市場結果，並非本報告期新增的政策消息。\n\n【本報分析】若 PPI／CPI 延續偏強，短端美債殖利率與美元可能獲支撐，並提高高估值美股、黃金與其他對實質利率敏感資產的折現壓力；若通膨數據轉弱，則可能帶來反向重定價。本次不列黃金、美元或主要加密資產即時數字，因未取得足以交叉核驗的同一時點資料。"
+    },
+    {
+      "title": "Fed Watch｜未來重要日期",
+      "icon": "📅",
+      "type": "table",
+      "headers": ["日期（美東）", "事件", "為何重要"],
+      "rows": [
+        ["9/7", "Labor Day", "聯準會例行日／週統計發布順延至 9/8。"],
+        ["9/8", "G.19 消費信貸、聯準會部分例行統計恢復", "假日後的利率與金融條件資料恢復更新。"],
+        ["9/10 08:30", "8 月 PPI", "FOMC 前的重要通膨線索。"],
+        ["9/11 08:30", "8 月 CPI", "檢驗通膨降溫是否延續。"],
+        ["9/15–16", "FOMC 會議；9/16 決議、經濟預測與記者會", "下一次正式利率決策。"]
+      ],
+      "analysis": "時間均為美國東部時間；日程取自 Federal Reserve 與 BLS 公布日曆。"
+    },
+    {
+      "title": "Fed Watch｜來源與可核驗連結",
+      "icon": "🔗",
+      "type": "news",
+      "items": [
+        {
+          "headline": "Federal Reserve｜News & Events",
+          "content": "官方頁面最後更新為 9/4；未列出 9/5–9/6 的新貨幣政策公告或官員演說。",
+          "url": "https://www.federalreserve.gov/newsevents.htm",
+          "tags": ["已確認事實", "官方"]
+        },
+        {
+          "headline": "Federal Reserve｜2025–2027 FOMC 溝通靜默期日曆",
+          "content": "靜默期於會議前第二個星期六美東 00:00 開始；9 月 15–16 日會議對應 9/5 起進入靜默期。",
+          "url": "https://www.federalreserve.gov/monetarypolicy/files/fomc-blackout-period-calendar.pdf",
+          "tags": ["官方規則", "靜默期"]
+        },
+        {
+          "headline": "Federal Reserve｜Waller：Economic Outlook and Some Comments on My Policy Communication",
+          "content": "9/3 官方談話：通膨續降時傾向維持；若改善短暫，9 月會議可能適合升息。",
+          "url": "https://www.federalreserve.gov/newsevents/speech/waller20260903a.htm",
+          "tags": ["官方談話", "政策訊號"]
+        },
+        {
+          "headline": "Federal Reserve｜2026 FOMC 會議日程",
+          "content": "9 月會議於 15–16 日舉行，並附經濟預測。",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "tags": ["官方日程"]
+        },
+        {
+          "headline": "CME Group｜FedWatch Tool",
+          "content": "聯邦基金期貨隱含機率的原始工具；本報未將其作為即時數值來源。",
+          "url": "https://www.cmegroup.com/fedwatch",
+          "tags": ["市場定價", "方法說明"]
+        },
+        {
+          "headline": "AP｜9 月 4 日強勁就業資料後的美股與美債反應",
+          "content": "用於交叉核驗前一交易日美股表現與 2 年期美債殖利率，不取代官方政策資料。",
+          "url": "https://apnews.com/article/stock-market-dow-nasdaq-jobs-ebc11cfa2cf8baf4491bf3d4199c1d74",
+          "tags": ["市場反應", "媒體"]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "premium": 0,
+    "market": 0,
+    "geopolitics": 0,
+    "withImages": 0,
+    "fedWatch": 1
+  },
+  "keyThemes": [
+    "Fed Watch：過去 24 小時無新的 FOMC 決策、紀要或官員談話",
+    "Fed Watch：9 月會議前官方溝通靜默期已於美東 9/5 起生效",
+    "Fed Watch：Waller 的條件式框架仍以 PPI、CPI 是否證實通膨降溫為關鍵",
+    "Fed Watch：最新可追溯的 9/4 市場定價為升息 25bp 機率 58.4%，非即時數據",
+    "Fed Watch：9/10 PPI、9/11 CPI 與 9/15–16 FOMC 是下一段重定價重點"
+  ]
+}
