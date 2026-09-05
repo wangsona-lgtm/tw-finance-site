@@ -1,8 +1,8 @@
 {
   "date": "2026-09-05",
   "type": "daily-reports",
-  "source": "zerohedge",
-  "title": "ZeroHedge 每日導讀 — 9月5日（六）",
+  "source": "zerohedge+fed-watch",
+  "title": "ZeroHedge 每日導讀 + Fed Watch — 9月5日（六）",
   "sections": [
     {
       "title": "強勁非農推升 9 月升息押注，市場轉盯 CPI／PPI",
@@ -30,19 +30,94 @@
       "timestamp": "2026-09-04",
       "images": [],
       "premium": false
+    },
+    {
+      "title": "Fed Watch｜今日重點摘要",
+      "icon": "🏛️",
+      "content": "【已確認事實】美國勞工統計局（BLS）9 月 4 日公布：8 月非農就業增加 16.2 萬人，失業率持平 4.1%；6、7 月合計上修 5.5 萬人，平均時薪月增 0.3%、年增 3.1%。這是本報告期內最具貨幣政策意義的新資料。\n\n【政策層面】過去 24 小時未見 FOMC 新聲明、會議紀要或主席／理事新演說；因此，沒有新的已確認政策決定。勞動市場數據較先前擔憂的疲弱情境強，降低了「就業快速惡化迫使寬鬆」的必要性，但 9 月決策仍須等待 PPI、CPI。\n\n【本報分析】目前訊號偏向提高短期政策維持限制性、甚至小幅再收緊的機率；這不是 FOMC 已做成的決定，也不等同於通膨已重新加速。"
+    },
+    {
+      "title": "Fed Watch｜最新政策訊號與官員立場",
+      "icon": "🗣️",
+      "content": "【已確認事實｜最新官方談話】Governor Christopher J. Waller 於 9 月 3 日表示，勞動市場仍穩定、通膨正緩慢但持續朝 2% 前進；他說，若通膨持續向 2% 改善，願意支持維持目前利率；但若 8 月通膨「偏熱」，將考慮升息。這是條件式立場，而非對 9 月會議的預先承諾。\n\n【已確認事實】BLS 的 8 月就業報告符合 Waller 所稱的「勞動市場穩定」情境：新增職位高於過去 12 個月平均的 3.1 萬人。\n\n【本報分析】就業報告使決策重心更集中在下週通膨數據：若 PPI/CPI 也偏強，升息論述會更有支撐；若通膨回落，Waller 所述「維持不變」仍是清楚的替代路徑。"
+    },
+    {
+      "title": "Fed Watch｜利率路徑與期貨定價",
+      "icon": "📈",
+      "content": "【市場定價，非 Fed 預測】Reuters 9 月 4 日盤中報導，CME FedWatch 對 9 月 FOMC 會議「升息 25 個基點」的隱含機率為 58.4%，前一日為 49.4%。\n\n【擷取時間與限制】擷取日：2026-09-04（Reuters 報導發稿時點；並非 CME 網頁即時截圖）。FedWatch 機率來自聯邦基金期貨價格，會隨市場交易變動，不能視為官方決策或保證。\n\n【本報分析】市場在就業數據後把 9 月決策從五五波轉為略偏向升息；關鍵驗證事件是 9 月 10 日 PPI 與 9 月 11 日 CPI。"
+    },
+    {
+      "title": "Fed Watch｜市場影響｜9 月 4 日美國交易時段",
+      "icon": "🌐",
+      "content": "【已確認市場表現】強於預期的就業數據公布後，公債殖利率與美元走升、S&P 500 收跌 0.4%、道瓊跌 0.5%、Nasdaq 跌 0.3%；2 年期美債殖利率升至 4.37%。\n\n【黃金與風險資產】Reuters 報導黃金在就業數據後跌逾 2%，主因市場提高升息押注、非孳息資產吸引力受壓。加密與高估值成長資產通常同樣對實質利率／美元上行較敏感；本報未取得足以量化各主要加密資產收盤變動的一手資料，故不列數字。\n\n【本報分析】若後續通膨資料再偏強，短天期利率與美元的上行壓力可能延續，估值較高的美股、黃金及其他風險資產面臨折現率壓力；反之，通膨轉弱將使上述重定價部分回吐。"
+    },
+    {
+      "title": "Fed Watch｜未來重要日期",
+      "icon": "📅",
+      "type": "table",
+      "headers": ["日期（美東）", "事件", "為何重要"],
+      "rows": [
+        ["9/7", "Labor Day", "聯準會日／週統計發布延至 9/8。"],
+        ["9/8 11:30", "Fed Board 閉門會議", "討論各聯邦準備銀行貼現率；不等同 FOMC 利率決策。"],
+        ["9/10 08:30", "8 月 PPI", "9 月會議前的重要通膨線索。"],
+        ["9/11 08:30", "8 月 CPI", "檢驗 Waller 所稱的通膨進展是否延續。"],
+        ["9/15–16", "FOMC 會議；9/16 發布決議與記者會", "下一次官方利率決策。"]
+      ],
+      "analysis": "時間均為美國東部時間；經濟數據發布日取自 BLS 日程，FOMC 與 Board 會議取自 Federal Reserve 日曆。"
+    },
+    {
+      "title": "Fed Watch｜來源與可核驗連結",
+      "icon": "🔗",
+      "type": "news",
+      "items": [
+        {
+          "headline": "BLS｜2026 年 8 月 Employment Situation（第一手就業資料）",
+          "content": "非農 +16.2 萬、失業率 4.1%、平均時薪月增 0.3%；6、7 月合計上修 5.5 萬。",
+          "url": "https://www.bls.gov/news.release/archives/empsit_09042026.htm",
+          "tags": ["已確認事實", "BLS"]
+        },
+        {
+          "headline": "Federal Reserve｜Waller：Economic Outlook and Some Comments on My Policy Communication",
+          "content": "9 月 3 日官方演說；提出通膨續降時傾向維持、通膨偏熱時考慮升息的條件式框架。",
+          "url": "https://www.federalreserve.gov/newsevents/speech/waller20260903a.htm",
+          "tags": ["官方談話", "政策訊號"]
+        },
+        {
+          "headline": "Federal Reserve｜2026 年 9 月日曆",
+          "content": "FOMC 於 9 月 15–16 日開會，9 月 16 日公布決議並召開記者會；Board 9 月 8 日有閉門會議。",
+          "url": "https://www.federalreserve.gov/newsevents/2026-september.htm",
+          "tags": ["官方日程"]
+        },
+        {
+          "headline": "CME Group｜FedWatch Tool",
+          "content": "聯邦基金期貨隱含機率的原始工具；本報所列 58.4% 為 Reuters 9/4 報導時點，非即時截圖。",
+          "url": "https://www.cmegroup.com/fedwatch",
+          "tags": ["市場定價", "方法說明"]
+        },
+        {
+          "headline": "Reuters｜強勁就業數據後的股債匯與 FedWatch 反應",
+          "content": "報導就業數據後的利率期貨重定價與美股反應；用於市場觀點與盤中機率，不取代官方資料。",
+          "url": "https://www.marketscreener.com/news/wall-street-dips-after-strong-jobs-data-fuels-hawkish-fed-bets-ce785bdbd981f72c/",
+          "tags": ["市場觀點", "Reuters"]
+        }
+      ]
     }
   ],
   "stats": {
-    "total": 3,
+    "total": 9,
     "premium": 0,
-    "market": 2,
+    "market": 3,
     "geopolitics": 1,
     "withImages": 0,
-    "premarket": 0
+    "fedWatch": 1
   },
   "keyThemes": [
     "美國就業意外強勁，9 月 FOMC 的升息定價上修；下週 CPI／PPI 是確認關卡",
     "黃金長線論述聚焦央行配置、財政風險與債券避險角色變化，屬研究觀點而非保證",
-    "福克蘭 Sea Lion 油田面臨阿根廷政策與主權爭議，應區分政治表態與實際營運衝擊"
+    "福克蘭 Sea Lion 油田面臨阿根廷政策與主權爭議，應區分政治表態與實際營運衝擊",
+    "Fed Watch：8 月非農 +16.2 萬、失業率 4.1%，就業訊號強於先前預期",
+    "Fed Watch：Waller 的官方框架仍是通膨續降可維持、通膨偏熱才考慮升息",
+    "Fed Watch：市場於 9/4 將 9 月升息 25bp 隱含機率調升至 58.4%（Reuters 報導時點）",
+    "Fed Watch：9/10 PPI、9/11 CPI 與 9/15–16 FOMC 是下一段利率重定價的關鍵"
   ]
 }
