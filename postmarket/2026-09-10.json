@@ -87,42 +87,154 @@
   },
   "sector_performance": {
     "top_gainers": [
-      {"name": "塑膠類", "pct": 1.67},
-      {"name": "生技醫療類", "pct": 0.29},
-      {"name": "金融保險類", "pct": 0.34},
-      {"name": "貿易百貨類", "pct": 0.23},
-      {"name": "電子通路類", "pct": 0.57}
+      {
+        "name": "塑膠類",
+        "pct": 1.67
+      },
+      {
+        "name": "生技醫療類",
+        "pct": 0.29
+      },
+      {
+        "name": "金融保險類",
+        "pct": 0.34
+      },
+      {
+        "name": "貿易百貨類",
+        "pct": 0.23
+      },
+      {
+        "name": "電子通路類",
+        "pct": 0.57
+      }
     ],
     "top_losers": [
-      {"name": "電子零組件類", "pct": -2.26},
-      {"name": "航運類", "pct": -1.81},
-      {"name": "電機機械類", "pct": -1.76},
-      {"name": "光電類", "pct": -1.57},
-      {"name": "油電燃氣類", "pct": -1.37}
+      {
+        "name": "電子零組件類",
+        "pct": -2.26
+      },
+      {
+        "name": "航運類",
+        "pct": -1.81
+      },
+      {
+        "name": "電機機械類",
+        "pct": -1.76
+      },
+      {
+        "name": "光電類",
+        "pct": -1.57
+      },
+      {
+        "name": "油電燃氣類",
+        "pct": -1.37
+      }
     ]
   },
   "stocks": {
-    "2330": {"name": "台積電", "close": 2450.0, "change_pct": -0.61, "direction": "down"},
-    "2454": {"name": "聯發科", "close": 4720.0, "change_pct": 2.05, "direction": "up", "note": "半導體逆勢強攻、外資 +81億"},
-    "2317": {"name": "鴻海", "close": 251.0, "change_pct": -0.4, "direction": "down"},
-    "2308": {"name": "台達電", "close": 1675.0, "change_pct": -6.69, "direction": "down", "note": "重挫、外資大賣 -146億"},
-    "2382": {"name": "廣達", "close": 336.0, "change_pct": -1.75, "direction": "down"},
-    "2882": {"name": "國泰金", "close": 110.5, "change_pct": 0.0, "direction": "flat"},
-    "2891": {"name": "中信金", "close": 67.3, "change_pct": 1.05, "direction": "up"},
-    "3008": {"name": "大立光", "close": 6720.0, "change_pct": -2.18, "direction": "down"},
-    "6505": {"name": "台塑化", "close": 86.2, "change_pct": -1.49, "direction": "down"},
-    "1303": {"name": "南亞", "close": 244.0, "change_pct": 3.17, "direction": "up", "note": "塑化最落後補漲，推薦命中 +4.5%"},
-    "1301": {"name": "台塑", "close": 65.6, "change_pct": -1.65, "direction": "down"},
-    "2303": {"name": "聯電", "close": 142.5, "change_pct": 0.71, "direction": "up"}
+    "2330": {
+      "name": "台積電",
+      "close": 2450.0,
+      "change_pct": -0.61,
+      "direction": "down"
+    },
+    "2454": {
+      "name": "聯發科",
+      "close": 4720.0,
+      "change_pct": 2.05,
+      "direction": "up",
+      "note": "半導體逆勢強攻、外資 +81億"
+    },
+    "2317": {
+      "name": "鴻海",
+      "close": 251.0,
+      "change_pct": -0.4,
+      "direction": "down"
+    },
+    "2308": {
+      "name": "台達電",
+      "close": 1675.0,
+      "change_pct": -6.69,
+      "direction": "down",
+      "note": "重挫、外資大賣 -146億"
+    },
+    "2382": {
+      "name": "廣達",
+      "close": 336.0,
+      "change_pct": -1.75,
+      "direction": "down"
+    },
+    "2882": {
+      "name": "國泰金",
+      "close": 110.5,
+      "change_pct": 0.0,
+      "direction": "flat"
+    },
+    "2891": {
+      "name": "中信金",
+      "close": 67.3,
+      "change_pct": 1.05,
+      "direction": "up"
+    },
+    "3008": {
+      "name": "大立光",
+      "close": 6720.0,
+      "change_pct": -2.18,
+      "direction": "down"
+    },
+    "6505": {
+      "name": "台塑化",
+      "close": 86.2,
+      "change_pct": -1.49,
+      "direction": "down"
+    },
+    "1303": {
+      "name": "南亞",
+      "close": 244.0,
+      "change_pct": 3.17,
+      "direction": "up",
+      "note": "塑化最落後補漲，推薦命中 +4.5%"
+    },
+    "1301": {
+      "name": "台塑",
+      "close": 65.6,
+      "change_pct": -1.65,
+      "direction": "down"
+    },
+    "2303": {
+      "name": "聯電",
+      "close": 142.5,
+      "change_pct": 0.71,
+      "direction": "up"
+    }
   },
   "us_ref": {
     "note": "9/9 美東週三收盤（本報告時點最近完成之美股交易日）",
-    "S&P500": {"close": 7636.36, "change_pct": -0.48},
-    "Nasdaq": {"close": 26253.34, "change_pct": -0.64},
-    "Dow": {"close": 52380.66, "change_pct": -0.77},
-    "SOX": {"close": 11931.32, "change_pct": 0.37, "note": "半導體逆勢抗跌"},
-    "VIX": {"close": 16.46, "change_pct": 4.71},
-    "TSM": {"close": 435.36, "change_pct": -0.83}
+    "S&P500": {
+      "close": 7636.36,
+      "change_pct": -0.48
+    },
+    "Nasdaq": {
+      "close": 26253.34,
+      "change_pct": -0.64
+    },
+    "Dow": {
+      "close": 52380.66,
+      "change_pct": -0.77
+    },
+    "SOX": {
+      "close": 11931.32,
+      "change_pct": 0.37,
+      "note": "半導體逆勢抗跌"
+    },
+    "VIX": {
+      "close": 16.46,
+      "change_pct": 4.71
+    },
+    "TSM": {
+      "close": 435.36,
+      "change_pct": -0.83
+    }
   },
   "postmarket": {
     "institutional_trading": {
@@ -209,37 +321,145 @@
       "interpretation": "【D-1 fallback】9/10 借券賣出尚未公布（約 21:30），本欄為 9/9 值：借券賣出餘額 157.85 億股(+1,902 萬股)、當日賣出 2.26 億 vs 還券 2.07 億股。9/10 值待 22:00 補齊。"
     },
     "t86_rec_stocks_910": {
-      "2330": {"foreign_net_ntd_yi": -47.63, "trust_net_ntd_yi": -12.07, "total_net_ntd_yi": -62.09},
-      "2308": {"foreign_net_ntd_yi": -145.86, "trust_net_ntd_yi": -22.16, "total_net_ntd_yi": -183.65},
-      "2454": {"foreign_net_ntd_yi": 81.04, "trust_net_ntd_yi": 2.62, "total_net_ntd_yi": 84.07},
-      "2317": {"foreign_net_ntd_yi": -8.52, "trust_net_ntd_yi": 2.54, "total_net_ntd_yi": -11.48},
-      "2303": {"foreign_net_ntd_yi": -14.67, "trust_net_ntd_yi": 17.84, "total_net_ntd_yi": 1.78},
-      "2382": {"foreign_net_ntd_yi": -5.07, "trust_net_ntd_yi": -3.62, "total_net_ntd_yi": -12.2},
-      "6505": {"foreign_net_ntd_yi": -5.64, "trust_net_ntd_yi": 5.62, "total_net_ntd_yi": 0.12},
-      "2882": {"foreign_net_ntd_yi": 1.06, "trust_net_ntd_yi": -0.01, "total_net_ntd_yi": 0.99},
-      "2891": {"foreign_net_ntd_yi": -0.67, "trust_net_ntd_yi": 1.68, "total_net_ntd_yi": 0.93}
+      "2330": {
+        "foreign_net_ntd_yi": -47.63,
+        "trust_net_ntd_yi": -12.07,
+        "total_net_ntd_yi": -62.09
+      },
+      "2308": {
+        "foreign_net_ntd_yi": -145.86,
+        "trust_net_ntd_yi": -22.16,
+        "total_net_ntd_yi": -183.65
+      },
+      "2454": {
+        "foreign_net_ntd_yi": 81.04,
+        "trust_net_ntd_yi": 2.62,
+        "total_net_ntd_yi": 84.07
+      },
+      "2317": {
+        "foreign_net_ntd_yi": -8.52,
+        "trust_net_ntd_yi": 2.54,
+        "total_net_ntd_yi": -11.48
+      },
+      "2303": {
+        "foreign_net_ntd_yi": -14.67,
+        "trust_net_ntd_yi": 17.84,
+        "total_net_ntd_yi": 1.78
+      },
+      "2382": {
+        "foreign_net_ntd_yi": -5.07,
+        "trust_net_ntd_yi": -3.62,
+        "total_net_ntd_yi": -12.2
+      },
+      "6505": {
+        "foreign_net_ntd_yi": -5.64,
+        "trust_net_ntd_yi": 5.62,
+        "total_net_ntd_yi": 0.12
+      },
+      "2882": {
+        "foreign_net_ntd_yi": 1.06,
+        "trust_net_ntd_yi": -0.01,
+        "total_net_ntd_yi": 0.99
+      },
+      "2891": {
+        "foreign_net_ntd_yi": -0.67,
+        "trust_net_ntd_yi": 1.68,
+        "total_net_ntd_yi": 0.93
+      }
     },
     "foreign_top_buy_ntd_yi": [
-      {"code": "2454", "name": "聯發科", "yi": 81.04},
-      {"code": "6770", "name": "力積電", "yi": 20.58},
-      {"code": "1303", "name": "南亞", "yi": 17.95},
-      {"code": "2409", "name": "友達", "yi": 5.78},
-      {"code": "2883", "name": "凱基金", "yi": 5.13},
-      {"code": "2892", "name": "第一金", "yi": 4.04},
-      {"code": "2881", "name": "富邦金", "yi": 3.59},
-      {"code": "2886", "name": "兆豐金", "yi": 3.36},
-      {"code": "1101", "name": "台泥", "yi": 1.69}
+      {
+        "code": "2454",
+        "name": "聯發科",
+        "yi": 81.04
+      },
+      {
+        "code": "6770",
+        "name": "力積電",
+        "yi": 20.58
+      },
+      {
+        "code": "1303",
+        "name": "南亞",
+        "yi": 17.95
+      },
+      {
+        "code": "2409",
+        "name": "友達",
+        "yi": 5.78
+      },
+      {
+        "code": "2883",
+        "name": "凱基金",
+        "yi": 5.13
+      },
+      {
+        "code": "2892",
+        "name": "第一金",
+        "yi": 4.04
+      },
+      {
+        "code": "2881",
+        "name": "富邦金",
+        "yi": 3.59
+      },
+      {
+        "code": "2886",
+        "name": "兆豐金",
+        "yi": 3.36
+      },
+      {
+        "code": "1101",
+        "name": "台泥",
+        "yi": 1.69
+      }
     ],
     "foreign_top_sell_ntd_yi": [
-      {"code": "2308", "name": "台達電", "yi": -145.86},
-      {"code": "3231", "name": "緯創", "yi": -62.45},
-      {"code": "2330", "name": "台積電", "yi": -47.63},
-      {"code": "3481", "name": "群創", "yi": -14.88},
-      {"code": "2303", "name": "聯電", "yi": -14.67},
-      {"code": "2615", "name": "萬海", "yi": -10.46},
-      {"code": "2317", "name": "鴻海", "yi": -8.52},
-      {"code": "2887", "name": "台新新光金", "yi": -6.34},
-      {"code": "6505", "name": "台塑化", "yi": -5.64}
+      {
+        "code": "2308",
+        "name": "台達電",
+        "yi": -145.86
+      },
+      {
+        "code": "3231",
+        "name": "緯創",
+        "yi": -62.45
+      },
+      {
+        "code": "2330",
+        "name": "台積電",
+        "yi": -47.63
+      },
+      {
+        "code": "3481",
+        "name": "群創",
+        "yi": -14.88
+      },
+      {
+        "code": "2303",
+        "name": "聯電",
+        "yi": -14.67
+      },
+      {
+        "code": "2615",
+        "name": "萬海",
+        "yi": -10.46
+      },
+      {
+        "code": "2317",
+        "name": "鴻海",
+        "yi": -8.52
+      },
+      {
+        "code": "2887",
+        "name": "台新新光金",
+        "yi": -6.34
+      },
+      {
+        "code": "6505",
+        "name": "台塑化",
+        "yi": -5.64
+      }
     ]
   },
   "recommendation_review": {
@@ -319,6 +539,10 @@
     {
       "title": "🎯 推薦檢討（9/10 全數命中）",
       "content": "今日塑化主軸推薦 3/3 全數守住：1303 南亞 ✅（+3.17%、自推薦進場 233.5 起 +4.5%，逼近目標 245~250，命中後應啟動移動止盈守 +3%）；1301 台塑 ✅（回檔進場達陣、日終持平 65.6 可續抱，惟 -1.65% 為集團最弱）；6505 台塑化 ✅ 觀察正確（「漲停次日勿追」避開 -1.49% 回檔）。教訓：油價主軸下同集團應優先押最落後、補漲空間最大一檔（南亞）而非次落後（台塑）；動能命中後一律移動止盈。"
+    },
+    {
+      "title": "🚀 漲停動能掃描（中小型股）",
+      "content": "掃描 223 檔中小型股，71 檔下載失敗（含已下市/過期代號），覆蓋率約 68% — 漲停家數可能被低估、非全市場普查。今日漲停 3 檔、全為「其他/未分類」：6225 天瀚（第3根，+9.91% 收 74.3，累計 +20.8%，唯一達「第3根推薦」門檻，芒格多模型 🟡🟡 中等風險—持續觀察，累計未達處置警戒）；6861 睿生光電（第2根，+9.97% 收 204，累計 +10.0%，149 萬張）；6226 光鼎（第2根，+9.95% 收 32.6，累計 +9.9%，1,521 萬張）。6861/6226 明日若鎖第3根即升級為推薦訊號。今日無明顯產業性漲停族群、資金動能零散無強勢主軸，盤面偏保守。⚠️ 基礎設施待修：監控清單過期代號過多（71 檔失敗）、6225/6226/6861 缺 INDUSTRY 分類對照、建議上漲停股補抓當日成交量。"
     }
   ],
   "notes": [
@@ -327,6 +551,57 @@
     "融資融券 = 9/9 MI_MARGN D-1 回退（9/10 18:30 未上線）；借券賣出 = 9/9 TWT93U D-1 回退（9/10 約 21:30 上線）。9/10 官方值待 22:00 補齊。",
     "P/C Ratio = TAIFEX OpenAPI，9/10 尚未公布（最新 9/8：成交量 103.43%、未平倉 105.23%）。",
     "個股法人金額 = T86 9/10 淨股數 × 當日收盤價推估（官方淨股數、收盤價為 TWSE/MIS 當日值）。",
-    "外資排行榜 = T86/TWT38U 9/10 淨股數 × 收盤價。"
-  ]
+    "外資排行榜 = T86/TWT38U 9/10 淨股數 × 收盤價。",
+    "漲停動能掃描 = ~/.hermes/scripts/tw_momentum_monitor.py 18:33 產出（223 檔掃描、71 檔失敗、覆蓋率約 68%）。"
+  ],
+  "momentum_scan": {
+    "source": "~/.hermes/scripts/tw_momentum_monitor.py（18:33 產出）",
+    "scan_scope": "223 檔中小型股",
+    "coverage_note": "71 檔下載失敗（含已下市/過期舊代號，Yahoo 回報 possibly delisted），覆蓋率約 68%，漲停家數可能被低估，屬部分資訊、非全市場普查",
+    "limit_up_count": 3,
+    "sector_theme": "今日無明顯產業性漲停族群（3 檔皆無分類），資金動能零散、無強勢主軸，盤面偏保守",
+    "limit_up_stocks": [
+      {
+        "symbol": "6225",
+        "name": "天瀚（aiPlex）",
+        "industry": "其他/未分類",
+        "consecutive_days": 3,
+        "close": 74.3,
+        "change_pct": 9.91,
+        "cumulative_pct": 20.8,
+        "volume": "19.2萬",
+        "signal": "第3根，唯一達推薦等級",
+        "note": "累計 +20.8% 未達處置警戒；芒格多模型評估 🟡🟡 中等風險—持續觀察。產業分類缺漏，需人工補查基本面"
+      },
+      {
+        "symbol": "6861",
+        "name": "睿生光電（InnoCare）",
+        "industry": "其他/未分類",
+        "consecutive_days": 2,
+        "close": 204.0,
+        "change_pct": 9.97,
+        "cumulative_pct": 10.0,
+        "volume": "149萬",
+        "signal": "第2根蓄勢",
+        "note": "明日若第3根漲停即為推薦訊號（第2根追蹤名單）"
+      },
+      {
+        "symbol": "6226",
+        "name": "光鼎（Para Light）",
+        "industry": "其他/未分類",
+        "consecutive_days": 2,
+        "close": 32.6,
+        "change_pct": 9.95,
+        "cumulative_pct": 9.9,
+        "volume": "1521萬",
+        "signal": "第2根蓄勢",
+        "note": "明日若第3根漲停即為推薦訊號（第2根追蹤名單）"
+      }
+    ],
+    "infrastructure_todo": [
+      "監控清單（WATCHLIST）過期代號過多（71 檔失敗），下次執行前清出下市股、縮小清單至有效代號以提升覆蓋率",
+      "6225/6226/6861 等股未列入 INDUSTRY 分類對照，需補建分類以免「其他」蒙蔽族群辨識",
+      "建議未來上漲停股皆補抓當日成交量以辨識「爆量漲停 vs 無量鎖板」"
+    ]
+  }
 }
