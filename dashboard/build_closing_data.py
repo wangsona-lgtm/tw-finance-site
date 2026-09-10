@@ -180,6 +180,23 @@ if not index_data:
   except Exception as e:
     print(f'  ⚠️ TAIEX fetch failed: {e}')
 
+# ── 1c. Attach turnover (成交金額) from the rwd MI_INDEX digest ───
+# fetch_twse_data.py writes dashboard/data/mi-index-digest.json when it had to
+# fall back to the rwd MI_INDEX (13:45+). 總計(1~15) 是 TWSE 公布的市場總成交金額。
+if index_data:
+    try:
+        with open(os.path.join(DATA_DIR, 'mi-index-digest.json')) as f:
+            _dg = json.load(f)
+        if _dg.get('date') == date_roc:
+            for row in _dg.get('turnover', []):
+                if str(row.get('item', '')).startswith('總計'):
+                    index_data['tradeValue'] = float(str(row['value']).replace(',', ''))
+                    print(f"  ✅ 成交金額 (rwd 總計1~15): "
+                          f"{index_data['tradeValue']/1e8:,.1f} 億")
+                    break
+    except Exception as e:
+        print(f'  ℹ️ no turnover digest: {e}')
+
 # ── 2. TWSE listed stocks (上市) ───────────────────────────────────
 twse_stocks = []
 sda_path = os.path.join(DATA_DIR, 'STOCK_DAY_ALL.json')
@@ -227,6 +244,7 @@ else:
 
 # ── 3. TPEx OTC stocks (上櫃) ──────────────────────────────────────
 otc_stocks = []
+tpex_dates = []
 tpex_url = f'https://www.tpex.org.tw/web/stock/aftertrading/daily_close_quotes/stk_quote_result.php?l=zh-tw&d={date_tpex}&stk=ALL'
 tpex_data = None
 for _attempt in range(4):
@@ -246,6 +264,9 @@ try:
         title = table.get('title', '')
         if '上櫃' not in title and '管理' not in title:
             continue
+        _tdate = str(table.get('date') or '').strip()   # e.g. "115/09/09"
+        if _tdate:
+            tpex_dates.append(_tdate)
         fields = table.get('fields', [])
         # Find column indices
         try:
@@ -299,6 +320,64 @@ try:
 except Exception as e:
     print(f'  ⚠️ TPEx fetch error: {e}')
 
+# ── 3b. TPEx lag guard ────────────────────────────────────────────
+# daily_close_quotes IGNORES the ?d= parameter and serves the latest PUBLISHED
+# day (still T-1 until ~15:00). Shipping those rows as "today" would silently
+# mislabel yesterday's 上櫃 prices → refill from Yahoo (.TWO, real same-day
+# closes) and never ship the stale rows.
+want_tpex = f'{target.year-1911}/{target.month:02d}/{target.day:02d}'
+otc_source = 'TPEx'
+notes = []
+if otc_stocks and tpex_dates and want_tpex not in tpex_dates:
+    print(f'  ⚠️ TPEx daily quotes stale (table date={tpex_dates[0]}, want {want_tpex}) → refilling 上櫃 from Yahoo')
+    otc_source = 'Yahoo (.TWO) — TPEx 官方延遲'
+    try:
+        import yfinance as yf
+        codes = [s['code'] for s in otc_stocks]
+        filled = {}
+        for i in range(0, len(codes), 120):
+            chunk = codes[i:i + 120]
+            try:
+                df = yf.download([c + '.TWO' for c in chunk], period='5d',
+                                 interval='1d', group_by='ticker', progress=False,
+                                 threads=True, auto_adjust=False)
+            except Exception as e:
+                print(f'  ⚠️ Yahoo chunk {i // 120 + 1} failed: {e}')
+                continue
+            for c in chunk:
+                try:
+                    sub = df[c + '.TWO'].dropna(subset=['Close'])
+                except Exception:
+                    continue
+                if sub.empty or str(sub.index[-1].date()) != date_iso:
+                    continue
+                close = round(float(sub['Close'].iloc[-1]), 2)
+                if len(sub) > 1:
+                    prev = float(sub['Close'].iloc[-2])
+                    change = round(close - prev, 2)
+                else:
+                    prev, change = None, 0.0
+                pct = round(change / prev * 100, 2) if prev else 0.0
+                filled[c] = {'close': close, 'change': change, 'changePercent': pct}
+        refilled = []
+        for s in otc_stocks:
+            f = filled.get(s['code'])
+            if f:
+                s.update(f)
+                s['source'] = 'Yahoo'
+                refilled.append(s)
+        dropped = len(otc_stocks) - len(refilled)
+        print(f'  ✅ 上櫃 refilled from Yahoo: {len(refilled)}/{len(codes)} '
+              f'(dropped {dropped} without today data)')
+        if dropped:
+            notes.append(f'上櫃 {dropped} 檔無當日資料已剔除')
+        notes.append('上櫃收盤價來源為 Yahoo (.TWO)，TPEx 官方當日資料尚未發布')
+        otc_stocks = refilled
+    except Exception as e:
+        print(f'  ⚠️ Yahoo refill failed ({e}) → dropping stale 上櫃 rows')
+        notes.append('上櫃資料來源 TPEx 延遲且 Yahoo 補抓失敗，已剔除上櫃個股')
+        otc_stocks = []
+
 # ── 4. Combine & save ─────────────────────────────────────────────
 all_stocks = twse_stocks + otc_stocks
 # Remove duplicates (some ETFs might appear in both)
@@ -323,8 +402,10 @@ closing_data = {
     'summary': {
         'totalStocks': len(unique_stocks),
         'listed': len(twse_stocks),
-        'otc': len(otc_stocks)
-    }
+        'otc': len(otc_stocks),
+        'otcSource': otc_source
+    },
+    'notes': notes
 }
 
 closing_path = os.path.join(CLOSING_DIR, f'{date_iso}.json')

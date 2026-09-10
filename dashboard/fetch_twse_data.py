@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch TWSE market data server-side and save as local JSON files.
 OpenAPI has no CORS; this prefetches from server (no CORS issues)."""
-import json, os, sys
+import json, os, sys, time
 from pathlib import Path
 from datetime import datetime, timedelta
 
@@ -105,6 +105,80 @@ if _sda_date != str(target_roc):
             print(f'  STOCK_DAY_ALL: rwd fallback HTTP {r.status_code} (not CSV)')
     except Exception as e:
         print(f'  STOCK_DAY_ALL: rwd fallback failed: {e}')
+
+# ── Fallback: OpenAPI MI_INDEX also lags 1-2h after close, and the rwd
+# `type=ALL` query is blocked between 13:30-13:45 ("網站尖峰時間"). Fetch the
+# rwd MI_INDEX (available ~13:45) and convert to the OpenAPI schema so
+# build_closing_data.py can use the OFFICIAL TAIEX instead of Yahoo's
+# provisional ^TWII value (which can differ by ~100 points right after close).
+try:
+    with open(DATA_DIR / 'MI_INDEX.json', encoding='utf-8') as f:
+        _mi = json.load(f)
+    _mi_date = str(_mi[0].get('日期', '')) if _mi else ''
+except Exception:
+    _mi_date = ''
+if _mi_date != str(target_roc):
+    print(f'  OpenAPI MI_INDEX stale (date={_mi_date}), trying rwd MI_INDEX for {date_str}...')
+    try:
+        # TWSE load-sheds `type=ALL` intermittently ("每日1:30PM到1:45PM為網站
+        # 尖峰時間..."), even at 13:50 — retry until a real table set arrives.
+        d = {}
+        for _try in range(6):
+            r = requests.get(
+                f'https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date={date_str}&type=ALL&response=json',
+                timeout=120, headers={'User-Agent': 'Mozilla/5.0'})
+            d = r.json()
+            if d.get('tables'):
+                break
+            print(f'  MI_INDEX rwd attempt {_try+1}: {d.get("stat", "no tables")}')
+            time.sleep(15)
+        tables = d.get('tables') or []
+        mapped, digest = [], {}
+        for t in tables:
+            fields = t.get('fields') or []
+            rows = t.get('data') or []
+            if fields[:2] == ['指數', '收盤指數']:
+                for row in rows:
+                    _s = str(row[2])
+                    # rwd wraps the sign in HTML, e.g. "<p style ='color:green'>-</p>";
+                    # take the text node after the first tag so the trailing "</p>"
+                    # (whose own '>' has no sign after it) can't hide the sign.
+                    _s = _s.split('>')[1] if '>' in _s else _s
+                    sign = '-' if '-' in _s else '+'
+                    mapped.append({
+                        '日期': str(target_roc),
+                        '指數': str(row[0]).strip(),
+                        '收盤指數': str(row[1]).replace(',', '').strip(),
+                        '漲跌': sign,
+                        '漲跌點數': str(row[3]).replace(',', '').strip(),
+                        '漲跌百分比': str(row[4]).replace(',', '').strip(),
+                        '特殊處理註記': str(row[5]).strip() if len(row) > 5 else '',
+                    })
+            elif '大盤統計' in str(t.get('title') or ''):
+                digest['turnover'] = [{'item': r0[0], 'value': r0[1]}
+                                      for r0 in rows if len(r0) > 1]
+            elif '漲跌證券數' in str(t.get('title') or ''):
+                digest['breadth'] = [{'type': r0[0], 'all': r0[1], 'stock': r0[2]}
+                                     for r0 in rows if len(r0) > 2]
+        if mapped:
+            with open(DATA_DIR / 'MI_INDEX.json', 'w', encoding='utf-8') as f:
+                json.dump(mapped, f, ensure_ascii=False)
+            print(f'  MI_INDEX: rwd fallback OK, {len(mapped)} index rows (ROC {target_roc})')
+            digest['date'] = date_str
+            industries = [m for m in mapped if m['指數'].endswith('類指數')]
+            digest['industries'] = industries
+            digest['key_indices'] = [
+                m for m in mapped if m['指數'] in (
+                    '發行量加權股價指數', '未含金融指數', '未含電子指數',
+                    '未含金融電子指數', '臺灣50指數', '寶島股價指數')]
+            with open(DATA_DIR / 'mi-index-digest.json', 'w', encoding='utf-8') as f:
+                json.dump(digest, f, ensure_ascii=False)
+            print(f'  MI_INDEX digest saved: {len(industries)} 類股指數, '
+                  f'{len(digest.get("turnover", []))} 成交統計 rows')
+        else:
+            print('  MI_INDEX: rwd returned no index tables (or 13:30-13:45 block)')
+    except Exception as e:
+        print(f'  MI_INDEX: rwd fallback failed: {e}')
 
 # Margin RWD - try multiple dates with fallback
 def prev_td(dt):
