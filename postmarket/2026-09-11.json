@@ -1,0 +1,340 @@
+{
+  "date": "2026-09-11",
+  "title": "盤後籌碼＋動能掃描分析",
+  "generated_at": "2026-09-11T18:30:00+08:00",
+  "market": {
+    "status": "closed",
+    "day_of_week": "五"
+  },
+  "summary": {
+    "taiex": {
+      "close": 46184.85,
+      "change": -755.64,
+      "change_pct": -1.61,
+      "direction": "down",
+      "open": 46651.21,
+      "high": 46651.21,
+      "low": 45942.44,
+      "previous_close": 46940.49,
+      "note": "開低走低，尾盤無承接，收在近全日低點 45,942！失守 46,000 整數關卡"
+    },
+    "otc_index": {
+      "name": "櫃買指數",
+      "close": 395.52,
+      "previous_close": 405.24,
+      "change_pct": -2.4,
+      "direction": "down",
+      "note": "跌逾 2%，比加權更弱"
+    },
+    "trading_stats": {
+      "total_volume": 10111607761,
+      "total_volume_unit": "shares",
+      "total_value": 7622.45,
+      "total_value_unit": "100M NTD",
+      "total_trades": 4824572,
+      "prev_total_value": 7507.43,
+      "note": "成交量微增，賣壓釋出在低點仍有承接"
+    },
+    "fx_usdtwd": 31.615,
+    "fx_change_pct": 0.48,
+    "fx_direction": "up"
+  },
+  "breadth": {
+    "as_of_date": "20260911",
+    "source": "TWSE MI_INDEX type=MS (18:30 官方)",
+    "stocks_up": 229,
+    "stocks_down": 779,
+    "stocks_flat": 68,
+    "limit_up": 8,
+    "limit_down": 7,
+    "note": "全面走跌，下跌家數近 4 倍於上漲，尾盤殺至低點",
+    "market_up_total": 2512,
+    "market_down_total": 10346
+  },
+  "sector_performance": {
+    "加權指數": {
+      "close": 46184.85,
+      "change_pct": -1.61,
+      "direction": "down"
+    },
+    "電子工業類": {
+      "close": 2914.66,
+      "change_pct": -1.93,
+      "direction": "down"
+    },
+    "半導體類": {
+      "close": 1558.23,
+      "change_pct": -2.0,
+      "direction": "down"
+    },
+    "金融保險類": {
+      "close": 3555.7,
+      "change_pct": 1.12,
+      "direction": "up"
+    },
+    "航運類": {
+      "close": 209.88,
+      "change_pct": 1.04,
+      "direction": "up"
+    },
+    "水泥類": {
+      "close": 122.74,
+      "change_pct": -0.85,
+      "direction": "down"
+    },
+    "玻璃陶瓷類": {
+      "close": 137.68,
+      "change_pct": -2.19,
+      "direction": "down"
+    },
+    "橡膠類": {
+      "close": 189.83,
+      "change_pct": -0.52,
+      "direction": "down"
+    },
+    "油電燃氣類": {
+      "close": 111.9,
+      "change_pct": -2.77,
+      "direction": "down"
+    },
+    "櫃買指數": {
+      "close": 395.52,
+      "change_pct": -2.4,
+      "direction": "down"
+    }
+  },
+  "postmarket": {
+    "institutional_trading": {
+      "as_of_date": "20260911",
+      "source": "TWSE BFI82U 官方（18:30 初值；22:00 全籌碼 job 將重抓終值）",
+      "foreign": {
+        "buy": 2454.73,
+        "sell": 3347.44,
+        "net": -892.7
+      },
+      "trust": {
+        "buy": 165.46,
+        "sell": 94.47,
+        "net": 70.99
+      },
+      "dealer_own": {
+        "buy": 64.15,
+        "sell": 114.54,
+        "net": -50.39
+      },
+      "dealer_hedge": {
+        "buy": 229.65,
+        "sell": 481.28,
+        "net": -251.62
+      },
+      "dealer_total": -302.01,
+      "total": {
+        "buy": 2914.0,
+        "sell": 4037.72,
+        "net": -1123.73
+      },
+      "interpretation": "外資 9/11 淨賣超 -892.70 億，創近月單日最大賣超，加權重挫 -755 點（-1.61%）收 46,184 失守 46,000！！投信是唯一買超 +70.99 億，但仍擋不住外資與自營的雙重賣壓；自營商合計 -302.01 億（避險 -251.62 億為主）。三大法人合計淨賣超 -1,123.73 億，為長線最重手減碼日。外資賣超規模約為 9/10（-383.34 億）的 2.3 倍，空方架構全面強化。"
+    },
+    "futures_positions": {
+      "as_of_date": "20260911 (TAIFEX 官方 /cht/3/futContractsDate，18:30 當日已公布)",
+      "foreign_tx_oi_net": {
+        "oi": -85067,
+        "change": -1149,
+        "interpretation": "外資台指期淨空單 -85,067 口，較 9/10 的 -83,918 口再增空 -1,149 口，續創歷史高檔空單區。現貨大賣 892 億 + 期貨同步加空，空方架構全面強化，為最重手減碼日。"
+      },
+      "trust_tx_oi_net": {
+        "oi": 74687,
+        "change": 204,
+        "interpretation": "投信台指期淨多單 +74,687 口（+204 口），多頭主力倉位續持高位，與外資對作。"
+      },
+      "proprietary_tx_oi_net": {
+        "oi": 2802,
+        "change": 1423,
+        "interpretation": "自營商台指期淨多單 +2,802 口（+1,423 口轉多續增）。"
+      },
+      "foreign_txo_oi_net": {
+        "oi": -4357,
+        "change": -702,
+        "interpretation": "外資臺指選擇權 OI 淨額 -4,357 口（買Put避險微增 -702）；自營商 +10,681 口。"
+      },
+      "put_call_ratio": {
+        "as_of_date": "20260911",
+        "status": "P/C Ratio OpenAPI 最新仍 2026/08/11（Stale）；9/8 官方值成交量 103.43%、未平倉 105.23%。9/11 值待 22:00 全籌碼 job 補齊。",
+        "volume_ratio_pct": null,
+        "oi_ratio_pct": null,
+        "note": "TAIFEX PutCallRatio 端點今日未回傳當日數據"
+      }
+    },
+    "margin_short_911": {
+      "as_of_date": "20260909 (TWSE MI_MARGN D-1 回退；9/11 18:30 未上線，22:00 補)",
+      "margin_balance_shares": 9070714.0,
+      "margin_balance_change": 22053.0,
+      "short_balance_shares": 203610.0,
+      "short_balance_change": -5004.0,
+      "margin_value_yi": 5871.66811,
+      "margin_value_change_yi": 8.99835,
+      "interpretation": "【D-1 fallback】9/11 融資融券 18:30 尚未公布（TWSE 14:30~22:00 不穩），本欄為 9/9 官方值：融資餘額 907.07 萬張(+2.21)、融資金額 5,871.67 億(+9.00)；融券 20.36 萬張(-0.50)。9/11 官方值待 22:00 全籌碼 job 補齊。"
+    },
+    "securities_lending_911": {
+      "as_of_date": "20260909 (TWSE TWT93U D-1 回退；9/11 約 21:30 上線)",
+      "sb_lending_balance_shares": 15785414878.0,
+      "change_interpretation": "9/11 借券賣出尚未公布（約 21:30），本欄為 9/9 值：借券賣出餘額 157.85 億股(+1,902 萬股)、當日賣出 2.26 億 vs 還券 2.07 億股。9/11 值待 22:00 補齊。"
+    }
+  },
+  "us_ref": {
+    "note": "9/10 美東週三收盤（本報告時點最近完成之美股交易日）",
+    "S&P500": {
+      "close": 7591.7,
+      "change_pct": -0.58
+    },
+    "Nasdaq": {
+      "close": 26081.72,
+      "change_pct": -0.65
+    },
+    "Dow": {
+      "close": 52800.0,
+      "change_pct": null
+    },
+    "SOX": {
+      "close": 11614.17,
+      "change_pct": -2.66,
+      "note": "半導體成分連兩日下挫，費半續弱"
+    },
+    "VIX": {
+      "close": 17.17,
+      "change_pct": -3.76
+    },
+    "TSM": {
+      "close": 428.03,
+      "change_pct": -1.68
+    }
+  },
+  "adr_premium": {
+    "as_of_date": "20260911",
+    "tsm_adr": 428.03,
+    "usdtwd": 31.615,
+    "tsm_adr_implied_twd": 2706.43,
+    "tsm_tw_close": 2410.0,
+    "premium_pct": 12.3,
+    "note": "TSM ADR $428.03 (-1.68%) × 31.615 ÷ 5 = 隱含 2,706 元；台積電收 2,410 (-1.63%)，ADR 溢價 +12.30%。溢價仍高，但 ADR 策略已永久退為觀察指標（1/11 hit rate）。"
+  },
+  "next_day_events": {
+    "note": "週休後下個交易日為 9/14（週一）",
+    "events": [
+      "外資單日賣超 -892.70 億＋期貨淨空單再創新高，空方架構全面強化，週一開盤壓力大",
+      "SOX 連兩日下跌（-2.66%），台積電 ADR -1.68%，半導體族群週一恐持續承壓",
+      "收盤失守 46,000 整數關卡，技術面下一支撐看 45,800~45,900（9/3 低點 45,839）",
+      "關注週五美股（9/11）收盤，若費半續弱週一台股難有像樣反彈",
+      "VIX 17.17（-3.76%）小幅回檔，恐慌未失控但未放鬆"
+    ]
+  },
+  "sections": [
+    {
+      "title": "📊 加權指數（-755.64 點，-1.61%，收 46,184.85）",
+      "content": "開 46,651 即開低，尾盤殺至近全日低點 45,942，收 46,184.85，失守 46,000 整數關卡！跌幅 -1.61% 為近月少見的重挫。櫃買指數 395.52（-2.40%）比加權更弱。上市成交值 7,622 億（較 9/10 7,507 億 +115 億），下跌放量。漲跌家數：上市股票 229 漲 / 779 跌（8 漲停 / 7 跌停），全面弱勢。"
+    },
+    {
+      "title": "🏛️ 三大法人買賣超（合計 -1,123.73 億）",
+      "content": "外資淨賣超 -892.70 億（買 2,454.73 / 賣 3,347.44），創近月單日最大賣超，為 9/10（-383.34 億）的 2.3 倍，連續第三日大幅賣超（9/2 -913、9/3 -481 之後再度強力減碼）。投信唯一買超 +70.99 億（買 165.46 / 賣 94.47）。自營商合計 -302.01 億（自行買賣 -50.39、避險 -251.62）。三大法人合計淨賣超 -1,123.73 億，為長線最重手減碼日。"
+    },
+    {
+      "title": "📊 期貨未平倉（9/11 當日已公布）",
+      "content": "外資台指期淨空單 -85,067 口（較 9/10 -83,918 增空 -1,149 口），續創歷史高檔空單區，現貨同步大賣空方架構全面強化。投信淨多單 +74,687 口（+204）續持高位與外資對作。自營商淨多單 +2,802 口（+1,423）。外資臺指選擇權 OI 淨額 -4,357 口（買Put避險微增）。P/C Ratio OpenAPI 仍未更新（Stale 至 8/11），官方值待 22:00 補齊。"
+    },
+    {
+      "title": "💰 融資融券（最新 9/9；9/11 18:30 未上線）",
+      "content": "【D-1 fallback】9/11 融資融券 18:30 尚未公布（TWSE 14:30~22:00 不穩），本欄為 9/9 官方值：融資餘額 907.07 萬張（+2.21 萬張；融資金額 5,871.67 億，+9.00 億）；融券 20.36 萬張（-0.50）。9/11 官方值待 22:00 全籌碼 job 補齊。"
+    },
+    {
+      "title": "📈 盤面強弱",
+      "content": "全面走跌：電子工業 -1.93%、半導體 -2.00% 為重災區，油電燃氣 -2.77%、玻璃陶瓷 -2.19% 同步走弱。僅金融保險 +1.12%（資金避險流入）與航運 +1.04% 逆勢上漲。台積電收 2,410（-1.63%）。漲跌家數 229 漲 / 779 跌，下跌家數近 4 倍於上漲，尾盤殺至低點。"
+    },
+    {
+      "title": "💵 匯率與 ADR",
+      "content": "USD/TWD 31.615（+0.48%）。TSM ADR $428.03（-1.68%）× 31.615 ÷ 5 = 隱含 2,706 元；台積電收 2,410（-1.63%），ADR 溢價 +12.30%。溢價仍高但 ADR 策略已永久退為觀察指標（1/11）。費半 SOX 連兩日下挫 -2.66%，半導體壓力未解。"
+    },
+    {
+      "title": "📅 明日注意（9/14 週一）",
+      "content": "週休後週一開盤壓力大。外資單日賣超 -892.70 億＋期貨淨空單再創新高（空方架構全面強化）；SOX 連兩日下跌＋台積電 ADR -1.68%，半導體族群恐續承壓。收盤已失守 46,000，技術面下一支撐看 45,800~45,900（9/3 低點 45,839）。密切關注週五美股（9/11）收盤，若費半續弱週一台股難有像樣反彈。"
+    }
+  ],
+  "notes": [
+    "18:30 盤後籌碼分析（2026-09-11 週五）",
+    "資料來源：TWSE BFI82U / MI_INDEX type=MS / FMTQIK / MI_5MINS_HIST、TAIFEX/cht/3/futContractsDate、yfinance (US/x) ",
+    "MI_MARGN 融資融券與 TWT93U 借券賣出 18:30 尚未上線，以 D-1（9/9 官方值）回退，22:00 全籌碼 job 將補齊 9/11 值",
+    "P/C Ratio OpenAPI 端點回傳 Stale 資料（最新 8/11），9/11 官方值待 22:00 補齊",
+    "外資 BFI82U 為 18:30 初值，22:00 全籌碼 job 將重抓並覆寫任何移動 >0.1 億的數字"
+  ],
+  "recommendation_review": {
+    "source": "~/.hermes/recommendations/2026-09-11_close_review.json（18:32 cron 產出）",
+    "scorecard": {
+      "total_actionable": 3,
+      "hit": 2,
+      "miss": 1,
+      "observation_discipline": "1/1 正確（台塑化觀察，避開 -3.02% 重挫）"
+    },
+    "reviews": [
+      {
+        "symbol": "2892",
+        "name": "第一金",
+        "direction": "偏多/防禦",
+        "recommend_price": "回檔進場",
+        "close_0911": 38.9,
+        "change_pct": 2.37,
+        "target": null,
+        "verdict": "✅ 強勢命中（+2.37%）",
+        "detail": "「風險賣壓日資金轉金融防禦、10Y 殖利率上行利銀行利差」判斷準確，逆市收在波段高位。防禦型標的在 VIX 急升、外資大賣日穩定有效，值得優先配比。"
+      },
+      {
+        "symbol": "6505",
+        "name": "台塑化",
+        "direction": "觀察（不追高）",
+        "recommend_price": "84~86 帶量不破",
+        "close_0911": 83.6,
+        "change_pct": -3.02,
+        "target": null,
+        "verdict": "✅ 避開重挫（-3.02%）",
+        "detail": "9/9 漲停後連跌 87.5→86.2→83.6，直接跌破建議介入區下緣，追高者兩日累計 -4.5%。「漲停次日無量價確認不追」連續三日（9/10、9/11）被驗證，應升格常駐守則。"
+      },
+      {
+        "symbol": "1301",
+        "name": "台塑",
+        "direction": "偏多（最落後補漲）",
+        "recommend_price": "64.5~65.5",
+        "close_0911": 64.6,
+        "change_pct": -1.52,
+        "target": null,
+        "verdict": "❌ 失誤（-1.52%）",
+        "detail": "押「油價+8%下集團最落後補漲」卻再度逆勢下跌，僅靠停損紀律守住。三成因：(1) 補漲動能集中龍頭 1303 南亞，「最落後」策略連兩日失靈，應確認資金輪動跡象再介入；(2) 外資單日 -383 億 + VIX 17.8 的 risk-off 日，油價利多不足以撐弱勢補漲股，應選防禦而非補漲；(3) 破推薦區下緣應即停損離場，勿因「未觸 63」續抱。"
+      }
+    ],
+    "lesson": "今日的功（金融防禦）與過（塑化落後補漲）指向同一課——風險賣壓日，選防禦而非順油價題材逆勢接刀。"
+  },
+  "momentum_scan": {
+    "source": "~/.hermes/scripts/tw_momentum_monitor.py v2.2（18:32 cron 產出）",
+    "scan_scope": "223 檔中小型股",
+    "scan_count": 223,
+    "resolved_count": 181,
+    "coverage_note": "42 檔 yfinance 無法解析（含 6806 森崴等已下市/更名代碼），覆蓋缺口已影響漲停統計廣度，建議更新 WATCHLIST 後重跑",
+    "limit_up_count": 1,
+    "sector_theme": "無（動能極度收斂）",
+    "limit_up_stocks": [
+      {
+        "symbol": "6706",
+        "name": "Fittech（柔洋）",
+        "industry": "其他",
+        "close": 137.5,
+        "change_pct": 10.0,
+        "consecutive_days": "首日（第2根）",
+        "signal": "唯一明日觀察標的，需量價確認才能視為轉強；今日無「第3根」推薦訊號"
+      }
+    ],
+    "strong_sectors": [],
+    "assessment": "對比 7/31 強彈日 27 檔漲停，9/9、9/11 連續兩日僅 1 檔——投機動能在外資大賣、風險升溫下明顯熄火，資金轉入金融防禦。",
+    "infrastructure_todo": [
+      "42 檔 yfinance 無法解析（含已下市/更名代碼），WATCHLIST 老化影響漲停統計廣度，建議更新清單後重跑",
+      "6706 柔洋需量價確認，明日持續觀察"
+    ]
+  },
+  "updated_at": "2026-09-11T19:01:23+08:00"
+}
