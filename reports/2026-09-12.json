@@ -30,6 +30,68 @@
       "timestamp": "2026-09-12",
       "images": [],
       "premium": false
+    },
+    {
+      "title": "WTI 原油（NYMEX）— Managed Money",
+      "icon": "🛢️",
+      "type": "table",
+      "sourceId": "cftc-cot-weekly",
+      "cotDate": "2026-09-08",
+      "previousCotDate": "2026-09-01",
+      "dataset": "CFTC Disaggregated Futures Only",
+      "headers": ["市場／CFTC code", "OI", "多單", "空單", "價差", "淨部位", "前期淨部位", "週變化", "多空比"],
+      "rows": [
+        ["WTI-PHYSICAL - NEW YORK MERCANTILE EXCHANGE／067651（NYME）", "1,939,911", "218,960", "107,229", "284,214", "+111,731", "+94,281", "+17,450", "2.04:1"]
+      ],
+      "analysis": "截至 2026-09-08，Managed Money 淨多由 94,281 口增至 111,731 口，週增 17,450 口；多單增加 13,660 口、空單減少 3,790 口。OI 增加 18,826 口至 1,939,911 口，顯示淨多增加同時伴隨整體未平倉上升。"
+    },
+    {
+      "title": "黃金（COMEX）— Managed Money",
+      "icon": "🥇",
+      "type": "table",
+      "sourceId": "cftc-cot-weekly",
+      "cotDate": "2026-09-08",
+      "previousCotDate": "2026-09-01",
+      "dataset": "CFTC Disaggregated Futures Only",
+      "headers": ["市場／CFTC code", "OI", "多單", "空單", "價差", "淨部位", "前期淨部位", "週變化", "多空比"],
+      "rows": [
+        ["GOLD - COMMODITY EXCHANGE INC.／088691（CMX）", "411,227", "145,804", "10,832", "29,462", "+134,972", "+136,771", "-1,799", "13.46:1"]
+      ],
+      "analysis": "截至 2026-09-08，Managed Money 維持淨多 134,972 口，但較前期減少 1,799 口；多單減少 3,917 口、空單也減少 2,118 口。OI 減少 3,969 口至 411,227 口；多空比 13.46:1，部位仍高度偏多，但本週淨多小幅收斂。"
+    },
+    {
+      "title": "美國債券期貨 — Leveraged Money",
+      "icon": "🏛️",
+      "type": "table",
+      "sourceId": "cftc-cot-weekly",
+      "cotDate": "2026-09-08",
+      "previousCotDate": "2026-09-01",
+      "dataset": "CFTC Traders in Financial Futures Futures Only",
+      "headers": ["期限／完整市場名稱", "交易所／CFTC code", "OI", "槓桿基金多單", "槓桿基金空單", "淨部位", "前期淨部位", "週變化", "多空比"],
+      "rows": [
+        ["2Y／UST 2Y NOTE - CHICAGO BOARD OF TRADE", "CBT／042601", "4,346,314", "585,711", "1,876,190", "-1,290,479", "-1,268,034", "-22,445", "0.31:1"],
+        ["5Y／UST 5Y NOTE - CHICAGO BOARD OF TRADE", "CBT／044601", "6,309,810", "492,845", "2,559,134", "-2,066,289", "-2,202,688", "+136,399", "0.19:1"],
+        ["10Y／UST 10Y NOTE - CHICAGO BOARD OF TRADE", "CBT／043602", "5,225,295", "391,836", "2,330,590", "-1,938,754", "-2,062,502", "+123,748", "0.17:1"],
+        ["Ultra 10Y／ULTRA UST 10Y - CHICAGO BOARD OF TRADE", "CBT／043607", "2,585,937", "172,897", "599,257", "-426,360", "-423,357", "-3,003", "0.29:1"],
+        ["30Y／UST BOND - CHICAGO BOARD OF TRADE", "CBT／020601", "1,802,308", "133,029", "409,994", "-276,965", "-303,045", "+26,080", "0.32:1"],
+        ["Ultra Bond／ULTRA UST BOND - CHICAGO BOARD OF TRADE", "CBT／020604", "2,399,505", "86,352", "950,623", "-864,271", "-878,489", "+14,218", "0.09:1"],
+        ["六檔合計", "—", "22,669,169", "1,862,670", "8,725,788", "-6,863,118", "-7,138,115", "+274,997", "0.21:1"]
+      ],
+      "analysis": "六檔 Leveraged Money 皆為淨空，合計淨空由 7,138,115 口收斂至 6,863,118 口，週變化 +274,997 口。前端 2Y 淨空擴大 22,445 口；中段 5Y、10Y 分別回補 136,399 與 123,748 口；長端 30Y 與 Ultra Bond 分別回補 26,080 與 14,218 口，Ultra 10Y 則小幅增加淨空 3,003 口。這是各期限槓桿基金持倉差異，不單獨推論殖利率必然方向。"
+    },
+    {
+      "title": "COT 跨資產關鍵觀察",
+      "icon": "🔍",
+      "type": "summary",
+      "sourceId": "cftc-cot-weekly",
+      "cotDate": "2026-09-08",
+      "previousCotDate": "2026-09-01",
+      "signals": [
+        {"aspect": "商品部位", "signal": "WTI 淨多增加 17,450 口；黃金淨多減少 1,799 口", "direction": "油增／金減"},
+        {"aspect": "債券前端", "signal": "2Y 淨空擴大 22,445 口", "direction": "空頭加碼"},
+        {"aspect": "債券中長端", "signal": "5Y、10Y、30Y、Ultra Bond 淨空收斂；Ultra 10Y 小幅擴大", "direction": "多數回補"},
+        {"aspect": "債券合計", "signal": "六檔合計淨空 6,863,118 口，較前期收斂 274,997 口", "direction": "淨空收斂"}
+      ]
     }
   ],
   "stats": {
