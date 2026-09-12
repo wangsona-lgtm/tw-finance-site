@@ -1,7 +1,5 @@
 [
   {
-<<<<<<< Updated upstream
-=======
     "date": "2026-07-29",
     "inst": {
       "foreign": -22251858551,
@@ -14,7 +12,6 @@
     "futures_total_net": "-638,260"
   },
   {
->>>>>>> Stashed changes
     "date": "2026-07-30",
     "inst": {
       "foreign": -48311819675,
@@ -339,21 +336,6 @@
     "futures_total_net": "-654,011"
   },
   {
-<<<<<<< Updated upstream
-    "date": "2026-09-09",
-    "inst": {
-      "foreign": 20924383308,
-      "investment_trust": 2084512601,
-      "dealer_total": -1883854140
-    },
-    "pc_ratio": 109.78,
-    "pc_oi_ratio": 96.34,
-    "futures_foreign_net": "-524,190",
-    "futures_total_net": "-696,633"
-  },
-  {
-=======
->>>>>>> Stashed changes
     "date": "2026-09-10",
     "inst": {
       "foreign": -38334160377,
@@ -374,12 +356,7 @@
     },
     "pc_ratio": 91.56,
     "pc_oi_ratio": 87.7,
-<<<<<<< Updated upstream
-    "futures_foreign_net": "-542,211",
-    "futures_total_net": "-730,760"
-=======
     "futures_foreign_net": "-547,069",
     "futures_total_net": "-745,102"
->>>>>>> Stashed changes
   }
 ]
