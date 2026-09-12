@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "updated": "2026-09-11T20:00:10.094156",
   "today": "20260911",
@@ -82,4 +83,90 @@
     ]
   },
   "error": null
+=======
+{
+  "updated": "2026-09-12T12:34:44.783123",
+  "today": "20260912",
+  "institution": {
+    "date": "20260911",
+    "dealer_self": {
+      "buy": 6414547471,
+      "sell": 11453921502,
+      "diff": -5039374031
+    },
+    "dealer_hedge": {
+      "buy": 22966539441,
+      "sell": 48128966296,
+      "diff": -25162426855
+    },
+    "trust": {
+      "buy": 18281400621,
+      "sell": 10067674879,
+      "diff": 8213725742
+    },
+    "foreign": {
+      "buy": 247009091715,
+      "sell": 336279536641,
+      "diff": -89270444926
+    },
+    "dealer": {
+      "buy": 0,
+      "sell": 0,
+      "diff": 0
+    },
+    "dealer_total": {
+      "buy": 29381086912,
+      "sell": 59582887798,
+      "diff": -30201800886
+    }
+  },
+  "pc_ratio": {
+    "date": "2026/9/11",
+    "call_vol": 335358,
+    "put_vol": 366279,
+    "pc_vol_ratio": 91.56,
+    "call_oi": 52641,
+    "put_oi": 60025,
+    "pc_oi_ratio": 87.7
+  },
+  "futures": {
+    "note": "期貨(全部合約) Net OI per TAIFEX",
+    "last_seen_date": "2026/09/11",
+    "foreign_tx_net": "-547,069",
+    "total_inst_futures_net": "-745,102"
+  },
+  "institutional_oi": {
+    "date": "20260911",
+    "items": [
+      {
+        "name": "dealer",
+        "futures_long": 138648,
+        "futures_short": 426388,
+        "futures_net": -287740,
+        "options_long": 52399,
+        "options_short": 41718,
+        "options_net": 10681
+      },
+      {
+        "name": "trust",
+        "futures_long": 93249,
+        "futures_short": 3542,
+        "futures_net": 89707,
+        "options_long": 2,
+        "options_short": 5157,
+        "options_net": -5155
+      },
+      {
+        "name": "foreign",
+        "futures_long": 237798,
+        "futures_short": 784867,
+        "futures_net": -547069,
+        "options_long": 13331,
+        "options_short": 17688,
+        "options_net": -4357
+      }
+    ]
+  },
+  "error": null
+>>>>>>> Stashed changes
 }
