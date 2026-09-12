@@ -191,6 +191,32 @@ html, body { height:100%; font-family:'Noto Sans TC',sans-serif; background:var(
 .summary-card .item .label { font-size:11px; color:var(--text2); }
 .summary-card .item .value { font-size:20px; font-weight:700; margin-top:4px; }
 
+.cot-chart-grid {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:14px; margin:12px 0;
+}
+.cot-chart-panel {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:10px; padding:14px;
+}
+.cot-chart-panel h4 { font-size:13px; margin-bottom:4px; }
+.cot-chart-hint { font-size:11px; color:var(--text2); margin-bottom:10px; }
+.cot-chart-row {
+  display:grid; grid-template-columns:minmax(68px,100px) minmax(120px,1fr) 82px;
+  gap:8px; align-items:center; margin:8px 0;
+}
+.cot-chart-label { font-size:12px; color:var(--text); }
+.cot-chart-value { font-size:12px; font-weight:600; text-align:right; font-variant-numeric:tabular-nums; }
+.cot-chart-track { position:relative; height:18px; background:var(--surface2); border-radius:3px; }
+.cot-chart-zero { position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--text2); opacity:.75; }
+.cot-chart-bar { position:absolute; top:2px; height:14px; min-width:2px; border-radius:2px; }
+.cot-chart-bar.pos { left:50%; background:var(--green); }
+.cot-chart-bar.neg { right:50%; background:var(--red); }
+@media (max-width:560px) {
+  .cot-chart-grid { grid-template-columns:1fr; }
+  .cot-chart-row { grid-template-columns:72px minmax(100px,1fr) 76px; }
+}
+
 .watch-box {
   background:rgba(0,212,170,.08); border:1px solid rgba(0,212,170,.2);
   border-radius:8px; padding:14px; font-size:13px; line-height:1.6;
@@ -363,6 +389,33 @@ async function selectReport(dateOrWeek) {
   }
 }
 
+function formatCotValue(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return '—';
+  return `${number > 0 ? '+' : ''}${number.toLocaleString('en-US')}`;
+}
+
+function renderCotMetric(title, items, key) {
+  const values = items.map(item => Number(item[key]) || 0);
+  const maxAbs = Math.max(...values.map(Math.abs), 1);
+  return `<div class="cot-chart-panel">
+    <h4>${title}</h4>
+    <div class="cot-chart-hint">負值向左｜正值向右（單位：口）</div>
+    ${items.map(item => {
+      const value = Number(item[key]) || 0;
+      const width = Math.abs(value) / maxAbs * 48;
+      return `<div class="cot-chart-row">
+        <div class="cot-chart-label">${item.label}</div>
+        <div class="cot-chart-track" role="img" aria-label="${item.label} ${title} ${formatCotValue(value)} 口">
+          <span class="cot-chart-zero"></span>
+          <span class="cot-chart-bar ${value >= 0 ? 'pos' : 'neg'}" style="width:${width.toFixed(2)}%;"></span>
+        </div>
+        <div class="cot-chart-value" style="color:var(${value >= 0 ? '--green' : '--red'});">${formatCotValue(value)}</div>
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+
 // ═══ Render full report ═══
 function renderReport(data) {
   let html = '';
@@ -513,6 +566,15 @@ function renderReport(data) {
       // Text content
       if (sec.content) {
         html += `<div class="market-summary">${sec.content.replace(/\n/g,'<br>')}</div>`;
+      }
+
+      // COT diverging bar charts
+      if (sec.type === 'cot-chart' && Array.isArray(sec.items) && sec.items.length > 0) {
+        html += `<div class="cot-chart-grid">
+          ${renderCotMetric('淨部位', sec.items, 'net')}
+          ${renderCotMetric('週變化', sec.items, 'change')}
+        </div>`;
+        if (sec.analysis) html += `<div class="market-summary" style="font-size:13px;">📌 ${sec.analysis}</div>`;
       }
 
       // Table

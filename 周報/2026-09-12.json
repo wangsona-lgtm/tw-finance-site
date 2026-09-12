@@ -6,6 +6,34 @@
   "summary": "截至 2026-09-08，WTI Managed Money 淨多增至 +111,731 口（+17,450），黃金淨多小幅收斂至 +134,972 口（-1,799）。美債六檔 Leveraged Money 合計淨空 -6,863,118 口，較前期收斂 +274,997 口；2Y 與 Ultra 10Y 淨空擴大，其餘期限回補。",
   "sections": [
     {
+      "title": "商品期貨 COT 圖",
+      "icon": "📊",
+      "type": "cot-chart",
+      "sourceId": "cftc-cot-weekly",
+      "cotDate": "2026-09-08",
+      "items": [
+        {"label": "WTI", "net": 111731, "change": 17450},
+        {"label": "黃金", "net": 134972, "change": -1799}
+      ],
+      "analysis": "WTI 與黃金均維持 Managed Money 淨多；本週 WTI 淨多增加，黃金淨多小幅收斂。"
+    },
+    {
+      "title": "美國債券期貨 COT 圖",
+      "icon": "📊",
+      "type": "cot-chart",
+      "sourceId": "cftc-cot-weekly",
+      "cotDate": "2026-09-08",
+      "items": [
+        {"label": "2Y", "net": -1290479, "change": -22445},
+        {"label": "5Y", "net": -2066289, "change": 136399},
+        {"label": "10Y", "net": -1938754, "change": 123748},
+        {"label": "Ultra 10Y", "net": -426360, "change": -3003},
+        {"label": "30Y", "net": -276965, "change": 26080},
+        {"label": "Ultra Bond", "net": -864271, "change": 14218}
+      ],
+      "analysis": "六檔 Leveraged Money 淨部位皆為負值；週變化顯示 2Y 與 Ultra 10Y 淨空擴大，其餘期限淨空收斂。"
+    },
+    {
       "title": "WTI 原油（NYMEX）— Managed Money",
       "icon": "🛢️",
       "type": "table",
