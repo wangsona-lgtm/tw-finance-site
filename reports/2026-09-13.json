@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-13",
+  "type": "daily-reports",
+  "source": "fed-watch",
+  "title": "Fed Watch 聯準會動向 — 9月13日（日）",
+  "sections": [
+    {
+      "title": "Fed Watch｜今日重點摘要",
+      "icon": "🏛️",
+      "content": "【已確認事實】本報擷取時點為 2026-09-13 06:03（台北時間）。Federal Reserve News & Events 的最後更新仍為 9/11；列表中最新的 9/11、9/10 項目為銀行監理／社區銀行相關新聞，並非 FOMC 聲明、聯邦基金目標變動、會議紀要、SEP、官員政策演說或國會證詞。因此，在本次 24 小時查核範圍內，未發現新的官方貨幣政策決定或官員立場訊號。\n\n【已確認事實】BLS 9/11 已公布 8 月 CPI：季調後 CPI-U 月增 0.4%、年增 3.4%；核心 CPI 月增 0.3%、年增 2.4%。汽油月增 3.9%、能源月增 2.1%，汽油占整體月增逾三分之一。此前 BLS 9/10 公布 8 月最終需求 PPI 月增 0.4%、年增 5.4%。\n\n【來源觀點】CME 原始頁面可核驗其方法（以 30-Day Fed Funds futures 隱含利率變動機率），但當前嵌入式即時機率表未提供可保存快照。Kiplinger 於 9/11 的二手引述稱，CME FedWatch 當時定價 9 月會議升息 25 個基點機率為 85%。這不是本報擷取時的 CME 原始讀值。\n\n【本報分析】近期 CPI／PPI 使通膨與 9/15–16 FOMC 的權衡保持在市場焦點；不過週末沒有新的官方政策訊號。正式政策結論應以 9/16 的聲明、投票、SEP 與記者會為準。"
+    },
+    {
+      "title": "Fed Watch｜即時市場儀表板",
+      "icon": "📊",
+      "type": "table",
+      "headers": ["項目／指定代號", "可核驗快照（擷取時點）", "日變動", "來源／限制"],
+      "rows": [
+        ["3 個月殖利率（Yahoo ^IRX）", "無可核驗快照", "—", "Yahoo Finance 端點於 9/13 06:03 台北時間被通訊權限拒絕。"],
+        ["5 年殖利率（Yahoo ^FVX）", "無可核驗快照", "—", "^FVX 為 5 年期，非 2 年期；指定端點無可保存回應。"],
+        ["10 年殖利率（Yahoo ^TNX）", "無可核驗快照", "—", "指定端點無可保存回應；不以媒體數字代填。"],
+        ["30 年殖利率（Yahoo ^TYX）", "無可核驗快照", "—", "指定端點無可保存回應。"],
+        ["2 年殖利率（補充）", "無可核驗快照", "—", "未取得可獨立保存的可靠 2 年期數值。"],
+        ["美元指數（Yahoo DX-Y.NYB）", "無可核驗快照", "—", "指定端點無可保存回應。"],
+        ["VIX（Yahoo ^VIX）", "無可核驗快照", "—", "指定端點無可保存回應。"],
+        ["聯邦基金期貨（Yahoo ZQ=F／ZQU26.CBT）", "無可核驗快照", "—", "缺少完整報價；不得反推精確 FedWatch 機率。"],
+        ["SOFR 期貨（Yahoo SR1=F、SR3=F）", "無可核驗快照", "—", "缺少完整合約月、到期與計算假設；不作機率換算。"]
+      ],
+      "analysis": "Yahoo Finance 的所有指定符號均已逐一嘗試；端點因通訊權限限制無法取得可保存回應。依取用規則，以「無可核驗快照」揭露，未填入估計值。"
+    },
+    {
+      "title": "Fed Watch｜利率路徑與 FedWatch",
+      "icon": "📈",
+      "content": "【原始方法來源】CME FedWatch 說明，其機率由 30-Day Fed Funds futures 價格隱含；本報可存取此方法頁，但無法取得嵌入式即時機率表的可保存快照。\n\n【可核驗二手引用】Kiplinger（9/11 發布／該文擷取）引述 CME FedWatch：9 月會議升息 25 個基點機率為 85%，並稱前一日為 71%。此為媒體二手引用、非 CME 即時原始截圖，也非本報 9/13 的即時數字。\n\n【交叉檢核結論】本次沒有第二個獨立、可核驗的同期 FedWatch 引用，也未取得 ZQ=F、ZQU26.CBT、SR1=F 或 SR3=F 報價。因此不能把上述單一二手數字稱為交叉驗證，更不能將期貨換算為精確機率；報告維持「待 9/16 FOMC 決定」的結論。"
+    },
+    {
+      "title": "Fed Watch｜官員立場追蹤（2026 實際投票委員）",
+      "icon": "🗣️",
+      "type": "table",
+      "headers": ["委員／職位", "投票權", "立場標示", "最近可核驗談話／投票", "判定理由"],
+      "rows": [
+        ["Kevin Warsh／理事會主席", "有", "未分類（未更新）", "9/13 查核：本 24 小時無新政策談話、異議或投票", "不可從職位或市場定價推定個人立場。"],
+        ["John C. Williams／紐約聯儲總裁、副主席", "有", "未分類（未更新）", "9/13 查核：無新訊號", "紐約席位為常任投票；未新出現可核驗個人證據。"],
+        ["Michael S. Barr／理事", "有", "未分類（未更新）", "9/13 查核：無新訊號", "不以非貨幣政策談話推定立場。"],
+        ["Michelle W. Bowman／理事", "有", "未分類（未更新）", "9/13 查核：無新訊號", "無新可核驗立場證據。"],
+        ["Lisa D. Cook／理事", "有", "未分類（未更新）", "9/13 查核：無新訊號", "無新可核驗立場證據。"],
+        ["Beth M. Hammack／克里夫蘭聯儲總裁", "有", "未分類（未更新）", "9/13 查核：無新訊號", "2026 輪值投票；無新可核驗立場證據。"],
+        ["Philip N. Jefferson／理事、副主席", "有", "未分類（未更新）", "9/13 查核：無新訊號", "無新可核驗立場證據。"],
+        ["Neel Kashkari／明尼阿波利斯聯儲總裁", "有", "未分類（未更新）", "9/13 查核：無新訊號", "2026 輪值投票；無新可核驗立場證據。"],
+        ["Lorie K. Logan／達拉斯聯儲總裁", "有", "未分類（未更新）", "9/13 查核：無新訊號", "2026 輪值投票；無新可核驗立場證據。"],
+        ["Anna Paulson／費城聯儲總裁", "有", "未分類（未更新）", "9/13 查核：無新訊號", "2026 輪值投票；無新可核驗立場證據。"],
+        ["Jerome H. Powell／理事", "有", "未分類（未更新）", "9/13 查核：無新訊號", "無新可核驗立場證據。"],
+        ["Christopher J. Waller／理事", "有", "中立／條件轉向（未更新）", "9/3 演說；本 24 小時無新訊號", "保留 9/3 的條件式個人反應函數；不是委員會共識。"]
+      ],
+      "analysis": "名單採 Fed 的 2026 FOMC 成員頁；所有列席者均有投票權。News & Events 的最近列示政策演說仍是 Waller 9/3，故本次沒有足以更新任一個人判定的新證據。「未分類」表示證據不足，非等同中立；委員會共識待 9/16 的聲明與投票。"
+    },
+    {
+      "title": "Fed Watch｜市場影響",
+      "icon": "🌐",
+      "content": "【來源觀點】Kiplinger 將 8 月 CPI 後升息機率上升，解讀為市場重新評估 9 月會議；此為該媒體轉述的期貨定價，並非 FOMC 決定。\n\n【本報分析】若 9/16 的聲明或 SEP 證實通膨風險仍偏上行，短端美債殖利率與美元通常面臨上行壓力，高估值股票、黃金與主要風險資產的折現壓力可能增加；若委員會強調能源衝擊的暫時性，反應則可能較溫和。由於本次沒有可核驗的指定即時報價，不為美債、美元、美股、黃金或風險資產的日內走勢作單一因果歸因。"
+    },
+    {
+      "title": "Fed Watch｜未來重要日期",
+      "icon": "📅",
+      "type": "table",
+      "headers": ["日期／時間（美東）", "事件", "官方來源與意義"],
+      "rows": [
+        ["9/15–16；9/16 14:00", "FOMC 會議、政策聲明、SEP 與記者會", "Federal Reserve；9 月會議有 SEP，為下一個正式利率決策節點。"],
+        ["9/16 08:30", "8 月進出口物價", "BLS；補充貿易端價格壓力。"],
+        ["9/30 08:30", "8 月 Personal Income and Outlays／PCE", "BEA；聯準會偏好的 PCE 通膨指標。"],
+        ["10/2 08:30", "9 月 Employment Situation／NFP", "BLS；就業與失業率。"],
+        ["10/14 08:30", "9 月 CPI", "BLS 發布日程。"],
+        ["10/15 08:30", "9 月 PPI", "BLS 發布日程。"],
+        ["10/29 08:30", "9 月 Personal Income and Outlays／PCE", "BEA 發布日程。"]
+      ],
+      "analysis": "所有時間均為美國東部時間；發布內容與時間仍以官方行事曆為準。"
+    },
+    {
+      "title": "Fed Watch｜資料來源與取用規則",
+      "icon": "🔗",
+      "type": "news",
+      "items": [
+        {"headline":"Federal Reserve｜News & Events","content":"最後更新 9/11；近 24 小時未列出新的貨幣政策公告、演說或證詞。","url":"https://www.federalreserve.gov/newsevents.htm","tags":["官方","政策查核"]},
+        {"headline":"BLS｜Consumer Price Index — August 2026","content":"官方 CPI：CPI-U 月增 0.4%、年增 3.4%；核心 CPI 月增 0.3%、年增 2.4%。","url":"https://www.bls.gov/news.release/cpi.htm","tags":["官方資料","CPI"]},
+        {"headline":"BLS｜Producer Price Index — August 2026","content":"官方 PPI：最終需求月增 0.4%、年增 5.4%。","url":"https://www.bls.gov/news.release/archives/ppi_09102026.htm","tags":["官方資料","PPI"]},
+        {"headline":"Federal Reserve｜2026 FOMC Members","content":"本報官員表所用的 12 位 2026 實際投票委員與職位。","url":"https://www.federalreserve.gov/monetarypolicy/fomc.htm","tags":["官方","投票權"]},
+        {"headline":"Federal Reserve｜2026 FOMC 日程","content":"9/15–16 FOMC，星號表示有 SEP。","url":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","tags":["官方日程","FOMC"]},
+        {"headline":"BLS｜2026 Release Schedule","content":"9/16 進出口物價、10/2 NFP、10/14 CPI、10/15 PPI 的官方發布時間。","url":"https://www.bls.gov/schedule/2026/home.htm","tags":["官方日程","CPI/PPI/NFP"]},
+        {"headline":"BEA｜Release Schedule","content":"8 月 PCE 為 9/30、9 月 PCE 為 10/29（美東）。","url":"https://www.bea.gov/news/schedule/full","tags":["官方日程","PCE"]},
+        {"headline":"CME Group｜FedWatch Tool","content":"原始方法來源：以 30-Day Fed Funds futures 隱含機率；本次即時表無可保存快照。","url":"https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html","tags":["方法","市場定價"]},
+        {"headline":"Kiplinger｜CPI 後 FedWatch 引述","content":"9/11 二手引用：當時升息 25 個基點機率 85%，前日 71%；非 CME 原始快照，未做即時數字或交叉驗證。","url":"https://www.kiplinger.com/investing/economy/cpi-report-august-2026-what-to-expect","tags":["二手引用","FedWatch"]},
+        {"headline":"Yahoo Finance｜指定行情代號","content":"規則：^IRX（3M）、^FVX（5Y）、^TNX（10Y）、^TYX（30Y）、DX-Y.NYB、^VIX、ZQ=F／ZQU26.CBT、SR1=F、SR3=F。本次無可核驗快照。","url":"https://finance.yahoo.com/","tags":["行情規則","資料限制"]}
+      ]
+    }
+  ],
+  "stats": {"total": 9, "premium": 0, "market": 0, "geopolitics": 0, "withImages": 0, "fedWatch": 1},
+  "keyThemes": [
+    "Fed Watch：Fed 官方頁面 9/11 後未見新的政策公告、演說或證詞",
+    "Fed Watch：8 月 CPI 月增 0.4%、年增 3.4%；核心 CPI 月增 0.3%、年增 2.4%",
+    "Fed Watch：CME 即時表與 Yahoo 指定行情均無可保存快照，不填估計值",
+    "Fed Watch：可核驗二手 FedWatch 引述為 9/11 的 85%，未以單一來源作交叉驗證",
+    "Fed Watch：9/15–16 FOMC 與 9/16 聲明／SEP 是下一個正式決策節點"
+  ]
+}
