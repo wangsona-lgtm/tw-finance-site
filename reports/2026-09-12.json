@@ -1,46 +1,106 @@
 {
   "date": "2026-09-12",
   "type": "daily-reports",
-  "source": "zerohedge",
-  "title": "ZeroHedge 每日導讀 — 9月12日（六）",
+  "source": "zerohedge+fed-watch",
+  "title": "ZeroHedge 每日導讀 + Fed Watch — 9月12日（六）",
   "sections": [
+    {"title":"解放軍整肅與對台灰色地帶壓力：風險在誤判，不宜直接推論戰事迫近","category":"geopolitics","summary":"【原文報導／受訪學者觀點】轉載報導稱，中國軍方高層整肅造成指揮體系壓力，受訪者認為北京可能更依賴軍演、海警與其他灰色地帶行動持續施壓台灣；文中同時明言，這不必然代表即將全面入侵。【可能影響】台灣風險資產、航運與保險成本、國防供應鏈，以及半導體供應鏈的地緣風險定價。【值得留意／本導讀分析】市場應把軍事活動頻率、封鎖演練的範圍與實際後勤動員分開觀察；前兩者上升未必等同於短期衝突，但會縮短誤判與風險溢價擴大的時間窗口。","url":"https://www.zerohedge.com/geopolitical/pla-purge-may-be-driving-china-rely-more-military-pressure-against-taiwan-analysts","timestamp":"2026-09-12","images":[],"premium":false},
+    {"title":"索馬利亞海盜再起，紅海至亞丁灣的航運安全缺口擴大","category":"market","summary":"【原文報導／作者觀點】轉載文章引述國際海事組織資料稱，今年區域內至少 15 艘船舶遭襲，並將海盜活動回升與中東戰事、紅海安全資源分散相連結；文中對胡塞組織與其他勢力的關聯屬受訪專家判斷，非已獨立證實的因果結論。【可能影響】貨櫃與油輪運價、戰爭險與保費、紅海／蘇伊士運輸時程，以及能源與商品進口成本。【值得留意／本導讀分析】除荷姆茲外，亞丁灣與紅海的安全風險若同步升高，會使繞航、保險與船隊可用性成為成本壓力；應追蹤經該航線的實際通行量與保費報價。","url":"https://www.zerohedge.com/markets/somali-piracy-was-under-control-then-came-iran-war","timestamp":"2026-09-12","images":[],"premium":false},
+    {"title":"巴林海軍設施受損後，美國評估中東艦隊據點安排","category":"geopolitics","summary":"【原文報導】文章引述美國代理海軍部長的說法，美軍正評估在巴林的中東艦隊總部未來安排；報導並稱該設施在近期與伊朗的衝突中受損，且海軍不計畫短期內返回原基地。【可能影響】波斯灣航運護航能力、油輪風險溢價、區域軍事物流與能源市場波動。【值得留意／本導讀分析】基地受損本身不等於海上通道中斷，但若補給與指揮長期分散，市場對護航能力與事故升級的敏感度可能提高；應持續確認官方部署與商船通行資料。","url":"https://www.zerohedge.com/political/navy-evaluating-future-key-middle-east-base-following-iran-war-damage-acting-secretary","timestamp":"2026-09-12","images":[],"premium":false},
     {
-      "title": "解放軍整肅與對台灰色地帶壓力：風險在誤判，不宜直接推論戰事迫近",
-      "category": "geopolitics",
-      "summary": "【原文報導／受訪學者觀點】轉載報導稱，中國軍方高層整肅造成指揮體系壓力，受訪者認為北京可能更依賴軍演、海警與其他灰色地帶行動持續施壓台灣；文中同時明言，這不必然代表即將全面入侵。【可能影響】台灣風險資產、航運與保險成本、國防供應鏈，以及半導體供應鏈的地緣風險定價。【值得留意／本導讀分析】市場應把軍事活動頻率、封鎖演練的範圍與實際後勤動員分開觀察；前兩者上升未必等同於短期衝突，但會縮短誤判與風險溢價擴大的時間窗口。",
-      "url": "https://www.zerohedge.com/geopolitical/pla-purge-may-be-driving-china-rely-more-military-pressure-against-taiwan-analysts",
-      "timestamp": "2026-09-12",
-      "images": [],
-      "premium": false
+      "title": "Fed Watch｜今日重點摘要",
+      "icon": "🏛️",
+      "content": "【已確認事實】本報擷取時點為 2026-09-12 12:36（台北時間）。BLS 於 9/11 08:30（美東）公布 8 月 CPI：季調後 CPI-U 月增 0.4%、年增 3.4%；核心 CPI（月增 0.3%、年增 2.4%）。汽油月增 3.9%、能源月增 2.1%，約占整體 CPI 月增的三分之一以上；住宅月增 0.3%。\n\n【已確認事實】截至 Federal Reserve News & Events 9/11 更新，近 24 小時未出現新的 FOMC 聲明、會議紀要、SEP、貨幣政策官員演說或國會證詞。9/11 的 Board 新聞稿為銀行監管相關指引，並非聯邦基金目標或 FOMC 政策決定。\n\n【來源觀點】CME FedWatch 的可讀取頁面本次只可核驗方法頁，嵌入式即時機率表無法保存。Axios（9/11）引述 CPI 後 9/16 升息機率為 85%、資料前 72%；AP（9/11）則引述為逾 80%、較前日增加約 10 個百分點；CBS 同日稱接近 90%。三者皆為二手、不同擷取點引述。\n\n【本報分析】CPI 與前日偏強 PPI 都把焦點轉向通膨持續性；但能源項目貢獻顯著，且 FOMC 尚未發布正式決定。應把市場定價與委員會決策分開，9/16 聲明、投票與 SEP 才是正式結論。"
     },
     {
-      "title": "索馬利亞海盜再起，紅海至亞丁灣的航運安全缺口擴大",
-      "category": "market",
-      "summary": "【原文報導／作者觀點】轉載文章引述國際海事組織資料稱，今年區域內至少 15 艘船舶遭襲，並將海盜活動回升與中東戰事、紅海安全資源分散相連結；文中對胡塞組織與其他勢力的關聯屬受訪專家判斷，非已獨立證實的因果結論。【可能影響】貨櫃與油輪運價、戰爭險與保費、紅海／蘇伊士運輸時程，以及能源與商品進口成本。【值得留意／本導讀分析】除荷姆茲外，亞丁灣與紅海的安全風險若同步升高，會使繞航、保險與船隊可用性成為成本壓力；應追蹤經該航線的實際通行量與保費報價。",
-      "url": "https://www.zerohedge.com/markets/somali-piracy-was-under-control-then-came-iran-war",
-      "timestamp": "2026-09-12",
-      "images": [],
-      "premium": false
+      "title": "Fed Watch｜即時市場儀表板",
+      "icon": "📊",
+      "type": "table",
+      "headers": ["項目／指定代號", "可核驗快照（擷取時點）", "日變動", "來源／限制"],
+      "rows": [
+        ["3 個月殖利率（Yahoo ^IRX）", "無可核驗快照", "—", "Yahoo Finance 端點於 9/12 12:36 台北時間無法取得可保存回應；不填估計值。"],
+        ["5 年殖利率（Yahoo ^FVX）", "無可核驗快照", "—", "^FVX 為 5 年期，非 2 年期；Yahoo Finance 快照未能核驗。"],
+        ["10 年殖利率（Yahoo ^TNX）", "無可核驗快照", "—", "Yahoo Finance 快照未能核驗；不以新聞描述替代指定儀表板數值。"],
+        ["30 年殖利率（Yahoo ^TYX）", "無可核驗快照", "—", "Yahoo Finance 快照未能核驗。"],
+        ["2 年殖利率（補充）", "無可核驗快照", "—", "本次沒有可獨立保存的可靠 2 年期數值，因此不列估計值。"],
+        ["美元指數（Yahoo DX-Y.NYB）", "無可核驗快照", "—", "Yahoo Finance 快照未能核驗。"],
+        ["VIX（Yahoo ^VIX）", "無可核驗快照", "—", "Yahoo Finance 快照未能核驗。"],
+        ["聯邦基金期貨（Yahoo ZQ=F／當期 ZQU26.CBT）", "無可核驗快照", "—", "不得由缺失報價反推精確 FedWatch 機率。"],
+        ["SOFR 期貨（Yahoo SR1=F、SR3=F）", "無可核驗快照", "—", "無完整合約月、到期與計算假設；不作機率換算。"]
+      ],
+      "analysis": "擷取時間：2026-09-12 12:36 台北時間。Yahoo Finance 指定代號的行情端點因通訊端存取受限，沒有可保存、獨立複核的快照；因此所有未取得資料均明列限制，而非以估計或媒體數字填補。"
     },
     {
-      "title": "巴林海軍設施受損後，美國評估中東艦隊據點安排",
-      "category": "geopolitics",
-      "summary": "【原文報導】文章引述美國代理海軍部長的說法，美軍正評估在巴林的中東艦隊總部未來安排；報導並稱該設施在近期與伊朗的衝突中受損，且海軍不計畫短期內返回原基地。【可能影響】波斯灣航運護航能力、油輪風險溢價、區域軍事物流與能源市場波動。【值得留意／本導讀分析】基地受損本身不等於海上通道中斷，但若補給與指揮長期分散，市場對護航能力與事故升級的敏感度可能提高；應持續確認官方部署與商船通行資料。",
-      "url": "https://www.zerohedge.com/political/navy-evaluating-future-key-middle-east-base-following-iran-war-damage-acting-secretary",
-      "timestamp": "2026-09-12",
-      "images": [],
-      "premium": false
+      "title": "Fed Watch｜利率路徑與 FedWatch",
+      "icon": "📈",
+      "content": "【方法與原始來源】CME 說明 FedWatch 以 30-Day Fed Funds futures 價格估計未來 FOMC 利率變動機率。本次可核驗 CME 方法頁，但嵌入式即時機率表未能取得可保存快照。\n\n【二手引用，非即時 CME 原始快照】Axios 於 9/11 16:07 UTC 引述 9/16 會議升息機率 85%、CPI 前 72%；AP 於 9/11 報導為逾 80%、較 9/10 高約 10 個百分點；CBS 9/11 報導稱接近 90%、前日約 70%。三個獨立媒體的方向一致：CPI 後升息定價上升，故僅作方向性交叉驗證。它們的截點與數字不同，報告不把任一值宣稱為唯一即時 FedWatch 機率。\n\n【ZQ／SOFR 交叉檢核】本次沒有可核驗的 ZQ=F、ZQU26.CBT、SR1=F 或 SR3=F 盤中／收盤快照；故無第二個期貨數據訊號，也不將期貨轉換成精確機率。"
+    },
+    {
+      "title": "Fed Watch｜官員立場追蹤（2026 實際投票委員）",
+      "icon": "🗣️",
+      "type": "table",
+      "headers": ["委員／職位", "投票權", "立場標示", "最近可核驗政策訊號／日期", "判定理由"],
+      "rows": [
+        ["Kevin Warsh／理事會主席", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "不可從職位或市場定價推定個人立場。"],
+        ["John C. Williams／紐約聯儲總裁、副主席", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "紐約席位為常任投票；無新可核驗個人訊號。"],
+        ["Michael S. Barr／理事", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "不以非貨幣政策談話推定立場。"],
+        ["Michelle W. Bowman／理事", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "無新可核驗立場證據。"],
+        ["Lisa D. Cook／理事", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "無新可核驗立場證據。"],
+        ["Beth M. Hammack／克里夫蘭聯儲總裁", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "2026 輪值投票；無新可核驗立場證據。"],
+        ["Philip N. Jefferson／理事、副主席", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "無新可核驗立場證據。"],
+        ["Neel Kashkari／明尼阿波利斯聯儲總裁", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "2026 輪值投票；無新可核驗立場證據。"],
+        ["Lorie K. Logan／達拉斯聯儲總裁", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "2026 輪值投票；無新可核驗立場證據。"],
+        ["Anna Paulson／費城聯儲總裁", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "2026 輪值投票；無新可核驗立場證據。"],
+        ["Jerome H. Powell／理事", "有", "未分類（未更新）", "9/12 查核：本 24 小時無新政策談話、異議或投票", "無新可核驗立場證據。"],
+        ["Christopher J. Waller／理事", "有", "中立／條件轉向（未更新）", "9/3 演說；本 24 小時無新訊號", "9/3 指出若通膨持續下行將傾向維持利率；若改善短暫，9 月會議可能適合升息。此為個人條件式反應函數，非委員會共識。"]
+      ],
+      "analysis": "投票名單採 Federal Reserve 的 2026 FOMC 成員頁。除 Waller 9/3 的條件式談話外，本報 24 小時查核未找到可更新的個人政策證據；「未分類」表示證據不足，並不等同中立。委員會正式共識仍須以 9/16 聲明、投票與 SEP 為準。"
+    },
+    {
+      "title": "Fed Watch｜市場影響",
+      "icon": "🌐",
+      "content": "【來源觀點】Axios、AP 與 CBS 都把 CPI 後的 FedWatch 升息定價上升作為市場解讀；這是媒體對期貨定價的轉述，而非 FOMC 的政策宣布。\n\n【本報分析】若後續資料仍顯示核心服務或更廣泛通膨壓力，短端殖利率與美元通常面臨上行壓力，並可能提高對高估值股票與其他風險資產的折現壓力；若壓力主要停留在能源且未擴散，政策訊號可能較弱。美債、美元、美股、黃金與主要風險資產本次均無可核驗的指定行情快照，故不為其日內變動作單一因果歸因。"
+    },
+    {
+      "title": "Fed Watch｜未來重要日期",
+      "icon": "📅",
+      "type": "table",
+      "headers": ["日期／時間（美東）", "事件", "官方來源與意義"],
+      "rows": [
+        ["9/15–16；9/16 14:00", "FOMC 會議、政策聲明、SEP 與記者會", "Federal Reserve；下一次正式聯邦基金目標決策。"],
+        ["9/16 08:30", "8 月進出口物價", "BLS；補充貿易端價格壓力。"],
+        ["9/30 08:30", "8 月 Personal Income and Outlays／PCE", "BEA；聯準會偏好的 PCE 通膨指標。"],
+        ["10/14 08:30", "9 月 CPI", "BLS 發布日程。"],
+        ["10/15 08:30", "9 月 PPI", "BLS 發布日程。"],
+        ["10/29 08:30", "9 月 Personal Income and Outlays／PCE", "BEA 發布日程。"]
+      ],
+      "analysis": "所有時間均為美國東部時間；實際發布以官方行事曆為準。"
+    },
+    {
+      "title": "Fed Watch｜資料來源與取用規則",
+      "icon": "🔗",
+      "type": "news",
+      "items": [
+        {"headline":"BLS｜Consumer Price Index — August 2026","content":"官方 CPI：CPI-U 月增 0.4%、年增 3.4%；核心 CPI 月增 0.3%、年增 2.4%。","url":"https://www.bls.gov/news.release/cpi.nr0.htm","tags":["官方資料","CPI"]},
+        {"headline":"Federal Reserve｜News & Events","content":"9/11 更新的官方新聞與演說／證詞清單；本次未見新的貨幣政策聲明、演說或證詞。","url":"https://www.federalreserve.gov/newsevents.htm","tags":["官方","政策查核"]},
+        {"headline":"Federal Reserve｜2026 FOMC Members","content":"本報官員表所用的 12 位 2026 實際投票委員與職位。","url":"https://www.federalreserve.gov/monetarypolicy/fomc.htm","tags":["官方","投票權"]},
+        {"headline":"Federal Reserve｜2026 FOMC 日程","content":"9/15–16 會議、9/16 聲明、SEP 與記者會資訊。","url":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","tags":["官方日程","FOMC"]},
+        {"headline":"BLS｜2026 Release Schedule","content":"9/16 進出口物價、10/14 CPI、10/15 PPI 的官方發布時間。","url":"https://www.bls.gov/schedule/2026/","tags":["官方日程","CPI/PPI"]},
+        {"headline":"BEA｜Release Schedule","content":"8 月 PCE 預定 9/30、9 月 PCE 預定 10/29（美東）。","url":"https://www.bea.gov/news/schedule/full","tags":["官方日程","PCE"]},
+        {"headline":"CME Group｜FedWatch Tool","content":"原始方法來源：以 30-Day Fed Funds futures 隱含機率。本次即時表無可保存快照。","url":"https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html","tags":["方法","市場定價"]},
+        {"headline":"Axios｜CPI 後 FedWatch 引述","content":"9/11 二手引用：升息機率 85%、資料前 72%；非 CME 原始快照。","url":"https://www.axios.com/2026/09/11/the-feds-big-inflation-test","tags":["二手引用","FedWatch"]},
+        {"headline":"AP｜CPI 與升息定價","content":"9/11 二手引用：9/16 升息機率逾 80%、較前日增加約 10 個百分點。","url":"https://apnews.com/article/c76f53f7a53def0c464ca44ac637f203","tags":["二手引用","FedWatch"]},
+        {"headline":"Yahoo Finance｜指定行情代號","content":"規則：^IRX（3M）、^FVX（5Y）、^TNX（10Y）、^TYX（30Y）、DX-Y.NYB、^VIX、ZQ=F／ZQU26.CBT、SR1=F、SR3=F。本次未取得可核驗快照。","url":"https://finance.yahoo.com/","tags":["行情規則","資料限制"]}
+      ]
     }
   ],
-  "stats": {
-    "total": 3,
-    "premium": 0,
-    "market": 1,
-    "geopolitics": 2,
-    "withImages": 0,
-    "premarket": 0
-  },
+  "stats": {"total": 13, "premium": 0, "market": 1, "geopolitics": 2, "withImages": 0, "premarket": 0, "fedWatch": 1},
   "keyThemes": [
+    "Fed Watch：8 月 CPI 月增 0.4%、年增 3.4%；核心 CPI 月增 0.3%、年增 2.4%",
+    "Fed Watch：官方未公布新的 FOMC 聯邦基金利率決策或政策訊號",
+    "Fed Watch：二手 FedWatch 引述一致指向 CPI 後升息定價上調，區間約 80% 至近 90%",
+    "Fed Watch：Yahoo 指定市場行情未能獨立核驗，未填估計值",
+    "Fed Watch：9/15–16 FOMC 與 9/16 聲明／SEP 是下一個正式決策節點",
     "台海灰色地帶行動與誤判風險，是台灣資產與供應鏈需持續追蹤的地緣變數",
     "紅海、亞丁灣與波斯灣的安全壓力可能同時推升航運、保險與能源的成本風險",
     "中東軍事據點與護航能力的後續安排，將影響市場對航道安全的風險定價"
