@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-09",
+  "type": "daily-reports",
+  "source": "fed-watch",
+  "title": "Fed Watch 聯準會動向 — 9月9日（三）",
+  "sections": [
+    {
+      "title": "Fed Watch｜今日重點摘要",
+      "icon": "🏛️",
+      "content": "【已確認事實】本報告擷取時點為 2026-09-09 06:02（台北時間）。過去 24 小時，Federal Reserve 的 Recent Postings 新增一項 9/8 公告：理事會將於 9/9 12:00（美東）召開閉門會議，議題是檢視並決定各聯邦準備銀行的預支／貼現利率。公告沒有公布結果，也沒有宣布聯邦基金利率目標區間或 FOMC 決策。\n\n【已確認事實】除上述會議通知外，官方近期列表未見新的 FOMC 聲明、會議紀要、經濟預測、貨幣政策演說或國會證詞；因此，本時段沒有新的已確認聯邦基金利率決定。\n\n【本報分析】貼現率檢討屬理事會既定程序，不能在沒有會後公告前視為 FOMC 利率路徑改變。下一個可量化的政策相關資訊仍是 8 月 PPI、CPI，以及 9/15–16 的 FOMC 會議。"
+    },
+    {
+      "title": "Fed Watch｜最新政策訊號與官員立場",
+      "icon": "🗣️",
+      "content": "【最新官方訊號】9/8 的閉門會議公告只界定討論範圍為預支／貼現利率，未提供投票結果或對聯邦基金利率的指引；應等待正式結果或後續文件，不能將通知本身解讀為升息或降息。\n\n【最近已確認官員立場】Governor Christopher J. Waller 於 9/3 表示，若未來兩週資料持續顯示通膨降溫，他傾向支持維持聯邦基金利率目標不變；若 8 月資料顯示改善短暫，則 9/15–16 FOMC 會議可能適合升息。\n\n【準確解讀】此為 Waller 的條件式個人反應函數，不代表理事會其他成員或 FOMC 共識；其講稿亦明示觀點不必然代表其他理事或 FOMC。"
+    },
+    {
+      "title": "Fed Watch｜利率路徑與期貨定價",
+      "icon": "📈",
+      "content": "【市場定價，非官方預測】CME FedWatch 以 30-Day Fed Funds futures 推導機率。本次於 2026-09-09 06:02（台北時間）僅核驗工具與方法頁面，未取得可保存、可獨立核對的即時機率快照，因此不以舊數字冒充今日機率。\n\n【本報分析】在 FOMC 會議前，PPI／CPI 實際值及聯邦基金期貨隨後的重新定價，會比未經核實的二手機率更有資訊價值。"
+    },
+    {
+      "title": "Fed Watch｜市場影響與情境",
+      "icon": "🌐",
+      "content": "【已確認事實】本時段唯一新增、與政策相關的官方資訊是閉門會議通知；它沒有公布政策結果。因此，本報不把美債、美元、美股、黃金或其他風險資產的個別波動歸因於聯準會政策改變。\n\n【本報分析】若 PPI／CPI 偏強，短端美債殖利率與美元可能獲支撐，並提高高估值美股、黃金及其他對實質利率敏感資產的壓力；若通膨數據低於預期，方向可能相反。這是情境推論，不是對價格的預測或投資建議。"
+    },
+    {
+      "title": "Fed Watch｜未來重要日期",
+      "icon": "📅",
+      "type": "table",
+      "headers": ["日期（美東）", "事件", "為何重要"],
+      "rows": [
+        ["9/9 12:00", "Federal Reserve Board 閉門會議", "議題為預支／貼現利率檢視；公告尚未提供結果。"],
+        ["9/10 08:30", "8 月 PPI", "FOMC 前的重要通膨線索。"],
+        ["9/11 08:30", "8 月 CPI", "檢驗通膨降溫是否延續。"],
+        ["9/15–16", "FOMC 會議；9/16 決議、經濟預測與記者會", "下一次正式聯邦基金利率決策。"]
+      ],
+      "analysis": "時間均為美國東部時間；PPI 與 CPI 日程取自 BLS，會議日程取自 Federal Reserve。"
+    },
+    {
+      "title": "Fed Watch｜來源與可核驗連結",
+      "icon": "🔗",
+      "type": "news",
+      "items": [
+        {
+          "headline": "Federal Reserve｜Recent Postings",
+          "content": "9/8 公告：9/9 12:00（美東）閉門會議，議題為各聯邦準備銀行預支／貼現利率的檢視與決定；未公布結果。",
+          "url": "https://www.federalreserve.gov/recentpostings.htm",
+          "tags": ["已確認事實", "官方公告"]
+        },
+        {
+          "headline": "Federal Reserve｜News & Events",
+          "content": "官方新聞總頁面最新新聞稿仍為 9/4；未見 9/5–9/8 的 FOMC 政策聲明、紀要或新政策官員談話。",
+          "url": "https://www.federalreserve.gov/newsevents.htm",
+          "tags": ["已確認事實", "官方"]
+        },
+        {
+          "headline": "Federal Reserve｜Waller：Economic Outlook and Some Comments on My Policy Communication",
+          "content": "9/3 官方談話：將以 8 月通膨資料判斷維持利率或可能升息；屬條件式個人觀點。",
+          "url": "https://www.federalreserve.gov/newsevents/speech/waller20260903a.htm",
+          "tags": ["官方談話", "政策訊號"]
+        },
+        {
+          "headline": "Federal Reserve｜2026 FOMC 會議日程",
+          "content": "9 月 FOMC 會議於 15–16 日舉行，並附經濟預測資料。",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "tags": ["官方日程"]
+        },
+        {
+          "headline": "U.S. Bureau of Labor Statistics｜PPI／CPI 發布日程",
+          "content": "8 月 PPI 於 9/10 08:30、CPI 於 9/11 08:30（美東）發布。",
+          "url": "https://www.bls.gov/schedule/2026/home.htm",
+          "tags": ["官方日程", "通膨"]
+        },
+        {
+          "headline": "CME Group｜FedWatch Tool",
+          "content": "聯邦基金期貨隱含機率的原始工具；本報未取得可獨立核驗的即時數字。",
+          "url": "https://www.cmegroup.com/fedwatch",
+          "tags": ["市場定價", "方法說明"]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "premium": 0,
+    "market": 0,
+    "geopolitics": 0,
+    "withImages": 0,
+    "fedWatch": 1
+  },
+  "keyThemes": [
+    "Fed Watch：新增 9/9 理事會閉門會議通知，但尚無政策結果",
+    "Fed Watch：通知涉及貼現利率檢視，不能直接等同 FOMC 利率決策",
+    "Fed Watch：Waller 的條件式框架仍以 8 月通膨資料為關鍵",
+    "Fed Watch：本次未採用無法獨立核驗的即時 FedWatch 機率",
+    "Fed Watch：9/10 PPI、9/11 CPI 與 9/15–16 FOMC 是下一段重定價重點"
+  ]
+}

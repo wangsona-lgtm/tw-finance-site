@@ -6,6 +6,12 @@
     "dayOfWeek": "六"
   },
   {
+    "date": "2026-09-09",
+    "file": "tw-finance-site/reports/2026-09-09.json",
+    "title": "Fed Watch 聯準會動向 — 9月9日（三）",
+    "dayOfWeek": "三"
+  },
+  {
     "date": "2026-09-08",
     "file": "tw-finance-site/reports/2026-09-08.json",
     "title": "ZeroHedge 每日導讀 + Fed Watch — 9月8日（二）",
