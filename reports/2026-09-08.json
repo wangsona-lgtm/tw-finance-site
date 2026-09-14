@@ -1,48 +1,19 @@
 {
   "date": "2026-09-08",
   "type": "daily-reports",
-  "source": "zerohedge",
-  "title": "ZeroHedge 每日導讀 — 9月8日（二）",
+  "source": "zerohedge+fed-watch",
+  "title": "ZeroHedge 每日導讀 + Fed Watch — 9月8日（二）",
   "sections": [
-    {
-      "title": "荷姆茲航運風險升溫，原油風險溢價擴大",
-      "category": "geopolitics",
-      "summary": "【原文報導】文章稱，伊朗預告將在荷姆茲海峽及波斯灣公布新的「受限區域」與航運走廊；同時，沙烏地阿拉伯吉贊（Jizan）油業設施傳出再受攻擊。文中引述市場資訊指出，Brent 期貨已升破每桶 97 美元。【可能影響】Brent／WTI 原油、歐洲天然氣、航運與保險成本，以及能源股與通膨預期。【值得留意／本導讀分析】此為地緣事件驅動的供給與運輸風險，而非已確認的長期減產；需持續區分官方航道措施、實際通行量與設施損害評估，三者才會決定風險溢價是否延續。",
-      "url": "https://www.zerohedge.com/geopolitical/iran-draw-new-restricted-zone-hormuz-saudi-aramco-facility-hit-again-oil-climbs",
-      "timestamp": "2026-09-08",
-      "images": [],
-      "premium": false
-    },
-    {
-      "title": "中國原油補庫與替代供應競逐，上海原油升破 100 美元",
-      "category": "market",
-      "summary": "【原文報導／作者引述 Bloomberg 與市場人士】文章指出，中國買家增加自非洲、加拿大與拉丁美洲採購原油，上海原油價格升破每桶 100 美元、相對 Brent 轉為溢價。文中亦引述高盛商品研究主管的觀點：若中東航運攻擊擴大，Brent 可能面臨更大上行風險；這是機構觀點，並非價格預測保證。【可能影響】原油、柴油與天然氣、亞洲煉油利差、油輪運價，以及中國與全球通膨預期。【值得留意／本導讀分析】較高價格不必然代表終端需求全面復甦；文章也提到補庫與煉油利差改善可能是推力。應追蹤中國進口量、庫存與實體原油升貼水，而非只看單日期貨價格。",
-      "url": "https://www.zerohedge.com/commodities/chinese-oil-demand-unexpectedly-soars-sending-shanghai-crude-above-100-brent-prices-set",
-      "timestamp": "2026-09-08",
-      "images": [],
-      "premium": false
-    },
-    {
-      "title": "中國地方財政依賴中央轉移，結構失衡仍是中期風險",
-      "category": "market",
-      "summary": "【作者觀點／Milton Ezrati 經 ZeroHedge 轉載】文章依中國財政部資料主張，多個省級行政區的預算缺口更依賴北京支援，並將現象連結至房地產低迷、土地相關稅收減弱與既有財稅分成制度的壓力。【可能影響】中國內需與基建支出、地方融資平台信用、人民幣資產，以及對工業金屬與全球成長的中期預期。【值得留意／本導讀分析】這是一篇結構性評論，不是即時政策公告。判斷影響時，應追蹤中央轉移支付、地方債置換與房市數據的實際變化，並避免把單一評論直接視為短線交易訊號。",
-      "url": "https://www.zerohedge.com/geopolitical/chinas-provinces-show-evidence-financial-pressure-and-economys-imbalances",
-      "timestamp": "2026-09-08",
-      "images": [],
-      "premium": false
-    }
+    {"title":"荷姆茲航運風險升溫，原油風險溢價擴大","category":"geopolitics","summary":"【原文報導】文章稱，伊朗預告將在荷姆茲海峽及波斯灣公布新的「受限區域」與航運走廊；同時，沙烏地阿拉伯吉贊（Jizan）油業設施傳出再受攻擊。文中引述市場資訊指出，Brent 期貨已升破每桶 97 美元。【可能影響】Brent／WTI 原油、歐洲天然氣、航運與保險成本，以及能源股與通膨預期。【值得留意／本導讀分析】此為地緣事件驅動的供給與運輸風險，而非已確認的長期減產；需持續區分官方航道措施、實際通行量與設施損害評估，三者才會決定風險溢價是否延續。","url":"https://www.zerohedge.com/geopolitical/iran-draw-new-restricted-zone-hormuz-saudi-aramco-facility-hit-again-oil-climbs","timestamp":"2026-09-08","images":[],"premium":false},
+    {"title":"中國原油補庫與替代供應競逐，上海原油升破 100 美元","category":"market","summary":"【原文報導／作者引述 Bloomberg 與市場人士】文章指出，中國買家增加自非洲、加拿大與拉丁美洲採購原油，上海原油價格升破每桶 100 美元、相對 Brent 轉為溢價。文中亦引述高盛商品研究主管的觀點：若中東航運攻擊擴大，Brent 可能面臨更大上行風險；這是機構觀點，並非價格預測保證。【可能影響】原油、柴油與天然氣、亞洲煉油利差、油輪運價，以及中國與全球通膨預期。【值得留意／本導讀分析】較高價格不必然代表終端需求全面復甦；文章也提到補庫與煉油利差改善可能是推力。應追蹤中國進口量、庫存與實體原油升貼水，而非只看單日期貨價格。","url":"https://www.zerohedge.com/commodities/chinese-oil-demand-unexpectedly-soars-sending-shanghai-crude-above-100-brent-prices-set","timestamp":"2026-09-08","images":[],"premium":false},
+    {"title":"中國地方財政依賴中央轉移，結構失衡仍是中期風險","category":"market","summary":"【作者觀點／Milton Ezrati 經 ZeroHedge 轉載】文章依中國財政部資料主張，多個省級行政區的預算缺口更依賴北京支援，並將現象連結至房地產低迷、土地相關稅收減弱與既有財稅分成制度的壓力。【可能影響】中國內需與基建支出、地方融資平台信用、人民幣資產，以及對工業金屬與全球成長的中期預期。【值得留意／本導讀分析】這是一篇結構性評論，不是即時政策公告。判斷影響時，應追蹤中央轉移支付、地方債置換與房市數據的實際變化，並避免把單一評論直接視為短線交易訊號。","url":"https://www.zerohedge.com/geopolitical/chinas-provinces-show-evidence-financial-pressure-and-economys-imbalances","timestamp":"2026-09-08","images":[],"premium":false},
+    {"title":"Fed Watch｜今日重點摘要","icon":"🏛️","content":"【已確認事實】本報告擷取時點為 2026-09-08 10:14（台北時間）。聯準會官方 News & Events 頁面最後更新仍為 9 月 4 日；過去 24 小時未見新的 FOMC 聲明、會議紀要、經濟預測、貨幣政策相關公告、官員演說或國會證詞。因此，本時段沒有新的已確認利率決定或政策訊號。\n\n【環境】9 月 FOMC 外部溝通靜默期已於 9/5（美東）開始，將持續至會議後一天；9/15–16 會議前，公開官員談話自然有限。Federal Reserve 的 Recent Postings 列有 9/8 11:30（美東）的 Board 閉門會議通知，但通知本身未表明是 FOMC 利率決策或新的貨幣政策訊號。\n\n【本報分析】市場下一個可驗證的方向訊號是 9/10 的 8 月 PPI 與 9/11 的 8 月 CPI；在資料公布前，應把市場價格變動與已確認的政策訊息分開解讀。"},
+    {"title":"Fed Watch｜最新政策訊號與官員立場","icon":"🗣️","content":"【最近已確認官方立場】Governor Christopher J. Waller 於 9 月 3 日表示：若接下來兩週的數據持續顯示通膨降溫，他傾向支持維持現行聯邦基金利率目標區間；若 8 月資料顯示改善只是短暫現象，則 9 月 15–16 日會議升息可能適當。\n\n【準確解讀】這是 Waller 的條件式個人觀點；其講稿明確註明不必然代表其他理事或 FOMC。官方頁面未列出 9 月 4 日後的新政策官員談話，因此本報不推定委員會已有共識。"},
+    {"title":"Fed Watch｜利率路徑與期貨定價","icon":"📈","content":"【市場定價，非官方預測】CME FedWatch 說明其機率係由 30-Day Fed Funds futures 隱含。本次於 2026-09-08 10:14（台北時間）僅能核驗工具與方法頁面，未能取得可保存、可獨立核對的即時機率快照，故不將任何舊數字當作今日機率。\n\n【本報分析】靜默期使新增政策資訊稀少，PPI／CPI 的實際結果及其後的聯邦基金期貨重新定價，將比未經核實的二手機率更具資訊價值。"},
+    {"title":"Fed Watch｜市場影響與情境","icon":"🌐","content":"【已確認事實】本時段沒有可歸因於新 Fed 政策公告的跨資產變動；因此，本報不把個別市場波動歸因於聯準會。\n\n【本報分析】若 PPI／CPI 偏強，短端美債殖利率與美元可能獲支撐，並增加高估值美股、黃金及其他對實質利率敏感資產的壓力；若通膨數據低於預期，方向可能相反。這是情境推論，不是對價格的預測或投資建議。"},
+    {"title":"Fed Watch｜未來重要日期","icon":"📅","type":"table","headers":["日期（美東）","事件","為何重要"],"rows":[["9/8 11:30","Federal Reserve Board 閉門會議","官方通知已公告；不應在無後續資料時預設政策結果。"],["9/9 10:00","Employer Costs for Employee Compensation（6 月）","補充勞動成本訊號。"],["9/10 08:30","8 月 PPI","FOMC 前的重要通膨線索。"],["9/11 08:30","8 月 CPI","檢驗通膨降溫是否延續。"],["9/15–16","FOMC 會議；9/16 決議、經濟預測與記者會","下一次正式利率決策。"]],"analysis":"時間均為美國東部時間；PPI 與 CPI 日程取自 BLS，會議日程取自 Federal Reserve。"},
+    {"title":"Fed Watch｜來源與可核驗連結","icon":"🔗","type":"news","items":[{"headline":"Federal Reserve｜News & Events","content":"官方頁面最後更新為 9/4；未列出 9/5–9/8 的新貨幣政策公告、演說或證詞。","url":"https://www.federalreserve.gov/newsevents.htm","tags":["已確認事實","官方"]},{"headline":"Federal Reserve｜Recent Postings","content":"列有 9/8 11:30（美東）的 Board 閉門會議通知；通知本身未表明為 FOMC 利率決策。","url":"https://www.federalreserve.gov/recentpostings.htm","tags":["官方日程"]},{"headline":"Federal Reserve｜Waller：Economic Outlook and Some Comments on My Policy Communication","content":"9/3 官方談話：以未來兩週通膨資料為條件，支持維持或可能升息。","url":"https://www.federalreserve.gov/newsevents/speech/waller20260903a.htm","tags":["官方談話","政策訊號"]},{"headline":"Federal Reserve｜2026 FOMC 會議日程與靜默期日曆","content":"9 月會議於 15–16 日舉行；外部溝通靜默期為 9/5–17。","url":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","tags":["官方日程"]},{"headline":"U.S. Bureau of Labor Statistics｜PPI／CPI 發布日程","content":"8 月 PPI 於 9/10 08:30、CPI 於 9/11 08:30（美東）發布。","url":"https://www.bls.gov/schedule/2026/home.htm","tags":["官方日程","通膨"]},{"headline":"CME Group｜FedWatch Tool","content":"聯邦基金期貨隱含機率的原始工具；本報未取得可核驗的即時數字。","url":"https://www.cmegroup.com/fedwatch","tags":["市場定價","方法說明"]}]}
   ],
-  "stats": {
-    "total": 3,
-    "premium": 0,
-    "market": 2,
-    "geopolitics": 1,
-    "withImages": 0,
-    "premarket": 0
-  },
-  "keyThemes": [
-    "荷姆茲航運與中東能源設施風險，推升原油、天然氣與運輸成本的風險溢價",
-    "中國買盤與替代供應競逐可能推高亞洲實體原油價格；需區分補庫與終端需求",
-    "中國地方財政壓力屬中期結構議題，重點在中央轉移、地方債與房地產後續資料"
-  ]
+  "stats": {"total":9,"premium":0,"market":2,"geopolitics":1,"withImages":0,"premarket":0,"fedWatch":1},
+  "keyThemes": ["荷姆茲航運與中東能源設施風險，推升原油、天然氣與運輸成本的風險溢價","中國買盤與替代供應競逐可能推高亞洲實體原油價格；需區分補庫與終端需求","中國地方財政壓力屬中期結構議題，重點在中央轉移、地方債與房地產後續資料","Fed Watch：過去 24 小時無新的 FOMC 決策、紀要或官員談話","Fed Watch：9/5–17 FOMC 靜默期限制新的官方對外溝通","Fed Watch：Waller 的條件式框架仍以通膨資料是否延續改善為關鍵"]
 }
