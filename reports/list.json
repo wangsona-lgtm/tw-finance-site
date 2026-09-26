@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-09-26",
+    "file": "tw-finance-site/reports/2026-09-26.json",
+    "title": "ZeroHedge 每日導讀 — 9月26日（六）",
+    "dayOfWeek": "六"
+  },
+  {
+    "date": "2026-09-25",
+    "file": "tw-finance-site/reports/2026-09-25.json",
+    "title": "ZeroHedge 每日導讀 — 9月25日（五）",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-09-24",
+    "file": "tw-finance-site/reports/2026-09-24.json",
+    "title": "ZeroHedge 每日導讀 — 9月24日（四）",
+    "dayOfWeek": "四"
+  },
+  {
     "date": "2026-09-23",
     "file": "tw-finance-site/reports/2026-09-23.json",
     "title": "ZeroHedge 每日導讀 — 9月23日（三）",

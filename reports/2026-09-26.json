@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-26",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 9月26日（六）",
+  "sections": [
+    {
+      "title": "「Shaken & Stirred」：本週回顧 — 特工打敗公債，PMI 火熱、外交卡關、能源焦慮",
+      "category": "market",
+      "summary": "本週市場以連續兩天那斯達克創新高、布蘭特跌破 100 美元、以及「伊朗數日內重開荷莫茲海峽」的傳聞開場。但收尾時情勢完全反轉：**10 年期美債殖利率升至 2007 年以來最高，5 年期首度在近二十年內突破 5%**，10 月升息機率逼近 70%。導火線是 2021 年以來最強勁的 PMI、拍賣狀況不佳、聯準會官員密集放鷹，疊加美伊外交雲霄飛車、柴油驅動的能源緊縮、習近平訪美淪為「雷聲大雨點小」、以及 Oracle 因不可抗力通知引發的 AI 融資疑慮。美元大漲、金價滑落，加密貨幣則因科技風險偏好在技術面走強，能源類股漲跌分歧。一句話總結：**華爾街忙著幻想 AI 未來，債市卻在抬高融資成本**。\n\n**重點摘錄：**\n• 10Y 殖利率創 2007 年以來新高，5Y 破 5%，升息預期急升\n• 最強近五年 PMI ＋鷹派 Fed 官員＋壅堵的標售齊聚\n• 全球政府債券基金遭投資人集體撤出，AI 巨頭基金卻獲鉅額流入",
+      "url": "https://www.zerohedge.com/markets/shaken-stirred-agents-beat-bonds-week-punchy-pmis-diplomatic-duds-energy-angst",
+      "timestamp": "2026-09-26",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "伊朗官方媒體否認與美國進行技術談判",
+      "category": "geopolitics",
+      "summary": "伊朗國家媒體 Fars 否認 Axios 與 Al Jazeera 關於美伊技術談判的報導，稱「伊朗派技術專家赴紐約參與會談」是假消息。背景脈絡：伊朗先前提出「7 天路線圖」以結束戰爭並（最終）重啟核談判；在紐約曾討論以荷莫茲海峽重開換取美國讓步（包括解除封鎖）。德黑蘭尋求制裁解除，堅持恢復石油出口與取回凍結資金等條件。另一面，CBS 引述 Al Jazeera 稱紐約美伊會談已進入更詳細的技術階段，氣氛趨於正面。分析指出最新否認若非 Axios 誤報，就是 IRGC 與伊朗總統代表團之間出現策略分歧。**升級風險仍在：伊朗威脅若再受攻擊，將把戰爭擴散至印度洋。** Polymarket 預測「荷莫茲海峽 12 月 31 日前恢復正常通行」機率僅 27%。\n\n**重點摘錄：**\n• 伊朗官方否認技術談判，凸顯 IRGC 與總統代表團可能策略分歧\n• 荷莫茲海峽重開 vs. 西方解除封鎖＋制裁，是談判核心籌碼\n• 伊朗警告若再受攻擊將把戰爭擴散至印度洋，升級風險未除",
+      "url": "https://www.zerohedge.com/geopolitical/iran-proposes-7-day-roadmap-end-war-which-mimics-june-mou",
+      "timestamp": "2026-09-26",
+      "images": [
+        "MEDIA:/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg",
+        "MEDIA:/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_6.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "高盛計算：要撐起 1.7 兆美元的超大規模資本支出，需要多少營收？（以及它漏掉了什麼）",
+      "category": "market",
+      "summary": "高盛用一份試算表正面回應 AI 交易的核心疑問：這波鉅額資本支出到底能不能賺到錢。自 2024 年夏季高盛首度對 AI 產業澆冷水以來，市場的不確定性從「超大規模業者能不能花錢」（能，而且透過債市、private credit 與各種 SPV 持續加碼，部分 SPV 近日已遭重創），轉為「這筆錢何時才能產生回報」。第二季財報季中，市場共識的資本支出預估再度被大幅上修，多數銀行如今預期 **2027 年支出將超過 1 兆美元**。高盛選擇用傳統方式——試算表——來回答：先承認部分資本支出已被價格反映（九個月內相關類股已上漲 66%），再計算要支撐 1.7 兆美元估值所需對應的營收門檻。文章標題點出高盛分析「遺漏了」某些關鍵環節。\n\n**重點摘錄：**\n• 多數銀行預期 2027 年超大規模資本支出將突破 1 兆美元\n• 高盛以試算表估算撐起 1.7 兆市值所需的營收門檻\n• 相關類股九個月內已漲 66%，部分資本支出已「被價格反映」",
+      "url": "https://www.zerohedge.com/markets/goldman-calculates-how-much-revenue-needed-justify-17-trillion-hyperscaler-capex-and-what",
+      "timestamp": "2026-09-26",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "加州最高法院勒令警長歸還 65 萬張被查扣的選區重劃公投選票",
+      "category": "market",
+      "summary": "加州最高法院周四一致裁決，勒令河濱郡警長 Chad Bianco 歸還 65 萬張選票，並停止其對 2025 年 11 月 **Proposition 50 特別選舉**的刑事調查。Prop 50 於 2025 年 11 月 4 日通過，授權州議會繪製對民主黨有利的 2026–2030 年國會選區地圖。Bianco 在今年州長初選落敗後，因地方團體「河濱選舉誠信小組」聲稱手寫投遞站紀錄與認證票數有 45,896 票落差而展開調查並查扣選票。但選務官 Art Tinoco 指該團體誤讀資料，實際落差僅 103 票。首席大法官 Patricia Guerrero 稱查扣「違法」，法院認定州法要求選票即使遭刑事調查也須由選務官員保管，並命令 Bianco 服從檢察長 Bonta 暫停調查的命令、限期「立即」歸還選票。\n\n**重點摘錄：**\n• 法院一致裁定警長查扣選票「違法」，須立即歸還並停止調查\n• 地方團體聲稱有 4.5 萬票落差，選務官澄清實際僅 103 票\n• 凸顯選舉誠信爭議在美國政治的持續分裂",
+      "url": "https://www.zerohedge.com/markets/california-supreme-court-orders-sheriff-return-650000-seized-redistricting-referendum",
+      "timestamp": "2026-09-26",
+      "images": [
+        "MEDIA:/home/nutc/.hermes/cron/output/zerohedge/images/article_3_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "股票上漲、油價下滑，受美伊外交樂觀情緒帶動 — Newsquawk 美股收盤",
+      "category": "market",
+      "summary": "週五美股收高，道瓊領漲，羅素指數落後；多數類股上漲，科技、工業、必需消費與金融領先，能源則明顯墊底（受油價走低拖累）。宏觀焦點在於美伊外交樂觀情緒：報導指紐約會談已進入更詳細的技術階段，伊朗總統釋出願意與美達成協議的訊號；隨後伊朗消息人士對「即將取得進展」潑冷水，但油價未見回升，終場**WTI 收 92.41 美元、布蘭特 97.44 美元**。美債殖利率曲線陡峭化，前端殖利率走高。其他重點：8 月美國耐久財訂單優於預期；日圓受日本官方口頭干預支撐；Fed 的 Schmid 稱美國債務似乎已「極端」、Hammack 對需求通膨提出擔憂；Costco 財報優於預期；俄羅斯天然氣據報恢復出口至亞美尼亞。下週關注：習近平訪美、全球 PMI、澳洲就業與瑞士央行利率決策。\n\n**重點摘錄：**\n• 美伊技術會談傳聞＋伊朗拋出達成協議訊號，壓低油價（WTI 92.41 / Brent 97.44）\n• 債市陡峭化，前端殖利率走高；Fed 官員直言美國債務「極端」\n• 下週焦點：習近平訪美、全球 PMI、SNB 決策",
+      "url": "https://www.zerohedge.com/markets/stocks-gain-and-oil-slides-usiran-diplomacy-optimism-newsquawk-us-market-wrap",
+      "timestamp": "2026-09-26",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Oracle 債券暴跌至歷史低點，30 億美元資本支出因資料中心動盪告急",
+      "category": "market",
+      "summary": "在 Oracle 位於新墨西哥州「Project Jupiter」大型資料中心宣布不可抗力（force majeure）後，其股價仍守在昨日低點之上（部分因大盤在殖利率飆升下仍頑強抗跌），但其 **CDS 昨日卻創下歷史最寬水準**，整個超大規模業者（hyperscaler）族群亦同步走擴。Oracle 的 2056 年債券（Baa2/BBB-）殖利率首度升至 **8%**，已高於 B2/B 平均（7.5%）。ZeroHedge 推文指出：一旦 Oracle 被降至垃圾級，**約 1,200 億美元的債券將被剔除出投資級指數**——這將是 AI 融資鏈的重大風險事件。\n\n**重點摘錄：**\n• Oracle CDS 創歷史最寬，2056 年債券殖利率首破 8%\n• 「Project Jupiter」資料中心不可抗力，30 億美元資本支出告急\n• 若遭降級至垃圾級，1,200 億美元債券恐被逐出投資級指數",
+      "url": "https://www.zerohedge.com/markets/oracle-bonds-plunge-record-low-30bn-capex-slashed-data-center-turmoil",
+      "timestamp": "2026-09-26",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "「舊瓶裝新鬼」：Hugh Hendry 警告長債就是新版金本位窗口",
+      "category": "market",
+      "summary": "傳奇基金經理人 Hugh Hendry 警告，美國長天期公債正成為「新的黃金窗口」。隨美國公債殖利率飆向數十年高位——**30 年期逼近 5.50%**——Hendry 將今日的長債比擬為 1971 年尼克森關閉黃金兌換窗口前的危機時刻。他認為，當市場質疑美國財政紀律時，長債將從「無風險資產」淪為風險根源，殖利率的失控上漲正是對此的懲罰性反映。\n\n**重點摘錄：**\n• 30Y 殖利率逼近 5.50%，創數十年高位\n• Hendry 將長債比擬為新版「黃金窗口」危機，警告財政紀律遭質疑\n• 殖利率失控上漲被視為對美國財政的懲罰性反映",
+      "url": "https://www.zerohedge.com/markets/old-horror-new-suit-hugh-hendry-warns-long-bond-new-gold-window",
+      "timestamp": "2026-09-26",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "台股盤前分析（今日休市）",
+      "category": "premarket",
+      "timestamp": "2026-09-26",
+      "summary": "⚠️ 今日為週六休市，無盤前分析",
+      "data_gap": true,
+      "gap_reason": "週六台股休市",
+      "market_context": null,
+      "recommendations": []
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "premium": 7,
+    "market": 6,
+    "geopolitics": 1,
+    "withImages": 2,
+    "premarket": 0,
+    "data_gap": true
+  },
+  "keyThemes": [
+    "債市利率恐慌升溫：10Y 殖利率創 2007 年以來新高、5Y 首度破 5%、Oracle 降級風險、長債危機論",
+    "美伊外交樂觀壓低油價（WTI 92.41 / Brent 97.44），但伊朗否認技術談判、升級風險未除",
+    "AI 資本支出能否兌現營收成下一個懸念：高盛試算撐起 1.7 兆市值所需門檻，Oracle CDS 創歷史最寬",
+    "股票在高殖利環境下頑強抗跌，Fed 官員直言美國債務「極端」"
+  ]
+}

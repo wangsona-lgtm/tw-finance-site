@@ -1,0 +1,192 @@
+{
+  "date": "2026-09-25",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 9月25日（五）",
+  "sections": [
+    {
+      "title": "伊朗願在美國期中選舉前達成協議：裴澤希基安表態",
+      "category": "geopolitics",
+      "summary": "伊朗總統裴澤希基安在聯合國大會場邊接受 NBC 訪問時公開表示，德黑蘭願在 11 月美國期中選舉前達成協議，並希望華府「回到 MOU（6 月簽署、後告破裂的暫時停火諒解備忘錄）」。此說法與川普多次預期「伊朗會拖到期中選舉後」的看法相反。然而伊朗同時升高威脅——若再遭攻擊，衝突恐擴散至印度洋，資深顧問並威脅在紅海與曼德海峽開闢新戰線。葉門戰線升溫：沙烏地稱攔截 6 枚胡塞彈道飛彈，胡塞並攻擊沙烏地 Aramco 延布設施及利雅德敏感目標。最新緊張局勢一度將布蘭特原油推上每桶 106 美元，削弱達成快速協議的希望。Polymarket 上「美國 10/15 前結束對伊封鎖」僅約 2 成看好；另傳出伊朗官方否認正在與美進行談判的雜音。\n\n**重點摘錄：**\n• 裴澤希基安公開喊話願在期中選舉前簽協議，但伊朗同時威脅將衝突擴至印度洋與紅海\n• 沙烏地攔截 6 枚胡塞彈道飛彈，葉門路線仍為協議最大變數\n• 布蘭特原油升至 106 美元，油價對協議進度高度敏感 🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/geopolitical/war-could-expand-indian-ocean-if-us-attacks-resume-iran-warns",
+      "timestamp": "2026-09-25",
+      "images": ["/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.png"],
+      "premium": true
+    },
+    {
+      "title": "格陵蘭稀土礦擬擴張一倍，美國簽署安全協議",
+      "category": "geopolitics",
+      "summary": "在川普宣布與格陵蘭、丹麥簽署安全協議後數日，North Carolina 業者 Greenland Mines 於 9/21 申請將其位於格陵蘭西南部的 Sarfartoq 稀土礦區自 74 平方英里擴大一倍至約 175 平方英里，供應電動車、風電與國防所需的磁鐵金屬。該公司正開發公司正開發釹、鐠（Nd-Pr）稀土項目，目標降低西方對中國的依賴——中國廠商控制全球至少 75% 的稀土元素市場，近年出口限制已推升價格。此項目預期可提供全球約三分之一在中國境外精煉的釹-鐠氧化物。安全協議賦予美國對格陵蘭「敵對勢力敏感投資」的否決權，使西部盟邦供應鏈更能取得當地全球最大未開發稀土礦藏。\n\n**重點摘錄：**\n• Sarfartoq 礦區規模擬自 74 擴至 175 平方英里，專攻釹/鐠磁鐵金屬\n• 中國控制全球逾 75% 稀土市場，此項目盼提供境外約 1/3 釹-鐠氧化物\n• 美-格陵蘭-丹麥安全協議將敵對勢力投資排除於島外 🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/geopolitical/greenland-mining-company-plans-double-size-rare-earth-mine-us-signs-agreement",
+      "timestamp": "2026-09-25",
+      "images": ["/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_4.jpg"],
+      "premium": true
+    },
+    {
+      "title": "油價與利率齊漲終於壓垮股市：鷹派環伺、荷莫茲希望消退、超大規模資料中心出包",
+      "category": "market",
+      "summary": "油價走高（中東局勢升溫、短暫「協議」傳聞一度緩解）與利率走高（與油價形成循環、鷹派 FedSpeak、宏觀數據轉佳、弱勢買回）共同壓抑股市——直到「與伊朗分階段協議」傳聞將美股拉回平盤附近，惟尾盤轉差收平。AI 焦慮升溫（Oracle 資料中心不可抗力推升其 CDS 至歷史新高）。美元延續漲勢拖累金價走低，加密貨幣區間震盪，能源股相對強勢。🔒 僅有預覽片段\n\n**重點摘錄：**\n• 油價與利率「終於」形成抑制風險資產的合力，股市多數收跌\n• 與伊朗「分階段協議」傳聞一度將美股拉回平盤，地緣變數高度主導盤面\n• Oracle CDS 因資料中心不可抗力飆至歷史新高，AI 焦慮持續蔓延",
+      "url": "https://www.zerohedge.com/markets/higher-oil-rates-finally-hit-stocks-hawks-circle-hormuz-hope-fades-hyperscalers-hiccup",
+      "timestamp": "2026-09-25",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Oracle「木星計畫」資料中心宣布不可抗力，恐危殆全美 AI 布建",
+      "category": "market",
+      "summary": "Oracle 位於新墨西哥州 Dona Ana 郡、占地 1,400 英畝、完工後擬供 2.45GW 算力、造價高達 1,650 億美元的「木星計畫」，其擔保貸款因計畫延宕已落入壓力區間（低於面額 9 折交易）。延宕主因當地強烈反對——擔憂水資源與空汙影響，以及對其合約能源商 Bloom Energy 燃氣排放的抨擊。該計畫首期目前至少落後原訂時程 7 個月，原訂今年 11 月啟用，如今恐延宕數年方能完成。分析師先前即警告此落差，後續驗證屬實。此一不可抗力事件直接威脅全美 AI 基礎建設布建進度。🔒 僅有預覽片段\n\n**重點摘錄：**\n• 1,650 億美元、2.45GW 的「木星計畫」宣布不可抗力，首期至少落後 7 個月\n• 貸款已跌破面額 9 折（壓力區間），水源/空汙爭議與 Bloom Energy 排放為延宕主因\n• ORCL 收跌 3%，Bloom Energy（BE）與 Blue Owl（OWL）同步受拖累",
+      "url": "https://www.zerohedge.com/markets/oracles-massive-project-jupiter-data-center-declares-force-majeure-jeopardizing-entire-us",
+      "timestamp": "2026-09-25",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "「令人不安的問題」：若市場真的擔憂通膨，利率會到哪裡？",
+      "category": "market",
+      "summary": "債市出現罕見劇烈拋售：10 年期美債創下去年「解放日」（Liberation Day）以來最差單日表現，5 年期殖利率升至 5% 以上、為 2007 年以來首見，今日 10 年期又再爆出 8 個基點的漲幅。然而關鍵在於——布蘭特原油 2026 年迄今累漲約 73%，美國 CPI 自 1 月 2.4% 升至 9 月預期的 3.60%，任何債市以外的人都會以為債券市場正日益擔憂通膨。實則不然：10 年期名目殖利率今年累升約 97 個基點，其中僅約 10 個基點來自通膨損益兩平（breakeven）上揚，其餘全數反映實質利率——目前已升至 2008 年以來未見的水準。換言之，推升利率的是「實質利率」，而非通膨預期，凸顯市場真實擔憂的是別的。🔒 僅有預覽片段\n\n**重點摘錄：**\n• 5 年期殖利率升破 5%，為 2007 年以來首見；10 年期創「解放日」以來最差單日\n• 10 年期今年升 97bps，其中僅約 10bps 來自通膨預期，其餘皆為實質利率\n• 實質利率已到 2008 年高位，債市擔憂的並非通膨本身",
+      "url": "https://www.zerohedge.com/markets/unsettling-question-where-would-rates-be-if-markets-were-actually-worried-about-inflation",
+      "timestamp": "2026-09-25",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "監管終於「警覺」：Fed、英國央行調查銀行對 Jane Street 曝險，因 AI 基金崩潰",
+      "category": "market",
+      "summary": "在 Situational Awareness 基金從 450 億美元 AI 巨獸淪為以 10% 折價把整張公開部位倒給 Citadel 的區塊交易（接近兩個月前），且 Jane Street 7 月虧損 150 億美元、為十年來首見單月虧損（六週前揭露）之後，兩岸央行終於發現事有蹊蹺。據 FT，英格蘭銀行審慎監管局（PRA）與聯準會「加強對」銀行對大型交易商與造市商曝險的審查，詢問全球銀行對 Jane Street 與 Ken Griffin 的 Citadel Securities（以及可能 Susquehanna、Hudson River Trading 等 HFT 機構）放了多少款。監管想知道三件事：這些公司的風險胃納、銀行日內曝險如何演變、風控如何撐住——委婉質問主經紀商在 7 月 AI 交易崩潰時是否有人盯盤中保證金。Jane Street 以「7 月是個糟透的月份」回應，被稱年度最輕描淡寫。該基金僅 8 名員工，以高盛總收益互換放大約 4 倍槓桿做多 AI 基建/做空軟體。🔒 僅有預覽片段\n\n**重點摘錄：**\n• Ian/US 監管中心轉向銀行對大型造市商（Jane Street、Citadel Securities 等）的曝險\n• Jane Street 7 月虧損 150 億美元、十年首見單月虧損；AI 基金以 4 倍槓桿崩潰\n• 監管核心質問：主經紀商是否掌握日內保證金動向、風控是否落實",
+      "url": "https://www.zerohedge.com/markets/regulators-find-their-situational-awareness-fed-boe-probe-bank-exposure-jane-street-after",
+      "timestamp": "2026-09-25",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Bessent 對「彭博兄弟」強硬：財政部僅接受買回上限 68%，殖利率飆升",
+      "category": "market",
+      "summary": "兩週前，在財政部首度擴大買回操作（上限 60 億美元）僅接受 51.87 億美元、殖利率因此飆至 3 年高點（仍遠低於 5%）後，最新一輪買回再度硬起來——財政部只接受上限的 68%。問題癥結：據 BofA 利率主管 Mark Cabana 分析，過去幾輪 10y-20y 買回平均收到 187 億美元報價、約為舊上限（20 億美元）的 9 倍超額認購，而財政部過去始終「照單全收」買滿上限。如今新擴大的上限雖提高，但財政部選擇只接受 6 成餘，對此前吃滿溢價的交易商（美林派「彭博兄弟」）形成壓力，並加劇殖利率上行。🔒 僅有預覽片段\n\n**重點摘錄：**\n• 財政部擴大買回僅接受上限 68%，殖利率應聲飆至 3 年高點\n• 過去買回曾達 9 倍超額認購，財政部慣性買滿；此次改採強硬姿態\n• Bessent 態度轉硬，被解讀為對市場定價主導權的刻意示警",
+      "url": "https://www.zerohedge.com/markets/bessent-plays-hardball-bloomberg-bros-yields-spike-treasury-accepts-just-68-maximum-buyback",
+      "timestamp": "2026-09-25",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "地緣政治亂流、Fed 再發言與 ORCL 資料中心利空夾擊，美股震盪",
+      "category": "market",
+      "summary": "SNAPSHOT：股市漲跌互見、美債趨陡、原油上漲、美元走升、金價下跌。REAR VIEW：市場傳出美伊討論「重開荷莫茲海峽並結束封鎖」的分階段協議；7 年期公債標售疲弱；Fed 威廉斯稱年底前再升息一次合理，鮑爾森稱可能需再度升息以壓低通膨；初領與續領失業金人數周環比幾乎持平；墨西哥央行、瑞士央行、瑞典央行維持利率不變，挪威央行升息 25 基點。股市最終漲跌互見：SPX、NDX、RUT 收平，道瓊走跌、RSP 下滑。類股普遍走低，公用事業、原物料、必需消費落後，通訊服務、健護、能源相對強勢。焦點仍是 ORCL——在新墨西哥資料中心宣布不可抗力後重挫，連帶拖累 Bloom Energy（BE）、Blue Owl（OWL），ORCL 收斂跌幅但仍收跌 3%。🔒 僅有預覽片段\n\n**重點摘錄：**\n• Fed 威廉斯與鮑爾森雙雙暗示年底前可能再升息，鷹派聲浪升溫\n• 美伊「重開荷莫茲＋結束封鎖」分階段協議傳聞一度提振風險情緒\n• ORCL 收跌 3% 拖累 BE、OWL；公用/原物料/必需消費領跌",
+      "url": "https://www.zerohedge.com/markets/markets-choppy-geopolitics-more-fed-speak-and-orcl-data-centre-woes-newsquawk-us-market",
+      "timestamp": "2026-09-25",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "高盛：股市離「開始在意債市潰敗」只差一個壞週",
+      "category": "market",
+      "summary": "高盛指出，過去一個月股市將債市視為背景噪音，持續忽視債券潰敗；但關鍵在於「速度」而非「水準」——若利率上行加速，股市的漠視態度隨時可能轉向。當前股債之間的脫鉤，正坐落在一個「若再有一個壞週即生變」的臨界點上。🔒 僅有預覽片段\n\n**重點摘錄：**\n• 關鍵是利率上行的「速度」而非「水準」\n• 股市對債市潰敗的漠視，處於一週內可能反轉的臨界點",
+      "url": "https://www.zerohedge.com/markets/goldman-stocks-are-one-bad-week-away-caring-about-bond-rout",
+      "timestamp": "2026-09-25",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-09-25 (星期五)",
+      "category": "premarket",
+      "timestamp": "2026-09-25",
+      "summary": "隔夜美股 AI 分歧、油價強彈反轉、10Y 殖利率創 2007 新高 $5.16% — 三大主軸。台股受制於外資現貨轉賣超、期貨淨空續增、台幣貶值，今日偏弱勢整理機率高。夜盤升水 +0.2% 約平開，外資轉賣＋10Y 高殖利率壓力下開高動能有限。聚焦塑化/原物料（油彈主軸）與回檔承接後止血的 CCL/PCB；航空與高本益比 AI 成長股優先觀望。",
+      "market_context": {
+        "us_close": "2026-09-24",
+        "spx": 7704.13,
+        "spx_change_pct": -0.02,
+        "dow": 51349.98,
+        "dow_change_pct": -0.31,
+        "nasdaq": 26939.37,
+        "nasdaq_change_pct": 0.01,
+        "rut": 2835.57,
+        "rut_change_pct": -0.11,
+        "sox": 12492.54,
+        "sox_change_pct": -0.33,
+        "vix": 15.67,
+        "vix_change_pct": 3.23,
+        "tsm_adr": 451.15,
+        "tsm_adr_change_pct": 1.03,
+        "taiex_prev_close": 48024.6,
+        "usdtwd": 31.8,
+        "adr_premium_pct": 15.92,
+        "foreign_futures_oi": -77031,
+        "gold": 4306.5,
+        "gold_change_pct": -0.28,
+        "oil": 94.42,
+        "oil_change_pct": 2.45,
+        "btc": 84295,
+        "btc_change_pct": -0.1,
+        "tnx_pct": 5.16,
+        "tnx_change_pct": 0.94,
+        "usd_index": 101.25,
+        "expected_open": "約平開（夜盤升水 +0.2%）— 外資轉賣＋10Y 高殖利率壓力，偏弱勢整理機率高，開高動能有限",
+        "support": "47,750~47,800（9/24 低 47,754.72）／47,718（9/21 收）",
+        "resistance": "48,117（9/24 高）／48,157（9/23 收）／48,601（9/22 歷史高）",
+        "key_theme": "外資現貨 9/24 轉賣超 -329.65 億＋期貨淨空續增至 -7.7 萬口＋10Y 殖利率創 2007 新高 → 偏弱勢整理；塑化/石化（油彈主軸）、CCL/PCB（AI 高階）相對強勢，航空與高本益比 AI 成長股承壓"
+      },
+      "recommendations": [
+        {
+          "symbol": "6505",
+          "name": "台塑化",
+          "direction": "偏多/油價反彈主軸",
+          "strategy": "回檔 84.5~85.5 進場（近 5 日低 84.1），目標 89.5~90，停損 82.5；油價隨美伊談判訊息劇烈擺動，勿追高開",
+          "recommend_price": 85.0,
+          "target": "89.5~90",
+          "stop_loss": 82.5,
+          "recommend_reason": "WTI 強彈 $94.42（+2.45%）＋塑膠類 9/24 領漲 +3.60%、石化族群歷經 5 日油崩後見底；中東供應中斷（沙國/荷莫茲）使油價反轉動能明確，台塑化為油價直接受惠標的"
+        },
+        {
+          "symbol": "6213",
+          "name": "聯茂",
+          "direction": "偏多/AI 高階 CCL",
+          "strategy": "Rule 3：昨漲停勿追開高，僅回檔承接 535~555 帶量不破半倉、突破前高 595 再加；目標 620，停損 530",
+          "recommend_price": 545.0,
+          "target": "620",
+          "stop_loss": 530,
+          "recommend_reason": "9/24 +9.98% 漲停、與 6672 騰輝（+9.93%）同族群齊板，AI 高階 CCL 需求啟動（呼應 Meta Muse AI 基建、AMD 算力擴張）；SOX 僅 -0.33% 半導體未潰"
+        },
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "direction": "觀察/條件承接",
+          "strategy": "回檔 2,470 以下（2,445~2,460）帶量止穩且外資現貨回補確認才半倉，否則僅觀察不接刀；目標 2,520，停損 2,410",
+          "recommend_price": 2470,
+          "target": "2,520",
+          "stop_loss": 2410,
+          "recommend_reason": "TSM ADR +1.03%、SOX 僅微跌，半導體未潰；但 ADR 溢價 +15.92% 偏高逆風＋外資現貨首見轉賣、10Y 高殖利率壓抑長天期成長股，須以帶量止穩為前提非價格觸及即進"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-09-24",
+        "tracking_period": "9/24 盤前推薦檢討（2618/2330/3016）",
+        "total": 3,
+        "hit": 1,
+        "miss": 1,
+        "hit_rate_pct": 33.3,
+        "best": "3016 嘉晶 (觀察命中 ✅, 收+9.97% 160 元, 連三漲停)",
+        "worst": "2618 長榮航 (作多 42.0~42.5 失誤 ❌, 開 42.35 收 42.00, 進場區觸及即虧 0%~1.2%)",
+        "lessons": [
+          "油崩主軸醞釀 >5 日後，任何「受惠股」回檔承接單一律先查油價是否見底 — 2618 接在主軸退潮日（油價今又反彈走高），接刀後方向徹底反向；系統性回檔日所有作多回檔承接降級為觀察",
+          "外資現貨由買轉賣（-329.65 億）是明確警訊（Rule 16-4）— 今日任何回檔接多都優先預設觀察，不放進場價",
+          "「昨日帶量上漲」≠今日續攻 — 量能由放大轉縮量收黑＝退潮確認，隔日承接需先看開盤 30 分鐘量能；低貝塔股進場區勿設超過 -1% 深回檔",
+          "連板股預判：低轉換率對「全市場唯一連板股」失效（3016 照漲第 3 根），改以開盤強弱確認取代斷鏈先行論"
+        ]
+      }
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "premium": 9,
+    "market": 7,
+    "geopolitics": 2,
+    "withImages": 2,
+    "premarket": 1
+  },
+  "keyThemes": [
+    "美伊談判「協議有望 vs 威脅升溫」拉鋸：裴澤希基安願在期中選舉前簽約，但德州同時威脅擴張至印度洋/紅海，油價對談判進度高度敏感（布蘭特一度 106 美元）",
+    "10Y 殖利率創 2007 新高 $5.16%：5 年期升破 5% 首見，債市拋售推升的是「實質利率」而非通膨預期（今年升 97bps 僅約 10bps 來自 breakeven）",
+    "Oracle「木星計畫」1,650 億美元資料中心宣布不可抗力、貸款跌破 9 折，ORCL 收跌 3% 拖累 BE/OWL — AI 基礎建設延宕焦慮蔓延",
+    "高盛示警股市離「在意債市潰敗」只差一個壞週，關鍵是利率上行的「速度」而非「水準」",
+    "台股外資現貨由 5 連買轉賣超 -329.65 億、期貨淨空續增至 -7.7 萬口、台幣貶值 — 偏弱勢整理，聚焦塑化/原物料（油彈主軸）與 CCL/PCB，航空退潮"
+  ]
+}
