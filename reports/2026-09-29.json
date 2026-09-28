@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-29",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 9月29日（一）",
+  "sections": [
+    {
+      "title": "美伊談判訊息反覆：原油、殖利率與股市同步放大波動",
+      "category": "geopolitics",
+      "summary": "【原文報導】ZeroHedge 整理稱，美方釋出可能以制裁鬆綁交換核議題進展的訊息後，市場一度下調原油價格；其後伊朗方面否認在濃縮議題上讓步，報導並稱 Brent 一度跌破每桶 100 美元、WTI 跌破 95 美元。文章亦提到雙方可能透過中介人恢復間接接觸，但消息來源間存在明顯矛盾。【可能影響】布蘭特與 WTI 原油、能源股、通膨預期、美債殖利率、美元與避險資產。【值得留意／本導讀分析】這是高度新聞驅動的地緣風險交易；單一外交標題不足以確認供給風險已解除。應持續交叉檢視正式政策聲明、荷姆茲實際通行與原油現貨／期限結構，而非依賴未具名消息。",
+      "url": "https://www.zerohedge.com/geopolitical/ayatollah-vows-expel-enemy-arabian-sea-trump-says-talks-continue-week",
+      "timestamp": "2026-09-29",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "美股收低、長債殖利率上揚：本週 PCE、ISM 與非農成利率定價考驗",
+      "category": "market",
+      "summary": "【原文報導】Newsquawk 的美股收盤摘要稱，主要美股指數下跌約 0.6% 至 1.1%，公債殖利率在美伊消息反覆中大致上升 7 至 9 個基點，原油震盪後小幅收高；文中列示 WTI 收於每桶 92.60 美元、Brent 收於 97.83 美元。其報導亦指出，市場接著將觀察 PCE、ISM 製造業與非農資料。【作者／來源觀點】Newsquawk 將利率與油價日內走勢連結於互相矛盾的外交新聞與通膨壓力，此為市場即時解讀。【值得留意／本導讀分析】若油價波動與強勁資料同時推高通膨疑慮，長端利率可能繼續壓抑高估值資產；反之，單日行情不應被延伸為固定的因果關係。",
+      "url": "https://www.zerohedge.com/markets/stocks-hit-and-oil-chops-amid-mixed-geopolitics-newsquawk-us-market-wrap",
+      "timestamp": "2026-09-29",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "AI 資料中心自建電力：融資結構與供電時程成為新瓶頸",
+      "category": "market",
+      "summary": "【作者觀點】Portfolio Armor 引述先前 ZeroHedge 對高盛研究的整理，稱高盛將 2030 年資料中心表後電力容量預測提高至 67GW，並認為併網等待期令現場發電、燃料電池、燃氣渦輪與配電設備更受重視；文章以 Bloom Energy、Babcock & Wilcox、GE Vernova 與 Powell Industries 為例，討論客戶承諾、專案投運時點與延遲風險。該文也披露作者持有相關選擇權部位，屬作者觀點而非中立投資建議。【可能影響】AI／資料中心資本支出、電力設備與燃料電池供應鏈、專案融資、私募信貸與公用事業基建。【值得留意／本導讀分析】AI 投資題材正由晶片延伸到電力可得性與融資可行性；評估時應檢查已簽約容量、交付與併網時程、資本成本及客戶集中度，避免把主題敘事直接等同為獲利兌現。",
+      "url": "https://www.zerohedge.com/news/2026-09-28/who-pays-ais-power-plants",
+      "timestamp": "2026-09-29",
+      "images": [],
+      "premium": false
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "premium": 0,
+    "market": 2,
+    "geopolitics": 1,
+    "withImages": 0,
+    "premarket": 0
+  },
+  "keyThemes": [
+    "美伊談判報導互相矛盾，原油與利率資產對新聞流高度敏感",
+    "PCE、ISM 與非農將檢驗通膨、成長與利率預期的組合",
+    "AI 基建投資的關鍵從晶片延伸至電力供給、交付時程與融資風險"
+  ]
+}
