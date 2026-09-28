@@ -2,47 +2,187 @@
   "date": "2026-09-29",
   "type": "daily-reports",
   "source": "zerohedge",
-  "title": "ZeroHedge 每日導讀 — 9月29日（一）",
+  "title": "ZeroHedge 每日導讀 — 9月29日（二）",
   "sections": [
     {
-      "title": "美伊談判訊息反覆：原油、殖利率與股市同步放大波動",
+      "title": "川普否認提出解除制裁，伊朗堅持核立場不變",
       "category": "geopolitics",
-      "summary": "【原文報導】ZeroHedge 整理稱，美方釋出可能以制裁鬆綁交換核議題進展的訊息後，市場一度下調原油價格；其後伊朗方面否認在濃縮議題上讓步，報導並稱 Brent 一度跌破每桶 100 美元、WTI 跌破 95 美元。文章亦提到雙方可能透過中介人恢復間接接觸，但消息來源間存在明顯矛盾。【可能影響】布蘭特與 WTI 原油、能源股、通膨預期、美債殖利率、美元與避險資產。【值得留意／本導讀分析】這是高度新聞驅動的地緣風險交易；單一外交標題不足以確認供給風險已解除。應持續交叉檢視正式政策聲明、荷姆茲實際通行與原油現貨／期限結構，而非依賴未具名消息。",
+      "summary": "盤中一則「伊朗同意暫停濃縮提煉、以換取美國鬆綁制裁」的報導（源自沙烏地國家媒體 Al Hadath）瞬間壓低油價，但美伊雙方隨後雙雙否認。伊朗官方（FARS、PressTV）強調核立場並未改變、目前並無相關討論；川普則在收盤後表示並未提出解除制裁換取讓步。市場參與者評估協議機率極低，有美方消息稱分歧仍巨大。油價回吐漲幅後走低，布蘭特跌破 100 美元、WTI 跌破 95 美元；伊朗經濟承壓，里亞爾兌美元創歷史新低約 230 萬。伊朗週末宣布將在 48 小時內鎖定 19 艘船隻並威脅進一步升高情勢。Polymarket 上「2026 年底前達成最終核協議」的市場機率僅 17%。\n\n**重點摘錄：**\n• 單一新聞頭條即可撼動油價與風險資產，地緣政治的「頭條輪盤」行情將主導近期波動\n• 談判仍將以間接方式於本週續談，但協議機率極低，供應面（荷姆茲海峽）風險持續存在",
       "url": "https://www.zerohedge.com/geopolitical/ayatollah-vows-expel-enemy-arabian-sea-trump-says-talks-continue-week",
       "timestamp": "2026-09-29",
       "images": [],
       "premium": false
     },
     {
-      "title": "美股收低、長債殖利率上揚：本週 PCE、ISM 與非農成利率定價考驗",
+      "title": "金價遭重擊：荷姆茲頭條輪盤橫掃資本市場",
       "category": "market",
-      "summary": "【原文報導】Newsquawk 的美股收盤摘要稱，主要美股指數下跌約 0.6% 至 1.1%，公債殖利率在美伊消息反覆中大致上升 7 至 9 個基點，原油震盪後小幅收高；文中列示 WTI 收於每桶 92.60 美元、Brent 收於 97.83 美元。其報導亦指出，市場接著將觀察 PCE、ISM 製造業與非農資料。【作者／來源觀點】Newsquawk 將利率與油價日內走勢連結於互相矛盾的外交新聞與通膨壓力，此為市場即時解讀。【值得留意／本導讀分析】若油價波動與強勁資料同時推高通膨疑慮，長端利率可能繼續壓抑高估值資產；反之，單日行情不應被延伸為固定的因果關係。",
+      "summary": "黃金成為當日最震盪資產：因中國「國慶週」結算出場加上實際利率走升而大幅下挫。股市、債市、原油全數隨「成局或不成局」的每則頭條劇烈上沖下洗，長天期（大型科技股）最為弱勢；美元收高但未超過週五高點，加密貨幣劇烈震盪後略低收。\n\n**重點摘錄：**\n• 金價回檔非因地緣基本面，而是中國節前結算 + 實際利率\n• 長債/大型科技股在高利率、高油價環境下是資金逃離的首選",
+      "url": "https://www.zerohedge.com/markets/bullion-battered-hormuz-headline-roulette-sparks-chaos-across-markets-ahead-macro-tsunami",
+      "timestamp": "2026-09-29",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "高盛 FICC：AI 融資正重塑信用曲線，CDS 交易爆量",
+      "category": "market",
+      "summary": "AI 投資信用「脫軌」的信號浮現：Oracle 的信用利差單日飆升 30 個基點至歷史新高，G-Spread 重回紀錄高點，CDS 也來到史上最寬。高盛指出 AI 融資正深刻重塑企業信用曲線結構。\n\n**重點摘錄：**\n• Oracle 信評惡化是 AI 基建融資風險的領先指標\n• 若此趨勢持續，將擴散至整個 AI 資本開支相關的信貸市場",
+      "url": "https://www.zerohedge.com/markets/goldman-ficc-ai-financing-reshaping-credit-curves-cds-trading-explodes",
+      "timestamp": "2026-09-29",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "美股走跌、油價與殖利率續攀，地緣頭條衝突難解 — Newsquawk 亞太盤前",
+      "category": "market",
+      "summary": "美股全面收黑，Nasdaq 表現最弱；領跌族群包括通訊服務、非必需消費與金融，僅必需消費、醫療與能源收漲。美債拋售，殖利率因美伊頭條激盪而上升約 7–9 個基點：先因制裁緩解與核協議進展的傳聞自高點回落，隨後又因「協議機率極低」及伊朗否認而回升。美元小幅走強。Fed 理事 Cook 警告 AI 與中東衝突將在未來數月持續推升通膨壓力。本週關鍵數據：NFP、PCE、ISM 製造業 PMI。\n\n**重點摘錄：**\n• 通膨隱憂（AI + 中東）成為殖利率壓力的雙引擎\n• 本週美國三大數據將考驗「強增長、高通膨、勞動市場穩健」的敘事",
+      "url": "https://www.zerohedge.com/markets/us-stocks-declined-oil-prices-and-yields-continued-climb-amid-conflicting-geopolitical",
+      "timestamp": "2026-09-29",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "Newsquawk 美股收盤 —— 股市承壓、油價在中東消息下震盪",
+      "category": "market",
+      "summary": "主要指數下跌 0.6%–1.1%，Nasdaq 超跌；等權重標普跌 0.6%。債券殖利率升 7–9 基點。原油在完全相反的美伊頭條之間來回拉扯，最終微幅收高；沙烏地「東西輸油管」恢復出口。美元微幅走強。NVDA 宣布加碼 1500 億美元庫藏股。日本官員再度口頭干預匯市。本週焦點：ISM 製造業、PCE、NFP 與 EZ CPI；澳洲央行 RBA 預期升息 25 基點。\n\n**重點摘錄：**\n• 在川普「很快贏得伊朗戰爭、油價將崩跌、通膨將被根除」的發言與否認之間，油價已淪為消息面傀儡\n• 企業面亮點是 NVDA 千億級庫藏股，顯示 AI 資本回饋仍在延續",
       "url": "https://www.zerohedge.com/markets/stocks-hit-and-oil-chops-amid-mixed-geopolitics-newsquawk-us-market-wrap",
       "timestamp": "2026-09-29",
       "images": [],
       "premium": false
     },
     {
-      "title": "AI 資料中心自建電力：融資結構與供電時程成為新瓶頸",
+      "title": "波音延長跌勢：FAA 因軟體瑕疵延後 737 Max 10 認證",
       "category": "market",
-      "summary": "【作者觀點】Portfolio Armor 引述先前 ZeroHedge 對高盛研究的整理，稱高盛將 2030 年資料中心表後電力容量預測提高至 67GW，並認為併網等待期令現場發電、燃料電池、燃氣渦輪與配電設備更受重視；文章以 Bloom Energy、Babcock & Wilcox、GE Vernova 與 Powell Industries 為例，討論客戶承諾、專案投運時點與延遲風險。該文也披露作者持有相關選擇權部位，屬作者觀點而非中立投資建議。【可能影響】AI／資料中心資本支出、電力設備與燃料電池供應鏈、專案融資、私募信貸與公用事業基建。【值得留意／本導讀分析】AI 投資題材正由晶片延伸到電力可得性與融資可行性；評估時應檢查已簽約容量、交付與併網時程、資本成本及客戶集中度，避免把主題敘事直接等同為獲利兌現。",
-      "url": "https://www.zerohedge.com/news/2026-09-28/who-pays-ais-power-plants",
+      "summary": "FAA 以「軟體問題是否構成飛航安全」待查為由，延後 737 Max 10 的認證，正值波音要取得交機許可的最後階段。此消息讓波音盤中挫跌 6.1%，為 2025 年 10 月 20 日以來最大單日跌幅。問題源於先前修正 737 Max 7 垂直導航系統時意外引入一個較小的新 bug。MAX 10 訂單逾 1,500 架，為最受歡迎機型之一（最多可搭載 230 人）。CEO Ortberg 本月初才稱新機「很快」可獲准。分析師仍多頭：27 買進/5 持有/0 賣出，12 個月目標價 $273.58。\n\n**重點摘錄：**\n• 認證一拖再拖，已延宕多年的 Max 10 再度受挫\n• 軟體反覆出現新 bug，凸顯安全審查模組的系統性風險",
+      "url": "https://www.zerohedge.com/markets/boeing-sinks-after-wsj-report-737-max-10-software-glitch",
       "timestamp": "2026-09-29",
       "images": [],
       "premium": false
+    },
+    {
+      "title": "高盛解釋金價為何今日重挫",
+      "category": "market",
+      "summary": "金價今日跌幅為自一月末大規模槓桿清算以來第三大單日跌幅，主因是中國國慶週前的結算清算。短期資金流動壓力，而非地緣避險需求反轉。\n\n**重點摘錄：**\n• 金價回檔主因中國節前結算清算，非基本面惡化\n• 短期資金流動壓力，與地緣避險需求反轉無關",
+      "url": "https://www.zerohedge.com/markets/goldman-explains-why-gold-dumping-today",
+      "timestamp": "2026-09-29",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "投機者急速加碼 Nasdaq 多單至 2017 年高峰",
+      "category": "market",
+      "summary": "投機資金把 Nasdaq 期貨淨多單推升至接近十年的高位（2017 年以來），在股市回落當下顯示槓桿多頭仍十分擁擠——與本期金價結算形成對比。\n\n**重點摘錄：**\n• Nasdaq 期貨淨多單逼近十年高位，槓桿多頭極度擁擠\n• 股市回落之際擁擠多單為潛在回調風險",
+      "url": "https://www.zerohedge.com/markets/speculators-rapidly-increase-their-nasdaq-long-2017-highs",
+      "timestamp": "2026-09-29",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-09-29 (星期二)",
+      "category": "premarket",
+      "timestamp": "2026-09-29",
+      "summary": "連假後首個交易日：美股三大指數齊跌（AI 安全疑慮＋10Y 殖利率創 2007 年新高）＋VIX 單日 +8.07% 觸發 Rule 9，AI/半導體作多全面降級為觀察；唯一明確作多方向是油價強漲帶動的塑化/油電（6505 台塑化、1303 南亞），務必附風險警示並嚴守停損。",
+      "market_context": {
+        "us_close": "2026-09-28",
+        "spx": 7683.69,
+        "spx_change_pct": -0.77,
+        "dow": 51481.51,
+        "dow_change_pct": -0.67,
+        "nasdaq": 26820.38,
+        "nasdaq_change_pct": -0.92,
+        "rut": 2817.91,
+        "rut_change_pct": -0.69,
+        "sox": 12465.24,
+        "sox_change_pct": -1.61,
+        "vix": 16.07,
+        "vix_change_pct": 8.07,
+        "tsm_adr": 452.88,
+        "tsm_adr_change_pct": 0.5,
+        "taiex_prev_close": 48024.6,
+        "usdtwd": 31.7787,
+        "adr_premium_pct": 16.3,
+        "foreign_futures_oi": -77031,
+        "gold": 4153.0,
+        "gold_change_pct": -3.89,
+        "oil": 93.34,
+        "oil_change_pct": 1.0,
+        "btc": 83585.0,
+        "btc_change_pct": -1.03,
+        "tnx_pct": 5.24,
+        "tnx_change_pct": 1.08,
+        "usd_index": 101.18,
+        "expected_open": "平開至小幅高開（夜盤升水 +98 點）；惟 VIX 急升＋外資期貨淨空 7.7 萬口，開高易遇賣壓。開盤關鍵：能否放量站穩 48,000 並突破 48,150",
+        "support": "48,000 → 47,754 → 47,800 → 47,207",
+        "resistance": "48,150~48,350 → 48,243 → 48,601",
+        "key_theme": "連假後首日：AI 安全疑慮＋10Y 殖利率創 2007 年新高（FedWatch 10 月升息 70%）＋外資雙向翻空（現貨賣超 + 期貨加空），觸發 Rule 9 需降級；唯一明確作多方向是油價強漲帶動塑化/油電（6505/1303），開高不追、等回檔確認"
+      },
+      "recommendations": [
+        {
+          "symbol": "6505",
+          "name": "台塑化",
+          "direction": "偏多/油價強漲最明確催化",
+          "strategy": "84.5~85.5 回檔帶量承接半倉；開高 >1% 則半倉市價＋淺回檔半倉（Rule 15/18）",
+          "recommend_price": 85.0,
+          "target": "89.5~90",
+          "stop_loss": 82.5,
+          "recommend_reason": "川普拒荷莫茲重啟→WTI 強漲至 ~93-96 地緣溢價，為今日唯一明確宏觀作多題材；9/24 塑膠類 +3.60% 資金回流油塑。⚠️ VIX+8% 系統性風險，油價高波動嚴守停損。"
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "direction": "偏多/油塑集團補漲",
+          "strategy": "232~236 回檔承接（昨收 238.0 下方 -1%~-2.5%）",
+          "recommend_price": 234.0,
+          "target": "248~252",
+          "stop_loss": 228.0,
+          "recommend_reason": "集團油塑受惠油價回升；9/24 塑化（塑膠化工 +1.57%）、塑膠類 +3.60% 資金回流。開盤跳空 >2% 不追。"
+        },
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "direction": "觀察/不作多",
+          "strategy": "僅條件承接：回檔至 2,445 以下帶量止穩且外資現貨回補確認才考慮，否則僅觀察；Rule 9 下不設進場價",
+          "recommend_reason": "SOX -1.61% 弱＋ADR 溢價 +16.3% 逆風＋外資期貨淨空 -7.7 萬口＋外資現貨首見轉賣，作多全面降級。"
+        },
+        {
+          "symbol": "6213",
+          "name": "聯茂",
+          "direction": "觀察/AI CCL 順延判定",
+          "strategy": "僅回檔 535~555 帶量不破才觀察承接，開盤不追",
+          "recommend_price": 545.0,
+          "target": "620",
+          "stop_loss": 530.0,
+          "recommend_reason": "9/24 +9.98% 第一天漲停、與 6672 騰輝同族群齊板；惟 SOX 弱＋AI 安全疑慮＋Rule 3 勿追漲停＋連假後續攻需重新確認。"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-09-28",
+        "tracking_period": "9/25 → 9/28 連假休市，候選順延至今夜 9/29 收盤後結算",
+        "total": 3,
+        "hit": 0,
+        "miss": 0,
+        "hit_rate_pct": 0,
+        "best": "候選（6505/6213/2330）因連假全程休市，未經實盤檢驗，無法標 ✅/❌，順延至今日收盤後判定",
+        "worst": "上一實盤交易日（9/24）：2618 長榮航 ❌失誤（主軸退潮日承接、照紀律進場即套 0~1.2%）；2330 條件承接 ✅紀律避虧；3016 嘉晶 ✅觀察命中（第三天 +9.97% 連板）",
+        "lessons": [
+          "連假休市期間候選無實盤檢驗，判定順延，不得提前標註命中/失誤",
+          "油價 $92.24（9/24）→ ~$93-96（9/28）利 6505 多單；10Y 殖利率 5.11% → 5.23%+ 與 ADR 溢價 +16.3% 為 2330 逆風",
+          "6213 需視今夜 AI/半導體能否抵禦 SOX 弱勢再行判定"
+        ]
+      }
     }
   ],
   "stats": {
-    "total": 3,
-    "premium": 0,
-    "market": 2,
+    "total": 9,
+    "premium": 4,
+    "market": 7,
     "geopolitics": 1,
     "withImages": 0,
-    "premarket": 0
+    "premarket": 1
   },
   "keyThemes": [
-    "美伊談判報導互相矛盾，原油與利率資產對新聞流高度敏感",
-    "PCE、ISM 與非農將檢驗通膨、成長與利率預期的組合",
-    "AI 基建投資的關鍵從晶片延伸至電力供給、交付時程與融資風險"
+    "美伊核談判頭條輪盤主導行情：伊朗否認讓步、川普否認解除制裁，布蘭特跌破 100/WTI 跌破 95，Polymarket 達成協議機率僅 17%",
+    "10Y 美債殖利率創 2007 年新高 ~5.23%；FedWatch 10 月升息機率升至 70%，壓制長天期 AI 成長股",
+    "金價創 1 月末以來第三大單日跌幅：中國國慶前結算＋實際利率走升，非地緣避險需求反轉",
+    "連假後台股首日：VIX 單日 +8.07% 觸發 Rule 9、外資「現貨賣＋期貨加空」雙向翻空，AI/半導體降級、油塑（6505/1303）為唯一明確作多主軸"
   ]
 }
