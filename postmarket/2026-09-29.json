@@ -1,0 +1,128 @@
+{
+  "date": "2026-09-29",
+  "title": "台股盤後籌碼分析",
+  "generated_at": "2026-09-29T18:30:00+08:00",
+  "updated_at": "2026-09-29T18:30:00+08:00",
+  "market": {
+    "direction": "down",
+    "theme": "連假後首個交易日外資單日大賣 -632 億、指數失守 48,000 測 47,573 低點；IC設計重挫（2454 聯發科 -7.10%）拖累電子，航運/電子零組件走弱，塑化/原物料逆勢接棒（塑膠 +2.68%、油電燃氣報酬 +7.19%）"
+  },
+  "summary": {
+    "taiex": {
+      "close": 47631.96,
+      "change": -392.64,
+      "change_pct": -0.82,
+      "direction": "down",
+      "open": 47873.89,
+      "high": 48045.13,
+      "low": 47573.09,
+      "previous_close": 48024.6,
+      "note": "收 47,631.96（-392.64，-0.82%），開 47,873.89 即開低、早盤僅微幅反彈至 48,045.13 便乏力，盤中下殺至 47,573.09（-0.94%）測支撐，尾盤收斂但仍失守 48,000。上市 374↑/586↓ 跌多漲少、漲跌比連兩日偏空（9/24 386↑/546↓→9/29 374↑/586↓）；權值電子熄火（2454 聯發科 -7.10% 領跌、2308 台達電 -3.93%），原物料/塑化逆勢上漲。成交 8,361.45 億。"
+    },
+    "turnover_yi": 8361.45,
+    "breadth_note": "上市 上漲374(漲停24) / 下跌586(跌停0) / 持平112"
+  },
+  "breadth": {
+    "note": "上市 上漲374(漲停24) / 下跌586(跌停0) / 持平112",
+    "twse_up": 374,
+    "twse_down": 586,
+    "twse_limit_up": 24,
+    "twse_limit_down": 0,
+    "otc_up": null,
+    "otc_down": null
+  },
+  "sector_performance": {
+    "top_gainers": [
+      {"name": "塑膠類", "change_pct": 2.68, "note": "400.74"},
+      {"name": "塑膠化工類", "change_pct": 1.97, "note": "1,164.84"},
+      {"name": "化學類", "change_pct": 1.17, "note": "193.15"},
+      {"name": "化學生技醫療類", "change_pct": 1.13, "note": "162.93"},
+      {"name": "生技醫療類", "change_pct": 1.11, "note": "91.44"},
+      {"name": "油電燃氣類(報酬)", "change_pct": 7.19, "note": "報酬指數"},
+      {"name": "電機機械類", "change_pct": 0.08}
+    ],
+    "top_losers": [
+      {"name": "特選臺股領航指數", "change_pct": -3.46},
+      {"name": "航運類", "change_pct": -2.08, "note": "207.79"},
+      {"name": "特選臺灣IC設計動能指數", "change_pct": -2.07},
+      {"name": "通信網路類", "change_pct": -1.94},
+      {"name": "電子零組件類", "change_pct": -1.82, "note": "944.36"},
+      {"name": "半導體類", "change_pct": -0.88, "note": "1,616.78"},
+      {"name": "電子工業類", "change_pct": -1.02, "note": "3,026.53"},
+      {"name": "金融保險類", "change_pct": -0.54, "note": "3,543.92"}
+    ]
+  },
+  "postmarket": {
+    "institutional_trading": {
+      "as_of_date": "20260929（TWSE BFI82U 官方）",
+      "source": "TWSE BFI82U 初值（18:30），22:00 可能下修",
+      "foreign": {"buy_100m": 3272.87, "sell_100m": 3904.89, "net_100m": -632.01},
+      "trust": {"buy_100m": 160.13, "sell_100m": 145.96, "net_100m": 14.17},
+      "dealer_own": {"buy_100m": 71.85, "sell_100m": 79.94, "net_100m": -8.09},
+      "dealer_hedge": {"buy_100m": 213.46, "sell_100m": 369.4, "net_100m": -155.94},
+      "dealer_total": -164.03,
+      "total": {"buy_100m": 3718.31, "sell_100m": 4500.18, "net_100m": -781.87},
+      "interpretation": "外資 9/29 淨賣超 -632.01 億——連假後首個交易日即鉅額倒貨，為 9 月單日最大賣超（9/24 -338.02 億續擴大近一倍）；投信 +14.17 億（連 2 賣後轉買、小幅承接）；自營合計 -164.03 億（自行 -8.09／避險 -155.94，作空避險放大）；三大法人合計 -781.87 億，為 9 月最大單日合計賣超。外資現貨鉅額賣出同步台指期加空（淨空 -79,029 口、較 9/24 -77,031 續加空 -1,998），『現貨大賣＋期貨加空』連假後全面轉防守，IC設計/電子權值為主要提款對象。"
+    },
+    "futures_positions": {
+      "as_of_date": "20260929（TAIFEX /cht/3/futContractsDate 與 optContractsDate 當日已公布，頁面日期 2026/09/29）",
+      "foreign_tx_oi_net": {
+        "oi": -79029,
+        "change": -1998,
+        "interpretation": "外資台指期淨空 -79,029 口（9/24 -77,031 → 加空 -1,998）。連假後淨空續增至 -7.9 萬口（逼近 -8 萬口關卡），且現貨同日鉅賣 -632 億——『現貨大賣＋期貨續加空』為 9 月最明確的法人撤退組合；淨空須回補至 -7 萬口下方才視為轉多訊號。"
+      },
+      "trust_tx_oi_net": {
+        "oi": 72812,
+        "change": -52,
+        "interpretation": "投信淨多 +72,812 口（9/24 +72,864 → -52），高位續持、對沖保險單為主，未隨外資大幅翻空。"
+      },
+      "dealer_tx_oi_net": {
+        "oi": -488,
+        "change": 1032,
+        "interpretation": "自營商淨空 -488 口（9/24 -1,520 → 回補 +1,032），避險部位小幅減輕。"
+      },
+      "foreign_txo_oi_net": {
+        "oi": -2077,
+        "change": 1266,
+        "interpretation": "外資臺指選擇權（CALL+PUT 合計）未平倉淨額 -2,077 口（多方 14,183／空方 16,260）＝較 9/24 -3,343 回補 +1,266，選擇權部位小幅轉鬆、仍偏空。"
+      },
+      "put_call_ratio": {
+        "as_of_date": "20260924（9/29 當日 18:30 未上線，值待 22:00 補齊）",
+        "volume_ratio_pct": 121.11,
+        "oi_ratio_pct": 85.33,
+        "put_volume": 125974,
+        "call_volume": 104015,
+        "put_oi": 59603,
+        "call_oi": 69848,
+        "note": "TAIFEX OpenAPI PutCallRatio 最新仍為 9/24（成交量 P/C 121.11%、未平倉 P/C 85.33%）；9/29 當日值 18:30 未上線，標註 GAP、22:00 補。"
+      }
+    }
+  },
+  "us_ref": {
+    "note": "美股 9/28 美收（截至 TW 9/29 盤後之最新完整美股交易日）",
+    "SOX": {"close": 12465.24, "change_pct": -1.61},
+    "VIX": {"close": 16.08, "change_pct": 0.06, "note": "微幅持平、未觸 Rule 9 門檻"},
+    "TSM_ADR": {"close": 452.88, "change_pct": 0.5, "volume": 7867600},
+    "SPX": {"close": 7683.69, "change_pct": -0.77},
+    "IXIC": {"close": 26820.38, "change_pct": -0.92},
+    "DJI": {"close": 51481.51, "change_pct": -0.67},
+    "USDTWD": 31.78
+  },
+  "adr_premium": {
+    "premium_pct": 16.3,
+    "tsm_adr_usd": 452.88,
+    "fx_usdtwd": 31.78,
+    "implied_2330": 2878.39,
+    "tw_close_2330": 2475.0,
+    "note": "TSM ADR $452.88（+0.50%，9/28 美收）× 31.78 ÷ 5 = 隱含 2,878.39 元 vs 台積電 9/29 收 2,475（0.00%）→ 溢價 +16.30%。ADR 溢價策略已退役（僅觀察，1/11）；溢價破 +16% 創近高、屬貴價位，為『回檔有撐』論逆風（Rule 9 refinement）——外資趁溢價高＋美股走弱獲利了結 2330 風險高（9/29 外資現貨即鉅賣 -632 億）。"
+  },
+  "notes": [
+    "18:30 盤後籌碼分析（2026-09-29 週二，連假 9/25 中秋＋9/28 教師節後首個交易日）",
+    "資料來源：TWSE BFI82U（18:30 初值）/ MI_5MINS_HIST / MI_INDEX type=MS 與 type=IND / STOCK_DAY / FMTQIK, TAIFEX /cht/3/futContractsDate 與 optContractsDate（當日已公布，頁面日期 2026/09/29）、OpenAPI PutCallRatio（最新 9/24）, yfinance（美股 9/28 美收、TSM/USDTWD）",
+    "MI_MARGN 融資融券 9/29 值 18:30 未上線（回傳『沒有符合條件的資料』），以 D-1 9/24 值暫代並標註 GAP；9/29 值、9/29 P/C 比值、借券賣出由 22:00 full-chips job 補齊。",
+    "BFI82U 18:30 初值 22:00 可能下修（9/3 實例：投信 +11.42→+6.94 億、合計 -637.12→-641.60 億）。",
+    "上櫃漲跌家數（otc_up/otc_down）18:30 未抓取（TPEx 官方未以 API 公布），標為 null、非官方口徑。",
+    "USD/TWD 以 yfinance 9/28 美收 31.78 暫代（9/29 台幣收盤 18:30 未更新）。",
+    "19:00 盤後分析＋推薦檢討與 22:00 full-chips job 將補充 recommendation_review、momentum_scan、融資融券/D-1、借券賣出與 P/C 當日值。"
+  ]
+}
