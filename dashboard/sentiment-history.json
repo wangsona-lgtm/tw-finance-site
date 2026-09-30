@@ -1,17 +1,5 @@
 [
   {
-    "date": "2026-08-12",
-    "inst": {
-      "foreign": 11020811994,
-      "investment_trust": 2276272699,
-      "dealer_total": 8700668735
-    },
-    "pc_ratio": 108.38,
-    "pc_oi_ratio": 106.06,
-    "futures_foreign_net": "-495,850",
-    "futures_total_net": "-673,069"
-  },
-  {
     "date": "2026-08-13",
     "inst": {
       "foreign": 75694516575,
@@ -358,5 +346,17 @@
     "pc_oi_ratio": 75.3,
     "futures_foreign_net": "-479,535",
     "futures_total_net": "-671,331"
+  },
+  {
+    "date": "2026-09-30",
+    "inst": {
+      "foreign": 30856555666,
+      "investment_trust": 8290786559,
+      "dealer_total": 1240352622
+    },
+    "pc_ratio": 99.2,
+    "pc_oi_ratio": 80.57,
+    "futures_foreign_net": "-490,425",
+    "futures_total_net": "-694,795"
   }
 ]
