@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-01",
+    "file": "tw-finance-site/reports/2026-10-01.json",
+    "title": "ZeroHedge 每日導讀 — 10月1日（四）+ 盤前分析",
+    "dayOfWeek": "四"
+  },
+  {
     "date": "2026-09-30",
     "file": "tw-finance-site/reports/2026-09-30.json",
     "title": "ZeroHedge 每日導讀 — 9月30日（三）",
