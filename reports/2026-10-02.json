@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-02",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 10月2日（五）",
+  "sections": [
+    {
+      "title": "美國次貸車貸淪陷，證券化債券卻照常運作",
+      "category": "market",
+      "summary": "彭博深入挖掘 2021–2023 年間由 Exeter、Santander、Carvana 和 GM Financial 發起、被裝進上市資產證券化（ABS）的近 300 萬筆汽車貸款，發現金融工程能在底層消費者不斷惡化的同時，保持表面健康。關鍵數學：次貸借款人平均支付約 18% 的利息，而這些貸款包裝成的證券發行利率僅約 6.7% —— 巨大的利差空間足以吸收違約、支付費用後仍有利潤留給放款人與債券持有人。且服務商無論借款人是否正常還款，都能按月收取費用。Exeter 尤其激進，其證券化池中近三分之二的貸款被修改、近四分之一被修改四次以上，把遲繳往後拖延；Santander 則相反，較少修改、更快回收拍賣車輛。但對借款人而言，延後算總帳往往只是讓負擔更重 —— 一名維吉尼亞借款人用 21.5% 融資買 3.2 萬美元的 Chevy Silverado，歷經五次修改後總欠款反而增加。\n\n**重點摘錄：**\n• 18% 借款與 6.7% 債券的利差是「借貸產業照常運作」的核心密碼\n• 修改貸款只是把呆帳往後移，不是解決；系統性風險被表面數據掩蓋\n• 金融工程可以健康，但底下消費者正在生病 —— 這是泡沫典型特徵",
+      "url": "https://www.zerohedge.com/markets/while-subprime-auto-loans-default-their-bonds-somehow-keep-performing",
+      "timestamp": "2026-10-02",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "歐洲債市崩盤、CDS 爆表：法國預算恐慌再現「主權債務危機」",
+      "category": "geopolitics",
+      "summary": "週四歐洲出現 2010–2012 年高峰期的既視感：信用利差、CDS 與歐元區公債風險溢價飆至十餘年未見水平。義大利與德國兩年期公債利差幾乎翻倍至 55bp，創 2020 年以來最大單日收盤漲幅；法國相應利差一度擴大 22bp，為 2012 年以來最劇。法國 10 年期 OAT 與德債間利差竄至 141bp，繫 2012 年歐債危機以來最高。法國 CDS 一個月內翻倍，主因財政可持續性憂慮。時值法國預算案送審 —— 計畫明年赤字收斂至 5%（今年預估 5.4%）。高盛提醒：真正的資訊量在「共和聯盟（RN）下週二提出的對案」，那將揭示其在預算法案中要求的讓步。恐慌並未止於法國，正外溢至其他歐洲市場。\n\n**重點摘錄：**\n• 法德 10 年期利差 141bp 創 2012 年以來最闊，CDS 一個月翻倍\n• 義德兩年期利差單日翻倍，為 2020 年後最大跳動\n• 法國預算案只是序章，RN 下週二的對案才是走向關鍵",
+      "url": "https://www.zerohedge.com/markets/debt-crisis-back-european-bond-markets-crash-cds-explode-amid-france-budget-panic-contagion",
+      "timestamp": "2026-10-02",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "股市、債券與油價齊漲，遨過歐洲「紅色十月」亂局",
+      "category": "geopolitics",
+      "summary": "月初開局略顯混亂，伊朗戰爭相關連動在「頭條隨機性」下瓦解，歐洲債市一團亂。結果是股、債、油三市齊漲：油價走高（伊朗時間到、川普威脅、實體供給緊張）；股市上漲（美光 MU 反覆、甲骨文 ORCL 生變、ISM 物價指數飆升對本益比的衝擊、鴿派 Fed 發言、油價上漲）；債券亦有買盤（美債殖利率對油價與通膨憂慮視若無睹，短端因 PMI 走弱而下跌；技術性耗竭、來自歐陸動盪的避險資金流入，抵銷了偏鷹的 Fed 發言）。美元、黃金、加密貨幣齊漲，因 EUR 重挫。多個歐洲債券交易桌響起嘆息 —— 一位大鴿派 Fed 壓倒四位小鷹派。\n\n**重點摘錄：**\n• 歐洲風險外溢成美元/美債避險買盤，壓過鷹派 Fed 言論\n• 油價上漲既有伊朗時間壓力，也有實體供給緊張支撐\n• 股、債、油三者同漲是「去風險+寬鬆預期」的混亂組合",
+      "url": "https://www.zerohedge.com/markets/red-october-stocks-bonds-black-gold-bounce-together",
+      "timestamp": "2026-10-02",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "美房貸利率狂飆至 7.28%，三年最高，市場「看房已停止」",
+      "category": "market",
+      "summary": "「美國夢從未如此遙不可及」。本週 30 年期固定房貸利率單週暴漲 25bp，自 7.03% 升至 7.28% —— 2022 年 10 月以來最大單週跳升（Freddie Mac），亦為 2023 年 11 月以來最高。推手是通膨、政府債務激增與企業巨額 AI 建設借貸（再加上最新歐洲主權債危機）推高公債殖利率。南卡一位房仲直言：「看房基本上已停下來了。」捲入 2022 年凍結的房市至今未自那次急凍復原。9 月 25 日當週按揭申請量暴跌 6%，連四週下滑。年初利率一度觸及 6% 以下，隨伊朗戰爭開打而跳升，且隨衝突延續、通膨黏性憂慮加深而不斷走高。買家恐持續觀望，賣家可能收回房源。\n\n**重點摘錄：**\n• 單週 +25bp 至 7.28%，為三年最高、2022 年以來最大單週漲幅\n• 按揭申請連四週下滑（9/25 當週 -6%），房市實質凍結\n• 債市拋售的利率衝擊正透過房貸向實體經濟擴散",
+      "url": "https://www.zerohedge.com/markets/showings-have-stopped-housing-market-freezes-mortgage-rates-soar-3-year-high",
+      "timestamp": "2026-10-02",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "美股微漲、美債反彈、美元走強 — Newsquawk 亞太開盤",
+      "category": "market",
+      "summary": "美股在震盪中收微漲，納斯達克 100 表現略佳，科技股領漲（受 Accenture ACN 強勁財報帶動的軟體股、以及 Synopsys SNPS 因與 OpenAI 交易上調展望而上漲）。美債呈雙向交易後最終牛陡（bull steepen），前端殖利率領跌，受經濟數據、Fed 發言與地緣政治影響邁入 Q4。數據方面：初領失業金人數仍低，Revelio Labs 9 月就業報告顯示加速，芝加哥 Fed 失業率 nowcast 維持 4.1%；ISM 製造業 PMI 遜預期但物價指數跳升至 77.9（前值 71.1）、就業分項改善，市場聚焦週五 NFP。Fed 多位官員發言：Jefferson 呼應副主席 Williams，稱可能花更多時間決策下次利率；Bowman 稱今年無迫切需要再動利率。美元對同儕大致走強，外匯與固定收益同呈避險交易。\n\n**重點摘錄：**\n• ISM 物價指數暴跳至 77.9，暗示通膨回升壓力；就業分項改善\n• Fed 多位官員傾向「慢慢來」，今年再降息需求不高\n• 焦點轉向週五 NFP；美元避險買盤強勁",
+      "url": "https://www.zerohedge.com/markets/us-stocks-eked-slight-gains-choppy-trade-while-usts-rebounded-and-dollar-was-lifted-haven",
+      "timestamp": "2026-10-02",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "AI 牛市核心出現「萬億美元算錯」",
+      "category": "market",
+      "summary": "文章直指 AI 泡沫最薄弱的一環：規模空前的循環融資（circular financing）—— 連國際清算銀行（BIS）今年夏天都為此發出警告，但只要股價續漲就沒人在意；一旦轉跌，人們會爭相喊「早就人人都知道會發生」。文章以示意圖說明這套自我循環的資金結構：晶片賣方與買方之間、以及數據中心與其融資關聯之間存在相互接單與互相注資的閉環，把營收與估值滾成一個巨大的紙上數字。\n\n**重點摘錄：**\n• AI 漲勢的核心是循環融資，連 BIS 都已示警\n• 只要股價上漲便無人理會 —— 泡沫的典型自我強化\n• 下行時此「算錯」將成為眾矢之的",
+      "url": "https://www.zerohedge.com/markets/trillion-dollar-math-error-emerges-heart-ai-bull-case",
+      "timestamp": "2026-10-02",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "高盛：長天期美債「仍完全無人出價」，債非便宜",
+      "category": "market",
+      "summary": "高盛 one-delta 主管 Rich Privorotsky 指出，美債長天期仍「完全無人出價（still totally bidless）」。最新 PCE 數據較溫和，但幾乎沒有改變長天期殖利率的軌跡。意即：即便通膨數據轉鬆，賣壓的結構性動能（債務供給、AI 融資、歐洲危機外溢）仍未消散，長債反彈缺乏真實買盤承接。\n\n**重點摘錄：**\n• 長天期美債缺乏真實買盤，反彈無基\n• 溫和的 PCE 未能扭轉長端殖利率軌跡\n• 供給與融資壓力仍在主導長端定價",
+      "url": "https://www.zerohedge.com/markets/bonds-arent-cheap-yet-goldman-says-long-end-still-totally-bidless",
+      "timestamp": "2026-10-02",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "騰訊以超低價向資金吃緊的甲骨文租 10 萬張 AI 晶片（約 70 億美元）",
+      "category": "market",
+      "summary": "旗下美國旗艦資料中心遭遇不可抗力（force majeure）、CDS 處於歷史高檔、創辦人忙於投資好萊塢 —— 資金吃緊的甲骨文迎來一位願預付的中國客戶。據 FT，騰訊簽下其史上最大海外租賃：一紙五年期協議，涵蓋甲骨文位於東南亞的多座資料中心，讓這家中國社群媒體與遊戲巨頭取得約 10 萬張中國無法取得的高階 AI 晶片。交易估值約 70 億美元，預付約 30%（約 21 億美元）。兩家公司皆不予置評。計算下來約為每小時 1.60 美元。媒體戲稱：「甲骨文美國資料中心擱淺，賴瑞轉做北京的生意。」\n\n**重點摘錄：**\n• 甲骨文被迫以降價預付模式變現，折射其財務壓力\n• 騰訊藉東南亞節點繞過中國取得的晶片禁令限制\n• 交易估值 70 億美元、預付 30%，時租約 1.60 美元",
+      "url": "https://www.zerohedge.com/markets/tencent-rents-100000-ai-chips-cash-strapped-oracle-huge-discount-7bn-deal",
+      "timestamp": "2026-10-02",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-10-02 (星期五)",
+      "category": "premarket",
+      "timestamp": "2026-10-02",
+      "summary": "科技/半導體領軍溫和收漲：SOX +1.59% 連兩日轉強、SMH +1.45%、TSM ADR +0.66%，10Y 殖利率回落 5.24% 紓解高殖帶壓制，WTI 勁揚 +2.91% 至 $93.05 —— 電子/AI 半導體與能源石化雙主軸偏多。台指期夜盤正價差 +122 點，預估平開至小開高測 48,400-48,600；但外資期貨淨空 -79,554 口避險未退 + 今晚美國非農高波動，宜半倉、不重倉過週末。",
+      "market_context": {
+        "us_close": "2026-10-01",
+        "spx": 7666.45,
+        "spx_change_pct": 0.19,
+        "dow": 50926.56,
+        "dow_change_pct": 0.04,
+        "nasdaq": 26871.6,
+        "nasdaq_change_pct": 0.04,
+        "rut": 2806.63,
+        "rut_change_pct": 0.35,
+        "sox": 12829.0,
+        "sox_change_pct": 1.59,
+        "vix": 16.39,
+        "vix_change_pct": 0.31,
+        "tsm_adr": 459.2,
+        "tsm_adr_change_pct": 0.66,
+        "taiex_prev_close": 48353.0,
+        "usdtwd": 31.891,
+        "adr_premium_pct": 16.69,
+        "foreign_futures_oi": -79554,
+        "gold": 4205.9,
+        "gold_change_pct": 0.46,
+        "oil": 93.05,
+        "oil_change_pct": 2.91,
+        "btc": 84686.0,
+        "btc_change_pct": 1.35,
+        "tnx_pct": 5.237,
+        "tnx_change_pct": -1.06,
+        "usd_index": 102.04,
+        "expected_open": "約平開至小開高（夜盤正價差 +122 點），測 48,400-48,600",
+        "support": "48,300（10/1 盤中低帶）→ 48,200（夜盤低/整數）",
+        "resistance": "48,500-48,600（夜盤收/前高）→ 48,800",
+        "key_theme": "SOX +1.59% 連兩日轉強、10Y 殖利率回落 5.24% 利多成長股、WTI 勁揚 +2.91% $93.05 — 電子/AI 半導體+能源石化雙主軸偏多；但外資期貨淨空 -79,554 口避險未退 + 10/1 漲家<跌家強弱分歧 + 今晚非農高波動 → 半倉、不重倉過週末"
+      },
+      "recommendations": [
+        {
+          "symbol": "2330",
+          "name": "台積電",
+          "direction": "作多（半倉、回檔偏多）⭐主軸",
+          "strategy": "2,480~2,505 淺回檔承接；開高<1% 半倉市價",
+          "recommend_price": 2492.5,
+          "target": "2,560~2,580",
+          "stop_loss": 2445,
+          "recommend_reason": "SOX +1.59% 連兩日轉強、TSM ADR +0.66%、SMH +1.45%、10Y 殖利率回落 5.24% 利多成長股；10/1 收 2,510（+1.21%）創近期高、收全日最高。⚠️ ADR 溢價 +16.7% + 外資期貨避險未退 → 高開走低風險，半倉執行。"
+        },
+        {
+          "symbol": "6213",
+          "name": "聯茂",
+          "direction": "作多（條件承接、不追開高）",
+          "strategy": "回檔 640 下方淺回檔或 600-615 不破帶量承接；開盤不追第一根",
+          "recommend_price": 640,
+          "target": "680",
+          "stop_loss": 600,
+          "recommend_reason": "AI 主軸延續（SOX 轉強 + PCB/CCL 補漲）；10/1 收 642（+3.05%）回檔 614 承接發酵、日高觸 643，動能續強。開高<1% 可半倉市價（Rule 18 續攻型）；開高>1% 不追第一根。"
+        },
+        {
+          "symbol": "2327",
+          "name": "國巨",
+          "direction": "觀察（MLCC 族群、不追高）",
+          "strategy": "不追昨漲停；回檔 750 下方或族群續強帶量才小量參與",
+          "recommend_price": 750,
+          "target": "觀察",
+          "stop_loss": 0,
+          "recommend_reason": "被動元件/MLCC 為 10/1 最強主軸（國巨/華新科/鈺邦/天二 4 檔漲停，國巨 +9.85%）。Rule 3：連板後追高風險高，本檔列觀察不列作單。"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-10-01",
+        "tracking_period": "10/1 盤前 → 10/1 收盤",
+        "total": 3,
+        "hit": 2,
+        "miss": 0,
+        "hit_rate_pct": 66.7,
+        "best": "6213 聯茂 (條件承接命中，收 642 +3.05%、近全日高，條件承接者當日浮盈 +4~5%，策略正確)",
+        "worst": "6505 台塑化 (觀察不追高正確、錯開 94.2 -3.18% 下跌，但未及早提示持股者落袋，持倉者 -3.2%)",
+        "lessons": [
+          "石化/原物料連板股在題材退潮期應由「手握續抱」改「獲利落袋」——地緣題材退潮快於油價現貨（6505 昨 97.3 → 94.2）",
+          "權值股目標區應加當日情境寬容：2330 接近目標 + 收最高可視方向命中（盤中高 2,510 距目標下緣 2,520 差 10 點）"
+        ]
+      }
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "premium": 8,
+    "market": 6,
+    "geopolitics": 2,
+    "withImages": 0,
+    "premarket": 1
+  },
+  "keyThemes": [
+    "法國預算恐慌重燃歐洲主權債危機：法德 10 年期利差 141bp 創 2012 年最闊、法國 CDS 一個月翻倍、義德兩年期利差單日翻倍",
+    "美國房貸利率單週暴漲 25bp 至 7.28%（3 年新高、2022 以來最大單週跳升），按揭申請連四週下滑，房市實質凍結",
+    "美 10Y 殖利率回落 5.24% + SOX +1.59% 連兩日轉強 + WTI 勁揚 $93.05 — 台股電子/AI 半導體與能源石化雙主軸偏多",
+    "AI 牛市「萬億美元算錯」核心為循環融資（BIS 已示警）；今晚美國非農 NFP 高波動，週五宜控制曝險"
+  ]
+}
