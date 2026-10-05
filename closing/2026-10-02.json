@@ -11006,8 +11006,7 @@
       "close": 54.0,
       "change": -0.1,
       "changePercent": -0.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1259",
@@ -11015,8 +11014,7 @@
       "close": 68.0,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1264",
@@ -11024,8 +11022,7 @@
       "close": 245.0,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1268",
@@ -11033,8 +11030,7 @@
       "close": 177.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1294",
@@ -11042,8 +11038,7 @@
       "close": 49.75,
       "change": -0.45,
       "changePercent": -0.9,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1295",
@@ -11051,8 +11046,7 @@
       "close": 48.7,
       "change": 0.9,
       "changePercent": 1.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1336",
@@ -11060,8 +11054,7 @@
       "close": 18.05,
       "change": -0.25,
       "changePercent": -1.37,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1565",
@@ -11069,8 +11062,7 @@
       "close": 97.2,
       "change": 0.5,
       "changePercent": 0.52,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1569",
@@ -11078,8 +11070,7 @@
       "close": 66.5,
       "change": 2.7,
       "changePercent": 4.23,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1570",
@@ -11087,8 +11078,7 @@
       "close": 32.9,
       "change": 0.65,
       "changePercent": 2.02,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1580",
@@ -11096,17 +11086,15 @@
       "close": 97.2,
       "change": -0.2,
       "changePercent": -0.21,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1584",
       "name": "精剛",
       "close": 18.6,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "1586",
@@ -11114,8 +11102,7 @@
       "close": 17.9,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1591",
@@ -11123,17 +11110,15 @@
       "close": 41.25,
       "change": -0.15,
       "changePercent": -0.36,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1593",
       "name": "祺驊",
       "close": 31.7,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "1595",
@@ -11141,8 +11126,7 @@
       "close": 79.3,
       "change": -4.0,
       "changePercent": -4.8,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1599",
@@ -11150,8 +11134,7 @@
       "close": 23.2,
       "change": 0.1,
       "changePercent": 0.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1742",
@@ -11159,8 +11142,7 @@
       "close": 17.5,
       "change": -0.3,
       "changePercent": -1.69,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1777",
@@ -11168,8 +11150,7 @@
       "close": 74.4,
       "change": 0.1,
       "changePercent": 0.13,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1780",
@@ -11177,8 +11158,7 @@
       "close": 25.35,
       "change": 0.1,
       "changePercent": 0.4,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1781",
@@ -11186,8 +11166,7 @@
       "close": 9.99,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1784",
@@ -11195,8 +11174,7 @@
       "close": 60.5,
       "change": 0.1,
       "changePercent": 0.17,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1785",
@@ -11204,8 +11182,7 @@
       "close": 102.5,
       "change": 1.5,
       "changePercent": 1.49,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1788",
@@ -11213,8 +11190,7 @@
       "close": 128.0,
       "change": 0.5,
       "changePercent": 0.39,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1796",
@@ -11222,8 +11198,7 @@
       "close": 29.9,
       "change": -0.4,
       "changePercent": -1.32,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1799",
@@ -11231,8 +11206,7 @@
       "close": 29.0,
       "change": 0.05,
       "changePercent": 0.17,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1813",
@@ -11240,8 +11214,7 @@
       "close": 11.25,
       "change": -0.05,
       "changePercent": -0.44,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "1815",
@@ -11249,8 +11222,7 @@
       "close": 121.0,
       "change": 5.0,
       "changePercent": 4.31,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2035",
@@ -11258,8 +11230,7 @@
       "close": 26.7,
       "change": -0.2,
       "changePercent": -0.74,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2061",
@@ -11267,8 +11238,7 @@
       "close": 67.8,
       "change": 6.1,
       "changePercent": 9.89,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2063",
@@ -11276,8 +11246,7 @@
       "close": 23.65,
       "change": 0.05,
       "changePercent": 0.21,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2064",
@@ -11285,17 +11254,15 @@
       "close": 12.0,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2065",
       "name": "世豐",
       "close": 35.65,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "2066",
@@ -11303,8 +11270,7 @@
       "close": 52.5,
       "change": 0.8,
       "changePercent": 1.55,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2067",
@@ -11312,8 +11278,7 @@
       "close": 4.89,
       "change": -0.02,
       "changePercent": -0.41,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2070",
@@ -11321,8 +11286,7 @@
       "close": 63.1,
       "change": 0.1,
       "changePercent": 0.16,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2073",
@@ -11330,8 +11294,7 @@
       "close": 25.6,
       "change": -0.2,
       "changePercent": -0.78,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2221",
@@ -11339,8 +11302,7 @@
       "close": 188.0,
       "change": 9.0,
       "changePercent": 5.03,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2230",
@@ -11348,8 +11310,15 @@
       "close": 22.2,
       "change": 0.7,
       "changePercent": 3.26,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
+    },
+    {
+      "code": "2235",
+      "name": "謚源",
+      "close": 28.1,
+      "change": 0.45,
+      "changePercent": 1.63,
+      "market": "上櫃"
     },
     {
       "code": "2596",
@@ -11357,8 +11326,7 @@
       "close": 34.8,
       "change": -0.1,
       "changePercent": -0.29,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2640",
@@ -11366,8 +11334,7 @@
       "close": 156.5,
       "change": -0.5,
       "changePercent": -0.32,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2641",
@@ -11375,8 +11342,7 @@
       "close": 17.45,
       "change": 0.1,
       "changePercent": 0.58,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2643",
@@ -11384,8 +11350,7 @@
       "close": 62.0,
       "change": -0.3,
       "changePercent": -0.48,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2718",
@@ -11393,8 +11358,7 @@
       "close": 40.3,
       "change": 0.3,
       "changePercent": 0.75,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2719",
@@ -11402,8 +11366,7 @@
       "close": 19.7,
       "change": 0.2,
       "changePercent": 1.03,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2724",
@@ -11411,8 +11374,7 @@
       "close": 12.7,
       "change": 0.9,
       "changePercent": 7.63,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2726",
@@ -11420,8 +11382,7 @@
       "close": 8.02,
       "change": 0.02,
       "changePercent": 0.25,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2729",
@@ -11429,8 +11390,7 @@
       "close": 155.5,
       "change": -1.5,
       "changePercent": -0.96,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2732",
@@ -11438,8 +11398,7 @@
       "close": 63.4,
       "change": 0.6,
       "changePercent": 0.96,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2734",
@@ -11447,8 +11406,7 @@
       "close": 14.4,
       "change": 0.05,
       "changePercent": 0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2736",
@@ -11456,8 +11414,7 @@
       "close": 11.2,
       "change": -0.1,
       "changePercent": -0.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2740",
@@ -11465,8 +11422,7 @@
       "close": 30.5,
       "change": 1.5,
       "changePercent": 5.17,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2743",
@@ -11474,8 +11430,7 @@
       "close": 52.7,
       "change": 0.4,
       "changePercent": 0.76,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2745",
@@ -11483,8 +11438,7 @@
       "close": 84.9,
       "change": 0.3,
       "changePercent": 0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2752",
@@ -11492,8 +11446,7 @@
       "close": 177.0,
       "change": 0.5,
       "changePercent": 0.28,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2754",
@@ -11501,8 +11454,7 @@
       "close": 68.1,
       "change": 0.1,
       "changePercent": 0.15,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2755",
@@ -11510,8 +11462,7 @@
       "close": 98.7,
       "change": -0.3,
       "changePercent": -0.3,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2756",
@@ -11519,8 +11470,7 @@
       "close": 61.9,
       "change": -0.9,
       "changePercent": -1.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2916",
@@ -11528,8 +11478,7 @@
       "close": 40.65,
       "change": 0.15,
       "changePercent": 0.37,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2924",
@@ -11537,8 +11486,7 @@
       "close": 18.7,
       "change": -0.15,
       "changePercent": -0.8,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2926",
@@ -11546,8 +11494,15 @@
       "close": 29.95,
       "change": -0.35,
       "changePercent": -1.16,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
+    },
+    {
+      "code": "2937",
+      "name": "集雅社",
+      "close": 44.95,
+      "change": 0.25,
+      "changePercent": 0.56,
+      "market": "上櫃"
     },
     {
       "code": "2938",
@@ -11555,8 +11510,7 @@
       "close": 18.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2941",
@@ -11564,8 +11518,7 @@
       "close": 30.15,
       "change": -0.85,
       "changePercent": -2.74,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2947",
@@ -11573,8 +11526,7 @@
       "close": 60.8,
       "change": 0.3,
       "changePercent": 0.5,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "2948",
@@ -11582,8 +11534,15 @@
       "close": 36.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
+    },
+    {
+      "code": "2949",
+      "name": "欣新網",
+      "close": 65.2,
+      "change": -3.2,
+      "changePercent": -4.68,
+      "market": "上櫃"
     },
     {
       "code": "3064",
@@ -11591,8 +11550,7 @@
       "close": 15.8,
       "change": 0.05,
       "changePercent": 0.32,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3066",
@@ -11600,8 +11558,7 @@
       "close": 29.0,
       "change": 0.1,
       "changePercent": 0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3071",
@@ -11609,8 +11566,7 @@
       "close": 22.95,
       "change": -0.1,
       "changePercent": -0.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3073",
@@ -11618,8 +11574,7 @@
       "close": 20.6,
       "change": 0.1,
       "changePercent": 0.49,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3078",
@@ -11627,8 +11582,7 @@
       "close": 45.95,
       "change": 0.2,
       "changePercent": 0.44,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3081",
@@ -11636,8 +11590,7 @@
       "close": 2925.0,
       "change": 265.0,
       "changePercent": 9.96,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3083",
@@ -11645,8 +11598,7 @@
       "close": 23.75,
       "change": -0.2,
       "changePercent": -0.84,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3086",
@@ -11654,8 +11606,7 @@
       "close": 28.4,
       "change": 1.05,
       "changePercent": 3.84,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3088",
@@ -11663,8 +11614,7 @@
       "close": 132.0,
       "change": -0.5,
       "changePercent": -0.38,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3093",
@@ -11672,8 +11622,7 @@
       "close": 46.2,
       "change": 0.35,
       "changePercent": 0.76,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3095",
@@ -11681,8 +11630,7 @@
       "close": 33.1,
       "change": -0.1,
       "changePercent": -0.3,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3105",
@@ -11690,8 +11638,7 @@
       "close": 591.0,
       "change": 53.0,
       "changePercent": 9.85,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3114",
@@ -11699,8 +11646,7 @@
       "close": 39.65,
       "change": 3.6,
       "changePercent": 9.99,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3115",
@@ -11708,8 +11654,7 @@
       "close": 8.39,
       "change": 0.19,
       "changePercent": 2.32,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3118",
@@ -11717,8 +11662,7 @@
       "close": 31.5,
       "change": -0.05,
       "changePercent": -0.16,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3122",
@@ -11726,8 +11670,7 @@
       "close": 24.2,
       "change": -0.3,
       "changePercent": -1.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3128",
@@ -11735,8 +11678,7 @@
       "close": 20.35,
       "change": 0.3,
       "changePercent": 1.5,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3131",
@@ -11744,8 +11686,7 @@
       "close": 2430.0,
       "change": 50.0,
       "changePercent": 2.1,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3141",
@@ -11753,8 +11694,7 @@
       "close": 87.1,
       "change": 2.6,
       "changePercent": 3.08,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3147",
@@ -11762,8 +11702,7 @@
       "close": 264.5,
       "change": -3.0,
       "changePercent": -1.12,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3152",
@@ -11771,8 +11710,7 @@
       "close": 235.5,
       "change": 3.0,
       "changePercent": 1.29,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3158",
@@ -11780,8 +11718,7 @@
       "close": 86.0,
       "change": 1.5,
       "changePercent": 1.78,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3162",
@@ -11789,8 +11726,7 @@
       "close": 89.6,
       "change": 2.1,
       "changePercent": 2.4,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3163",
@@ -11798,8 +11734,7 @@
       "close": 713.0,
       "change": 62.0,
       "changePercent": 9.52,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3169",
@@ -11807,8 +11742,7 @@
       "close": 115.0,
       "change": -2.0,
       "changePercent": -1.71,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3171",
@@ -11816,8 +11750,7 @@
       "close": 56.7,
       "change": -0.6,
       "changePercent": -1.05,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3176",
@@ -11825,8 +11758,7 @@
       "close": 37.55,
       "change": 0.05,
       "changePercent": 0.13,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3178",
@@ -11834,8 +11766,7 @@
       "close": 71.4,
       "change": 2.0,
       "changePercent": 2.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3188",
@@ -11843,8 +11774,7 @@
       "close": 23.1,
       "change": -0.1,
       "changePercent": -0.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3191",
@@ -11852,8 +11782,7 @@
       "close": 17.45,
       "change": 0.6,
       "changePercent": 3.56,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3205",
@@ -11861,8 +11790,7 @@
       "close": 47.2,
       "change": 0.5,
       "changePercent": 1.07,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3206",
@@ -11870,8 +11798,7 @@
       "close": 34.0,
       "change": -0.6,
       "changePercent": -1.73,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3207",
@@ -11879,8 +11806,7 @@
       "close": 39.75,
       "change": -0.95,
       "changePercent": -2.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3211",
@@ -11888,8 +11814,7 @@
       "close": 397.0,
       "change": 3.0,
       "changePercent": 0.76,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3213",
@@ -11897,8 +11822,7 @@
       "close": 123.0,
       "change": -1.0,
       "changePercent": -0.81,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3217",
@@ -11906,8 +11830,7 @@
       "close": 129.0,
       "change": -0.5,
       "changePercent": -0.39,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3218",
@@ -11915,8 +11838,7 @@
       "close": 133.5,
       "change": -0.5,
       "changePercent": -0.37,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3219",
@@ -11924,8 +11846,7 @@
       "close": 128.5,
       "change": -3.0,
       "changePercent": -2.28,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3221",
@@ -11933,8 +11854,7 @@
       "close": 56.0,
       "change": 2.3,
       "changePercent": 4.28,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3224",
@@ -11942,8 +11862,7 @@
       "close": 31.25,
       "change": 0.35,
       "changePercent": 1.13,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3226",
@@ -11951,8 +11870,7 @@
       "close": 63.1,
       "change": -1.9,
       "changePercent": -2.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3227",
@@ -11960,8 +11878,7 @@
       "close": 187.5,
       "change": 2.0,
       "changePercent": 1.08,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3228",
@@ -11969,8 +11886,7 @@
       "close": 175.5,
       "change": -4.0,
       "changePercent": -2.23,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3230",
@@ -11978,8 +11894,7 @@
       "close": 41.95,
       "change": -0.3,
       "changePercent": -0.71,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3232",
@@ -11987,8 +11902,7 @@
       "close": 20.55,
       "change": -0.15,
       "changePercent": -0.72,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3234",
@@ -11996,8 +11910,7 @@
       "close": 181.5,
       "change": 9.5,
       "changePercent": 5.52,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3236",
@@ -12005,8 +11918,7 @@
       "close": 53.4,
       "change": 4.85,
       "changePercent": 9.99,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3252",
@@ -12014,8 +11926,7 @@
       "close": 15.3,
       "change": -0.05,
       "changePercent": -0.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3259",
@@ -12023,8 +11934,7 @@
       "close": 12.85,
       "change": 1.15,
       "changePercent": 9.83,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3260",
@@ -12032,8 +11942,7 @@
       "close": 382.0,
       "change": 2.0,
       "changePercent": 0.53,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3264",
@@ -12041,8 +11950,7 @@
       "close": 245.0,
       "change": -0.5,
       "changePercent": -0.2,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3265",
@@ -12050,8 +11958,7 @@
       "close": 188.0,
       "change": 3.0,
       "changePercent": 1.62,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3268",
@@ -12059,8 +11966,7 @@
       "close": 21.65,
       "change": 0.05,
       "changePercent": 0.23,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3272",
@@ -12068,8 +11974,7 @@
       "close": 14.1,
       "change": 0.2,
       "changePercent": 1.44,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3276",
@@ -12077,8 +11982,7 @@
       "close": 14.5,
       "change": 0.6,
       "changePercent": 4.32,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3284",
@@ -12086,8 +11990,7 @@
       "close": 20.1,
       "change": 0.45,
       "changePercent": 2.29,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3285",
@@ -12095,8 +11998,7 @@
       "close": 41.9,
       "change": 0.4,
       "changePercent": 0.96,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3287",
@@ -12104,8 +12006,7 @@
       "close": 42.05,
       "change": 0.4,
       "changePercent": 0.96,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3288",
@@ -12113,8 +12014,7 @@
       "close": 21.05,
       "change": -0.2,
       "changePercent": -0.94,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3289",
@@ -12122,8 +12022,7 @@
       "close": 143.0,
       "change": 1.5,
       "changePercent": 1.06,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3290",
@@ -12131,8 +12030,7 @@
       "close": 50.3,
       "change": 0.3,
       "changePercent": 0.6,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3293",
@@ -12140,8 +12038,7 @@
       "close": 791.0,
       "change": -23.0,
       "changePercent": -2.83,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3294",
@@ -12149,8 +12046,7 @@
       "close": 32.8,
       "change": -0.25,
       "changePercent": -0.76,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3297",
@@ -12158,8 +12054,7 @@
       "close": 32.5,
       "change": 1.0,
       "changePercent": 3.17,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3303",
@@ -12167,8 +12062,7 @@
       "close": 48.8,
       "change": 0.1,
       "changePercent": 0.21,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3306",
@@ -12176,8 +12070,7 @@
       "close": 47.05,
       "change": -0.45,
       "changePercent": -0.95,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3310",
@@ -12185,8 +12078,7 @@
       "close": 67.6,
       "change": -0.4,
       "changePercent": -0.59,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3313",
@@ -12194,8 +12086,7 @@
       "close": 10.5,
       "change": -0.05,
       "changePercent": -0.47,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3317",
@@ -12203,8 +12094,7 @@
       "close": 65.3,
       "change": 0.1,
       "changePercent": 0.15,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3322",
@@ -12212,8 +12102,7 @@
       "close": 11.35,
       "change": -0.25,
       "changePercent": -2.16,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3323",
@@ -12221,8 +12110,7 @@
       "close": 30.35,
       "change": 1.05,
       "changePercent": 3.58,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3324",
@@ -12230,8 +12118,7 @@
       "close": 1505.0,
       "change": -20.0,
       "changePercent": -1.31,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3325",
@@ -12239,8 +12126,7 @@
       "close": 11.8,
       "change": 0.1,
       "changePercent": 0.85,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3332",
@@ -12248,8 +12134,7 @@
       "close": 64.3,
       "change": -0.6,
       "changePercent": -0.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3339",
@@ -12257,8 +12142,7 @@
       "close": 47.0,
       "change": 1.95,
       "changePercent": 4.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3349",
@@ -12266,8 +12150,7 @@
       "close": 19.0,
       "change": -0.4,
       "changePercent": -2.06,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3354",
@@ -12275,8 +12158,7 @@
       "close": 30.1,
       "change": 0.3,
       "changePercent": 1.01,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3357",
@@ -12284,8 +12166,7 @@
       "close": 215.5,
       "change": 3.0,
       "changePercent": 1.41,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3360",
@@ -12293,8 +12174,7 @@
       "close": 15.55,
       "change": 0.3,
       "changePercent": 1.97,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3362",
@@ -12302,8 +12182,7 @@
       "close": 175.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3363",
@@ -12311,8 +12190,7 @@
       "close": 671.0,
       "change": 30.0,
       "changePercent": 4.68,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3372",
@@ -12320,8 +12198,7 @@
       "close": 16.9,
       "change": 0.45,
       "changePercent": 2.74,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3373",
@@ -12329,8 +12206,7 @@
       "close": 15.9,
       "change": -0.1,
       "changePercent": -0.62,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3374",
@@ -12338,8 +12214,7 @@
       "close": 467.5,
       "change": 11.5,
       "changePercent": 2.52,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3379",
@@ -12347,8 +12222,7 @@
       "close": 27.8,
       "change": 0.2,
       "changePercent": 0.72,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3388",
@@ -12356,8 +12230,7 @@
       "close": 84.5,
       "change": 0.1,
       "changePercent": 0.12,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3390",
@@ -12365,8 +12238,7 @@
       "close": 22.4,
       "change": 0.05,
       "changePercent": 0.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3402",
@@ -12374,8 +12246,7 @@
       "close": 139.5,
       "change": 2.5,
       "changePercent": 1.82,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3430",
@@ -12383,8 +12254,7 @@
       "close": 113.5,
       "change": 2.0,
       "changePercent": 1.79,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3434",
@@ -12392,8 +12262,7 @@
       "close": 31.2,
       "change": -0.2,
       "changePercent": -0.64,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3438",
@@ -12401,8 +12270,7 @@
       "close": 62.0,
       "change": 0.5,
       "changePercent": 0.81,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3441",
@@ -12410,8 +12278,7 @@
       "close": 211.0,
       "change": 8.5,
       "changePercent": 4.2,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3444",
@@ -12419,8 +12286,7 @@
       "close": 80.8,
       "change": 0.1,
       "changePercent": 0.12,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3455",
@@ -12428,8 +12294,7 @@
       "close": 280.0,
       "change": -7.0,
       "changePercent": -2.44,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3465",
@@ -12437,8 +12302,7 @@
       "close": 30.05,
       "change": 0.05,
       "changePercent": 0.17,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3466",
@@ -12446,8 +12310,7 @@
       "close": 24.2,
       "change": 0.45,
       "changePercent": 1.89,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3467",
@@ -12455,8 +12318,7 @@
       "close": 73.2,
       "change": 0.6,
       "changePercent": 0.83,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3479",
@@ -12464,8 +12326,7 @@
       "close": 136.0,
       "change": -0.5,
       "changePercent": -0.37,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3483",
@@ -12473,8 +12334,7 @@
       "close": 80.9,
       "change": 2.4,
       "changePercent": 3.06,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3484",
@@ -12482,8 +12342,7 @@
       "close": 48.9,
       "change": 1.6,
       "changePercent": 3.38,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3485",
@@ -12491,8 +12350,7 @@
       "close": 216.0,
       "change": 3.5,
       "changePercent": 1.65,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3489",
@@ -12500,8 +12358,7 @@
       "close": 23.2,
       "change": -0.6,
       "changePercent": -2.52,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3490",
@@ -12509,8 +12366,7 @@
       "close": 50.7,
       "change": 1.95,
       "changePercent": 4.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3491",
@@ -12518,8 +12374,7 @@
       "close": 1485.0,
       "change": -5.0,
       "changePercent": -0.34,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3492",
@@ -12527,8 +12382,7 @@
       "close": 19.45,
       "change": 0.3,
       "changePercent": 1.57,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3498",
@@ -12536,8 +12390,7 @@
       "close": 215.0,
       "change": -4.5,
       "changePercent": -2.05,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3499",
@@ -12545,8 +12398,7 @@
       "close": 13.8,
       "change": 0.05,
       "changePercent": 0.36,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3508",
@@ -12554,8 +12406,7 @@
       "close": 25.75,
       "change": -0.25,
       "changePercent": -0.96,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3511",
@@ -12563,8 +12414,7 @@
       "close": 19.75,
       "change": 0.15,
       "changePercent": 0.77,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3512",
@@ -12572,17 +12422,15 @@
       "close": 19.1,
       "change": -0.1,
       "changePercent": -0.52,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3516",
       "name": "亞帝歐",
       "close": 25.35,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "3520",
@@ -12590,8 +12438,7 @@
       "close": 17.2,
       "change": 0.2,
       "changePercent": 1.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3521",
@@ -12599,8 +12446,7 @@
       "close": 11.8,
       "change": -0.2,
       "changePercent": -1.67,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3522",
@@ -12608,8 +12454,7 @@
       "close": 12.45,
       "change": -0.05,
       "changePercent": -0.4,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3523",
@@ -12617,8 +12462,7 @@
       "close": 14.3,
       "change": 0.8,
       "changePercent": 5.93,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3526",
@@ -12626,17 +12470,15 @@
       "close": 274.5,
       "change": 2.5,
       "changePercent": 0.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3527",
       "name": "聚積",
       "close": 51.4,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "3529",
@@ -12644,8 +12486,7 @@
       "close": 3170.0,
       "change": -75.0,
       "changePercent": -2.31,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3531",
@@ -12653,8 +12494,7 @@
       "close": 21.15,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3537",
@@ -12662,8 +12502,7 @@
       "close": 56.8,
       "change": -1.8,
       "changePercent": -3.07,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3540",
@@ -12671,8 +12510,7 @@
       "close": 23.4,
       "change": 0.3,
       "changePercent": 1.3,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3541",
@@ -12680,8 +12518,7 @@
       "close": 24.55,
       "change": 0.15,
       "changePercent": 0.61,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3546",
@@ -12689,8 +12526,7 @@
       "close": 73.0,
       "change": -0.2,
       "changePercent": -0.27,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3548",
@@ -12698,8 +12534,7 @@
       "close": 77.2,
       "change": 0.7,
       "changePercent": 0.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3551",
@@ -12707,8 +12542,7 @@
       "close": 199.5,
       "change": 6.5,
       "changePercent": 3.37,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3552",
@@ -12716,8 +12550,7 @@
       "close": 45.8,
       "change": 1.5,
       "changePercent": 3.39,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3555",
@@ -12725,8 +12558,7 @@
       "close": 167.0,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3556",
@@ -12734,8 +12566,7 @@
       "close": 59.1,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3558",
@@ -12743,8 +12574,7 @@
       "close": 131.0,
       "change": 2.0,
       "changePercent": 1.55,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3564",
@@ -12752,8 +12582,7 @@
       "close": 56.1,
       "change": 5.1,
       "changePercent": 10.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3567",
@@ -12761,8 +12590,7 @@
       "close": 26.2,
       "change": 0.05,
       "changePercent": 0.19,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3570",
@@ -12770,8 +12598,7 @@
       "close": 170.0,
       "change": -0.5,
       "changePercent": -0.29,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3577",
@@ -12779,8 +12606,7 @@
       "close": 114.5,
       "change": -1.0,
       "changePercent": -0.87,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3580",
@@ -12788,8 +12614,7 @@
       "close": 108.5,
       "change": -0.5,
       "changePercent": -0.46,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3581",
@@ -12797,8 +12622,7 @@
       "close": 118.5,
       "change": 1.5,
       "changePercent": 1.28,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3587",
@@ -12806,8 +12630,7 @@
       "close": 245.0,
       "change": 4.0,
       "changePercent": 1.66,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3594",
@@ -12815,8 +12638,7 @@
       "close": 47.15,
       "change": -0.55,
       "changePercent": -1.15,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3597",
@@ -12824,8 +12646,7 @@
       "close": 27.7,
       "change": -0.4,
       "changePercent": -1.42,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3609",
@@ -12833,8 +12654,7 @@
       "close": 22.9,
       "change": -0.1,
       "changePercent": -0.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3611",
@@ -12842,8 +12662,7 @@
       "close": 184.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3615",
@@ -12851,8 +12670,7 @@
       "close": 45.0,
       "change": 1.75,
       "changePercent": 4.05,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3623",
@@ -12860,8 +12678,7 @@
       "close": 30.55,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3624",
@@ -12869,8 +12686,7 @@
       "close": 148.5,
       "change": -2.5,
       "changePercent": -1.66,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3625",
@@ -12878,8 +12694,7 @@
       "close": 11.15,
       "change": -0.05,
       "changePercent": -0.45,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3628",
@@ -12887,8 +12702,7 @@
       "close": 71.8,
       "change": -1.0,
       "changePercent": -1.37,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3629",
@@ -12896,8 +12710,7 @@
       "close": 14.6,
       "change": -1.6,
       "changePercent": -9.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3630",
@@ -12905,8 +12718,7 @@
       "close": 26.8,
       "change": -0.1,
       "changePercent": -0.37,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3631",
@@ -12914,8 +12726,7 @@
       "close": 41.15,
       "change": 0.7,
       "changePercent": 1.73,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3632",
@@ -12923,8 +12734,7 @@
       "close": 7.08,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3646",
@@ -12932,8 +12742,7 @@
       "close": 24.9,
       "change": 0.05,
       "changePercent": 0.2,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3663",
@@ -12941,8 +12750,7 @@
       "close": 64.8,
       "change": -0.3,
       "changePercent": -0.46,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3664",
@@ -12950,8 +12758,7 @@
       "close": 8.31,
       "change": -0.54,
       "changePercent": -6.1,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3666",
@@ -12959,8 +12766,7 @@
       "close": 25.3,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3672",
@@ -12968,8 +12774,7 @@
       "close": 12.25,
       "change": 0.15,
       "changePercent": 1.24,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3675",
@@ -12977,8 +12782,7 @@
       "close": 360.0,
       "change": 1.0,
       "changePercent": 0.28,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3680",
@@ -12986,8 +12790,7 @@
       "close": 552.0,
       "change": 1.0,
       "changePercent": 0.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3685",
@@ -12995,8 +12798,7 @@
       "close": 36.0,
       "change": 1.35,
       "changePercent": 3.9,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3687",
@@ -13004,8 +12806,7 @@
       "close": 61.1,
       "change": -0.5,
       "changePercent": -0.81,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3689",
@@ -13013,8 +12814,7 @@
       "close": 113.0,
       "change": 2.5,
       "changePercent": 2.26,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3691",
@@ -13022,8 +12822,7 @@
       "close": 113.0,
       "change": 0.5,
       "changePercent": 0.44,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3693",
@@ -13031,8 +12830,7 @@
       "close": 663.0,
       "change": -1.0,
       "changePercent": -0.15,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3707",
@@ -13040,8 +12838,7 @@
       "close": 85.2,
       "change": 7.7,
       "changePercent": 9.94,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3709",
@@ -13049,8 +12846,7 @@
       "close": 65.5,
       "change": -0.4,
       "changePercent": -0.61,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3710",
@@ -13058,17 +12854,15 @@
       "close": 8.12,
       "change": 0.04,
       "changePercent": 0.5,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "3713",
       "name": "新晶投控",
       "close": 13.8,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "3718",
@@ -13076,17 +12870,15 @@
       "close": 65.1,
       "change": 0.8,
       "changePercent": 1.24,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4102",
       "name": "永日",
       "close": 18.45,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "4105",
@@ -13094,8 +12886,7 @@
       "close": 78.9,
       "change": 0.4,
       "changePercent": 0.51,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4107",
@@ -13103,8 +12894,7 @@
       "close": 110.0,
       "change": -0.5,
       "changePercent": -0.45,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4109",
@@ -13112,8 +12902,7 @@
       "close": 11.0,
       "change": 0.1,
       "changePercent": 0.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4111",
@@ -13121,8 +12910,7 @@
       "close": 29.0,
       "change": 0.15,
       "changePercent": 0.52,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4113",
@@ -13130,8 +12918,7 @@
       "close": 15.2,
       "change": 0.1,
       "changePercent": 0.66,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4114",
@@ -13139,8 +12926,7 @@
       "close": 29.35,
       "change": -0.15,
       "changePercent": -0.51,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4116",
@@ -13148,8 +12934,7 @@
       "close": 40.15,
       "change": 0.35,
       "changePercent": 0.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4120",
@@ -13157,8 +12942,7 @@
       "close": 46.1,
       "change": 0.1,
       "changePercent": 0.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4121",
@@ -13166,8 +12950,7 @@
       "close": 12.9,
       "change": 0.15,
       "changePercent": 1.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4123",
@@ -13175,8 +12958,7 @@
       "close": 31.2,
       "change": -0.1,
       "changePercent": -0.32,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4126",
@@ -13184,8 +12966,7 @@
       "close": 78.0,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4127",
@@ -13193,8 +12974,7 @@
       "close": 45.6,
       "change": -1.1,
       "changePercent": -2.36,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4128",
@@ -13202,8 +12982,7 @@
       "close": 15.3,
       "change": 0.15,
       "changePercent": 0.99,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4129",
@@ -13211,8 +12990,7 @@
       "close": 82.3,
       "change": -0.3,
       "changePercent": -0.36,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4131",
@@ -13220,8 +12998,7 @@
       "close": 30.8,
       "change": -0.05,
       "changePercent": -0.16,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4138",
@@ -13229,17 +13006,15 @@
       "close": 53.5,
       "change": -0.8,
       "changePercent": -1.47,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4139",
       "name": "馬光-KY",
       "close": 41.95,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "4147",
@@ -13247,8 +13022,7 @@
       "close": 61.4,
       "change": -0.6,
       "changePercent": -0.97,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4153",
@@ -13256,8 +13030,7 @@
       "close": 31.55,
       "change": 0.3,
       "changePercent": 0.96,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4154",
@@ -13265,8 +13038,7 @@
       "close": 11.25,
       "change": -1.25,
       "changePercent": -10.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4157",
@@ -13274,8 +13046,7 @@
       "close": 8.65,
       "change": -0.08,
       "changePercent": -0.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4160",
@@ -13283,8 +13054,7 @@
       "close": 38.8,
       "change": -0.1,
       "changePercent": -0.26,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4161",
@@ -13292,8 +13062,7 @@
       "close": 21.65,
       "change": -0.1,
       "changePercent": -0.46,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4162",
@@ -13301,8 +13070,7 @@
       "close": 55.4,
       "change": 0.1,
       "changePercent": 0.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4163",
@@ -13310,8 +13078,7 @@
       "close": 137.0,
       "change": 0.5,
       "changePercent": 0.37,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4166",
@@ -13319,8 +13086,7 @@
       "close": 24.4,
       "change": -0.35,
       "changePercent": -1.41,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4167",
@@ -13328,8 +13094,7 @@
       "close": 19.55,
       "change": -0.05,
       "changePercent": -0.26,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4168",
@@ -13337,17 +13102,15 @@
       "close": 22.4,
       "change": 0.25,
       "changePercent": 1.13,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4171",
       "name": "瑞基",
       "close": 16.35,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "4173",
@@ -13355,8 +13118,7 @@
       "close": 17.4,
       "change": 0.15,
       "changePercent": 0.87,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4174",
@@ -13364,8 +13126,7 @@
       "close": 42.0,
       "change": -1.1,
       "changePercent": -2.55,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4183",
@@ -13373,8 +13134,7 @@
       "close": 14.35,
       "change": -0.1,
       "changePercent": -0.69,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4188",
@@ -13382,8 +13142,7 @@
       "close": 14.1,
       "change": -0.2,
       "changePercent": -1.4,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4198",
@@ -13391,8 +13150,7 @@
       "close": 49.0,
       "change": -0.25,
       "changePercent": -0.51,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4205",
@@ -13400,8 +13158,7 @@
       "close": 68.4,
       "change": -0.4,
       "changePercent": -0.58,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4207",
@@ -13409,8 +13166,7 @@
       "close": 19.4,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4303",
@@ -13418,8 +13174,7 @@
       "close": 33.35,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4304",
@@ -13427,8 +13182,7 @@
       "close": 17.3,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4401",
@@ -13436,8 +13190,7 @@
       "close": 13.95,
       "change": 0.05,
       "changePercent": 0.36,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4402",
@@ -13445,8 +13198,7 @@
       "close": 14.15,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4406",
@@ -13454,8 +13206,7 @@
       "close": 10.25,
       "change": 0.05,
       "changePercent": 0.49,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4413",
@@ -13463,8 +13214,7 @@
       "close": 20.3,
       "change": -0.05,
       "changePercent": -0.25,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4416",
@@ -13472,8 +13222,7 @@
       "close": 12.8,
       "change": -0.3,
       "changePercent": -2.29,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4417",
@@ -13481,8 +13230,15 @@
       "close": 49.35,
       "change": -0.25,
       "changePercent": -0.5,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
+    },
+    {
+      "code": "4419",
+      "name": "皇家美食",
+      "close": 49.95,
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "4420",
@@ -13490,8 +13246,7 @@
       "close": 35.5,
       "change": -0.15,
       "changePercent": -0.42,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4430",
@@ -13499,8 +13254,7 @@
       "close": 17.7,
       "change": -0.1,
       "changePercent": -0.56,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4432",
@@ -13508,8 +13262,7 @@
       "close": 15.55,
       "change": 0.2,
       "changePercent": 1.3,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4433",
@@ -13517,8 +13270,7 @@
       "close": 18.0,
       "change": -0.05,
       "changePercent": -0.28,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4442",
@@ -13526,8 +13278,7 @@
       "close": 53.6,
       "change": -0.4,
       "changePercent": -0.74,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4502",
@@ -13535,8 +13286,7 @@
       "close": 15.85,
       "change": 0.05,
       "changePercent": 0.32,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4503",
@@ -13544,8 +13294,7 @@
       "close": 24.1,
       "change": -0.05,
       "changePercent": -0.21,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4506",
@@ -13553,8 +13302,7 @@
       "close": 117.5,
       "change": -0.5,
       "changePercent": -0.42,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4510",
@@ -13562,8 +13310,7 @@
       "close": 43.6,
       "change": 0.15,
       "changePercent": 0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4513",
@@ -13571,8 +13318,7 @@
       "close": 16.3,
       "change": -0.1,
       "changePercent": -0.61,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4523",
@@ -13580,8 +13326,7 @@
       "close": 23.9,
       "change": -0.1,
       "changePercent": -0.42,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4528",
@@ -13589,8 +13334,7 @@
       "close": 14.8,
       "change": -0.05,
       "changePercent": -0.34,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4529",
@@ -13598,8 +13342,7 @@
       "close": 3.34,
       "change": 0.01,
       "changePercent": 0.3,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4530",
@@ -13607,8 +13350,7 @@
       "close": 24.0,
       "change": -0.1,
       "changePercent": -0.41,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4533",
@@ -13616,8 +13358,7 @@
       "close": 25.6,
       "change": 0.05,
       "changePercent": 0.2,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4534",
@@ -13625,8 +13366,7 @@
       "close": 30.0,
       "change": -0.7,
       "changePercent": -2.28,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4535",
@@ -13634,8 +13374,7 @@
       "close": 26.75,
       "change": -0.25,
       "changePercent": -0.93,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4538",
@@ -13643,8 +13382,7 @@
       "close": 17.3,
       "change": -0.15,
       "changePercent": -0.86,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4541",
@@ -13652,8 +13390,7 @@
       "close": 61.1,
       "change": 1.0,
       "changePercent": 1.66,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4542",
@@ -13661,8 +13398,7 @@
       "close": 336.5,
       "change": 8.5,
       "changePercent": 2.59,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4543",
@@ -13670,8 +13406,7 @@
       "close": 30.25,
       "change": 0.1,
       "changePercent": 0.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4549",
@@ -13679,8 +13414,7 @@
       "close": 97.3,
       "change": 0.4,
       "changePercent": 0.41,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4550",
@@ -13688,8 +13422,7 @@
       "close": 24.15,
       "change": -0.3,
       "changePercent": -1.23,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4554",
@@ -13697,8 +13430,7 @@
       "close": 28.1,
       "change": -0.05,
       "changePercent": -0.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4556",
@@ -13706,8 +13438,7 @@
       "close": 114.5,
       "change": 3.0,
       "changePercent": 2.69,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4558",
@@ -13715,8 +13446,7 @@
       "close": 16.8,
       "change": -0.05,
       "changePercent": -0.3,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4561",
@@ -13724,8 +13454,7 @@
       "close": 43.6,
       "change": 1.1,
       "changePercent": 2.59,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4563",
@@ -13733,8 +13462,7 @@
       "close": 53.2,
       "change": -0.3,
       "changePercent": -0.56,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4568",
@@ -13742,8 +13470,7 @@
       "close": 39.0,
       "change": -0.05,
       "changePercent": -0.13,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4577",
@@ -13751,8 +13478,7 @@
       "close": 92.0,
       "change": 1.6,
       "changePercent": 1.77,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4580",
@@ -13760,8 +13486,7 @@
       "close": 82.2,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4584",
@@ -13769,8 +13494,7 @@
       "close": 38.0,
       "change": 0.5,
       "changePercent": 1.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4609",
@@ -13778,8 +13502,7 @@
       "close": 4.76,
       "change": 0.27,
       "changePercent": 6.01,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4702",
@@ -13787,8 +13510,7 @@
       "close": 9.29,
       "change": 0.01,
       "changePercent": 0.11,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4706",
@@ -13796,8 +13518,7 @@
       "close": 34.7,
       "change": 0.05,
       "changePercent": 0.14,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4707",
@@ -13805,8 +13526,7 @@
       "close": 30.15,
       "change": 1.45,
       "changePercent": 5.05,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4711",
@@ -13814,8 +13534,7 @@
       "close": 16.4,
       "change": 0.25,
       "changePercent": 1.55,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4714",
@@ -13823,8 +13542,7 @@
       "close": 12.35,
       "change": 0.5,
       "changePercent": 4.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4716",
@@ -13832,8 +13550,7 @@
       "close": 18.95,
       "change": 1.7,
       "changePercent": 9.86,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4721",
@@ -13841,8 +13558,7 @@
       "close": 81.2,
       "change": 0.6,
       "changePercent": 0.74,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4726",
@@ -13850,8 +13566,7 @@
       "close": 23.2,
       "change": -0.2,
       "changePercent": -0.85,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4728",
@@ -13859,8 +13574,7 @@
       "close": 394.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4729",
@@ -13868,8 +13582,7 @@
       "close": 19.7,
       "change": -0.7,
       "changePercent": -3.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4735",
@@ -13877,8 +13590,7 @@
       "close": 36.0,
       "change": -0.05,
       "changePercent": -0.14,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4741",
@@ -13886,8 +13598,7 @@
       "close": 41.65,
       "change": 1.35,
       "changePercent": 3.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4743",
@@ -13895,8 +13606,7 @@
       "close": 47.15,
       "change": 1.3,
       "changePercent": 2.84,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4744",
@@ -13904,8 +13614,7 @@
       "close": 28.3,
       "change": -0.4,
       "changePercent": -1.39,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4745",
@@ -13913,8 +13622,7 @@
       "close": 12.2,
       "change": 0.05,
       "changePercent": 0.41,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4747",
@@ -13922,8 +13630,7 @@
       "close": 22.95,
       "change": -0.15,
       "changePercent": -0.65,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4749",
@@ -13931,8 +13638,7 @@
       "close": 785.0,
       "change": 28.0,
       "changePercent": 3.7,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4754",
@@ -13940,8 +13646,7 @@
       "close": 38.15,
       "change": 0.3,
       "changePercent": 0.79,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4760",
@@ -13949,8 +13654,7 @@
       "close": 317.0,
       "change": 28.5,
       "changePercent": 9.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4767",
@@ -13958,8 +13662,7 @@
       "close": 28.7,
       "change": 0.6,
       "changePercent": 2.14,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4768",
@@ -13967,8 +13670,7 @@
       "close": 374.5,
       "change": 7.5,
       "changePercent": 2.04,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4772",
@@ -13976,8 +13678,15 @@
       "close": 281.5,
       "change": 17.0,
       "changePercent": 6.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
+    },
+    {
+      "code": "4806",
+      "name": "桂田文創",
+      "close": 13.4,
+      "change": -1.45,
+      "changePercent": -9.76,
+      "market": "上櫃"
     },
     {
       "code": "4903",
@@ -13985,8 +13694,7 @@
       "close": 45.3,
       "change": 0.95,
       "changePercent": 2.14,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4905",
@@ -13994,8 +13702,7 @@
       "close": 92.5,
       "change": 8.4,
       "changePercent": 9.99,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4907",
@@ -14003,8 +13710,7 @@
       "close": 44.5,
       "change": -0.55,
       "changePercent": -1.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4908",
@@ -14012,8 +13718,7 @@
       "close": 224.5,
       "change": 20.0,
       "changePercent": 9.78,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4909",
@@ -14021,8 +13726,7 @@
       "close": 36.85,
       "change": 0.7,
       "changePercent": 1.94,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4911",
@@ -14030,8 +13734,7 @@
       "close": 28.4,
       "change": 0.2,
       "changePercent": 0.71,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4923",
@@ -14039,8 +13742,7 @@
       "close": 66.6,
       "change": 1.4,
       "changePercent": 2.15,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4924",
@@ -14048,8 +13750,7 @@
       "close": 15.9,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4931",
@@ -14057,8 +13758,7 @@
       "close": 252.0,
       "change": 3.5,
       "changePercent": 1.41,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4933",
@@ -14066,8 +13766,7 @@
       "close": 53.9,
       "change": -0.3,
       "changePercent": -0.55,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4939",
@@ -14075,8 +13774,7 @@
       "close": 79.2,
       "change": 0.3,
       "changePercent": 0.38,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4946",
@@ -14084,8 +13782,7 @@
       "close": 101.0,
       "change": 0.5,
       "changePercent": 0.5,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4950",
@@ -14093,8 +13790,7 @@
       "close": 16.1,
       "change": -0.1,
       "changePercent": -0.62,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4951",
@@ -14102,8 +13798,7 @@
       "close": 90.9,
       "change": 0.6,
       "changePercent": 0.66,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4953",
@@ -14111,8 +13806,7 @@
       "close": 117.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4966",
@@ -14120,8 +13814,7 @@
       "close": 574.0,
       "change": 2.0,
       "changePercent": 0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4971",
@@ -14129,8 +13822,7 @@
       "close": 587.0,
       "change": 53.0,
       "changePercent": 9.93,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4972",
@@ -14138,8 +13830,7 @@
       "close": 16.2,
       "change": -0.1,
       "changePercent": -0.61,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4973",
@@ -14147,8 +13838,7 @@
       "close": 138.5,
       "change": 1.5,
       "changePercent": 1.09,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4974",
@@ -14156,8 +13846,7 @@
       "close": 71.2,
       "change": -0.1,
       "changePercent": -0.14,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4979",
@@ -14165,8 +13854,7 @@
       "close": 585.0,
       "change": 28.0,
       "changePercent": 5.03,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4991",
@@ -14174,8 +13862,7 @@
       "close": 534.0,
       "change": 48.5,
       "changePercent": 9.99,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "4995",
@@ -14183,8 +13870,7 @@
       "close": 48.8,
       "change": -1.2,
       "changePercent": -2.4,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5009",
@@ -14192,8 +13878,7 @@
       "close": 33.1,
       "change": 0.3,
       "changePercent": 0.91,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5011",
@@ -14201,8 +13886,7 @@
       "close": 20.45,
       "change": 1.85,
       "changePercent": 9.95,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5013",
@@ -14210,8 +13894,7 @@
       "close": 46.85,
       "change": 4.25,
       "changePercent": 9.98,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5014",
@@ -14219,8 +13902,7 @@
       "close": 10.1,
       "change": -0.2,
       "changePercent": -1.94,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5015",
@@ -14228,8 +13910,7 @@
       "close": 23.95,
       "change": 2.15,
       "changePercent": 9.86,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5016",
@@ -14237,8 +13918,7 @@
       "close": 28.6,
       "change": 0.5,
       "changePercent": 1.78,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5201",
@@ -14246,8 +13926,7 @@
       "close": 28.0,
       "change": -1.2,
       "changePercent": -4.11,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5202",
@@ -14255,8 +13934,7 @@
       "close": 14.1,
       "change": -0.05,
       "changePercent": -0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5205",
@@ -14264,8 +13942,7 @@
       "close": 22.8,
       "change": 2.05,
       "changePercent": 9.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5206",
@@ -14273,8 +13950,7 @@
       "close": 22.85,
       "change": 0.05,
       "changePercent": 0.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5209",
@@ -14282,8 +13958,7 @@
       "close": 176.0,
       "change": 4.5,
       "changePercent": 2.62,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5210",
@@ -14291,8 +13966,7 @@
       "close": 30.3,
       "change": 0.15,
       "changePercent": 0.5,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5211",
@@ -14300,8 +13974,7 @@
       "close": 21.35,
       "change": 0.25,
       "changePercent": 1.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5212",
@@ -14309,8 +13982,7 @@
       "close": 49.3,
       "change": 0.45,
       "changePercent": 0.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5213",
@@ -14318,8 +13990,7 @@
       "close": 20.55,
       "change": -0.1,
       "changePercent": -0.48,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5220",
@@ -14327,8 +13998,7 @@
       "close": 23.1,
       "change": -0.1,
       "changePercent": -0.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5223",
@@ -14336,8 +14006,7 @@
       "close": 22.95,
       "change": -0.45,
       "changePercent": -1.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5227",
@@ -14345,8 +14014,7 @@
       "close": 30.55,
       "change": -0.4,
       "changePercent": -1.29,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5228",
@@ -14354,8 +14022,7 @@
       "close": 48.05,
       "change": 4.35,
       "changePercent": 9.95,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5230",
@@ -14363,8 +14030,7 @@
       "close": 22.25,
       "change": -0.4,
       "changePercent": -1.77,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5245",
@@ -14372,8 +14038,7 @@
       "close": 20.75,
       "change": -0.05,
       "changePercent": -0.24,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5251",
@@ -14381,8 +14046,7 @@
       "close": 29.95,
       "change": 0.25,
       "changePercent": 0.84,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5263",
@@ -14390,8 +14054,7 @@
       "close": 90.5,
       "change": -0.2,
       "changePercent": -0.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5272",
@@ -14399,8 +14062,7 @@
       "close": 17.85,
       "change": -0.15,
       "changePercent": -0.83,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5274",
@@ -14408,8 +14070,7 @@
       "close": 18840.0,
       "change": -200.0,
       "changePercent": -1.05,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5276",
@@ -14417,8 +14078,7 @@
       "close": 17.85,
       "change": 0.55,
       "changePercent": 3.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5278",
@@ -14426,8 +14086,7 @@
       "close": 23.7,
       "change": 0.2,
       "changePercent": 0.85,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5287",
@@ -14435,8 +14094,7 @@
       "close": 137.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5289",
@@ -14444,8 +14102,7 @@
       "close": 1295.0,
       "change": 5.0,
       "changePercent": 0.39,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5291",
@@ -14453,8 +14110,7 @@
       "close": 62.0,
       "change": 0.9,
       "changePercent": 1.47,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5299",
@@ -14462,8 +14118,7 @@
       "close": 104.5,
       "change": 1.0,
       "changePercent": 0.97,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5302",
@@ -14471,8 +14126,7 @@
       "close": 10.05,
       "change": 0.19,
       "changePercent": 1.93,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5309",
@@ -14480,8 +14134,7 @@
       "close": 65.7,
       "change": 2.9,
       "changePercent": 4.62,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5310",
@@ -14489,8 +14142,7 @@
       "close": 29.6,
       "change": 2.4,
       "changePercent": 8.82,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5312",
@@ -14498,8 +14150,7 @@
       "close": 89.7,
       "change": 0.2,
       "changePercent": 0.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5314",
@@ -14507,8 +14158,7 @@
       "close": 29.9,
       "change": -0.7,
       "changePercent": -2.29,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5315",
@@ -14516,8 +14166,7 @@
       "close": 18.85,
       "change": -0.05,
       "changePercent": -0.26,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5321",
@@ -14525,8 +14174,7 @@
       "close": 68.6,
       "change": -1.7,
       "changePercent": -2.42,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5324",
@@ -14534,8 +14182,7 @@
       "close": 12.45,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5328",
@@ -14543,8 +14190,7 @@
       "close": 59.1,
       "change": 0.7,
       "changePercent": 1.2,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5340",
@@ -14552,8 +14198,7 @@
       "close": 83.2,
       "change": 2.8,
       "changePercent": 3.48,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5344",
@@ -14561,8 +14206,7 @@
       "close": 13.65,
       "change": 0.2,
       "changePercent": 1.49,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5345",
@@ -14570,8 +14214,7 @@
       "close": 21.15,
       "change": -0.15,
       "changePercent": -0.7,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5347",
@@ -14579,17 +14222,15 @@
       "close": 187.0,
       "change": 2.5,
       "changePercent": 1.36,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5348",
       "name": "正能量智能",
       "close": 16.35,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "5351",
@@ -14597,8 +14238,7 @@
       "close": 116.0,
       "change": 6.5,
       "changePercent": 5.94,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5353",
@@ -14606,8 +14246,7 @@
       "close": 28.65,
       "change": 0.15,
       "changePercent": 0.53,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5355",
@@ -14615,8 +14254,7 @@
       "close": 7.4,
       "change": 0.3,
       "changePercent": 4.23,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5356",
@@ -14624,8 +14262,7 @@
       "close": 25.75,
       "change": -0.15,
       "changePercent": -0.58,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5364",
@@ -14633,8 +14270,7 @@
       "close": 8.31,
       "change": -0.07,
       "changePercent": -0.84,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5381",
@@ -14642,8 +14278,7 @@
       "close": 23.35,
       "change": 0.1,
       "changePercent": 0.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5386",
@@ -14651,8 +14286,7 @@
       "close": 292.5,
       "change": 4.0,
       "changePercent": 1.39,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5392",
@@ -14660,8 +14294,7 @@
       "close": 40.05,
       "change": 0.15,
       "changePercent": 0.38,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5398",
@@ -14669,8 +14302,7 @@
       "close": 13.65,
       "change": -0.15,
       "changePercent": -1.09,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5403",
@@ -14678,8 +14310,7 @@
       "close": 92.7,
       "change": -0.3,
       "changePercent": -0.32,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5410",
@@ -14687,8 +14318,7 @@
       "close": 33.1,
       "change": 0.2,
       "changePercent": 0.61,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5425",
@@ -14696,8 +14326,7 @@
       "close": 102.0,
       "change": 4.5,
       "changePercent": 4.62,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5426",
@@ -14705,8 +14334,7 @@
       "close": 29.65,
       "change": 1.05,
       "changePercent": 3.67,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5432",
@@ -14714,8 +14342,7 @@
       "close": 164.5,
       "change": 6.0,
       "changePercent": 3.79,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5438",
@@ -14723,8 +14350,7 @@
       "close": 17.35,
       "change": 0.1,
       "changePercent": 0.58,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5439",
@@ -14732,8 +14358,7 @@
       "close": 253.0,
       "change": 2.0,
       "changePercent": 0.8,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5443",
@@ -14741,17 +14366,15 @@
       "close": 113.5,
       "change": 1.5,
       "changePercent": 1.34,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5450",
       "name": "南良",
       "close": 14.6,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "5452",
@@ -14759,8 +14382,7 @@
       "close": 27.95,
       "change": 0.5,
       "changePercent": 1.82,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5457",
@@ -14768,8 +14390,7 @@
       "close": 24.4,
       "change": 0.5,
       "changePercent": 2.09,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5460",
@@ -14777,8 +14398,7 @@
       "close": 17.4,
       "change": 0.15,
       "changePercent": 0.87,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5464",
@@ -14786,8 +14406,7 @@
       "close": 90.7,
       "change": -1.8,
       "changePercent": -1.95,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5465",
@@ -14795,8 +14414,7 @@
       "close": 33.1,
       "change": -0.75,
       "changePercent": -2.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5468",
@@ -14804,8 +14422,7 @@
       "close": 25.2,
       "change": -0.25,
       "changePercent": -0.98,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5474",
@@ -14813,8 +14430,7 @@
       "close": 161.5,
       "change": -3.5,
       "changePercent": -2.12,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5475",
@@ -14822,8 +14438,7 @@
       "close": 180.5,
       "change": 2.5,
       "changePercent": 1.4,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5478",
@@ -14831,8 +14446,7 @@
       "close": 97.6,
       "change": 0.1,
       "changePercent": 0.1,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5481",
@@ -14840,8 +14454,7 @@
       "close": 21.85,
       "change": -0.25,
       "changePercent": -1.13,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5483",
@@ -14849,8 +14462,7 @@
       "close": 221.5,
       "change": 10.0,
       "changePercent": 4.73,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5487",
@@ -14858,8 +14470,7 @@
       "close": 29.3,
       "change": 0.6,
       "changePercent": 2.09,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5488",
@@ -14867,8 +14478,7 @@
       "close": 12.3,
       "change": 0.15,
       "changePercent": 1.23,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5489",
@@ -14876,8 +14486,7 @@
       "close": 42.3,
       "change": -0.05,
       "changePercent": -0.12,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5490",
@@ -14885,8 +14494,7 @@
       "close": 25.9,
       "change": 0.3,
       "changePercent": 1.17,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5493",
@@ -14894,8 +14502,7 @@
       "close": 91.3,
       "change": 0.6,
       "changePercent": 0.66,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5498",
@@ -14903,8 +14510,7 @@
       "close": 55.6,
       "change": 5.0,
       "changePercent": 9.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5508",
@@ -14912,8 +14518,7 @@
       "close": 53.7,
       "change": 0.3,
       "changePercent": 0.56,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5511",
@@ -14921,8 +14526,7 @@
       "close": 69.0,
       "change": -0.3,
       "changePercent": -0.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5512",
@@ -14930,8 +14534,7 @@
       "close": 7.69,
       "change": -0.01,
       "changePercent": -0.13,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5514",
@@ -14939,8 +14542,7 @@
       "close": 15.15,
       "change": 0.05,
       "changePercent": 0.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5516",
@@ -14948,8 +14550,7 @@
       "close": 11.75,
       "change": -0.25,
       "changePercent": -2.08,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5520",
@@ -14957,8 +14558,7 @@
       "close": 83.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5523",
@@ -14966,8 +14566,7 @@
       "close": 30.3,
       "change": -0.05,
       "changePercent": -0.16,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5529",
@@ -14975,8 +14574,7 @@
       "close": 26.05,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5530",
@@ -14984,8 +14582,7 @@
       "close": 48.7,
       "change": -0.05,
       "changePercent": -0.1,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5536",
@@ -14993,8 +14590,7 @@
       "close": 956.0,
       "change": -3.0,
       "changePercent": -0.31,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5543",
@@ -15002,8 +14598,7 @@
       "close": 27.5,
       "change": 0.5,
       "changePercent": 1.85,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5547",
@@ -15011,8 +14606,7 @@
       "close": 20.2,
       "change": 0.05,
       "changePercent": 0.25,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5548",
@@ -15020,8 +14614,7 @@
       "close": 20.05,
       "change": 0.05,
       "changePercent": 0.25,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5601",
@@ -15029,8 +14622,7 @@
       "close": 30.55,
       "change": 1.65,
       "changePercent": 5.71,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5603",
@@ -15038,8 +14630,7 @@
       "close": 13.55,
       "change": 0.05,
       "changePercent": 0.37,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5604",
@@ -15047,8 +14638,7 @@
       "close": 31.4,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5609",
@@ -15056,17 +14646,15 @@
       "close": 78.0,
       "change": 0.1,
       "changePercent": 0.13,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5701",
       "name": "劍湖山",
       "close": 4.07,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "5704",
@@ -15074,8 +14662,7 @@
       "close": 22.45,
       "change": -0.15,
       "changePercent": -0.66,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5864",
@@ -15083,8 +14670,7 @@
       "close": 39.0,
       "change": 0.75,
       "changePercent": 1.96,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5878",
@@ -15092,8 +14678,7 @@
       "close": 37.8,
       "change": -0.05,
       "changePercent": -0.13,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5902",
@@ -15101,8 +14686,7 @@
       "close": 34.2,
       "change": -0.1,
       "changePercent": -0.29,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5903",
@@ -15110,8 +14694,7 @@
       "close": 186.0,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5904",
@@ -15119,8 +14702,7 @@
       "close": 68.4,
       "change": -0.7,
       "changePercent": -1.01,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "5905",
@@ -15128,8 +14710,7 @@
       "close": 7.33,
       "change": -0.07,
       "changePercent": -0.95,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7402",
@@ -15137,8 +14718,7 @@
       "close": 101.0,
       "change": 0.5,
       "changePercent": 0.5,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7547",
@@ -15146,8 +14726,7 @@
       "close": 64.1,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7556",
@@ -15155,8 +14734,7 @@
       "close": 273.0,
       "change": 10.5,
       "changePercent": 4.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7642",
@@ -15164,8 +14742,7 @@
       "close": 68.8,
       "change": 0.6,
       "changePercent": 0.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7703",
@@ -15173,8 +14750,7 @@
       "close": 205.0,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7704",
@@ -15182,8 +14758,7 @@
       "close": 61.0,
       "change": -0.2,
       "changePercent": -0.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7708",
@@ -15191,8 +14766,7 @@
       "close": 91.8,
       "change": -0.4,
       "changePercent": -0.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7709",
@@ -15200,8 +14774,7 @@
       "close": 85.3,
       "change": -0.5,
       "changePercent": -0.58,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7712",
@@ -15209,8 +14782,7 @@
       "close": 170.5,
       "change": 1.5,
       "changePercent": 0.89,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7714",
@@ -15218,8 +14790,7 @@
       "close": 171.0,
       "change": 1.5,
       "changePercent": 0.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7715",
@@ -15227,8 +14798,7 @@
       "close": 28.25,
       "change": -0.1,
       "changePercent": -0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7716",
@@ -15236,8 +14806,7 @@
       "close": 24.45,
       "change": 0.5,
       "changePercent": 2.09,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7717",
@@ -15245,8 +14814,7 @@
       "close": 561.0,
       "change": 10.0,
       "changePercent": 1.81,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7718",
@@ -15254,8 +14822,7 @@
       "close": 45.85,
       "change": -0.15,
       "changePercent": -0.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7723",
@@ -15263,8 +14830,7 @@
       "close": 18.25,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7728",
@@ -15272,8 +14838,7 @@
       "close": 645.0,
       "change": -4.0,
       "changePercent": -0.62,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7734",
@@ -15281,8 +14846,7 @@
       "close": 2825.0,
       "change": 30.0,
       "changePercent": 1.07,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7738",
@@ -15290,8 +14854,7 @@
       "close": 155.0,
       "change": -1.0,
       "changePercent": -0.64,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7743",
@@ -15299,8 +14862,7 @@
       "close": 25.25,
       "change": 0.25,
       "changePercent": 1.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7744",
@@ -15308,8 +14870,7 @@
       "close": 527.0,
       "change": -10.0,
       "changePercent": -1.86,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7747",
@@ -15317,8 +14878,7 @@
       "close": 112.0,
       "change": 0.5,
       "changePercent": 0.45,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7751",
@@ -15326,17 +14886,15 @@
       "close": 1590.0,
       "change": -40.0,
       "changePercent": -2.45,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7753",
       "name": "星亞",
       "close": 35.7,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "7757",
@@ -15344,8 +14902,15 @@
       "close": 89.1,
       "change": -0.1,
       "changePercent": -0.11,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
+    },
+    {
+      "code": "7767",
+      "name": "仁大資訊",
+      "close": 46.1,
+      "change": -0.2,
+      "changePercent": -0.43,
+      "market": "上櫃"
     },
     {
       "code": "7770",
@@ -15353,8 +14918,7 @@
       "close": 43.35,
       "change": 1.9,
       "changePercent": 4.58,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7772",
@@ -15362,8 +14926,7 @@
       "close": 186.0,
       "change": 2.0,
       "changePercent": 1.09,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7777",
@@ -15371,8 +14934,7 @@
       "close": 39.2,
       "change": 0.95,
       "changePercent": 2.48,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7782",
@@ -15380,8 +14942,7 @@
       "close": 25.15,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7792",
@@ -15389,8 +14950,7 @@
       "close": 425.0,
       "change": 4.0,
       "changePercent": 0.95,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7794",
@@ -15398,8 +14958,7 @@
       "close": 30.2,
       "change": -0.1,
       "changePercent": -0.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7805",
@@ -15407,8 +14966,7 @@
       "close": 489.5,
       "change": -0.5,
       "changePercent": -0.1,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7810",
@@ -15416,8 +14974,7 @@
       "close": 245.0,
       "change": 10.0,
       "changePercent": 4.26,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7811",
@@ -15425,8 +14982,7 @@
       "close": 72.5,
       "change": -1.0,
       "changePercent": -1.36,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7814",
@@ -15434,17 +14990,15 @@
       "close": 28.2,
       "change": -0.2,
       "changePercent": -0.7,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7819",
       "name": "精誠金融",
       "close": 33.7,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "7820",
@@ -15452,8 +15006,7 @@
       "close": 112.0,
       "change": 2.0,
       "changePercent": 1.82,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7825",
@@ -15461,8 +15014,7 @@
       "close": 84.9,
       "change": -0.7,
       "changePercent": -0.82,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7828",
@@ -15470,8 +15022,7 @@
       "close": 1850.0,
       "change": -25.0,
       "changePercent": -1.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7839",
@@ -15479,8 +15030,7 @@
       "close": 42.95,
       "change": -0.05,
       "changePercent": -0.12,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7842",
@@ -15488,8 +15038,7 @@
       "close": 96.8,
       "change": -0.9,
       "changePercent": -0.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "7856",
@@ -15497,8 +15046,7 @@
       "close": 4195.0,
       "change": -105.0,
       "changePercent": -2.44,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8024",
@@ -15506,8 +15054,7 @@
       "close": 12.5,
       "change": 0.15,
       "changePercent": 1.21,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8027",
@@ -15515,8 +15062,7 @@
       "close": 213.5,
       "change": 4.0,
       "changePercent": 1.91,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8032",
@@ -15524,8 +15070,7 @@
       "close": 36.1,
       "change": -0.1,
       "changePercent": -0.28,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8034",
@@ -15533,8 +15078,7 @@
       "close": 19.85,
       "change": -0.1,
       "changePercent": -0.5,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8038",
@@ -15542,8 +15086,7 @@
       "close": 34.8,
       "change": 0.95,
       "changePercent": 2.81,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8040",
@@ -15551,8 +15094,7 @@
       "close": 95.7,
       "change": 0.3,
       "changePercent": 0.31,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8042",
@@ -15560,8 +15102,7 @@
       "close": 121.0,
       "change": 3.0,
       "changePercent": 2.54,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8043",
@@ -15569,8 +15110,7 @@
       "close": 142.0,
       "change": 3.5,
       "changePercent": 2.53,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8044",
@@ -15578,8 +15118,7 @@
       "close": 24.35,
       "change": 0.15,
       "changePercent": 0.62,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8047",
@@ -15587,8 +15126,7 @@
       "close": 51.6,
       "change": 0.6,
       "changePercent": 1.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8048",
@@ -15596,8 +15134,7 @@
       "close": 51.3,
       "change": 0.5,
       "changePercent": 0.98,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8049",
@@ -15605,8 +15142,7 @@
       "close": 24.85,
       "change": 0.05,
       "changePercent": 0.2,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8050",
@@ -15614,8 +15150,7 @@
       "close": 62.2,
       "change": -1.2,
       "changePercent": -1.89,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8054",
@@ -15623,8 +15158,7 @@
       "close": 89.5,
       "change": -0.3,
       "changePercent": -0.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8059",
@@ -15632,8 +15166,7 @@
       "close": 18.05,
       "change": 0.5,
       "changePercent": 2.85,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8064",
@@ -15641,8 +15174,7 @@
       "close": 141.5,
       "change": -2.0,
       "changePercent": -1.39,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8066",
@@ -15650,8 +15182,7 @@
       "close": 14.95,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8067",
@@ -15659,8 +15190,7 @@
       "close": 11.8,
       "change": -0.2,
       "changePercent": -1.67,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8068",
@@ -15668,8 +15198,7 @@
       "close": 17.75,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8069",
@@ -15677,8 +15206,7 @@
       "close": 143.5,
       "change": -0.5,
       "changePercent": -0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8071",
@@ -15686,8 +15214,7 @@
       "close": 22.4,
       "change": 0.4,
       "changePercent": 1.82,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8074",
@@ -15695,8 +15222,7 @@
       "close": 56.9,
       "change": 5.1,
       "changePercent": 9.85,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8076",
@@ -15704,8 +15230,7 @@
       "close": 21.85,
       "change": 0.25,
       "changePercent": 1.16,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8077",
@@ -15713,8 +15238,7 @@
       "close": 41.5,
       "change": -0.3,
       "changePercent": -0.72,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8083",
@@ -15722,8 +15246,7 @@
       "close": 157.5,
       "change": 1.0,
       "changePercent": 0.64,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8084",
@@ -15731,8 +15254,7 @@
       "close": 21.8,
       "change": -2.4,
       "changePercent": -9.92,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8085",
@@ -15740,8 +15262,7 @@
       "close": 14.7,
       "change": 0.1,
       "changePercent": 0.68,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8086",
@@ -15749,8 +15270,7 @@
       "close": 120.0,
       "change": 5.0,
       "changePercent": 4.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8087",
@@ -15758,8 +15278,7 @@
       "close": 24.0,
       "change": 0.4,
       "changePercent": 1.69,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8088",
@@ -15767,17 +15286,15 @@
       "close": 44.45,
       "change": 0.8,
       "changePercent": 1.83,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8089",
       "name": "康全電訊",
       "close": 19.6,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "8091",
@@ -15785,8 +15302,7 @@
       "close": 237.0,
       "change": 21.5,
       "changePercent": 9.98,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8092",
@@ -15794,8 +15310,7 @@
       "close": 12.3,
       "change": -0.25,
       "changePercent": -1.99,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8093",
@@ -15803,8 +15318,7 @@
       "close": 25.25,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8096",
@@ -15812,8 +15326,7 @@
       "close": 89.0,
       "change": 1.5,
       "changePercent": 1.71,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8097",
@@ -15821,8 +15334,7 @@
       "close": 48.8,
       "change": 0.25,
       "changePercent": 0.51,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8099",
@@ -15830,8 +15342,7 @@
       "close": 60.4,
       "change": 0.1,
       "changePercent": 0.17,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8102",
@@ -15839,8 +15350,7 @@
       "close": 59.6,
       "change": 0.6,
       "changePercent": 1.02,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8107",
@@ -15848,8 +15358,7 @@
       "close": 11.95,
       "change": 0.15,
       "changePercent": 1.27,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8109",
@@ -15857,8 +15366,7 @@
       "close": 146.5,
       "change": 2.0,
       "changePercent": 1.38,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8111",
@@ -15866,8 +15374,7 @@
       "close": 85.8,
       "change": 7.8,
       "changePercent": 10.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8121",
@@ -15875,8 +15382,7 @@
       "close": 34.1,
       "change": -0.55,
       "changePercent": -1.59,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8147",
@@ -15884,8 +15390,7 @@
       "close": 143.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8155",
@@ -15893,8 +15398,7 @@
       "close": 323.0,
       "change": 9.5,
       "changePercent": 3.03,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8171",
@@ -15902,8 +15406,7 @@
       "close": 20.65,
       "change": -0.05,
       "changePercent": -0.24,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8176",
@@ -15911,8 +15414,7 @@
       "close": 9.77,
       "change": 0.06,
       "changePercent": 0.62,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8182",
@@ -15920,8 +15422,7 @@
       "close": 46.4,
       "change": 2.15,
       "changePercent": 4.86,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8227",
@@ -15929,8 +15430,7 @@
       "close": 370.0,
       "change": 6.5,
       "changePercent": 1.79,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8234",
@@ -15938,8 +15438,7 @@
       "close": 63.3,
       "change": 0.3,
       "changePercent": 0.48,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8240",
@@ -15947,8 +15446,7 @@
       "close": 60.6,
       "change": 0.4,
       "changePercent": 0.66,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8255",
@@ -15956,8 +15454,7 @@
       "close": 153.0,
       "change": 3.5,
       "changePercent": 2.34,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8272",
@@ -15965,8 +15462,7 @@
       "close": 62.0,
       "change": -1.9,
       "changePercent": -2.97,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8277",
@@ -15974,8 +15470,7 @@
       "close": 15.2,
       "change": -0.3,
       "changePercent": -1.94,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8279",
@@ -15983,8 +15478,7 @@
       "close": 79.5,
       "change": -1.3,
       "changePercent": -1.61,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8284",
@@ -15992,8 +15486,7 @@
       "close": 67.8,
       "change": 0.2,
       "changePercent": 0.3,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8289",
@@ -16001,8 +15494,7 @@
       "close": 56.1,
       "change": 5.1,
       "changePercent": 10.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8291",
@@ -16010,8 +15502,7 @@
       "close": 28.6,
       "change": 0.25,
       "changePercent": 0.88,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8299",
@@ -16019,8 +15510,7 @@
       "close": 2095.0,
       "change": -15.0,
       "changePercent": -0.71,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8342",
@@ -16028,8 +15518,7 @@
       "close": 83.5,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8349",
@@ -16037,8 +15526,7 @@
       "close": 40.4,
       "change": -0.1,
       "changePercent": -0.25,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8354",
@@ -16046,8 +15534,7 @@
       "close": 16.75,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8358",
@@ -16055,8 +15542,7 @@
       "close": 519.0,
       "change": 14.0,
       "changePercent": 2.77,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8383",
@@ -16064,8 +15550,7 @@
       "close": 68.4,
       "change": 0.5,
       "changePercent": 0.74,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8390",
@@ -16073,8 +15558,7 @@
       "close": 90.5,
       "change": 0.2,
       "changePercent": 0.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8401",
@@ -16082,8 +15566,7 @@
       "close": 22.8,
       "change": 0.1,
       "changePercent": 0.44,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8403",
@@ -16091,8 +15574,7 @@
       "close": 18.9,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8409",
@@ -16100,8 +15582,7 @@
       "close": 18.05,
       "change": 0.05,
       "changePercent": 0.28,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8410",
@@ -16109,8 +15590,7 @@
       "close": 27.7,
       "change": -0.1,
       "changePercent": -0.36,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8415",
@@ -16118,8 +15598,7 @@
       "close": 35.25,
       "change": -0.3,
       "changePercent": -0.84,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8416",
@@ -16127,8 +15606,7 @@
       "close": 171.0,
       "change": 2.0,
       "changePercent": 1.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8421",
@@ -16136,8 +15614,7 @@
       "close": 13.0,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8423",
@@ -16145,8 +15622,15 @@
       "close": 18.0,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
+    },
+    {
+      "code": "8424",
+      "name": "惠普",
+      "close": 69.6,
+      "change": -0.7,
+      "changePercent": -1.0,
+      "market": "上櫃"
     },
     {
       "code": "8426",
@@ -16154,8 +15638,7 @@
       "close": 20.6,
       "change": -0.05,
       "changePercent": -0.24,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8431",
@@ -16163,8 +15646,7 @@
       "close": 64.1,
       "change": -0.6,
       "changePercent": -0.93,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8432",
@@ -16172,8 +15654,7 @@
       "close": 51.1,
       "change": 0.4,
       "changePercent": 0.79,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8433",
@@ -16181,8 +15662,7 @@
       "close": 52.8,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8435",
@@ -16190,8 +15670,7 @@
       "close": 53.2,
       "change": -0.1,
       "changePercent": -0.19,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8436",
@@ -16199,8 +15678,7 @@
       "close": 104.0,
       "change": -1.0,
       "changePercent": -0.95,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8437",
@@ -16208,8 +15686,7 @@
       "close": 10.5,
       "change": -0.1,
       "changePercent": -0.94,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8440",
@@ -16217,8 +15694,7 @@
       "close": 20.25,
       "change": 0.05,
       "changePercent": 0.25,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8446",
@@ -16226,8 +15702,7 @@
       "close": 84.5,
       "change": -0.4,
       "changePercent": -0.47,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8450",
@@ -16235,8 +15710,7 @@
       "close": 14.25,
       "change": -0.05,
       "changePercent": -0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8472",
@@ -16244,8 +15718,7 @@
       "close": 65.3,
       "change": -3.9,
       "changePercent": -5.64,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8477",
@@ -16253,8 +15726,7 @@
       "close": 14.05,
       "change": -0.15,
       "changePercent": -1.06,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8489",
@@ -16262,8 +15734,7 @@
       "close": 22.25,
       "change": -0.2,
       "changePercent": -0.89,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8906",
@@ -16271,8 +15742,7 @@
       "close": 28.5,
       "change": -0.45,
       "changePercent": -1.55,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8908",
@@ -16280,8 +15750,7 @@
       "close": 39.8,
       "change": -0.4,
       "changePercent": -1.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8916",
@@ -16289,8 +15758,15 @@
       "close": 40.95,
       "change": -0.05,
       "changePercent": -0.12,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
+    },
+    {
+      "code": "8921",
+      "name": "沈氏",
+      "close": 16.45,
+      "change": -0.3,
+      "changePercent": -1.79,
+      "market": "上櫃"
     },
     {
       "code": "8924",
@@ -16298,8 +15774,7 @@
       "close": 49.5,
       "change": -0.4,
       "changePercent": -0.8,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8927",
@@ -16307,8 +15782,7 @@
       "close": 19.15,
       "change": 0.05,
       "changePercent": 0.26,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8928",
@@ -16316,17 +15790,15 @@
       "close": 22.9,
       "change": -0.1,
       "changePercent": -0.43,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8929",
       "name": "富堡",
       "close": 13.1,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "8930",
@@ -16334,8 +15806,7 @@
       "close": 28.6,
       "change": -0.1,
       "changePercent": -0.35,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8931",
@@ -16343,8 +15814,7 @@
       "close": 42.85,
       "change": 0.2,
       "changePercent": 0.47,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8932",
@@ -16352,8 +15822,7 @@
       "close": 91.1,
       "change": -0.7,
       "changePercent": -0.76,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8933",
@@ -16361,8 +15830,7 @@
       "close": 4.59,
       "change": -0.01,
       "changePercent": -0.22,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8935",
@@ -16370,8 +15838,7 @@
       "close": 19.2,
       "change": -0.1,
       "changePercent": -0.52,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8936",
@@ -16379,8 +15846,7 @@
       "close": 52.3,
       "change": -0.4,
       "changePercent": -0.76,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8937",
@@ -16388,17 +15854,15 @@
       "close": 25.2,
       "change": -0.3,
       "changePercent": -1.18,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8938",
       "name": "明安",
       "close": 52.2,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     },
     {
       "code": "8941",
@@ -16406,8 +15870,7 @@
       "close": 44.0,
       "change": 0.05,
       "changePercent": 0.11,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "8942",
@@ -16415,8 +15878,7 @@
       "close": 40.05,
       "change": -0.1,
       "changePercent": -0.25,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "9949",
@@ -16424,8 +15886,7 @@
       "close": 24.3,
       "change": 0.0,
       "changePercent": 0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "9950",
@@ -16433,8 +15894,7 @@
       "close": 10.2,
       "change": -0.05,
       "changePercent": -0.49,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "9951",
@@ -16442,8 +15902,7 @@
       "close": 46.9,
       "change": -0.1,
       "changePercent": -0.21,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "9960",
@@ -16451,27 +15910,22 @@
       "close": 38.0,
       "change": 0.5,
       "changePercent": 1.33,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "market": "上櫃"
     },
     {
       "code": "9962",
       "name": "有益",
       "close": 10.35,
-      "change": -0.0,
-      "changePercent": -0.0,
-      "market": "上櫃",
-      "source": "Yahoo"
+      "change": 0.0,
+      "changePercent": 0.0,
+      "market": "上櫃"
     }
   ],
   "summary": {
-    "totalStocks": 1980,
+    "totalStocks": 1988,
     "listed": 1373,
-    "otc": 607,
-    "otcSource": "Yahoo (.TWO) — TPEx 官方延遲"
+    "otc": 615,
+    "otcSource": "TPEx"
   },
-  "notes": [
-    "上櫃 9 檔無當日資料已剔除",
-    "上櫃收盤價來源為 Yahoo (.TWO)，TPEx 官方當日資料尚未發布"
-  ]
+  "notes": []
 }
