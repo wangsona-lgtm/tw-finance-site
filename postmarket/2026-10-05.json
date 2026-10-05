@@ -2,7 +2,7 @@
   "date": "2026-10-05",
   "title": "台股盤後籌碼分析（10/5 週一）",
   "generated_at": "2026-10-05T18:30:00+08:00",
-  "updated_at": "2026-10-05T18:45:00+08:00",
+  "updated_at": "2026-10-05T19:00:00+08:00",
   "market": {
     "direction": "大漲（+2.55% 收 49,712，量能放大至 1.21 兆）",
     "theme": "台積電+PCB/CCL+塑化三線齊攻；外資現貨單日大買 +718.97 億（年內級別）搭配期貨淨空回補 3,300 口 → 期現同向偏多。惟上市下跌 631 家 > 上漲 364 家、漲停 27 家，屬『權值＋PCB/CCL 主導的窄幅拉積盤』，中小型股偏弱。"
@@ -10,7 +10,7 @@
   "summary": {
     "taiex": {
       "close": 49712.04,
-      "change": 1236.30,
+      "change": 1236.3,
       "change_pct": 2.55,
       "previous_close": 48475.74,
       "direction": "up",
@@ -41,87 +41,360 @@
   },
   "sector_performance": {
     "top_gainers": [
-      {"name": "塑膠類", "change_pct": 6.64},
-      {"name": "電子零組件類", "change_pct": 5.10},
-      {"name": "塑膠化工類", "change_pct": 4.30},
-      {"name": "電子工業類", "change_pct": 3.00},
-      {"name": "機電類", "change_pct": 2.97},
-      {"name": "半導體類", "change_pct": 2.84},
-      {"name": "電腦及週邊設備類", "change_pct": 2.29},
-      {"name": "光電類", "change_pct": 2.19},
-      {"name": "通信網路類", "change_pct": 2.00}
+      {
+        "name": "塑膠類",
+        "change_pct": 6.64
+      },
+      {
+        "name": "電子零組件類",
+        "change_pct": 5.1
+      },
+      {
+        "name": "塑膠化工類",
+        "change_pct": 4.3
+      },
+      {
+        "name": "電子工業類",
+        "change_pct": 3.0
+      },
+      {
+        "name": "機電類",
+        "change_pct": 2.97
+      },
+      {
+        "name": "半導體類",
+        "change_pct": 2.84
+      },
+      {
+        "name": "電腦及週邊設備類",
+        "change_pct": 2.29
+      },
+      {
+        "name": "光電類",
+        "change_pct": 2.19
+      },
+      {
+        "name": "通信網路類",
+        "change_pct": 2.0
+      }
     ],
     "top_losers": [
-      {"name": "航運類", "change_pct": -1.64},
-      {"name": "油電燃氣類", "change_pct": -1.26},
-      {"name": "水泥類", "change_pct": -1.23},
-      {"name": "數位雲端類", "change_pct": -1.22},
-      {"name": "運動休閒類", "change_pct": -1.03},
-      {"name": "水泥窯製類", "change_pct": -0.95},
-      {"name": "造紙類", "change_pct": -0.94},
-      {"name": "電器電纜類", "change_pct": -0.81},
-      {"name": "建材營造類", "change_pct": -0.78},
-      {"name": "鋼鐵類", "change_pct": -0.73}
+      {
+        "name": "航運類",
+        "change_pct": -1.64
+      },
+      {
+        "name": "油電燃氣類",
+        "change_pct": -1.26
+      },
+      {
+        "name": "水泥類",
+        "change_pct": -1.23
+      },
+      {
+        "name": "數位雲端類",
+        "change_pct": -1.22
+      },
+      {
+        "name": "運動休閒類",
+        "change_pct": -1.03
+      },
+      {
+        "name": "水泥窯製類",
+        "change_pct": -0.95
+      },
+      {
+        "name": "造紙類",
+        "change_pct": -0.94
+      },
+      {
+        "name": "電器電纜類",
+        "change_pct": -0.81
+      },
+      {
+        "name": "建材營造類",
+        "change_pct": -0.78
+      },
+      {
+        "name": "鋼鐵類",
+        "change_pct": -0.73
+      }
     ]
   },
   "indices": {
-    "發行量加權股價指數": {"close": "49,712.04", "change": "+1,236.30", "change_pct": "2.55"},
-    "櫃買指數(OTC)": {"close": "432.48", "change": "+5.55", "change_pct": "1.30"},
-    "臺灣50指數": {"close": "46,380.59", "change": "+1,348.32", "change_pct": "2.99"},
-    "臺灣資訊科技指數": {"close": "97,119.74", "change": "+2,732.35", "change_pct": "2.89"},
-    "電子工業類指數": {"close": "3,181.22", "change": "+92.78", "change_pct": "3.00"},
-    "半導體類指數": {"close": "1,686.25", "change": "+46.51", "change_pct": "2.84"},
-    "電子零組件類指數": {"close": "1,047.55", "change": "+50.80", "change_pct": "5.10"},
-    "塑膠類指數": {"close": "450.03", "change": "+28.04", "change_pct": "6.64"},
-    "金融保險類指數": {"close": "3,514.26", "change": "+3.35", "change_pct": "0.10"},
-    "未含電子指數": {"close": "26,080.56", "change": "+155.15", "change_pct": "0.60"}
+    "發行量加權股價指數": {
+      "close": "49,712.04",
+      "change": "+1,236.30",
+      "change_pct": "2.55"
+    },
+    "櫃買指數(OTC)": {
+      "close": "432.48",
+      "change": "+5.55",
+      "change_pct": "1.30"
+    },
+    "臺灣50指數": {
+      "close": "46,380.59",
+      "change": "+1,348.32",
+      "change_pct": "2.99"
+    },
+    "臺灣資訊科技指數": {
+      "close": "97,119.74",
+      "change": "+2,732.35",
+      "change_pct": "2.89"
+    },
+    "電子工業類指數": {
+      "close": "3,181.22",
+      "change": "+92.78",
+      "change_pct": "3.00"
+    },
+    "半導體類指數": {
+      "close": "1,686.25",
+      "change": "+46.51",
+      "change_pct": "2.84"
+    },
+    "電子零組件類指數": {
+      "close": "1,047.55",
+      "change": "+50.80",
+      "change_pct": "5.10"
+    },
+    "塑膠類指數": {
+      "close": "450.03",
+      "change": "+28.04",
+      "change_pct": "6.64"
+    },
+    "金融保險類指數": {
+      "close": "3,514.26",
+      "change": "+3.35",
+      "change_pct": "0.10"
+    },
+    "未含電子指數": {
+      "close": "26,080.56",
+      "change": "+155.15",
+      "change_pct": "0.60"
+    }
   },
   "stocks": {
-    "2330": {"name": "台積電", "close": 2575.0, "change": "+75.0", "change_pct": 3.00},
-    "2454": {"name": "聯發科", "close": 5165.0, "change": "+215.0", "change_pct": 4.34},
-    "2317": {"name": "鴻海", "close": 254.0, "change": "+3.0", "change_pct": 1.20},
-    "2308": {"name": "台達電", "close": 2005.0, "change": "+120.0", "change_pct": 6.37},
-    "2382": {"name": "廣達", "close": 331.0, "change": "-1.0", "change_pct": -0.30},
-    "3231": {"name": "緯創", "close": 189.5, "change": "+3.0", "change_pct": 1.61},
-    "6669": {"name": "緯穎", "close": 2150.0, "change": "+65.0", "change_pct": 3.12},
-    "3711": {"name": "日月光投控", "close": 742.0, "change": "+29.0", "change_pct": 4.07},
-    "2303": {"name": "聯電", "close": 152.5, "change": "-9.0", "change_pct": -5.57},
-    "6213": {"name": "聯茂", "close": 751.0, "change": "+68.0", "change_pct": 9.96},
-    "2882": {"name": "國泰金", "close": 111.5, "change": "0.0", "change_pct": 0.00},
-    "2891": {"name": "中信金", "close": 67.4, "change": "+0.1", "change_pct": 0.15},
-    "2603": {"name": "長榮", "close": 234.5, "change": "-5.5", "change_pct": -2.29},
-    "6505": {"name": "台塑化", "close": 98.6, "change": "-1.4", "change_pct": -1.40}
+    "2330": {
+      "name": "台積電",
+      "close": 2575.0,
+      "change": "+75.0",
+      "change_pct": 3.0
+    },
+    "2454": {
+      "name": "聯發科",
+      "close": 5165.0,
+      "change": "+215.0",
+      "change_pct": 4.34
+    },
+    "2317": {
+      "name": "鴻海",
+      "close": 254.0,
+      "change": "+3.0",
+      "change_pct": 1.2
+    },
+    "2308": {
+      "name": "台達電",
+      "close": 2005.0,
+      "change": "+120.0",
+      "change_pct": 6.37
+    },
+    "2382": {
+      "name": "廣達",
+      "close": 331.0,
+      "change": "-1.0",
+      "change_pct": -0.3
+    },
+    "3231": {
+      "name": "緯創",
+      "close": 189.5,
+      "change": "+3.0",
+      "change_pct": 1.61
+    },
+    "6669": {
+      "name": "緯穎",
+      "close": 2150.0,
+      "change": "+65.0",
+      "change_pct": 3.12
+    },
+    "3711": {
+      "name": "日月光投控",
+      "close": 742.0,
+      "change": "+29.0",
+      "change_pct": 4.07
+    },
+    "2303": {
+      "name": "聯電",
+      "close": 152.5,
+      "change": "-9.0",
+      "change_pct": -5.57
+    },
+    "6213": {
+      "name": "聯茂",
+      "close": 751.0,
+      "change": "+68.0",
+      "change_pct": 9.96
+    },
+    "2882": {
+      "name": "國泰金",
+      "close": 111.5,
+      "change": "0.0",
+      "change_pct": 0.0
+    },
+    "2891": {
+      "name": "中信金",
+      "close": 67.4,
+      "change": "+0.1",
+      "change_pct": 0.15
+    },
+    "2603": {
+      "name": "長榮",
+      "close": 234.5,
+      "change": "-5.5",
+      "change_pct": -2.29
+    },
+    "6505": {
+      "name": "台塑化",
+      "close": 98.6,
+      "change": "-1.4",
+      "change_pct": -1.4
+    }
   },
   "top_movers": {
     "gainers": [
-      {"code": "1303", "name": "南亞", "close": 286.0, "change_pct": 10.00},
-      {"code": "2483", "name": "百容", "close": 40.7, "change_pct": 10.00},
-      {"code": "2367", "name": "燿華", "close": 49.65, "change_pct": 9.97},
-      {"code": "2059", "name": "川湖", "close": 13355.0, "change_pct": 9.96},
-      {"code": "2313", "name": "華通", "close": 248.5, "change_pct": 9.96},
-      {"code": "6213", "name": "聯茂", "close": 751.0, "change_pct": 9.96},
-      {"code": "2368", "name": "金像電", "close": 1215.0, "change_pct": 9.95},
-      {"code": "2383", "name": "台光電", "close": 5700.0, "change_pct": 9.93},
-      {"code": "6658", "name": "聯策", "close": 200.0, "change_pct": 9.89},
-      {"code": "6196", "name": "帆宣", "close": 679.0, "change_pct": 9.87}
+      {
+        "code": "1303",
+        "name": "南亞",
+        "close": 286.0,
+        "change_pct": 10.0
+      },
+      {
+        "code": "2483",
+        "name": "百容",
+        "close": 40.7,
+        "change_pct": 10.0
+      },
+      {
+        "code": "2367",
+        "name": "燿華",
+        "close": 49.65,
+        "change_pct": 9.97
+      },
+      {
+        "code": "2059",
+        "name": "川湖",
+        "close": 13355.0,
+        "change_pct": 9.96
+      },
+      {
+        "code": "2313",
+        "name": "華通",
+        "close": 248.5,
+        "change_pct": 9.96
+      },
+      {
+        "code": "6213",
+        "name": "聯茂",
+        "close": 751.0,
+        "change_pct": 9.96
+      },
+      {
+        "code": "2368",
+        "name": "金像電",
+        "close": 1215.0,
+        "change_pct": 9.95
+      },
+      {
+        "code": "2383",
+        "name": "台光電",
+        "close": 5700.0,
+        "change_pct": 9.93
+      },
+      {
+        "code": "6658",
+        "name": "聯策",
+        "close": 200.0,
+        "change_pct": 9.89
+      },
+      {
+        "code": "6196",
+        "name": "帆宣",
+        "close": 679.0,
+        "change_pct": 9.87
+      }
     ],
     "losers": [
-      {"code": "2236", "name": "百達-KY", "close": 98.0, "change_pct": -8.84},
-      {"code": "2468", "name": "華經", "close": 41.5, "change_pct": -8.49},
-      {"code": "6226", "name": "光鼎", "close": 43.0, "change_pct": -7.33},
-      {"code": "2020", "name": "美亞", "close": 25.25, "change_pct": -6.13},
-      {"code": "6120", "name": "達運", "close": 14.35, "change_pct": -5.90},
-      {"code": "2419", "name": "仲琦", "close": 27.6, "change_pct": -5.80},
-      {"code": "6112", "name": "邁達特", "close": 44.9, "change_pct": -5.77},
-      {"code": "2303", "name": "聯電", "close": 152.5, "change_pct": -5.57}
+      {
+        "code": "2236",
+        "name": "百達-KY",
+        "close": 98.0,
+        "change_pct": -8.84
+      },
+      {
+        "code": "2468",
+        "name": "華經",
+        "close": 41.5,
+        "change_pct": -8.49
+      },
+      {
+        "code": "6226",
+        "name": "光鼎",
+        "close": 43.0,
+        "change_pct": -7.33
+      },
+      {
+        "code": "2020",
+        "name": "美亞",
+        "close": 25.25,
+        "change_pct": -6.13
+      },
+      {
+        "code": "6120",
+        "name": "達運",
+        "close": 14.35,
+        "change_pct": -5.9
+      },
+      {
+        "code": "2419",
+        "name": "仲琦",
+        "close": 27.6,
+        "change_pct": -5.8
+      },
+      {
+        "code": "6112",
+        "name": "邁達特",
+        "close": 44.9,
+        "change_pct": -5.77
+      },
+      {
+        "code": "2303",
+        "name": "聯電",
+        "close": 152.5,
+        "change_pct": -5.57
+      }
     ]
   },
   "postmarket": {
     "institutional_trading": {
-      "foreign": {"buy_100m": 4330.48, "sell_100m": 3611.52, "net_100m": 718.97},
-      "trust": {"buy_100m": 209.19, "sell_100m": 273.14, "net_100m": -63.95},
-      "dealer": {"buy_100m": 580.72, "sell_100m": 471.24, "net_100m": 109.48},
-      "total": {"buy_100m": 5120.40, "sell_100m": 4355.90, "net_100m": 764.50},
+      "foreign": {
+        "buy_100m": 4330.48,
+        "sell_100m": 3611.52,
+        "net_100m": 718.97
+      },
+      "trust": {
+        "buy_100m": 209.19,
+        "sell_100m": 273.14,
+        "net_100m": -63.95
+      },
+      "dealer": {
+        "buy_100m": 580.72,
+        "sell_100m": 471.24,
+        "net_100m": 109.48
+      },
+      "total": {
+        "buy_100m": 5120.4,
+        "sell_100m": 4355.9,
+        "net_100m": 764.5
+      },
       "dealer_breakdown": {
         "proprietary_net_100m": 14.15,
         "hedge_net_100m": 95.33
@@ -130,14 +403,29 @@
     },
     "futures_positions": {
       "as_of_date": "2026-10-05 (TAIFEX www /cht/3 當日)",
-      "foreign_tx_oi_net": {"net_position": -77004},
+      "foreign_tx_oi_net": {
+        "net_position": -77004
+      },
       "foreign_tx_oi_change": 3300,
-      "trust_tx_oi_net": {"net_position": 75144},
-      "dealer_tx_oi_net": {"net_position": -2155},
-      "total_futures_oi_net": {"net_position": -4015},
-      "options_foreign_net": {"net_position": -374, "interpretation": "外資臺指選擇權 OI 淨(多口-空口)，多18,713/空19,087"},
-      "options_trust_net": {"net_position": -7875},
-      "options_dealer_net": {"net_position": 8181},
+      "trust_tx_oi_net": {
+        "net_position": 75144
+      },
+      "dealer_tx_oi_net": {
+        "net_position": -2155
+      },
+      "total_futures_oi_net": {
+        "net_position": -4015
+      },
+      "options_foreign_net": {
+        "net_position": -374,
+        "interpretation": "外資臺指選擇權 OI 淨(多口-空口)，多18,713/空19,087"
+      },
+      "options_trust_net": {
+        "net_position": -7875
+      },
+      "options_dealer_net": {
+        "net_position": 8181
+      },
       "put_call_ratio": {
         "as_of": "20261005",
         "volume_pct": 101.76,
@@ -170,19 +458,45 @@
   },
   "us_ref": {
     "note": "美股上週五 10/2 收盤（10/5 美股尚未開盤，18:30 TW）",
-    "SOX": {"close": 13136.67, "change_pct": 2.40},
-    "VIX": {"close": 16.30, "change_pct": 6.47, "prev_close": 15.31, "note": "16.30 為 yfinance 最新讀值（前一交易日 15.31）；美股尚未開盤，僅供參考"},
-    "TSM_ADR": {"close": 472.78, "change_pct": 2.96},
-    "SPX": {"close": 7722.72, "change_pct": 0.73},
-    "IXIC": {"close": 27190.86, "change_pct": 1.19},
-    "DJI": {"close": 51176.96, "change_pct": 0.49},
+    "SOX": {
+      "close": 13136.67,
+      "change_pct": 2.4
+    },
+    "VIX": {
+      "close": 16.3,
+      "change_pct": 6.47,
+      "prev_close": 15.31,
+      "note": "16.30 為 yfinance 最新讀值（前一交易日 15.31）；美股尚未開盤，僅供參考"
+    },
+    "TSM_ADR": {
+      "close": 472.78,
+      "change_pct": 2.96
+    },
+    "SPX": {
+      "close": 7722.72,
+      "change_pct": 0.73
+    },
+    "IXIC": {
+      "close": 27190.86,
+      "change_pct": 1.19
+    },
+    "DJI": {
+      "close": 51176.96,
+      "change_pct": 0.49
+    },
     "USDTWD": 31.8868
   },
   "full_chip_data": {
     "margin_short": {
       "as_of_date": "2026-10-02 (D-1 fallback：10/5 18:30 未公布，待 20:30~22:00 重抓覆蓋)",
-      "融資餘額_億": {"value": 6351.04, "change": 52.37},
-      "融券餘額_張": {"value": 231986, "change": -1336},
+      "融資餘額_億": {
+        "value": 6351.04,
+        "change": 52.37
+      },
+      "融券餘額_張": {
+        "value": 231986,
+        "change": -1336
+      },
       "note": "10/5 融資融券 TWSE 18:30 尚未公布（legacy 與 rwd 兩路徑皆回『沒有符合條件的資料』），展示 10/2 D-1 數值（融資 6,351.04 億 +52.37 億 / 融券 231,986 張 -1,336 張）；22:00 full-chips 重抓補齊。"
     },
     "market_breadth": {
@@ -213,28 +527,322 @@
     "overall_assessment": "今日4/4方向不出大錯（全數上漲），但『進場方式』再次成為最大失分點：3檔行動標的僅2330以半倉市價成交，2454/2317因進場區設在昨收下方而全日未觸（Rule 18 鏡像執行規的第四次踏空）。市場本身給出強烈多方訊號——外資現貨 +718.97 億、期貨淨空回補 3,300 口、三大合計 +764.50 億、量能放大至 1.21 兆——但廣度背離（跌 631 > 漲 364）與外資期貨 -7.7 萬口高位淨空，說明這是『權值與 PCB/CCL 主導的窄幅拉積盤』。後續應：(1) 強勢主軸日一律半倉市價開盤進場，深回檔限價只留給開高 <1% 或族群轉弱盤；(2) 追蹤 PCB/CCL 漲停群（6213/2368/2313/2383）隔日續攻與否；(3) 避開外資連續調節的成熟製程（2303）、面板（2409）與被動元件（2327）。"
   },
   "momentum_scan": {
-    "source": "TWSE MI_INDEX type=ALLBUT0999 Table 8（10/2 與 10/5 官方漲跌幅自行計算）+ 漲停交集法",
-    "assessment": "今日大盤 +2.55%，官方漲停 27 檔（跌停 0）。強勢主軸為 PCB/CCL（6213 聯茂、2368 金像電、2313 華通、2383 台光電、4927 泰鼎-KY、2367 燿華、2483 百容）＋塑化（1303 南亞漲停、塑膠類 +6.64%）＋電子零組件類 +5.10%。連兩日漲停 8 檔，屬『族群型連板』而非單兵突擊；惟指數與廣度背離（跌 631 > 漲 364），資金高度集中，非全面性行情。",
+    "source": "tw_momentum_monitor.py（223 檔 watchlist）+ TWSE MI_INDEX type=MS 官方漲停（上市 27）＋ TPEx OpenAPI 收盤價計算（上櫃 22）＋『前一交易日官方漲停清單 ∩ 今日官方漲停清單』交集法（9/30、10/1、10/2、10/5）判定連漲天數",
+    "assessment": "今日大盤 +2.55% 收 49,712.04，官方漲停合計 49 檔（上市 27＋上櫃 22），跌停 0。最強主軸＝PCB/CCL/載板產業鏈（13 檔、全產業鏈擴散：CCL→PCB→銅箔→設備→上游樹脂，直接印證電子零組件類 +5.10%、塑膠類 +6.64%）＋半導體/IC/設備（7 檔）＋光電/光學/LED（7 檔）。惟指數大漲 1,236 點但上漲 364 家 < 下跌 631 家——高度集中的權值＋PCB 拉抬行情，動能追蹤必須與指數脫鉤判讀。",
     "breadth": {
-      "taiex": {"close": 49712.04, "change_pct": 2.55},
-      "official_limit_up": 27,
+      "taiex": {
+        "close": 49712.04,
+        "change_pct": 2.55
+      },
+      "official_limit_up_total": 49,
+      "official_limit_up_tse": 27,
+      "official_limit_up_otc": 22,
       "official_limit_down": 0,
       "up_stocks": 364,
       "down_stocks": 631,
-      "source": "TWSE MI_INDEX type=ALLBUT0999（漲跌證券數合計表，股票欄）"
+      "source": "上市 TWSE MI_INDEX type=MS（股票欄 27 檔）；上櫃 TPEx OpenAPI 收盤價 + 昨收計算 ≥9.5%"
     },
     "consecutive_limit_ups": {
+      "third_up": [
+        {
+          "symbol": "6708",
+          "name": "天擎",
+          "close": 68.6,
+          "true_streak": 6,
+          "market": "上櫃",
+          "industry": "半導體",
+          "note": "極度過熱，注意處置風險"
+        },
+        {
+          "symbol": "5013",
+          "name": "強新",
+          "close": 51.5,
+          "true_streak": 5,
+          "market": "上櫃",
+          "industry": "鋼鐵線材"
+        },
+        {
+          "symbol": "1709",
+          "name": "和益",
+          "close": 64.3,
+          "true_streak": 4,
+          "market": "上市",
+          "industry": "塑膠化工",
+          "note": "油價行情"
+        },
+        {
+          "symbol": "3701",
+          "name": "大眾控",
+          "close": 60.9,
+          "true_streak": 4,
+          "market": "上市",
+          "industry": "系統組裝"
+        },
+        {
+          "symbol": "6174",
+          "name": "安碁",
+          "close": 60.5,
+          "true_streak": 3,
+          "market": "上櫃",
+          "industry": "資安"
+        },
+        {
+          "symbol": "4760",
+          "name": "勤凱",
+          "close": 348.5,
+          "true_streak": 3,
+          "market": "上櫃",
+          "industry": "電子材料"
+        },
+        {
+          "symbol": "5205",
+          "name": "中茂",
+          "close": 25.05,
+          "true_streak": 3,
+          "market": "上櫃",
+          "industry": "資服"
+        }
+      ],
       "second_up": [
-        {"symbol": "1459", "name": "聯發", "close": 20.55, "prev_pct": 10.00, "today_pct": 9.89},
-        {"symbol": "1709", "name": "和益", "close": 64.30, "prev_pct": 9.96, "today_pct": 9.91, "note": "依10/2紀錄已連3根，今日續攻＝連4根（塑化/化工）"},
-        {"symbol": "1735", "name": "日勝化", "close": 24.35, "prev_pct": 9.93, "today_pct": 9.93},
-        {"symbol": "2466", "name": "冠西電", "close": 155.00, "prev_pct": 9.73, "today_pct": 9.93},
-        {"symbol": "3518", "name": "柏騰", "close": 48.75, "prev_pct": 9.91, "today_pct": 9.92},
-        {"symbol": "3701", "name": "大眾控", "close": 60.90, "prev_pct": 9.92, "today_pct": 9.93, "note": "依10/2紀錄已連3根，今日續攻＝連4根"},
-        {"symbol": "4720", "name": "德淵", "close": 23.00, "prev_pct": 9.97, "today_pct": 9.79},
-        {"symbol": "4927", "name": "泰鼎-KY", "close": 52.90, "prev_pct": 9.93, "today_pct": 9.87, "note": "PCB，與 6213/2368/2313/2383 族群共振"}
+        {
+          "symbol": "1459",
+          "name": "聯發",
+          "close": 20.55,
+          "true_streak": 2
+        },
+        {
+          "symbol": "1735",
+          "name": "日勝化",
+          "close": 24.35,
+          "true_streak": 2
+        },
+        {
+          "symbol": "2466",
+          "name": "冠西電",
+          "close": 155.0,
+          "true_streak": 2
+        },
+        {
+          "symbol": "3518",
+          "name": "柏騰",
+          "close": 48.75,
+          "true_streak": 2
+        },
+        {
+          "symbol": "4720",
+          "name": "德淵",
+          "close": 23.0,
+          "true_streak": 2
+        },
+        {
+          "symbol": "4927",
+          "name": "泰鼎-KY",
+          "close": 52.9,
+          "true_streak": 2
+        },
+        {
+          "symbol": "3564",
+          "name": "其陽",
+          "close": 61.7,
+          "true_streak": 2
+        },
+        {
+          "symbol": "3114",
+          "name": "好德",
+          "close": 43.6,
+          "true_streak": 2
+        },
+        {
+          "symbol": "8111",
+          "name": "立碁",
+          "close": 94.3,
+          "true_streak": 2
+        },
+        {
+          "symbol": "5011",
+          "name": "久陽",
+          "close": 22.45,
+          "true_streak": 2
+        }
+      ],
+      "first_up": [
+        {
+          "symbol": "6213",
+          "name": "聯茂",
+          "close": 751.0,
+          "note": "PCB/CCL 指標，昨 +6.39% → 今漲停"
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電",
+          "close": 5700.0
+        },
+        {
+          "symbol": "2313",
+          "name": "華通",
+          "close": 248.5
+        },
+        {
+          "symbol": "2368",
+          "name": "金像電",
+          "close": 1215.0
+        },
+        {
+          "symbol": "2367",
+          "name": "燿華",
+          "close": 49.65
+        },
+        {
+          "symbol": "6152",
+          "name": "百一",
+          "close": 17.25
+        },
+        {
+          "symbol": "4989",
+          "name": "榮科",
+          "close": 70.2
+        },
+        {
+          "symbol": "6658",
+          "name": "聯策",
+          "close": 200.0
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞",
+          "close": 286.0,
+          "note": "上游，帶動塑膠類 +6.64%"
+        },
+        {
+          "symbol": "2483",
+          "name": "百容",
+          "close": 40.7
+        },
+        {
+          "symbol": "2059",
+          "name": "川湖",
+          "close": 13355.0
+        },
+        {
+          "symbol": "6196",
+          "name": "帆宣",
+          "close": 679.0
+        },
+        {
+          "symbol": "8261",
+          "name": "富鼎",
+          "close": 205.0
+        },
+        {
+          "symbol": "3406",
+          "name": "玉晶光",
+          "close": 1055.0
+        },
+        {
+          "symbol": "2340",
+          "name": "台亞",
+          "close": 50.3
+        },
+        {
+          "symbol": "2426",
+          "name": "鼎元",
+          "close": 114.0
+        },
+        {
+          "symbol": "6164",
+          "name": "華興",
+          "close": 13.85
+        },
+        {
+          "symbol": "1714",
+          "name": "和桐",
+          "close": 18.5
+        },
+        {
+          "symbol": "7750",
+          "name": "新代",
+          "close": 2070.0
+        },
+        {
+          "symbol": "3491",
+          "name": "昇達科",
+          "close": 1630.0,
+          "market": "上櫃"
+        },
+        {
+          "symbol": "6274",
+          "name": "台燿",
+          "close": 1780.0,
+          "market": "上櫃"
+        },
+        {
+          "symbol": "6187",
+          "name": "萬潤",
+          "close": 1490.0,
+          "market": "上櫃"
+        },
+        {
+          "symbol": "8358",
+          "name": "金居",
+          "close": 570.0,
+          "market": "上櫃"
+        },
+        {
+          "symbol": "7556",
+          "name": "意德士",
+          "close": 300.0,
+          "market": "上櫃"
+        },
+        {
+          "symbol": "4174",
+          "name": "浩鼎",
+          "close": 46.2,
+          "market": "上櫃"
+        },
+        {
+          "symbol": "4556",
+          "name": "旭然",
+          "close": 125.5,
+          "market": "上櫃"
+        }
       ]
-    }
+    },
+    "strong_sectors": [
+      {
+        "industry": "PCB／CCL／載板產業鏈",
+        "count": 13,
+        "stocks": "6213聯茂 2383台光電 2313華通 2368金像電 2367燿華 4927泰鼎-KY 6152百一 4989榮科 6658聯策 1303南亞(上游) 2483百容 ＋上櫃 6274台燿 8358金居",
+        "note": "今日唯一『全產業鏈擴散』族群（CCL→PCB→銅箔→設備→上游樹脂），亦為類股指數（電子零組件 +5.10%、塑膠 +6.64%）的直接印證"
+      },
+      {
+        "industry": "半導體／IC／設備",
+        "count": 7,
+        "stocks": "8261富鼎 6196帆宣 6187萬潤 3317尼克森 6708天擎 6716應廣 7556意德士",
+        "note": ""
+      },
+      {
+        "industry": "光電／光學／LED",
+        "count": 7,
+        "stocks": "3406玉晶光 2340台亞 2426鼎元 6164華興 3441聯一光 6419京晨科 8111立碁",
+        "note": ""
+      },
+      {
+        "industry": "塑膠化工／樹脂",
+        "count": 4,
+        "stocks": "1709和益 1714和桐 1735日勝化 4720德淵",
+        "note": ""
+      },
+      {
+        "industry": "鋼鐵／線材（上櫃）",
+        "count": 2,
+        "stocks": "5013強新 5011久陽",
+        "note": ""
+      }
+    ],
+    "data_correction": "⚠️ 腳本輸出全數經官方資料逐檔覆核校正：腳本原始輸出僅 3 檔漲停，官方實際為 49 檔（上市 27＋上櫃 22）；腳本標『第二天』的 6213 聯茂、2383 台光電實為第一天（10/2 未漲停）；標『第三天』的 4927 泰鼎-KY 實為第二天（10/1 未漲停）；並完全漏抓全部真連板股（和益/大眾控第 4 天、天擎第 6 天、強新第 5 天）與整個 PCB/CCL 主力。根因：腳本 streak_total = streak + 1 的 +1 bug 再度確認（凡今日漲停必被多報 1 根），且 223 檔 watchlist 完全遺漏官方真正的連板股與今日主流族群。本報告連漲數據全數以『前一交易日官方漲停清單 ∩ 今日官方漲停清單』交集法（TWSE 表 8，逐日 9/30、10/1、10/2、10/5）判定；上櫃以 TPEx OpenAPI ＋ yfinance 5~12 日 close 序列驗證。",
+    "script_watchlist_note": "腳本 223 檔 watchlist 只標到 3 檔、連漲標記全數錯誤（+1 bug）；49 檔官方漲停中腳本漏掉全部真連板股與今日主流 PCB/CCL 族群（watchlist 盲區第 N 次確認）。連漲鏈判別以官方表 8 交集法為準，非腳本直出。",
+    "watch_next_day": "明日（10/6）：PCB/CCL 全產業鏈能否續攻（6213／2383／2313／2368 是否出現第 2 根）、南亞與銅箔/設備股是否接棒；過熱回檔風險（6708 天擎 6 根、5013 強新 5 根）；指數 +2.55% 但漲跌家數 364:631 的分歧是否收斂；外資現貨是否由買轉賣、期貨空單（-80,304）是否回補。",
+    "summary_one_liner": "今日大盤 +2.55% 但漲停集中 PCB/CCL（13 檔全產業鏈擴散）＋半導體/設備＋光電，官方漲停 49 檔（上市 27＋上櫃 22）；連板股以天擎 6 根最熱，屬高度集中的權值＋PCB 拉抬行情（跌 631 > 漲 364），動能須與指數脫鉤判讀。"
   },
   "notes": [
     "18:30 盤後籌碼分析（2026-10-05 週一）",
@@ -245,6 +853,58 @@
     "MI_MARGN（融資融券）10/5 18:30 尚未公布，暫以 10/2 D-1 顯示（融資 6,351.04 億 +52.37 / 融券 231,986 張 -1,336），22:00 full-chips 需重抓覆蓋。",
     "TWT93U（借券賣出餘額）18:30 回傳空表（表定 20:30/22:30 兩階段更新），本次未納入借券明細。",
     "TAIFEX P/C ratio OpenAPI 最新僅至 10/2，10/5 值取自 www /cht/3/pcRatio 頁面（量比 101.76% / OI 比 91.95%）。",
-    "TSM ADR $472.78 為 10/2 美股收盤（10/5 美股 18:30 TW 尚未開盤）；USD/TWD 31.8868（10/2）；櫃買指數取 TWSE MIS API（otc_o00）。"
-  ]
+    "TSM ADR $472.78 為 10/2 美股收盤（10/5 美股 18:30 TW 尚未開盤）；USD/TWD 31.8868（10/2）；櫃買指數取 TWSE MIS API（otc_o00）。",
+    "19:00 盤後分析＋推薦檢討（2026-10-05 週一）：推薦檢討 4 檔（1✅/3❌，方向正確率 4/4）＋動能掃描 49 檔漲停（PCB/CCL 13 檔主軸）；來源：~/.hermes/cron/output/2ee43e505982/2026-10-05_18-34-10.md。"
+  ],
+  "recommendation_review": {
+    "as_of_date": "2026-10-05",
+    "source": "2026-10-05 18:34 CST 盤後分析＋推薦檢討 cron（TWSE STOCK_DAY 官方收盤，已與 yfinance 交叉驗證）",
+    "scorecard": {
+      "total_actionable": 4,
+      "hit": 1,
+      "miss": 3,
+      "partial": 0,
+      "neutral": 0,
+      "filled_hit_rate_pct": 25.0,
+      "direction_correct_pct": 100.0,
+      "summary": "1 命中✅ / 3 失誤❌（命中率 25%），但方向正確率 4/4（100%）——四檔全部看對，問題 100% 出在進場紀律（深回檔限價在強多格局系統性不成交），不是判斷。"
+    },
+    "reviews": [
+      {
+        "symbol": "2330",
+        "name": "台積電",
+        "direction": "作多（半倉市價＋半倉回檔 2,540~2,555）",
+        "verdict": "✅ 命中（唯一落袋，Rule 15 首次在權值股完整生效）",
+        "detail": "開 2,550（+2.00% >1% 觸發 Rule 15）→ 半倉市價成交、半倉限價 2,540~2,555 亦成交（日低 2,545）。收 2,575 +3.00%，優於大盤。唯一瑕疵：目標 2,600 差 20 點未達（盤中高 2,580）。正向強化：『開高 >1% 半倉市價』應固化為範本。"
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "direction": "作多（回檔承接 4,880~4,920）",
+        "verdict": "❌ 失誤（踏空——判斷對、報酬 0）",
+        "detail": "全日最低 4,980（=開盤價），比進場區上緣 4,920 還高 60 點；收 5,165 +4.34%，直接越過目標 5,050/5,100 並收最高。判斷 100% 正確、報酬 0% 落袋。失誤原因：強勢族群續攻日、開盤 gap 僅 +0.61%（<1%），深度回檔限價單系統性不成交（Rule 18 模式）。若開盤半倉市價 4,980，報酬 +3.7%。"
+      },
+      {
+        "symbol": "2317",
+        "name": "鴻海",
+        "direction": "作多（回檔承接 248~250）",
+        "verdict": "❌ 失誤（踏空＋個股偏弱，雙重失誤）",
+        "detail": "全日區間僅 253.5~256，進場區 248~250 完全未觸；收 254 +1.20%，大幅落後大盤 +2.55%，目標 258/260 也未達（高僅 256）。失誤原因：(1) 深回檔在強多格局不成交；(2) NVDA→鴻海映射連續第二次失效（9/3 已現、10/5 再現）——AI 資金集中在 2330/2454 與 PCB 族群，不在鴻海。即使半倉市價進場，當日也僅 0%。"
+      },
+      {
+        "symbol": "6213",
+        "name": "聯茂",
+        "direction": "觀察回檔（已達標勿追，回檔 655~670）",
+        "verdict": "❌ 失誤（觀察錯過一整根漲停）",
+        "detail": "開 690（+1.02%）→ 全日最低 682 仍在回檔區 655~670 之上 → 收 751 漲停（+9.96%）收最高。『觀察勿追高』主指令讓一整根漲停蒸發。失誤原因：把『已達標勿追』當主指令、把『半倉參與』當註腳，等於預設放棄。若依 Rule 15/18 開盤半倉市價 690，當日報酬 +8.8%。且當日 PCB/CCL 全產業鏈（華通、金像電、燿華、台光電、南亞、榮科、聯策、泰鼎）集體漲停，族群性極強。"
+      }
+    ],
+    "improvement_notes": [
+      "進場紀律系統性修正（最重要）：當隔夜為『SOX +2% 以上＋VIX 下跌＋ADR 溢價擴大』的強多格局時，作多推薦的預設進場改為『開盤半倉市價＋半倉淺回檔（前收 ±0.5~1%）』；深度回檔限價（>1.5%）只保留給開盤 flat／轉弱的個股。今日三檔踏空即為鐵證。",
+      "2317 鴻海：SOX 大漲日不再以鴻海承接 AI 題材（映射連續失效），改用 2330/2454 為載體。",
+      "已達標／連板股：強多格局次日以『開盤半倉市價＋放量回檔再加碼』為主指令，『勿追高』降為次指令。"
+    ],
+    "next_step": "明日（10/6）觀察：PCB/CCL 全產業鏈能否續攻（6213／2383／2313／2368 是否出現第 2 根）、南亞與銅箔/設備股是否接棒；過熱回檔風險（6708 天擎 6 根、5013 強新 5 根）；指數 +2.55% 但漲跌家數 364:631 的分歧是否收斂；外資現貨是否由買轉賣、期貨空單（-80,304）是否回補。",
+    "lessons": "1) 強多格局（SOX+VIX 同步利多）日，作多標的必須『開盤半倉市價』參與，深度回檔限價系統性踏空（今日 2454/2317/6213 三檔鐵證）。2) 族群性極強行情（PCB/CCL 全產業鏈漲停）不可對單一個股設條件式觀察，應直接半倉參與龍頭。3) 判斷力（方向正確率 4/4）已非瓶頸，瓶頸在進場紀律的自動化落地。4) 鴻海 NVDA 映射連續失效，AI 載體回歸 2330/2454。"
+  }
 }
