@@ -34,6 +34,18 @@ else:
 date_str = target.strftime('%Y%m%d')
 print(f'Target date: {date_str}')
 
+# ── 收盤資料發布時間閘：TWSE rwd 的全表查詢在 13:30-13:45 被擋（"網站尖峰時間，
+# 查詢全部資料功能暫停使用"），而 OpenAPI 的 MI_INDEX / STOCK_DAY_ALL 要收盤後
+# 1-2 小時才更新。若 cron 在 13:35 就觸發，不等待的話整份資料會靜默 fallback 成
+# 「前一交易日」（日期與 TAIEX 都是昨天的，看起來卻像成功）。
+if target.date() == tw_now.date() and tw_now.weekday() < 5 \
+        and (tw_now.hour, tw_now.minute) < (13, 50):
+    _wake = tw_now.replace(hour=13, minute=48, second=0, microsecond=0)
+    _wait = (_wake - tw_now).total_seconds()
+    if _wait > 0:
+        print(f'  TWSE 收盤資料約 13:45 後才發布，等待 {_wait:.0f}s 至 {_wake:%H:%M:%S}...')
+        time.sleep(_wait)
+
 API = 'https://openapi.twse.com.tw/v1'
 endpoints = {
     'MI_INDEX':     f'{API}/exchangeReport/MI_INDEX',
@@ -70,10 +82,22 @@ except Exception:
 if _sda_date != str(target_roc):
     print(f'  OpenAPI STOCK_DAY_ALL stale (date={_sda_date}), trying rwd CSV for {date_str}...')
     try:
-        r = requests.get(
-            f'https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_ALL?date={date_str}',
-            timeout=60)
-        if r.status_code == 200 and r.text.strip().startswith('日期'):
+        r = None
+        for _try in range(5):
+            try:
+                r = requests.get(
+                    f'https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY_ALL?date={date_str}',
+                    timeout=60)
+            except Exception as _re:
+                print(f'  STOCK_DAY_ALL rwd attempt {_try+1}: {_re}')
+                r = None
+                time.sleep(20)
+                continue
+            if r.status_code == 200 and r.text.strip().startswith('日期'):
+                break
+            print(f'  STOCK_DAY_ALL rwd attempt {_try+1}: HTTP {r.status_code} / 尚無當日資料')
+            time.sleep(20)
+        if r is not None and r.status_code == 200 and r.text.strip().startswith('日期'):
             import csv, io
             rows = list(csv.DictReader(io.StringIO(r.text)))
             mapped = []
@@ -102,7 +126,7 @@ if _sda_date != str(target_roc):
             else:
                 print('  STOCK_DAY_ALL: rwd CSV has no rows for target date')
         else:
-            print(f'  STOCK_DAY_ALL: rwd fallback HTTP {r.status_code} (not CSV)')
+            print(f'  STOCK_DAY_ALL: rwd fallback HTTP {r.status_code if r is not None else "no-response"} (not CSV)')
     except Exception as e:
         print(f'  STOCK_DAY_ALL: rwd fallback failed: {e}')
 
@@ -123,7 +147,7 @@ if _mi_date != str(target_roc):
         # TWSE load-sheds `type=ALL` intermittently ("每日1:30PM到1:45PM為網站
         # 尖峰時間..."), even at 13:50 — retry until a real table set arrives.
         d = {}
-        for _try in range(6):
+        for _try in range(15):
             r = requests.get(
                 f'https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date={date_str}&type=ALL&response=json',
                 timeout=120, headers={'User-Agent': 'Mozilla/5.0'})
