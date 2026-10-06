@@ -1,8 +1,8 @@
 {
   "date": "2026-10-06",
   "type": "daily-reports",
-  "source": "zerohedge",
-  "title": "ZeroHedge 每日導讀 — 10月6日（二）",
+  "source": "zerohedge+fed-watch",
+  "title": "ZeroHedge 每日導讀 + Fed Watch — 10月6日（二）",
   "sections": [
     {
       "title": "葉門胡塞大規模飛彈／無人機空襲沙烏地 鎖定利雅德機場與阿美煉油廠",
@@ -201,6 +201,93 @@
         ]
       }
     }
+    ,
+    {
+      "title": "Fed Watch｜今日重點摘要",
+      "icon": "🏛️",
+      "content": "【已確認事實】本報擷取時點為 2026-10-06 08:25（台北時間；美東 10/5 20:25 EDT）。Fed.gov 的 News & Events 最後更新於 10/5；過去 24 小時未見新的 FOMC 聲明、會議紀要、SEP、目標利率行動、貨幣政策演說或國會證詞。自上次 Fed Watch 報告後最重要的官方資料為 10/2 發布的 9 月就業報告：非農就業 +2.9 萬、失業率 4.2%，7、8 月合計下修 6 萬；平均時薪月增 0.1%、年增 3.0%。另 9/30 發布的 8 月 PCE 物價指數月增 0.3%、年增 3.4%，核心 PCE 年增 3.0%。\n\n【來源觀點】Yahoo Finance 10/5 的市場即時報導稱，較疲弱的 9 月就業資料與較溫和的通膨讀數提高市場對 10 月維持利率不變的預期；這是媒體對市場定價的敘述，不是 CME 當下機率表。\n\n【本報分析】就業新增明顯放緩、且前值下修，對勞動市場動能構成降溫訊號；但失業率仍在 4.1%–4.3% 的近期區間內，且 8 月 PCE 年增 3.4% 仍高於 2% 目標。兩組資料並不單向決定 10/27–28 的政策結果。9 月會議紀要將於 10/7 14:00 美東（10/8 02:00 台北）公布，是下一項直接檢驗決策討論的官方文件。"
+    },
+    {
+      "title": "Fed Watch｜即時市場儀表板",
+      "icon": "📊",
+      "type": "table",
+      "headers": ["項目／指定代號", "可核驗快照（擷取／市場時間）", "日變動", "來源／限制"],
+      "rows": [
+        ["3 個月殖利率（Yahoo ^IRX）", "無可核驗快照", "—", "Yahoo Finance 指定代號直連頁於本次擷取遭 429 限流；不以其他代號或媒體數值代填。"],
+        ["5 年殖利率（Yahoo ^FVX）", "無可核驗快照", "—", "^FVX 為 5 年期，非 2 年期；未取得可保存快照。"],
+        ["10 年殖利率（Yahoo ^TNX）", "5.33%（10/5 11:24 EDT 的 Yahoo Finance 市場報導）", "+5bp（報導所述盤中變動）", "Yahoo 報導明確標示 ^TNX；此為文內時間點，非 Yahoo 報價頁的直接快照。"],
+        ["30 年殖利率（Yahoo ^TYX）", "無可核驗快照", "—", "未取得可保存的 Yahoo Finance 指定代號報價。"],
+        ["2 年殖利率（補充：Yahoo Finance 市場報導）", "約 4.82%（10/5 09:50 EDT）", "未提供", "Yahoo 報導稱 2 年期在 4.82% 附近；屬補充，並非指定的 ^FVX。"],
+        ["美元指數（Yahoo DX-Y.NYB）", "無可核驗快照", "—", "未取得本報時點可保存的 Yahoo 指定代號報價。"],
+        ["VIX（Yahoo ^VIX）", "無可核驗快照", "—", "未取得可保存的 Yahoo Finance 指定代號報價。"],
+        ["聯邦基金期貨（Yahoo ZQ=F／當期 ZQ 合約）", "無可核驗快照", "—", "缺少完整合約報價；不得反推精確 FedWatch 機率。"],
+        ["SOFR 期貨（Yahoo SR1=F、SR3=F）", "無可核驗快照", "—", "缺少完整合約月、到期與計算假設；不作機率換算。"]
+      ],
+      "analysis": "行情擷取於 2026-10-06 08:25 台北時間。Yahoo 指定報價頁對 ^IRX、^FVX、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F、SR1=F、SR3=F 均未能提供可保存直連快照（多數回覆 429）。唯一列出的 ^TNX 與補充 2 年期僅採 Yahoo 10/5 具時間戳的市場文章，並與直接報價頁嚴格區分。"
+    },
+    {
+      "title": "Fed Watch｜利率路徑與 FedWatch",
+      "icon": "📈",
+      "content": "【原始方法來源】CME 說明，FedWatch 以對應會議的 30-Day Fed Funds（ZQ）期貨交易資料，呈現 FOMC 各目標區間的機率，並同時顯示相應期貨價格。\n\n【本次可用性】CME 方法頁可核驗，但本次無法取得可保存的 CME 即時機率表；因此不報告 10/27–28 或其後會議的精確 FedWatch 機率。Yahoo Finance 10/5 以無數值的方式描述，較弱就業與較溫和通膨提高市場對 10 月維持不變的預期；此為二手市場觀點，並非具名 CME 機率引用。\n\n【ZQ／SOFR 交叉檢核】ZQ=F、當期 ZQ、SR1=F、SR3=F 均無可保存完整報價，無從檢核隱含利率。只有一個不含機率的媒體方向訊號，未達兩個獨立、可核驗訊號一致的門檻；結論為「未交叉驗證」，也不將期貨轉換為精確 FedWatch 機率。"
+    },
+    {
+      "title": "Fed Watch｜官員立場追蹤（2026 實際投票委員）",
+      "icon": "🗣️",
+      "type": "table",
+      "headers": ["委員／職位", "投票權", "立場標示", "最近可核驗談話／異議／投票", "判定理由"],
+      "rows": [
+        ["Kevin Warsh／理事會主席、FOMC 主席", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "最新正式投票支持緊縮；本 24 小時無新個人政策證據。"],
+        ["John C. Williams／紐約聯儲總裁、副主席", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "常任投票席位；本 24 小時無新個人政策證據。"],
+        ["Michael S. Barr／理事", "有", "鷹派（未更新）", "9/29：Economic Conditions and Monetary Policy；9/16：支持升息", "無新談話；保留既有正式投票與最近政策演說判定。"],
+        ["Michelle W. Bowman／理事、副主席（監管）", "有", "鷹派（未更新）", "10/1：監管演說；9/16：12–0 上調", "10/1 主題為監管；本報截點前無新貨幣政策訊號。"],
+        ["Lisa D. Cook／理事", "有", "鷹派（未更新）", "9/30：Dual Mandate in Rural America；9/16：12–0 上調", "本 24 小時無新談話；不從舊材料新增利率承諾。"],
+        ["Beth M. Hammack／克里夫蘭聯儲總裁", "有", "鷹派（未更新）", "9/25：通膨心態／限制性政策談話；9/16：12–0 上調", "本 24 小時無新談話或異議。"],
+        ["Philip N. Jefferson／理事、副主席", "有", "鷹派／資料依賴（未更新）", "10/1：支持 9/16 升息，稱通膨風險偏上行；未來調整取決於資料、前景與風險平衡", "最新一手貨幣政策演說支持既有緊縮行動，但未承諾下一次行動。"],
+        ["Neel Kashkari／明尼阿波利斯聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調；7/29 曾異議主張升息", "連續正式行動偏緊縮；本 24 小時無新證據。"],
+        ["Lorie K. Logan／達拉斯聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調；7/29 曾異議主張升息", "連續正式行動偏緊縮；本 24 小時無新證據。"],
+        ["Anna Paulson／費城聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "2026 輪值投票；本 24 小時無新個人政策證據。"],
+        ["Jerome H. Powell／理事", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "最新正式投票支持升息；本 24 小時無新個人政策證據。"],
+        ["Christopher J. Waller／理事", "有", "鷹派（未更新）", "10/1：FRED 與 AI 資料演說；9/16：12–0 上調", "10/1 主題非利率政策；不把資料演說當作新利率指引。"]
+      ],
+      "analysis": "名單以 Federal Reserve 的 2026 FOMC 成員頁為準。立場標示只概括最新可核驗的個人證據，並與委員會共識分開；最新正式委員會共識仍是 9/16 的 12–0 升息。"
+    },
+    {
+      "title": "Fed Watch｜市場影響",
+      "icon": "🌐",
+      "content": "【已確認事實】Yahoo Finance 10/5 11:24 EDT 報導，10 年期殖利率升 5bp 至 5.33%，當時標普 500 指數約升 0.4%、Nasdaq 約升 0.7%、道瓊約跌 0.1%。指定 Yahoo 美債其餘期限、美元、VIX、聯邦基金／SOFR 期貨、黃金與主要風險資產均無完整可核驗快照。\n\n【來源觀點】Yahoo 將當日市場描述為面對高殖利率、歐洲不確定性與財報季前的謹慎交易，並稱較弱就業與較溫和通膨提升市場對 10 月按兵不動的預期。此為媒體的市場敘述，並非對單一資產報酬的因果證明。\n\n【本報分析】若 10/7 紀要或後續 CPI／PPI 強化通膨黏著與緊縮延長的訊號，長短端殖利率與美元可能維持壓力，對高評價美股、黃金及其他風險資產形成折現率逆風；若就業放緩延續而通膨降溫，則壓力可能緩和。這是條件式情境，不是對美債、美元、美股、黃金或風險資產的因果歸因或價格預測。"
+    },
+    {
+      "title": "Fed Watch｜未來重要日期",
+      "icon": "📅",
+      "type": "table",
+      "headers": ["日期／時間（美東；台北）", "事件", "官方來源與意義"],
+      "rows": [
+        ["10/7 14:00；10/8 02:00", "9 月 FOMC 會議紀要", "Federal Reserve；9/15–16 決策的討論紀錄。"],
+        ["10/14 08:30；10/14 20:30", "9 月 CPI", "BLS；消費者物價。"],
+        ["10/15 08:30；10/15 20:30", "9 月 PPI", "BLS；生產者物價。"],
+        ["10/27–28；台北 10/27–29", "FOMC 例會", "Federal Reserve；下一次利率決策。"],
+        ["10/29 08:30；10/29 20:30", "9 月 Personal Income and Outlays／PCE", "BEA；PCE 通膨更新。"],
+        ["11/6 08:30；11/6 20:30", "10 月 Employment Situation／NFP", "BLS；就業、薪資與失業率。"],
+        ["12/8–9；台北 12/8–10", "FOMC 例會與 SEP", "Federal Reserve；季度預測與利率路徑更新。"]
+      ],
+      "analysis": "時間均為美國東部時間與台北時間（10 月美東採 EDT，台北快 12 小時）；正式內容與時間以 Fed、BLS、BEA 發布日程為準。"
+    },
+    {
+      "title": "Fed Watch｜資料來源與取用規則",
+      "icon": "🔗",
+      "type": "news",
+      "items": [
+        {"headline":"Federal Reserve｜News & Events／Recent Postings","content":"本次 24 小時政策查核：頁面最後更新 10/5，未列出新的 FOMC 文件、貨幣政策演說或證詞。","url":"https://www.federalreserve.gov/newsevents.htm","tags":["官方","政策查核"]},
+        {"headline":"BLS｜9 月 Employment Situation","content":"10/2 官方發布：非農 +2.9 萬、失業率 4.2%、7–8 月合計下修 6 萬、時薪年增 3.0%。","url":"https://www.bls.gov/news.release/empsit.htm","tags":["官方資料","NFP"]},
+        {"headline":"BEA｜8 月 Personal Income and Outlays","content":"官方發布：PCE 物價月增 0.3%、年增 3.4%；核心 PCE 年增 3.0%。","url":"https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026","tags":["官方資料","PCE"]},
+        {"headline":"Federal Reserve｜2026 FOMC 成員與日程","content":"2026 實際投票委員名單，以及 10/27–28、12/8–9 會議日期與 SEP 標記。","url":"https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm","tags":["官方","成員／日程"]},
+        {"headline":"CME Group｜FedWatch Tool User Guide","content":"原始方法來源：30-Day Fed Funds 期貨；本次未取得即時機率表的可保存快照。","url":"https://www.cmegroup.com/tools-information/quikstrike/cme-fedwatch-tool-user-guide.html","tags":["方法","市場定價"]},
+        {"headline":"BLS｜2026 Release Schedule","content":"CPI、PPI、NFP 的官方發布日程。","url":"https://www.bls.gov/schedule/2026/","tags":["官方日程","CPI／PPI／NFP"]},
+        {"headline":"BEA｜Release Schedule","content":"PCE／Personal Income and Outlays 的官方發布日程。","url":"https://www.bea.gov/news/schedule/","tags":["官方日程","PCE"]},
+        {"headline":"Yahoo Finance｜10/5 市場即時報導","content":"補充：文內標示 ^TNX 5.33%（+5bp）與股市盤中表現；並非完整指定行情儀表板。","url":"https://finance.yahoo.com/markets/live/stock-market-today-monday-october-5-dow-sp-500-nasdaq-treasury-bond-081220790.html","tags":["媒體","市場反應"]},
+        {"headline":"Yahoo Finance｜指定行情代號與限制","content":"規則：^IRX（3M）、^FVX（5Y）、^TNX（10Y）、^TYX（30Y）、DX-Y.NYB、^VIX、ZQ=F／當期 ZQ、SR1=F、SR3=F；直連受限時不估計。","url":"https://finance.yahoo.com/","tags":["行情規則","資料限制"]}
+      ]
+    }
   ],
   "stats": {
     "total": 13,
@@ -208,12 +295,18 @@
     "market": 9,
     "geopolitics": 3,
     "withImages": 0,
-    "premarket": 1
+    "premarket": 1,
+    "fedWatch": 1
   },
   "keyThemes": [
     "中東雙線升溫：胡塞大規模空襲沙烏地利雅德機場與阿美煉油廠，黑海土耳其穀物船遭無人機擊沉，油市供應尾部風險居高",
     "長天期殖利率續揚：10Y 5.307%、30Y 5.661%，AI 建設約 1/3~1/2 靠舉債，高盛客戶端悄悄拋售 640 億美元標普期貨",
     "市場「怪組合」延續：股漲、廣度降、殖利率升、油價跌；美元獨強壓抑黃金，資金高度集中權值",
-    "台股：NASDAQ 創新高、TSM ADR +2.75%、台積電期夜盤 2,620、外資現貨大買 718.97 億 → 偏多開高，惟期貨淨空 −7.7 萬口與長假前調整，開高走低風險偏高"
+    "台股：NASDAQ 創新高、TSM ADR +2.75%、台積電期夜盤 2,620、外資現貨大買 718.97 億 → 偏多開高，惟期貨淨空 −7.7 萬口與長假前調整，開高走低風險偏高",
+    "Fed Watch：過去 24 小時無新的 FOMC 文件、利率行動或貨幣政策談話；最新委員會正式共識仍為 9/16 的 12–0 升息",
+    "9 月 NFP 非農僅增 2.9 萬、失業率 4.2%，且前兩月合計下修 6 萬；時薪年增 3.0%",
+    "8 月 PCE 物價年增 3.4%、核心年增 3.0%，通膨仍高於 2% 目標",
+    "10/7 FOMC 紀要、10/14 CPI、10/15 PPI 是 10/27–28 會議前的關鍵官方訊號",
+    "CME 即時機率及大部分 Yahoo／ZQ／SOFR 快照未能核驗；不填估計值或推導機率"
   ]
 }
