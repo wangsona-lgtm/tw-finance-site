@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-09",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 10月9日（五）+ 盤前分析",
+  "sections": [
+    {
+      "title": "伊朗稱更多油輪觸雷 — 川普宣布期中選舉前不動武",
+      "category": "geopolitics",
+      "summary": "荷莫茲海峽局勢持續升溫。伊朗國營媒體（Fars、IRIB）通報南荷莫茲水道夜間發生多起「猛烈爆炸」，指稱是「違規油輪」觸及海面水雷所致。與此同時，伊朗已把攻擊範圍從荷莫茲海峽狹窄水域擴大到波斯灣與阿曼灣——24小時內 IRGC 疑似在卡達外海與阿聯酋附近各擊中一艘商船（含一艘 VLCC 超大型原油輪，後者尚未證實），這是近一個月來首次在波斯灣深處攻擊油輪，顯示戰術轉向：不再等船隻「違規」，凡疑似繞道的船隻都可能被鎖定，且部分攻擊似刻意針對船員。\n\n轉折點在於川普週四在 Truth Social 發文，宣布「不會在11月期中選舉前對伊朗動武」，油價應聲回落（但當日仍上漲）。然而《大西洋月刊》報導白宮已要求五角大廈擬定期中選舉前的打擊選項，《紐約時報》亦稱美軍已起草三天空襲方案。伊朗總統裴澤希基安稱與美國談判「尚未完全破局」，雙方透過中間人交換修正案。UKMTO 統計10月5日當週海峽週邊至少12起針對油／LNG／LPG輪的攻擊，原油一度突破每桶100美元。Polymarket 顯示「美國在2026年10月31日前解除伊朗封鎖」機率僅 22%（否 79%）。🔒\n\n**重點摘錄：**\n• 伊朗戰術升級：攻擊已從荷莫茲海峽擴及整個區域水域，「繞道即被打」\n• 川普口頭降溫 vs. 五角大廈備戰：政治表態與軍事準備明顯矛盾\n• 油價對頭條極度敏感，布里特原油逼近戰爭高點、突破百元",
+      "url": "https://www.zerohedge.com/geopolitical/iran-expands-tanker-assault-beyond-narrow-confines-hormuz-rare-escalation",
+      "timestamp": "2026-10-09",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_6.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_7.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "沙國利雅德機場遭葉門胡塞飛彈重擊 多家航空停飛",
+      "category": "geopolitics",
+      "summary": "葉門胡塞武裝連日對沙烏地阿拉伯發動飛彈攻擊，週四直接命中利雅德「哈立德國王國際機場」，目擊者稱看到飛機冒出濃煙，機場「再次關閉」，Flightradar24 顯示航班停擺逾90分鐘，旅客被要求留下托運行李緊急疏散。漢莎航空集團、印度航空等多家國際航空公司宣布暫停飛往利雅德航班，部分長達一週；沙國當局已發布 NOTAM，預料更多航空公司跟進取消。美國國務院同步發出緊急通知，要求駐沙政府雇員使用利雅德機場須「特別授權」，並禁止接近葉門邊境20英里內區域。\n\n本週二、週三，沙國阿卜哈國際機場與利雅德機場接連遭胡塞飛彈襲擊，過去72小時共造成 3名平民死亡（埃及籍、阿爾及利亞籍、蘇丹籍各一）、36人受傷，為衝突重燃以來沙國首度出現平民死亡。沙國聯軍稱已攔截並摧毀兩枚射向利雅德與海米斯穆謝特的飛彈，並傳出有多架停放客機受損。同時葉門塔伊茲（Taiz）戰事升高，政府軍與胡塞在農村激烈交火。王儲沙爾曼預計加大施壓盟友加入反攻，巴基斯坦與土耳其已依《麥加防務協定》宣布提供防務援助。🔒\n\n**重點摘錄：**\n• 利雅德主要國際機場遭直接命中，多家國際航空停飛，美方限制政府人員使用該機場\n• 過去72小時 3死36傷，為衝突重燃以來沙國首見平民死亡\n• 葉門塔伊茲戰事升溫，區域衝突擴散風險上升",
+      "url": "https://www.zerohedge.com/geopolitical/explosions-rock-riyadhs-international-airport-amid-houthi-attack-travelers-evacuate",
+      "timestamp": "2026-10-09",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Nasdaq 重挫：FT 報導 OpenAI 營收不如預期",
+      "category": "market",
+      "summary": "《金融時報》引述提供給投資人的財務文件報導，OpenAI 年化營收約比先前對外釋出的訊號低了200億美元——公司近期告知投資人，截至9月底年化營收「接近500億美元」，遠低於上月 FT 引述投資人資訊所報導的700億美元。消息一出，那斯達克指數盤中重挫逾1%，整個 AI 類股遭到血洗，市場對「AI 資本支出繁榮＝超額需求」的敘事產生動搖。\n\n若營收與預期落差如此之大，相對於 OpenAI 高達1.5兆美元的承諾義務，錯位更加嚴重。Oracle 股價一度暴跌逾5%，Nvidia、AMD、Microsoft、Broadcom、Amazon、Nebius、CoreWeave 同步走弱。不過 CNBC 稍後澄清，落差反映的是會計方法差異——OpenAI 剔除雲端合作夥伴的毛收入，以提供更「乾淨」的營收指標。無論如何，市場對整個科技板塊高度槓桿於 OpenAI 與 Anthropic 的依賴已表露無遺。🔒\n\n**重點摘錄：**\n• FT：OpenAI 年化營收 500億 vs 先前報導 700億，落差 200億美元\n• Nasdaq 盤中跌逾1%，Oracle 一度重挫5%，AI 供應鏈全面走弱\n• CNBC 澄清為會計口徑差異；但暴露科技業對 OpenAI／Anthropic 的高度槓桿",
+      "url": "https://www.zerohedge.com/markets/nasdaq-tumbles-after-ft-reports-openai-revenues-disappointing",
+      "timestamp": "2026-10-09",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "「排擠效應巨大」：Broadcom、Oracle 加入 SpaceX 的 AI 晶片債務 SPV 狂潮",
+      "category": "market",
+      "summary": "繼 SpaceX 一天前尋求 400億美元的「晶片抵押 SPV 債務」（導致其 CDS 衝上太空軌道）之後，整個 AI 生態圈排隊跟進。《華爾街日報》報導，Broadcom 過去數週一直在為 OpenAI 客製 AI 晶片安排逾 500億美元融資，已接洽 Apollo 與 Blackstone 等放貸機構。另方面，被視為整個信用驅動 AI 泡沫中最弱一環、可能第一張倒下的骨牌的 Oracle，正與 Apollo 及高盛洽談，透過表外工具（off-balance-sheet vehicle）為一筆大型晶片採購融資。\n\n把 SpaceX 交易、Broadcom 為 Anthropic 安排的 600億美元融資（上週開始組團）加總，加上 Oracle 尚未定案的金額，AI 生態系統在約一週內已排起約1500億美元的晶片債務。ZeroHedge 直指這是典型的「AI 泡沫信用化」與「排擠效應（crowding out）」——企業以晶片為抵押大舉舉債，將排擠其他融資需求。文章以「辣椒、吉瓦與500億」為小標，暗示 AI 基建狂潮的能源與資本開銷規模驚人。🔒\n\n**重點摘錄：**\n• 一週內 AI 生態圈排起約1500億美元晶片債務（SpaceX 400億＋Broadcom 500億＋Anthropic 600億＋Oracle 未定）\n• 以晶片作抵押、透過 SPV／表外工具融資，風險高度集中\n• Oracle 被點名為泡沫最弱環節，「第一張骨牌」風險",
+      "url": "https://www.zerohedge.com/markets/crowding-out-effect-immense-broadcom-oracle-join-spacex-ai-chip-debt-spv-stampede",
+      "timestamp": "2026-10-09",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Citi：航太國防股「接近重大戰術底部」，逢低布局",
+      "category": "market",
+      "summary": "美國航太與國防類股近期走弱，與 Polymarket 顯示民主黨拿下參議院機率升破 64% 同步。標普500航太國防指數較夏季高點下跌約 20%，逼近熊市。Citi 航太國防分析師 John Godyn 週三報告認為，現在是選擇性「逢低買進」的時機，稱多數個股「已足夠接近重大戰術底部」，並對 RTX 開啟「正向催化劑觀察」。\n\n市場的關鍵錯位在於：Polymarket 的期中選舉機率壓抑這些股票（擔心民主黨大勝衝擊軍事支出展望），但提議中的軍事支出管道其實不斷擴大。Godyn 建議國防領域偏好與長期高成長大趨勢契合的中小型股，對 HII 開啟正向催化劑觀察，首選為 HWM；團隊另以100家供應商調查驗證公司說法。🔒\n\n**重點摘錄：**\n• 航太國防指數自夏季高點回落約20%逼近熊市，與民主黨參院勝選機率升高同步\n• Citi 稱「接近重大戰術底部」，選擇性逢低買進，偏好 RTX、HII、HWM\n• 「支出管道擴大 vs 選舉不確定性」的錯位是核心矛盾",
+      "url": "https://www.zerohedge.com/markets/citi-calls-aerospace-defense-stocks-close-major-tactical-bottom-after-brutal-selloff",
+      "timestamp": "2026-10-09",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_9_img_4.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "雜貨帳單壓力？高盛調查揭示哪家最便宜",
+      "category": "market",
+      "summary": "隨著消費者信心下滑、汽油與柴油價格擠壓低收入家庭，高盛最新雜貨價格調查指出：沃爾瑪（Walmart）在受調查的六家連鎖中仍是價格最低者，10月價格平均比群體均值低 15.7%（9月為低13.4%）；Dollar General 排名第二，價格低7%（9月低6.1%）。另一端，Whole Foods 價格高於均值10.9%、Sprouts 高9.8%、Albertsons 高6%，而 Kroger 低2.9%。\n\n該報告（10/6發布，涵蓋乳製品、冷凍食品、乾貨、家庭及個人護理、農產品共38項商品）發現，沃爾瑪在五個品類中的四個品類價格最低——乳製品低於品類均值20.4%、農產品低19.2%，其農產品價格較9月降7.4%、乳製品降2.9%。Dollar General 則在家庭及個人護理產品最便宜。報告指價格壓力出現選擇性緩解，但高度取決於連鎖店。🔒\n\n**重點摘錄：**\n• 高盛10月調查：沃爾瑪均價低群體15.7%（差距擴大），Whole Foods 最貴（高10.9%）\n• 沃爾瑪佔五品類中四類最低價；Dollar General 居次\n• 價格壓力選擇性緩解，凸顯低收入家庭仍承壓",
+      "url": "https://www.zerohedge.com/markets/grocery-bill-squeeze-goldman-reveals-where-shoppers-get-best-deals",
+      "timestamp": "2026-10-09",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_4.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Wells Fargo 因600億美元黑人購屋承諾遭聯邦調查",
+      "category": "market",
+      "summary": "《華爾街日報》報導，富國銀行（Wells Fargo）因針對提升非裔美國人購屋率的房貸方案，正面臨聯邦調查。美國住房與城市發展部（HUD）正檢視該行放貸實務是否因種族背景給予特定借款人優惠，可能觸犯聯邦住房歧視法。爭議源於富國自2017年起的一系列承諾，包括在十年內提供 600億美元融資、協助 25萬名非裔美國人購屋的計畫；該行後來推出針對少數族裔家庭的再融資協助。\n\nWSJ 指出，截至2023年底，富國僅交付原承諾融資約 40%；再融資計畫觸及約 5,100名借款人，平均每月還款減少100美元。該行此後大致停止公開推廣這些方案。HUD 部長 Scott Turner 稱，即使富國未違法，其「依種族區分美國人」的做法也「不道德、不合倫理、非美國」。此調查反映華府對2020年種族正義抗議後普及的企業多元政策採取更強硬立場——IBM、Deloitte 等公司已支付數百萬美元和解金。🔒\n\n**重點摘錄：**\n• HUD 調查富國是否因種族給予房貸優惠，可能違反聯邦住房歧視法\n• 600億美元承諾截至2023年底僅交付約40%，再融資觸及約5,100戶\n• 反映川普政府對企業 DEI 政策更強硬的執法方向",
+      "url": "https://www.zerohedge.com/markets/wells-fargo-faces-federal-probe-over-60-billion-commitment-black-homeownership",
+      "timestamp": "2026-10-09",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "市場快照：AI 疑慮與中東風險交織 「暴力輪動」（Headline Roulette）",
+      "category": "market",
+      "summary": "ZeroHedge 每日宏觀總結：平靜數日後，混亂重臨——中東多重升級與波灣供應中斷推升油價（布里特原油近戰爭高點，無視川普反覆立場）。股市原本平穩，直到 OpenAI 營收令人失望的報導引爆整個科技堆疊的賣壓（NDX 走弱、道瓊持平）。債市從昨日高點（油漲）擺盪至50日均線低點（油跌、科技緩解供給憂慮）。美元震盪收平，黃金收紅，加密貨幣崩跌（美國政府錢包移動與科技股崩盤）。高盛波動率交易台形容為「今天全面性的暴力輪動（violent rotations），地緣政治與 AI 頭條同時攪動市場」。🔒\n\n**重點摘錄：**\n• 油價、債市、科技股同步劇烈輪動，市場由「地緣政治＋AI」雙引擎驅動\n• 加密貨幣與 AI 股齊跌，黃金成避險去處\n• 高盛：核心是「暴力輪動」，而非單向趨勢",
+      "url": "https://www.zerohedge.com/markets/headline-roulette-back-ai-angst-mideast-missiles-spark-chaos-capital-markets",
+      "timestamp": "2026-10-09",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "美盤收盤總結：AI 疑慮壓科技股 油價逆勢上漲（Newsquawk US Market Wrap）",
+      "category": "market",
+      "summary": "美股週四走低，但跌幅主要來自科技股，市場廣度仍為正。那斯達克跌約1.4%，等權重標普500卻漲0.6%，反映資金自高估值科技股輪出至其他板塊。板塊方面，能源明顯領漲（受益油價），消費必需股居次（可口可樂、PepsiCo 財報帶動），科技與醫療保健落後。記憶體族群因三星電子初估Q3獲利與營收不如預期而走弱（DRAM ETF 跌約5%），SK海力士、Micron、Seagate 同步承壓；AI 相關個股在 FT 報導 OpenAI 營收後進一步下挫。美元小幅走弱、殖利率回落，避險與偏鴿的 ECB 會議紀要提供支撐。聯準會 Waller 稱「可能還需更多升息以馴服通膨，但不必連續升息」。🔒\n\n**重點摘錄：**\n• Nasdaq -1.4% 但等權標普 +0.6%，資金自科技股輪出、市場廣度為正\n• 能源領漲（油價）、消費必需股居次；記憶體族群受三星財報拖累\n• 殖利率回落＋ECB 偏鴿＋Waller 談升息，債市避險",
+      "url": "https://www.zerohedge.com/markets/stocks-hit-ai-concerns-while-oil-rallies-despite-trump-pushback-pre-election-strikes",
+      "timestamp": "2026-10-09",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "亞太盤前：科技賣壓延續 AI 陰霾（Newsquawk Daily Asia-Pac Market Open）",
+      "category": "market",
+      "summary": "美股漲跌互見、多數主要指數收黑，跌幅主要由科技股驅動，市場廣度仍正。Nasdaq 表現落後、等權標普上漲，反映自高估值科技股輪出。板塊中能源與消費必需股明顯跑贏，科技與醫療保健落後。記憶體弱勢始於隔夜三星電子初估財報不如預期（亞洲收跌2.4%），DRAM ETF 跌約5%，三星、SK海力士、Micron、Seagate 同弱。AI 相關個股在 FT 報導 OpenAI 年化營收較先前預估低200億美元（500億 vs 700億）後承壓，Nvidia、Microsoft、AMD、Oracle、Broadcom、Amazon、Nebius、CoreWeave 走弱；CNBC 稍後澄清為會計方法差異。美元小幅走弱、殖利率回落，風險趨避下避險需求支撐金價。今日關注挪威CPI、加拿大就業報告、美國密大消費者信心初值，以及 ECB 的 Cipollone／Schnabel、Fed 的 Collins 發言。🔒\n\n**重點摘錄：**\n• 三星初估財報不如預期拖累全球記憶體族群（DRAM ETF -5%）\n• OpenAI 營收落差報導續壓 AI 供應鏈；CNBC 澄清為會計口徑\n• 今日數據焦點：加拿大就業、美國密大信心、挪威CPI",
+      "url": "https://www.zerohedge.com/markets/us-major-indices-were-predominantly-lower-amid-tech-selling-and-ai-woes-newsquawk-daily",
+      "timestamp": "2026-10-09",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-10-09 (星期五)",
+      "category": "premarket",
+      "timestamp": "2026-10-09",
+      "summary": "⚠️ 今日（10/9 五）國慶補假休市——證交所無交易，MI_5MINS_HIST 最新資料列為 10/08（49,313.44）。本報以隔夜美股（10/8 週四收盤）為基準，供 10/12（一）開盤前參考，推薦標的順延至 10/12。隔夜訊號：油漲（WTI $91.08 +3.17%）／半導體弱（SOX -3.39%、TSM ADR -3.01%、SMH -2.84%）／外資期貨深度淨空 -83,194 口＋現貨單日 -758.52 億，三大訊號同步偏空，10/12 預設觀察優先、不追高。",
+      "market_context": {
+        "us_close": "2026-10-08",
+        "spx": 7765.36,
+        "spx_change_pct": -0.47,
+        "dow": 51231.64,
+        "dow_change_pct": 0.1,
+        "nasdaq": 27193.34,
+        "nasdaq_change_pct": -1.25,
+        "rut": 2794.13,
+        "rut_change_pct": 0.03,
+        "sox": 12623.71,
+        "sox_change_pct": -3.39,
+        "vix": 15.41,
+        "vix_change_pct": 2.19,
+        "tsm_adr": 457.99,
+        "tsm_adr_change_pct": -3.01,
+        "taiex_prev_close": 49313.44,
+        "usdtwd": 31.912,
+        "adr_premium_pct": 14.6,
+        "foreign_futures_oi": -83194,
+        "gold": 4163.6,
+        "gold_change_pct": 0.55,
+        "oil": 91.08,
+        "oil_change_pct": 3.17,
+        "btc": 81821,
+        "btc_change_pct": -1.75,
+        "tnx_pct": 5.231,
+        "tnx_change_pct": -0.87,
+        "usd_index": 102.12,
+        "expected_open": "偏空低開（外資深度淨空＋隔夜 SOX -3.39% 重挫）— 10/12 開盤前須再確認 10/9（五）美股收盤",
+        "support": "48,475（10/2 收盤）／49,000 心理關卡",
+        "resistance": "49,800~49,970（連兩日上緣）",
+        "key_theme": "隔夜訊號明確為「油漲／半導體弱／外資深度淨空」：WTI +3.17% 至 $91.08（G7 擬釋戰備儲油、中東供應擾動）、XLE +2.97% 領漲，能源為少數有實質報價支撐的軸線；反之 SOX -3.39%、SMH -2.84%、TSM ADR -3.01%、AVGO -4.35%、NVDA -2.94% 半導體全面走弱，Nasdaq -1.25% 領跌（OpenAI 營收落差＋三星財報）。外資台指期淨空 -83,194 口（連兩日增空至歷史區高位）＋現貨單日 -758.52 億＋交易淨 -4,048 口＝三大訊號同步偏空。10Y 殖利率連兩日回落至 5.231%、VIX 15.41（+2.19%）未破 18。今日休市，10/12 主軸：傳產能源強／半導體電子弱，預設觀察優先。"
+      },
+      "recommendations": [
+        {
+          "symbol": "6505",
+          "name": "台塑化",
+          "direction": "🟢 觀察偏多（僅低接、不追高）",
+          "strategy": "回檔 107~108（前收下方）才考慮低接，禁止市價追高",
+          "recommend_price": 107.5,
+          "target": null,
+          "stop_loss": null,
+          "recommend_reason": "WTI +3.17%、XLE +2.97%；10/8 油電燃氣類 +3.04% 全場最強、6505 收 110.5（+3.27%）、投信買超 +16.39 億；油價為少數有報價支撐的軸線。惟昨已 +3.27%，不追高。順延至 10/12，開盤前須重新確認 10/9（五）油價。"
+        },
+        {
+          "symbol": "2882",
+          "name": "國泰金",
+          "direction": "⚪ 反彈觀察（不預設趨勢）",
+          "strategy": "站穩 110 前不進場，僅視跌深反彈",
+          "recommend_price": null,
+          "target": null,
+          "stop_loss": null,
+          "recommend_reason": "隔夜美 XLF +0.89%（金融反彈）、10/8 台金融 -1.68% 屬超賣。順延至 10/12，僅視跌深反彈、不預設趨勢。"
+        },
+        {
+          "symbol": "1301",
+          "name": "台塑",
+          "direction": "⚪ 觀察",
+          "strategy": "不追高，防「昨日強勢→隔日回落」",
+          "recommend_price": null,
+          "target": null,
+          "stop_loss": null,
+          "recommend_reason": "油價上揚成唯一事件驅動軸線；台塑 10/8 +7.82% 補漲。順延至 10/12，不追高。"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-10-08",
+        "tracking_period": "10/8 盤前 → 10/8 收盤",
+        "total": 2,
+        "hit": 1,
+        "miss": 1,
+        "hit_rate_pct": 50.0,
+        "best": "6505 台塑化（作多，回檔 104~105.5，收 110.5、+3.27%，目標 110/113 全達，✅ 命中）",
+        "worst": "2882 國泰金（作多，110~111，收 110、-2.65%，金融保險類 -1.68% 第二弱，❌ 失誤）",
+        "lessons": [
+          "核心錯：把「防禦」等同「金融」— 實際連假避風港在油電燃氣（+3.04%）。連假防禦須有「當週實質報價/事件支撐」。",
+          "進場價位連續第 2 日同型失誤（6505 淺回檔 104.5 全日未成交，最低 105.5）→ 前日類股最強＋隔日開平型態，取消淺回檔限價，改為開盤 30 分鐘不破低即市價進場。",
+          "動能模型與觀察名單自相矛盾（6672 已達「連 3 根漲停＝訊號」卻列不追高，當日再漲停）→ 訊號衝突時列「小部位試單」，累積證據再定規。",
+          "三大法人同步偏空（外資現貨 -758 億、期貨淨空 -83,194 口、淨交易 -4,048 口）→ 10/12 預設觀察優先，開盤前先看連假美股／SOX 表現，不預設方向。"
+        ]
+      }
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "premium": 10,
+    "market": 8,
+    "geopolitics": 2,
+    "withImages": 6,
+    "premarket": 1
+  },
+  "keyThemes": [
+    "中東戰事升級推升油價逼近百元：伊朗攻擊擴及波斯灣／阿曼灣（油輪觸雷、VLCC 遇襲），沙國利雅德機場遭胡塞飛彈重擊（72 小時 3 死 36 傷、多家航空停飛）；川普宣布期中選舉前不動武，但五角大廈已備妥選前打擊選項",
+    "OpenAI 營收落差重擊 AI 類股：FT 報導年化營收 500 億 vs 先前 700 億（落差 200 億美元），Nasdaq -1.25%、SOX -3.39%、Oracle 一度 -5%，AI 供應鏈全面走弱；CNBC 澄清為會計口徑差異",
+    "AI 晶片債務 SPV 狂潮與排擠效應：一週內 SpaceX 400 億＋Broadcom 500 億＋Anthropic 600 億＋Oracle 未定 ≈ 1,500 億美元，以晶片為抵押／表外工具融資，泡沫信用化疑慮升溫",
+    "市場「暴力輪動」：能源領漲（XLE +2.97%、WTI +3.17%）、科技與記憶體領跌（三星財報拖累 DRAM ETF -5%）；等權標普 +0.6% vs Nasdaq -1.4% 廣度為正，黃金 +0.55%、加密崩跌",
+    "台股盤前（10/9 國慶補假休市）：隔夜「油漲／半導體弱／外資深度淨空 -83,194 口＋現貨 -758.52 億」，供 10/12 參考——預設觀察優先、不追高，主軸傳產能源（6505 台塑化）vs 避開半導體 AI"
+  ]
+}
