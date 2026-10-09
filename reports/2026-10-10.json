@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-10",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 10月10日（六）",
+  "sections": [
+    {
+      "title": "Hormuz、颶風、升息與 AI 會計的「打嗝」：川普把戰爭放上選舉計時器，垃圾債悄悄裂開",
+      "category": "market",
+      "summary": "本週市場主旋律再度由油價的「頭條輪盤」主導。伊朗擴大在荷莫茲海峽周邊的攻擊、胡塞武裝襲擊沙烏地機場、颶風 Isaias 迫使墨西哥灣約 63% 原油產能關停（約 130 萬桶/日），川普則承諾「在期中選舉前不攻擊伊朗」，並與俄羅斯達成柴油協議以壓低油價——布蘭特原油一度站上 $104。美債 10 年期殖利率在觸及 2002 年以來高點後仍釘在約 5.25%，即便三次標售全數過關、初領失業金接近數十年低點，偏鷹的會議紀要幾乎沒有新意。股市方面，標普 500 週二創下今年第 28 次收盤新高，週四卻因 FT 一篇關於 OpenAI 營收的報導重擊半導體，並把甲骨文 CDS 推到歷史新高——股票與信用市場的故事終於在此交會。投資人一週內把 1,660 億美元灌進貨幣市場基金，為 2020 年 4 月以來最多。海外方面，法國公債在歐債危機以來最闊水準下方止穩，但對歐元的傷害未修復；巴西則因 Flávio Bolsonaro 首輪擊敗 Lula 成為本週最明確的風險偏好交易。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/hormuz-hurricanes-hikes-hiccups-ais-accounting-trump-puts-war-election-timer-junk-quietly",
+      "timestamp": "2026-10-10",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "「唯一被害怕的是右尾」：McElligott 揭示為何標普對底下的屠殺視而不見",
+      "category": "market",
+      "summary": "野村跨資產主管 Charlie McElligott 在最新「BINARIES」報告中，描繪出一個「指數層面沉睡、底下卻是全面滾動熊市」的市場：標普 500 兩個月來原地踏步，85% 的成分股已進入修正，而市場唯一願意付費買的選擇權竟只剩上漲買權。他把這種「只有右尾恐懼」的定價結構稱為 2026 年的市場特徵——指數被少數權重股撐住，廣度卻持續惡化，形成典型的「K 型」行情。McElligott 指出，唯一真正賺錢的交易是「做多 AI 的限制條件」（long the AI \"constraints\"，即能源、電力、記憶體等瓶頸環節），而能源——特別是歐洲柴油短缺——讓整個市場隨時離一場殖利率風暴只差一個頭條。他在報告中強調，這個結構對被動指數投資人具有誤導性：指數的平靜與成分股的痛苦並存，意味著一旦龍頭股鬆動，指數的下行將是斷崖式的而非漸進式的。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/only-fear-right-tail-mcelligott-shows-why-sp-blind-carnage-beneath-it",
+      "timestamp": "2026-10-10",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "股市本週收紅，靜待風險事件 — Newsquawk 美股收盤總結",
+      "category": "market",
+      "summary": "週五美股收高，科技股把週四 FT 關於 OpenAI 的報導拋在腦後。房地產、消費耐久財與醫療保健領漲，通訊類股因 SpaceX 競爭憂慮拖累 Verizon（-8.6%）與 T-Mobile（-13.3%）而落後。收盤：SPX +0.58% 至 7,810、NDX +0.51% 至 30,883、DJI +0.83% 至 51,655、RUT +0.46% 至 2,807。經濟數據方面，密大 10 月消費者信心初值降至 46.3（前 48.1、預期 47.5），為連續第三個月下滑、逼近歷史低點；現況指數崩至 44.7，但預期指數逆勢升至 47.3；1 年期通膨預期升至 4.7%、5 年期升至 3.5%。債市熊市平坦化：2 年期 +2.9bp 至 4.791%、5 年期 5.021%、10 年期 +0.7bp 至 5.242%、30 年期 5.601%。油價收紅，WTI +$0.36 至 91.85、布蘭特 +$0.44 至 104.72；但川普宣布與普丁通話成功、美國允許俄羅斯柴油進口後一度承壓。地緣上，IRGC 警告將在荷莫茲海峽以外追擊違規船隻，胡塞據報在曼德海峽布雷，一艘 LPG 船 NV Sunshine 遭打擊、UKMTO 另報一艘船在 UAE 附近被擊中。下週焦點：美國 CPI、零售銷售、Q3 財報開跑、中國 CPI、英國就業；Fed 主席 Warsh 將於 CPI 隔天在曼谷 IMF 發表演說。10/12 哥倫布日：美國現金債市休市，CME 期貨與 NYSE/Nasdaq 照常。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/stocks-ends-week-front-foot-risk-events-await-newsquawk-us-market-wrap",
+      "timestamp": "2026-10-10",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "「營收延遲、現金流延遲」：摩根士丹利警告甲骨文資料中心延宕恐壓垮其債務",
+      "category": "market",
+      "summary": "信用市場流行一種安慰性說法：甲骨文資料中心蓋慢了，資本支出自然也慢，等於替資產負債表爭取時間。摩根士丹利不買帳。在名為「ORCL Credit: Lighthouse in the Fog」的報告中，分析師 Lindsay Tyler 與 Benjamin Guerrero 直言：延宕「也意味著商業化延遲、概念驗證延遲、營收延遲、現金流延遲」——對一家有超過 6,000 億美元未來營收綁在 AI 資料中心建設上的公司而言，這就是整個投資邏輯。週四甲骨文 5 年期 CDS 收在歷史新高 261bp，隱含未來五年違約機率逾 20%——而它是一家投資等級公司。問題核心在電力而非施工：威斯康辛 Port Washington 的 1.3GW「Project Lighthouse」（4 棟樓、約 902MW 關鍵 IT 負載）需要州 PSC 批准新的 ATC 輸電線，但 PSC 八月撤銷了完整性認定、案件終結，ATC 只能重新立案、時鐘歸零。MS 引述分析指出，實質負載恐要到 2028 年中才到位，遠晚於甲骨文 6 月財測的 2H CY27。更棘手的是，WEC 表示甲骨文的 S&P 降評已觸發追加擔保，「現行評級已要求全額信用支持」——等於甲骨文正在為 2028 年才拿到的電力預付現金。新墨西哥 Jupiter 廠甚至考慮用卡車運壓縮天然氣，成本約為管道氣價的 4 倍，消息一出股價一度跌 6.1%。MS 反駁「資本支出遞延＝利多」的四大理由：①營收與現金流實現遞延；②若多棟樓同時就緒，GPU 資本支出與租賃負債將更集中、更「塊狀」；③RPO 的交期條款與違約救濟幾乎無透明度；④執行風險恐外溢至客戶行為、壓縮預付款與續約意願。甲骨文 FY2026（5/31 止）借款約 430 億美元，本財年預計再籌 400 億美元債務與股權；Tyler 估算，即使再收到約 400 億美元客戶預付款，母公司到 FY28 底前「可能仍需兩筆大型債券發行」。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/delayed-revenue-delayed-cash-flow-morgan-stanley-warns-oracle-data-center-delays-could",
+      "timestamp": "2026-10-10",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_6.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_7.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_9.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "AI 贏家／輸家：美國 vs 歐洲",
+      "category": "market",
+      "summary": "AI 正在各處製造分化——無論是 K 型經濟或跨國成長分歧。AI 資本支出熱潮透過外溢效應、資金排擠與跨境發行，正在全面推升各地資金成本，但好處並未被平均分享。文章以美歐對比切入：美國掌握 AI 算力與資本市場深度，歐洲則在能源成本、監管與融資結構上處於劣勢，成為這輪 AI 循環中的相對輸家。作者指出，AI 帶動的資本需求正在改變全球利率與信用市場的地貌，而這種「成本上升、收益集中」的結構，本身就是當前跨資產波動的深層原因。（🔒 僅有預覽片段，本篇僅提供 364 字導言）",
+      "url": "https://www.zerohedge.com/markets/ai-winnerslosers-us-versus-europe",
+      "timestamp": "2026-10-10",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "📊 週末盤前資料缺口（休市）",
+      "category": "premarket",
+      "timestamp": "2026-10-10",
+      "summary": "今天為週六休市日，僅提供 ZeroHedge 導讀，不做台股盤前分析。",
+      "data_gap": true,
+      "gap_reason": "週末/假日休市",
+      "market_context": null,
+      "recommendations": []
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "premium": 5,
+    "market": 5,
+    "geopolitics": 0,
+    "withImages": 1,
+    "premarket": 0,
+    "data_gap": true
+  },
+  "keyThemes": [
+    "油價主導全資產定價：荷莫茲 + 曼德海峽布雷 + 颶風關停墨灣 63% 產能，布蘭特站上 $104，川普-普丁柴油協議短線壓抑",
+    "標普新高背後的「滾動熊市」：85% 成分股已修正，甲骨文 CDS 261bp 創史高，信用市場先行反映 AI 融資壓力",
+    "停滯性通膨味濃：密大信心 46.3 連三降逼近歷史低，通膨預期反升（1年 4.7%），資金 1,660 億美元湧入貨幣基金",
+    "McElligott：唯一有效交易是「做多 AI 物理瓶頸」（能源/電力/記憶體），下檔保護需求低落、右尾持續"
+  ]
+}
