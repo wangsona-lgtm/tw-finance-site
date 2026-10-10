@@ -1,99 +1,138 @@
 {
   "date": "2026-10-11",
   "type": "daily-reports",
-  "source": "fed-watch",
-  "title": "Fed Watch 聯準會動向 — 10月11日（日）",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 10月11日（日）",
   "sections": [
     {
-      "title": "Fed Watch｜今日重點摘要",
-      "icon": "🏛️",
-      "content": "【已確認事實】資料擷取於 2026-10-11 05:59 台北時間（美東 10/10 17:59）。過去 24 小時，Fed 官方 2026 新聞稿清單仍以 10/9 的家庭財務調查為最新項目，沒有新增 FOMC 聲明、目標利率行動、SEP、貨幣政策演說或國會證詞。下一次 FOMC 例會為 10/27–28。\n\n【來源觀點】本次未取得可保存的 CME FedWatch live 機率表；不引用未標示擷取時間的轉載數字。最新可核驗的個人政策訊號仍是 Waller 10/8 演說：若資料如預期，他預期還需要升息，但不必連續會議進行。\n\n【本報分析】本日沒有新政策訊號，故判讀維持不變：9 月會議紀要所記載的市場緊縮預期與 Waller 的個人偏緊縮、資料依賴立場方向一致，但皆不能替代 10/27–28 的委員會決策。10/14 CPI 與 10/15 PPI 是下一輪可驗證的通膨資訊。"
+      "title": "「無庫存可抽」：高盛測得逼近紀錄的每桶 22 美元油價風險溢價，全球原油庫存見底",
+      "category": "market",
+      "summary": "自 2 月伊朗戰爭爆發七個月來，油市一直靠庫存「吃老本」，本週業界巨頭直言老本已耗盡。全球最大獨立石油交易商 Vitol 執行長 Russell Hardy 在倫敦 Energy Intelligence Forum 表示：「西方已經沒有庫存可再抽了」；能源分析師 John Kemp 最新報告標題直指「全球原油庫存跌至危險低位」。Hardy 更警告，一旦荷莫茲海峽穿梭運輸中斷，「就會出現每桶 200 美元的情境」。高盛指出油價中的風險溢價已逼近每桶 22 美元的歷史紀錄，反映市場對供應中斷的高度定價。核心矛盾：庫存緩衝墊幾近耗盡，任何新的地緣衝擊都缺乏吸收能力。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/nothing-left-drain-goldman-finds-near-record-22-oil-risk-premium-global-stocks-hit-rock",
+      "timestamp": "2026-10-11",
+      "images": [],
+      "premium": true
     },
     {
-      "title": "Fed Watch｜即時市場儀表板",
-      "icon": "📊",
-      "type": "table",
-      "headers": ["項目／指定代號", "可核驗快照（擷取／市場時間）", "日變動", "來源／限制"],
-      "rows": [
-        ["3 個月殖利率（Yahoo ^IRX）", "無可核驗快照", "—", "2026-10-11 05:59 台北時間嘗試取得 Yahoo 指定代號，無可保存回應；不以代理值代填。"],
-        ["5 年殖利率（Yahoo ^FVX）", "無可核驗快照", "—", "^FVX 為 5 年期，非 2 年期；未取得可保存的 Yahoo 快照。"],
-        ["10 年殖利率（Yahoo ^TNX）", "無可核驗快照", "—", "未取得指定代號、時間戳與日變動完整的 Yahoo Finance 報價。"],
-        ["30 年殖利率（Yahoo ^TYX）", "無可核驗快照", "—", "未取得指定代號、時間戳與日變動完整的 Yahoo Finance 報價。"],
-        ["2 年殖利率（補充）", "無可核驗快照", "—", "未取得具可靠來源、時間戳與日變動的 2 年期快照。"],
-        ["美元指數（Yahoo DX-Y.NYB）", "無可核驗快照", "—", "未取得可保存的 Yahoo Finance 指定代號報價。"],
-        ["VIX（Yahoo ^VIX）", "無可核驗快照", "—", "未取得可保存的 Yahoo Finance 指定代號報價。"],
-        ["聯邦基金期貨（Yahoo ZQ=F／當期 ZQ）", "無可核驗快照", "—", "缺少完整合約報價；不得反推精確 FedWatch 機率。"],
-        ["SOFR 期貨（Yahoo SR1=F、SR3=F）", "無可核驗快照", "—", "缺少完整合約月、到期與計算假設；不作機率換算。"]
+      "title": "現貨價是門檻的四倍：每 GW 500 億美元的 neocloud 租金揭示 AI 營收缺口",
+      "category": "market",
+      "summary": "高盛最新 SpaceX（SPCX）報告第 7 頁的一張圖，給出「一 GW 值多少錢」的三個答案：短期現貨租約每年 400–500 億美元、長期代管合約 200–300 億美元、超大規模雲端商僅需約 120 億美元。三者間的巨大落差，正是 AI 營收爭議與每年逾 1 兆美元資本支出追逐的核心。圖中深藍柱為短期產能交易、淺藍柱為長期代管合約，訊息明確：GPU 資料大廳極度稀缺，擁有者可「自己開價——只要買方只承諾幾個月」。SpaceX（承接 xAI Colossus 算力）稱代管交易「落在 30–50 億美元/GW 區間的高端」，Nebius 亦揭露類似短期合約。作者警告 AI 擴建靠債務與難以核實的營收數字運轉，現貨天價無法外推至整體擴建。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/spot-four-times-hurdle-what-50-billion-gigawatt-neocloud-rents-say-about-ai-revenue-gap",
+      "timestamp": "2026-10-11",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_2_img_8.png"
       ],
-      "analysis": "Yahoo Finance 指定行情端點在本次擷取時不可核驗，且 CME live 表格無可保存快照；所有數值缺口均照實揭露，不填估計值。"
+      "premium": true
     },
     {
-      "title": "Fed Watch｜利率路徑與 FedWatch",
-      "icon": "📈",
-      "content": "【原始方法來源】CME FedWatch 以 30-Day Fed Funds（ZQ）期貨中平均每日有效聯邦基金利率（EFFR）的隱含預期，按 25bp 變動與其他已揭露假設建立無條件機率樹。\n\n【本次可用性與機率】CME 方法頁與 FedWatch 工具說明可核驗，但未取得本報可保存的 10/11 live 機率表；因此沒有任何數字標示為「10/11 CME FedWatch」。亦未找到可標明文章／擷取時間的可靠二手 FedWatch 引用。\n\n【交叉檢核】ZQ 與 SOFR 指定行情皆無可核驗快照，不能與 FedWatch 作數值交叉檢核。9 月 FOMC 紀要記載市場隱含政策路徑在會前上升，Waller 10/8 則主張若資料如預期仍需進一步升息；兩者只能支持方向性觀察，不構成當日機率的交叉驗證。"
+      "title": "「這基本上就是一個大交易」：高盛 Pasquariello 說這是牛市，但只在對的地方",
+      "category": "market",
+      "summary": "高盛對沖基金業務主管 Tony Pasquariello 兩個月來持續告訴客戶「主要趨勢向上、維持多頭」，但 S&P 500 長期在 7,700 點附近盤整。本週指數終於突破擁擠區，週二收 7,818 創新高，週四因 OpenAI 營收驚嚇回落至 7,765。他在最新市場／宏觀報告中語氣轉趨保留：有時認為市場在各大資產類別壓力下仍不破是看多訊號，有時又懷疑市場只是對日益累積的風險（尤以全球債券殖利率飆升為首）過度自滿。他形容「這基本上就是一個大交易」，暗示漲勢高度集中在少數標的。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/basically-just-one-big-trade-goldmans-pasquariello-says-its-bull-market-only-if-you-look",
+      "timestamp": "2026-10-11",
+      "images": [],
+      "premium": true
     },
     {
-      "title": "Fed Watch｜官員立場追蹤（2026 實際投票委員）",
-      "icon": "🗣️",
-      "type": "table",
-      "headers": ["委員／職位", "投票權", "立場標示", "最近可核驗談話／異議／投票", "來源連結與判定理由"],
-      "rows": [
-        ["Kevin Warsh／理事會主席、FOMC 主席", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；最新正式投票支持緊縮。"],
-        ["John C. Williams／紐約聯儲總裁、副主席", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "同一紀要；常任投票席位，本次無新個人政策證據。"],
-        ["Michael S. Barr／理事", "有", "鷹派（未更新）", "9/29：經濟與貨幣政策演說；9/16：支持升息", "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm；基準情境仍稱可能需要進一步調整。"],
-        ["Michelle W. Bowman／理事、副主席（監管）", "有", "鷹派（未更新）", "10/6：監管演說；9/16：12–0 上調", "https://www.federalreserve.gov/newsevents/2026-october.htm；10/6 主題為監管，非新利率指引。"],
-        ["Lisa D. Cook／理事", "有", "鷹派（未更新）", "9/30：Dual Mandate in Rural America；9/16：12–0 上調", "https://www.federalreserve.gov/newsevents/2026-speeches.htm；本次無新談話或異議。"],
-        ["Beth M. Hammack／克里夫蘭聯儲總裁", "有", "鷹派（未更新）", "9/25：通膨心態／限制性政策談話；9/16：12–0 上調", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；本次無新個人政策證據。"],
-        ["Philip N. Jefferson／理事、副主席", "有", "鷹派／資料依賴（未更新）", "10/1：支持 9/16 升息；未來調整取決於資料、前景與風險平衡", "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm；未承諾下一次行動。"],
-        ["Neel Kashkari／明尼阿波利斯聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調；7/29 曾異議主張升息", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；正式行動偏緊縮。"],
-        ["Lorie K. Logan／達拉斯聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調；7/29 曾異議主張升息", "同一紀要；正式行動偏緊縮。"],
-        ["Anna Paulson／費城聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "https://www.federalreserve.gov/monetarypolicy/fomc.htm；2026 輪值投票，本次無新個人證據。"],
-        ["Jerome H. Powell／理事", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；本次無新個人政策證據。"],
-        ["Christopher J. Waller／理事", "有", "鷹派／資料依賴（未更新）", "10/8：若資料如預期，預期仍需升息；不必連續會議進行", "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm；個人意見，保留時間彈性。"]
+      "title": "「投資人處處見鬼」：高盛合夥人稱別對抗狹窄行情，僅 10 檔股票貢獻 Q3 68% 獲利成長",
+      "category": "market",
+      "summary": "本週 10 年期公債標售「極佳」、兩大晶片商財報創紀錄、法國民粹領袖承諾比建制派更緊縮——卻都成了賣出理由。高盛合夥人 Mark Wilson 的診斷是：「新聞沒問題，是病人有問題。」他在最新週報指出，市場情緒已與部位數據一致，而部位數據「糟到不能再糟」。僅 10 檔股票貢獻第三季 68% 的獲利成長，市場狹窄度極高。Wilson 建議別對抗這種狹窄（趨勢仍集中於少數權值股），並警告動能可能由順風轉為「陷阱門（trapdoor）」。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/investors-see-ghosts-around-every-corner-goldman-partner-says-dont-fight-narrowness-just-10",
+      "timestamp": "2026-10-11",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "研究：'Finfluencer' 選擇權喊單引發的買盤暴衝很快消退",
+      "category": "market",
+      "summary": "據彭博，一項研究檢視 15 個付費 Discord 交易社群發現固定模式：網紅發布選擇權交易 → 追隨者湧入 → 成交量暴增、價格跳升，但興奮通常不持久。散戶跟單活動達正常水準的約 14.5 個標準差，推薦選擇權首分鐘平均漲約 3%，但約兩小時內大部分價格衝擊即消失。這讓「先喊先買」的發布者佔盡優勢——後到的追隨者已付更高價；計入交易成本後，即使幾乎立即反應的訂閱者普遍虧錢。奧克拉荷馬州立大學教授 Brian Roseman 指出：「網紅的影響力把價格推高，而非其選股能力。」案例：今年 5 月 eBay 兩日到期買權喊單後暴漲約 30%，發布者稱已快速獲利了結，隨後回落。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/finfluencer-options-alerts-drive-buying-surges-quickly-fade-study-finds",
+      "timestamp": "2026-10-11",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_4.jpg"
       ],
-      "analysis": "名單以 Fed 的 2026 Committee Members 為準；投票與異議優先於談話。9/16 的 12–0 升息是委員會共識；個人立場標示不可視為下一次會議的集體承諾。"
+      "premium": true
     },
     {
-      "title": "Fed Watch｜市場影響",
-      "icon": "🌐",
-      "content": "【已確認事實】9 月 FOMC 紀要記載，該會議前市場隱含政策路徑、名目美債殖利率與股票價格上升，美元走貶；這是官方文件對歷史會期間的描述，並非本報當日行情。\n\n【來源觀點】本報未取得可保存的當日 Yahoo 指定行情或 CME live 機率表，故不對美債、美元、美股、黃金或主要風險資產作即日數字歸因。\n\n【本報分析】若 10/14 CPI、10/15 PPI 強化通膨居高與再緊縮預期，殖利率與美元可能面臨上行壓力，對高評價美股、黃金及主要風險資產的折現率較不利；若通膨降溫，壓力可減輕。這是條件式情境，非已證實因果。"
+      "title": "荷莫茲、颶風、升息與 AI 會計的疑慮：川普把戰爭放上選舉計時器，垃圾債悄然裂開",
+      "category": "market",
+      "summary": "本週油價（及成品油）屢屢威脅再掀通膨衝擊，債市要求為各方野心付出更高融資代價，AI 投資人則發現「營收的定義」至關重要。川普「選前不襲擊伊朗」的承諾（加上與俄的柴油協議）與較令人安心的 OpenAI 預測幫助情緒回穩，但兩者都未解決根本問題：政府與科技公司承諾一個昂貴的未來，卻仍待他人出資。本週事件流：伊朗在荷莫茲周遭升高攻擊、胡塞攻擊沙國機場、颶風 Isaias 使墨西哥灣 63% 原油產能停擺、川普承諾「中期選舉前」不打伊朗、胡塞據報在曼德海峽布雷。10 年期美債殖利率盤旋 5.25%（曾觸 2002 年來高點），標售全數過關、初領失業金近數十年低點，Fed 紀要偏鷹但無新意。SPX 週二創今年第 28 次收盤新高，週四因 FT 報導 OpenAI 營收而重挫、甲骨文 CDS 創紀錄；投資人單週把 1,660 億美元投入貨幣市場基金，為 2020 年 4 月以來最多。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/markets/hormuz-hurricanes-hikes-hiccups-ais-accounting-trump-puts-war-election-timer-junk-quietly",
+      "timestamp": "2026-10-11",
+      "images": [],
+      "premium": true
     },
     {
-      "title": "Fed Watch｜未來重要日期",
-      "icon": "📅",
-      "type": "table",
-      "headers": ["日期／時間（美東；台北）", "事件", "官方來源與意義"],
-      "rows": [
-        ["10/13 04:30；10/13 16:30", "Waller：經濟展望演說", "Federal Reserve 10 月日程；可能提供個人政策訊號。"],
-        ["10/14 08:30；10/14 20:30", "9 月 CPI", "BLS；消費者物價。"],
-        ["10/15 08:30；10/15 20:30", "9 月 PPI", "BLS；生產者物價。"],
-        ["10/27–28；台北 10/27–29", "FOMC 例會", "Federal Reserve；下一次利率決策。"],
-        ["10/29 08:30；10/29 20:30", "9 月 Personal Income and Outlays／PCE", "BEA；PCE 通膨更新。"],
-        ["11/6 08:30；11/6 20:30", "10 月 Employment Situation／NFP", "BLS；就業、薪資與失業率。"],
-        ["12/8–9；台北 12/8–10", "FOMC 例會與 SEP", "Federal Reserve；季度預測與利率路徑更新。"]
+      "title": "利雅德國際機場遭大規模傷亡的胡塞飛彈齊射後全面停擺",
+      "category": "geopolitics",
+      "summary": "週六葉門胡塞武裝再次以彈道飛彈齊射重擊沙烏地阿拉伯利雅德哈立德國王國際機場。第三航廈遭飛彈直接命中並疏散，至少有人受傷，官方稱可能出現大規模傷亡；現場出動數十輛救護車與直升機，傷者送往利雅德法赫德國王醫院，官方證實影片顯示地板血跡。Flightradar24 顯示週六大部分時間抵達航班全面取消，已在空中的客機被轉降至其他城市。這是至少一週內對沙國民航樞紐的多起攻擊之一，10 月 8 日機場已先遭攻擊。多國陸續警告公民遠離。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/geopolitical/mass-casualties-reported-new-houthi-missile-barrage-riyadhs-international-airport",
+      "timestamp": "2026-10-11",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_5.png"
       ],
-      "analysis": "時間為美國東部時間與台北時間（10 月美東採 EDT，台北快 12 小時）；內容與時間以 Fed、BLS、BEA 官方日程為準。"
+      "premium": true
     },
     {
-      "title": "Fed Watch｜資料來源與取用規則",
-      "icon": "🔗",
-      "type": "news",
-      "items": [
-        {"headline": "Federal Reserve｜2026 新聞稿與 FOMC 文件", "content": "最新清單為 10/9 家庭財務調查；9/16 FOMC 紀要為最近的政策文件。Fed.gov 官方文件優先。", "url": "https://www.federalreserve.gov/newsevents/pressreleases/2026-press.htm", "tags": ["官方", "政策查核"]},
-        {"headline": "Federal Reserve｜Waller 10/8 演說", "content": "個人立場：若資料如預期仍需要升息，但不必於連續會議進行。", "url": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm", "tags": ["官方", "官員談話"]},
-        {"headline": "Federal Reserve｜10 月日程與 FOMC", "content": "列出 10/13 Waller、10/27–28 FOMC 與其他官員活動。", "url": "https://www.federalreserve.gov/newsevents/2026-october.htm", "tags": ["官方", "日程"]},
-        {"headline": "CME Group｜FedWatch 方法與工具", "content": "以 30-Day Fed Funds（ZQ）期貨推導；live 機率表本次無可保存快照，不以替代資料冒充。", "url": "https://www.cmegroup.com/articles/2023/understanding-the-cme-group-fedwatch-tool-methodology.html", "tags": ["方法", "市場定價"]},
-        {"headline": "BLS｜2026 年 10 月發布日程", "content": "10/14 CPI、10/15 PPI、11/6 NFP 的官方日期與美東時間。", "url": "https://www.bls.gov/schedule/2026/10_sched.htm", "tags": ["官方日程", "CPI／PPI／NFP"]},
-        {"headline": "BEA｜發布日程", "content": "9 月 Personal Income and Outlays／PCE 預定 10/29 08:30 ET。", "url": "https://www.bea.gov/news/schedule/full", "tags": ["官方日程", "PCE"]},
-        {"headline": "Yahoo Finance｜指定行情代號與限制", "content": "^IRX（3M）、^FVX（5Y）、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F／當期 ZQ、SR1=F、SR3=F；無可核驗快照時不估計。", "url": "https://finance.yahoo.com/", "tags": ["行情規則", "資料限制"]}
-      ]
+      "title": "首見：普丁向川普傳達關於結束伊朗戰爭的高層訊息",
+      "category": "geopolitics",
+      "summary": "據克里姆林宮，俄羅斯總統普丁已向美國總統川普通報德黑蘭對美伊戰爭可能解決方案的立場——這是長達七個月伊朗戰爭中的重大首例。克宮聲明稱 10 月 9 日通話「重點在烏克蘭危機前景，也觸及伊朗局勢與雙邊關係」。消息稱普丁是在土庫曼峰會場邊會晤伊朗總統裴澤斯基安後、經後者同意向川普傳話，但未透露伊朗如何設想結束戰爭。此前莫斯科多被邊緣化，卡達與巴基斯坦為主要調解方；如今川普剛與俄達成爭議性的柴油協議，可能成為終結荷莫茲海峽危機的真正突破口。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/geopolitical/first-putin-conveys-high-level-message-trump-ending-iran-war",
+      "timestamp": "2026-10-11",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_8_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "黑水染血：Erik Prince 的剛果部隊遭伏擊，前 UFC 明星 Tim Kennedy 中彈——為爭奪全球鈷礦",
+      "category": "geopolitics",
+      "summary": "據路透週五獨家，Erik Prince 旗下 Vectus Global 一支團隊 9 月 17 日在剛果東部南基伍省遭伏擊，造成約 20 人死傷，其中至少 7 名剛果人與 1 名前紐西蘭特種部隊成員（NZSAS 退伍軍人 Justin Conaglen）喪生。傷者包括退役綠扁帽、前 UFC 選手兼播客 Tim Kennedy，他腿部中三槍，正在華特里德軍醫院療養。這是 Vectus 首次在剛果出現傷亡。事件起源於 Prince 去年受金沙薩政府委託，協助財政部課徵礦產稅，但其人員與無人機 2 月已現身烏維拉前線；如今剛果鈷礦爭奪戰出現美國名人傷亡，華府再難裝作事不關己。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/geopolitical/blackwater-bloodied-erik-princes-congo-force-ambushed-ex-ufc-star-tim-kennedy-shot",
+      "timestamp": "2026-10-11",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_5.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "范斯對行刑隊處決存疑，拒看赫格塞斯的直播計畫",
+      "category": "geopolitics",
+      "summary": "美國國防部長（戰爭部長）赫格塞斯宣布五角大廈將直播胡德堡槍擊案凶手 Nidal Hasan 的槍決，已獲川普批准、定於 12 月 3 日執行。副總統 JD 范斯週五回應時態度保留：「我看到了這些公告，我不確定那是否真會發生。」他強調 Hasan 犯下「僅次於 911、美國本土最嚴重的恐怖攻擊」，但表示「如果最終直播，我不會看」。此舉不僅遭民主黨反對，共和黨參議員 Thom Tillis 也批評不應將處決公開展示。（🔒 僅有預覽片段）",
+      "url": "https://www.zerohedge.com/geopolitical/vance-casts-doubt-firing-squad-execution-balks-hegseths-live-stream-plan",
+      "timestamp": "2026-10-11",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "📊 週末盤前資料缺口（休市）",
+      "category": "premarket",
+      "timestamp": "2026-10-11",
+      "summary": "今天為週日休市日，僅提供 ZeroHedge 導讀，不做台股盤前分析。",
+      "data_gap": true,
+      "gap_reason": "週末/假日休市",
+      "market_context": null,
+      "recommendations": []
     }
   ],
-  "stats": {"total": 0, "premium": 0, "market": 0, "geopolitics": 0, "withImages": 0, "premarket": 0, "data_gap": true, "fedWatch": 1},
+  "stats": {
+    "total": 10,
+    "premium": 10,
+    "market": 6,
+    "geopolitics": 4,
+    "withImages": 6,
+    "premarket": 0,
+    "data_gap": true
+  },
   "keyThemes": [
-    "過去 24 小時沒有新的 FOMC 行動、SEP、貨幣政策演說或國會證詞；Fed 官方最新新聞稿仍為 10/9 非政策性的家庭財務調查",
-    "Waller 10/8 維持偏緊縮且資料依賴：如資料符合預期仍需升息，但不必連續會議進行",
-    "Yahoo 指定殖利率、美元、VIX、ZQ 與 SOFR 快照及 CME live 機率表均無可保存資料；未填估計值或換算精確機率",
-    "10/13 Waller 經濟展望、10/14 CPI、10/15 PPI、10/27–28 FOMC、10/29 PCE、11/6 NFP 與 12/8–9 SEP 是下一批關鍵官方日期"
+    "油價見底風險：全球庫存緩衝耗盡，高盛測得每桶 22 美元風險溢價逼近紀錄，荷莫茲中斷恐觸 200 美元情境",
+    "荷莫茲地緣升溫：胡塞飛彈直擊利雅德機場、曼德海峽布雷，川普-普丁柴油協議成短線突破口",
+    "AI 營收缺口持續質疑：neocloud 現貨租金（400–500 億/GW）與超大規模門檻（120 億）落差大，甲骨文 CDS 與 OpenAI 營收疑慮壓制半導體",
+    "市場極度狹窄：僅 10 檔貢獻 Q3 68% 獲利成長，高盛警告動能恐由順風轉為陷阱門，單週 1,660 億美元湧入貨幣基金"
   ]
 }
