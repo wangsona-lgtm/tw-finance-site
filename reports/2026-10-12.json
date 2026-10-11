@@ -1,9 +1,199 @@
 {
   "date": "2026-10-12",
   "type": "daily-reports",
-  "source": "fed-watch+zerohedge",
-  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 10月12日（一）",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 + Fed Watch — 10月12日（一）+ 盤前分析",
   "sections": [
+    {
+      "title": "川普宣布烏克蘭能源停火；澤倫斯基「我沒聽說」",
+      "category": "geopolitics",
+      "summary": "川普週日在 Truth Social 突發宣布「俄烏已同意立即生效的能源停火」，但基輔迅速反駁「聞所未聞」，澤倫斯基更直言「是新總統才有可能達成的交易？」— 此為川普繼 9 月中停火談判迅速破局後二度嘗試。與此同時俄軍持續轟炸烏克蘭電力設施，基輔深夜大範圍停電、城市陷入黑暗。澤倫斯基痛批美俄柴油交易「既不公平也不誠實」、「是送給普丁的生日禮物」，白宮官員則承認只是「潛在協議」。烏方陷入兩難：既反對美俄能源交易，卻又需要停火自保。\n\n**重點摘錄：**\n• 川普暗示烏克蘭應「更換總統」以達成交易，美烏關係急遽惡化\n• 停火宣布與俄軍襲擊發電廠同時發生，善意迅速被現實擊碎\n• 烏克蘭在美俄利益與自身存亡之間陷入戰略困境\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/geopolitical/trump-declares-ukraine-energy-ceasefire-zelensky-says-news-me-amid-new-russian-attack",
+      "timestamp": "2026-10-12",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_1_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "荷莫茲海峽多艘油輪起火爆炸，伊朗恐已開「水雷戰」",
+      "category": "geopolitics",
+      "summary": "過去 24 小時內荷莫茲海峽至少 2 至 3 艘油輪因撞上水雷受損，社群湧現油輪「巨焰焚燒」的影片。伊朗革命衛隊（IRGC）稱一艘超大型油輪在「試圖以未授權路線離開海峽」時觸雷發生爆炸、機艙起火；另一起可能是美軍中央司令部在阿曼灣攔截一艘懸掛巴拿馬旗、自伊朗港口航出之貨輪。週日再傳一艘離開海峽的油輪遭「不明投射物」擊中。伊朗海上襲擊次數已飆升至「戰時水準」——這是封鎖荷莫茲的重要訊號，油價波動將持續升級。\n\n**重點摘錄：**\n• 荷莫茲海峽成美伊軍事對抗前線，商船損害以「水雷」與「攔截」雙軌進行\n• 美軍主動擊毀「未授權」自伊朗港口離開之貨輪，屬戰爭行為升級\n• 全球最關鍵石油運輸咽喉遭實彈威脅，能源供應風險急升\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/geopolitical/dramatic-videos-show-several-tankers-fire-strait-hormuz-weekend",
+      "timestamp": "2026-10-12",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_4_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "利雅德機場再遭襲，前一天胡塞飛彈轟炸已釀 12 死 300+ 傷",
+      "category": "geopolitics",
+      "summary": "胡塞武裝週六以飛彈攻擊沙烏地首都利雅德哈立德國王國際機場，造成 12 死、逾 300 傷（含 1 名美國人），週日晚間 Terminal 4 再遭不明投射物擊中起火，多人受傷。沙烏地東部油區達曼機場同晚也遭襲。胡塞發言人宣稱這是對「沙烏地野蠻侵略」的報復。機場持續關閉、航班取消或改降，利雅德學校轉線上教學。此事件也再度質疑沙烏地採購的西方防空系統（攔截與偵測）效能，升高波斯灣全面開戰風險。\n\n**重點摘錄：**\n• 連兩日對民航樞紐的飛彈攻擊，沙烏地防空漏洞遭質疑\n• 東部油區達曼機場同步遇襲，直接威脅全球能源出口\n• 川普考慮是否加入沙烏地對葉門胡塞的軍事行動\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/geopolitical/saudis-vow-retaliation-after-deadly-airport-strike-houthi-threat-puts-gulf-edge",
+      "timestamp": "2026-10-12",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_4.png",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_6_img_5.png"
+      ],
+      "premium": true
+    },
+    {
+      "title": "Hartnett：「Fed 現在能做的最大利多，就是升息」",
+      "category": "market",
+      "summary": "市場回顧過去一週幾乎全被利率主導：美債 10 年期一度觸及 5.36%，30 年期創 2002 年以來新高；一支 10 年期公債拍賣以 2000 年以來最高殖利率定價，卻吸引接近紀錄的外資需求而穩定局面。法德（OAT-Bund）利差飆至 140 個基點，為 2011/12 歐債危機以來最寬。美銀 Michael Hartnett 本週聚焦三字結論「債券終結泡沫（Bonds End Bubbles）」，並列出到年底前最看多的催化劑——首推「10 月升息以封頂殖利率」，這在一年前聽來荒謬，如今卻被視為穩定市場的可能路徑。\n\n**重點摘錄：**\n• 美債長端殖利率創逾 20 年新高，外資逢高搶買形成關鍵支撐\n• OAT-Bund 利差急劇擴大，歐債危機恐慌重現\n• Hartnett 逆向看法：升息反成抑制殖利率、終結泡沫的利多\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/markets/hartnett-most-bullish-thing-fed-can-do-now-hike",
+      "timestamp": "2026-10-12",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "柴油與殖利率：全球焦點已從油價轉向「柴油」",
+      "category": "market",
+      "summary": "Academy Securities 的 Peter Tchir 指出，全球市場目光已從單純的油價，轉向「柴油」這個關鍵燃料。美國柴油指數已於 9 月 21 日見頂（$6.53），隨後回落。歐洲方面美國總統宣布釋出戰備儲備，馬克宏以 G7 主席身分確認——歐盟將在未來 4 個月釋出多達 1 億桶柴油與原油混合儲備，但德國觀望、法國全力支持，各國仍各自為政。IEA 將於本週三召開會議決定釋放內容與時點，但不掌握各國釋放執行權。在美伊、胡塞與沙烏地多線衝突交織下，柴油供應鏈是能源市場真正的瓶頸。\n\n**重點摘錄：**\n• 柴油取代原油成為市場焦點，因下游煉製品短缺才是真風險\n• 歐盟擬 4 個月內釋出 1 億桶儲備，但各國執行步調不一\n• 本週三 IEA 會議為關鍵觀察點，決定釋放組合與時機\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/markets/diesel-and-yields",
+      "timestamp": "2026-10-12",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_5_img_4.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "AI vs 其他一切差距創 5 週 10 個百分點新高；高盛：開始買輸家",
+      "category": "market",
+      "summary": "高盛 Louis Miller 團隊訪談宏觀客戶後表示，市場恐慌的不是殖利率「水準」，而是「速度」——自 8 月底以來利率已升約 68 個基點，若拖 6 個月市場感受將截然不同。更棘手的是油價與殖利率原本同向，如今卻脫鉤，宏觀交易框架在最糟時點失靈。AI 與其他資產的相對報酬差距擴大到 10 個百分點（創紀錄），高盛建議反向操作、開始買進落後的「輸家」資產。\n\n**重點摘錄：**\n• 利率快速上升（+68bp）的「速度」比水準更令市場不安\n• 油價與殖利率脫鉤，傳統宏觀 playbook 失靈\n• AI 一枝獨秀 vs 其他資產的極端分化，出現逆向布局訊號\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/markets/ai-vs-everything-else-hits-record-10-point-gap-five-weeks-goldman-says-start-buying-losers",
+      "timestamp": "2026-10-12",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "現貨租金 4 倍於門檻：AI 每 GW 租金揭露收入缺口",
+      "category": "market",
+      "summary": "AI 交易裡人人都想知道「一座吉瓦的資料中心值多少錢」。高盛 SpaceX 報告第 7 頁的圖表給出三個答案：短期承租省錢 400–500 億美元／年、長期承租 200–300 億美元、超大型雲端業者僅需獲得合理回報約 120 億美元。三者之間的巨大落差，正是 AI 收入（以及每年 >1 兆美元追逐這些收入的資本支出）整場爭論的核心——現貨價格是長期門檻的 4 倍，市場對 AI 變現能力的高度分歧由此可見。\n\n**重點摘錄：**\n• 同一宗 GW 資產，租金報價最高落差達 4 倍（$500 億 vs $120 億）\n• AI 收入缺口與 >1 兆美元/年資本支出間的鴻溝浮上檯面\n• 短期 vs 長期租賃的巨大價差，暴露對 AI 需求持續性的懷疑\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/markets/spot-four-times-hurdle-what-50-billion-gigawatt-neocloud-rents-say-about-ai-revenue-gap",
+      "timestamp": "2026-10-12",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "高盛：油價主導期中選舉，市場定價民主黨 65% 大勝 — 歷史顯示過高",
+      "category": "market",
+      "summary": "高盛華盛頓政治團隊指出，無論川普許諾什麼，眼前唯一決定期中選舉的變數是「荒謬的油價」。9/30 民主黨已在普遍選票領先 8.5 個百分點，預測市場給民主黨 >90% 拿下眾院、>60% 拿下參院的機率；8 天後局勢更向同一方向偏移，市場定價民主黨 65% 全面橫掃。但高盛提醒歷史經驗顯示此機率定價偏高。伊朗戰爭開端的油價飆漲，正在重塑美國選舉格局。\n\n**重點摘錄：**\n• 油價（而非政策）是目前美國選舉唯一主導變數\n• 民主黨普遍選票領先 8.5pts，眾參兩院奪回機率高漲\n• 65% 橫掃機率定價被歷史資料認定「過高」\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/markets/pump-and-dump-goldman-finds-gas-prices-steering-midterms-markets-price-65-democratic-sweep",
+      "timestamp": "2026-10-12",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "週末新聞匯總：Newsquawk 亞太盤前",
+      "category": "market",
+      "summary": "本週觀察焦點：川普稱俄烏達成即時能源停火，但俄方尚未接受任何停火；川普考慮是否加入沙烏地對葉門胡塞的攻擊；美方經卡達居間回應德黑蘭 7 項條件但伊朗認為不足，並重申「唯有同時、一次性滿足全部 7 條件才能重開荷莫茲」。經濟數據關注菲律賓 FDI；週一日本、加拿大因假期休市。整體盤面仍由伊朗衝突、能源供給與利率三條主線拉扯。\n\n**重點摘錄：**\n• 伊朗重申荷莫茲重開須同步滿足全部 7 條件，僵局未解\n• 川普擬軍事介入葉門胡塞，中東戰線恐擴大\n• 日本、加拿大週一休假，亞洲流動性偏薄\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/markets/weekend-news-roundup-newsquawk-daily-asia-pac-market-open-18",
+      "timestamp": "2026-10-12",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "賓州家庭槍擊 9 死，含 2 名幼童",
+      "category": "market",
+      "summary": "10 月 9 日賓州伊利市一處住所發生大規模槍擊，警方在現場發現 9 具遺體，包括 1 歲女童、5 歲男童、一名懷孕 8 個月的婦女與多名成人。調查指向一名 45 歲男性家庭成員持合法登記槍枝行兇後自盡，被害者多屬同一大家族。警方約 3 分鐘內抵達現場，但所有被害人均已遭射殺。此事件屬美國內部暴力犯罪，非財經核心題材，僅列為延伸報導。\n\n🔒 僅有預覽片段",
+      "url": "https://www.zerohedge.com/markets/nine-dead-including-two-children-pennsylvania-family-mass-shooting",
+      "timestamp": "2026-10-12",
+      "images": [
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_4.jpg",
+        "/home/nutc/.hermes/cron/output/zerohedge/images/article_7_img_5.jpg"
+      ],
+      "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-10-12 (星期一)",
+      "category": "premarket",
+      "timestamp": "2026-10-12",
+      "summary": "🔴 外資現貨 -758億＋期貨淨空 -83,194口為連假後最大不確定性，Rule 16-4 預設「觀察優先」；🟢 美股收紅＋VIX 降至 14.84＋油價衝 $92.45 提供支撐，開盤中性略偏多但電子權值續壓。今日聚焦油電燃氣(6505 回檔)、記憶體(2408)、PCB 上游(3653)三條外資明確換股軸線，電子權值與面板嚴格迴避，一切以開盤 30 分鐘不破低為進場前提。",
+      "market_context": {
+        "us_close": "2026-10-09",
+        "spx": 7811.54,
+        "spx_change_pct": 0.59,
+        "dow": 51654.95,
+        "dow_change_pct": 0.83,
+        "nasdaq": 27366.17,
+        "nasdaq_change_pct": 0.64,
+        "rut": 2806.98,
+        "rut_change_pct": 0.46,
+        "sox": 12572.42,
+        "sox_change_pct": -0.41,
+        "vix": 14.84,
+        "vix_change_pct": -3.7,
+        "tsm_adr": 453.31,
+        "tsm_adr_change_pct": -1.02,
+        "taiex_prev_close": 49313.44,
+        "usdtwd": 31.92,
+        "adr_premium_pct": 13.49,
+        "foreign_futures_oi": -83194,
+        "gold": 4210,
+        "gold_change_pct": -0.15,
+        "oil": 92.45,
+        "oil_change_pct": 0.65,
+        "btc": 83632,
+        "btc_change_pct": 0.87,
+        "tnx_pct": 5.24,
+        "tnx_change_pct": 0.25,
+        "usd_index": 102.28,
+        "usd_index_change_pct": 0.07,
+        "expected_open": "中性略偏多、電子權值壓抑 — 美股收紅＋EWT +0.86%＋VIX 降，但 TSM/SMH 負值＋外資深度偏空；預估開盤 49,400 ~ 49,700（+0.2%~+0.8%）",
+        "support": "49,190（10/8 低點）→ 48,574（10/5 低點）",
+        "resistance": "49,783 / 49,806",
+        "key_theme": "外資現貨 -758.52 億＋期貨淨空 -83,194 口（連兩日增空）＋淨交易偏空＝三重同步偏空，Rule 16-4 預設「觀察優先、不接刀」；美股週五收紅（SPX +0.59%、VIX 降至 14.84）與油價續揚 $92.45 提供支撐，但 TSM ADR -1.02%、SMH -0.65% 顯示電子權值未止穩。今日主軸：油電燃氣/石化/記憶體 DRAM（2408）/PCB 上游 CCL（3653），權值半導體與面板迴避。"
+      },
+      "recommendations": [
+        {
+          "symbol": "2408",
+          "name": "南亞科",
+          "direction": "🟢 偏多/記憶體 DRAM（外資唯一明確加碼權值）",
+          "strategy": "僅回檔不追高，開盤 30 分鐘確認不破低再動作",
+          "recommend_price": 532.0,
+          "target": "回檔承接，不追高",
+          "stop_loss": null,
+          "recommend_reason": "10/8 外資賣超權值半導體唯獨買超南亞科 +115.83 億（當日單一標的最大買超），DRAM 去化＋外資換股方向明確；隔夜美股雖偏弱但記憶體需求未受 SOX 拖累。資金從台積電轉進 DRAM 的軸線清楚。惟 532 已近期高，僅限回檔不追高，若 SOX 續弱拖累高價股波動大。"
+        },
+        {
+          "symbol": "6505",
+          "name": "台塑化",
+          "direction": "🟢 偏多/油價續揚軸線（回檔才進）",
+          "strategy": "Rule 3 追高警戒：跳空勿追，回檔 107~108（前收下方）才承接",
+          "recommend_price": 110.5,
+          "target": "107~108 承接區",
+          "stop_loss": null,
+          "recommend_reason": "WTI 週五再漲至 $92.45（+0.65%）、連假唯一有實質報價支撐的族群；10/8 油電燃氣類指數 +3.04% 為當日最強類股，投信買超台塑化 +16.39 億。油價未破、軸線續航。惟 10/8 已 +3.27%，若今日跳空續漲切勿追高，僅在回檔至 107~108 才考慮承接。"
+        },
+        {
+          "symbol": "3653",
+          "name": "健策",
+          "direction": "🟢 偏多/PCB 上游外資買超續攻",
+          "strategy": "高價強勢股，不重倉，僅品質較高次強軸線",
+          "recommend_price": 7165.0,
+          "target": "外資買超鎖定（欣興 +23.22 億、健策 +17.77 億）",
+          "stop_loss": null,
+          "recommend_reason": "10/8 外資買超 PCB 上游鎖定（欣興 +23.22 億、健策 +17.77 億、台表科 +11.41 億）；健策 10/8 逆勢強 +5.29%、屬外資換股方向明確的高價強勢股；散熱/PTC 需求題材仍在。惟高價股（7 千元）波動大、連假前外資整體 -758 億，不重倉。"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-10-08",
+        "tracking_period": "10/8 盤前 → 10/8 收盤（10/9 補假休市，10/9 前瞻標的待 10/12 收盤複盤）",
+        "total": 2,
+        "hit": 1,
+        "miss": 1,
+        "hit_rate_pct": 50.0,
+        "best": "6505 台塑化（回檔低接 → 收 110.5、+3.27%，目標 110/113 全達，✅ 命中；「油價＋能源為唯一事件支撐」方向完全正確）",
+        "worst": "2882 國泰金（連假金融防禦 → 收 110、-2.65%，金融保險類 -1.68% 第二弱，❌ 失誤；「連假避風港＝金融」是先驗偏誤，實際避風港在油電燃氣）",
+        "lessons": [
+          "核心失誤：把「防禦」等同「金融」— 連假前防禦部位須有當週實質事件/報價支撐（本次為油品報價→油電燃氣），不得僅因位處防禦類股入選。",
+          "進場價位連續第 2 日同型失誤（6505 淺回檔限價 104.5 全日未成交、最低 105.5）— 改為「前日類股最強＋隔日開平」型態取消淺回檔限價，開盤 30 分鐘不破低即市價進場。",
+          "觀察名單與動能模型自相矛盾（6672 已達「連3根漲停＝推薦訊號」卻以開超買排除，當日又漲停）— 訊號衝突時列「小部位試單」並盤後複盤累積證據，不得直接以開超買否決。"
+        ]
+      }
+    },
     {
       "title": "Fed Watch｜今日重點摘要",
       "icon": "🏛️",
@@ -289,53 +479,24 @@
           ]
         }
       ]
-    },
-    {
-      "title": "荷姆茲油輪連遭事故：海運風險升溫，實體供應是油市焦點",
-      "category": "geopolitics",
-      "summary": "【原文報導】ZeroHedge 彙整稱，過去 24 小時至少兩艘、可能三艘油輪在荷姆茲海峽或鄰近水域受損；文中援引伊朗革命衛隊、CENTCOM、UKMTO 與媒體訊息，並指出不同事件的歸因仍不一致，部分說法尚待獨立核實。文章亦轉述 IMO 資料：伊朗戰爭爆發以來，荷姆茲、波斯灣與阿曼灣的商船遇襲已造成水手傷亡。\n\n【作者／來源觀點】原文以航線即使避開海峽、關閉追蹤也未必降低風險的案例，推論承運人可能提高出航門檻、每桶運輸成本因而上升。\n\n【本站分析】市場不只看原油報價，更應追蹤實際通行量、保險費與船期延誤；若風險持續外溢，Brent／航運與煉油利差的波動可能擴大。\n\n**可能影響：** 布蘭特與 WTI、油輪運費、能源股、通膨預期\n\n**值得留意：** 事件訊息源分散且部分仍在釐清；航運通行數據與官方海事通報比單一社群影片更具驗證價值。",
-      "url": "https://www.zerohedge.com/geopolitical/dramatic-videos-show-several-tankers-fire-strait-hormuz-weekend",
-      "timestamp": "2026-10-12",
-      "images": [],
-      "premium": false
-    },
-    {
-      "title": "柴油比原油更關鍵：歐洲庫存釋放與長端殖利率兩條風險線",
-      "category": "market",
-      "summary": "【原文報導】Academy Securities 的 Peter Tchir 在 ZeroHedge 刊文指出，柴油供應已成為比原油更直接的全球焦點；文中稱歐洲正討論未來四個月最多釋放 1 億桶戰略儲備、IEA 將討論建議，但各國各自掌握是否與何時釋放的決定權。文章也列出美國宣布採購俄羅斯柴油的規模：10 月約每日 7 萬桶、12 月約 24 萬桶，並與文中估計的美國每日約 380 萬桶消費量對照。\n\n【作者觀點】Tchir 認為單一採購案的量體不足以改變全球柴油價格，真正關鍵在於歐洲是否迅速且足量釋放儲備；他並將主權債供給壓力與高殖利率列為信用與股市的後續觀察點。\n\n【本站分析】柴油是運輸、工業與供應鏈成本的敏感環節。若現貨緊張未解，能源通膨可能重新推升利率波動；相反地，協調且及早的庫存釋放可減緩尾端風險，但不等同供給問題已解除。\n\n**可能影響：** 柴油裂解價差、歐洲能源股、全球通膨預期、美歐公債殖利率\n\n**值得留意：** IEA 建議並不等於成員國執行；應追蹤實際釋放量、交付時間與俄羅斯供應能否如期到港。",
-      "url": "https://www.zerohedge.com/markets/diesel-and-yields",
-      "timestamp": "2026-10-12",
-      "images": [],
-      "premium": false
-    },
-    {
-      "title": "利雅德機場再遇襲：海灣風險由航道延伸至民航與能源樞紐",
-      "category": "geopolitics",
-      "summary": "【原文報導】ZeroHedge 稱利雅德哈立德國王國際機場在前一日死傷事件後再受攻擊，沙國民航單位表示第 4 航廈受損、有人受傷並正進行安全檢查；原文並稱機場一度關閉、航班取消或改道。文章援引多個媒體與地方消息，且部分傷亡數字及攻擊歸屬仍有待獨立確認。\n\n【作者／受訪者觀點】文中引述受訪者認為沙國可能報復，同時海灣國家傾向避免衝突擴散；原文則將事件連結到能源基礎設施與國際海運風險。\n\n【本站分析】民航樞紐受干擾本身未必立即改變石油產量，但若安全事件擴至東部產油區、港口或跨境物流，能源風險溢價與區域資產折價都可能上升。\n\n**可能影響：** 沙國股市與 Aramco 相關資產、航空／旅運、海灣信用風險、原油風險溢價\n\n**值得留意：** 需以沙國民航、港口與能源設施的正式營運公告驗證影響程度，並區分已證實的中斷與媒體推測。",
-      "url": "https://www.zerohedge.com/geopolitical/saudis-vow-retaliation-after-deadly-airport-strike-houthi-threat-puts-gulf-edge",
-      "timestamp": "2026-10-12",
-      "images": [],
-      "premium": false
     }
   ],
   "stats": {
-    "total": 3,
-    "premium": 0,
-    "market": 1,
-    "geopolitics": 2,
-    "withImages": 0,
-    "premarket": 0,
-    "data_gap": true,
-    "fedWatch": 1
+    "total": 11,
+    "premium": 10,
+    "market": 7,
+    "geopolitics": 3,
+    "withImages": 5,
+    "premarket": 1,
+    "fedWatch": 7
   },
   "keyThemes": [
-    "過去 24 小時無新的 FOMC 行動、SEP、貨幣政策演說或國會證詞；Fed 10/9 最新新聞稿是非政策性的家庭財務調查",
-    "9/16 的 12–0 升息與 10/7 發布的紀要仍是最近委員會政策基準；Waller 10/8 維持偏緊縮且資料依賴",
-    "Yahoo 指定利率、美元、VIX、ZQ 與 SOFR 均回應 429，CME live 表也無可保存機率；未填估計值或換算機率",
-    "官方 H.15 顯示 2 年期於 10/8 為 4.75%、日減 2bp，僅作清楚標示的非 Yahoo 補充",
-    "10/14 CPI、10/15 PPI、10/27–28 FOMC、10/29 PCE、11/6 NFP 與 12/8–9 SEP 是下一批官方節點",
-    "荷姆茲與海灣安全風險正從原油現貨延伸至油輪保險、航運與民航樞紐",
-    "柴油庫存協調釋放的執行速度，是能源通膨與歐洲供應壓力的關鍵變數",
-    "官方海事、民航與能源設施公告可協助辨別已證實的中斷與尚待核實的訊息"
+    "美伊/荷莫茲地緣升溫：多艘油輪觸雷起火、伊朗恐開「水雷戰」，胡塞連襲沙烏地利雅德/達曼機場 — 能源供給風險與地緣溢價是最大變數",
+    "川普單邊宣布烏俄能源停火但澤倫斯基「聞所未聞」；美俄柴油交易挨批，白宮承認僅「潛在協議」，美烏關係急遽惡化",
+    "美債長端殖利率創逾 20 年新高（10Y 觸 5.36%、30Y 為 2002 年來最寬），Hartnett 逆向稱「Fed 升息反成穩定市場利多」，柴油成為能源市場真正瓶頸（G7 擬釋 1 億桶）",
+    "外資台股深度偏空：現貨 -758.52 億＋期貨淨空 -83,194 口＝連假後最大不確定性，Rule 16-4 預設觀察優先；盤前聚焦油電燃氣(6505)/記憶體(2408)/PCB(3653)三條換股軸線",
+    "過去 24 小時無新的 FOMC 行動；9/16 升息與紀要仍是近期基準，Waller 10/8 維持資料依賴敏銳緊縮",
+    "Yahoo 利率/美元/VIX/ZQ/SOFR 回應 429，未填估計值；H.15 官方顯示 10/8 兩年期 4.75%",
+    "10/14 CPI、10/15 PPI、10/27–28 FOMC、10/29 PCE、11/6 NFP、12/8–9 SEP 為下一批官方節點"
   ]
 }
