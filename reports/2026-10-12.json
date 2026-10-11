@@ -1,8 +1,8 @@
 {
   "date": "2026-10-12",
   "type": "daily-reports",
-  "source": "fed-watch",
-  "title": "Fed Watch 聯準會動向 — 10月12日（一）",
+  "source": "fed-watch+zerohedge",
+  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 10月12日（一）",
   "sections": [
     {
       "title": "Fed Watch｜今日重點摘要",
@@ -238,46 +238,91 @@
           "headline": "Federal Reserve｜新聞稿、FOMC 文件與 2026 委員名單",
           "content": "政策事實一律以 Fed.gov 優先：10/9 最新新聞稿非政策文件；9/16 聲明、10/7 紀要與現行委員名單為本報基準。",
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/2026-press.htm",
-          "tags": ["官方", "政策查核"]
+          "tags": [
+            "官方",
+            "政策查核"
+          ]
         },
         {
           "headline": "Federal Reserve｜Waller 10/8 演說",
           "content": "個人立場：資料如預期仍需升息、無須連續；不把個人談話當作委員會承諾。",
           "url": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
-          "tags": ["官方", "官員談話"]
+          "tags": [
+            "官方",
+            "官員談話"
+          ]
         },
         {
           "headline": "Federal Reserve｜H.15",
           "content": "10/9 發布、含至 10/8 的官方常數到期殖利率；本報僅將其作明確標示的 2 年期補充。",
           "url": "https://www.federalreserve.gov/releases/h15/",
-          "tags": ["官方", "殖利率補充"]
+          "tags": [
+            "官方",
+            "殖利率補充"
+          ]
         },
         {
           "headline": "CME Group｜FedWatch 與方法頁",
           "content": "FedWatch 以 30-Day Fed Funds（ZQ）期貨與公布假設推導；本次 live iframe 無可保存機率表，未以媒體或推算數字替代。",
           "url": "https://www.cmegroup.com/articles/2023/understanding-the-cme-group-fedwatch-tool-methodology.html",
-          "tags": ["方法", "市場定價"]
+          "tags": [
+            "方法",
+            "市場定價"
+          ]
         },
         {
           "headline": "BLS／BEA｜官方發布日程",
           "content": "CPI、PPI、NFP 取自 BLS；PCE／Personal Income and Outlays 取自 BEA。",
           "url": "https://www.bls.gov/schedule/2026/",
-          "tags": ["官方日程", "CPI／PPI／NFP／PCE"]
+          "tags": [
+            "官方日程",
+            "CPI／PPI／NFP／PCE"
+          ]
         },
         {
           "headline": "Yahoo Finance｜指定行情代號與限制",
           "content": "^IRX（3M）、^FVX（5Y）、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F／當期 ZQ、SR1=F、SR3=F；本次均因 429 無可核驗快照。CME 或 Yahoo 不可取用時揭露限制，不捏造資料。",
           "url": "https://finance.yahoo.com/",
-          "tags": ["行情規則", "資料限制"]
+          "tags": [
+            "行情規則",
+            "資料限制"
+          ]
         }
       ]
+    },
+    {
+      "title": "荷姆茲油輪連遭事故：海運風險升溫，實體供應是油市焦點",
+      "category": "geopolitics",
+      "summary": "【原文報導】ZeroHedge 彙整稱，過去 24 小時至少兩艘、可能三艘油輪在荷姆茲海峽或鄰近水域受損；文中援引伊朗革命衛隊、CENTCOM、UKMTO 與媒體訊息，並指出不同事件的歸因仍不一致，部分說法尚待獨立核實。文章亦轉述 IMO 資料：伊朗戰爭爆發以來，荷姆茲、波斯灣與阿曼灣的商船遇襲已造成水手傷亡。\n\n【作者／來源觀點】原文以航線即使避開海峽、關閉追蹤也未必降低風險的案例，推論承運人可能提高出航門檻、每桶運輸成本因而上升。\n\n【本站分析】市場不只看原油報價，更應追蹤實際通行量、保險費與船期延誤；若風險持續外溢，Brent／航運與煉油利差的波動可能擴大。\n\n**可能影響：** 布蘭特與 WTI、油輪運費、能源股、通膨預期\n\n**值得留意：** 事件訊息源分散且部分仍在釐清；航運通行數據與官方海事通報比單一社群影片更具驗證價值。",
+      "url": "https://www.zerohedge.com/geopolitical/dramatic-videos-show-several-tankers-fire-strait-hormuz-weekend",
+      "timestamp": "2026-10-12",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "柴油比原油更關鍵：歐洲庫存釋放與長端殖利率兩條風險線",
+      "category": "market",
+      "summary": "【原文報導】Academy Securities 的 Peter Tchir 在 ZeroHedge 刊文指出，柴油供應已成為比原油更直接的全球焦點；文中稱歐洲正討論未來四個月最多釋放 1 億桶戰略儲備、IEA 將討論建議，但各國各自掌握是否與何時釋放的決定權。文章也列出美國宣布採購俄羅斯柴油的規模：10 月約每日 7 萬桶、12 月約 24 萬桶，並與文中估計的美國每日約 380 萬桶消費量對照。\n\n【作者觀點】Tchir 認為單一採購案的量體不足以改變全球柴油價格，真正關鍵在於歐洲是否迅速且足量釋放儲備；他並將主權債供給壓力與高殖利率列為信用與股市的後續觀察點。\n\n【本站分析】柴油是運輸、工業與供應鏈成本的敏感環節。若現貨緊張未解，能源通膨可能重新推升利率波動；相反地，協調且及早的庫存釋放可減緩尾端風險，但不等同供給問題已解除。\n\n**可能影響：** 柴油裂解價差、歐洲能源股、全球通膨預期、美歐公債殖利率\n\n**值得留意：** IEA 建議並不等於成員國執行；應追蹤實際釋放量、交付時間與俄羅斯供應能否如期到港。",
+      "url": "https://www.zerohedge.com/markets/diesel-and-yields",
+      "timestamp": "2026-10-12",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "利雅德機場再遇襲：海灣風險由航道延伸至民航與能源樞紐",
+      "category": "geopolitics",
+      "summary": "【原文報導】ZeroHedge 稱利雅德哈立德國王國際機場在前一日死傷事件後再受攻擊，沙國民航單位表示第 4 航廈受損、有人受傷並正進行安全檢查；原文並稱機場一度關閉、航班取消或改道。文章援引多個媒體與地方消息，且部分傷亡數字及攻擊歸屬仍有待獨立確認。\n\n【作者／受訪者觀點】文中引述受訪者認為沙國可能報復，同時海灣國家傾向避免衝突擴散；原文則將事件連結到能源基礎設施與國際海運風險。\n\n【本站分析】民航樞紐受干擾本身未必立即改變石油產量，但若安全事件擴至東部產油區、港口或跨境物流，能源風險溢價與區域資產折價都可能上升。\n\n**可能影響：** 沙國股市與 Aramco 相關資產、航空／旅運、海灣信用風險、原油風險溢價\n\n**值得留意：** 需以沙國民航、港口與能源設施的正式營運公告驗證影響程度，並區分已證實的中斷與媒體推測。",
+      "url": "https://www.zerohedge.com/geopolitical/saudis-vow-retaliation-after-deadly-airport-strike-houthi-threat-puts-gulf-edge",
+      "timestamp": "2026-10-12",
+      "images": [],
+      "premium": false
     }
   ],
   "stats": {
-    "total": 0,
+    "total": 3,
     "premium": 0,
-    "market": 0,
-    "geopolitics": 0,
+    "market": 1,
+    "geopolitics": 2,
     "withImages": 0,
     "premarket": 0,
     "data_gap": true,
@@ -288,6 +333,9 @@
     "9/16 的 12–0 升息與 10/7 發布的紀要仍是最近委員會政策基準；Waller 10/8 維持偏緊縮且資料依賴",
     "Yahoo 指定利率、美元、VIX、ZQ 與 SOFR 均回應 429，CME live 表也無可保存機率；未填估計值或換算機率",
     "官方 H.15 顯示 2 年期於 10/8 為 4.75%、日減 2bp，僅作清楚標示的非 Yahoo 補充",
-    "10/14 CPI、10/15 PPI、10/27–28 FOMC、10/29 PCE、11/6 NFP 與 12/8–9 SEP 是下一批官方節點"
+    "10/14 CPI、10/15 PPI、10/27–28 FOMC、10/29 PCE、11/6 NFP 與 12/8–9 SEP 是下一批官方節點",
+    "荷姆茲與海灣安全風險正從原油現貨延伸至油輪保險、航運與民航樞紐",
+    "柴油庫存協調釋放的執行速度，是能源通膨與歐洲供應壓力的關鍵變數",
+    "官方海事、民航與能源設施公告可協助辨別已證實的中斷與尚待核實的訊息"
   ]
 }
