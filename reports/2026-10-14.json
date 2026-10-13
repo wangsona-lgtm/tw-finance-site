@@ -1,9 +1,188 @@
 {
   "date": "2026-10-14",
   "type": "daily-reports",
-  "source": "fed-watch",
-  "title": "Fed Watch 聯準會動向 — 10月14日（三）",
+  "source": "zerohedge+fed-watch",
+  "title": "ZeroHedge 每日導讀 + Fed Watch — 10月14日（三）＋ 盤前分析",
   "sections": [
+    {
+      "title": "Memory weakness hits NDX as Fed's Williams sparks dovish reaction（記憶體疲弱拖累納指，Fed 威廉斯引發鴿派反應 — Newsquawk 美股收盤總結）",
+      "category": "market",
+      "summary": "週二美股三大指數分歧，科技權重的那斯達克100持續落後，記憶體類股為主要拖累——記憶體 ETF「DRAM」收跌逾 3%，導火線是隔夜韓國 KOSPI 重挫，起因是週一有報導指中國 CXMT 在晶片結構取得關鍵進展，市場擔憂中國記憶體競爭升溫。類股漲跌互見：醫療保健因嬌生（JNJ）財報不佳而墊底，能源股居首。美債殖利率曲線平坦化，長天期領跌（10 年期 -2.5bps 至 5.217%、30 年期 -3.9bps 至 5.561%、2 年期幾乎持平於 4.789%），似有科技股賣壓下的避險買盤。美元指數走低，貴金屬同步下跌，白銀表現遜於黃金。Fed 方面，紐約聯準銀行總裁威廉斯（具投票權）受訪表示「2027 年目前沒有升息必要，今年再升一次是合適的」，市場瞬間鴿派反應後迅速收斂（因市場先讀到「不再升息」才聽到「今年升一次」）；目前貨幣市場定價到 2027 年 10 月累計升息 81bps。Waller 稱高殖利率可代 Fed 抑制需求，強化 10 月暫停的理由；Goolsbee 則警告 AI 熱潮帶動的通膨「正在越線」蔓延至無關產業，直言若通膨頑固「該做什麼很清楚」。數據面：9 月成屋銷售 +1.5% 至 399 萬戶（優於預期 395 萬），中位價月增 1.5% 至 417,500 美元。財報季開局分歧，JPM、GS、WFC、JNJ、C 均走弱。焦點轉向週三美國 9 月 CPI。\n\n**重點摘錄：**\n• 記憶體賣壓（中國 CXMT 進展 + KOSPI 重挫）是科技股落後主因，10Y 仍高懸 5.217%\n• 威廉斯「2027 不升息」言論引發鴿派瞬間反應，10 月暫停升息預期升溫\n• Goolsbee 警告 AI 通膨外溢成「傳統過熱需求」，是當前最鷹派的雜音",
+      "url": "https://www.zerohedge.com/markets/memory-weakness-hits-ndx-feds-williams-sparks-dovish-reaction-newsquawk-us-market-wrap",
+      "timestamp": "2026-10-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Tech Wrecked Again As AI Credit Cracks Widen; Doves & Diesel Battle Over Bonds（科技股再度重挫，AI 信貸裂縫擴大；鴿派與柴油在債市對決）",
+      "category": "market",
+      "summary": "ZeroHedge 每日收盤快評：信貸市場的裂縫正在擴大，科技股持續落後（標普持平、納指疲弱、AI 相關個股難看，但 Mag7 仍是「最後的生還者」）。債市重開後走勢分歧，長端有買盤，混雜的 Fed 官員談話使升息機率略微上揚，但殖利率全日呈上行趨勢，同時油價自隔夜低點反彈。油價支撐來自三個方向：烏俄協議的疑慮、荷莫茲海峽毫無解決跡象、沙烏地打擊葉門——實體原油仍偏緊。美元隔夜走弱曾帶動黃金與比特幣買盤，但美股開盤後消退。「債市打敗科技股，油輪在燃燒、戰爭在擴大⋯⋯能源」為全日主旋律。🔒 僅有預覽片段\n\n**重點摘錄：**\n• 信貸市場裂縫擴大，科技股與 AI 族群持續落後大盤\n• 油價與殖利率同步走高，為壓抑科技股估值的雙重來源\n• 荷莫茲無解、沙葉開戰、烏俄協議存疑 → 實體原油偏緊",
+      "url": "https://www.zerohedge.com/markets/tech-wrecked-again-ai-credit-cracks-widen-bonds-bullion-black-gold-chop",
+      "timestamp": "2026-10-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "\"Until The AI CapEx Debt Creation Machine Turns Back On\"：高盛稱信貸平靜只剩約兩個月（Goldman Says Credit Is Calm... For About Two More Months）",
+      "category": "market",
+      "summary": "企業信貸經歷了債市拋售、利率波動率飆升、Fed 升息循環啟動、法國外溢風險，卻幾乎毫髮無傷。高盛投資級信貸交易台給出的解釋很簡單：唯一「大到足以弄壞市場」的借款人，暫時停止借錢了——即 AI 資本支出的發債機器暫歇。高盛 IG 信貸銷售交易員 Jeffrey Papai 在週一下午的報告中表示，他願意買進當前回檔，但附帶到期日。他形容這是一道「擔憂之牆（Wall of Worry）」，但對市場造成「傷害極其輕微」。換言之，一旦 AI CapEx 的債務創造機器重新啟動，信貸市場的平靜期即告結束。🔒 僅有預覽片段\n\n**重點摘錄：**\n• 信貸市場未爆的核心原因：AI 巨頭暫停發債，市場少了最大供給壓力\n• 高盛 IG 交易台願意買回檔，但明言此策略有「有效期限」（約兩個月）\n• 一旦 AI 資本支出融資重啟，信貸裂縫可能快速擴大",
+      "url": "https://www.zerohedge.com/markets/until-ai-capex-debt-creation-machine-turns-back-goldman-says-credit-calm-about-two-more",
+      "timestamp": "2026-10-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "The Fed's Unpaid Intern：摩根士丹利威爾森稱金融條件已在替 Warsh 做事 — 只是對 AI 巨頭無效",
+      "category": "market",
+      "summary": "摩根士丹利的 Mike Wilson 在過去一年是華爾街最響亮的多方之一，三週前他警告：殖利率與能源價格走高可能引發 10% 的市場回檔；上週末他再警告市場「糟糕的廣度必須以某種方式解決」，一切取決於債券波動率。如今 10 年期殖利率仍在 5.3% 之上、美元創週期新高、原油拒絕配合之下，Wilson 提出順理成章的追問：如果 Fed 在緊縮，而市場也正替 Fed 緊縮，那麼金融條件實際上已經在替 Fed 新任主席 Warsh 完成多少工作？結論是「金融條件：緊，且更加緊縮」——但這股緊縮壓力似乎只落在一般企業，對 AI 巨頭（資本支出的贏家）並未真正生效。🔒 僅有預覽片段\n\n**重點摘錄：**\n• 10Y 殖利率 >5.3%、美元週期新高、油價不跌，三者合力收緊金融條件\n• Wilson 的框架：金融條件緊縮已「替 Fed 做事」，支撐 10 月暫停升息論述\n• 但緊縮未能傳導至 AI 資本支出巨頭，市場廣度問題仍未解",
+      "url": "https://www.zerohedge.com/markets/feds-unpaid-intern-ms-wilson-says-tighter-financial-conditions-are-already-doing-warshs-job",
+      "timestamp": "2026-10-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "FTC 請求裁定 Shkreli 藐視法庭，指其違反終身禁止涉入製藥業禁令（FTC Seeks To Hold Martin Shkreli In Contempt）",
+      "category": "market",
+      "summary": "美國聯邦監管機構請求法院裁定 Martin Shkreli 藐視法庭，指其多次違反終身禁止參與製藥業的禁令。FTC 聯合七個州於週二提出動議，指控 Shkreli 自 2022 年 5 月出獄以來，持續交易製藥股並公開評論藥企，違反 2022 年聯邦法院的禁制令。FTC 文件指出，他至少公開交易過 60 家製藥公司股票；其在 YouTube、X、Reddit 的直播與貼文（含「我示範如何交易與投資生技」、「無論我做什麼交易都無所謂，我總能找到幾檔生技股來修理」等言論）構成額外違規。案件源於 Vyera（前 Turing）取得弓形蟲病用藥 Daraprim 權利後，將單顆藥價從 17.50 美元拉高至 750 美元；2022 年曼哈頓聯邦法官認定其策劃反競爭方案阻止學名藥競爭者進入，判處終身製藥業禁令並命其支付逾 6,400 萬美元。FTC 請求的處罰包括：強制出清所有製藥股持股、繳回製藥股交易獲利（不得與其他交易虧損相抵）加計利息，並要求對未來違規施加遞增罰則，可能包含罰金與監禁。Shkreli 目前尚未被裁定藐視法庭，法官將認定其交易與公開言論是否違反 2022 年命令。\n\n**重點摘錄：**\n• 出獄後 3 年內交易至少 60 檔製藥股 + 直播談生技投資 → 被控違反終身產業禁令\n• 政府要求強制出清持股、追繳獲利（不允許與其他虧損相抵）並加計利息\n• 核心法律爭點：終身產業禁令能否涵蓋「公開市場證券交易」與「線上投資評論」",
+      "url": "https://www.zerohedge.com/markets/ftc-seeks-hold-martin-shkreli-contempt-allegedly-violating-lifetime-pharmaceutical-industry",
+      "timestamp": "2026-10-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Saudi Aramco Headquarters In Dhahran Struck By Houthi Missile（沙烏地阿美達蘭總部遭胡塞彈道飛彈擊中）",
+      "category": "geopolitics",
+      "summary": "沙烏地阿美（Saudi Aramco）設施再度遭胡塞武裝攻擊。週二夜間多名目擊者通報，位於達蘭（Dhahran）的國營石油公司總部附近傳出巨大爆炸聲，沙國正忙於攔截來襲彈道飛彈。路透引述直接知情人士稱阿美總部「已被擊中」，但不確定是建物直接命中或落彈碎片所致；阿美未立即確認。達蘭位於沙國東部省，是沙國石油工業的行政中心。沙國聯軍發言人 Turki al-Maliki 稱已「攔截並摧毀胡塞恐怖民兵朝達曼市發射的彈道飛彈」；半島電視台報導攔截碎片落在達蘭住宅區。攻擊範圍涵蓋達曼、達蘭與利雅德以東的 Haradh。同時，以色列總理納坦雅胡與總統川普上週曾討論在以色列與美國大選前對伊朗發動新一波行動的可能。沙國聯軍週二警告薩那平民撤離葉門石油公司 Al-Sabahah 中央燃料站，胡塞（Ansar Allah）則反向警告沙國公民撤離達曼阿美總部、利雅德哈立德國王機場與阿美利雅德煉油廠附近。利雅德國際機場自週末致命攻擊後關閉，最新 NOTAM 顯示至少關閉至週六；另有報導稱 8 座沙國機場已關閉。此為週六、週日利雅德機場遭襲、至少 13 人死亡後的相互升級。沙國能源部長 Abdul Aziz bin Salman 稱「近週事態嚴重，我們的反應也必須同樣嚴重」。美國目前僅向沙國聯軍提供情報、似未直接參戰。\n\n**重點摘錄：**\n• 胡塞彈道飛彈擊中沙國石油心臟達蘭，8 座沙國機場關閉、利雅德機場至少關至週六\n• 沙葉互相「撤離警告」+ 沙國打擊薩那石油設施 → 相互升級循環確立\n• 納坦雅胡與川普曾商議在期中選舉前對伊朗動手（川普公開稱不會在期中選舉前打伊朗）",
+      "url": "https://www.zerohedge.com/geopolitical/houthi-war-escalates-riyadh-strikes-sanaa-oil-several-saudi-airports-shuttered",
+      "timestamp": "2026-10-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Zelensky Confirms Second Night Of No Early Strike Warning From Partners（澤倫斯基證實：連續第二夜未獲夥伴的預警）",
+      "category": "geopolitics",
+      "summary": "澤倫斯基在 X 上宣布連續第二夜遭俄羅斯重擊，且未獲西方盟友以往會提供的提前預警。彈道飛彈夜襲首都，午夜前後他公告「俄羅斯彈道飛彈攻擊基輔」，並稱「又一次，我們的夥伴沒有任何提前預警。主要目標是能源基礎設施，具體是 CHPP-4，不幸被擊中」。英文訊息明顯針對華盛頓與歐洲，此前數日他已對川普與普丁達成的柴油協議表達憤怒。他直接向美國喊話：「美國必須真正看清正在發生的事，以及誰該為戰爭持續負責。」目前尚未確證華盛頓已切斷情報共享；「未提供預警」的指控措辭含糊，未直接點名川普政府停止全部情報分享，但訊息強烈暗示某種層級的變化。澤倫斯基表示「我們系統只在飛彈幾乎已接近基輔時才偵測到」；CHPP-4 是基輔關鍵能源設施之一，另有一棟住宅受損。他並稱俄方正準備更多彈道飛彈發射。此前他已指控俄方自川普宣布普丁簽署能源停火以來打擊六處能源設施。川普近日威脅，若烏克蘭不遵守美方要求停止打擊俄煉油廠，將切斷情報分享；澤倫斯基稱烏方目前遵守不打俄煉油廠的承諾，已持續兩天。烏方官員透露，美方對其軍方高層「打電話威脅」，稱將同時關閉情報分享與 PURL（優先烏克蘭需求清單，歐洲盟友向美採購援烏武器的機制）。川普則將能源價格上漲歸咎於烏克蘭，而非伊朗戰爭與荷莫茲危機。\n\n**重點摘錄：**\n• 連續兩夜無預警：美方是否切斷情報分享，白宮回應「需要再回覆你」\n• 交易邏輯：川普要求烏停止打俄煉油廠 ←→ 換取俄柴油放行，直接牽動全球柴油價格\n• PURL 軍購機制與情報分享同時被當作籌碼，烏方補給與防空（反彈道飛彈）承壓",
+      "url": "https://www.zerohedge.com/geopolitical/zelensky-indicates-intelligence-partners-cut-amid-overnight-strikes",
+      "timestamp": "2026-10-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Israel Imposes 'Muslim Ban' For Pilots & Crew In Wake Of FlyDubai Hijacking（以色列在 FlyDubai 劫機未遂後對飛行員與機組實施「穆斯林禁令」）",
+      "category": "geopolitics",
+      "summary": "9 月 30 日 FlyDubai 劫機未遂事件後，以色列對所有飛往以色列的飛行員與客艙機組實施實質上的「穆斯林禁令」。該命令未明文提及宗教，但針對並禁止與以色列無正式外交關係國家的國籍者。中東之眼（Middle East Eye）指出：「指令針對國籍而非明列宗教，但實際上排除了這些國家的穆斯林飛行員與其他受影響機組。」限制涵蓋 31 個國籍，包括阿爾及利亞、突尼西亞、伊朗與巴基斯坦公民，也影響持有這些國籍的法國公民。政策已生效，部分報導稱法航等主要航空公司正在遵守，但也有未跟上者：以色列以其中一名飛行員的國籍為由拒絕一架飛往特拉維夫的衣索比亞航空班機；週一更有一架貨機在空中被迫折返，因一名飛行員為印尼籍、而營運商在起飛後才提交人員名單。此事發生於以色列交通部因 FlyDubai 事件飽受批評、被指對既有安全程序與法律執法鬆散之際。該名 FlyDubai 攻擊者本應被標記——他早因極端伊斯蘭主義觀點被阿曼禁飛。他目前正在杜拜接受訊問，據信意圖將被劫持的 FlyDubai 航班撞向以色列本古里昂機場主航廈，以造成最大傷亡。\n\n**重點摘錄：**\n• 以國以「31 個無邦交國籍」為篩選條件，實質排除穆斯林機組，法航已配合\n• 執法趨嚴：衣索比亞航空被拒、印尼籍飛行員貨機空中折返\n• 事件根源：9/30 FlyDubai 劫機者曾遭阿曼禁飛卻未被攔下，以國安檢漏洞受抨擊",
+      "url": "https://www.zerohedge.com/geopolitical/israel-imposes-muslim-ban-pilots-crew-wake-flydubai-hijacking",
+      "timestamp": "2026-10-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "Nobel Peace Prize Winner Navi Pillay Accused Of Helping China Target Uyghur Dissidents（諾貝爾和平獎得主 Navi Pillay 被控協助中國鎖定維吾爾異議人士）",
+      "category": "geopolitics",
+      "summary": "新出爐的 2026 年諾貝爾和平獎得主 Navi Pillay 面臨嚴重指控：在她擔任聯合國最高人權官員期間，協助中國共產黨政府識別維吾爾異議人士。維吾爾活動人士與人權監督機構於週末提出關切，指控這位前聯合國人權事務高級專員主導將異議人士的敏感資訊披露給北京，可能使其本人與家人暴露於迫害風險。世界維吾爾代表大會前主席 Dolkun Isa 表示，Pillay 領導期間聯合國對其組織設下重大障礙；他說：「我後來得知，她領導的辦公室未經我們同意，就將我及其他維權人士的參與資訊分享給中國政府。」他形容這是負責保護人權的機構的背叛，並強調「諾貝爾和平獎不能讓任何人免於問責」，要求說明是誰授權披露。指控出現在挪威諾貝爾委員會於週五宣布 Pillay 獲獎、讚揚其「對普世法律原則的承諾與堅定道德指南針」數日之後。聯合國吹哨者 Emma Reilly 也批評此決定，指 Pillay 辦公室向中國當局提供了 50 多名異議人士的身分；她聲稱這些活動人士的親屬隨後遭到恐嚇、拘留、酷刑與失蹤。聯合國觀察（UN Watch）執行長 Hillel Neuer 呼籲諾貝爾委員會正視指控：「諾貝爾委員會欠那些被交到中國手上的異議人士一個解釋。」此爭議發生在長期指控北京在新疆對維吾爾等穆斯林少數民族犯下種族滅絕（大規模拘留、強制絕育、宗教迫害）的背景之下；中國否認這些指控。\n\n**重點摘錄：**\n• 2026 諾貝爾和平獎得主 Pillay 被控任聯合國人權高專期間向北京洩露異議人士資料\n• 吹哨者指逾 50 名異議人士身分被交出，家屬遭恐嚇、拘留、酷刑、失蹤\n• UN Watch 要求諾貝爾委員會說明；後續問責與獎項正當性爭議恐持續發酵",
+      "url": "https://www.zerohedge.com/geopolitical/nobel-peace-prize-winner-navi-pillay-accused-helping-china-target-uyghur-dissidents",
+      "timestamp": "2026-10-14",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-10-14 (星期三)",
+      "category": "premarket",
+      "timestamp": "2026-10-14",
+      "summary": "🟢 開高訊號明確但盤中易壓回。台指期夜盤 +363 點收 48,755（對現貨溢價 +413.69 點／+0.86%）＋台積電期 +1.20%＋SOX 已止穩（-0.23%，前一日 -2.67%）＋VIX 15.27 平靜 → 預估開高 48,650~48,900（+0.65%~+1.15%）。惟外資台指期淨空創近期新高 -87,239 口（-4,433 口）＋現貨連 2 日賣超（-1,652.91 億）、10/15 台積電 Q3 法說會前一日觀望、今晚 20:30 美國 9 月 CPI 前減碼 → 早盤衝高後承接力道不足，尾盤易回吐。主動推薦僅 1 檔 2891 中信金（外資+投信雙買、逆勢最強金融），另 3 檔觀察（2603 長榮／6505 台塑化／2382 廣達），電子與記憶體權值嚴格迴避。",
+      "market_context": {
+        "us_close": "2026-10-13",
+        "spx": 7805.45,
+        "spx_change_pct": -0.02,
+        "dow": 51670.1,
+        "dow_change_pct": -0.35,
+        "nasdaq": 27204.38,
+        "nasdaq_change_pct": -0.15,
+        "rut": 2783.37,
+        "rut_change_pct": -0.4,
+        "sox": 12208.79,
+        "sox_change_pct": -0.23,
+        "vix": 15.27,
+        "vix_change_pct": 0.39,
+        "tsm_adr": 445.12,
+        "tsm_adr_change_pct": 0.17,
+        "taiex_prev_close": 48341.31,
+        "usdtwd": 32.11,
+        "adr_premium_pct": 14.8,
+        "foreign_futures_oi": -87239,
+        "gold": 4184.8,
+        "gold_change_pct": -0.14,
+        "oil": 94.67,
+        "oil_change_pct": 0.99,
+        "btc": 83262.13,
+        "btc_change_pct": 1.83,
+        "tnx_pct": 5.22,
+        "tnx_change_pct": -0.44,
+        "usd_index": 102.21,
+        "usd_index_change_pct": -0.36,
+        "expected_open": "🟢 開高 48,650 ~ 48,900（+0.65% ~ +1.15%），惟盤中易見壓回 — 夜盤 +414 點＋台積電期 +1.2%＋SOX 止穩＋VIX 15.27 為主要開盤指引",
+        "support": "48,066（10/13 低）→ 48,000 → 47,800",
+        "resistance": "48,755（夜盤收）→ 49,126 → 49,301（10/8 收盤）",
+        "key_theme": "夜盤 +414 點＋台積電期 +1.2%＋SOX 止穩（-0.23%）＋VIX 15.27 平靜 → 開高機率大；但外資台指期淨空創近期新高 -87,239 口＋現貨連 2 日賣超（-1,652.91 億）、10/15 台積電 Q3 法說會前觀望、今晚美國 9 月 CPI（共識年增 3.6%）→ 早盤衝高後承接不足，尾盤易回吐。族群軸線：外資賣電子/記憶體、買航運＋金融＋塑化；油價 94.67 連 2 日走升支撐油電燃氣/塑膠。"
+      },
+      "recommendations": [
+        {
+          "symbol": "2891",
+          "name": "中信金",
+          "direction": "🔴 主動推薦（唯一）／偏多 — 逆勢最強權值金融，雙法人同步買超",
+          "strategy": "進場 70.0~70.8 限價承接；若開盤 gap >1%（≥72.3）→ 半倉市價（開盤 30 分內）+ 半倉 71.5 淺回檔限價（Rule 18）；停損 68.3（跌破 10/13 低 68.60）",
+          "recommend_price": 70.4,
+          "target": "74.5 ~ 75.5",
+          "stop_loss": 68.3,
+          "recommend_reason": "10/13 大盤 -1.95% 下逆勢 +2.58%（相對強度 +4.53%，權值金融最強，Rule 7 命中族群）；外資 +16,613 張（+11.89 億）＋投信 +11,722 張 雙法人同步買超；金融保險類 +1.13% 逆勢抗跌；10Y 殖利率 -0.44% 未觸發 Rule 13 的 >1% 門檻；開 68.60 即當日最低、收 71.60 貼近當日高 72.00（開低走高）。風險：電子強彈時資金回流電子、今晚 CPI、外資若續賣金融則本單失效。"
+        },
+        {
+          "symbol": "2603",
+          "name": "長榮",
+          "direction": "👀 觀察／偏多 — 航運外資大買但兩日累計漲多（Rule 3 不追高）",
+          "strategy": "回檔 256~260 再確認；開盤跳空 >1.5% 不追",
+          "recommend_price": 258.0,
+          "target": "回檔承接，不追高",
+          "stop_loss": null,
+          "recommend_reason": "航運類 +1.42%、外資 +15,863 張（+41.88 億）＋投信 +4,929 張；運價高檔。惟兩日累計 +13.5%（10/12 漲停 +9.89% → 10/13 +3.33%），Rule 3 不追高。"
+        },
+        {
+          "symbol": "6505",
+          "name": "台塑化",
+          "direction": "👀 觀察／偏多 — 油價連 2 日走升軸線（回檔再確認）",
+          "strategy": "回檔 116.0~117.5 再確認（勿等深回檔，Rule 16-1）；不追漲停後跳空",
+          "recommend_price": 116.8,
+          "target": "回檔承接，不追高",
+          "stop_loss": null,
+          "recommend_reason": "WTI +0.99% 至 94.67（連 2 日）、XLE +1.80% 為最強類股。惟 10/13 已漲停 +9.68%；外資趁漲停賣超 9,080 張（-10.81 億）、投信買 15,100 張（+17.97 億）→ 籌碼由外資轉投信，需回檔再確認。"
+        },
+        {
+          "symbol": "2382",
+          "name": "廣達",
+          "direction": "👀 觀察／偏多 — 大盤重挫日逆勢，但電子類續弱",
+          "strategy": "318~321 承接；Rule 14 需 SOX 連 2 日收紅方可加碼（目前僅 1 日）",
+          "recommend_price": 319.5,
+          "target": "承接區確認後再看",
+          "stop_loss": null,
+          "recommend_reason": "10/13 大盤 -1.95% 逆勢 +0.31%（相對強度 +2.26%）、外資 +2,330 張。惟電子類 -2.63% 續弱，SOX 僅 1 日止穩，未達 Rule 14 加碼門檻。"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-10-13",
+        "tracking_period": "10/13 盤前 → 10/13 收盤（驗證來源：TWSE STOCK_DAY 官方收盤自行計算）",
+        "total": 3,
+        "hit": 3,
+        "miss": 0,
+        "hit_rate_pct": 100.0,
+        "best": "6505 台塑化（🔴 主動）：回檔承接 106.5~107.5 開盤即觸及 106.50，未破停損 104.5，收 119.00 漲停 → 進場 106.5 至收盤 +11.74%、單日 +9.68%，✅ 命中",
+        "worst": "2882 國泰金（👀 觀察）：開 111.50 即當日最低、收 114.50（+1.33%），方向正確但全日未回落至 109~110 承接區 → 零報酬、未成交",
+        "lessons": [
+          "漲跌價差 ≠ 漲跌幅：檢討紀錄發現 4 處誤植（6505 誤寫 +10.5% 實為 +9.68%、2603 誤寫 +8.5% 實為 +3.33%，源於 STOCK_DAY 第 8 欄「漲跌價差（元）」被誤讀為百分比；2882／2603 的 recommended_price 誤取 10/8 收盤；類股寫「金融保險 +41.15」為點數實為 +1.13%）。改進：一律以「前後兩日官方收盤自行計算 pct」並以斷言腳本覆核後才寫入，規則已寫入 taiwan-stock-analysis 技能 Key Pitfalls。",
+          "單一承接價策略連續第二次成功：6505 只訂回檔承接區、無並存偏多敘述，開盤即觸及並收漲停，列為標準型沿用。",
+          "觀察標的普遍「方向對、零報酬」：大盤重挫日的金融／航運均跳空開高、全日不回檔。今後此類標的同時給「開高則半倉市價（Rule 18）」之預先承諾執行方案，避免對了指標卻沒賺到。"
+        ]
+      }
+    },
     {
       "title": "Fed Watch｜今日重點摘要",
       "icon": "🏛️",
@@ -13,17 +192,67 @@
       "title": "Fed Watch｜即時市場儀表板",
       "icon": "📊",
       "type": "table",
-      "headers": ["項目／指定代號", "可核驗快照（擷取／市場時間）", "日變動", "來源／限制"],
+      "headers": [
+        "項目／指定代號",
+        "可核驗快照（擷取／市場時間）",
+        "日變動",
+        "來源／限制"
+      ],
       "rows": [
-        ["3 個月殖利率（Yahoo ^IRX）", "無可核驗快照", "—", "擷取於 10/14 05:56 台北；指定 Yahoo Finance 頁面無法取得可保存快照，不以代理或估計代填。"],
-        ["5 年殖利率（Yahoo ^FVX）", "無可核驗快照", "—", "^FVX 為 5 年期，非 2 年期；指定 Yahoo Finance 頁面無可保存快照。"],
-        ["10 年殖利率（Yahoo ^TNX）", "無可核驗快照", "—", "指定 Yahoo Finance 頁面回覆 429，無可核驗快照。"],
-        ["30 年殖利率（Yahoo ^TYX）", "無可核驗快照", "—", "指定 Yahoo Finance 頁面無可保存快照。"],
-        ["2 年殖利率（補充；Fed H.15）", "4.80%（10/9 美東收盤資料；10/13 發布）", "+5bp（較 10/8 的 4.75%）", "Federal Reserve H.15／美國財政部常數到期殖利率；非 Yahoo 代號。10/12 市場休市。"],
-        ["美元指數（Yahoo DX-Y.NYB）", "無可核驗快照", "—", "指定 Yahoo Finance 頁面無可保存快照。"],
-        ["VIX（Yahoo ^VIX）", "無可核驗快照", "—", "指定 Yahoo Finance 頁面回覆 429，無可核驗快照。"],
-        ["聯邦基金期貨（Yahoo ZQ=F／當期 ZQ）", "無可核驗快照", "—", "指定 Yahoo Finance 頁面回覆 429；缺少完整合約報價，不得反推精確 FedWatch 機率。"],
-        ["SOFR 期貨（Yahoo SR1=F、SR3=F）", "無可核驗快照", "—", "缺少完整合約月、到期與計算假設，不作機率換算。"]
+        [
+          "3 個月殖利率（Yahoo ^IRX）",
+          "無可核驗快照",
+          "—",
+          "擷取於 10/14 05:56 台北；指定 Yahoo Finance 頁面無法取得可保存快照，不以代理或估計代填。"
+        ],
+        [
+          "5 年殖利率（Yahoo ^FVX）",
+          "無可核驗快照",
+          "—",
+          "^FVX 為 5 年期，非 2 年期；指定 Yahoo Finance 頁面無可保存快照。"
+        ],
+        [
+          "10 年殖利率（Yahoo ^TNX）",
+          "無可核驗快照",
+          "—",
+          "指定 Yahoo Finance 頁面回覆 429，無可核驗快照。"
+        ],
+        [
+          "30 年殖利率（Yahoo ^TYX）",
+          "無可核驗快照",
+          "—",
+          "指定 Yahoo Finance 頁面無可保存快照。"
+        ],
+        [
+          "2 年殖利率（補充；Fed H.15）",
+          "4.80%（10/9 美東收盤資料；10/13 發布）",
+          "+5bp（較 10/8 的 4.75%）",
+          "Federal Reserve H.15／美國財政部常數到期殖利率；非 Yahoo 代號。10/12 市場休市。"
+        ],
+        [
+          "美元指數（Yahoo DX-Y.NYB）",
+          "無可核驗快照",
+          "—",
+          "指定 Yahoo Finance 頁面無可保存快照。"
+        ],
+        [
+          "VIX（Yahoo ^VIX）",
+          "無可核驗快照",
+          "—",
+          "指定 Yahoo Finance 頁面回覆 429，無可核驗快照。"
+        ],
+        [
+          "聯邦基金期貨（Yahoo ZQ=F／當期 ZQ）",
+          "無可核驗快照",
+          "—",
+          "指定 Yahoo Finance 頁面回覆 429；缺少完整合約報價，不得反推精確 FedWatch 機率。"
+        ],
+        [
+          "SOFR 期貨（Yahoo SR1=F、SR3=F）",
+          "無可核驗快照",
+          "—",
+          "缺少完整合約月、到期與計算假設，不作機率換算。"
+        ]
       ],
       "analysis": "所有指定 Yahoo 行情均無可核驗快照，故不填估計值；H.15 的 2 年期只作清楚標示的官方補充。"
     },
@@ -36,20 +265,98 @@
       "title": "Fed Watch｜官員立場追蹤（2026 實際投票委員）",
       "icon": "🗣️",
       "type": "table",
-      "headers": ["委員／職位", "投票權", "立場標示", "最近可核驗談話／異議／投票（日期）", "來源連結與判定理由"],
+      "headers": [
+        "委員／職位",
+        "投票權",
+        "立場標示",
+        "最近可核驗談話／異議／投票（日期）",
+        "來源連結與判定理由"
+      ],
       "rows": [
-        ["Kevin Warsh／理事會主席、FOMC 主席", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；正式投票支持緊縮。"],
-        ["John C. Williams／紐約聯儲總裁、副主席", "有", "鷹派（未更新）", "9/16：12–0 上調 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；常任投票席位，無更新個人證據。"],
-        ["Michael S. Barr／理事", "有", "鷹派（未更新）", "9/29：經濟與貨幣政策演說；9/16 支持升息", "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm；本次無更新。"],
-        ["Michelle W. Bowman／理事、副主席（監管）", "有", "鷹派（未更新）", "10/6：監管演說；9/16 12–0 上調", "https://www.federalreserve.gov/newsevents.htm；10/6 主題非利率指引。"],
-        ["Lisa D. Cook／理事", "有", "鷹派（未更新）", "9/30：談話；9/16 12–0 上調", "https://www.federalreserve.gov/newsevents/2026-speeches.htm；無新利率指引。"],
-        ["Beth M. Hammack／克里夫蘭聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無更新個人證據。"],
-        ["Philip N. Jefferson／理事、副主席", "有", "鷹派／資料依賴（未更新）", "10/1：支持 9/16 升息；未來調整取決於資料、前景與風險平衡", "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm；未承諾下一次行動。"],
-        ["Neel Kashkari／明尼阿波利斯聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調；7/29 曾主張升息 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"],
-        ["Lorie K. Logan／達拉斯聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調；7/29 曾主張升息 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"],
-        ["Anna Paulson／費城聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調", "https://www.federalreserve.gov/monetarypolicy/fomc.htm；2026 輪值投票，無新個人證據。"],
-        ["Jerome H. Powell／理事", "有", "鷹派（未更新）", "9/16：12–0 上調", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無新個人證據。"],
-        ["Christopher J. Waller／理事", "有", "鷹派／資料依賴（未更新）", "10/13：AI 主題討論，無可核驗政策逐字稿；政策訊號仍為 10/8", "https://www.federalreserve.gov/newsevents/2026-october.htm；10/13 活動主題為 AI，不改變 10/8 的政策判定。"]
+        [
+          "Kevin Warsh／理事會主席、FOMC 主席",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調目標區間 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；正式投票支持緊縮。"
+        ],
+        [
+          "John C. Williams／紐約聯儲總裁、副主席",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；常任投票席位，無更新個人證據。"
+        ],
+        [
+          "Michael S. Barr／理事",
+          "有",
+          "鷹派（未更新）",
+          "9/29：經濟與貨幣政策演說；9/16 支持升息",
+          "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm；本次無更新。"
+        ],
+        [
+          "Michelle W. Bowman／理事、副主席（監管）",
+          "有",
+          "鷹派（未更新）",
+          "10/6：監管演說；9/16 12–0 上調",
+          "https://www.federalreserve.gov/newsevents.htm；10/6 主題非利率指引。"
+        ],
+        [
+          "Lisa D. Cook／理事",
+          "有",
+          "鷹派（未更新）",
+          "9/30：談話；9/16 12–0 上調",
+          "https://www.federalreserve.gov/newsevents/2026-speeches.htm；無新利率指引。"
+        ],
+        [
+          "Beth M. Hammack／克里夫蘭聯儲總裁",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無更新個人證據。"
+        ],
+        [
+          "Philip N. Jefferson／理事、副主席",
+          "有",
+          "鷹派／資料依賴（未更新）",
+          "10/1：支持 9/16 升息；未來調整取決於資料、前景與風險平衡",
+          "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm；未承諾下一次行動。"
+        ],
+        [
+          "Neel Kashkari／明尼阿波利斯聯儲總裁",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調；7/29 曾主張升息 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"
+        ],
+        [
+          "Lorie K. Logan／達拉斯聯儲總裁",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調；7/29 曾主張升息 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"
+        ],
+        [
+          "Anna Paulson／費城聯儲總裁",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調",
+          "https://www.federalreserve.gov/monetarypolicy/fomc.htm；2026 輪值投票，無新個人證據。"
+        ],
+        [
+          "Jerome H. Powell／理事",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無新個人證據。"
+        ],
+        [
+          "Christopher J. Waller／理事",
+          "有",
+          "鷹派／資料依賴（未更新）",
+          "10/13：AI 主題討論，無可核驗政策逐字稿；政策訊號仍為 10/8",
+          "https://www.federalreserve.gov/newsevents/2026-october.htm；10/13 活動主題為 AI，不改變 10/8 的政策判定。"
+        ]
       ]
     },
     {
@@ -61,15 +368,47 @@
       "title": "Fed Watch｜未來重要日期",
       "icon": "📅",
       "type": "table",
-      "headers": ["日期／時間（美東；台北）", "事件", "官方來源與意義"],
+      "headers": [
+        "日期／時間（美東；台北）",
+        "事件",
+        "官方來源與意義"
+      ],
       "rows": [
-        ["10/14 08:30 EDT；10/14 20:30", "9 月 CPI", "BLS；消費者物價。https://www.bls.gov/schedule/2026/"],
-        ["10/14 14:00 EDT；10/15 02:00", "Beige Book", "Federal Reserve；地區經濟狀況彙整。https://www.federalreserve.gov/newsevents/2026-october.htm"],
-        ["10/15 08:30 EDT；10/15 20:30", "9 月 PPI", "BLS；生產者物價。https://www.bls.gov/schedule/2026/"],
-        ["10/27–28；台北 10/27–29", "FOMC 例會", "Federal Reserve；下一次利率決策。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"],
-        ["10/29 08:30 EDT；10/29 20:30", "9 月 Personal Income and Outlays／PCE", "BEA；PCE 通膨更新。https://www.bea.gov/news/schedule/"],
-        ["11/6 08:30 EST；11/6 21:30", "10 月 Employment Situation／NFP", "BLS；就業、薪資與失業率。https://www.bls.gov/schedule/2026/"],
-        ["12/8–9；台北 12/8–10", "FOMC 例會與 SEP", "Federal Reserve；季度預測與利率路徑更新。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"]
+        [
+          "10/14 08:30 EDT；10/14 20:30",
+          "9 月 CPI",
+          "BLS；消費者物價。https://www.bls.gov/schedule/2026/"
+        ],
+        [
+          "10/14 14:00 EDT；10/15 02:00",
+          "Beige Book",
+          "Federal Reserve；地區經濟狀況彙整。https://www.federalreserve.gov/newsevents/2026-october.htm"
+        ],
+        [
+          "10/15 08:30 EDT；10/15 20:30",
+          "9 月 PPI",
+          "BLS；生產者物價。https://www.bls.gov/schedule/2026/"
+        ],
+        [
+          "10/27–28；台北 10/27–29",
+          "FOMC 例會",
+          "Federal Reserve；下一次利率決策。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        ],
+        [
+          "10/29 08:30 EDT；10/29 20:30",
+          "9 月 Personal Income and Outlays／PCE",
+          "BEA；PCE 通膨更新。https://www.bea.gov/news/schedule/"
+        ],
+        [
+          "11/6 08:30 EST；11/6 21:30",
+          "10 月 Employment Situation／NFP",
+          "BLS；就業、薪資與失業率。https://www.bls.gov/schedule/2026/"
+        ],
+        [
+          "12/8–9；台北 12/8–10",
+          "FOMC 例會與 SEP",
+          "Federal Reserve；季度預測與利率路徑更新。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        ]
       ],
       "analysis": "日期與美東時區以官方日程為準；美東於 11/1 轉為 EST，故 11/6 台北較美東快 13 小時。"
     },
@@ -78,26 +417,69 @@
       "icon": "🔗",
       "type": "news",
       "items": [
-        {"headline": "Federal Reserve｜10/13 折現率會議紀要", "content": "8/17、9/9 與 9/16 理事會折現率程序；公告明示其與 FOMC 目標區間程序不同。", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm", "tags": ["官方", "政策查核"]},
-        {"headline": "Federal Reserve｜H.15", "content": "10/13 發布、含至 10/9 的官方常數到期殖利率；僅作 2 年期及殖利率曲線補充。", "url": "https://www.federalreserve.gov/releases/h15/", "tags": ["官方", "殖利率補充"]},
-        {"headline": "CME Group｜FedWatch 與方法頁", "content": "live iframe 無可保存機率；不以媒體或推算數字替代。", "url": "https://www.cmegroup.com/articles/2023/understanding-the-cme-group-fedwatch-tool-methodology.html", "tags": ["方法", "市場定價"]},
-        {"headline": "BLS／BEA｜官方發布日程", "content": "CPI、PPI、NFP 取自 BLS；PCE／Personal Income and Outlays 取自 BEA。", "url": "https://www.bls.gov/schedule/2026/", "tags": ["官方日程", "CPI／PPI／NFP／PCE"]},
-        {"headline": "Yahoo Finance｜指定行情代號與限制", "content": "^IRX（3M）、^FVX（5Y）、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F／當期 ZQ、SR1=F、SR3=F；本次 Yahoo 頁面無法提供可核驗快照，CME 或 Yahoo 不可取用時即揭露限制。", "url": "https://finance.yahoo.com/", "tags": ["行情規則", "資料限制"]}
+        {
+          "headline": "Federal Reserve｜10/13 折現率會議紀要",
+          "content": "8/17、9/9 與 9/16 理事會折現率程序；公告明示其與 FOMC 目標區間程序不同。",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+          "tags": [
+            "官方",
+            "政策查核"
+          ]
+        },
+        {
+          "headline": "Federal Reserve｜H.15",
+          "content": "10/13 發布、含至 10/9 的官方常數到期殖利率；僅作 2 年期及殖利率曲線補充。",
+          "url": "https://www.federalreserve.gov/releases/h15/",
+          "tags": [
+            "官方",
+            "殖利率補充"
+          ]
+        },
+        {
+          "headline": "CME Group｜FedWatch 與方法頁",
+          "content": "live iframe 無可保存機率；不以媒體或推算數字替代。",
+          "url": "https://www.cmegroup.com/articles/2023/understanding-the-cme-group-fedwatch-tool-methodology.html",
+          "tags": [
+            "方法",
+            "市場定價"
+          ]
+        },
+        {
+          "headline": "BLS／BEA｜官方發布日程",
+          "content": "CPI、PPI、NFP 取自 BLS；PCE／Personal Income and Outlays 取自 BEA。",
+          "url": "https://www.bls.gov/schedule/2026/",
+          "tags": [
+            "官方日程",
+            "CPI／PPI／NFP／PCE"
+          ]
+        },
+        {
+          "headline": "Yahoo Finance｜指定行情代號與限制",
+          "content": "^IRX（3M）、^FVX（5Y）、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F／當期 ZQ、SR1=F、SR3=F；本次 Yahoo 頁面無法提供可核驗快照，CME 或 Yahoo 不可取用時即揭露限制。",
+          "url": "https://finance.yahoo.com/",
+          "tags": [
+            "行情規則",
+            "資料限制"
+          ]
+        }
       ]
     }
   ],
   "stats": {
-    "total": 0,
-    "premium": 0,
-    "market": 0,
-    "geopolitics": 0,
+    "total": 9,
+    "premium": 9,
+    "market": 5,
+    "geopolitics": 4,
     "withImages": 0,
-    "fedWatch": 1,
-    "data_gap": true
+    "premarket": 1,
+    "fedWatch": 1
   },
   "keyThemes": [
-    "Fed 10/13 公布的是 8–9 月折現率會議紀要，不是新的 FOMC 利率決策；9/16 才把目標區間升至 3.75%–4.00%並把 primary credit rate 升至 4.00%",
-    "官方 H.15：10/9 的 2 年期常數到期殖利率為 4.80%，較 10/8 上升 5bp；指定 Yahoo 行情與 CME live 機率仍無可核驗快照",
-    "10/14 CPI、10/15 PPI、10/27–28 FOMC、10/29 PCE 為下一批官方節點；沒有兩個可核驗市場訊號，故不主張 FedWatch 機率交叉驗證"
+    "記憶體賣壓（中國 CXMT 進展＋韓國 KOSPI 重挫）拖累納指，DRAM ETF 收跌逾 3%；10Y 仍高懸 5.22%，Fed 內部鷹鴿分歧白熱化（威廉斯 2027 免升息 vs. Goolsbee AI 通膨外溢）",
+    "AI 信貸裂縫擴大：高盛稱信貸平靜只剩約兩個月，因 AI CapEx 發債機器暫歇；一旦重啟，信貸市場平靜期即告結束",
+    "中東升級與俄烏情報斷點：胡塞飛彈擊中沙烏地阿美達蘭總部、8 座沙國機場關閉；澤倫斯基證實連續兩夜未獲夥伴預警，情報分享與 PURL 軍購機制同時被當籌碼，牽動柴油價格",
+    "台股偏多開高但易壓回：夜盤 +413.69 點／+0.86%（台指期收 48,755）＋台積電期 +1.20%＋SOX 止穩 -0.23%＋VIX 15.27 → 預估開高 48,650~48,900；惟外資台指期淨空創近期新高 -87,239 口＋現貨連 2 日賣超 -1,652.91 億，10/15 台積電法說會前觀望",
+    "外資動向：賣電子/記憶體（南亞科 -41,446、台積電 -25,641 張）、買航運＋金融＋塑化（陽明 +21,906、中信金 +16,613、長榮 +15,863）；主動推薦僅 2891 中信金（逆勢 +2.58%、雙法人買超）",
+    "Fed Watch：10/13 公布 8–9 月理事會折現率會議紀要（非新利率決策）；官方 H.15 顯示 10/9 的 2 年期 CMT 升至 4.80%（+5bp）；10/14 CPI、10/15 PPI、10/27–28 FOMC、10/29 PCE 為下一批官方節點"
   ]
 }
