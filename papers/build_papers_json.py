@@ -2,7 +2,7 @@
 """Convert daily QVAR paper notes (.md) + uploaded papers into papers.json
    with automatic topic categorization."""
 
-import os, json, re, glob
+import os, json, re, glob, hashlib
 from datetime import datetime
 
 PAPERS_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -10,6 +10,8 @@ MEMORY_DIR = os.path.expanduser("~/.openclaw/workspace/memory/qvar-papers")
 BF_DIR = os.path.expanduser("~/.openclaw/workspace/memory/behavioral-finance-papers")
 UPLOADS_JSON = os.path.join(PAPERS_DIR, "uploads.json")
 OUTPUT_JSON = os.path.join(PAPERS_DIR, "papers.json")
+# 獨立論文站 repo（wangsona-lgtm.github.io/papers/）的 papers.json — 重建時合併保留其豐富條目
+STANDALONE_JSON = os.path.expanduser("~/桌面/Claude cowork/papers/papers.json")
 
 # ====== Topic classification rules ======
 TOPIC_RULES = [
@@ -100,13 +102,113 @@ def classify_topics(title, abstract):
         topics.append("其他")
     return list(dict.fromkeys(topics))  # deduplicate preserving order
 
+def paper_key(p):
+    """Stable dedup key: normalized DOI > OpenAlex ID > normalized title."""
+    doi = re.sub(r'^https?://(dx\.)?doi\.org/', '', (p.get('doi') or '').strip().lower())
+    if doi and doi != 'nan':
+        return 'doi:' + doi
+    oa_m = re.search(r'(W\d+)', p.get('openalex_url') or '')
+    if oa_m:
+        return 'oa:' + oa_m.group(1)
+    t = re.sub(r'\s+', ' ', (p.get('title') or '').strip().lower())
+    return 't:' + t
+
+def paper_richness(p):
+    """Score entry richness — merge prefers the richer duplicate."""
+    score = 0
+    if p.get('abstract'): score += 4
+    score += min(len(p.get('notes') or []), 20)
+    score += min(len(p.get('viewpoints') or []), 10)
+    if p.get('journal'): score += 2
+    if p.get('authors'): score += 1
+    if p.get('pdf'): score += 2
+    if p.get('fulltext_url'): score += 1
+    return score
+
+def parse_daily_md_tables(text, search_date):
+    """Parse new table-format daily QVAR notes (since 2026-09-22).
+
+    Table rows: | # | 標題 | 年份 | DOI | OpenAlex ID | 命中詞 |
+    Rows under 誤抓/False Positives sections are skipped.
+    """
+    papers = []
+    in_false_positive = False
+
+    for line in text.split('\n'):
+        line_s = line.strip()
+
+        if line_s.startswith('## '):
+            in_false_positive = bool(re.search(r'誤抓|不相關|False Positive', line_s))
+            continue
+        if line_s.startswith('### '):
+            continue
+
+        if in_false_positive:
+            continue
+
+        # 6-column data row
+        m = re.match(
+            r'^\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]*?)\s*\|\s*([^|]*?)\s*\|\s*([^|]*?)\s*\|\s*([^|]*?)\s*\|\s*$',
+            line_s)
+        if not m:
+            continue
+        num, title, year, doi, oa_id, term = m.groups()
+
+        # Skip header / separator rows
+        if set(num) <= set('-: #') or set(title) <= set('-: '):
+            continue
+        if title in ('標題', ''):
+            continue
+
+        clean_title = re.sub(r'^⚠️\s*', '', title.strip())
+        clean_title = re.sub(r'（[^）]*待確認[^）]*）$', '', clean_title).strip()
+
+        doi_norm = re.sub(r'^https?://(dx\.)?doi\.org/', '', doi.strip())
+        oa = oa_id.strip()
+        oa_url = f"https://openalex.org/{oa}" if re.match(r'^W\d+$', oa) else ""
+
+        tags = []
+        methods = ["QVAR", "QARDL", "TVP-VAR", "WQC", "QQGC", "WQR", "QTVAR", "jQIRF", "jQFEVD"]
+        hay = (term + " " + clean_title).lower()
+        for mm in methods:
+            if mm.lower() in hay:
+                tags.append(mm)
+        if not tags:
+            tags.append("QVAR")
+
+        papers.append({
+            "id": f"qvar-{search_date}-{oa or hashlib.md5(clean_title.encode('utf-8')).hexdigest()[:8]}",
+            "title": clean_title,
+            "search_date": search_date,
+            "authors": "",
+            "year": year.strip(),
+            "journal": "",
+            "doi": doi_norm,
+            "citations": "",
+            "openalex_url": oa_url,
+            "abstract": "",
+            "tags": tags,
+            "topics": classify_topics(clean_title, ""),
+            "type": "search",
+            "notes": []
+        })
+
+    return papers
+
 def parse_daily_md(path):
-    """Parse a daily QVAR paper note .md file into a list of paper dicts."""
+    """Parse a daily QVAR paper note .md file into a list of paper dicts.
+    Supports both old (### N.M sections) and new (markdown table) formats."""
     with open(path, "r", encoding="utf-8") as f:
         text = f.read()
     
     date_match = re.search(r'(\d{4}-\d{2}-\d{2})', text[:200])
     search_date = date_match.group(1) if date_match else "unknown"
+    
+    # New table format detection
+    if '| DOI |' in text and re.search(r'^\|\s*\d+\s*\|', text, re.M):
+        table_papers = parse_daily_md_tables(text, search_date)
+        if table_papers:
+            return table_papers
     
     papers = []
     sections = re.split(r'\n###\s+\d+\.\d+\s+', text)
@@ -291,9 +393,38 @@ def build():
         if "topics" not in up:
             up["topics"] = ["上傳文章"]
         if "id" not in up:
-            up["id"] = f"upload-{up.get('date','unknown')}-{abs(hash(str(up.get('title',''))))%10000}"
+            up["id"] = f"upload-{up.get('date','unknown')}-{hashlib.md5(str(up.get('title','')).encode('utf-8')).hexdigest()[:8]}"
         all_papers.append(up)
         counts["upload"] += 1
+    
+    # Merge with existing papers.json (both tw-finance-site and standalone repo):
+    # preserves rich entries (abstract/notes/viewpoints) written by the 20:00 search job
+    # that the .md rebuild cannot regenerate.
+    existing = []
+    for src in (OUTPUT_JSON, STANDALONE_JSON):
+        if os.path.exists(src):
+            try:
+                with open(src, "r", encoding="utf-8") as f:
+                    existing.extend(json.load(f).get("papers", []))
+            except Exception as e:
+                print(f"⚠️  Skip existing {src}: {e}")
+    
+    merged = {}
+    for p in all_papers:
+        k = paper_key(p)
+        if k not in merged or paper_richness(p) > paper_richness(merged[k]):
+            merged[k] = p
+    preserved = 0
+    for p in existing:
+        k = paper_key(p)
+        if k not in merged:
+            merged[k] = p
+            preserved += 1
+        elif paper_richness(p) > paper_richness(merged[k]):
+            merged[k] = p
+    all_papers = list(merged.values())
+    if preserved:
+        print(f"   🔒 保留既有條目 {preserved} 篇（來自現有 papers.json，.md 無法重建）")
     
     all_papers.sort(key=lambda p: (p.get("search_date", p.get("date", "2000-01-01")), p.get("id", "")), reverse=True)
     
