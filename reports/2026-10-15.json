@@ -1,9 +1,189 @@
 {
   "date": "2026-10-15",
   "type": "daily-reports",
-  "source": "fed-watch",
-  "title": "Fed Watch 聯準會動向 — 10月15日（四）",
+  "source": "zerohedge+fed-watch",
+  "title": "ZeroHedge 每日導讀 + Fed Watch — 10月15日（四）＋ 盤前分析",
   "sections": [
+    {
+      "title": "鷹派集結：CPI 飆升推升美元、全面打擊其他資產…AI 信用裂縫大開（Hawks Circle As Soaring CPI Lifts The Dollar, Hammers Everything Else... AI Credit Cracks Wide-Open）",
+      "category": "market",
+      "summary": "ZeroHedge 將週三盤面定調為「三重打擊」（triple whammy）：第一，油價走高（更多船隻在荷莫茲遭攻擊）；第二，通膨升溫（核心 CPI 偏熱）；第三，AI 信用風險升高（CoreWeave 遭血洗）。三者疊加引發全面拋售：美債殖利率與升息預期一度狂飆，隨後在 AI 焦慮與避險情緒下回落至幾乎持平；股市重挫，那斯達克 100 與科技股最慘，羅素 2000 等利率敏感族群同步走弱；黃金與加密貨幣「嘔吐式」下跌，美元則突破其長達 18 個月的區間。作者特別點出 AI 信用市場（data center 債券、私募信貸）的裂縫正在「大開」，這不是單純的股市回檔，而是信用端的結構性警訊。\n\n**重點摘錄：**\n• 三重打擊：油價↑ + 核心通膨↑ + AI 信用風險↑，形成跨資產同步賣壓\n• 殖利率盤中狂飆後收斂至持平，避險與 AI 焦慮壓過鷹派定價\n• 美元突破 18 個月區間，金與加密貨幣同時崩落，風險資產無處可躲\n\n🔒 僅有預覽片段（付費牆，全文未解鎖）",
+      "url": "https://www.zerohedge.com/markets/hawks-circle-soaring-cpi-lifts-dollar-hammers-everything-else",
+      "timestamp": "2026-10-15",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "AI 疑慮與火熱 CPI 打擊股市 — Newsquawk 美股收盤（Stocks hit on AI concerns and hot CPI - Newsquawk US Market Wrap）",
+      "category": "market",
+      "summary": "美股週三收低，初始賣壓來自遠超預期的 9 月 CPI（核心月增 0.335%，預期 0.2%；核心年增 2.6%，預期 2.5%），而 AI 疑慮持續升溫——記憶體股續弱，AI 融資可持續性遭到質疑，CoreWeave 公司債殖利率升破 15%，彭博稱其債券已達「違約級」水位。指數收盤：S&P 500 -1.05% 至 7,724；那斯達克 100 -2.02% 至 29,951；道瓊 -0.09% 至 51,622；羅素 2000 -1.90% 至 2,730。金融股續弱，Q3 財報好壞分歧：BAC -4.8%、STT -4.1%、MS -2.8%。美債雙向劇烈震盪：CPI 公布後殖利率曲線全面跳升，隨股市風險偏好惡化而逐步收復，收盤僅 2 年期收跌。收盤殖利率：2Y +0.9bp 至 4.806%、10Y -3.0bp 至 5.187%、20Y -3.9bp 至 5.574%、30Y -3.9bp 至 5.524%。貨幣市場鷹派位移明顯，10 月升息 25bp 機率由數據前的 20% 升至約 50%，10 月之後至 3 月間另計約 4bp 緊縮。通膨主因是汽油價大漲 9.1%，貢獻當月漲幅逾半。Fed 的 Goolsbee 稱數據「令人沮喪」，若核心通膨趨勢達 4%（即 9 月月增年化）則「不可接受」。\n\n**重點摘錄：**\n• 核心 CPI 月增 0.335%（預期 0.2%），10 月升息機率從 20% → 約 50%\n• 科技/利率敏感股領跌，長天期殖利率反而收斂，殖利率曲線趨平\n• 汽油 +9.1% 貢獻當月 CPI 漲幅逾半，能源是頭號故事",
+      "url": "https://www.zerohedge.com/markets/stocks-hit-ai-concerns-and-hot-cpi-newsquawk-us-market-wrap",
+      "timestamp": "2026-10-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "美股因火熱 CPI 與科技股困境下跌 — Newsquawk 亞太開盤（US stocks declined amid hot CPI and tech woes - Newsquawk Daily Asia-Pac Market Open）",
+      "category": "market",
+      "summary": "此文為亞太開盤版，除重述 CPI 與 AI 信用題材外，補充三大塊資訊。**中東**：以色列總理納坦雅胡表示「此時」反對對伊朗先發制人攻擊，稱「對我們不方便」；德黑蘭方面則有資深官員向區域外交官表示「確信美國將發動攻擊」，德黑蘭充滿戰爭氣氛；伊朗國會議長 Ghalibaf 稱必須讓美國「被懲罰」；IRGC 海軍宣布一艘載有 2,500 個貨櫃的貨櫃船在荷莫茲海峽南方觸雷爆炸沉沒；胡塞組織稱以彈道飛彈攻擊沙烏地里雅德哈利德國王國際機場，並警告全球航運公司撤離其視為合法目標的設施。**Fed 官員**：Bowman（有投票權）稱「沒有急迫性」進一步動作；Barkin 稱 CPI 高於他所期望，週四 PPI 將影響其通膨展望；Beige Book 顯示多數轄區就業「幾無淨變化」，12 轄區中僅 2 區中度成長。**其他**：德國擬推動歐盟對中國額外進口設上限；財政部宣布最高 60 億美元、10–20 年期名目券的流動性支持回購；紐約 Fed 於 10/15–11/13 進行約 146 億美元再投資買入（前值 156 億）。\n\n**重點摘錄：**\n• IRGC 稱 2,500 櫃貨櫃船觸雷沉沒，胡塞同步攻擊沙國機場與 Aramco 設施\n• Fed 官員口徑分歧但偏鷹：Bowman 不急、Goolsbee 稱 4% 核心「不可接受」\n• Beige Book：多數轄區就業零成長，經濟活動僅「輕微至溫和」擴張",
+      "url": "https://www.zerohedge.com/markets/us-stocks-declined-amid-hot-cpi-and-tech-woes-newsquawk-daily-asia-pac-market-open",
+      "timestamp": "2026-10-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "「它會歸零」：CoreWeave 崩跌，股市終於注意到信用市場已尖叫數週（\"Its Going To Zero\": CoreWeave Implodes As Stocks Finally Notice What Credit Has Been Screaming For Weeks）",
+      "category": "market",
+      "summary": "本文核心是「股市補跌信用市場早已反映的訊號」。ZeroHedge 指出，在資料中心債券全面崩跌之際，由前比特幣礦商轉型為資料中心營運商的 CoreWeave，其 2032 年到期債券 G-spread 已突破 1,000bp 的「困境級」（distressed）門檻，同批債券殖利率史上首次突破 15%——這個殖利率水準通常只出現在 CCC 或更低評級的垃圾債，且債券價格跌破 80 美分（俗稱 deep distress，深度困境）。文中點出這不是單一公司問題：Oracle 無擔保債券已「像深度垃圾債一樣交易」，連 Meta 的 Project Beignet 相關債券也即將創下最寬價差。作者批評股市投資人「花了數週才注意到信用市場一直在尖叫的訊號」，並以「它會歸零」形容市場對 CoreWeave 的定價轉向。這是 AI 資本支出循環由「股權敘事」轉向「信用現實」的關鍵時刻。\n\n**重點摘錄：**\n• CoreWeave 2032 債券 G-spread 破 1,000bp、殖利率 >15%、價格 <80 美分 → 深度困境\n• 傳染擴大：Oracle 無擔保債像深度垃圾債，Meta Project Beignet 債券創最寬價差\n• 核心論點：信用市場領先示警數週，股市直到本週才補跌\n\n🔒 僅有預覽片段（付費牆，全文未解鎖）",
+      "url": "https://www.zerohedge.com/markets/its-going-zero-coreweave-implodes-stocks-finally-notice-what-credit-has-been-screaming",
+      "timestamp": "2026-10-15",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "「惡夢情境」：MOVE 指數創始人 Bassman 警告 20 年期殖利率觸 6% 恐引爆「凸性漩渦」（\"The Nightmare Scenario\": MOVE Creator Bassman Warns The 20Y At 6% Could Unleash \"Convexity Vortex\"）",
+      "category": "market",
+      "summary": "MOVE 指數（債市波動率指標）創始人、被稱為「Convexity Maven」的 Harley Bassman 在新一期報告《A Fat Cat in a Small Door》中提出警告：自 2007 年初以來首次，最普通的公債期貨合約（CBOT 債券期貨，規模近 2,000 億美元）表現得像一檔房貸債券——已變成「顯著負凸性」（significantly Negatively Convex）。他的核心論點是：這項少人理解的市場「管路」問題，「很可能是近期利率急速上升的推手之一」，因為「太多肥貓債券交易員同時想擠過一道小小的流動性之門」。換言之，當殖利率上升到特定水位，負凸性會迫使交易商被動賣出以對沖，形成自我強化的拋售迴路。Bassman 警告 20 年期殖利率若觸及 6%，可能引爆他所稱的「凸性漩渦」（convexity vortex）惡夢情境。當日 20Y 收在 5.574%（-3.9bp），距離 6% 僅約 43bp，使這項警告具備現實緊迫性。\n\n**重點摘錄：**\n• CBOT 債券期貨自 2007 年初以來首見「負凸性」，行為像房貸債券\n• 負凸性迫使交易商在殖利率上行時被動賣出，形成自我強化拋售\n• 20Y 觸 6% 恐引爆「凸性漩渦」；當日 20Y 收 5.574%，僅一步之遙\n\n🔒 僅有預覽片段（付費牆，全文未解鎖）",
+      "url": "https://www.zerohedge.com/markets/nightmare-scenario-move-creator-bassman-warns-6-20y-could-unleash-convexity-vortex",
+      "timestamp": "2026-10-15",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "美國銀行交易業務全面不如預期，股價重挫（Bank Of America Tumbles After Trading Miss Across The Board）",
+      "category": "market",
+      "summary": "美國銀行（BAC）Q3 財報幾乎在所有關鍵項目落空。背景是財政部才剛以「明知故犯未申報逾 50 億美元可疑交易、且將營收置於合規之上」為由，對該行開罰逾 12.1 億美元（不可抵稅）。BAC 財報：調整後 EPS $1.08，低於預期 $1.10；GAAP EPS $0.91（罰款貢獻 17 美分差距，但「乾淨數字」仍落後）。淨利息收入後營收 $299.6 億（預期 $307.6 億）；排除 DVA 交易收入 $50.6 億（預期 $54.1 億），其中 FICC $25.5 億（年減 17%，歸因於房貸、市政債與信用）、股票 $25.1 億（年增 10%，號稱「Q3 紀錄」但仍少預期 1.2 億）。同期 JPM 股票交易 $49.5 億、高盛 $64.4 億皆大幅超標，Citi 債券交易更創至少十年最佳 Q3——BAC 兩邊都輸。環比更難看：總交易收入季減 29%，FICC -28%、股票 -31%；Global Markets 淨利季減 14 億至 12 億，資本報酬率由 20% 崩至 9%，效率比由 56% 惡化至 72%。亮點只有 NII：年增 8% 至 $164.5 億（FTE $166.1 億）超預期，淨息差 2.16%（預期 2.11%）。但成本年增 7%、營收僅增 3%，調整後效率比升至 62%（含罰款 66%）；Basel III 進階 CET1 12% 低於預期 12.4%，標準化 10.9% 低於預期 11.2%。IB 費用年減 11%、季減 16%，advisory 年減 19%。股價當日 -4.8%。\n\n**重點摘錄：**\n• 調整後 EPS $1.08 仍低於預期（罰款之外也 miss），交易、營收全線落後同業\n• FICC 年減 17%、環比 -28%，Global Markets 資本報酬率 20% → 9%\n• 唯一亮點 NII 年增 8% 超預期，但成本增速為營收兩倍，CET1 雙軌均低於預期",
+      "url": "https://www.zerohedge.com/markets/bank-america-tumbles-after-trading-miss-across-board",
+      "timestamp": "2026-10-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "Dowd：「投資泡沫是資本主義的特徵，不是缺陷」（Dowd: \"Investment Bubbles Are A Feature Of Capitalism, Not A Bug\"）",
+      "category": "market",
+      "summary": "作者 Ed Dowd 回應 Jefferies 的 Chris Wood「AI 將導致大規模資本毀滅」觀點：他大致認同，但補充兩點——第一，中國模型並非唯一開源選項，西方開源模型正在追趕；第二，Wood 的論述漏掉了一條可靠的歷史模式：狂熱 → 過度投資 → 金融崩潰 → 困境資產 → 廉價且重整後的基礎設施孕育下一波經濟浪潮。他舉三例：**(1) 美國鐵路泡沫**：1860s–70s 鋪設數萬英里軌道，Jay Cooke 銀行承銷 Northern Pacific 債券失敗引爆 1873 恐慌，逾 100 家鐵路破產，但鐵軌留下，成為美國工業擴張骨幹。**(2) 1920s 公用事業泡沫**：控股公司槓桿堆疊，Insull 帝國 1929–32 崩解，1935 年 PUHCA 拆分，留下的卻是大幅擴張的電網與發電容量。**(3) 網路泡沫**：電信光纖投入數千億、產能遠超需求，泡沫破裂後多數光纖「暗置」，但以極低價被重整收購，成就 Google、YouTube、Facebook、Netflix、SaaS 與雲端。**結論**：他認為 AI 目前正處於「過度投資階段」，裂縫已現——私募信貸資金停滯、企業需求疲軟（生產力承諾大規模落空）、電力限制取代晶片成為真正瓶頸、開源壓力壓縮毛利，以及「循環交易」（AI 公司負自由現金流卻靠債務投資人續買高價晶片）。他強調「不是會不會爆，而是何時爆」，且歷史上每一次基建熱潮都是被**信用市場**終結：鐵路時期 NYSE 關閉十天、兩年內約三分之一鐵路債違約；電信泡沫股票先於信用見頂（2000/03），違約後債權人回收約 20 美分。\n\n**重點摘錄：**\n• 歷史模式固定：鐵路 → 公用事業 → 光纖，泡沫破裂後廉價基建孕育下一波成長\n• AI 正處於「過度投資階段」，裂縫：私募信貸停滯、電力瓶頸、開源壓價、循環交易\n• 每一次基建熱潮都由信用市場終結，股票可能先見頂、信用隨後補殺",
+      "url": "https://www.zerohedge.com/markets/dowd-investment-bubbles-are-feature-capitalism-not-bug",
+      "timestamp": "2026-10-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "24 小時內兩艘阿聯船隻在荷莫茲沉沒，IRGC 聲稱每晚鎖定 5–6 艘船（Two Emirati Ships Sink In Hormuz In Under 24 Hours As IRGC Claims 5-6 Vessels Targeted Nightly）",
+      "category": "geopolitics",
+      "summary": "荷莫茲海峽局勢急速升級。《華爾街日報》確認，兩艘阿聯貨船在 24 小時內相繼沉沒——GFS Pride 與 Cape Dao，由巴基斯坦國家水文辦公室通報，海事安全公司週三確認，為數月來首見。其中一艘自 9 月 23 日首次遭擊後即處於困境並被棄船；此前最後一次船隻沉沒是今年 3 月（當時船員 4 死 3 重傷）。伊朗國營媒體週三廣播沉沒畫面。攻擊頻率已到難以追蹤的程度：據 UKMTO，10 月 5–11 日有 12 艘船遭攻擊（含週日單日 6 艘），週二又一艘油輪與一艘貨櫃船遭不明拋射物擊中，為開戰以來最密集期之一。IRGC 海軍宣布一艘載 2,500 櫃、試圖走「未經許可且危險航線」的貨櫃船觸水雷爆炸起火沉沒。伊朗最高國安會秘書 Mohsen Rezaei 對國營電視稱：「我們每晚鎖定其中五、六艘。荷莫茲在伊斯蘭共和國控制之下。」他並稱美國只是用小艇把伊朗石油走私到大船、再進行船對船轉運，且美艦因怕被擊中不敢靠近伊朗海岸。整體 10 月已有至少 24 艘外國船隻遭擊；分析明確指出伊朗此舉意在 11 月美國期中選舉前製造不確定性與經濟混亂，若持續，月底油價很可能飆升。\n\n**重點摘錄：**\n• 24 小時內兩艘阿聯貨船（GFS Pride、Cape Dao）完全沉沒，數月來首見\n• 10 月至少 24 艘外國船遭擊；UKMTO 紀錄 10/5–11 共 12 艘、週日單日 6 艘\n• IRGC 稱每晚鎖定 5–6 艘、「荷莫茲在我方控制下」，意在美國期中選舉前製造動盪",
+      "url": "https://www.zerohedge.com/geopolitical/burning-container-ship-sinks-strait-hormuz-irgc-proclaims-5-or-6-vessels-targeted",
+      "timestamp": "2026-10-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "俄羅斯以間諜罪逮捕日本記者，東京召見俄大使（Russia Arrests Japanese Journalist On Espionage Charges, Tokyo Summons Ambassador）",
+      "category": "geopolitics",
+      "summary": "俄日關係持續走低之際，俄羅斯週二逮捕一名日本記者，克里姆林宮稱其實為替日本政府工作的間諜。被拘留者為《北海道新聞》記者今井優樹（Yuki Imai），該報為北海道主要地方報紙、發行量可觀。俄羅斯聯邦安全局（FSB）指控其以媒體身分為掩護，蒐集俄國防與情報能力相關情資，並稱查獲其保留與儲存敏感資料——情節與 2023–2024 年《華爾街日報》記者 Evan Gershkovich 案相仿。據報他在遠東薩哈林地區準備離境時被捕。東京未立即強硬譴責，僅表示政府正在蒐集被拘留者身分與案情資訊；俄羅斯駐日大使已被召見，日方就俄方提出嚴厲指控卻未向東京作任何說明提出抗議。日本與歐洲官員正尋求探視被拘留者，而俄國營媒體已播出其上銬畫面，包括安全人員搜索其住所與電子設備。背景為雙方長期未解的千島群島（日稱北方四島）主權爭議，以及日本在烏克蘭戰爭中與北約一致的立場；普丁 8 月曾赴爭議島嶼巡視並抨擊日本「在未檢視衝突成因下，對俄採取無端政策」，東京當時已強烈抗議。\n\n**重點摘錄：**\n• 《北海道新聞》記者今井優樹在薩哈林以間諜罪被捕，情節類比 Gershkovich 案\n• 東京已召見俄大使抗議，但未立即強硬譴責，日歐官員正尋求探視\n• 背景為千島群島主權爭議與日本對烏克蘭立場，俄日關係持續螺旋下探",
+      "url": "https://www.zerohedge.com/markets/russia-arrests-japanese-journalist-espionage-charges-tokyo-summons-ambassador",
+      "timestamp": "2026-10-15",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "📊 台股盤前分析 | 2026-10-15 (星期四)",
+      "category": "premarket",
+      "timestamp": "2026-10-15",
+      "summary": "三重打擊（油價／核心 CPI／AI 信用）引爆隔夜美股重挫：S&P -1.11%、NASDAQ -1.88%、SOX -4.30%（連 6 跌）、VIX +10.48%；TSM ADR -3.40%。台指期夜盤 -853 點（-1.75%），對現貨跳空 -681 點，預期今日開低 -1.1%~-1.5%（約 47,900~48,100），但美股期貨已回穩＋夜盤外資淨賣僅 -2,103 口，觀察是否開低走高、47,893（10/1 月內低點）為關鍵防線。",
+      "market_context": {
+        "us_close": "2026-10-14",
+        "spx": 7718.94,
+        "spx_change_pct": -1.11,
+        "dow": 51621.48,
+        "dow_change_pct": -0.09,
+        "nasdaq": 26692.87,
+        "nasdaq_change_pct": -1.88,
+        "rut": 2729.53,
+        "rut_change_pct": -1.93,
+        "sox": 11684.38,
+        "sox_change_pct": -4.3,
+        "vix": 16.87,
+        "vix_change_pct": 10.48,
+        "tsm_adr": 430.0,
+        "tsm_adr_change_pct": -3.4,
+        "taiex_prev_close": 48625.83,
+        "usdtwd": 32.103,
+        "adr_premium_pct": 10.88,
+        "foreign_futures_oi": -86814,
+        "gold": 4129.3,
+        "gold_change_pct": -1.15,
+        "oil": 95.04,
+        "oil_change_pct": 0.96,
+        "btc": 81561.7,
+        "btc_change_pct": -1.85,
+        "tnx_pct": 5.19,
+        "tnx_change_pct": -0.52,
+        "usd_index": 102.53,
+        "usd_index_change_pct": 0.34,
+        "expected_open": "開低跳空 -1.1% ~ -1.5%（約 47,900 ~ 48,100）；美股期貨亞洲時段已回穩",
+        "support": "48,066（10/13 低）→ 47,893（10/1 月內低點）→ 47,500 → 47,000",
+        "resistance": "48,382（10/14 開＝當日低）→ 48,625（10/14 收）→ 48,798（期貨日盤結算）→ 49,059（10/14 高）",
+        "key_theme": "三重打擊（油價／核心 CPI 超預期／AI 信用裂縫）同步引爆：SOX -4.30% 連 6 跌、VIX +10.48%，半導體與 AI 全面迴避；資金轉向必需消費（XLP +2.22%）、醫療（XLV +2.53%）、原物料與通膨主軸。今日 14:00 台積電 Q3 法說會為最大變數，電子缺乏盤中催化。"
+      },
+      "recommendations": [
+        {
+          "symbol": "2002",
+          "name": "中鋼",
+          "direction": "偏多／原物料・通膨主軸（主動推薦，部位減半）",
+          "strategy": "進場 19.15~19.35；開盤 gap <1%（<19.70）→ 半倉市價＋半倉 19.15 限價；開高 ≥1% → 僅半倉市價",
+          "recommend_price": 19.25,
+          "target": "20.30 ~ 20.80",
+          "stop_loss": 18.7,
+          "recommend_reason": "高 CPI（汽油 +34%）＋ WTI 95.04（連 2 日走升）推升原物料／通膨交易；10/14 外資買超 77,006 張（連 2 日 +89,838 張、佔量 74%），量 10.36 萬張＝前日 3.46 倍；傳產族群（台泥、遠東新、台玻、華新、塑化）連續 2 日共振。Rule 16-4（外資現貨連 2 日賣超）觸發 ⇒ 部位減半。"
+        },
+        {
+          "symbol": "1216",
+          "name": "統一",
+          "direction": "偏多／必需消費防禦（主動推薦，部位減半）",
+          "strategy": "進場 76.60~77.30；gap <1% → 半倉市價＋半倉 77.00 限價；開低逾 -2%（<76.60）→ 等 30 分鐘不破低再承接",
+          "recommend_price": 77.0,
+          "target": "80.00 ~ 81.00",
+          "stop_loss": 75.3,
+          "recommend_reason": "隔夜 XLP +2.22% 為最強類股之一，符合 Rule 12 避險層級（現金→必需消費）；10/14 收 78.20（+1.43%）收在當日最高、連 5 日上漲（+7.6%）；外資連 2 日買超（+6,146→+9,401 張）、投信亦買。風險：連 5 紅位階偏高。"
+        },
+        {
+          "symbol": "2412",
+          "name": "中華電",
+          "direction": "偏多／低貝塔電信避風港（觀察）",
+          "strategy": "進場 146.5~147.5（雙分支：開高則半倉市價）",
+          "recommend_price": 147.0,
+          "target": "150.5 ~ 151.5",
+          "stop_loss": 144.5,
+          "recommend_reason": "系統風險日的資金避風港；外資連 2 日買超（+3,703→+3,120 張）、投信連 2 日買超（+1,667→+397 張）。惟日振幅僅約 1%，報酬空間有限，適合降低部位波動。"
+        },
+        {
+          "symbol": "2609",
+          "name": "陽明",
+          "direction": "偏多／航運（觀察）",
+          "strategy": "進場 63.8~64.5（雙分支：開高則半倉市價）",
+          "recommend_price": 64.15,
+          "target": "68.0 ~ 69.0",
+          "stop_loss": 62.4,
+          "recommend_reason": "外資 10/13 +21,906 張 → 10/14 +16,326 張（連 2 日 +38,232 張、佔量 27%）。風險：三日累計 +8.9% 屬 Rule 3 不追高故列觀察；油價推升燃油成本。"
+        }
+      ],
+      "previous_day_review": {
+        "date": "2026-10-14",
+        "tracking_period": "10/14 推薦 → 10/14 收盤",
+        "total": 4,
+        "hit": 3,
+        "miss": 0,
+        "hit_rate_pct": 75.0,
+        "best": "6505 台塑化（觀察）承接觸價 117.0 → 收 119.5 = +1.70%；惟盤中衝 129.0 後收斂、爆量 2.01x 長上影",
+        "worst": "2382 廣達（觀察）未成交、零報酬 — 全日最低 322.0，距承接區上緣 321 僅差 1 元，方向對但無部位",
+        "lessons": [
+          "唯一主動推薦（2891 中信金）價格面雖命中（+0.85%），但推薦理由（雙法人買超）當日即反轉、股價 -0.28% 落後大盤 ⇒ 獲利含運氣成分。改進：主軸須含至少一項「非單日」證據，本日 4 檔候選全部改用連 2 日外資買超。",
+          "「改進未系統化＝未改進」：10/13 已明寫觀察標的應給開高分支，10/14 廣達仍只給單一承接區 ⇒ 差 1 元踏空。改進：本日所有標的（含觀察）一律強制掛載雙分支執行，4/4 完成。",
+          "漲停隔日高檔爆量＝出貨（三度驗證）：6505 盤中 +8.40% 後收斂至 +0.42%、量 2.01x、外資賣超 19,975 張。改進：本日 1301／1326／1303 直接列迴避，改選尚未跳空、外資買超最大的 2002 中鋼承接。",
+          "夜盤漲點不等於現貨開高：10/14 盤前預估開高 0.65%~1.15%，實際開低 -0.27% 後走高 +0.59%（外資期現同步偏空抑制開高）。本日反向情境：夜盤 -681 點但外資淨賣僅 -2,103 口（中性）⇒ 預期開低不追殺。"
+        ]
+      }
+    },
     {
       "title": "Fed Watch｜今日重點摘要",
       "icon": "🏛️",
@@ -13,17 +193,67 @@
       "title": "Fed Watch｜即時市場儀表板",
       "icon": "📊",
       "type": "table",
-      "headers": ["項目／指定代號", "可核驗快照（擷取／市場時間）", "日變動", "來源／限制"],
+      "headers": [
+        "項目／指定代號",
+        "可核驗快照（擷取／市場時間）",
+        "日變動",
+        "來源／限制"
+      ],
       "rows": [
-        ["3 個月殖利率（Yahoo ^IRX）", "無可核驗快照", "—", "10/15 07:28 台北擷取；Yahoo Finance 回覆 429，不以代理或估計代填。"],
-        ["5 年殖利率（Yahoo ^FVX）", "無可核驗快照", "—", "^FVX 為 5 年期，非 2 年期；Yahoo Finance 回覆 429。"],
-        ["10 年殖利率（Yahoo ^TNX）", "無可核驗快照", "—", "Yahoo Finance 回覆 429。"],
-        ["30 年殖利率（Yahoo ^TYX）", "無可核驗快照", "—", "Yahoo Finance 回覆 429。"],
-        ["2 年殖利率（補充；Fed H.15）", "4.79%（10/13 美東收盤資料；10/14 發布）", "-1bp（較 10/9 的 4.80%）", "Federal Reserve H.15／美國財政部常數到期殖利率；非 Yahoo 代號。"],
-        ["美元指數（Yahoo DX-Y.NYB）", "無可核驗快照", "—", "Yahoo Finance 回覆 429。"],
-        ["VIX（Yahoo ^VIX）", "無可核驗快照", "—", "Yahoo Finance 回覆 429。"],
-        ["聯邦基金期貨（Yahoo ZQ=F／當期 ZQ）", "無可核驗快照", "—", "Yahoo Finance 回覆 429；缺少完整合約報價，不反推精確 FedWatch 機率。"],
-        ["SOFR 期貨（Yahoo SR1=F、SR3=F）", "無可核驗快照", "—", "Yahoo Finance 回覆 429；缺少完整合約月、到期與計算假設，不作機率換算。"]
+        [
+          "3 個月殖利率（Yahoo ^IRX）",
+          "無可核驗快照",
+          "—",
+          "10/15 07:28 台北擷取；Yahoo Finance 回覆 429，不以代理或估計代填。"
+        ],
+        [
+          "5 年殖利率（Yahoo ^FVX）",
+          "無可核驗快照",
+          "—",
+          "^FVX 為 5 年期，非 2 年期；Yahoo Finance 回覆 429。"
+        ],
+        [
+          "10 年殖利率（Yahoo ^TNX）",
+          "無可核驗快照",
+          "—",
+          "Yahoo Finance 回覆 429。"
+        ],
+        [
+          "30 年殖利率（Yahoo ^TYX）",
+          "無可核驗快照",
+          "—",
+          "Yahoo Finance 回覆 429。"
+        ],
+        [
+          "2 年殖利率（補充；Fed H.15）",
+          "4.79%（10/13 美東收盤資料；10/14 發布）",
+          "-1bp（較 10/9 的 4.80%）",
+          "Federal Reserve H.15／美國財政部常數到期殖利率；非 Yahoo 代號。"
+        ],
+        [
+          "美元指數（Yahoo DX-Y.NYB）",
+          "無可核驗快照",
+          "—",
+          "Yahoo Finance 回覆 429。"
+        ],
+        [
+          "VIX（Yahoo ^VIX）",
+          "無可核驗快照",
+          "—",
+          "Yahoo Finance 回覆 429。"
+        ],
+        [
+          "聯邦基金期貨（Yahoo ZQ=F／當期 ZQ）",
+          "無可核驗快照",
+          "—",
+          "Yahoo Finance 回覆 429；缺少完整合約報價，不反推精確 FedWatch 機率。"
+        ],
+        [
+          "SOFR 期貨（Yahoo SR1=F、SR3=F）",
+          "無可核驗快照",
+          "—",
+          "Yahoo Finance 回覆 429；缺少完整合約月、到期與計算假設，不作機率換算。"
+        ]
       ],
       "analysis": "所有指定 Yahoo 行情均無可核驗快照。僅以 H.15 的官方 2 年期 CMT 作清楚標示的補充。"
     },
@@ -36,20 +266,98 @@
       "title": "Fed Watch｜官員立場追蹤（2026 實際投票委員）",
       "icon": "🗣️",
       "type": "table",
-      "headers": ["委員／職位", "投票權", "立場標示", "最近可核驗談話／異議／投票（日期）", "來源連結與判定理由"],
+      "headers": [
+        "委員／職位",
+        "投票權",
+        "立場標示",
+        "最近可核驗談話／異議／投票（日期）",
+        "來源連結與判定理由"
+      ],
       "rows": [
-        ["Kevin Warsh／理事會主席、FOMC 主席", "有", "鷹派（未更新）", "9/16：12–0 上調目標區間 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；正式投票支持緊縮。"],
-        ["John C. Williams／紐約聯儲總裁、副主席", "有", "鷹派（未更新）", "9/16：12–0 上調 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；常任投票席位，無本次可核驗新談話。"],
-        ["Michael S. Barr／理事", "有", "鷹派（未更新）", "9/29：經濟與貨幣政策演說；9/16 支持升息", "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm；本次無更新。"],
-        ["Michelle W. Bowman／理事、副主席（監管）", "有", "鷹派（未更新）", "10/6：監管演說；9/16 12–0 上調", "https://www.federalreserve.gov/newsevents.htm；無本次利率指引。"],
-        ["Lisa D. Cook／理事", "有", "鷹派（未更新）", "9/30：談話；9/16 12–0 上調", "https://www.federalreserve.gov/newsevents/2026-speeches.htm；無新利率指引。"],
-        ["Beth M. Hammack／克里夫蘭聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無更新個人證據。"],
-        ["Philip N. Jefferson／理事、副主席", "有", "鷹派／資料依賴（未更新）", "10/1：未來調整取決於資料、前景與風險平衡", "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm；未承諾下一次行動。"],
-        ["Neel Kashkari／明尼阿波利斯聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調；7/29 曾主張升息 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"],
-        ["Lorie K. Logan／達拉斯聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調；7/29 曾主張升息 25bp", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"],
-        ["Anna Paulson／費城聯儲總裁", "有", "鷹派（未更新）", "9/16：12–0 上調", "https://www.federalreserve.gov/monetarypolicy/fomc.htm；2026 輪值投票，無新個人證據。"],
-        ["Jerome H. Powell／理事", "有", "鷹派（未更新）", "9/16：12–0 上調", "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無新個人證據。"],
-        ["Christopher J. Waller／理事", "有", "鷹派／資料依賴（未更新）", "10/8：經濟展望演說；本次無新官方政策談話", "https://www.federalreserve.gov/newsevents.htm；10/14 News & Events 無新增官員政策演說。"]
+        [
+          "Kevin Warsh／理事會主席、FOMC 主席",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調目標區間 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；正式投票支持緊縮。"
+        ],
+        [
+          "John C. Williams／紐約聯儲總裁、副主席",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；常任投票席位，無本次可核驗新談話。"
+        ],
+        [
+          "Michael S. Barr／理事",
+          "有",
+          "鷹派（未更新）",
+          "9/29：經濟與貨幣政策演說；9/16 支持升息",
+          "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm；本次無更新。"
+        ],
+        [
+          "Michelle W. Bowman／理事、副主席（監管）",
+          "有",
+          "鷹派（未更新）",
+          "10/6：監管演說；9/16 12–0 上調",
+          "https://www.federalreserve.gov/newsevents.htm；無本次利率指引。"
+        ],
+        [
+          "Lisa D. Cook／理事",
+          "有",
+          "鷹派（未更新）",
+          "9/30：談話；9/16 12–0 上調",
+          "https://www.federalreserve.gov/newsevents/2026-speeches.htm；無新利率指引。"
+        ],
+        [
+          "Beth M. Hammack／克里夫蘭聯儲總裁",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無更新個人證據。"
+        ],
+        [
+          "Philip N. Jefferson／理事、副主席",
+          "有",
+          "鷹派／資料依賴（未更新）",
+          "10/1：未來調整取決於資料、前景與風險平衡",
+          "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm；未承諾下一次行動。"
+        ],
+        [
+          "Neel Kashkari／明尼阿波利斯聯儲總裁",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調；7/29 曾主張升息 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"
+        ],
+        [
+          "Lorie K. Logan／達拉斯聯儲總裁",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調；7/29 曾主張升息 25bp",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"
+        ],
+        [
+          "Anna Paulson／費城聯儲總裁",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調",
+          "https://www.federalreserve.gov/monetarypolicy/fomc.htm；2026 輪值投票，無新個人證據。"
+        ],
+        [
+          "Jerome H. Powell／理事",
+          "有",
+          "鷹派（未更新）",
+          "9/16：12–0 上調",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無新個人證據。"
+        ],
+        [
+          "Christopher J. Waller／理事",
+          "有",
+          "鷹派／資料依賴（未更新）",
+          "10/8：經濟展望演說；本次無新官方政策談話",
+          "https://www.federalreserve.gov/newsevents.htm；10/14 News & Events 無新增官員政策演說。"
+        ]
       ]
     },
     {
@@ -61,13 +369,37 @@
       "title": "Fed Watch｜未來重要日期",
       "icon": "📅",
       "type": "table",
-      "headers": ["日期／時間（美東；台北）", "事件", "官方來源與意義"],
+      "headers": [
+        "日期／時間（美東；台北）",
+        "事件",
+        "官方來源與意義"
+      ],
       "rows": [
-        ["10/15 08:30 EDT；10/15 20:30", "9 月 PPI", "BLS；生產者物價。https://www.bls.gov/schedule/2026/"],
-        ["10/27–28；台北 10/27–29", "FOMC 例會", "Federal Reserve；下一次利率決策。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"],
-        ["10/29 08:30 EDT；10/29 20:30", "9 月 Personal Income and Outlays／PCE", "BEA；PCE 通膨更新。https://www.bea.gov/news/schedule/"],
-        ["11/6 08:30 EST；11/6 21:30", "10 月 Employment Situation／NFP", "BLS；就業、薪資與失業率。https://www.bls.gov/schedule/2026/"],
-        ["12/8–9；台北 12/8–10", "FOMC 例會與 SEP", "Federal Reserve；季度預測與利率路徑更新。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"]
+        [
+          "10/15 08:30 EDT；10/15 20:30",
+          "9 月 PPI",
+          "BLS；生產者物價。https://www.bls.gov/schedule/2026/"
+        ],
+        [
+          "10/27–28；台北 10/27–29",
+          "FOMC 例會",
+          "Federal Reserve；下一次利率決策。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        ],
+        [
+          "10/29 08:30 EDT；10/29 20:30",
+          "9 月 Personal Income and Outlays／PCE",
+          "BEA；PCE 通膨更新。https://www.bea.gov/news/schedule/"
+        ],
+        [
+          "11/6 08:30 EST；11/6 21:30",
+          "10 月 Employment Situation／NFP",
+          "BLS；就業、薪資與失業率。https://www.bls.gov/schedule/2026/"
+        ],
+        [
+          "12/8–9；台北 12/8–10",
+          "FOMC 例會與 SEP",
+          "Federal Reserve；季度預測與利率路徑更新。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        ]
       ],
       "analysis": "日期與美東時區以官方日程為準；美東於 11/1 轉為 EST，故 11/6 台北較美東快 13 小時。"
     },
@@ -76,17 +408,77 @@
       "icon": "🔗",
       "type": "news",
       "items": [
-        {"headline": "BLS｜9 月 CPI（10/14 發布）", "content": "CPI-U 月增 0.6%、年增 3.7%；核心 CPI 月增 0.3%、年增 2.6%。", "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm", "tags": ["官方", "CPI"]},
-        {"headline": "Federal Reserve｜10 月 Beige Book", "content": "12 個地區經濟、就業及價格的定性調查；文件不代表 Fed 官員觀點。", "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm", "tags": ["官方", "地區經濟"]},
-        {"headline": "Federal Reserve｜H.15", "content": "10/14 發布、含至 10/13 的官方常數到期殖利率；僅作 2 年期及殖利率曲線補充。", "url": "https://www.federalreserve.gov/releases/h15/", "tags": ["官方", "殖利率補充"]},
-        {"headline": "CME Group｜FedWatch 與方法頁", "content": "FedWatch 以 ZQ 隱含的月平均 EFFR 及假設建立機率樹；live iframe 未提供可保存表格。", "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html", "tags": ["方法", "市場定價"]},
-        {"headline": "AP／Reuters｜CPI 後市場與利率定價（替代媒體引用）", "content": "二手媒體對 CME／LSEG 市場定價的具名引用，僅作方向交叉檢核，非 CME live 讀值。", "url": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec", "tags": ["二手引用", "市場反應"]},
-        {"headline": "Yahoo Finance｜指定行情代號與限制", "content": "^IRX（3M）、^FVX（5Y）、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F／當期 ZQ、SR1=F、SR3=F；本次均回覆 429，未填估計值。", "url": "https://finance.yahoo.com/", "tags": ["行情規則", "資料限制"]}
+        {
+          "headline": "BLS｜9 月 CPI（10/14 發布）",
+          "content": "CPI-U 月增 0.6%、年增 3.7%；核心 CPI 月增 0.3%、年增 2.6%。",
+          "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+          "tags": [
+            "官方",
+            "CPI"
+          ]
+        },
+        {
+          "headline": "Federal Reserve｜10 月 Beige Book",
+          "content": "12 個地區經濟、就業及價格的定性調查；文件不代表 Fed 官員觀點。",
+          "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm",
+          "tags": [
+            "官方",
+            "地區經濟"
+          ]
+        },
+        {
+          "headline": "Federal Reserve｜H.15",
+          "content": "10/14 發布、含至 10/13 的官方常數到期殖利率；僅作 2 年期及殖利率曲線補充。",
+          "url": "https://www.federalreserve.gov/releases/h15/",
+          "tags": [
+            "官方",
+            "殖利率補充"
+          ]
+        },
+        {
+          "headline": "CME Group｜FedWatch 與方法頁",
+          "content": "FedWatch 以 ZQ 隱含的月平均 EFFR 及假設建立機率樹；live iframe 未提供可保存表格。",
+          "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+          "tags": [
+            "方法",
+            "市場定價"
+          ]
+        },
+        {
+          "headline": "AP／Reuters｜CPI 後市場與利率定價（替代媒體引用）",
+          "content": "二手媒體對 CME／LSEG 市場定價的具名引用，僅作方向交叉檢核，非 CME live 讀值。",
+          "url": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec",
+          "tags": [
+            "二手引用",
+            "市場反應"
+          ]
+        },
+        {
+          "headline": "Yahoo Finance｜指定行情代號與限制",
+          "content": "^IRX（3M）、^FVX（5Y）、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F／當期 ZQ、SR1=F、SR3=F；本次均回覆 429，未填估計值。",
+          "url": "https://finance.yahoo.com/",
+          "tags": [
+            "行情規則",
+            "資料限制"
+          ]
+        }
       ]
     }
   ],
-  "stats": {"total": 0, "premium": 0, "market": 0, "geopolitics": 0, "withImages": 0, "fedWatch": 1, "data_gap": true},
+  "stats": {
+    "total": 9,
+    "premium": 3,
+    "market": 7,
+    "geopolitics": 2,
+    "withImages": 0,
+    "premarket": 1,
+    "fedWatch": 1
+  },
   "keyThemes": [
+    "三重打擊同步引爆：荷莫茲油價飆漲 + 核心 CPI 超預期 + AI 信用（CoreWeave 債殖利率破 15%）三殺，10 月 Fed 升息機率由 20% 一度跳回約 50%",
+    "AI 信用裂縫大開：CoreWeave 債券陷「深度困境」、Oracle 無擔保債如垃圾債、Meta Project Beignet 創最寬價差 — 信用市場領先示警數週，股市本週才補跌",
+    "荷莫茲海峽急速升級：24 小時內兩艘阿聯貨船沉沒、10 月已至少 24 艘外國船遭擊，IRGC 稱每晚鎖定 5–6 艘，意在美國期中選舉前製造動盪、推升油價",
+    "台股：夜盤 -681 點開低訊號，SOX 連 6 跌 + VIX +10.48% 觸發雙系統風險規則，電子/AI 全面迴避；資金轉必需消費、原物料與電信，14:00 台積電 Q3 法說會為最大變數",
     "9 月 CPI：CPI-U 月增 0.6%、年增 3.7%；核心 CPI 月增 0.3%、年增 2.6%，官方資料顯示總體與核心年增皆較 8 月加速",
     "10 月 Beige Book：經濟多為輕微至溫和成長或持平，就業變化有限，價格壓力多為中度且部分加劇；此為地區聯絡人調查，非官員政策訊號",
     "CME live 機率與 Yahoo ZQ／SOFR 無可保存快照；AP（引 CME）及 Reuters（引 LSEG）僅交叉驗證 CPI 後升息定價上升方向，精確數字分歧",
