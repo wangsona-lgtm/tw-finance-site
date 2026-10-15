@@ -102,6 +102,15 @@ def classify_topics(title, abstract):
         topics.append("其他")
     return list(dict.fromkeys(topics))  # deduplicate preserving order
 
+# 垃灑標題過濾：誤抓、占位符、重複註記、撤稿通知、與研究無關的條目
+JUNK_TITLE_PAT = re.compile(
+    r'^(QVAR|❌|年份)$|Retraction notice|Retraction\b|同上|Película|VOIR|'
+    r'Wondershare|Quiz Creator|HOTS Questions|Navier|toxicology|'
+    r'Every Time I Die|Quantum Variational Regularization', re.I)
+
+def is_junk_title(title):
+    return bool(JUNK_TITLE_PAT.search((title or '').strip()))
+
 def paper_key(p):
     """Stable dedup key: normalized DOI > OpenAlex ID > normalized title."""
     doi = re.sub(r'^https?://(dx\.)?doi\.org/', '', (p.get('doi') or '').strip().lower())
@@ -411,11 +420,15 @@ def build():
     
     merged = {}
     for p in all_papers:
+        if is_junk_title(p.get("title")):
+            continue
         k = paper_key(p)
         if k not in merged or paper_richness(p) > paper_richness(merged[k]):
             merged[k] = p
     preserved = 0
     for p in existing:
+        if is_junk_title(p.get("title")):
+            continue
         k = paper_key(p)
         if k not in merged:
             merged[k] = p
