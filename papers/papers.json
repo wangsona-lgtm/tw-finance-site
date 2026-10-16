@@ -1,6 +1,6 @@
 {
-  "total": 160,
-  "updated": "2026-10-14 20:12:54",
+  "total": 151,
+  "updated": "2026-10-15 20:34:54",
   "topics": [
     "AI/科技",
     "其他",
@@ -18,6 +18,234 @@
     "金融市場"
   ],
   "papers": [
+    {
+      "id": "qvar-2026-10-15-oman-safe-havens-qqfc",
+      "title": "When safe havens fail: Time-scale dependent hedging dynamics in commodity-dependent emerging markets",
+      "search_date": "2026-10-15",
+      "authors": "Abdullah AlGhazali; Rim El Khoury; Walid Mensi; Remzi Gök; Khamis Hamed Al-Yahyaee",
+      "year": "2026",
+      "journal": "The Quarterly Review of Economics and Finance, 109, Article 102216",
+      "doi": "https://doi.org/10.1016/j.qref.2026.102216",
+      "citations": "0 次（Crossref 與 OpenAlex，2026-10-15）",
+      "openalex_url": "https://openalex.org/W7204636227",
+      "fulltext_url": "https://www.sciencedirect.com/science/article/pii/S1062976926001110",
+      "reading_level": "摘要層級",
+      "abstract": "本文以 2010–2025 年週資料，使用 QQ-FC、WQC 與最小連結投組，研究阿曼產業股與石油、黃金、綠債、再生能源的狀態及時間尺度依賴避險。摘要顯示黃金偏向長期避險、短期危機保護有限；綠債提供長期分散利益，再生能源股票則較具順景氣風險。多頭時連結增強，連結度導向投組優於傳統配置。因出版社全文封閉，未延伸推斷摘要未報告的設定與績效數值。",
+      "tags": [
+        "QQ-FC",
+        "quantile-on-quantile connectedness",
+        "frequency connectedness",
+        "WQC",
+        "minimum connectedness portfolio"
+      ],
+      "topics": [
+        "能源市場",
+        "綠債/ESG",
+        "金融市場"
+      ],
+      "keywords": [
+        "Oman equity sectors",
+        "gold",
+        "oil",
+        "green bonds",
+        "renewable energy",
+        "safe haven"
+      ],
+      "notes": [
+        "【閱讀層級】摘要層級；2026-10-15 以 ScienceDirect／RePEc 公開摘要、Crossref 與 OpenAlex 核驗。出版社全文為封閉存取，未繞過付費牆；Crossref 與 OpenAlex 均為 0 次被引，OpenAlex W7204636227，is_retracted=false。",
+        "【研究問題與動機】在依賴商品出口的新興市場中，傳統與綠色資產何時能成為避險工具、何時失效？阿曼產業股與石油、黃金、綠債、再生能源之連結是否同時取決於市場狀態與投資期限，最小連結投組能否改善風險調整績效？",
+        "【研究變數】阿曼產業別股票指數，以及全球石油、黃金、綠色債券與再生能源股票資產。可取得摘要未列各產業名稱、指數代碼、報酬或波動率的精確建構方式。",
+        "【資料／市場／樣本】阿曼商品依賴型新興市場與全球避險／綠色資產；2010–2025 年週資料。摘要未報告起訖日、資料供應商與實際樣本量。",
+        "【模型與估計】Quantile-on-Quantile Frequency Connectedness（QQ-FC）同時分解市場分位與投資期限；Wavelet Quantile Correlation（WQC）檢查狀態／尺度依賴的避險關係；Minimum Connectedness Portfolio（MCoP）評估資產配置效果。摘要未報告分位網格、頻帶、預測期與估計窗。",
+        "【穩健性檢驗】公開摘要未列獨立的穩健性規格；QQ-FC、WQC 與 MCoP 提供方法間交叉檢視，但不能在未讀全文下視為完整穩健性檢驗。",
+        "【主要結果】黃金具有長期避險效果但短期危機保護有限；綠債提供長期分散利益，再生能源股票則較像順景氣風險資產而非防禦資產。連結在多頭狀態增強，投資人情緒最強時分散利益反而下降；連結度導向投組優於傳統策略。以上限於摘要明示，未補推未報告的績效數值。",
+        "【作者提出的限制】可取得摘要未報告作者限制；全文封閉，不能代作者補寫。",
+        "【其他限制】單一阿曼市場的結果不必然外推至其他商品依賴經濟體；摘要缺少指數代碼、精確樣本數、超額績效幅度與交易成本處理。Connectedness 與 WQC 描述條件依賴，不能單獨識別能源衝擊或綠色轉型的因果效果。",
+        "【APA 7】AlGhazali, A., El Khoury, R., Mensi, W., Gök, R., & Al-Yahyaee, K. H. (2026). When safe havens fail: Time-scale dependent hedging dynamics in commodity-dependent emerging markets. The Quarterly Review of Economics and Finance, 109, Article 102216. https://doi.org/10.1016/j.qref.2026.102216",
+        "【與美智研究的關聯】4/5。重疊 quantile-on-quantile frequency connectedness、WQC、綠債、再生能源與狀態依賴避險；可借鏡把分位×尺度連結直接接到 MCoP 績效。主要差異是沒有 CPU／氣候風險指標、研究場域為阿曼且未使用 TVP-VAR-SV；可追蹤 QQ-FC 頻帶設定與 WQC 實作。"
+      ],
+      "type": "search",
+      "viewpoints": [
+        {
+          "claim": "【閱讀層級】摘要層級；2026-10-15 以 ScienceDirect／RePEc 公開摘要、Crossref 與 OpenAlex 核驗。出版社全文為封閉存取，未繞過付費牆；Crossref 與 OpenAlex 均為 0 次被引，OpenAlex W7204636227，is_retracted=false。",
+          "evidence": "【閱讀層級】摘要層級；2026-10-15 以 ScienceDirect／RePEc 公開摘要、Crossref 與 OpenAlex 核驗。出版社全文為封閉存取，未繞過付費牆；Crossref 與 OpenAlex 均為 0 次被引，OpenAlex W7204636227，is_retracted=false。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【研究問題與動機】在依賴商品出口的新興市場中，傳統與綠色資產何時能成為避險工具、何時失效？阿曼產業股與石油、黃金、綠債、再生能源之連結是否同時取決於市場狀態與投資期限，最小連結投組能否改善風險調整績效？",
+          "evidence": "【研究問題與動機】在依賴商品出口的新興市場中，傳統與綠色資產何時能成為避險工具、何時失效？阿曼產業股與石油、黃金、綠債、再生能源之連結是否同時取決於市場狀態與投資期限，最小連結投組能否改善風險調整績效？",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【研究變數】阿曼產業別股票指數，以及全球石油、黃金、綠色債券與再生能源股票資產。可取得摘要未列各產業名稱、指數代碼、報酬或波動率的精確建構方式。",
+          "evidence": "【研究變數】阿曼產業別股票指數，以及全球石油、黃金、綠色債券與再生能源股票資產。可取得摘要未列各產業名稱、指數代碼、報酬或波動率的精確建構方式。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【資料／市場／樣本】阿曼商品依賴型新興市場與全球避險／綠色資產；2010–2025 年週資料。摘要未報告起訖日、資料供應商與實際樣本量。",
+          "evidence": "【資料／市場／樣本】阿曼商品依賴型新興市場與全球避險／綠色資產；2010–2025 年週資料。摘要未報告起訖日、資料供應商與實際樣本量。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【穩健性檢驗】公開摘要未列獨立的穩健性規格；QQ-FC、WQC 與 MCoP 提供方法間交叉檢視，但不能在未讀全文下視為完整穩健性檢驗。",
+          "evidence": "【穩健性檢驗】公開摘要未列獨立的穩健性規格；QQ-FC、WQC 與 MCoP 提供方法間交叉檢視，但不能在未讀全文下視為完整穩健性檢驗。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【主要結果】黃金具有長期避險效果但短期危機保護有限；綠債提供長期分散利益，再生能源股票則較像順景氣風險資產而非防禦資產。連結在多頭狀態增強，投資人情緒最強時分散利益反而下降；連結度導向投組優於傳統策略。以上限於摘要明示，未補推未報告的績效數值。",
+          "evidence": "【主要結果】黃金具有長期避險效果但短期危機保護有限；綠債提供長期分散利益，再生能源股票則較像順景氣風險資產而非防禦資產。連結在多頭狀態增強，投資人情緒最強時分散利益反而下降；連結度導向投組優於傳統策略。以上限於摘要明示，未補推未報告的績效數值。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【作者提出的限制】可取得摘要未報告作者限制；全文封閉，不能代作者補寫。",
+          "evidence": "【作者提出的限制】可取得摘要未報告作者限制；全文封閉，不能代作者補寫。",
+          "confidence": "low",
+          "source": "研究限制",
+          "connections": []
+        },
+        {
+          "claim": "【其他限制】單一阿曼市場的結果不必然外推至其他商品依賴經濟體；摘要缺少指數代碼、精確樣本數、超額績效幅度與交易成本處理。Connectedness 與 WQC 描述條件依賴，不能單獨識別能源衝擊或綠色轉型的因果效果。",
+          "evidence": "【其他限制】單一阿曼市場的結果不必然外推至其他商品依賴經濟體；摘要缺少指數代碼、精確樣本數、超額績效幅度與交易成本處理。Connectedness 與 WQC 描述條件依賴，不能單獨識別能源衝擊或綠色轉型的因果效果。",
+          "confidence": "low",
+          "source": "研究限制",
+          "connections": []
+        },
+        {
+          "claim": "【與美智研究的關聯】4/5。重疊 quantile-on-quantile frequency connectedness、WQC、綠債、再生能源與狀態依賴避險；可借鏡把分位×尺度連結直接接到 MCoP 績效。主要差異是沒有 CPU／氣候風險指標、研究場域為阿曼且未使用 TVP-VAR-SV；可追蹤 QQ-FC 頻帶設定與 WQC 實作。",
+          "evidence": "【與美智研究的關聯】4/5。重疊 quantile-on-quantile frequency connectedness、WQC、綠債、再生能源與狀態依賴避險；可借鏡把分位×尺度連結直接接到 MCoP 績效。主要差異是沒有 CPU／氣候風險指標、研究場域為阿曼且未使用 TVP-VAR-SV；可追蹤 QQ-FC 頻帶設定與 WQC 實作。",
+          "confidence": "low",
+          "source": "陳述",
+          "connections": []
+        }
+      ],
+      "diagram": "graph TD\n    omanHaven[\"📄 阿曼市場的多尺度避險動態\"]\n    style omanHaven fill:#2563eb,color:#fff,font-weight:bold\n    n0[\"💡 QQ-FC：分位 × 頻率連結\"]\n    omanHaven --> n0\n    n1[\"💡 黃金與綠債偏長期避險\"]\n    omanHaven --> n1\n    n2[\"💡 再生能源股票具順景氣特性\"]\n    omanHaven --> n2\n    n3[\"🔗 與美智研究關聯 4/5\"]\n    omanHaven --> n3"
+    },
+    {
+      "id": "qvar-2026-10-15-cpu-grains-time-frequency",
+      "title": "Quantile and Time–Frequency Risk Spillover Between Climate Policy Uncertainty and Grains Commodity Markets",
+      "search_date": "2026-10-15",
+      "authors": "Hongjun Zeng; Mohammad Zoynul Abedin; Abdullahi D. Ahmed; Brian Lucey",
+      "year": "2025",
+      "journal": "Journal of Futures Markets, 45(6), 659–682",
+      "doi": "https://doi.org/10.1002/fut.22583",
+      "citations": "38 次（Crossref；OpenAlex 37 次，2026-10-15）",
+      "openalex_url": "https://openalex.org/W4409185443",
+      "fulltext_url": "https://onlinelibrary.wiley.com/doi/10.1002/fut.22583?af=R",
+      "reading_level": "全文精讀",
+      "abstract": "本文以 1987 年 5 月至 2023 年 8 月的 435 筆月資料，研究美國氣候政策不確定性（CPU）與玉米、燕麥、小麥、大豆、粗米風險的狀態與尺度依賴連結。TVP-QVAR 表格顯示尾部 TCI（下尾 74.76%、上尾 73.94%）遠高於中位數（18.57%）；CPU 在兩端尾部為淨接收者，而玉米在各分位均為淨傳送者。Wavelet 與 QQR 顯示關係集中於較短至中期尺度且高度非線性；Niño 3.4 與各分位 TCI 呈顯著關聯。正文表格與結論的 TCI 數字不一致，筆記已保留警示。",
+      "tags": [
+        "TVP-QVAR",
+        "quantile connectedness",
+        "wavelet coherence",
+        "QQR",
+        "GFEVD",
+        "climate policy uncertainty"
+      ],
+      "topics": [
+        "氣候風險/政策",
+        "原物料/商品"
+      ],
+      "keywords": [
+        "US climate policy uncertainty",
+        "grain futures",
+        "corn",
+        "wheat",
+        "soybeans",
+        "Niño 3.4"
+      ],
+      "notes": [
+        "【閱讀層級】全文精讀；2026-10-15 以 Wiley 公開全文 HTML、Swansea University 典藏頁、Crossref 與 OpenAlex 核驗。文章為 CC BY 4.0；Crossref 38 次、OpenAlex 37 次被引，OpenAlex W4409185443，is_retracted=false。未保存本地 PDF，網站僅連至合法公開全文。",
+        "【研究問題與動機】美國氣候政策不確定性（CPU）與五類主要穀物期貨風險的連結，是否會隨市場分位與時間尺度改變？CPU 對各穀物風險的跨分位關係是否非線性且不對稱，氣候狀態又是否解釋這些連結度？",
+        "【研究變數】美國 CPU 指數（八家主要報紙的氣候政策相關詞彙所建構之政策不確定性指標）；玉米、燕麥、小麥、大豆與粗米月價格。穀物風險先以月內最高價／最低價的自然對數衡量，再取該波動指標的對數差分；Niño 3.4 海表溫度異常作為氣候外生變數。",
+        "【資料／市場／樣本】1987-05 至 2023-08，共 435 筆月資料；CPU 來自 PolicyUncertainty.com，五類穀物為芝加哥商品交易所資料並由 Datastream 取得。作者選用月頻以貼近政策變化時距並降低短期雜訊。",
+        "【模型與估計】TVP-QVAR connectedness，分位數 τ=0.05、0.50、0.95，落後期 1，基準 10 步 GFEVD；以 wavelet coherence 分析約 4–64 個月尺度的方向與領先落後；以 QQR（kernel bandwidth=0.05）補充 CPU 與各穀物的跨分位斜率，再用 OLS 與分位迴歸檢查 Niño 3.4 與 TCI 的關係。",
+        "【穩健性檢驗】將 GFEVD 預測期由 10 步改為 15 與 20 步，尾部分位的動態 TCI 趨勢與數值大致一致；另以 QQR、wavelet coherence、OLS 與分位迴歸從不同角度交叉檢查狀態、尺度與氣候關係。",
+        "【主要結果】Table 3 的靜態 TCI 為下尾 74.76%、中位 18.57%、上尾 73.94%，顯示尾部連結遠高於常態；CPU 在下尾與上尾分別為淨接收者 −10.17% 與 −4.13%，中位僅略為淨傳送者 0.04%，玉米在三種分位均為淨傳送者。Wavelet 結果顯示連結多集中在 32 個月內、燕麥與 CPU 最緊密，而大豆與玉米在中長期幾乎無顯著關聯；QQR 顯示方向與強度依 CPU 與穀物分位而異。這些是預測連結與條件關係，不是結構因果。",
+        "【作者提出的限制】作者建議未來使用週或日等更高頻資料、納入更廣泛的農產品，並發展結合市場連結、氣候指標與政策不確定性的即時監測系統。資料須向通訊作者合理申請。",
+        "【其他限制】單一美國 CPU 指標與美國穀物市場限制外部效度；月頻可能平滑短期政策與供應衝擊；新聞型 CPU、Niño 3.4 與價格風險之間仍可能受共同因子影響。正文 Table 3 報告 TCI 74.76%／18.57%／73.94%，但結論另列 76.69%／70.70%／82.09%，數字互相衝突，引用時應以明確表格並保留此警示。",
+        "【APA 7】Zeng, H., Abedin, M. Z., Ahmed, A. D., & Lucey, B. (2025). Quantile and time–frequency risk spillover between climate policy uncertainty and grains commodity markets. Journal of Futures Markets, 45(6), 659–682. https://doi.org/10.1002/fut.22583",
+        "【與美智研究的關聯】5/5。直接重疊 CPU、TVP-QVAR、尾部分位連結與多尺度分析；可借鏡以分位 TCI、淨傳送／接收角色、波動連結、替代預測期及外生氣候指標組成驗證鏈。主要差異是研究標的為穀物、頻率分解採 wavelet 而非 BK，且未整合 TVP-VAR-SV；可追蹤其 TVP-QVAR 規格與 Table 3／結論數值衝突。"
+      ],
+      "type": "search",
+      "viewpoints": [
+        {
+          "claim": "【閱讀層級】全文精讀；2026-10-15 以 Wiley 公開全文 HTML、Swansea University 典藏頁、Crossref 與 OpenAlex 核驗。文章為 CC BY 4.0；Crossref 38 次、OpenAlex 37 次被引，OpenAlex W4409185443，is_retracted=false。未保存本地 PDF，網站僅連至合法公開全文。",
+          "evidence": "【閱讀層級】全文精讀；2026-10-15 以 Wiley 公開全文 HTML、Swansea University 典藏頁、Crossref 與 OpenAlex 核驗。文章為 CC BY 4.0；Crossref 38 次、OpenAlex 37 次被引，OpenAlex W4409185443，is_retracted=false。未保存本地 PDF，網站僅連至合法公開全文。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【研究問題與動機】美國氣候政策不確定性（CPU）與五類主要穀物期貨風險的連結，是否會隨市場分位與時間尺度改變？CPU 對各穀物風險的跨分位關係是否非線性且不對稱，氣候狀態又是否解釋這些連結度？",
+          "evidence": "【研究問題與動機】美國氣候政策不確定性（CPU）與五類主要穀物期貨風險的連結，是否會隨市場分位與時間尺度改變？CPU 對各穀物風險的跨分位關係是否非線性且不對稱，氣候狀態又是否解釋這些連結度？",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【研究變數】美國 CPU 指數（八家主要報紙的氣候政策相關詞彙所建構之政策不確定性指標）；玉米、燕麥、小麥、大豆與粗米月價格。穀物風險先以月內最高價／最低價的自然對數衡量，再取該波動指標的對數差分；Niño 3.4 海表溫度異常作為氣候外生變數。",
+          "evidence": "【研究變數】美國 CPU 指數（八家主要報紙的氣候政策相關詞彙所建構之政策不確定性指標）；玉米、燕麥、小麥、大豆與粗米月價格。穀物風險先以月內最高價／最低價的自然對數衡量，再取該波動指標的對數差分；Niño 3.4 海表溫度異常作為氣候外生變數。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【資料／市場／樣本】1987-05 至 2023-08，共 435 筆月資料；CPU 來自 PolicyUncertainty.com，五類穀物為芝加哥商品交易所資料並由 Datastream 取得。作者選用月頻以貼近政策變化時距並降低短期雜訊。",
+          "evidence": "【資料／市場／樣本】1987-05 至 2023-08，共 435 筆月資料；CPU 來自 PolicyUncertainty.com，五類穀物為芝加哥商品交易所資料並由 Datastream 取得。作者選用月頻以貼近政策變化時距並降低短期雜訊。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【穩健性檢驗】將 GFEVD 預測期由 10 步改為 15 與 20 步，尾部分位的動態 TCI 趨勢與數值大致一致；另以 QQR、wavelet coherence、OLS 與分位迴歸從不同角度交叉檢查狀態、尺度與氣候關係。",
+          "evidence": "【穩健性檢驗】將 GFEVD 預測期由 10 步改為 15 與 20 步，尾部分位的動態 TCI 趨勢與數值大致一致；另以 QQR、wavelet coherence、OLS 與分位迴歸從不同角度交叉檢查狀態、尺度與氣候關係。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【主要結果】Table 3 的靜態 TCI 為下尾 74.76%、中位 18.57%、上尾 73.94%，顯示尾部連結遠高於常態；CPU 在下尾與上尾分別為淨接收者 −10.17% 與 −4.13%，中位僅略為淨傳送者 0.04%，玉米在三種分位均為淨傳送者。Wavelet 結果顯示連結多集中在 32 個月內、燕麥與 CPU 最緊密，而大豆與玉米在中長期幾乎無顯著關聯；QQR 顯示方向與強度依 CPU 與穀物分位而異。這些是預測連結與條件關係，不是結構因果。",
+          "evidence": "【主要結果】Table 3 的靜態 TCI 為下尾 74.76%、中位 18.57%、上尾 73.94%，顯示尾部連結遠高於常態；CPU 在下尾與上尾分別為淨接收者 −10.17% 與 −4.13%，中位僅略為淨傳送者 0.04%，玉米在三種分位均為淨傳送者。Wavelet 結果顯示連結多集中在 32 個月內、燕麥與 CPU 最緊密，而大豆與玉米在中長期幾乎無顯著關聯；QQR 顯示方向與強度依 CPU 與穀物分位而異。這些是預測連結與條件關係，不是結構因果。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【作者提出的限制】作者建議未來使用週或日等更高頻資料、納入更廣泛的農產品，並發展結合市場連結、氣候指標與政策不確定性的即時監測系統。資料須向通訊作者合理申請。",
+          "evidence": "【作者提出的限制】作者建議未來使用週或日等更高頻資料、納入更廣泛的農產品，並發展結合市場連結、氣候指標與政策不確定性的即時監測系統。資料須向通訊作者合理申請。",
+          "confidence": "low",
+          "source": "研究限制",
+          "connections": []
+        },
+        {
+          "claim": "【其他限制】單一美國 CPU 指標與美國穀物市場限制外部效度；月頻可能平滑短期政策與供應衝擊；新聞型 CPU、Niño 3.4 與價格風險之間仍可能受共同因子影響。正文 Table 3 報告 TCI 74.76%／18.57%／73.94%，但結論另列 76.69%／70.70%／82.09%，數字互相衝突，引用時應以明確表格並保留此警示。",
+          "evidence": "【其他限制】單一美國 CPU 指標與美國穀物市場限制外部效度；月頻可能平滑短期政策與供應衝擊；新聞型 CPU、Niño 3.4 與價格風險之間仍可能受共同因子影響。正文 Table 3 報告 TCI 74.76%／18.57%／73.94%，但結論另列 76.69%／70.70%／82.09%，數字互相衝突，引用時應以明確表格並保留此警示。",
+          "confidence": "low",
+          "source": "研究限制",
+          "connections": []
+        },
+        {
+          "claim": "【與美智研究的關聯】5/5。直接重疊 CPU、TVP-QVAR、尾部分位連結與多尺度分析；可借鏡以分位 TCI、淨傳送／接收角色、波動連結、替代預測期及外生氣候指標組成驗證鏈。主要差異是研究標的為穀物、頻率分解採 wavelet 而非 BK，且未整合 TVP-VAR-SV；可追蹤其 TVP-QVAR 規格與 Table 3／結論數值衝突。",
+          "evidence": "【與美智研究的關聯】5/5。直接重疊 CPU、TVP-QVAR、尾部分位連結與多尺度分析；可借鏡以分位 TCI、淨傳送／接收角色、波動連結、替代預測期及外生氣候指標組成驗證鏈。主要差異是研究標的為穀物、頻率分解採 wavelet 而非 BK，且未整合 TVP-VAR-SV；可追蹤其 TVP-QVAR 規格與 Table 3／結論數值衝突。",
+          "confidence": "low",
+          "source": "陳述",
+          "connections": []
+        }
+      ],
+      "diagram": "graph TD\n    cpuGrains[\"📄 CPU × 穀物分位時間頻率溢出\"]\n    style cpuGrains fill:#2563eb,color:#fff,font-weight:bold\n    n0[\"💡 TVP-QVAR：尾部 TCI 遠高於中位\"]\n    cpuGrains --> n0\n    n1[\"💡 Wavelet：連結多集中在 32 個月內\"]\n    cpuGrains --> n1\n    n2[\"⚠️ Table 3 與結論 TCI 數字衝突\"]\n    cpuGrains --> n2\n    n3[\"🔗 與美智研究關聯 5/5\"]\n    cpuGrains --> n3"
+    },
     {
       "id": "qvar-2026-10-14-green-finance-crypto-systemic-risks",
       "title": "Dynamic Spillover Connectedness Among Green Finance, Cryptocurrency Markets, and Systemic Risk Indices: A QVAR Network Approach",
@@ -248,121 +476,6 @@
       "diagram": "graph TD\n    qvar20261014gprsustainablefinancefintech[\"📄 Quantile-based analysis of geopolitical risk spillovers across sustainable finance, energy mark\"]\n    style qvar20261014gprsustainablefinancefintech fill:#2563eb,color:#fff,font-weight:bold\n    n0[\"💡 【閱讀層級】摘要層級；以官方期刊頁、官方 PDF 搜尋索引、Crossref 核驗。官方 PDF 直接抓取本次回傳 403，故只使用摘要與可核對的官方索引片段。Crossref 為 3 次被引且無 update-to／updated-by 關係；OpenAle\"]\n    qvar20261014gprsustainablefinancefintech --> n0\n    n1[\"💡 【研究問題與動機】重大地緣政治危機是否以非線性、分位與長記憶方式重塑綠色金融、FinTech、環保加密貨幣、非再生能源與貴金屬間的風險傳遞與避險角色？\"]\n    qvar20261014gprsustainablefinancefintech --> n1\n    n2[\"💡 【研究變數】地緣政治風險指數；綠色金融指標；三項 FinTech 指標；環保加密貨幣；非再生能源；黃金／貴金屬。摘要未完整列出各資產代碼與指數名稱。\"]\n    qvar20261014gprsustainablefinancefintech --> n2\n    n3[\"💡 【資料／市場／樣本】日資料，2018-06-15 至 2024-09-14；分段涵蓋美中貿易衝突、COVID-19，以及俄烏與以哈戰爭。資料來源與實際樣本量在摘要未報告。\"]\n    qvar20261014gprsustainablefinancefintech --> n3"
     },
     {
-      "id": "qvar-2026-10-14-carbon-emissions-sustainable-assets-qqc",
-      "title": "How carbon emissions shape sustainable investment returns: Evidence from a quantile-on-quantile analysis",
-      "search_date": "2026-10-14",
-      "authors": "Mohammed Amine Mouffok; Omar Mouffok",
-      "year": "2026",
-      "journal": "Journal of Cleaner Production, 546, Article 147804",
-      "doi": "https://doi.org/10.1016/j.jclepro.2026.147804",
-      "citations": "2 次（Crossref 與 OpenAlex，2026-10-14）",
-      "openalex_url": "https://openalex.org/W7128808486",
-      "fulltext_url": "https://www.sciencedirect.com/science/article/pii/S0959652626003434",
-      "reading_level": "摘要層級",
-      "abstract": "本文以 2019–2025 年美國日資料，使用 QQC 與 QQGC 檢驗碳排放和潔淨能源股票、綠債、ESG 股票及 ESG 債券報酬的尾部關係。關係主要集中在分配尾端：潔淨能源與 ESG 股票在空頭狀態對高排放特別敏感，ESG 債券與綠債則較具韌性且偶有反週期表現；低至中等排放狀態可預測較高下行風險，極端排放狀態則與股票上尾結果相關。QQGC 是預測方向而非結構因果。",
-      "tags": [
-        "QQC",
-        "QQGC",
-        "quantile-on-quantile",
-        "carbon emissions",
-        "sustainable investments",
-        "tail dependence"
-      ],
-      "topics": [
-        "氣候風險/政策",
-        "碳市場/碳交易",
-        "潔淨能源",
-        "綠債/ESG"
-      ],
-      "keywords": [
-        "clean energy equity",
-        "green bonds",
-        "ESG equity",
-        "ESG bonds",
-        "US market"
-      ],
-      "notes": [
-        "【閱讀層級】摘要層級；以 ScienceDirect 官方摘要、Crossref 與 OpenAlex 核驗。全文為訂閱限制，本次未繞過存取控制。Crossref 與 OpenAlex 均為 2 次被引，OpenAlex W7128808486，is_retracted=false。",
-        "【研究問題與動機】美國碳排放變動是否在不同排放與資產報酬分位組合下，對潔淨能源、綠債與 ESG 資產產生異質的尾部風險與可預測性？",
-        "【研究變數】碳排放；潔淨能源股票報酬、綠色債券報酬、ESG 股票報酬、ESG 債券報酬。摘要未提供具體指數代碼與排放代理變數名稱。",
-        "【資料／市場／樣本】美國市場，2019–2025 年日資料；資料供應商、精確起訖日與樣本量在摘要未報告。",
-        "【模型與估計】Quantile-on-Quantile Correlation（QQC）描述不同分位組合的非線性尾部關係，Quantile-on-Quantile Granger Causality（QQGC）檢驗分位條件下的方向性預測；分位格點與落後設定未報告。",
-        "【穩健性檢驗】以 QQGC 對 Q​​QC 的關係方向提供補充，但摘要未報告替代排放指標、替代樣本或多重檢定校正。",
-        "【主要結果】潔淨能源與 ESG 股票在空頭市場對較高排放呈強烈下行敏感，也在部分上尾顯示正向極端關係；ESG 債券與綠債的尾部依賴較弱且具有資產特定差異。QQGC 顯示低至中度排放狀態可預測多類資產的下行風險，極端排放狀態則預測股票上尾結果；不可把 Granger 預測性寫成政策因果。",
-        "【作者提出的限制】摘要未報告；全文不可合法讀取，不能代作者補寫。",
-        "【其他限制】直接碳排放與碳價格、氣候風險或 CPU 並不相同；若排放資料頻率低於資產日報酬，對齊與插補方式會影響尾部估計。QQC／QQGC 未控制所有共同宏觀因子，且多分位檢定可能有多重比較問題。",
-        "【APA 7】Mouffok, M. A., & Mouffok, O. (2026). How carbon emissions shape sustainable investment returns: Evidence from a quantile-on-quantile analysis. Journal of Cleaner Production, 546, Article 147804. https://doi.org/10.1016/j.jclepro.2026.147804",
-        "【與美智研究的關聯】5/5。直接重疊氣候／碳風險、潔淨能源、綠債與 ESG 資產的尾部異質性，QQC／QQGC 可補足 QVAR 系統網路之外的跨分位方向。主要差異是以排放而非 CPU、採雙變量 quantile-on-quantile 而非 TVP-VAR-SV／BK／QVAR；可追蹤其排放代理與分位格點。"
-      ],
-      "type": "search",
-      "viewpoints": [
-        {
-          "claim": "【閱讀層級】摘要層級；以 ScienceDirect 官方摘要、Crossref 與 OpenAlex 核驗。全文為訂閱限制，本次未繞過存取控制。Crossref 與 OpenAlex 均為 2 次被引，OpenAlex W7128808486，is_retracted=false。",
-          "evidence": "【閱讀層級】摘要層級；以 ScienceDirect 官方摘要、Crossref 與 OpenAlex 核驗。全文為訂閱限制，本次未繞過存取控制。Crossref 與 OpenAlex 均為 2 次被引，OpenAlex W7128808486，is_retracted=false。",
-          "confidence": "mid",
-          "source": "陳述",
-          "connections": []
-        },
-        {
-          "claim": "【研究問題與動機】美國碳排放變動是否在不同排放與資產報酬分位組合下，對潔淨能源、綠債與 ESG 資產產生異質的尾部風險與可預測性？",
-          "evidence": "【研究問題與動機】美國碳排放變動是否在不同排放與資產報酬分位組合下，對潔淨能源、綠債與 ESG 資產產生異質的尾部風險與可預測性？",
-          "confidence": "mid",
-          "source": "陳述",
-          "connections": []
-        },
-        {
-          "claim": "【研究變數】碳排放；潔淨能源股票報酬、綠色債券報酬、ESG 股票報酬、ESG 債券報酬。摘要未提供具體指數代碼與排放代理變數名稱。",
-          "evidence": "【研究變數】碳排放；潔淨能源股票報酬、綠色債券報酬、ESG 股票報酬、ESG 債券報酬。摘要未提供具體指數代碼與排放代理變數名稱。",
-          "confidence": "mid",
-          "source": "陳述",
-          "connections": []
-        },
-        {
-          "claim": "【資料／市場／樣本】美國市場，2019–2025 年日資料；資料供應商、精確起訖日與樣本量在摘要未報告。",
-          "evidence": "【資料／市場／樣本】美國市場，2019–2025 年日資料；資料供應商、精確起訖日與樣本量在摘要未報告。",
-          "confidence": "mid",
-          "source": "陳述",
-          "connections": []
-        },
-        {
-          "claim": "【穩健性檢驗】以 QQGC 對 Q​​QC 的關係方向提供補充，但摘要未報告替代排放指標、替代樣本或多重檢定校正。",
-          "evidence": "【穩健性檢驗】以 QQGC 對 Q​​QC 的關係方向提供補充，但摘要未報告替代排放指標、替代樣本或多重檢定校正。",
-          "confidence": "mid",
-          "source": "陳述",
-          "connections": []
-        },
-        {
-          "claim": "【主要結果】潔淨能源與 ESG 股票在空頭市場對較高排放呈強烈下行敏感，也在部分上尾顯示正向極端關係；ESG 債券與綠債的尾部依賴較弱且具有資產特定差異。QQGC 顯示低至中度排放狀態可預測多類資產的下行風險，極端排放狀態則預測股票上尾結果；不可把 Granger 預測性寫成政策因果。",
-          "evidence": "【主要結果】潔淨能源與 ESG 股票在空頭市場對較高排放呈強烈下行敏感，也在部分上尾顯示正向極端關係；ESG 債券與綠債的尾部依賴較弱且具有資產特定差異。QQGC 顯示低至中度排放狀態可預測多類資產的下行風險，極端排放狀態則預測股票上尾結果；不可把 Granger 預測性寫成政策因果。",
-          "confidence": "mid",
-          "source": "陳述",
-          "connections": []
-        },
-        {
-          "claim": "【作者提出的限制】摘要未報告；全文不可合法讀取，不能代作者補寫。",
-          "evidence": "【作者提出的限制】摘要未報告；全文不可合法讀取，不能代作者補寫。",
-          "confidence": "mid",
-          "source": "研究限制",
-          "connections": []
-        },
-        {
-          "claim": "【其他限制】直接碳排放與碳價格、氣候風險或 CPU 並不相同；若排放資料頻率低於資產日報酬，對齊與插補方式會影響尾部估計。QQC／QQGC 未控制所有共同宏觀因子，且多分位檢定可能有多重比較問題。",
-          "evidence": "【其他限制】直接碳排放與碳價格、氣候風險或 CPU 並不相同；若排放資料頻率低於資產日報酬，對齊與插補方式會影響尾部估計。QQC／QQGC 未控制所有共同宏觀因子，且多分位檢定可能有多重比較問題。",
-          "confidence": "low",
-          "source": "研究限制",
-          "connections": []
-        },
-        {
-          "claim": "【與美智研究的關聯】5/5。直接重疊氣候／碳風險、潔淨能源、綠債與 ESG 資產的尾部異質性，QQC／QQGC 可補足 QVAR 系統網路之外的跨分位方向。主要差異是以排放而非 CPU、採雙變量 quantile-on-quantile 而非 TVP-VAR-SV／BK／QVAR；可追蹤其排放代理與分位格點。",
-          "evidence": "【與美智研究的關聯】5/5。直接重疊氣候／碳風險、潔淨能源、綠債與 ESG 資產的尾部異質性，QQC／QQGC 可補足 QVAR 系統網路之外的跨分位方向。主要差異是以排放而非 CPU、採雙變量 quantile-on-quantile 而非 TVP-VAR-SV／BK／QVAR；可追蹤其排放代理與分位格點。",
-          "confidence": "low",
-          "source": "陳述",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    qvar20261014carbonemissionssustainableassetsqqc[\"📄 How carbon emissions shape sustainable investment returns: Evidence from a quantile-on-quantile\"]\n    style qvar20261014carbonemissionssustainableassetsqqc fill:#2563eb,color:#fff,font-weight:bold\n    n0[\"💡 【閱讀層級】摘要層級；以 ScienceDirect 官方摘要、Crossref 與 OpenAlex 核驗。全文為訂閱限制，本次未繞過存取控制。Crossref 與 OpenAlex 均為 2 次被引，OpenAlex W7128808486，is_retr\"]\n    qvar20261014carbonemissionssustainableassetsqqc --> n0\n    n1[\"💡 【研究問題與動機】美國碳排放變動是否在不同排放與資產報酬分位組合下，對潔淨能源、綠債與 ESG 資產產生異質的尾部風險與可預測性？\"]\n    qvar20261014carbonemissionssustainableassetsqqc --> n1\n    n2[\"💡 【研究變數】碳排放；潔淨能源股票報酬、綠色債券報酬、ESG 股票報酬、ESG 債券報酬。摘要未提供具體指數代碼與排放代理變數名稱。\"]\n    qvar20261014carbonemissionssustainableassetsqqc --> n2\n    n3[\"💡 【資料／市場／樣本】美國市場，2019–2025 年日資料；資料供應商、精確起訖日與樣本量在摘要未報告。\"]\n    qvar20261014carbonemissionssustainableassetsqqc --> n3"
-    },
-    {
       "id": "qvar-2026-10-14-crypto-electricity-clean-energy-green-investment",
       "title": "Quantile Time-Frequency Connectedness Between Cryptocurrency, Electricity, Clean Energy, and Green Investment Markets",
       "search_date": "2026-10-14",
@@ -476,6 +589,121 @@
         }
       ],
       "diagram": "graph TD\n    qvar20261014cryptoelectricitycleanenergygreeninves[\"📄 Quantile Time-Frequency Connectedness Between Cryptocurrency, Electricity, Clean Energy, and Gr\"]\n    style qvar20261014cryptoelectricitycleanenergygreeninves fill:#2563eb,color:#fff,font-weight:bold\n    n0[\"💡 【閱讀層級】摘要層級；以 Springer／RePEc 書目與摘要、Crossref、OpenAlex 核驗。出版商全文為訂閱限制。Crossref 與 OpenAlex 均為 1 次被引，OpenAlex W4416534062，is_retracted=f\"]\n    qvar20261014cryptoelectricitycleanenergygreeninves --> n0\n    n1[\"💡 【研究問題與動機】加密貨幣、其電力消耗、電力市場、潔淨能源與綠色投資在正常與極端狀態、不同投資期限下如何傳遞衝擊？角色是否隨事件與分位改變？\"]\n    qvar20261014cryptoelectricitycleanenergygreeninves --> n1\n    n2[\"💡 【研究變數】摘要明示 Bitcoin 價格、Bitcoin Electricity Consumption Index、電力市場、Clean Energy、Green Bond 與 Dow Jones Sustainability World Index；其餘\"]\n    qvar20261014cryptoelectricitycleanenergygreeninves --> n2\n    n3[\"💡 【資料／市場／樣本】2017–2024 年；跨加密、電力與全球綠色資產市場。資料頻率、供應商、精確起訖日與樣本量在摘要未報告。\"]\n    qvar20261014cryptoelectricitycleanenergygreeninves --> n3"
+    },
+    {
+      "id": "qvar-2026-10-14-carbon-emissions-sustainable-assets-qqc",
+      "title": "How carbon emissions shape sustainable investment returns: Evidence from a quantile-on-quantile analysis",
+      "search_date": "2026-10-14",
+      "authors": "Mohammed Amine Mouffok; Omar Mouffok",
+      "year": "2026",
+      "journal": "Journal of Cleaner Production, 546, Article 147804",
+      "doi": "https://doi.org/10.1016/j.jclepro.2026.147804",
+      "citations": "2 次（Crossref 與 OpenAlex，2026-10-14）",
+      "openalex_url": "https://openalex.org/W7128808486",
+      "fulltext_url": "https://www.sciencedirect.com/science/article/pii/S0959652626003434",
+      "reading_level": "摘要層級",
+      "abstract": "本文以 2019–2025 年美國日資料，使用 QQC 與 QQGC 檢驗碳排放和潔淨能源股票、綠債、ESG 股票及 ESG 債券報酬的尾部關係。關係主要集中在分配尾端：潔淨能源與 ESG 股票在空頭狀態對高排放特別敏感，ESG 債券與綠債則較具韌性且偶有反週期表現；低至中等排放狀態可預測較高下行風險，極端排放狀態則與股票上尾結果相關。QQGC 是預測方向而非結構因果。",
+      "tags": [
+        "QQC",
+        "QQGC",
+        "quantile-on-quantile",
+        "carbon emissions",
+        "sustainable investments",
+        "tail dependence"
+      ],
+      "topics": [
+        "氣候風險/政策",
+        "碳市場/碳交易",
+        "潔淨能源",
+        "綠債/ESG"
+      ],
+      "keywords": [
+        "clean energy equity",
+        "green bonds",
+        "ESG equity",
+        "ESG bonds",
+        "US market"
+      ],
+      "notes": [
+        "【閱讀層級】摘要層級；以 ScienceDirect 官方摘要、Crossref 與 OpenAlex 核驗。全文為訂閱限制，本次未繞過存取控制。Crossref 與 OpenAlex 均為 2 次被引，OpenAlex W7128808486，is_retracted=false。",
+        "【研究問題與動機】美國碳排放變動是否在不同排放與資產報酬分位組合下，對潔淨能源、綠債與 ESG 資產產生異質的尾部風險與可預測性？",
+        "【研究變數】碳排放；潔淨能源股票報酬、綠色債券報酬、ESG 股票報酬、ESG 債券報酬。摘要未提供具體指數代碼與排放代理變數名稱。",
+        "【資料／市場／樣本】美國市場，2019–2025 年日資料；資料供應商、精確起訖日與樣本量在摘要未報告。",
+        "【模型與估計】Quantile-on-Quantile Correlation（QQC）描述不同分位組合的非線性尾部關係，Quantile-on-Quantile Granger Causality（QQGC）檢驗分位條件下的方向性預測；分位格點與落後設定未報告。",
+        "【穩健性檢驗】以 QQGC 對 Q​​QC 的關係方向提供補充，但摘要未報告替代排放指標、替代樣本或多重檢定校正。",
+        "【主要結果】潔淨能源與 ESG 股票在空頭市場對較高排放呈強烈下行敏感，也在部分上尾顯示正向極端關係；ESG 債券與綠債的尾部依賴較弱且具有資產特定差異。QQGC 顯示低至中度排放狀態可預測多類資產的下行風險，極端排放狀態則預測股票上尾結果；不可把 Granger 預測性寫成政策因果。",
+        "【作者提出的限制】摘要未報告；全文不可合法讀取，不能代作者補寫。",
+        "【其他限制】直接碳排放與碳價格、氣候風險或 CPU 並不相同；若排放資料頻率低於資產日報酬，對齊與插補方式會影響尾部估計。QQC／QQGC 未控制所有共同宏觀因子，且多分位檢定可能有多重比較問題。",
+        "【APA 7】Mouffok, M. A., & Mouffok, O. (2026). How carbon emissions shape sustainable investment returns: Evidence from a quantile-on-quantile analysis. Journal of Cleaner Production, 546, Article 147804. https://doi.org/10.1016/j.jclepro.2026.147804",
+        "【與美智研究的關聯】5/5。直接重疊氣候／碳風險、潔淨能源、綠債與 ESG 資產的尾部異質性，QQC／QQGC 可補足 QVAR 系統網路之外的跨分位方向。主要差異是以排放而非 CPU、採雙變量 quantile-on-quantile 而非 TVP-VAR-SV／BK／QVAR；可追蹤其排放代理與分位格點。"
+      ],
+      "type": "search",
+      "viewpoints": [
+        {
+          "claim": "【閱讀層級】摘要層級；以 ScienceDirect 官方摘要、Crossref 與 OpenAlex 核驗。全文為訂閱限制，本次未繞過存取控制。Crossref 與 OpenAlex 均為 2 次被引，OpenAlex W7128808486，is_retracted=false。",
+          "evidence": "【閱讀層級】摘要層級；以 ScienceDirect 官方摘要、Crossref 與 OpenAlex 核驗。全文為訂閱限制，本次未繞過存取控制。Crossref 與 OpenAlex 均為 2 次被引，OpenAlex W7128808486，is_retracted=false。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【研究問題與動機】美國碳排放變動是否在不同排放與資產報酬分位組合下，對潔淨能源、綠債與 ESG 資產產生異質的尾部風險與可預測性？",
+          "evidence": "【研究問題與動機】美國碳排放變動是否在不同排放與資產報酬分位組合下，對潔淨能源、綠債與 ESG 資產產生異質的尾部風險與可預測性？",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【研究變數】碳排放；潔淨能源股票報酬、綠色債券報酬、ESG 股票報酬、ESG 債券報酬。摘要未提供具體指數代碼與排放代理變數名稱。",
+          "evidence": "【研究變數】碳排放；潔淨能源股票報酬、綠色債券報酬、ESG 股票報酬、ESG 債券報酬。摘要未提供具體指數代碼與排放代理變數名稱。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【資料／市場／樣本】美國市場，2019–2025 年日資料；資料供應商、精確起訖日與樣本量在摘要未報告。",
+          "evidence": "【資料／市場／樣本】美國市場，2019–2025 年日資料；資料供應商、精確起訖日與樣本量在摘要未報告。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【穩健性檢驗】以 QQGC 對 Q​​QC 的關係方向提供補充，但摘要未報告替代排放指標、替代樣本或多重檢定校正。",
+          "evidence": "【穩健性檢驗】以 QQGC 對 Q​​QC 的關係方向提供補充，但摘要未報告替代排放指標、替代樣本或多重檢定校正。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【主要結果】潔淨能源與 ESG 股票在空頭市場對較高排放呈強烈下行敏感，也在部分上尾顯示正向極端關係；ESG 債券與綠債的尾部依賴較弱且具有資產特定差異。QQGC 顯示低至中度排放狀態可預測多類資產的下行風險，極端排放狀態則預測股票上尾結果；不可把 Granger 預測性寫成政策因果。",
+          "evidence": "【主要結果】潔淨能源與 ESG 股票在空頭市場對較高排放呈強烈下行敏感，也在部分上尾顯示正向極端關係；ESG 債券與綠債的尾部依賴較弱且具有資產特定差異。QQGC 顯示低至中度排放狀態可預測多類資產的下行風險，極端排放狀態則預測股票上尾結果；不可把 Granger 預測性寫成政策因果。",
+          "confidence": "mid",
+          "source": "陳述",
+          "connections": []
+        },
+        {
+          "claim": "【作者提出的限制】摘要未報告；全文不可合法讀取，不能代作者補寫。",
+          "evidence": "【作者提出的限制】摘要未報告；全文不可合法讀取，不能代作者補寫。",
+          "confidence": "mid",
+          "source": "研究限制",
+          "connections": []
+        },
+        {
+          "claim": "【其他限制】直接碳排放與碳價格、氣候風險或 CPU 並不相同；若排放資料頻率低於資產日報酬，對齊與插補方式會影響尾部估計。QQC／QQGC 未控制所有共同宏觀因子，且多分位檢定可能有多重比較問題。",
+          "evidence": "【其他限制】直接碳排放與碳價格、氣候風險或 CPU 並不相同；若排放資料頻率低於資產日報酬，對齊與插補方式會影響尾部估計。QQC／QQGC 未控制所有共同宏觀因子，且多分位檢定可能有多重比較問題。",
+          "confidence": "low",
+          "source": "研究限制",
+          "connections": []
+        },
+        {
+          "claim": "【與美智研究的關聯】5/5。直接重疊氣候／碳風險、潔淨能源、綠債與 ESG 資產的尾部異質性，QQC／QQGC 可補足 QVAR 系統網路之外的跨分位方向。主要差異是以排放而非 CPU、採雙變量 quantile-on-quantile 而非 TVP-VAR-SV／BK／QVAR；可追蹤其排放代理與分位格點。",
+          "evidence": "【與美智研究的關聯】5/5。直接重疊氣候／碳風險、潔淨能源、綠債與 ESG 資產的尾部異質性，QQC／QQGC 可補足 QVAR 系統網路之外的跨分位方向。主要差異是以排放而非 CPU、採雙變量 quantile-on-quantile 而非 TVP-VAR-SV／BK／QVAR；可追蹤其排放代理與分位格點。",
+          "confidence": "low",
+          "source": "陳述",
+          "connections": []
+        }
+      ],
+      "diagram": "graph TD\n    qvar20261014carbonemissionssustainableassetsqqc[\"📄 How carbon emissions shape sustainable investment returns: Evidence from a quantile-on-quantile\"]\n    style qvar20261014carbonemissionssustainableassetsqqc fill:#2563eb,color:#fff,font-weight:bold\n    n0[\"💡 【閱讀層級】摘要層級；以 ScienceDirect 官方摘要、Crossref 與 OpenAlex 核驗。全文為訂閱限制，本次未繞過存取控制。Crossref 與 OpenAlex 均為 2 次被引，OpenAlex W7128808486，is_retr\"]\n    qvar20261014carbonemissionssustainableassetsqqc --> n0\n    n1[\"💡 【研究問題與動機】美國碳排放變動是否在不同排放與資產報酬分位組合下，對潔淨能源、綠債與 ESG 資產產生異質的尾部風險與可預測性？\"]\n    qvar20261014carbonemissionssustainableassetsqqc --> n1\n    n2[\"💡 【研究變數】碳排放；潔淨能源股票報酬、綠色債券報酬、ESG 股票報酬、ESG 債券報酬。摘要未提供具體指數代碼與排放代理變數名稱。\"]\n    qvar20261014carbonemissionssustainableassetsqqc --> n2\n    n3[\"💡 【資料／市場／樣本】美國市場，2019–2025 年日資料；資料供應商、精確起訖日與樣本量在摘要未報告。\"]\n    qvar20261014carbonemissionssustainableassetsqqc --> n3"
     },
     {
       "id": "qvar-2026-10-14-ai-energy-token-frequency-connectedness",
@@ -896,49 +1124,6 @@
       "diagram": "graph TD\n    TheImpactOfOilP[\"📄 The Impact Of Oil Prices And VIX On Dow Jones Isla\"]\n    style TheImpactOfOilP fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QARDL[\"💡 研究方法：QARDL (Quantile Autoregressive Dist\"]\n    style vp0研究方法QARDL fill:#fef3c7,stroke:#d97706\n    TheImpactOfOilP --> vp0研究方法QARDL\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    TheImpactOfOilP --> vp1研究主題其他\n    vp0研究方法QARDL --- vp1研究主題其他"
     },
     {
-      "id": "qvar-2026-10-13-W7165763608",
-      "title": "Development of the Maharah Qira'ah Test Using the Wondershare Quiz Creator (WQC) Application",
-      "search_date": "2026-10-13",
-      "authors": "",
-      "year": "2025",
-      "journal": "",
-      "doi": "10.36915/la.v6i1.304",
-      "citations": "",
-      "openalex_url": "https://openalex.org/W7165763608",
-      "abstract": "",
-      "tags": [
-        "WQC"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2025",
-        "主題：其他",
-        "方法：WQC (Wavelet Quantile Correlation)",
-        "---",
-        "DOI：10.36915/la.v6i1.304"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：WQC (Wavelet Quantile Correlation)",
-          "evidence": "WQC (Wavelet Quantile Correlation)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    Developmentofth[\"📄 Development of the Maharah Qira'ah Test Using the \"]\n    style Developmentofth fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法WQC[\"💡 研究方法：WQC (Wavelet Quantile Correlation)\"]\n    style vp0研究方法WQC fill:#fef3c7,stroke:#d97706\n    Developmentofth --> vp0研究方法WQC\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    Developmentofth --> vp1研究主題其他\n    vp0研究方法WQC --- vp1研究主題其他"
-    },
-    {
       "id": "qvar-2026-10-13-W7165666815",
       "title": "Do Wages Chase Prices or Prices Chase Wages? Revisiting the Wage–Price Spiral in Türkiye with QARDL Approach",
       "search_date": "2026-10-13",
@@ -980,49 +1165,6 @@
         }
       ],
       "diagram": "graph TD\n    DoWagesChasePri[\"📄 Do Wages Chase Prices or Prices Chase Wages? Revis\"]\n    style DoWagesChasePri fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QARDL[\"💡 研究方法：QARDL (Quantile Autoregressive Dist\"]\n    style vp0研究方法QARDL fill:#fef3c7,stroke:#d97706\n    DoWagesChasePri --> vp0研究方法QARDL\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    DoWagesChasePri --> vp1研究主題其他\n    vp0研究方法QARDL --- vp1研究主題其他"
-    },
-    {
-      "id": "qvar-2026-10-13-W7165618089",
-      "title": "QVaR: a Quantum Variational Regularization method for Linear Inverse Problems",
-      "search_date": "2026-10-13",
-      "authors": "",
-      "year": "2026",
-      "journal": "",
-      "doi": "10.48550/arxiv.2606.21392",
-      "citations": "",
-      "openalex_url": "https://openalex.org/W7165618089",
-      "abstract": "",
-      "tags": [
-        "QVAR"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2026",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：10.48550/arxiv.2606.21392"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    QVaRaQuantumVar[\"📄 QVaR: a Quantum Variational Regularization method \"]\n    style QVaRaQuantumVar fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QVaRaQuantumVar --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    QVaRaQuantumVar --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
     },
     {
       "id": "qvar-2026-10-13-W7164672305",
@@ -1113,49 +1255,6 @@
       "diagram": "graph TD\n    Quantitativeass[\"📄 Quantitative assessment of the link between econom\"]\n    style Quantitativeass fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QARDL[\"💡 研究方法：QARDL (Quantile Autoregressive Dist\"]\n    style vp0研究方法QARDL fill:#fef3c7,stroke:#d97706\n    Quantitativeass --> vp0研究方法QARDL\n    vp1研究主題加密貨幣[\"💡 研究主題：加密貨幣/數位金融、宏觀總體\"]\n    style vp1研究主題加密貨幣 fill:#fef3c7,stroke:#d97706\n    Quantitativeass --> vp1研究主題加密貨幣\n    vp0研究方法QARDL --- vp1研究主題加密貨幣"
     },
     {
-      "id": "qvar-2026-10-13-W7162516993",
-      "title": "WQC-POLYS: Adaptive Phase-Transition Framework for 3D Navier-Stokes Regularity",
-      "search_date": "2026-10-13",
-      "authors": "",
-      "year": "2026",
-      "journal": "",
-      "doi": "10.17605/osf.io/m3t82",
-      "citations": "",
-      "openalex_url": "https://openalex.org/W7162516993",
-      "abstract": "",
-      "tags": [
-        "WQC"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2026",
-        "主題：其他",
-        "方法：WQC (Wavelet Quantile Correlation)",
-        "---",
-        "DOI：10.17605/osf.io/m3t82"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：WQC (Wavelet Quantile Correlation)",
-          "evidence": "WQC (Wavelet Quantile Correlation)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    WQCPOLYSAdaptiv[\"📄 WQC-POLYS: Adaptive Phase-Transition Framework for\"]\n    style WQCPOLYSAdaptiv fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法WQC[\"💡 研究方法：WQC (Wavelet Quantile Correlation)\"]\n    style vp0研究方法WQC fill:#fef3c7,stroke:#d97706\n    WQCPOLYSAdaptiv --> vp0研究方法WQC\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    WQCPOLYSAdaptiv --> vp1研究主題其他\n    vp0研究方法WQC --- vp1研究主題其他"
-    },
-    {
       "id": "qvar-2026-10-13-W4411403571",
       "title": "wqc: Wavelet Quantile Correlation Analysis（R 套件）",
       "search_date": "2026-10-13",
@@ -1197,49 +1296,6 @@
         }
       ],
       "diagram": "graph TD\n    wqcWaveletQuant[\"📄 wqc: Wavelet Quantile Correlation Analysis（R 套件）\"]\n    style wqcWaveletQuant fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法WQC[\"💡 研究方法：WQC (Wavelet Quantile Correlation)\"]\n    style vp0研究方法WQC fill:#fef3c7,stroke:#d97706\n    wqcWaveletQuant --> vp0研究方法WQC\n    vp1研究主題方法論[\"💡 研究主題：方法論\"]\n    style vp1研究主題方法論 fill:#fef3c7,stroke:#d97706\n    wqcWaveletQuant --> vp1研究主題方法論\n    vp0研究方法WQC --- vp1研究主題方法論"
-    },
-    {
-      "id": "qvar-2026-10-13-W4406069933",
-      "title": "Time dependence effect of metal toxicology and application in WQC derivation of main water basins in China",
-      "search_date": "2026-10-13",
-      "authors": "",
-      "year": "2025",
-      "journal": "",
-      "doi": "10.1016/j.ecolind.2024.113049",
-      "citations": "",
-      "openalex_url": "https://openalex.org/W4406069933",
-      "abstract": "",
-      "tags": [
-        "WQC"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2025",
-        "主題：其他",
-        "方法：WQC (Wavelet Quantile Correlation)",
-        "---",
-        "DOI：10.1016/j.ecolind.2024.113049"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：WQC (Wavelet Quantile Correlation)",
-          "evidence": "WQC (Wavelet Quantile Correlation)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    Timedependencee[\"📄 Time dependence effect of metal toxicology and app\"]\n    style Timedependencee fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法WQC[\"💡 研究方法：WQC (Wavelet Quantile Correlation)\"]\n    style vp0研究方法WQC fill:#fef3c7,stroke:#d97706\n    Timedependencee --> vp0研究方法WQC\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    Timedependencee --> vp1研究主題其他\n    vp0研究方法WQC --- vp1研究主題其他"
     },
     {
       "id": "qvar-2026-10-13-W2918113739",
@@ -1633,92 +1689,6 @@
       "diagram": "graph TD\n    Dynamicresilien[\"📄 Dynamic resilience assessment of the shipping mark\"]\n    style Dynamicresilien fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    Dynamicresilien --> vp0研究方法QVAR\n    vp1研究主題碳市場碳[\"💡 研究主題：碳市場/碳交易\"]\n    style vp1研究主題碳市場碳 fill:#fef3c7,stroke:#d97706\n    Dynamicresilien --> vp1研究主題碳市場碳\n    vp0研究方法QVAR --- vp1研究主題碳市場碳"
     },
     {
-      "id": "qvar-2026-10-07-W7165410694",
-      "title": "QVAR",
-      "search_date": "2026-10-07",
-      "authors": "",
-      "year": "2026",
-      "journal": "",
-      "doi": "10.5281/zenodo.20758576",
-      "citations": "",
-      "openalex_url": "https://openalex.org/W7165410694",
-      "abstract": "",
-      "tags": [
-        "QVAR"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2026",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：10.5281/zenodo.20758576"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    QVAR[\"📄 QVAR\"]\n    style QVAR fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QVAR --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    QVAR --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
-    },
-    {
-      "id": "qvar-2026-10-07-W7165403223",
-      "title": "QVAR",
-      "search_date": "2026-10-07",
-      "authors": "",
-      "year": "2026",
-      "journal": "",
-      "doi": "10.5281/zenodo.20758577",
-      "citations": "",
-      "openalex_url": "https://openalex.org/W7165403223",
-      "abstract": "",
-      "tags": [
-        "QVAR"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2026",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：10.5281/zenodo.20758577"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    QVAR[\"📄 QVAR\"]\n    style QVAR fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QVAR --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    QVAR --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
-    },
-    {
       "id": "qvar-2026-10-07-W7164643542",
       "title": "Geopolitical Risk, Energy-Route Disruptions, and Food Inflation Transmission ... Egypt Using QARDL and SVAR",
       "search_date": "2026-10-07",
@@ -1761,49 +1731,6 @@
         }
       ],
       "diagram": "graph TD\n    GeopoliticalRis[\"📄 Geopolitical Risk, Energy-Route Disruptions, and F\"]\n    style GeopoliticalRis fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QARDL[\"💡 研究方法：QARDL (Quantile Autoregressive Dist\"]\n    style vp0研究方法QARDL fill:#fef3c7,stroke:#d97706\n    GeopoliticalRis --> vp0研究方法QARDL\n    vp1研究主題地緣政治[\"💡 研究主題：地緣政治/國防、宏觀總體\"]\n    style vp1研究主題地緣政治 fill:#fef3c7,stroke:#d97706\n    GeopoliticalRis --> vp1研究主題地緣政治\n    vp0研究方法QARDL --- vp1研究主題地緣政治"
-    },
-    {
-      "id": "qvar-2026-10-02-命中詞",
-      "title": "年份",
-      "search_date": "2026-10-02",
-      "authors": "",
-      "year": "DOI",
-      "journal": "",
-      "doi": "OpenAlex ID",
-      "citations": "",
-      "openalex_url": "",
-      "abstract": "",
-      "tags": [
-        "QVAR"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：DOI",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：OpenAlex ID"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    年份[\"📄 年份\"]\n    style 年份 fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    年份 --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    年份 --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
     },
     {
       "id": "qvar-2026-10-02-WQR",
@@ -1980,6 +1907,46 @@
       "diagram": "graph TD\n    Themoderatingro[\"📄 The moderating role of disaggregated ICT diffusion\"]\n    style Themoderatingro fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QARDL[\"💡 研究方法：QARDL (Quantile Autoregressive Dist\"]\n    style vp0研究方法QARDL fill:#fef3c7,stroke:#d97706\n    Themoderatingro --> vp0研究方法QARDL\n    vp1研究主題碳市場碳[\"💡 研究主題：碳市場/碳交易、AI/科技\"]\n    style vp1研究主題碳市場碳 fill:#fef3c7,stroke:#d97706\n    Themoderatingro --> vp1研究主題碳市場碳\n    vp0研究方法QARDL --- vp1研究主題碳市場碳"
     },
     {
+      "id": "qvar-2026-09-25-W7165410694",
+      "title": "QVAR（Zenodo 資料集/軟體，標題僅 \"QVAR\"）",
+      "search_date": "2026-09-25",
+      "authors": "",
+      "year": "2026",
+      "journal": "",
+      "doi": "10.5281/zenodo.20758576",
+      "citations": "",
+      "openalex_url": "https://openalex.org/W7165410694",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "topics": [
+        "其他"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
+      "id": "qvar-2026-09-25-W7165403223",
+      "title": "QVAR（Zenodo 資料集/軟體，標題僅 \"QVAR\"）",
+      "search_date": "2026-09-25",
+      "authors": "",
+      "year": "2026",
+      "journal": "",
+      "doi": "10.5281/zenodo.20758577",
+      "citations": "",
+      "openalex_url": "https://openalex.org/W7165403223",
+      "abstract": "",
+      "tags": [
+        "QVAR"
+      ],
+      "topics": [
+        "其他"
+      ],
+      "type": "search",
+      "notes": []
+    },
+    {
       "id": "qvar-2026-09-25-W7131356773",
       "title": "Quantile Spillover and Portfolio Shielding: Analyzing ESG Stocks and Commodity Markets Through the QVAR",
       "search_date": "2026-09-25",
@@ -2023,49 +1990,6 @@
         }
       ],
       "diagram": "graph TD\n    QuantileSpillov[\"📄 Quantile Spillover and Portfolio Shielding: Analyz\"]\n    style QuantileSpillov fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QuantileSpillov --> vp0研究方法QVAR\n    vp1研究主題綠債ES[\"💡 研究主題：綠債/ESG、金融市場、原物料/商品\"]\n    style vp1研究主題綠債ES fill:#fef3c7,stroke:#d97706\n    QuantileSpillov --> vp1研究主題綠債ES\n    vp0研究方法QVAR --- vp1研究主題綠債ES"
-    },
-    {
-      "id": "qvar-2026-09-18-QVAR",
-      "title": "QVaR: a Quantum Variational Regularization method for Linear Inverse Problems（無 DOI）",
-      "search_date": "2026-09-18",
-      "authors": "",
-      "year": "2026",
-      "journal": "",
-      "doi": "—",
-      "citations": "",
-      "openalex_url": "",
-      "abstract": "",
-      "tags": [
-        "QVAR"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2026",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：—"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    QVaRaQuantumVar[\"📄 QVaR: a Quantum Variational Regularization method \"]\n    style QVaRaQuantumVar fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QVaRaQuantumVar --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    QVaRaQuantumVar --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
     },
     {
       "id": "qvar-2026-09-15-W7135189148",
@@ -2413,49 +2337,6 @@
         }
       ],
       "diagram": "graph TD\n    Howclimateriski[\"📄 How climate risk impacts interaction among green a\"]\n    style Howclimateriski fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    Howclimateriski --> vp0研究方法QVAR\n    vp1研究主題氣候風險[\"💡 研究主題：氣候風險/政策\"]\n    style vp1研究主題氣候風險 fill:#fef3c7,stroke:#d97706\n    Howclimateriski --> vp1研究主題氣候風險\n    vp0研究方法QVAR --- vp1研究主題氣候風險"
-    },
-    {
-      "id": "qvar-2026-09-03-[W7164672305](https://openalex.org/W7164672305)",
-      "title": "（同上，Zenodo 重複版本）",
-      "search_date": "2026-09-03",
-      "authors": "",
-      "year": "2026",
-      "journal": "",
-      "doi": "[10.5281/zenodo.20680994](https://doi.org/10.5281/zenodo.20680994)",
-      "citations": "",
-      "openalex_url": "",
-      "abstract": "",
-      "tags": [
-        "QARDL"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2026",
-        "主題：其他",
-        "方法：QARDL (Quantile Autoregressive Distributed Lag) + ARDL (Autoregressive Distributed Lag)",
-        "---",
-        "DOI：[10.5281/zenodo.20680994](https://doi.org/10.5281/zenodo.20680994)"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QARDL (Quantile Autoregressive Distributed Lag) + ARDL (Autoregressive Distribut",
-          "evidence": "QARDL (Quantile Autoregressive Distributed Lag) + ARDL (Autoregressive Distributed Lag)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    同上Zenodo重複版本[\"📄 （同上，Zenodo 重複版本）\"]\n    style 同上Zenodo重複版本 fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QARDL[\"💡 研究方法：QARDL (Quantile Autoregressive Dist\"]\n    style vp0研究方法QARDL fill:#fef3c7,stroke:#d97706\n    同上Zenodo重複版本 --> vp0研究方法QARDL\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    同上Zenodo重複版本 --> vp1研究主題其他\n    vp0研究方法QARDL --- vp1研究主題其他"
     },
     {
       "id": "qvar-2026-09-03-[W7164643542](https://openalex.org/W7164643542)",
@@ -2946,90 +2827,25 @@
       "diagram": "graph TD\n    Themoderatingro[\"📄 The moderating role of institutional quality in th\"]\n    style Themoderatingro fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QARDL[\"💡 研究方法：QARDL (Quantile Autoregressive Dist\"]\n    style vp0研究方法QARDL fill:#fef3c7,stroke:#d97706\n    Themoderatingro --> vp0研究方法QARDL\n    vp1研究主題宏觀總體[\"💡 研究主題：宏觀總體\"]\n    style vp1研究主題宏觀總體 fill:#fef3c7,stroke:#d97706\n    Themoderatingro --> vp1研究主題宏觀總體\n    vp0研究方法QARDL --- vp1研究主題宏觀總體"
     },
     {
-      "id": "qvar-2026-07-20-[W7165410694](https://openalex.org/W7165410694)",
-      "title": "QVAR",
+      "id": "qvar-2026-07-20-[W7164672305](https://openalex.org/W7164672305)",
+      "title": "Geopolitical Risk, Energy-Route Disruptions, and Food Inflation Transmission in an Import-Dependent Economy from the Early 2000s to Recent Strait of Hormuz Disruptions: Evidence from Egypt Using QARDL and SVAR",
       "search_date": "2026-07-20",
       "authors": "",
       "year": "2026",
       "journal": "",
-      "doi": "[10.5281/zenodo.20758576](https://doi.org/10.5281/zenodo.20758576)",
+      "doi": "[10.5281/zenodo.20680994](https://doi.org/10.5281/zenodo.20680994)",
       "citations": "",
       "openalex_url": "",
       "abstract": "",
       "tags": [
-        "QVAR"
+        "QARDL"
       ],
       "topics": [
-        "其他"
+        "地緣政治/國防",
+        "宏觀總體"
       ],
       "type": "search",
-      "notes": [
-        "年份：2026",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：[10.5281/zenodo.20758576](https://doi.org/10.5281/zenodo.20758576)"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    QVAR[\"📄 QVAR\"]\n    style QVAR fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QVAR --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    QVAR --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
-    },
-    {
-      "id": "qvar-2026-07-20-[W7165403223](https://openalex.org/W7165403223)",
-      "title": "QVAR",
-      "search_date": "2026-07-20",
-      "authors": "",
-      "year": "2026",
-      "journal": "",
-      "doi": "[10.5281/zenodo.20758577](https://doi.org/10.5281/zenodo.20758577)",
-      "citations": "",
-      "openalex_url": "",
-      "abstract": "",
-      "tags": [
-        "QVAR"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2026",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：[10.5281/zenodo.20758577](https://doi.org/10.5281/zenodo.20758577)"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    QVAR[\"📄 QVAR\"]\n    style QVAR fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QVAR --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    QVAR --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
+      "notes": []
     },
     {
       "id": "qvar-2026-07-20-[W7164149221](https://openalex.org/W7164149221)",
@@ -3163,11 +2979,11 @@
       "diagram": "graph TD\n    QuantileSpillov[\"📄 Quantile Spillover and Portfolio Shielding: Analyz\"]\n    style QuantileSpillov fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QuantileSpillov --> vp0研究方法QVAR\n    vp1研究主題綠債ES[\"💡 研究主題：綠債/ESG、金融市場、原物料/商品\"]\n    style vp1研究主題綠債ES fill:#fef3c7,stroke:#d97706\n    QuantileSpillov --> vp1研究主題綠債ES\n    vp0研究方法QVAR --- vp1研究主題綠債ES"
     },
     {
-      "id": "qvar-2026-07-17-10.48550/arxiv.2606.21392",
-      "title": "❌",
+      "id": "qvar-2026-07-17-10.1016/j.frl.2026.110372",
+      "title": "✅",
       "search_date": "2026-07-17",
       "authors": "",
-      "year": "QVaR: a Quantum Variational Regularization method for Linear Inverse Problems",
+      "year": "How climate risk impacts interaction among green assets under varying market states: Evidence from a time-frequency QVAR model integrating an autoencoder",
       "journal": "",
       "doi": "2026",
       "citations": "",
@@ -3180,30 +2996,7 @@
         "其他"
       ],
       "type": "search",
-      "notes": [
-        "年份：QVaR: a Quantum Variational Regularization method for Linear Inverse Problems",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：2026"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    var[\"📄 ❌\"]\n    style var fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    var --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    var --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
+      "notes": []
     },
     {
       "title": "Volatility and co-movement between ESG and non-ESG futures and uncertainty indices: Evidence from wavelet coherence and GARCH models",
@@ -3229,8 +3022,7 @@
       "pdf": "pdfs/MosionekSchweda_Chylinska_2026_RIBAF_ESG_futures.pdf",
       "notes": "## 📋 Summary\n使用 wavelet coherence 與 GARCH 模型分析 ESG 期貨與傳統指數期貨的波動性及與不確定性指標（VIX、GPR、EPU）的共動關係。樣本 2021-01-02 至 2025-05-23 共 1,145 筆日資料。特別關注 COVID-19 後期、烏克蘭戰爭及 2025 年美國關稅衝擊（Liberation Day）等事件。\n\n## 🔑 Variables\n- **ESG 期貨**: FSEG（STOXX Europe 600 ESG-X）、FSSX（EURO STOXX 50 ESG）、ESG（E-mini S&P 500 ESG）\n- **傳統期貨**: FXXP（STOXX 600）、STTX（EURO STOXX 50）、ES（E-mini S&P 500）\n- **不確定性指標**: VIX（CBOE 波動率）、GPR（地緣政治風險）、EPU（經濟政策不確定性）\n\n## 📊 Data Sources\n- LSEG Workspace（通過 University of Gdańsk 合作協議）\n- GPR: matteoiacoviello.com/gpr.htm\n- EPU: FRED\n\n## 🛠️ Methodology\n- Wavelet coherence（Morlet + Paul 兩種 mother wavelet 穩健性檢驗）\n- Univariate GARCH（波動聚類與持續性）\n- GARCH-X（加入 ΔVIX 為外生變數）\n- Rolling Spearman correlation（30/60/120 天窗口）\n- Decile-based correlation（分位數條件相關）\n\n## 🎯 Key Findings\n1. **H1 ✓**: ESG 與非 ESG 期貨高度正相關（Spearman ρ=0.91-0.996），但對不確定性衝擊的反應不同\n2. **H2 ✓**: VIX 對期貨報酬的影響最強且最一致；GPR 和 EPU 的影響較弱且不穩定\n3. **H3 部分支持**: ESG 期貨的波動持續性略低於傳統期貨（GARCH β 係數差異），顯示相對韌性，但並非 safe haven\n4. **H4 ✓**: 烏克蘭戰爭（2022）和 2025 美國關稅衝擊（4 月 Liberation Day）顯著增加波動性；2025 關稅事件是樣本期內波動最大的事件\n5. ESG 期貨不應被歸類為 safe haven，但提供差異化的波動動態\n\n## 🏛️ 事件驅動分析\n- **2022 烏克蘭戰爭**: 2021 年底至 2023 年中波動升高，與通膨飆升及美歐連續升息相關\n- **2025/4/2 Liberation Day**: Trump 簽署 10% 基礎關稅 + 對歐盟 20%、中國 34% 的對等關稅；ESG 和 ES 期貨波動在 4/10-11 達到樣本期間最高點\n\n## 📐 RIBAF 寫作特徵（與 Shi & Guo 差異）\n- Data 獨立成 Section 3（Shi 是把 data 放 Section 4.1）\n- 明確提出 4 組假設 H1-H4，並在 Conclusion 逐一驗證\n- Conclusion 極長：發現摘要→假設驗證→貢獻（First/Second/Third/Fourth）→政策意涵→限制→未來研究\n- 使用 \"our paper\"、\"we\"（比 Shi 更個人化）\n- 引用 2025 年即時事件，證明 RIBAF 接受時效性強的事件分析\n- Limitations 寫得誠實：wavelet 不證明因果、2025 關稅為短期事件、建議未來用 DCC-MGARCH\n\n## 💡 投稿參考價值\n這篇證明 RIBAF 接受 explicit hypotheses + 事件驅動框架 + 多方法穩健性檢驗。如果你的文章有明確的假設檢定 + 用 TVP-VAR 捕捉時變關係 + QVAR 做分位數條件分析，可以同時借鏡兩篇的優點：Shi 的主題式文獻回顧 + Mosionek-Schweda 的假設結構和事件分析。",
       "type": "upload",
-      "id": "upload-2026-07-11-409e7577",
-      "diagram": "graph TD\n    Volatilityandco[\"📄 Volatility and co-movement between ESG and non-ESG\"]\n    style Volatilityandco fill:#2563eb,color:#fff,font-weight:bold"
+      "id": "upload-2026-07-11-409e7577"
     },
     {
       "title": "Differential impact of multiple risks on green and conventional bond markets: Evidence from multifractal analysis",
@@ -3254,8 +3046,7 @@
       "pdf": "pdfs/Shi_Guo_2025_RIBAF_multifractal_bonds.pdf",
       "notes": "## 📋 Summary\n從 multifractal 視角探討 EPU、GPR、VIX、OVX 四種不確定性對綠色債券與傳統債券市場的差異化影響。使用 MF-ADCCA（不對稱多重分形去趨勢互相關分析）與 risk-conduction MF-DCCA，樣本 2016-07-05 至 2023-02-27 共 1,568 筆日資料。\n\n## 🔑 Variables\n- **不確定性指標**: EPU（經濟政策不確定性）、GPR（地緣政治風險）、VIX（市場波動）、OVX（原油波動）\n- **債券市場**: SPGB（S&P 綠色債券指數）、SPCB（S&P 傳統債券指數）\n\n## 📊 Data Sources\n- EPU/GPR: policyuncertainty.com\n- VIX/OVX: investing.com\n- SPGB/SPCB: spglobal.com\n\n## 🛠️ Methodology\n- MF-ADCCA: 不對稱多重分形去趨勢互相關分析（Cao et al., 2014）\n- MF-DCCA with risk conduction: 基於風險傳導的多重分形去趨勢互相關分析（Cao et al., 2017; Cao & Zhou, 2019）\n- 穩健性: Legendre 變換取得 multifractal spectrum\n\n## 🎯 Key Findings\n1. **不確定性與債券市場間的 multifractal 相關性存在異質性**，取決於不確定性領域、債券類型、時間序列趨勢和波動大小\n2. **大型波動是 multifractal 的主要來源**；小型波動下相關性較弱\n3. **債券市場必須關注經濟與地緣政治領域的風險**（EPU/GPR 上升→債券價格下跌，antipersistent），而在市場與能源領域可規避風險（VIX/OVX 上升→資金逃往債券，persistent）\n4. **綠色債券普遍比傳統債券更具風險規避能力**：在不確定性上升時（向上趨勢），綠債的 antipersistence 較弱（下跌幅度較小）\n5. 風險傳導方向：VIX→債券市場（短期），EPU←→債券市場（長期雙向），GPR 主要受債券市場傳導\n\n## 📐 RIBAF 寫作特徵\n- Section 2 不叫 Literature Review，而是 \"The relationship between uncertainties and bond markets\"（主題式回顧）\n- Introduction 最後一段給出 paper structure 導航\n- Discussion (Section 5) 獨立於 Conclusion (Section 6)\n- Discussion 回答「為什麼」：Why do green bonds differ? Why do different uncertainties have diverse relationships?\n- 少用 \"we\"，多用 \"this study\"、\"the results reveal\"\n- 圖表極豐富：Fig 1-16，Table 1-4\n\n## 💡 投稿參考價值\n這篇是綠債×不確定性投稿 RIBAF 的經典模板。如果你的文章用 QVAR/TVP-VAR 分析多重風險對綠債/傳統債券的影響，這篇的架構可以直接借鏡，特別是 Section 2 主題式回顧 + Section 5 獨立 Discussion 的結構。",
       "type": "upload",
-      "id": "upload-2026-07-11-1fef7c84",
-      "diagram": "graph TD\n    Differentialimp[\"📄 Differential impact of multiple risks on green and\"]\n    style Differentialimp fill:#2563eb,color:#fff,font-weight:bold"
+      "id": "upload-2026-07-11-1fef7c84"
     },
     {
       "id": "qvar-2026-07-08-W7128723332",
@@ -3380,8 +3171,7 @@
         "- 外資羊群行為對股價有顯著影響",
         "=== APA ===",
         "Fang, H., & Yang, J. J. (2025). Foreign institutional investor herding and ESG ratings. *Pacific-Basin Finance Journal*, *89*, 102692. https://doi.org/10.1016/j.pacfin.2025.102692"
-      ],
-      "diagram": "graph TD\n    ForeignInstitut[\"📄 Foreign Institutional Investor Herding and ESG Rat\"]\n    style ForeignInstitut fill:#2563eb,color:#fff,font-weight:bold"
+      ]
     },
     {
       "id": "bf-2026-07-07-8",
@@ -3619,8 +3409,7 @@
         "- 內部化交易對市場效率的影響",
         "=== APA ===",
         "Barardehi, Y. H., Bernhardt, D., & Da, Z. (2025). Institutional liquidity costs, internalized retail trade imbalances, and the cross section of stock returns. *Journal of Financial and Quantitative Analysis*, *60*(2), 1–40. https://doi.org/10.1017/s0022109025000043"
-      ],
-      "diagram": "graph TD\n    InstitutionalLi[\"📄 Institutional Liquidity Costs, Internalized Retail\"]\n    style InstitutionalLi fill:#2563eb,color:#fff,font-weight:bold"
+      ]
     },
     {
       "id": "bf-2026-07-07-3",
@@ -3719,8 +3508,7 @@
         "- 提出最優報價策略以應對信息不對稱",
         "=== APA ===",
         "Cartea, Á., & Sánchez-Betancourt, L. (2025). Brokers and informed traders: Dealing with toxic flow and extracting trading signals. *SIAM Journal on Financial Mathematics*, *16*(1), 1–30. https://doi.org/10.1137/24m1660243"
-      ],
-      "diagram": "graph TD\n    BrokersandInfor[\"📄 Brokers and Informed Traders: Dealing with Toxic F\"]\n    style BrokersandInfor fill:#2563eb,color:#fff,font-weight:bold"
+      ]
     },
     {
       "id": "bf-2026-07-07-19",
@@ -4070,8 +3858,7 @@
         "- GameStop 事件的系統性分析",
         "=== APA ===",
         "Warkulat, S., & Pelster, M. (2024). Social media attention and retail investor behavior: Evidence from r/wallstreetbets. *International Review of Financial Analysis*, *95*, 103721. https://doi.org/10.1016/j.irfa.2024.103721"
-      ],
-      "diagram": "graph TD\n    SocialMediaAtte[\"📄 Social Media Attention and Retail Investor Behavio\"]\n    style SocialMediaAtte fill:#2563eb,color:#fff,font-weight:bold"
+      ]
     },
     {
       "id": "bf-2026-07-07-12",
@@ -4109,8 +3896,7 @@
         "- 下跌市場中止損行為較弱",
         "=== APA ===",
         "Wan, D., Yang, L., & Yang, X. (2024). How mutual funds respond to asymmetric feedback trading in China's stock market. *Journal of Management Science and Engineering*, *9*(1), 1–15. https://doi.org/10.1016/j.jmse.2024.01.001"
-      ],
-      "diagram": "graph TD\n    HowMutualFundsR[\"📄 How Mutual Funds Respond to Asymmetric Feedback Tr\"]\n    style HowMutualFundsR fill:#2563eb,color:#fff,font-weight:bold"
+      ]
     },
     {
       "id": "bf-2026-07-07-11",
@@ -4148,8 +3934,7 @@
         "- 市場整合程度與正反饋交易相關",
         "=== APA ===",
         "Tian, S., Liu, S., & Mu, L. (2024). Spatial linkages of positive feedback trading among the stock index futures markets. *North American Journal of Economics and Finance*, *72*, 102315. https://doi.org/10.1016/j.najef.2024.102315"
-      ],
-      "diagram": "graph TD\n    SpatialLinkages[\"📄 Spatial Linkages of Positive Feedback Trading Amon\"]\n    style SpatialLinkages fill:#2563eb,color:#fff,font-weight:bold"
+      ]
     },
     {
       "id": "bf-2026-07-07-10",
@@ -4287,137 +4072,7 @@
         "來源：Mayer et al. arXiv 全文、Jiang et al. MDPI 全文、Wiley/Elsevier 頁面"
       ],
       "type": "upload",
-      "id": "upload-2026-07-06-ec9ed93a",
-      "diagram": "graph TD\n    精讀筆記方法論核心5篇高引用[\"📄 精讀筆記：方法論核心 5 篇 + 高引用實證 5 篇\"]\n    style 精讀筆記方法論核心5篇高引用 fill:#2563eb,color:#fff,font-weight:bold"
-    },
-    {
-      "id": "qvar-2026-07-03-W4390622186",
-      "title": "Training on Making HOTS Questions with WQC Application",
-      "search_date": "2026-07-03",
-      "authors": "",
-      "year": "2023",
-      "journal": "",
-      "doi": "10.29313/ethos.v11i2.11397",
-      "citations": "",
-      "openalex_url": "https://openalex.org/W4390622186",
-      "abstract": "",
-      "tags": [
-        "WQC"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2023",
-        "主題：其他",
-        "方法：WQC (Wavelet Quantile Correlation)",
-        "---",
-        "DOI：10.29313/ethos.v11i2.11397"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：WQC (Wavelet Quantile Correlation)",
-          "evidence": "WQC (Wavelet Quantile Correlation)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    TrainingonMakin[\"📄 Training on Making HOTS Questions with WQC Applica\"]\n    style TrainingonMakin fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法WQC[\"💡 研究方法：WQC (Wavelet Quantile Correlation)\"]\n    style vp0研究方法WQC fill:#fef3c7,stroke:#d97706\n    TrainingonMakin --> vp0研究方法WQC\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    TrainingonMakin --> vp1研究主題其他\n    vp0研究方法WQC --- vp1研究主題其他"
-    },
-    {
-      "id": "qvar-2026-07-03-W4287637990",
-      "title": "VER~! Every Time I Die (2020) Película Completa HD",
-      "search_date": "2026-07-03",
-      "authors": "",
-      "year": "2020",
-      "journal": "",
-      "doi": "10.5281/zenodo.4098972",
-      "citations": "",
-      "openalex_url": "https://openalex.org/W4287637990",
-      "abstract": "",
-      "tags": [
-        "QVAR"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2020",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：10.5281/zenodo.4098972"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    VEREveryTimeID[\"📄 VER~! Every Time I Die (2020) Película Completa HD\"]\n    style VEREveryTimeID fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    VEREveryTimeID --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    VEREveryTimeID --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
-    },
-    {
-      "id": "qvar-2026-07-03-W4287633318",
-      "title": "[[VOIR]] Une jeune femme pleine de promesses (2020) Film Complet Streaming VF",
-      "search_date": "2026-07-03",
-      "authors": "",
-      "year": "2020",
-      "journal": "",
-      "doi": "10.5281/zenodo.4125493",
-      "citations": "",
-      "openalex_url": "https://openalex.org/W4287633318",
-      "abstract": "",
-      "tags": [
-        "QVAR"
-      ],
-      "topics": [
-        "其他"
-      ],
-      "type": "search",
-      "notes": [
-        "年份：2020",
-        "主題：其他",
-        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-        "---",
-        "DOI：10.5281/zenodo.4125493"
-      ],
-      "viewpoints": [
-        {
-          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
-          "confidence": "mid",
-          "source": "方法",
-          "connections": []
-        },
-        {
-          "claim": "研究主題：其他",
-          "evidence": "其他",
-          "confidence": "mid",
-          "source": "主題",
-          "connections": []
-        }
-      ],
-      "diagram": "graph TD\n    VOIRUnejeunef[\"📄 [[VOIR]] Une jeune femme pleine de promesses (2020\"]\n    style VOIRUnejeunef fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    VOIRUnejeunef --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    VOIRUnejeunef --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
+      "id": "upload-2026-07-06-ec9ed93a"
     },
     {
       "title": "The Mediating Role of Globalization in the Nexus Between CO₂ Emissions, GHGs, and Economic Growth",
