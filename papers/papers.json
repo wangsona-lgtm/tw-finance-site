@@ -1,6 +1,6 @@
 {
   "total": 151,
-  "updated": "2026-10-15 20:34:54",
+  "updated": "2026-10-16 20:30:03",
   "topics": [
     "AI/科技",
     "其他",
@@ -1924,7 +1924,30 @@
         "其他"
       ],
       "type": "search",
-      "notes": []
+      "notes": [
+        "年份：2026",
+        "主題：其他",
+        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
+        "---",
+        "DOI：10.5281/zenodo.20758576"
+      ],
+      "viewpoints": [
+        {
+          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
+          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
+          "confidence": "mid",
+          "source": "方法",
+          "connections": []
+        },
+        {
+          "claim": "研究主題：其他",
+          "evidence": "其他",
+          "confidence": "mid",
+          "source": "主題",
+          "connections": []
+        }
+      ],
+      "diagram": "graph TD\n    QVARZenodo資料集軟體[\"📄 QVAR（Zenodo 資料集/軟體，標題僅 \"QVAR\"）\"]\n    style QVARZenodo資料集軟體 fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QVARZenodo資料集軟體 --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    QVARZenodo資料集軟體 --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
     },
     {
       "id": "qvar-2026-09-25-W7165403223",
@@ -1944,7 +1967,30 @@
         "其他"
       ],
       "type": "search",
-      "notes": []
+      "notes": [
+        "年份：2026",
+        "主題：其他",
+        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
+        "---",
+        "DOI：10.5281/zenodo.20758577"
+      ],
+      "viewpoints": [
+        {
+          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
+          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
+          "confidence": "mid",
+          "source": "方法",
+          "connections": []
+        },
+        {
+          "claim": "研究主題：其他",
+          "evidence": "其他",
+          "confidence": "mid",
+          "source": "主題",
+          "connections": []
+        }
+      ],
+      "diagram": "graph TD\n    QVARZenodo資料集軟體[\"📄 QVAR（Zenodo 資料集/軟體，標題僅 \"QVAR\"）\"]\n    style QVARZenodo資料集軟體 fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    QVARZenodo資料集軟體 --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    QVARZenodo資料集軟體 --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
     },
     {
       "id": "qvar-2026-09-25-W7131356773",
@@ -2845,7 +2891,30 @@
         "宏觀總體"
       ],
       "type": "search",
-      "notes": []
+      "notes": [
+        "年份：2026",
+        "主題：地緣政治/國防、宏觀總體",
+        "方法：QARDL (Quantile Autoregressive Distributed Lag) + ARDL (Autoregressive Distributed Lag)",
+        "---",
+        "DOI：[10.5281/zenodo.20680994](https://doi.org/10.5281/zenodo.20680994)"
+      ],
+      "viewpoints": [
+        {
+          "claim": "研究方法：QARDL (Quantile Autoregressive Distributed Lag) + ARDL (Autoregressive Distribut",
+          "evidence": "QARDL (Quantile Autoregressive Distributed Lag) + ARDL (Autoregressive Distributed Lag)",
+          "confidence": "mid",
+          "source": "方法",
+          "connections": []
+        },
+        {
+          "claim": "研究主題：地緣政治/國防、宏觀總體",
+          "evidence": "地緣政治/國防、宏觀總體",
+          "confidence": "mid",
+          "source": "主題",
+          "connections": []
+        }
+      ],
+      "diagram": "graph TD\n    GeopoliticalRis[\"📄 Geopolitical Risk, Energy-Route Disruptions, and F\"]\n    style GeopoliticalRis fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QARDL[\"💡 研究方法：QARDL (Quantile Autoregressive Dist\"]\n    style vp0研究方法QARDL fill:#fef3c7,stroke:#d97706\n    GeopoliticalRis --> vp0研究方法QARDL\n    vp1研究主題地緣政治[\"💡 研究主題：地緣政治/國防、宏觀總體\"]\n    style vp1研究主題地緣政治 fill:#fef3c7,stroke:#d97706\n    GeopoliticalRis --> vp1研究主題地緣政治\n    vp0研究方法QARDL --- vp1研究主題地緣政治"
     },
     {
       "id": "qvar-2026-07-20-[W7164149221](https://openalex.org/W7164149221)",
@@ -2996,7 +3065,30 @@
         "其他"
       ],
       "type": "search",
-      "notes": []
+      "notes": [
+        "年份：How climate risk impacts interaction among green assets under varying market states: Evidence from a time-frequency QVAR model integrating an autoencoder",
+        "主題：其他",
+        "方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
+        "---",
+        "DOI：2026"
+      ],
+      "viewpoints": [
+        {
+          "claim": "研究方法：QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
+          "evidence": "QVAR (Quantile Vector Autoregression) + VAR (Vector Autoregression)",
+          "confidence": "mid",
+          "source": "方法",
+          "connections": []
+        },
+        {
+          "claim": "研究主題：其他",
+          "evidence": "其他",
+          "confidence": "mid",
+          "source": "主題",
+          "connections": []
+        }
+      ],
+      "diagram": "graph TD\n    var[\"📄 ✅\"]\n    style var fill:#2563eb,color:#fff,font-weight:bold\n    vp0研究方法QVAR[\"💡 研究方法：QVAR (Quantile Vector Autoregressio\"]\n    style vp0研究方法QVAR fill:#fef3c7,stroke:#d97706\n    var --> vp0研究方法QVAR\n    vp1研究主題其他[\"💡 研究主題：其他\"]\n    style vp1研究主題其他 fill:#fef3c7,stroke:#d97706\n    var --> vp1研究主題其他\n    vp0研究方法QVAR --- vp1研究主題其他"
     },
     {
       "title": "Volatility and co-movement between ESG and non-ESG futures and uncertainty indices: Evidence from wavelet coherence and GARCH models",
