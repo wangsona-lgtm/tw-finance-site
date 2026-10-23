@@ -348,15 +348,15 @@
     "futures_total_net": "-780,765"
   },
   {
-    "date": "2026-10-20",
+    "date": "2026-10-22",
     "inst": {
-      "foreign": -79539692396,
-      "investment_trust": 18758508430,
-      "dealer_total": -35579304232
+      "foreign": -81582101452,
+      "investment_trust": 9492200518,
+      "dealer_total": -27377364607
     },
-    "pc_ratio": 129.06,
-    "pc_oi_ratio": 66.17,
-    "futures_foreign_net": "-547,208",
-    "futures_total_net": "-762,050"
+    "pc_ratio": 86.21,
+    "pc_oi_ratio": 66.18,
+    "futures_foreign_net": "-491,029",
+    "futures_total_net": "-655,614"
   }
 ]
