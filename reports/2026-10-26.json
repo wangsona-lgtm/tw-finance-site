@@ -1,8 +1,8 @@
 {
   "date": "2026-10-26",
   "type": "daily-reports",
-  "source": "zerohedge",
-  "title": "ZeroHedge 每日導讀 — 10月26日（一）",
+  "source": "zerohedge+fed-watch",
+  "title": "ZeroHedge 每日導讀 + Fed Watch — 10月26日（一）",
   "sections": [
     {
       "title": "油價風險溢價壓抑循環股，科技在大跌後短暫回穩——Newsquawk 週末市場彙整",
@@ -30,7 +30,14 @@
       "timestamp": "2026-10-26",
       "images": [],
       "premium": false
-    }
+    },
+    {"title":"Fed Watch｜今日重點摘要","icon":"🏛️","content":"【已確認事實】本報擷取於 2026-10-26 07:20 台北（10/25 19:20 EDT）。Fed.gov News & Events 最後更新仍為 10/16；前 24 小時未見新的 FOMC 聲明、目標利率行動、SEP、會議紀要、具貨幣政策內容的官員演說或國會證詞。最近正式行動仍是 9/16 以 12–0 票升息 25bp，目標區間為 3.75%–4.00%。下一次例會為 10/27–28，10/28 14:00 EDT 決策、14:30 記者會。\n\n【來源觀點】CME FedWatch 方法頁可核驗，但 live iframe 未輸出可保存即時表。Kiplinger（10/23）二手引述 10/28 維持機率 88%；GMT EIGHT（10/26）二手引述維持 32.5%、升息 67.5%。兩者相互衝突，均不是 CME 原始可保存讀值。\n\n【本報分析】會前官方訊息真空使焦點留在 10/28 文件；不宜以分歧的二手機率作政策結論。"},
+    {"title":"Fed Watch｜即時市場儀表板","icon":"📊","type":"table","headers":["項目／指定代號","可核驗快照（市場時間）","日變動","來源／限制"],"rows":[["3 個月殖利率（Yahoo ^IRX）","4.032%（10/23 14:59:56 EDT）","-0.043 個百分點（-1.055%）","Yahoo Finance chart API；本次擷取時最近現券收盤為 10/23。"],["5 年殖利率（Yahoo ^FVX）","4.805%（10/23 14:59:56 EDT）","-0.124 個百分點（-2.516%）","^FVX 為 5 年期，非 2 年期；Yahoo Finance chart API。"],["10 年殖利率（Yahoo ^TNX）","4.988%（10/23 14:59:56 EDT）","-0.148 個百分點（-2.882%）","Yahoo Finance chart API。"],["30 年殖利率（Yahoo ^TYX）","5.315%（10/23 14:59:56 EDT）","-0.157 個百分點（-2.869%）","Yahoo Finance chart API。"],["2 年殖利率（補充）","4.686%（10/23 美股收盤）","+5.1bp","Kiplinger；非 Yahoo 指定代號，僅作補充。"],["美元指數（Yahoo DX-Y.NYB）","101.752（10/23 16:59:59 EDT）","+0.022（+0.022%）","Yahoo Finance chart API。"],["VIX（Yahoo ^VIX）","19.45（10/23 16:15:01 EDT）","+1.01（+5.477%）","Yahoo Finance chart API。"],["聯邦基金期貨（Yahoo ZQ=F）","96.095（10/25 18:51:25 EDT）","-0.020（-0.021%）","Yahoo Finance chart API；連續合約，不單獨換算 FedWatch 機率。"],["當期聯邦基金期貨（Yahoo ZQX26.CBT）","96.095（10/25 18:51:25 EDT）","+0.015（+0.016%）","Yahoo Finance chart API；11 月合約，僅作方向觀察。"],["SOFR 期貨（Yahoo SR1=F）","96.080（10/25 18:40:31 EDT）","+0.005（+0.005%）","Yahoo Finance chart API；不換算精確會議機率。"],["SOFR 期貨（Yahoo SR3=F）","95.810（10/25 19:10:05 EDT）","-0.010（-0.010%）","Yahoo Finance chart API；不換算精確會議機率。"]],"analysis":"Yahoo 指定代號於 10/26 台北擷取；殖利率指數最新時間為 10/23，ZQ／SOFR 已反映 10/25 晚間交易。日變動為 API 回傳的前一收盤比較。期貨缺完整合約月、到期與日數權重，故不反推 FedWatch 機率。"},
+    {"title":"Fed Watch｜利率路徑與 FedWatch","icon":"📈","content":"【原始方法來源】CME 說明 FedWatch 以 30-Day Fed Funds（ZQ）期貨價格推導目標利率變動機率，CME 是優先原始來源。\n\n【可用性與機率】CME live iframe 無可保存機率表。Kiplinger（10/23，二手）稱 88% 維持；Econ Data Tools（10/23，引用 Investing.com 監測，二手）稱 92% 維持／8% 升息；GMT EIGHT（10/26，二手、無擷取時間）稱 32.5% 維持／67.5% 升息。\n\n【交叉檢核】ZQ=F、ZQX26.CBT、SR1=F、SR3=F 方向不一致，且高度相關又缺日數權重。沒有兩個獨立、可靠、同向訊號，不能稱機率已交叉驗證；二手來源明確分歧。"},
+    {"title":"Fed Watch｜官員立場追蹤（2026 實際投票委員）","icon":"🗣️","type":"table","headers":["委員／職位","投票權","立場標示","最近可核驗談話／異議／投票（日期）","來源連結與判定理由"],"rows":[["Kevin Warsh／理事會主席、FOMC 主席","有","鷹派／資料依賴（未更新）","10/16：AP 報導稱不預斷年內會議；9/16 支持 12–0 升息","https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；二手談話不改變已發生投票。"],["John C. Williams／紐約聯儲總裁、副主席","有","鷹派（未更新）","9/16：12–0 上調 25bp","https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；常任投票席位。"],["Michael S. Barr／理事","有","鷹派（未更新）","9/16：支持升息","https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無新利率指引。"],["Michelle W. Bowman／理事、副主席（監管）","有","鷹派（未更新）","10/14：監管現代化演說，未見利率指引","https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm；不作新政策訊號。"],["Lisa D. Cook／理事","有","鷹派（未更新）","9/16：支持升息","https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無本次更新。"],["Beth M. Hammack／克里夫蘭聯儲總裁","有","鷹派（未更新）","9/16：12–0 上調 25bp","https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無新個人證據。"],["Philip N. Jefferson／理事、副主席","有","鷹派／資料依賴（未更新）","10/1：調整取決於資料、前景與風險平衡","https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm；未承諾下一步。"],["Neel Kashkari／明尼阿波利斯聯儲總裁","有","鷹派（未更新）","9/16：12–0 上調；7/29 曾主張升息 25bp","https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"],["Lorie K. Logan／達拉斯聯儲總裁","有","鷹派（未更新）","9/16：12–0 上調；7/29 曾主張升息 25bp","https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm；異議與後續投票偏緊縮。"],["Anna Paulson／費城聯儲總裁","有","鷹派（未更新）","9/16：12–0 上調 25bp","https://www.federalreserve.gov/monetarypolicy/fomc.htm；2026 輪值，無新證據。"],["Jerome H. Powell／理事","有","鷹派（未更新）","9/16：12–0 上調 25bp","https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm；無新個人證據。"],["Christopher J. Waller／理事","有","鷹派／資料依賴（未更新）","10/8：資料如預期仍可能需升息，但未必要連續會議","https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm；保留時點彈性。"]],"analysis":"名單採 Fed.gov 2026 實際投票委員；24 小時官方查核沒有新談話、異議或票決，故保留判定並標示未更新。個人立場不等於委員會決定；最近正式共識為 9/16 的 12–0 升息。"},
+    {"title":"Fed Watch｜市場影響","icon":"🌐","content":"【已確認事實】AP 記錄 10/23 收盤：S&P 500 跌 0.5%、道瓊跌 1.2%、Nasdaq 跌 0.2%，並指向油價上漲造成壓力，10 年殖利率升至 4.99%。Kiplinger 報導 2 年、10 年、30 年殖利率分別為 4.686%、5.001%、5.329%，日增 5.1bp、4.8bp、4.2bp。\n\n【來源觀點】Kiplinger 認為 10 月會議偏向維持；AP 將本週焦點置於通膨、經濟與 FOMC。這些不能證明 10/23 市場變動由單一 Fed 新聞造成。\n\n【本報分析】美債、美元與美股同受油價、地緣政治、財報與會前利率預期影響。黃金與主要風險資產沒有可核驗、可歸因於 Fed 的即時變動，故不作事後因果；若 10/28 措辭偏鷹，短端利率、美元與高估值／風險資產通常可能承壓，反之亦然。此為情境分析。"},
+    {"title":"Fed Watch｜未來重要日期","icon":"📅","type":"table","headers":["日期／時間（美東；台北）","事件","官方來源與意義"],"rows":[["10/27–28；台北 10/27–29","FOMC 例會","Federal Reserve；10/28 14:00 EDT 決策、14:30 記者會。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"],["10/29 08:30 EDT；10/29 20:30","第三季 GDP（初值）及 9 月 PCE","BEA；PCE 通膨。https://www.bea.gov/news/schedule/full"],["10/30 08:30 EDT；10/30 20:30","第三季 Employment Cost Index","BLS。https://www.bls.gov/schedule/2026/"],["11/6 08:30 EST；11/6 21:30","10 月 Employment Situation／NFP","BLS。https://www.bls.gov/schedule/2026/"],["11/10 08:30 EST；11/10 21:30","10 月 CPI","BLS。https://www.bls.gov/schedule/2026/"],["11/13 08:30 EST；11/13 21:30","10 月 PPI","BLS。https://www.bls.gov/schedule/2026/"],["12/8–9；台北 12/8–10","FOMC 例會與 SEP","Federal Reserve。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"]],"analysis":"美東於 11/1 改為 EST，故 11 月台北較美東快 13 小時。"},
+    {"title":"Fed Watch｜資料來源與取用規則","icon":"🔗","type":"news","items":[{"headline":"Federal Reserve｜政策、成員與日程","content":"官方文件優先；News & Events 最後更新為 10/16，10/27–28 為下次會議。","url":"https://www.federalreserve.gov/monetarypolicy/fomc.htm","tags":["官方","政策優先"]},{"headline":"BLS／BEA｜發布日程","content":"CPI、PPI、NFP、ECI 與 PCE 採官方日程。","url":"https://www.bls.gov/schedule/2026/","tags":["官方","經濟數據"]},{"headline":"CME Group｜FedWatch 方法","content":"以 30-Day Fed Funds futures 推導；live iframe 無可保存機率表。","url":"https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html","tags":["方法","原始優先"]},{"headline":"Yahoo Finance｜指定行情代號","content":"^IRX（3M）、^FVX（5Y）、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F／ZQX26.CBT、SR1=F、SR3=F。","url":"https://finance.yahoo.com/","tags":["行情","指定代號"]},{"headline":"Kiplinger／GMT EIGHT｜FedWatch 二手引用","content":"分別報 88% 維持與 67.5% 升息；彼此分歧，未作交叉驗證。","url":"https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar","tags":["二手引用","分歧"]}]}
   ],
   "stats": {
     "total": 3,
@@ -38,11 +45,15 @@
     "market": 3,
     "geopolitics": 0,
     "withImages": 0,
-    "premarket": 0
+    "premarket": 0,
+    "fedWatch": 1
   },
   "keyThemes": [
     "中東風險溢價與較高油價，可能透過通膨與殖利率壓抑循環類股並支撐能源股。",
     "AI 算力資本支出、資料中心融資與信用利差是同一條風險鏈，仍需以公司財報與新券發行驗證。",
-    "巴西決選可能放大 BRL、利率與股票市場波動；官方結果與財政政策訊號比選前民調更關鍵。"
+    "巴西決選可能放大 BRL、利率與股票市場波動；官方結果與財政政策訊號比選前民調更關鍵。",
+    "官方前 24 小時未出現新的 FOMC 政策文件或投票；焦點為 10/28 決策。",
+    "Yahoo 現券殖利率快照為 10/23，ZQ／SOFR 為 10/25 晚間；不以期貨換算精確機率。",
+    "CME 原始表不可保存；二手來源機率分歧，未形成交叉驗證。"
   ]
 }
