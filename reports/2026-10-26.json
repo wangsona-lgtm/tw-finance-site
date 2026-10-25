@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-26",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 10月26日（一）",
+  "sections": [
+    {
+      "title": "油價風險溢價壓抑循環股，科技在大跌後短暫回穩——Newsquawk 週末市場彙整",
+      "category": "market",
+      "summary": "【原文報導】Newsquawk 的週末彙整稱，美股週五多數收低：較高的石油價格與地緣政治風險推升殖利率、壓抑循環類股，但能源股受惠；科技股則在前一日大跌後小幅回升。文中並列出 S&P 500、道瓊與 Russell 2000 的下跌，以及中東衝突、紅海／波斯灣能源與運輸設施風險等消息。\n\n【來源觀點】這是 Newsquawk 對單日市況與新聞流的彙整，不是獨立的因果證明。\n\n【本報分析】若能源價格持續上行，通膨預期與長端殖利率可能再承壓；能源供應商相對受惠，但高估值成長股與對成本敏感產業的折現率／利潤壓力會上升。\n\n【可能影響】原油與能源股、美國長債、美元、航空運輸與非必需消費類股。\n\n【值得留意】追蹤 Brent／柴油價格、航運保費與中東相關官方聲明；週末的衝突消息仍可能在開盤後被修正或否認。",
+      "url": "https://www.zerohedge.com/markets/weekend-news-roundup-newsquawk-daily-asia-pac-market-open-20",
+      "timestamp": "2026-10-26",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "柴油、AI 資本支出與信用利差：市場的兩個壓力測試",
+      "category": "market",
+      "summary": "【原文報導】Academy Securities 的 Peter Tchir 透過 ZeroHedge 發文指出，近期能源與柴油的緊張、航運成本，以及 AI／算力建設的融資需求，正同時成為市場焦點；他提到近期信用利差擴大仍偏向特定產業，尚非全面性壓力。\n\n【來源觀點】「柴油與供應鏈短缺將比原油更棘手」、「算力支出放緩可能讓信用利差更快擴大」是作者的市場判讀，並非已發生的結果或預測保證。\n\n【本報分析】這篇文章的價值在於把商品通膨與 AI 融資風險放在同一張風險地圖：前者可能抬高成本與通膨，後者若遇到供給過剩或資本支出降速，則可能先反映在資料中心、半導體與高收益信用。\n\n【可能影響】柴油／LNG／航運、投資級與高收益信用、AI 基建、半導體及長天期美債。\n\n【值得留意】觀察信用指數、AI 基建公司債的新發行與財報資本支出指引；不宜把作者對供應或違約風險的估算當成已核實事實。",
+      "url": "https://www.zerohedge.com/markets/stocks-credit-cheap-getting-cheaper-energy-not-so-much",
+      "timestamp": "2026-10-26",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "巴西總統決選逼近：選情與匯率、利率交易的雙向風險",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 報導巴西總統決選投票，文中引述民調顯示 Flávio Bolsonaro 與現任總統 Lula 的差距極小；同時轉述 Goldman Sachs 對不同結果下巴西里亞爾與利率市場可能反應的情境。\n\n【來源觀點】Goldman 的匯率區間與「Bolsonaro trade」描述是券商與市場參與者的情境分析，不是選舉結果或價格保證；民調與預測市場亦有誤差。\n\n【本報分析】巴西資產短期可能因選舉結果、財政政策預期與風險偏好共同波動。即使結果落在預期範圍，匯率走勢仍會受美元、商品價格與全球利率環境影響。\n\n【可能影響】巴西里亞爾（BRL）、巴西國債、EWZ 等巴西股票曝險、拉丁美洲資產與新興市場風險偏好。\n\n【值得留意】等待官方計票與選後政策訊號，特別是財政紀律、央行獨立性與預算方向；避免把單一民調或預測市場機率視為定論。",
+      "url": "https://www.zerohedge.com/political/brazil-runoff-enters-final-hour-left-right-showdown-could-reshape-latin-americas",
+      "timestamp": "2026-10-26",
+      "images": [],
+      "premium": false
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "premium": 0,
+    "market": 3,
+    "geopolitics": 0,
+    "withImages": 0,
+    "premarket": 0
+  },
+  "keyThemes": [
+    "中東風險溢價與較高油價，可能透過通膨與殖利率壓抑循環類股並支撐能源股。",
+    "AI 算力資本支出、資料中心融資與信用利差是同一條風險鏈，仍需以公司財報與新券發行驗證。",
+    "巴西決選可能放大 BRL、利率與股票市場波動；官方結果與財政政策訊號比選前民調更關鍵。"
+  ]
+}
