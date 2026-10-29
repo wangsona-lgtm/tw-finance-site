@@ -1,8 +1,8 @@
 {
   "date": "2026-10-30",
   "type": "daily-reports",
-  "source": "fed-watch",
-  "title": "Fed Watch 聯準會動向 — 10月30日（五）",
+  "source": "fed-watch+zerohedge",
+  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 10月30日（五）",
   "sections": [
     {
       "title": "Fed Watch｜今日重點摘要",
@@ -86,12 +86,41 @@
         {"headline": "CME Group｜FedWatch 方法", "content": "FedWatch 以 30-Day Fed Funds futures 推導機率；本輪即時表無法保存。SessionOpen／Axios 的機率均明確標為替代模型或二手引用。", "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html", "tags": ["方法", "限制揭露"]},
         {"headline": "BLS／BEA／Federal Reserve｜官方日程", "content": "ECI、CPI、PPI、NFP 採 BLS；PCE 採 BEA；FOMC 與 SEP 採 Fed 行事曆。", "url": "https://www.bls.gov/schedule/2026/home.htm", "tags": ["官方", "日程"]}
       ]
+    },
+    {
+      "title": "荷姆茲三艘油輪起火：航道風險再度升溫",
+      "category": "geopolitics",
+      "summary": "【原文報導】ZeroHedge 報導，伊朗革命衛隊稱過去 24 小時內有三艘油輪在荷姆茲海峽起火；英國海事貿易行動中心（UKMTO）則確認至少一艘船起火、另一艘遇險。文章同時轉述伊朗與美方對掃雷狀態的相互矛盾說法，以及仍在進行的外交訊息。\n\n【來源觀點】文內對航道通行、軍事行動與談判走向的部分敘述，含有伊朗、媒體與市場評論者的說法，尚非完整獨立核實。\n\n【本報分析】荷姆茲是原油與 LNG 運輸的關鍵瓶頸；即使事故規模與責任尚待確認，船舶受損或繞航的消息本身即可提高短期保費、運費與供應風險溢價。\n\n【可能影響】Brent／WTI、柴油與航運燃料、油輪運價與保險、能源股、航空與運輸類股。\n\n【值得留意】優先追蹤 UKMTO、船舶追蹤與各國官方聲明；避免把任一方戰時聲稱或初期影像直接視為已證實的供給中斷。",
+      "url": "https://www.zerohedge.com/geopolitical/irgc-says-3-tankers-fire-hormuz-challenges-us-narrative-strait-demined",
+      "timestamp": "2026-10-30",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "9 月 PCE 升溫、儲蓄率走低：利率敏感資產的再定價風險",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 引述當日公布數據稱，美國 9 月整體 PCE 物價指數月增 0.5%、年增 3.6%，核心 PCE 月增 0.3%、年增 3.1%；文中亦提及個人所得與消費增幅低於預期、儲蓄率下降。\n\n【來源觀點】「通膨已變得根深蒂固」及其對聯準會決策的強烈結論，是文章作者的詮釋，不等同於官方政策訊號。\n\n【本報分析】整體 PCE 的能源敏感度較高，而核心指標與收入／消費組合需持續追蹤。若後續數據仍偏熱，市場對較高利率維持更久的定價可能壓抑長久期股票與債券；單月數據不足以確定趨勢。\n\n【可能影響】美國短中期公債殖利率、美元、成長股／REIT、黃金與消費相關類股。\n\n【值得留意】對照官方 BEA 詳表、後續 ECI、就業與 CPI；勿將能源推升的單月整體 PCE 直接等同於所有核心通膨趨勢。",
+      "url": "https://www.zerohedge.com/markets/feds-favorite-inflation-indicator-surges-september-soaring-energy-drags-americans-savings",
+      "timestamp": "2026-10-30",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "Amazon 自由現金流轉負與資本支出：AI 投資的融資壓力浮現",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 報導 Amazon 第三季自由現金流為負 335 億美元，並稱季度資本支出大增、AWS 成長仍快但低於文中所稱市場預期；文章亦提到公司增加長期債務與盤後股價下跌。\n\n【來源觀點】作者把這組結果形容為資本支出與融資壓力的警訊；其對投資人預期與估值影響的措辭屬評論，應與公司正式財報及電話會議逐項比對。\n\n【本報分析】這突顯 AI／雲端基建競賽的關鍵不只營收成長，還包括資本支出的可持續性、負債成本與現金轉換。若大型雲端業者同步加碼融資，投資級信用、新券供給與相關供應鏈估值都可能更敏感。\n\n【可能影響】Amazon、雲端與 AI 基建股、資料中心設備、投資級公司債與美國科技股風險偏好。\n\n【值得留意】核對 Amazon 正式財報中的資本支出定義、未來指引與債券發行條件；單季現金流波動不必然代表長期獲利能力惡化。",
+      "url": "https://www.zerohedge.com/markets/amazon-craters-cash-burn-explodes",
+      "timestamp": "2026-10-30",
+      "images": [],
+      "premium": false
     }
   ],
-  "stats": {"total": 0, "premium": 0, "market": 0, "geopolitics": 0, "withImages": 0, "premarket": 0, "fedWatch": 1},
+  "stats": {"total": 3, "premium": 0, "market": 2, "geopolitics": 1, "withImages": 0, "premarket": 0, "fedWatch": 1},
   "keyThemes": [
     "BEA 新公布：第三季 GDP 年化成長 3.4%，9 月 PCE 年增 3.6%、核心年增 3.1%。",
     "Yahoo 指定行情顯示 5 年至 30 年殖利率走低、美元走弱、VIX 上升；所有數值均附市場時間與來源。",
-    "12 月升息 84% 僅為 SessionOpen 的二手計算；CME 原始即時表無可保存快照，且期貨方向分歧。"
+    "12 月升息 84% 僅為 SessionOpen 的二手計算；CME 原始即時表無可保存快照，且期貨方向分歧。",
+    "荷姆茲船舶事故與相互矛盾的戰時聲明，將油價、運費與保險風險溢價維持在高敏感狀態。",
+    "偏熱 PCE 與大型雲端業者的資本支出／融資壓力，使利率與 AI 估值的連動值得持續追蹤。"
   ]
 }
