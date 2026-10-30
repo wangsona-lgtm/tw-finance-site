@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-31",
+  "type": "daily-reports",
+  "source": "fed-watch",
+  "title": "Fed Watch 聯準會動向 — 10月31日（六）",
+  "sections": [
+    {
+      "title": "Fed Watch｜今日重點摘要",
+      "icon": "🏛️",
+      "content": "【已確認事實】本報擷取於 2026-10-31 06:01 台北（10/30 18:01 EDT）。過去 24 小時的新增官方經濟資料為 BLS 於 10/30 08:30 EDT 公布的第三季 Employment Cost Index（資料截至 9 月）：民間與政府合計的勞工總報酬季增 0.8%（前季 0.9%）、薪資季增 0.7%、福利季增 0.9%；總報酬年增 3.4%、薪資年增 3.1%、福利年增 3.9%。Fed.gov 未發布 10/28 FOMC 後新的利率決定、政策聲明、會議紀要、SEP、政策演說或國會證詞；10/28 以 10–2 維持 3.75%–4.00% 仍是最新政策基準。\n\n【來源觀點】SessionOpen（10/30 收盤，二手模型）以 CME 30-Day Fed Funds 期貨日終收盤及 FRED EFFR 計算 12/8–9 會議為維持 24.0%、升息 25bp 76.0%；其隱含會後利率為 4.07%。CondorEdge 的 10/30 06:13 UTC 搜尋快照則報約 78% 升息。兩者均非可保存的 CME 原始即時概率表，且均以同一類期貨資料建模，不能視為兩個獨立原始訊號。\n\n【本報分析】ECI 季增自 0.9% 放緩至 0.8%，但年增 3.4%且福利年增 3.9%，對服務通膨與勞動成本仍具資訊價值。單一季度成本資料不能決定 12 月結果；其需與 11 月就業、CPI、PPI 及 PCE 一起判讀。"
+    },
+    {
+      "title": "Fed Watch｜即時市場儀表板",
+      "icon": "📊",
+      "type": "table",
+      "headers": ["項目／指定代號", "可核驗快照（市場時間）", "日變動", "來源／限制"],
+      "rows": [
+        ["3 個月殖利率（Yahoo ^IRX）", "3.973%（10/30 15:59 CDT）", "-2.5bp", "Yahoo Finance chart API；10/31 06:01 台北擷取。"],
+        ["5 年殖利率（Yahoo ^FVX）", "4.721%（10/30 15:59 CDT）", "-8.0bp", "^FVX 為 5 年期，非 2 年期；Yahoo Finance chart API。"],
+        ["10 年殖利率（Yahoo ^TNX）", "4.929%（10/30 15:59 CDT）", "-6.0bp", "Yahoo Finance chart API；指數數值以百分比表示。"],
+        ["30 年殖利率（Yahoo ^TYX）", "5.309%（10/30 15:59 CDT）", "-2.0bp", "Yahoo Finance chart API；指數數值以百分比表示。"],
+        ["2 年殖利率（補充）", "無可核驗快照", "無可核驗日變動", "未取得可核對的 10/30 美國財政部日終列；不以 ^FVX 代替。"],
+        ["美元指數（Yahoo DX-Y.NYB）", "101.964（10/30 17:59 EDT）", "-0.073（-0.07%）", "Yahoo Finance chart API。"],
+        ["VIX（Yahoo ^VIX）", "19.42（10/30 16:15 CDT）", "+2.22（+12.91%）", "Yahoo Finance chart API。"],
+        ["聯邦基金期貨（Yahoo ZQ=F）", "96.120（10/30 17:58 EDT）", "0.000", "Yahoo Finance chart API；連續代號，不換算為機率。"],
+        ["當期聯邦基金期貨（Yahoo ZQZ26.CBT）", "95.990（10/30 17:58 EDT）", "+0.010", "Yahoo Finance chart API；12 月合約，仍不以單一價格推導 FedWatch 機率。"],
+        ["SOFR 期貨（Yahoo SR1=F）", "96.100（10/30 17:59 EDT）", "-0.005", "Yahoo Finance chart API；近月連續合約。"],
+        ["SOFR 期貨（Yahoo SR3=F）", "95.855（10/30 17:59 EDT）", "+0.020", "Yahoo Finance chart API；連續合約。"]
+      ],
+      "analysis": "Yahoo 價格以本輪擷取之最近有效市場快照與其前一交易日比較；現貨殖利率、美元、波動率與期貨交易時間不同。2 年期僅在有獨立可靠來源時另列，本輪未填估計值。"
+    },
+    {
+      "title": "Fed Watch｜利率路徑與 FedWatch",
+      "icon": "📈",
+      "content": "【原始方法來源】CME FedWatch 說明以 30-Day Fed Funds（ZQ）期貨價格推導目標利率變動機率；CME 是方法與即時機率的優先來源。\n\n【可用性與機率】本次 CME 公開方法頁與工具頁可核驗，但嵌入的即時機率表沒有提供可保存快照。SessionOpen 於 10/30 收盤發布的二手模型為：12/8–9 維持 24.0%、升息 25bp 76.0%，並明示使用 CME 日終收盤與 FRED EFFR；CondorEdge 在 10/30 06:13 UTC 的二手快照報約 78% 升息。兩者是替代模型／二手引用，並非 CME 原始即時表。\n\n【交叉檢核】ZQ=F 無日變動、ZQZ26.CBT 上漲 0.010（單看價格代表較低隱含平均利率）、SR1 下跌 0.005、SR3 上漲 0.020；方向不一致，且合約平均日數、到期與會議月配置未完整揭示。故本報不把 ZQ／SOFR 轉換成精確 FedWatch 機率，也不聲稱有兩個獨立訊號的交叉驗證；僅能報告二手模型目前都指向 12 月再升息為較高機率情境。"
+    },
+    {
+      "title": "Fed Watch｜官員立場追蹤（2026 實際投票委員）",
+      "icon": "🗣️",
+      "type": "table",
+      "headers": ["委員／職位", "投票權", "立場標示", "最近可核驗談話／異議／投票（日期）", "來源連結與判定理由"],
+      "rows": [
+        ["Kevin Warsh／理事會主席、FOMC 主席", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持 3.75%–4.00%（10–2）", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；本輪無新個人政策證據。"],
+        ["John C. Williams／紐約聯儲總裁、副主席", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；常任投票席位。"],
+        ["Michael S. Barr／理事", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；本輪無新個人談話。"],
+        ["Michelle W. Bowman／理事、副主席（監管）", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；本輪無新利率訊號。"],
+        ["Lisa D. Cook／理事", "有", "鷹派（轉強，未更新）", "10/28：異議，主張升息 25bp", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；正式異議優先於談話。"],
+        ["Beth M. Hammack／克里夫蘭聯儲總裁", "有", "鷹派（異議，未更新）", "10/28：異議，主張升息 25bp", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；正式異議直接支持判定。"],
+        ["Philip N. Jefferson／理事、副主席", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；無本輪個人更新。"],
+        ["Neel Kashkari／明尼阿波利斯聯儲總裁", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；無本輪個人更新。"],
+        ["Lorie K. Logan／達拉斯聯儲總裁", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；無本輪個人更新。"],
+        ["Anna Paulson／費城聯儲總裁", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；2026 輪值，無本輪個人更新。"],
+        ["Jerome H. Powell／理事", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；無本輪個人更新。"],
+        ["Christopher J. Waller／理事", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；無本輪個人更新。"]
+      ],
+      "analysis": "名單採 2026 實際投票委員。最新且優先的個人證據仍是 10/28 正式票決：10 名委員支持維持，Cook 與 Hammack 異議支持升息。本輪未找到新的個別投票、異議、談話或證詞，故保留判定並標示未更新；個人標示不等於委員會下一次決定。"
+    },
+    {
+      "title": "Fed Watch｜市場影響",
+      "icon": "🌐",
+      "content": "【可核驗市場事實】10/30 收盤／盤後附近，Yahoo 指定殖利率中 3 個月、5 年、10 年、30 年分別下跌 2.5、8.0、6.0、2.0bp，美元指數跌 0.07%，VIX 升 12.91%。同一資料來源的 S&P 500、道瓊與 Nasdaq 分別跌 1.82%、1.09%、2.86%；黃金 GC=F 報 3,884.9、跌 3.63%，BTC-USD 報 76,626.23、跌 2.87%。\n\n【歸因界線】本輪沒有足以分離因果的單一權威市場反應來源。ECI、先前的 PCE 與 GDP、企業財報、能源／地緣政治及風險情緒都可能共同影響債券、美元、股市、黃金與加密資產；故不將上述同日走勢單獨歸因於 ECI 或 Fed。\n\n【情境分析】若勞動成本、通膨與需求資料持續偏強，較高利率維持更久的定價通常會壓抑長久期股票、部分風險資產與無息黃金，並可能支撐短中端殖利率與美元；若後續數據轉弱，則相反。這是條件式分析，非對 10/30 走勢的因果判定。"
+    },
+    {
+      "title": "Fed Watch｜未來重要日期",
+      "icon": "📅",
+      "type": "table",
+      "headers": ["日期／時間（美東；台北）", "事件", "官方來源與意義"],
+      "rows": [
+        ["11/6 08:30 EST；11/6 21:30", "10 月 Employment Situation／NFP", "BLS；勞動市場廣度、薪資與失業率。https://www.bls.gov/schedule/2026/home.htm"],
+        ["11/10 08:30 EST；11/10 21:30", "10 月 CPI", "BLS；消費者通膨。https://www.bls.gov/schedule/2026/home.htm"],
+        ["11/13 08:30 EST；11/13 21:30", "10 月 PPI", "BLS；生產端價格壓力。https://www.bls.gov/schedule/2026/home.htm"],
+        ["11/25 08:30 EST；11/25 21:30", "10 月個人所得、支出與 PCE", "BEA；Fed 偏好的通膨指標。https://www.bea.gov/news/schedule"],
+        ["12/8–9；台北 12/8–10", "FOMC 例會與 SEP", "Federal Reserve；下一次政策決定且含經濟預測。https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"]
+      ],
+      "analysis": "美東已於 11/1 切換為 EST，故上述 11 月台北時間較美東快 13 小時。"
+    },
+    {
+      "title": "Fed Watch｜資料來源與取用規則",
+      "icon": "🔗",
+      "type": "news",
+      "items": [
+        {"headline": "BLS｜第三季 Employment Cost Index", "content": "本輪新增官方經濟事實：總報酬季增 0.8%、年增 3.4%，薪資季增 0.7%、福利季增 0.9%。", "url": "https://www.bls.gov/news.release/archives/eci_10302026.htm", "tags": ["官方", "經濟數據優先"]},
+        {"headline": "Federal Reserve｜10/28 FOMC 聲明與實施說明", "content": "最新政策基準：10–2 維持 3.75%–4.00%，Cook 與 Hammack 主張升息；Fed.gov 永遠優先於媒體與市場定價。", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm", "tags": ["官方", "政策優先"]},
+        {"headline": "Yahoo Finance｜殖利率與市場快照", "content": "指定代號：^IRX（3M）、^FVX（5Y）、^TNX（10Y）、^TYX（30Y）、DX-Y.NYB、^VIX、ZQ=F、ZQZ26.CBT、SR1=F、SR3=F；2 年期不可核驗時不估計。", "url": "https://finance.yahoo.com/", "tags": ["行情", "可核驗快照"]},
+        {"headline": "CME Group｜FedWatch 方法與工具", "content": "FedWatch 以 30-Day Fed Funds futures 推導機率；本輪原始即時表無法保存。SessionOpen／CondorEdge 數字均明確標示為替代模型或二手引用。", "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html", "tags": ["方法", "限制揭露"]},
+        {"headline": "BLS／BEA／Federal Reserve｜官方日程", "content": "CPI、PPI、NFP 採 BLS；PCE 採 BEA；FOMC 與 SEP 採 Fed 行事曆。", "url": "https://www.bls.gov/schedule/2026/home.htm", "tags": ["官方", "日程"]}
+      ]
+    }
+  ],
+  "stats": {"total": 0, "premium": 0, "market": 0, "geopolitics": 0, "withImages": 0, "premarket": 0, "fedWatch": 1},
+  "keyThemes": [
+    "BLS 新公布第三季 ECI：總報酬季增 0.8%、年增 3.4%，薪資與福利成本仍是 12 月決策前的重要資訊。",
+    "Yahoo 指定行情顯示 3 個月至 30 年殖利率全面走低、美元微跌、VIX 大幅上升；快照均附市場時間與來源。",
+    "12 月升息 76% 為 SessionOpen 二手模型；CME 原始即時表無可保存快照，並無獨立交叉驗證。",
+    "10/30 美股、黃金與比特幣同步走弱，但沒有足夠單一來源支持把同日走勢歸因於 ECI 或 Fed。"
+  ]
+}

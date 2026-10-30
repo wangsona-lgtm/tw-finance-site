@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-31",
+    "file": "tw-finance-site/reports/2026-10-31.json",
+    "title": "Fed Watch 聯準會動向 — 10月31日（六）",
+    "dayOfWeek": "六"
+  },
+  {
     "date": "2026-10-30",
     "file": "tw-finance-site/reports/2026-10-30.json",
     "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 10月30日（五）",
