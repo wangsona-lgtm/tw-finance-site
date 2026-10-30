@@ -36,6 +36,24 @@
     "dayOfWeek": "日"
   },
   {
+    "date": "2026-10-24",
+    "file": "tw-finance-site/reports/2026-10-24.json",
+    "title": "Fed Watch 聯準會動向 — 10月24日（六）",
+    "dayOfWeek": "六"
+  },
+  {
+    "date": "2026-10-23",
+    "file": "tw-finance-site/reports/2026-10-23.json",
+    "title": "Fed Watch 聯準會動向 — 10月23日（五）",
+    "dayOfWeek": "五"
+  },
+  {
+    "date": "2026-10-22",
+    "file": "tw-finance-site/reports/2026-10-22.json",
+    "title": "Fed Watch 聯準會動向 — 10月22日（四）",
+    "dayOfWeek": "四"
+  },
+  {
     "date": "2026-10-21",
     "file": "tw-finance-site/reports/2026-10-21.json",
     "title": "Fed Watch 聯準會動向 — 10月21日（三）",
