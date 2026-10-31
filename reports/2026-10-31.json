@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
   "type": "daily-reports",
-  "source": "fed-watch",
-  "title": "Fed Watch 聯準會動向 — 10月31日（六）",
+  "source": "fed-watch+zerohedge",
+  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 10月31日（六）",
   "sections": [
     {
       "title": "Fed Watch｜今日重點摘要",
@@ -85,13 +85,43 @@
         {"headline": "CME Group｜FedWatch 方法與工具", "content": "FedWatch 以 30-Day Fed Funds futures 推導機率；本輪原始即時表無法保存。SessionOpen／CondorEdge 數字均明確標示為替代模型或二手引用。", "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html", "tags": ["方法", "限制揭露"]},
         {"headline": "BLS／BEA／Federal Reserve｜官方日程", "content": "CPI、PPI、NFP 採 BLS；PCE 採 BEA；FOMC 與 SEP 採 Fed 行事曆。", "url": "https://www.bls.gov/schedule/2026/home.htm", "tags": ["官方", "日程"]}
       ]
+    },
+    {
+      "title": "科技財報引發 AI 交易重估：Nasdaq 100 一度進入修正區",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 轉載 Newsquawk 收盤報導稱，Intel、SanDisk 與 Amazon 的財報／展望令科技股承壓，Nasdaq 100 一度進入修正區；文中列示科技類股下跌逾 4%、VIX 盤中一度接近 24，能源與部分防禦類股相對抗跌。\n\n【來源觀點】市場收盤稿同時整理聯準會官員對後續升息的看法，以及 Anthropic 信評的媒體報導；這些是 Newsquawk 彙整的當日資訊，並非 ZeroHedge 的獨立查核。\n\n【本報分析】AI 題材由「營收成長」轉向檢驗自由現金流、資本支出與融資條件時，科技股的估值敏感度會提高。短端避險買盤與長端殖利率上行並存，也提醒投資人不要把風險偏好變化簡化為單一利率方向。\n\n【可能影響】美國半導體與雲端股、Nasdaq 100／SOX、長久期成長股、VIX、美國公債曲線與投資級信用。\n\n【值得留意】追蹤 Apple、AMD、Qualcomm 等後續財報，以及企業對 AI 資本支出、訂單與自由現金流的最新指引；單日收盤表現不足以確認修正已結束或擴大。",
+      "url": "https://www.zerohedge.com/markets/ndx-briefly-enters-correction-weak-tech-earnings-spark-ai-rout-newsquawk-us-market-wrap",
+      "timestamp": "2026-10-30",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "俄羅斯煉油設施再遇襲：成品油供應風險回到焦點",
+      "category": "geopolitics",
+      "summary": "【原文報導】ZeroHedge 報導稱，俄羅斯薩馬拉州 Novokuibyshevsk 煉油廠於週五遭烏克蘭無人機攻擊後起火；文章轉述《華爾街日報》說法，這被視為在短暫停襲後再度攻擊煉油設施。文中指出該廠生產航空燃料、汽油與柴油，公開年加工能力約為 880 萬噸。\n\n【來源觀點】攻擊損害程度、政策壓力與停襲期限的細節，主要來自媒體報導、社群影像與交戰各方說法，未必已獲完整獨立驗證。\n\n【本報分析】若煉油中斷持續，市場風險不只在原油，也會延伸至柴油、汽油與航空燃油的區域供給與裂解價差；但實際價格影響取決於受損範圍、修復速度、庫存與替代出口。\n\n【可能影響】Brent／WTI、歐洲成品油與柴油裂解價差、航運及航空燃料成本、俄羅斯能源出口風險溢價。\n\n【值得留意】等待煉廠營運商、當地政府、衛星／船運資料及成品油出口數據交叉確認，避免把初步火災畫面直接等同於長期產能損失。",
+      "url": "https://www.zerohedge.com/energy/ukraine-shatters-strike-pause-major-drone-attack-russian-oil-refinery-defying-trump",
+      "timestamp": "2026-10-30",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "AI 記憶體需求擠壓 PC：供應鏈受惠與需求風險並行",
+      "category": "market",
+      "summary": "【原文報導】Portfolio Armor 在 ZeroHedge 的投稿以 Intel 與 Samsung 財報為例，稱 AI 伺服器需求推升記憶體價格與供應緊張；文章列示 Intel 客戶端運算與實體 AI 業務年減 5%、資料中心與 AI 業務年增 78%，並轉述管理層對 PC 市場及記憶體供應的評論。\n\n【作者觀點】文章作者認為應尋找掌握稀缺產能的記憶體與光通訊供應商，並以其自家選擇權交易案例說明策略。這是投稿者的投資觀點與商業推廣，非 ZeroHedge 編輯立場或獨立投資建議。\n\n【本報分析】AI 基建對上游記憶體、先進封裝與互連的拉動，可能改善供應商的定價能力；同時，終端 PC 的價格與庫存壓力可能壓抑部分消費電子需求。受惠程度仍取決於合約價格、供給擴張與終端需求彈性。\n\n【可能影響】記憶體與儲存類股、PC／ODM、半導體設備、資料中心互連供應鏈及亞洲科技出口循環。\n\n【值得留意】核對 Intel、Samsung 的正式財報與下一季指引，並觀察 DRAM／NAND 現貨與合約價、PC 出貨量及庫存週數；不要以作者列舉的單筆交易績效推論未來報酬。",
+      "url": "https://www.zerohedge.com/news/2026-10-30/ai-eating-pc",
+      "timestamp": "2026-10-30",
+      "images": [],
+      "premium": false
     }
   ],
-  "stats": {"total": 0, "premium": 0, "market": 0, "geopolitics": 0, "withImages": 0, "premarket": 0, "fedWatch": 1},
+  "stats": {"total": 3, "premium": 0, "market": 2, "geopolitics": 1, "withImages": 0, "premarket": 0, "fedWatch": 1},
   "keyThemes": [
     "BLS 新公布第三季 ECI：總報酬季增 0.8%、年增 3.4%，薪資與福利成本仍是 12 月決策前的重要資訊。",
     "Yahoo 指定行情顯示 3 個月至 30 年殖利率全面走低、美元微跌、VIX 大幅上升；快照均附市場時間與來源。",
     "12 月升息 76% 為 SessionOpen 二手模型；CME 原始即時表無可保存快照，並無獨立交叉驗證。",
-    "10/30 美股、黃金與比特幣同步走弱，但沒有足夠單一來源支持把同日走勢歸因於 ECI 或 Fed。"
+    "10/30 美股、黃金與比特幣同步走弱，但沒有足夠單一來源支持把同日走勢歸因於 ECI 或 Fed。",
+    "科技財報令市場重新檢視 AI 資本支出、現金流與融資條件，科技與防禦類股表現分化。",
+    "俄羅斯煉油設施再受攻擊的初步消息，將成品油供給與裂解價差的地緣風險重新帶回焦點。",
+    "AI 伺服器需求與記憶體短缺可支持上游定價，但 PC 需求、供應擴張與庫存仍是關鍵反向風險。"
   ]
 }
