@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-02",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 11月2日（一）",
+  "sections": [
+    {
+      "title": "北京研議擴大回購再貸款：中國股市支持措施成為焦點",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 引述 Bloomberg 與中國當地媒體稱，中國人民銀行、證券監管機構及部分券商、基金預計於週一開會，研議擴大為股票回購及增持融資的再貸款計畫。文章稱 CSI 300 指數 10 月下跌 8.5%、連跌 12 週並落入熊市；實際政策內容與執行規模仍待主管機關正式公告。\n\n【來源觀點】文章引述高盛、BNP Paribas 與美銀的市場判讀，把國家隊 ETF 買盤視為支撐反彈的訊號；這些是機構觀察，不等於保證市場已見底。\n\n【本報分析】若政策工具獲確認，短線可降低流動性與風險偏好壓力，但難以單獨解決企業獲利、房地產與內需等基本面問題。政策預期與實際資金流入若落差擴大，反彈的延續性仍須驗證。\n\n【可能影響】CSI 300、香港與中國科技股、在岸 ETF、人民幣、台灣與亞洲半導體供應鏈的風險偏好。\n\n【值得留意】追蹤中國人民銀行與證監會正式聲明、再貸款額度及合格用途，以及 ETF 淨申購、成交量與人民幣走勢；避免把媒體預告視為已生效政策。",
+      "url": "https://www.zerohedge.com/markets/beijing-convene-stock-market-rescue-meeting-plunge-protection-team-returns",
+      "timestamp": "2026-11-01",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "FBI 指稱北韓涉及幣安資產竊案：交易所與 DeFi 的合規壓力升高",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 報導 FBI 在網路警示中稱，北韓相關行動者涉嫌於 10 月 29 日自幣安竊取逾 60 億美元虛擬資產；文中並稱執法機關公布相關地址，呼籲虛擬資產服務業者封鎖或留意衍生交易。這是執法機關的歸因與指控，資產流向及後續法律處置仍會演變。\n\n【來源觀點】文章引述 TRM Labs、Chainalysis 與交易所管理層對損失規模、資金混合與補償進度的說法；鏈上標記、凍結及補償比例應以官方公告與鏈上資料交叉核對。\n\n【本報分析】事件的核心不只是單一交易所損失，而是交易對手、穩定幣發行商、跨鏈服務與 DeFi 協議的制裁／反洗錢風險。若提現恢復與客戶資產保障未能被市場信任，流動性與風險溢價可能外溢至其他平台。\n\n【可能影響】BTC、ETH、SOL、交易所平台幣、穩定幣、鏈上流動性與加密資產相關股票。\n\n【值得留意】追蹤 FBI 警示、幣安的可驗證提現與儲備資訊、Tether／Circle 的凍結公告，以及監管機關是否採取進一步制裁或執法行動。",
+      "url": "https://www.zerohedge.com/ai/fbi-says-north-korea-behind-6-billion-binance-heist",
+      "timestamp": "2026-11-01",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "Nvidia 財報預期成 AI 交易壓力測試：集中度與資本支出假設受檢驗",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 刊登 QTR's Fringe Finance 投稿，文中提到 Google 與 Amazon 財報後股價反應偏弱、Nasdaq 當日走低，並指出 Nvidia 已連續 15 季優於華爾街獲利預期，但近 12 次財報後有 7 次股價在下一交易日下跌；數字與比較基準應以公司財報及市場資料供應商為準。\n\n【作者觀點】投稿作者主張市場對 Nvidia 的獲利與 AI 資本支出回報抱有過高期待，若營收或指引未明顯超越預期，可能衝擊整個 AI 交易。這是具立場的作者評論，且其文末明示可能持倉與非投資建議。\n\n【本報分析】Nvidia 的單次財報不會單獨決定 AI 長期需求，但市場若高度集中於少數權值股，指引、毛利率與客戶資本支出變化可放大跨產業再定價。應區分短期估值波動與實際訂單、交付及現金流趨勢。\n\n【可能影響】Nvidia 與半導體股、Nasdaq／SOX、雲端服務商、資料中心電力設備、私募信貸與選擇權隱含波動率。\n\n【值得留意】檢視 Nvidia 的資料中心營收、毛利率、供應約束與下季指引，同時追蹤 hyperscaler 資本支出、訂單可見度及 AI 基建融資條件；不把作者的情境推演當作已發生結果。",
+      "url": "https://www.zerohedge.com/markets/world-will-end-if-nvidia-misses-earnings",
+      "timestamp": "2026-11-01",
+      "images": [],
+      "premium": false
+    }
+  ],
+  "stats": {"total": 3, "premium": 0, "market": 3, "geopolitics": 0, "withImages": 0, "premarket": 0, "fedWatch": 0},
+  "keyThemes": [
+    "中國政策支持可影響亞洲風險偏好，但需以正式措施與實際資金流驗證。",
+    "大型加密資安事件會同時測試交易所資產保障、鏈上合規與市場流動性。",
+    "AI 權值股的財報與資本支出回報，仍是科技估值與波動率的關鍵壓力測試。"
+  ]
+}
