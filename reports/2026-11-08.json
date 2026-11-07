@@ -7,7 +7,7 @@
     {
       "title": "Fed Watch｜今日重點摘要",
       "icon": "🏛️",
-      "content": "【已確認事實】本報擷取於 2026-11-08 06:20 台北（11/7 17:20 EST）。嚴格回顧過去 24 小時，Fed.gov 的 Recent Postings、FOMC 公告清單與 11 月日程未列出新的 FOMC 決定、政策聲明、會議紀要、SEP、貨幣政策演說或國會證詞；10/28 FOMC 以 10–2 維持聯邦基金利率目標區間 3.75%–4.00%（Cook 與 Hammack 異議、主張升息 25bp）仍是最新正式政策事實。\n\n【來源觀點】CME FedWatch 原始即時表本輪仍無可保存快照。Yahoo Finance 轉載 Reuters（11/7 刊出、引用 11/6）稱 CME FedWatch 對 12/8–9 會議升息 25bp 的機率為 76.8%；Kiplinger（11/6 18:32 UTC）則稱為 81%。兩者皆為對 CME FedWatch 的二手具名引用，快照時間不同、均依賴 30-Day Fed Funds futures。\n\n【本報分析】10 月就業與薪資的強勁讀數仍是下一次會議前的上行利率風險，但本窗口沒有新的官方政策訊號。二手讀數都指向 12 月升息機率占優，惟來源共享 CME 期貨輸入且數值不一，不能稱為獨立交叉驗證；11/10 CPI、11/13 PPI、11/18 會議紀要與 11/25 PCE 才是下一批可改變路徑的官方資訊。"
+      "content": "【已確認事實】本報擷取於 2026-11-08 06:06 台北（11/7 17:06 EST）。嚴格回顧過去 24 小時，Fed.gov 的 Recent Postings、FOMC 公告清單與 11 月日程未列出新的 FOMC 決定、政策聲明、會議紀要、SEP、貨幣政策演說或國會證詞；10/28 FOMC 以 10–2 維持聯邦基金利率目標區間 3.75%–4.00%（Cook 與 Hammack 異議、主張升息 25bp）仍是最新正式政策事實。\n\n【來源觀點】CME FedWatch 原始即時表本輪仍無可保存快照。Yahoo Finance 轉載 Reuters（11/7 刊出、引用 11/6）稱 CME FedWatch 對 12/8–9 會議升息 25bp 的機率為 76.8%；Kiplinger（11/6 18:32 UTC）則稱為 81%。兩者皆為對 CME FedWatch 的二手具名引用，快照時間不同、均依賴 30-Day Fed Funds futures。\n\n【本報分析】10 月就業與薪資的強勁讀數仍是下一次會議前的上行利率風險，但本窗口沒有新的官方政策訊號。二手讀數都指向 12 月升息機率占優，惟來源共享 CME 期貨輸入且數值不一，不能稱為獨立交叉驗證；11/10 CPI、11/13 PPI、11/18 會議紀要與 11/25 PCE 才是下一批可改變路徑的官方資訊。"
     },
     {
       "title": "Fed Watch｜即時市場儀表板",
@@ -27,7 +27,7 @@
         ["SOFR 期貨（Yahoo SR1=F）", "無可核驗快照", "無可核驗快照", "Yahoo Finance chart 本輪 HTTP 404。"],
         ["SOFR 期貨（Yahoo SR3=F）", "無可核驗快照", "無可核驗快照", "Yahoo Finance chart 本輪 HTTP 404。"]
       ],
-      "analysis": "擷取時間為 11/8 06:20 台北。指定 Yahoo Finance chart API 的 10 個代號均回傳 HTTP 404，故所有指定行情均明示為無可核驗快照，不沿用前日資料；2 年期僅作清楚標示的官方 Treasury 補充。"
+      "analysis": "擷取時間為 11/8 06:06 台北。指定 Yahoo Finance chart API 的 10 個代號均回傳 HTTP 404，故所有指定行情均明示為無可核驗快照，不沿用前日資料；2 年期僅作清楚標示的官方 Treasury 補充。"
     },
     {
       "title": "Fed Watch｜利率路徑與 FedWatch",
