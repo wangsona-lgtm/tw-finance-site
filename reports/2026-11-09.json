@@ -1,8 +1,8 @@
 {
   "date": "2026-11-09",
   "type": "daily-reports",
-  "source": "fed-watch",
-  "title": "Fed Watch 聯準會動向 — 11月9日（一）",
+  "source": "fed-watch+zerohedge",
+  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 11月9日（一）",
   "sections": [
     {
       "title": "Fed Watch｜今日重點摘要",
@@ -88,12 +88,42 @@
         {"headline": "Kiplinger｜二手 FedWatch 引述", "content": "11/6 18:32 UTC 文章稱 CME FedWatch 對 12 月升息 25bp 的機率為 81%；屬二手、文章時點的引用，未與另一獨立訊號交叉驗證。", "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar", "tags": ["替代引用", "非獨立"]},
         {"headline": "BLS／BEA／Federal Reserve｜官方日程", "content": "CPI、PPI、NFP 採 BLS；PCE 採 BEA；FOMC、會議紀要與 SEP 採 Fed 行事曆。", "url": "https://www.bls.gov/schedule/2026/home.htm", "tags": ["官方", "日程"]}
       ]
+    },
+    {
+      "title": "荷姆茲三艘油輪起火：航運中斷風險再成原油定價變數",
+      "category": "geopolitics",
+      "summary": "【原文報導】ZeroHedge 報導，伊朗革命衛隊（IRGC）11 月 8 日稱，三艘未遵守其通行規範的國際油輪在荷姆茲海峽「非法航道」爆炸起火；英國海事貿易行動中心（UKMTO）亦曾通報前一天有一艘遇險油輪在阿曼 Khasab 外海起火。原文未確認涉事船隻、起火原因或完整損害，相關說法仍待獨立官方與海事資料驗證。\n\n【來源觀點】原文將事件放在美伊衝突、封鎖與美國有限軍事行動的脈絡中，並描述其政治含意；這些詮釋不等於已被各方證實的事件因果。\n\n【本報分析】即使實體供應尚未出現可量化的中斷，油輪安全、保險費率與繞航時間也可能先反映在油價風險溢價與航運成本。若後續消息遭否認、通行恢復或護航安排落實，溢價亦可能迅速回吐。\n\n【可能影響】Brent／WTI、油輪運費與戰爭險、能源股、航空與運輸業、通膨預期及美債殖利率。\n\n【值得留意】追蹤 UKMTO、船舶追蹤資料、保險與運費報價、各國海軍通報及實際通過荷姆茲的油輪數；避免僅以單一聲明判定供應已中斷。",
+      "url": "https://www.zerohedge.com/geopolitical/irgc-says-three-more-tankers-ablaze-strait-hormuz",
+      "timestamp": "2026-11-08",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "PPI 與 CPI 的落差：成本能否轉嫁將考驗企業利潤率",
+      "category": "market",
+      "summary": "【原文報導】轉載自 RealInvestmentAdvice 的文章列舉其所採用的數據：2026 年 9 月生產者物價年增 6.3%、消費者物價年增 3.7%，並指出零售銷售若扣除汽油後成長較弱；文章同時提到 FactSet 的 S&P 500 利潤率估計自第二季高點回落。本文為市場評論，數值與定義應以 BLS、BEA、公司財報及 FactSet 原始資料為準。\n\n【作者觀點】作者認為上游成本漲幅若不能傳給消費者，市場對 2027 年企業獲利率的共識可能過高；這是作者的情境判讀，不是已實現的利潤下修。\n\n【本報分析】投資人可把這個題材視為獲利敏感度檢驗：能源、運輸與原物料成本若持續偏高，定價能力較弱的產業可能先面臨毛利壓力；反之，需求仍強或可有效轉嫁成本的企業，未必會出現同樣結果。\n\n【可能影響】S&P 500 獲利預期、零售與非必需消費、運輸、工業、能源，以及通膨與利率交易。\n\n【值得留意】後續 BLS PPI／CPI、企業財報中的毛利率與定價措辭、分析師盈餘修正、能源成本與實質消費數據；不要把上游與消費者通膨差距直接視為單一方向的股市預測。",
+      "url": "https://www.zerohedge.com/markets/ppi-vs-cpi-are-record-profit-margins-about-get-squeezed",
+      "timestamp": "2026-11-08",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "AI 讓軟體轉換成本下降：訂閱定價與留存率成為估值焦點",
+      "category": "market",
+      "summary": "【原文報導】Portfolio Armor 的投稿以一名用戶遷移監控系統的自述為例，討論 AI 輔助開發可能降低資料搬遷、整合重寫與訓練成本；文中亦引述 Datadog 財報的營收與大額客戶成長，以及公司推出用於生產問題調查的 AI 模型。單一使用者案例與公司自述不代表整個軟體產業的普遍結果。\n\n【作者觀點】作者認為，若 AI 使客戶更容易更換供應商，主要依靠轉換成本維持定價的軟體公司將承壓；能將 AI 轉化為客戶成果、同時控制成本的公司則可能受益。這是投稿作者的投資觀點。\n\n【本報分析】AI 對軟體股的影響可能呈現分化：短期可看產品採用與營收成長，較長期則需檢驗續約價格、淨營收留存、毛利與現金流是否保住價值。把「AI 可寫程式」直接等同於所有 SaaS 收入下降，或所有 AI 功能都能變現，都是過度延伸。\n\n【可能影響】SaaS 與雲端軟體、Datadog 等可觀測性供應商、開源替代方案、AI 開發工具與科技成長股估值。\n\n【值得留意】關注企業軟體的續約折扣、客戶流失、用量型收入、AI 功能滲透率與營運費用；以多季財報與客戶案例交叉驗證，而非以單一遷移經驗下結論。",
+      "url": "https://www.zerohedge.com/news/2026-11-08/ai-coming-software",
+      "timestamp": "2026-11-08",
+      "images": [],
+      "premium": false
     }
   ],
-  "stats": {"total": 0, "premium": 0, "market": 0, "geopolitics": 0, "withImages": 0, "premarket": 0, "fedWatch": 1},
+  "stats": {"total": 3, "premium": 0, "market": 2, "geopolitics": 1, "withImages": 0, "premarket": 0, "fedWatch": 1},
   "keyThemes": [
     "過去 24 小時沒有新的 Fed 官方決策、聲明、紀要、SEP、貨幣政策演說或國會證詞；10/28 的 3.75%–4.00% 維持決定仍是基準。",
     "CME 原始即時機率表無可保存快照；11/6 Kiplinger 的 81% 是具名二手引用，未達獨立交叉驗證門檻。",
-    "11/10 CPI、11/13 PPI、11/18 FOMC 紀要、11/25 PCE 與 12/8–9 FOMC 是下一批關鍵官方節點。"
+    "11/10 CPI、11/13 PPI、11/18 FOMC 紀要、11/25 PCE 與 12/8–9 FOMC 是下一批關鍵官方節點。",
+    "荷姆茲油輪事件的可信度、保險與實際通行量，將決定能源風險溢價能否延續。",
+    "成本上漲能否轉嫁，會影響市場對企業利潤率與利率路徑的重新定價。",
+    "AI 對軟體業的利多或壓力，取決於續約價格、留存率與現金流，而非單一技術展示。"
   ]
 }
