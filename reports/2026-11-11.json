@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-11",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "title": "ZeroHedge 每日導讀 — 11月11日（三）",
+  "sections": [
+    {
+      "title": "美國 CPI 偏熱、Fed 鷹派談話重定價：股債承壓、美元走強",
+      "category": "market",
+      "summary": "【原文報導】Newsquawk 的 11 月 10 日美股收盤整理指出，美國 10 月 CPI 月增 0.4%、核心 CPI 月增 0.3%，皆高於市場預期；同日 Waller 與 Logan 的偏鷹談話使利率期貨重新定價。文中列示，市場轉為計入 12 月完整的 25 個基點升息，並給予約一成機率的 50 個基點升息；股市、債券與黃金走弱，美元走強。\n\n【來源觀點】Newsquawk 將當日跨資產反應主要歸因於通膨數據與鷹派政策訊號的組合；這是盤後市場整理，並非聯準會已作成 12 月決議。\n\n【本報分析】若後續 PPI、PCE 與官員表態支持通膨黏著的解讀，短端殖利率與美元的上行壓力可能延續，成長股估值尤其敏感；反之，單月數據或能源項目回落，也可能使高幅度升息預期降溫。\n\n【可能影響】美國 2–10 年期公債殖利率、美元、利率期貨、科技與小型股、黃金及非美貨幣。\n\n【值得留意】比較 PPI、核心 PCE 與 12 月 FOMC 前的官方指引，並觀察利率期貨是否從「完整計入 25 個基點」進一步轉向更大幅度升息；不要把期貨機率當作政策承諾。",
+      "url": "https://www.zerohedge.com/markets/hawkish-waller-and-hot-cpi-ignite-fed-50bps-rate-hike-bets-newsquawk-us-market-wrap",
+      "timestamp": "2026-11-10",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "10 年期美債標售出現尾差：需求結構與期限溢價再受檢視",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 報導，420 億美元美國 10 年期公債標售得標殖利率為 5.020%，較 when-issued 高 1 個基點；投標倍數由前次 2.771 降至 2.468。文中並列示，間接投資人配置由 80.3% 降至 61.2%，直接投資人配置升至 29.0%，承銷商獲配 9.77%。\n\n【作者觀點】原文以「疲弱」形容本次標售，並把 CPI 偏熱、鷹派官員與企業投資級債供給視為壓抑長天期債券需求的背景；這是作者對單次標售與市場環境的判讀。\n\n【本報分析】標售尾差與投標結構是觀察市場承接供給意願的高頻訊號，但單場結果不等同於海外買盤或美債需求的長期趨勢。若後續 30 年期標售亦轉弱，並伴隨殖利率上升，才會更強化期限溢價與融資成本壓力的訊號。\n\n【可能影響】10–30 年期美債殖利率、美元、利率敏感型成長股、REITs、房貸利率與全球美元融資條件。\n\n【值得留意】追蹤 30 年期標售的尾差、投標倍數及各類投資人配置，並與通膨資料、財政部發債計畫及公司債供給一併判讀。",
+      "url": "https://www.zerohedge.com/markets/ugly-10y-auction-foreign-demand-plummets-directs-soar-resulting-biggest-tail-february",
+      "timestamp": "2026-11-10",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "SoftBank 設備減損衝擊 AI 電力概念股：訂單能見度成焦點",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 指出，SoftBank 揭露與電力設備採購相關的 37 億美元費用後，GE Vernova 與 Bloom Energy 股價於週二下跌；SoftBank 否認 Elon Musk 對其渦輪機訂單違約的說法。文章同時列示 GE Vernova 第三季末有 122GW 訂單積壓、專案已排至 2031 年。\n\n【來源觀點】文中引述 UBS 分析師 Allyson Gordon 的看法：市場正把 SoftBank 的消息外推為潛在渦輪機取消，但 GE Vernova 的既有訂單與其他買方需求或可吸收部分缺口；同時，作者將此事件視為 AI 電力設備投資週期可能出現裂縫的案例。兩者皆屬分析判讀，非已證實的全產業需求轉折。\n\n【本報分析】AI 基建交易已從「設備需求是否成長」延伸到「專案融資、預付款與履約品質」。若取消或延後案增加，供應鏈估值可能先受壓；若訂單能轉售且積壓維持，則更可能是單一客戶風險而非總需求崩落。\n\n【可能影響】AI 資料中心、燃氣渦輪機與電網設備商、半導體設備、信用利差及高資本支出科技股。\n\n【值得留意】檢視設備商財報中的取消率、訂單積壓轉換、客戶集中度與預收款條件，並區分股價情緒反應與已簽約專案的實際變化。",
+      "url": "https://www.zerohedge.com/markets/ai-power-stocks-tumble-softbanks-write-down-deepens-bubble-fears",
+      "timestamp": "2026-11-10",
+      "images": [],
+      "premium": false
+    }
+  ],
+  "stats": {"total": 3, "premium": 0, "market": 3, "geopolitics": 0, "withImages": 0, "premarket": 0, "fedWatch": 0},
+  "keyThemes": [
+    "偏熱 CPI 與鷹派聯準會談話同步抬升政策利率預期，跨資產反應顯示利率敏感度仍高。",
+    "10 年期美債標售的尾差與較低投標倍數，讓市場重新檢視長端供給承接與期限溢價。",
+    "AI 電力設備供應鏈的焦點轉向專案融資、訂單品質與取消風險，不能僅以總訂單積壓判斷。"
+  ]
+}
