@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-13T22:14:09.556472",
-  "today": "20261113",
+  "updated": "2026-11-14T22:46:47.339477",
+  "today": "20261114",
   "institution": {
     "date": "20261113",
     "dealer_self": {
@@ -45,39 +45,39 @@
   },
   "futures": {
     "note": "期貨(全部合約) Net OI per TAIFEX",
-    "last_seen_date": "2026/11/12",
-    "foreign_tx_net": "-386,853",
-    "total_inst_futures_net": "-421,810"
+    "last_seen_date": "2026/11/13",
+    "foreign_tx_net": "-385,810",
+    "total_inst_futures_net": "-425,781"
   },
   "institutional_oi": {
-    "date": "20261112",
+    "date": "20261113",
     "items": [
       {
         "name": "dealer",
-        "futures_long": 193601,
-        "futures_short": 343809,
-        "futures_net": -150208,
-        "options_long": 79118,
-        "options_short": 63305,
-        "options_net": 15813
+        "futures_long": 193563,
+        "futures_short": 349895,
+        "futures_net": -156332,
+        "options_long": 77942,
+        "options_short": 49956,
+        "options_net": 27986
       },
       {
         "name": "trust",
-        "futures_long": 118861,
-        "futures_short": 3610,
-        "futures_net": 115251,
-        "options_long": 87,
-        "options_short": 9321,
-        "options_net": -9234
+        "futures_long": 119902,
+        "futures_short": 3541,
+        "futures_net": 116361,
+        "options_long": 92,
+        "options_short": 20178,
+        "options_net": -20086
       },
       {
         "name": "foreign",
-        "futures_long": 321087,
-        "futures_short": 707940,
-        "futures_net": -386853,
-        "options_long": 46076,
-        "options_short": 45943,
-        "options_net": 133
+        "futures_long": 331784,
+        "futures_short": 717594,
+        "futures_net": -385810,
+        "options_long": 39186,
+        "options_short": 41225,
+        "options_net": -2039
       }
     ]
   },
