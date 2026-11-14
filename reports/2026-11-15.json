@@ -1,21 +1,24 @@
 {
   "date": "2026-11-15",
-  "title": "Fed Watch 聯準會動向 — 11月15日（日）",
+  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 11月15日（日）",
   "type": "daily-reports",
-  "source": "fed-watch",
+  "source": "fed-watch+zerohedge",
   "keyThemes": [
     "Jefferson 11/13 晚間表示，通膨軌跡是決定適當貨幣政策立場的較重要訊號；未預告特定會議或升息幅度。",
     "本窗口沒有新的 FOMC 決定、聲明、紀要、SEP 或國會證詞；10/28 的 10–2 維持 3.75%–4.00% 仍是正式政策基準。",
     "Yahoo Finance 指定市場代號於本輪擷取遭 429；逐列揭露為「無可核驗快照」，不沿用或估算舊報價。",
     "CME 即時嵌入式表格無法保存；最新可核驗的具名二手讀值仍為 11/13 的 25bp 升息 89.7%、50bp 10.3%。",
     "官方 Treasury 11/13 兩年期殖利率為 4.88%，較 11/12 上升 2bp；此為補充，並非 Yahoo ^FVX（5 年）或其他指定代號的替代。",
-    "下一個官方節點為 11/18 FOMC 紀要、11/25 PCE、12/4 NFP，以及 12/8–9 的 FOMC／SEP。"
+    "下一個官方節點為 11/18 FOMC 紀要、11/25 PCE、12/4 NFP，以及 12/8–9 的 FOMC／SEP。",
+    "荷姆茲風險不僅關乎原油；化工原料與肥料若受阻，可能沿成本與通膨鏈傳導，但本文相關數字與推論多屬投稿觀點，須獨立核驗。",
+    "超大規模雲端業者的用電承諾可支撐資料中心建置題材，但核電專案時程與併網執行風險仍會影響估值。",
+    "美中俄峰會尚未舉行；核武、烏克蘭、對中出口管制與貿易休戰是否產生可執行結果，仍需以官方訊息為準。"
   ],
   "stats": {
-    "total": 0,
+    "total": 3,
     "premium": 0,
-    "market": 0,
-    "geopolitics": 0,
+    "market": 1,
+    "geopolitics": 2,
     "withImages": 0,
     "premarket": 0,
     "fedWatch": 1
@@ -105,6 +108,33 @@
         {"headline": "BEA／BLS｜官方發布日程", "content": "PCE 依 BEA 日程，PPI、CPI、NFP 依 BLS 日程；FOMC 與 SEP 依 Fed 行事曆。", "url": "https://www.bea.gov/news/schedule/full", "tags": ["官方", "日程"]},
         {"headline": "Reuters／Yahoo Finance／InvestmentNews｜市場補充", "content": "Jefferson 的市場解讀、FedWatch 機率與債市背景僅作媒體補充；不取代 Fed.gov 與 CME 的原始文件或方法頁。", "url": "https://finance.yahoo.com/economy/policy/articles/wall-street-watching-troubling-move-170300570.html", "tags": ["媒體補充", "限制揭露"]}
       ]
+    },
+    {
+      "title": "荷姆茲不只牽動原油：化工與肥料供應鏈的成本風險",
+      "category": "geopolitics",
+      "summary": "【原文報導】ZeroHedge 轉載 Larry C. Johnson 的投稿，文中援引 ICIS、S&P Global、CRU、聯合國與航運資料，主張荷姆茲航運風險也會波及石腦油、甲醇、塑料原料、尿素與氨等貨物；作者稱小型化學品與成品油船更容易受戰爭保險成本影響。該文是投稿轉載，本文未獨立驗證其中的運量、出口降幅或攻擊事件數字。\n\n【作者觀點】作者認為，原油可部分透過管線與庫存緩衝，石化原料與肥料的替代與庫存空間較小；若風險持續，亞洲裂解廠與下游消費品價格壓力可能先顯現。這是投稿作者的推論，不是已確認的市場結果。\n\n【本報分析】若實際通航、保險報價與化工品交貨量同步惡化，影響可能由能源擴及亞洲石化、包裝、紡織與農業投入成本，進而增加部分通膨黏性；若航線恢復且實際供給未中斷，這條傳導可能明顯減弱。\n\n【可能影響】Brent／WTI、油輪與化學品船運費、石化與肥料原料、亞洲化工股、農業投入成本及通膨預期。\n\n【值得留意】分別追蹤實際通航量、戰爭保險費率、石腦油／甲醇／尿素現貨價格與主要化工企業法說；不要將作者的情境描述視為供應已全面中斷。",
+      "url": "https://www.zerohedge.com/geopolitical/your-shopping-bag-runs-through-hormuz",
+      "timestamp": "2026-11-14",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "Amazon 傳回歸 Fermi 資料中心案：電力承諾與核電時程的落差",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 引述《金融時報》稱，Amazon 是 Fermi Project Matador 先前未具名的超大規模客戶；文章指出該安排涉及 2027 年起的 600MW 初始承諾、2 億美元預付款與早期施工款，並稱 Fermi 股價當日大幅上漲。原文同時列出公司文件中的燃氣發電與電網容量規劃。這些是媒體與公司文件所述，非 Amazon 在原文中的直接公告。\n\n【來源觀點】文章強調，Fermi 的四座 AP1000 反應爐預定投產時程已較早期規畫延後，並將此視為 AI 資料中心電力需求與核電落地速度之間的矛盾。這是原文的編輯判讀。\n\n【本報分析】超大規模客戶的預付款或容量承諾若獲後續正式證實，可能改善專案融資能見度；但電廠許可、施工、併網與客戶合約條件仍是高資本支出題材的主要執行風險。短期股價反應不等於長期供電已落實。\n\n【可能影響】資料中心與發電設備供應鏈、核電與燃氣發電開發商、電網設備、雲端資本支出題材及高估值 AI 基建股。\n\n【值得留意】追蹤 Amazon、Fermi 的正式公告與監管申報、容量生效條件、併網里程碑、NRC 許可時程及融資安排。",
+      "url": "https://www.zerohedge.com/markets/amazon-returns-fermi-reactor-timelines-slip-further-away",
+      "timestamp": "2026-11-14",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "美中俄三方峰會訊號：出口管制、貿易休戰與地緣風險待官方落地",
+      "category": "geopolitics",
+      "summary": "【原文報導】ZeroHedge 報導白宮稱，Trump、Xi 與 Putin 預計在深圳 APEC 場邊會晤，議題包含核武縮減；文章也稱美方將分開處理烏克蘭議題，並提到對中貿易休戰將於一月到期，以及中國暫停部分稀土出口管制措施的期限。上述內容是原文對白宮官員、媒體與各方說法的彙整，峰會結果在發稿時尚未發生。\n\n【來源觀點】原文引述分析人士質疑峰會未必產生實質成果，並把核武、烏克蘭、伊朗與對中科技出口限制並列為後續摩擦點；這些是受訪者與文章的判讀。\n\n【本報分析】市場真正可交易的資訊將是會後共同聲明、具體貿易或出口管制安排與可核驗的執行時間表。若談判降低政策不確定性，可能支持中國相關風險資產與全球供應鏈情緒；若未有進展或限制升級，半導體、稀土與避險資產的風險溢價可能反向上升。\n\n【可能影響】中港股與亞洲出口股、半導體與稀土供應鏈、人民幣、美元、黃金及地緣政治風險溢價。\n\n【值得留意】以白宮、中國外交部、俄方與 APEC 的正式聲明為優先，另追蹤美中貿易休戰、稀土出口措施與晶片管制是否出現可執行文本。",
+      "url": "https://www.zerohedge.com/geopolitical/white-house-confirms-unprecedented-trump-xi-putin-trilateral-summit-nukes-ukraine-out",
+      "timestamp": "2026-11-14",
+      "images": [],
+      "premium": false
     }
   ]
 }
