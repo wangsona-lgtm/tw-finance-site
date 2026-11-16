@@ -1,8 +1,28 @@
 {
   "date": "2026-11-17",
+  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 11月17日（二）",
   "type": "daily-reports",
-  "source": "zerohedge",
-  "title": "ZeroHedge 每日導讀 — 11月17日（二）",
+  "source": "fed-watch+zerohedge",
+  "keyThemes": [
+    "美國把先進 AI 算力的遠端存取與特定轉運風險納入更嚴格的出口管制，實際影響仍取決於許可與執行。",
+    "IEA 所稱原油供需轉鬆不等於柴油市場同步寬鬆，應分別觀察原油與成品油價格訊號。",
+    "大型銀行的短暫技術故障目前被描述為非資安、非系統性事件，是否擴大仍待正式更新。",
+    "截至 11/17 06:27 台北（11/16 17:27 EST），新增 Fed.gov 官方談話為 Warsh 與 Barr 於 11/16 發表、皆聚焦 AI／生產力與金融穩定，均未預告利率決策。",
+    "10/28 以 10–2 維持 3.75%–4.00%（Cook、Hammack 主張升息 25bp）仍是最新正式政策基準。",
+    "Yahoo 11/16 收盤：^IRX 4.125%、^FVX 4.935%、^TNX 5.121%、^TYX 5.467%；5 年、10 年、30 年殖利率均較 11/13 下跌。",
+    "CME 即時嵌入表仍無法保存；Motley Fool 於 11/16 具名引用 CME FedWatch 為 12 月『任一升息』100%，但未提供可核驗的 25bp／50bp 分項。",
+    "Yahoo ZQ／SOFR 價格僅作方向核對，與 FedWatch 同源於短端利率期貨，不能作獨立機率交叉驗證。",
+    "下一項官方政策文件為 11/18 14:00 EST 的 10/27–28 FOMC 會議紀要。"
+  ],
+  "stats": {
+    "total": 3,
+    "premium": 0,
+    "market": 3,
+    "geopolitics": 0,
+    "withImages": 0,
+    "premarket": 0,
+    "fedWatch": 1
+  },
   "sections": [
     {
       "title": "美國收緊雲端 AI 算力出口：對中遠端使用與轉運樞紐納入許可",
@@ -30,20 +50,92 @@
       "timestamp": "2026-11-16",
       "images": [],
       "premium": false
+    },
+    {
+      "title": "Fed Watch｜今日重點摘要",
+      "icon": "🏛️",
+      "content": "【已確認事實】本報擷取於 2026-11-17 06:27 台北（11/16 17:27 EST）。Fed.gov 在窗口內新增兩篇官方談話。主席 Kevin Warsh 11/16 開幕致詞指出，超級智慧／AI 的廣泛採用將對經濟產生重大影響，日後對貨幣政策具有重要含意；他將其描述為需研究的情境與問題，而非預測。理事 Michael S. Barr 同日談 AI 的金融穩定風險，指出 AI 投資重估、資料中心相關債務與複雜表外承諾值得監控；該談話未討論近期利率路徑。過去 24 小時未見新的 FOMC 決定、政策聲明、會議紀要、SEP、國會證詞或指定 CPI／PPI／就業／PCE 發布。最新正式政策決定仍為 10/28：以 10–2 維持聯邦基金利率目標區間 3.75%–4.00%，Cook 與 Hammack 異議、主張升息 25bp。\n\n【來源觀點】CME FedWatch 方法頁可取用，但動態機率表本輪無法保存。Motley Fool 於 11/16 04:06 EST 具名引用 CME FedWatch，稱 12/9 會議「任一升息」機率為 100%，並稱 50bp 相對 25bp 的機率在上升；文章未提供可採用的分項百分比。這是有時間戳的二手市場讀值，不是 CME 原始畫面，也不代表 FOMC 承諾。\n\n【本報分析】Warsh 與 Barr 的新內容擴大了 AI 對潛在成長、金融穩定與未來貨幣政策傳導的討論，但兩人均未就 12 月會議給出利率指引，因此不能把演說解讀為支持特定升息幅度。市場仍偏向 12 月收緊；然而 CME 原始表不可保存，且 ZQ／SOFR 與 FedWatch 同源，本報不宣稱有兩個獨立市場訊號的交叉驗證。"
+    },
+    {
+      "title": "Fed Watch｜即時市場儀表板",
+      "icon": "📊",
+      "type": "table",
+      "headers": ["項目／指定代號", "可核驗快照（市場日）", "日變動", "來源／限制"],
+      "rows": [
+        ["3 個月殖利率（Yahoo ^IRX）", "4.125%（11/16 收盤）", "+0.3bp", "Yahoo Finance chart API；較 11/13 的 4.122%。"],
+        ["5 年殖利率（Yahoo ^FVX）", "4.935%（11/16 收盤）", "-4.6bp", "Yahoo Finance chart API；^FVX 為 5 年期，非 2 年期。"],
+        ["10 年殖利率（Yahoo ^TNX）", "5.121%（11/16 收盤）", "-3.3bp", "Yahoo Finance chart API；較 11/13 的 5.154%。"],
+        ["30 年殖利率（Yahoo ^TYX）", "5.467%（11/16 收盤）", "-1.4bp", "Yahoo Finance chart API；較 11/13 的 5.481%。"],
+        ["2 年殖利率（補充）", "4.83%（11/16）", "-5bp", "U.S. Treasury Daily Treasury Par Yield Curve Rates；較 11/13 的 4.88%。"],
+        ["美元指數（Yahoo DX-Y.NYB）", "103.582（11/16 收盤）", "+0.172", "Yahoo Finance chart API；較 11/13 的 103.410。"],
+        ["VIX（Yahoo ^VIX）", "22.91（11/16 收盤）", "+3.61", "Yahoo Finance chart API；較 11/13 的 19.30。"],
+        ["聯邦基金期貨（Yahoo ZQ=F）", "95.8350（11/16 收盤）", "-0.2875", "Yahoo Finance chart API；較 11/13 的 96.1225；連續合約可能換月，不用於精確機率推導。"],
+        ["當期聯邦基金期貨（Yahoo ZQZ26.CBT）", "95.9350（11/16 收盤）", "+0.0100", "Yahoo Finance chart API；較 11/13 的 95.9250。"],
+        ["SOFR 期貨（Yahoo SR1=F）", "95.9050（11/16 收盤）", "無可核驗前值", "Yahoo Finance chart API；本輪可用觀察值不足以做可靠日比較。"],
+        ["SOFR 期貨（Yahoo SR3=F）", "95.7050（11/16 收盤）", "無可核驗前值", "Yahoo Finance chart API；本輪可用觀察值不足以做可靠日比較。"]
+      ],
+      "analysis": "擷取時間為 11/17 06:27 台北（11/16 17:27 EST）。除 Treasury 2 年期補充外，皆使用指定 Yahoo 代號的 11/16 完整收盤；缺少可核驗前值時明列限制，不估算。"
+    },
+    {
+      "title": "Fed Watch｜利率路徑與 FedWatch",
+      "icon": "📈",
+      "content": "【原始方法來源】CME FedWatch 以 30-Day Fed Funds（ZQ）期貨價格估計即將到來 FOMC 會議的目標利率變動機率；CME 方法頁為原始方法來源。\n\n【可用性與機率】CME 方法頁可取得，但即時嵌入式機率表本輪無法保存。Motley Fool（11/16 04:06 EST）具名引述 CME FedWatch：12/9 會議任一升息機率為 100%；文章只說 50bp 相對 25bp 的機率正在上升，未提供分項百分比，因此本報不填列 25bp／50bp 機率。這是二手引用，非 CME 原始即時快照。\n\n【交叉檢核】Yahoo 的 ZQZ26.CBT 11/16 收盤為 95.9350、ZQ=F 為 95.8350，SOFR 期貨亦有可核驗收盤；這些價格只能作短端利率期貨的方向資訊。完整合約月、到期、每日平均與計算假設未在本報逐一展開，故不轉換為精確 FedWatch 機率。它們亦與二手 FedWatch 同源，非兩個獨立可核驗訊號；本報結論為「未達交叉驗證」。"
+    },
+    {
+      "title": "Fed Watch｜官員立場追蹤（2026 實際投票委員）",
+      "icon": "🗣️",
+      "type": "table",
+      "headers": ["委員／職位", "投票權", "立場標示", "最近可核驗談話／異議／投票（日期）", "來源連結與判定理由"],
+      "rows": [
+        ["Kevin Warsh／理事會主席、FOMC 主席", "有", "中立／資料依賴（更新）", "11/16：AI 的廣泛採用將顯著影響經濟，對未來貨幣政策有含意；他將此列為研究情境，未談近期利率。", "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm；官方談話，非利率前瞻指引。"],
+        ["John C. Williams／紐約聯儲總裁、副主席", "有", "鷹派／轉強（未更新）", "11/12：稱通膨仍高、為回到目標可能還需進一步升息；未說明時點或終點。", "https://www.investing.com/news/economy-news/feds-williams-says-central-bank-has-work-to-do-to-get-inflation-back-on-target-5023897；Reuters 二手報導，非會議承諾。"],
+        ["Michael S. Barr／理事", "有", "中立／資料依賴（更新）", "11/16：談 AI 重估、資料中心融資與交易／資安風險的金融穩定含意；未討論近期利率路徑。", "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm；官方談話不構成利率訊號。"],
+        ["Michelle W. Bowman／理事、副主席（監管）", "有", "鷹派／轉強（未更新）", "11/10：通膨壓力持續且有擴散跡象，仍有工作要做。", "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm；本窗口未更新。"],
+        ["Lisa D. Cook／理事", "有", "鷹派（異議，未更新）", "10/28：異議，主張升息 25bp。", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；正式異議優先。"],
+        ["Beth M. Hammack／克里夫蘭聯儲總裁", "有", "鷹派／漸進（未更新）", "11/12：認為仍須轉向較限制性政策以回到 2%，偏好較小、較頻繁升幅。", "https://uk.marketscreener.com/news/fed-s-hammack-signals-support-for-gradual-rate-hike-path-ce785ed8de8ef021；Reuters 二手轉述。"],
+        ["Philip N. Jefferson／理事、副主席", "有", "鷹派／資料依賴（未更新）", "11/13：通膨仍明顯高於 2%，通膨軌跡是較重要訊號；未來調整須看資料、展望與風險平衡。", "https://www.federalreserve.gov/newsevents/speech/jefferson20261113a.htm；官方演說，未承諾會議行動。"],
+        ["Neel Kashkari／明尼阿波利斯聯儲總裁", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間。", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；本窗口無個人更新。"],
+        ["Lorie K. Logan／達拉斯聯儲總裁", "有", "鷹派／轉強（未更新）", "11/10：預期至少還需兩次各 25bp 升息；冬季可能加快步調。", "https://www.dallasfed.org/news/speeches/logan/2026/lkl261110；官方演說。"],
+        ["Anna Paulson／費城聯儲總裁", "有", "鷹派／漸進（未更新）", "11/10：潛在通膨仍高於目標，支持漸進升息。", "https://apnews.com/article/1318a1694472e2926e0a4ab5d8ca6457；可靠媒體摘要。"],
+        ["Jerome H. Powell／理事", "有", "鷹派／資料依賴（未更新）", "10/28：支持維持目標區間。", "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm；本窗口無個人更新。"],
+        ["Christopher J. Waller／理事", "有", "鷹派／轉強（未更新）", "11/10：即使 CPI 改善仍支持 12 月升息 25bp；若明顯更高，可能需更強行動。", "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm；明示個人政策偏好。"]
+      ],
+      "analysis": "名單採 2026 實際投票委員。委員會共識仍是 10/28 的 10 票維持；Cook、Hammack 的兩張升息異議優先於個人談話。Warsh、Barr 的 11/16 談話是官方新增資訊但未涉及近期利率，因此不將 AI／金融穩定內容誤判為利率指引；個人立場不可替代委員會共識。"
+    },
+    {
+      "title": "Fed Watch｜市場影響",
+      "icon": "🌐",
+      "content": "【可核驗市場變動】11/16 收盤，Yahoo 的 5 年、10 年與 30 年期殖利率分別下跌 4.6bp、3.3bp、1.4bp；Treasury 官方 2 年期為 4.83%、較 11/13 下跌 5bp。美元指數上升 0.172 至 103.582，VIX 上升 3.61 至 22.91。這些是可核驗價格變動，本報不把它們單一歸因於 Warsh／Barr 談話或 FedWatch 定價。\n\n【來源觀點】Motley Fool 的二手 CME FedWatch 讀值稱 12 月升息已被完全定價；此為媒體對期貨市場定價的描述，不是 FOMC 的政策承諾。\n\n【情境分析】若即將公布的紀要或後續通膨資料強化緊縮訊號，短端與長端殖利率、美元與風險溢價可能再受支撐，對長久期美股、黃金與高波動風險資產形成壓力；若紀要呈現更多保留或資料明顯降溫，債券、美元與風險資產可能反向調整。Barr 所述 AI 投資重估與融資複雜度，則是金融穩定的中期監測議題，不能當作本輪單日美股或 VIX 變動的已證實原因。"
+    },
+    {
+      "title": "Fed Watch｜未來重要日期",
+      "icon": "📅",
+      "type": "table",
+      "headers": ["日期／時間（美東；台北）", "事件", "官方來源與意義"],
+      "rows": [
+        ["11/17 09:15 EST；11/17 22:15", "10 月 Industrial Production and Capacity Utilization", "Federal Reserve G.17；https://www.federalreserve.gov/releases/g17/"],
+        ["11/18 14:00 EST；11/19 03:00", "10/27–28 FOMC 會議紀要", "Federal Reserve；https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"],
+        ["11/25 08:30 EST；11/25 21:30", "10 月 Personal Income and Outlays／PCE", "BEA；https://www.bea.gov/news/schedule/full"],
+        ["12/4 08:30 EST；12/4 21:30", "11 月 Employment Situation／NFP", "BLS；https://www.bls.gov/schedule/news_release/empsit.htm"],
+        ["12/8–9（決策 12/9 14:00 EST；台北 12/10 03:00）", "FOMC 例會與 SEP", "Federal Reserve；https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"],
+        ["12/10 08:30 EST；12/10 21:30", "11 月 CPI", "BLS；https://www.bls.gov/schedule/news_release/cpi.htm"],
+        ["12/11 08:30 EST；12/11 21:30", "11 月 PPI", "BLS；https://www.bls.gov/schedule/news_release/ppi.htm"]
+      ],
+      "analysis": "11 月與 12 月美東均為 EST，台北較美東快 13 小時；12 月例會附 SEP。"
+    },
+    {
+      "title": "Fed Watch｜資料來源與取用規則",
+      "icon": "🔗",
+      "type": "news",
+      "items": [
+        {"headline": "Federal Reserve｜官方政策、文件與行事曆", "content": "Fed.gov 為政策事實最高優先。本窗口新增 Warsh、Barr 11/16 談話，但皆非近期利率指引；10/28 決定仍是基準，11/18 將公布該次會議紀要。", "url": "https://www.federalreserve.gov/newsevents.htm", "tags": ["官方", "政策優先"]},
+        {"headline": "Warsh／Barr｜11/16 官方談話", "content": "Warsh 談 AI、生產力與未來貨幣政策含意；Barr 談 AI 投資、資料中心融資與金融穩定風險。兩者均未給出近期利率指引。", "url": "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm", "tags": ["官方", "官員談話"]},
+        {"headline": "BLS／BEA｜官方數據與日程", "content": "本窗口無指定 CPI、PPI、就業或 PCE 新發布；11/17 的 G.17 為下一個 Fed 統計發布，PCE、NFP、CPI、PPI 依官方日程列示。", "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm", "tags": ["官方", "經濟數據"]},
+        {"headline": "Yahoo Finance｜指定市場代號", "content": "取用 ^IRX、^FVX（5 年，非 2 年）、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F、ZQZ26.CBT、SR1=F、SR3=F 的可取得 11/16 收盤 chart 快照。", "url": "https://finance.yahoo.com/quote/%5EIRX/", "tags": ["行情", "Yahoo"]},
+        {"headline": "U.S. Treasury｜官方 2 年期補充", "content": "Daily Treasury Par Yield Curve 的 11/16 兩年期為 4.83%，11/13 為 4.88%；此為補充，不替代 Yahoo 指定殖利率代號。", "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv", "tags": ["官方", "行情補充"]},
+        {"headline": "CME Group｜FedWatch 方法", "content": "CME 表示 FedWatch 使用 30-Day Fed Funds futures；本輪即時嵌入表無法保存，故僅列方法頁與明確標記的二手引用。", "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool", "tags": ["方法", "限制揭露"]},
+        {"headline": "替代媒體引用｜Motley Fool", "content": "11/16 04:06 EST 具名引用 CME FedWatch 為 12 月任一升息 100%；未提供可核驗分項，為二手讀值，不替代 CME 原始表或 Fed.gov 文件。", "url": "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/", "tags": ["媒體補充", "二手引用"]}
+      ]
     }
-  ],
-  "stats": {
-    "total": 3,
-    "premium": 0,
-    "market": 3,
-    "geopolitics": 0,
-    "withImages": 0,
-    "premarket": 0,
-    "fedWatch": 0
-  },
-  "keyThemes": [
-    "美國把先進 AI 算力的遠端存取與特定轉運風險納入更嚴格的出口管制，實際影響仍取決於許可與執行。",
-    "IEA 所稱原油供需轉鬆不等於柴油市場同步寬鬆，應分別觀察原油與成品油價格訊號。",
-    "大型銀行的短暫技術故障目前被描述為非資安、非系統性事件，是否擴大仍待正式更新。"
   ]
 }
