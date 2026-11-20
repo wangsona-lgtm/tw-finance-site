@@ -1,19 +1,22 @@
 {
   "date": "2026-11-20",
-  "title": "Fed Watch 聯準會動向 — 11月20日（五）",
+  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 11月20日（五）",
   "type": "daily-reports",
-  "source": "fed-watch",
+  "source": "fed-watch+zerohedge",
   "keyThemes": [
     "10/27–28 FOMC 紀要確認，多數與會者支持當時按兵不動以累積資訊，但幾乎所有人預期在基準展望下仍須進一步升息。",
     "Barr（11/18）預期若經濟依其預測演進，進一步升息將合宜；Jefferson（11/19）則強調油價、貿易與 AI 等複合衝擊下，政策須依雙重使命與風險校準。",
     "Yahoo Finance 指定代號本輪全部回傳 HTTP 404，因此不填列任何估計行情；財政部官方 11/19 兩年期殖利率為 4.76%，較 11/18 低 4bp。",
     "CME 原始動態機率表仍無法保存；Reuters 11/19 二手引述為 12 月近乎確定升息 25bp、50bp 機率 8%，不得視為 CME 原始快照或獨立交叉驗證。",
-    "下一項核心資料為 11/25 的 10 月 PCE，12/4 NFP、12/8–9 FOMC／SEP 與 12/10 CPI 是後續主要政策節點。"
+    "下一項核心資料為 11/25 的 10 月 PCE，12/4 NFP、12/8–9 FOMC／SEP 與 12/10 CPI 是後續主要政策節點。",
+    "美股在 Anthropic IPO 熱度消退與 AMD 走弱後回落；原文同時記錄較弱美國數據帶來的美債避險買盤，兩者不宜被視為單一因果。",
+    "伊朗／荷姆茲局勢仍是油市尾端風險；個別航運或軍事說法需以後續官方與海事資訊核驗。",
+    "黃金與債券 carry 的兩篇投稿皆屬作者或受訪機構觀點；配置結論應以持有期間、利率路徑、波動與匯率風險獨立評估。"
   ],
   "stats": {
-    "total": 0,
+    "total": 3,
     "premium": 0,
-    "market": 0,
+    "market": 3,
     "geopolitics": 0,
     "withImages": 0,
     "premarket": 0,
@@ -116,6 +119,33 @@
         {"headline": "CME Group｜FedWatch 方法", "content": "CME 說明 FedWatch 的機率由 30-Day Fed Funds futures 隱含；即時嵌入表本輪無法保存，因此不捏造原始機率。", "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool", "tags": "方法 限制揭露"},
         {"headline": "替代媒體引用｜Reuters／AP", "content": "Reuters（11/19）具名引述 CME FedWatch 的時間戳二手讀值；AP（11/18）報導 Waller 對 CNBC 的個人觀點。兩者均不取代 Fed.gov 文件或 CME 原始畫面。", "url": "https://www.marketscreener.com/news/j-p-morgan-sees-fed-rate-hikes-at-next-three-meetings-as-inflation-persists-ce785ed2db8eff22", "tags": "媒體補充 二手引用"}
       ]
+    },
+    {
+      "title": "美股回檔與避險買盤：Anthropic IPO 熱度消退、AMD 下跌與偏弱數據交織",
+      "category": "market",
+      "summary": "【原文報導】Newsquawk 的市場收盤整理稱，Anthropic 上市首日開盤高於 IPO 價，但盤中自高點回落；AMD 因一份做空報告而下跌，主要美股指數收低。文中同時列出初領失業金高於預期、費城 Fed 製造業指數低於預期，以及美債在避險需求下走強。\n\n【來源觀點】原文把 Anthropic 的股價波動、AMD 的弱勢與風險趨避並列為當日跨資產交易的重要背景；這是市場盤面整理，不代表單一事件已被證明是所有資產變動的原因。\n\n【本報分析】若 AI 題材的高估值資產持續出現劇烈價格波動，科技與半導體的估值敏感度可能升高；偏弱的勞動／製造指標則可能暫時支撐美債。後續應分別觀察企業獲利、IPO 後價格穩定度與宏觀數據，而非將風險偏好變化全數歸因於單一股票。\n\n【可能影響】美國大型科技與半導體股、AI 基建鏈、NASDAQ、長天期美債、美元與 VIX。\n\n【值得留意】追蹤 Anthropic 上市後交易與同業估值、AMD 對中國相關疑慮的正式回應，以及 11/25 PCE 與後續就業／通膨數據。",
+      "url": "https://www.zerohedge.com/markets/risk-sentiment-swings-anthropic-ipo-newsquawk-us-market-wrap",
+      "timestamp": "2026-11-19",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "荷姆茲風險仍懸：油價短線平穩不等於地緣政治溢價消失",
+      "category": "market",
+      "summary": "【原文報導】Newsquawk 的亞太開盤整理表示，油價當日收盤大致持平，但中東緊張情勢未見緩和；文內彙整多項美伊相關消息與關於荷姆茲航行風險的媒體引述。\n\n【來源觀點】原文所列部分航運與軍事情資來自媒體、政府或相關方說法，彼此未必能即時獨立驗證；因此只能視為風險訊號，不能直接當作供給中斷已被確認。\n\n【本報分析】能源市場可在現貨供給未立即受損時維持區間交易，但若保險費率、船舶繞航、實際出口量或官方安全警示惡化，風險溢價可能重新擴大。對台灣等能源進口市場而言，較直接的觀察點是原油與成品油、運費及匯率的聯動。\n\n【可能影響】Brent／WTI、油輪運費與保險、煉油與航空運輸股、能源進口國通膨預期及新台幣能源成本。\n\n【值得留意】以航運追蹤、IEA／EIA 資料、主要產油國出口及官方海事通告交叉核驗，特別區分政治聲明、未證實事件與實際供應數據。",
+      "url": "https://www.zerohedge.com/markets/us-stocks-were-pressured-major-indices-dropping-over-2-while-anthropic-surges-its-debut",
+      "timestamp": "2026-11-19",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "黃金修正與債券 carry：兩種觀點均指向利率與波動的配置敏感度",
+      "category": "market",
+      "summary": "【原文報導】VBL 的 GoldFix 投稿轉述 UBS 對 2027 年金價的目標與央行逢低買盤觀察，並引用 ANZ 將本波走勢描述為修正而非恐慌性拋售；另一篇轉載 M&G Investments 的文章則以 carry、rolldown、存續期間與殖利率波動說明債券持有報酬的緩衝。\n\n【來源觀點】兩篇均為外部作者或機構的投資觀點，ZeroHedge 也明示投稿不必然代表其編輯立場。黃金文中的目標價與底部判斷、債券文中的 carry 緩衝模型，都不是確定的價格預測或投資建議。\n\n【本報分析】若利率上行、實質殖利率走高或美元轉強，黃金與長天期債券都可能承壓；反之，若避險需求上升或殖利率回落，兩類資產的表現可能改善。債券配置不應只比較票息，還要檢視存續期間、曲線、匯率避險成本和波動；黃金則應避免把單一機構目標價當作交易觸發點。\n\n【可能影響】黃金與金礦股、美元、實質殖利率、各國公債、長天期債券基金與台幣投資人的匯率避險成本。\n\n【值得留意】觀察央行購金、黃金 ETF 流量、美債實質殖利率與美元；債券端則追蹤殖利率曲線、存續期間曝險與信用利差，並核對投資產品是否已做匯率避險。",
+      "url": "https://www.zerohedge.com/news/2026-11-19/gold-how-close-bottom",
+      "timestamp": "2026-11-19",
+      "images": [],
+      "premium": false
     }
   ]
 }
