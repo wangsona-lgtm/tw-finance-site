@@ -1,16 +1,18 @@
 {
   "date": "2026-11-22",
-  "title": "Fed Watch 聯準會動向 — 11月22日（日）",
+  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 11月22日（日）",
   "type": "daily-reports",
-  "source": "fed-watch",
+  "source": "fed-watch+zerohedge",
   "keyThemes": [
     "官方窗口內未有新的 FOMC 決定、聲明、SEP、會議紀要、國會證詞或指定 CPI／PPI／就業／PCE 發布；10/28 以 10–2 維持 3.75%–4.00% 仍是正式基準。",
     "Fed Recent Postings 新列 11/19 理事會閉門會議已舉行；其公告議題為貼現率檢討及行政事項，沒有公布聯邦基金利率決議或投票，不能視作 FOMC 行動。",
     "Yahoo Finance 全部指定代號的可重現 chart 查詢回傳 HTTP 404，故市場儀表板均明列『無可核驗快照』，不使用估計或過期行情。",
     "CME 原始嵌入式機率表不可保存；Kiplinger 11/20 的具名二手引用稱 12/9 升息 25bp 機率逾 97%。預測市場的 11/21 讀值亦偏向升息，但與 CME 期貨來源不同，只作方向輔助。",
-    "下一個核心政策資料節點是 11/25 08:30 EST 的 10 月 PCE；12/4 NFP、12/8–9 FOMC／SEP、12/10 CPI、12/11 PPI 接續公布。"
+    "下一個核心政策資料節點是 11/25 08:30 EST 的 10 月 PCE；12/4 NFP、12/8–9 FOMC／SEP、12/10 CPI、12/11 PPI 接續公布。",
+    "資料中心電網接入、長期合約與保證金規則，可能改變 AI 基建項目的時程與資本需求；文中的量化預測屬 Rystad 情境估計。",
+    "「晶片美元」與 AI 估值風險皆為署名作者或其引述機構的觀點，應與官方資本流量、企業財報及市場價格分開驗證。"
   ],
-  "stats": {"total": 0, "premium": 0, "market": 0, "geopolitics": 0, "withImages": 0, "premarket": 0, "fedWatch": 1},
+  "stats": {"total": 3, "premium": 0, "market": 3, "geopolitics": 0, "withImages": 0, "premarket": 0, "fedWatch": 1},
   "sections": [
     {
       "title": "Fed Watch｜今日重點摘要",
@@ -97,6 +99,33 @@
         {"headline": "替代媒體｜Kiplinger 的 CME 二手引用", "content": "11/20 16:21 UTC：具名引述 CME FedWatch 為 12/9 升息 25bp 機率逾 97%，屬二手、時間戳讀值。", "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar", "tags": "媒體補充 二手引用"},
         {"headline": "輔助方向訊號｜Prediction.com", "content": "11/21 跨預測市場彙整偏向升息；非 CME，僅作不同機制的方向參考。", "url": "https://prediction.com/economy/fed-rate-tracker", "tags": "市場輔助 非 FedWatch"}
       ]
+    },
+    {
+      "title": "資料中心電網接入與政策風險：影響的是建置條件，不是 AI 需求的單一結論",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 轉載 Rystad Energy／OilPrice 的研究，討論 2027–2030 年美國資料中心容量計畫。文中估計，部分州的接電規則、長期用電承諾、抵押或保證金，以及德州可能再出現的許可暫停，會影響尚未取得核准的項目；同時指出許多已開工項目未必受暫停措施影響。\n\n【來源觀點】文中的 300GW 公告容量、121GW 風險調整後新增量，以及不同暫停期間可能遞延的容量，均為 Rystad 的模型與情境估計；它不是主管機關的正式核准清單，也不代表所有計畫都會取消。\n\n【本報分析】這篇文章的重點不是「資料中心停止擴張」，而是 AI 基建的瓶頸可由晶片轉向電網、接電排程與資本承諾。對投資判讀而言，已取得電力、土地與許可的專案，和仍在申請中的投機型專案，受影響程度可能不同。\n\n【可能影響】資料中心開發商、雲端與 AI 基建供應鏈、美國電力公用事業、輸配電設備、燃氣發電與備援電力業者。\n\n【值得留意】追蹤 ERCOT 與各州公用事業監管規則、實際接電與許可時程、開發商的長約／保證金負擔，以及大型雲端業者是否調整資本支出；不要將研究機構的情境數字直接視作已實現產能。",
+      "url": "https://www.zerohedge.com/energy/democrats-are-about-run-77-americas-data-center-pipeline",
+      "timestamp": "2026-11-21",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "「晶片美元」與美元資金流：一個應與官方資本流量分開驗證的框架",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 刊登 GoldFix／VBL 的文章，轉述 Deutsche Bank 策略師對半導體貿易、亞洲出口盈餘與美國股票／公司債資金流的看法，並以「chip-dollar」描述科技供應鏈與美元需求之間可能加深的連結。\n\n【來源觀點】文章將晶片出口國的盈餘回流美國資產、AI 投資融資與美元使用串成一套解釋框架，並以 Deutsche Bank 報告為依據。這是機構策略觀點，不是美國官方國際收支統計或美元需求的確定因果結論；文中「petrodollar 已死」的標題也屬修辭性判斷。\n\n【本報分析】若科技出口盈餘確實偏向流入美元計價股票與公司債，美元與大型科技融資條件可能更緊密連動；但匯率還同時受利率差、避險需求、貿易與政策影響。判讀時應把長期結構敘事與短期美元走勢分開。\n\n【可能影響】美元、美元計價公司債、美國大型科技與半導體股、亞洲晶片出口國貨幣，以及跨境資本流量題材。\n\n【值得留意】後續宜核對美國 Treasury TIC、各國官方外匯與國際收支資料、半導體出口數據、超大規模雲端業者的發債與資本支出；單一研究報告不能取代上述原始資料。",
+      "url": "https://www.zerohedge.com/news/2026-11-21/petrodollar-dead-will-chips-rescue-usd",
+      "timestamp": "2026-11-21",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "AI／Nvidia 評價風險：把看空投稿當作風險清單，而非已證實的預測",
+      "category": "market",
+      "summary": "【原文報導】QTR's Fringe Finance 的投稿回顧近期科技股下跌，並把市場情緒、AI 基建資本支出、融資安排及監管消息列為可能互相強化的風險來源；文章同時提出 Nvidia 若受衝擊，可能波及更廣泛科技資產的看法。\n\n【來源觀點】這是一篇署名投稿，作者明確提出其長期看空 AI 泡沫的論點，並以歷史科技泡沫作類比。ZeroHedge 頁面亦註明投稿不一定代表編輯部意見；文中對未來跌幅、監管結果與連鎖反應的主張都不是已證實事實。\n\n【本報分析】它值得閱讀的方式是作為「需要核對的風險清單」：企業獲利是否支持資本支出、客戶融資是否透明、估值集中度是否升高，以及監管消息有無正式文件。這些問題成立，不等於市場必然重演歷史泡沫或個股必然下跌。\n\n【可能影響】Nvidia 與半導體股、AI 伺服器／資料中心供應鏈、NASDAQ、科技權重指數基金、相關選擇權隱含波動。\n\n【值得留意】以公司財報、訂單與現金流、官方監管公告、客戶資本支出及信用市場融資條件作交叉驗證；避免僅根據標題或單一作者的類比調整投資決策。",
+      "url": "https://www.zerohedge.com/news/2026-11-21/best-yet-come-undone",
+      "timestamp": "2026-11-21",
+      "images": [],
+      "premium": false
     }
   ]
 }
