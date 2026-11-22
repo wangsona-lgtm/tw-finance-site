@@ -1,15 +1,319 @@
 {
   "date": "2026-11-23",
-  "title": "ZeroHedge 每日導讀 — 11月23日（一）",
+  "title": "Fed Watch 聯準會動向 + ZeroHedge 每日導讀 — 11月23日（一）",
   "type": "daily-reports",
-  "source": "zerohedge",
+  "source": "fed-watch+zerohedge",
   "keyThemes": [
+    "官方 24 小時窗口沒有新的 FOMC 決定、聲明、SEP、會議紀要、國會證詞或指定 CPI／PPI／就業／PCE 發布；10/28 的 10–2 維持 3.75%–4.00% 仍是正式基準。",
+    "Yahoo Finance 的指定代號查詢全部回傳 HTTP 404，儀表板除官方財政部補充 2 年期外均明列「無可核驗快照」，不以估計或舊值填補。",
+    "CME FedWatch 原始動態表仍無法保存；可核驗的 11/22 替代追蹤皆指向 12 月升息，但不同平台的數字不可混成 CME 原始機率。",
+    "下一個核心通膨資料是 11/25 的 10 月 PCE；12/4 NFP、12/8–9 FOMC／SEP、12/10 CPI、12/11 PPI 接續公布。",
     "AI／半導體風險的市場敘事升溫，但近期跌幅、會計調查與連鎖反應等說法應以公司文件與監管公告另行核對。",
     "美國港口與航運系統的資安事件可能把營運中斷風險傳導至原油出口、物流與保險成本；文章所引攻擊量與個案須視為來源報導。",
     "微型反應爐測試進度與監管銜接，可能影響長期電力供應鏈與資料中心電力題材，但『臨界』不等於已商轉或已取得商業許可。"
   ],
-  "stats": {"total": 3, "premium": 0, "market": 3, "geopolitics": 0, "withImages": 0, "premarket": 0, "fedWatch": 0},
+  "stats": {
+    "total": 4,
+    "premium": 0,
+    "market": 4,
+    "geopolitics": 0,
+    "withImages": 0,
+    "premarket": 0,
+    "fedWatch": 1
+  },
   "sections": [
+    {
+      "title": "Fed Watch｜今日重點摘要",
+      "icon": "🏛️",
+      "content": "【已確認事實】本報擷取於 2026-11-23 06:05 台北（11/22 17:05 EST）。Fed Recent Postings、11 月行事曆與 2026 演說清單在此 24 小時窗口未顯示新的 FOMC 決定、聲明、SEP、會議紀要、國會證詞或有近期利率訊號的官員談話；BLS／BEA 日程亦無 CPI、PPI、Employment Situation 或 PCE 新發布。委員會正式基準仍為 10/28 以 10–2 維持聯邦基金利率目標區間 3.75%–4.00%，Cook 與 Hammack 異議、主張升息 25bp。\n\n【來源觀點】CME FedWatch 方法頁可取用，但動態機率表本輪仍無法保存。CondorEdge 於 11/22 12:48 UTC 標示其 CME Group futures 快照：12/9 會議為 12% 維持、88% 升息 25bp；PredictionMarketsPicks 同日以 Kalshi／Polymarket 與 CME 期貨方法作比較，報導其預測市場為 90% 升息 25bp、2% 升息 50bp、7% 維持（四捨五入）。兩者皆為替代網站的二手／衍生讀值，非 CME 原始機率表。\n\n【本報分析】窗口沒有新官方訊號改變既有政策基準。兩個不同市場機制均指向 12 月「升息」方向，故可作方向交叉參照；但 CME 原始表與 Yahoo ZQ／SOFR 指定行情都無法核驗，本報不把替代網站的讀值宣稱為 CME 的精確即時機率，也不據此推導幅度承諾。"
+    },
+    {
+      "title": "Fed Watch｜即時市場儀表板",
+      "icon": "📊",
+      "type": "table",
+      "headers": [
+        "項目／指定代號",
+        "可核驗快照（市場日）",
+        "日變動",
+        "來源／限制"
+      ],
+      "rows": [
+        [
+          "3 個月殖利率（Yahoo ^IRX）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 於擷取時回傳 HTTP 404；不以舊值或估計替代。"
+        ],
+        [
+          "5 年殖利率（Yahoo ^FVX）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 回傳 HTTP 404；^FVX 為 5 年期，非 2 年期。"
+        ],
+        [
+          "10 年殖利率（Yahoo ^TNX）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 回傳 HTTP 404；不以舊值或估計替代。"
+        ],
+        [
+          "30 年殖利率（Yahoo ^TYX）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 回傳 HTTP 404；不以舊值或估計替代。"
+        ],
+        [
+          "2 年殖利率（U.S. Treasury 補充）",
+          "4.63%（2026-11-20）",
+          "-13bp（較 11/19 的 4.76%）",
+          "U.S. Treasury Daily Treasury Par Yield Curve CSV；非 Yahoo 指定代號。"
+        ],
+        [
+          "美元指數（Yahoo DX-Y.NYB）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 回傳 HTTP 404；不以媒體敘述替代指定代號快照。"
+        ],
+        [
+          "VIX（Yahoo ^VIX）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 回傳 HTTP 404；不以舊值或估計替代。"
+        ],
+        [
+          "聯邦基金期貨（Yahoo ZQ=F）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 回傳 HTTP 404；不據此推導精確 FedWatch 機率。"
+        ],
+        [
+          "當期聯邦基金期貨（Yahoo ZQZ26.CBT）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 回傳 HTTP 404；不據此推導精確 FedWatch 機率。"
+        ],
+        [
+          "SOFR 期貨（Yahoo SR1=F）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 回傳 HTTP 404；不以估計替代。"
+        ],
+        [
+          "SOFR 期貨（Yahoo SR3=F）",
+          "無可核驗快照",
+          "無可核驗快照",
+          "Yahoo Finance chart API 回傳 HTTP 404；不以估計替代。"
+        ]
+      ],
+      "analysis": "擷取時間為 11/23 06:05 台北（11/22 17:05 EST）。全部指定 Yahoo chart 查詢均回傳 HTTP 404，完整揭露限制。官方 Treasury CSV 可核驗最新市場日 11/20 的 2 年期 4.63%，較 11/19 低 13bp；此為補充資料，不把它誤標為 Yahoo ^FVX 或 Yahoo 2 年期。"
+    },
+    {
+      "title": "Fed Watch｜利率路徑與 FedWatch",
+      "icon": "📈",
+      "content": "【原始方法來源】CME FedWatch 以 30-Day Fed Funds（ZQ）期貨價格估計即將到來 FOMC 會議的目標利率變動機率；CME 方法頁是本報的原始方法來源。\n\n【可用性與機率】CME 方法頁可取得，但即時嵌入式機率表無法保存。CondorEdge（擷取標示：11/22 12:48 UTC；二手、CME 期貨衍生）為 12/9 列 12% 維持／88% 升息 25bp。PredictionMarketsPicks（11/22；Kalshi／Polymarket 的預測市場讀值）列 90% 升息 25bp、2% 升息 50bp、7% 維持，數字因四捨五入未必恰為 100%。這些不是 CME 原始快照，不能互換或平均。\n\n【交叉檢核】CME 期貨衍生訊號與獨立預測市場同指向「12 月升息」，方向符合兩個可核驗訊號的一致性；但精確機率、幅度與完整分布仍分歧且非 CME 原始表。Yahoo 指定 ZQ、日期合約及 SR1／SR3 均無可核驗快照，故本報不將它們轉換成 FedWatch 機率。"
+    },
+    {
+      "title": "Fed Watch｜官員立場追蹤（2026 實際投票委員）",
+      "icon": "🗣️",
+      "type": "table",
+      "headers": [
+        "委員／職位",
+        "投票權",
+        "立場標示",
+        "最近可核驗談話／異議／投票（日期）",
+        "來源連結與判定理由"
+      ],
+      "rows": [
+        [
+          "Kevin Warsh／理事會主席、FOMC 主席",
+          "有",
+          "中立／資料依賴（未更新）",
+          "10/28：支持維持目標區間；11/16 AI 談話未談近期利率。",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm；正式投票優先。"
+        ],
+        [
+          "John C. Williams／紐約聯儲總裁、副主席",
+          "有",
+          "鷹派／漸進（未更新）",
+          "11/18：稱不認為情勢需要 dramatic action。",
+          "https://www.axios.com/2026/11/18/interest-rates-new-york-fed；二手轉述，非委員會承諾。"
+        ],
+        [
+          "Michael S. Barr／理事",
+          "有",
+          "鷹派／資料依賴（未更新）",
+          "11/18：通膨過高；若經濟依其預測演進，進一步升息將合宜。",
+          "https://www.federalreserve.gov/newsevents/speech/barr20261118a.htm；官方、具條件的個人談話。"
+        ],
+        [
+          "Michelle W. Bowman／理事、副主席（監管）",
+          "有",
+          "鷹派／轉強（未更新）",
+          "11/10：通膨壓力持續且有擴散跡象。",
+          "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm；窗口無更新。"
+        ],
+        [
+          "Lisa D. Cook／理事",
+          "有",
+          "鷹派／轉強（未更新）",
+          "11/20：重申 10/28 異議、偏好升息 25bp；通膨未顯示可持續降溫。",
+          "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm；官方個人談話及正式異議。"
+        ],
+        [
+          "Beth M. Hammack／克里夫蘭聯儲總裁",
+          "有",
+          "鷹派／漸進（未更新）",
+          "10/28：異議，主張升息 25bp；11/12 稱偏好較小、較頻繁升幅。",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm；正式異議優先。"
+        ],
+        [
+          "Philip N. Jefferson／理事、副主席",
+          "有",
+          "中立／資料依賴（未更新）",
+          "11/19：能源、貿易與 AI 衝擊下，政策須按雙重使命及風險校準。",
+          "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm；未指定 12 月幅度。"
+        ],
+        [
+          "Neel Kashkari／明尼阿波利斯聯儲總裁",
+          "有",
+          "鷹派／資料依賴（未更新）",
+          "10/28：支持維持目標區間。",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm；窗口無個人更新。"
+        ],
+        [
+          "Lorie K. Logan／達拉斯聯儲總裁",
+          "有",
+          "鷹派／轉強（未更新）",
+          "11/10：預期至少還需兩次各 25bp 升息。",
+          "https://www.dallasfed.org/news/speeches/logan/2026/lkl261110；官方演說。"
+        ],
+        [
+          "Anna Paulson／費城聯儲總裁",
+          "有",
+          "鷹派／漸進（未更新）",
+          "11/10：潛在通膨仍高於目標，支持漸進升息。",
+          "https://apnews.com/article/1318a1694472e2926e0a4ab5d8ca6457；AP 摘要。"
+        ],
+        [
+          "Jerome H. Powell／理事",
+          "有",
+          "鷹派／資料依賴（未更新）",
+          "10/28：支持維持目標區間。",
+          "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm；窗口無個人更新。"
+        ],
+        [
+          "Christopher J. Waller／理事",
+          "有",
+          "鷹派／主張加速（未更新）",
+          "11/18：受訪稱支持 12 月升息 50bp。",
+          "https://apnews.com/article/9e72f3b6e3484173471cc382d6918de0；AP 對 CNBC 訪談的二手轉述。"
+        ]
+      ],
+      "analysis": "名單依 10/27–28 紀要的 2026 實際投票委員；本窗口無可核驗的個人利率立場新增證據，故維持原判定並逐位標示未更新。個人立場與委員會 10–2 共識分開。"
+    },
+    {
+      "title": "Fed Watch｜市場影響",
+      "icon": "🌐",
+      "content": "【可核驗市場資料】指定 Yahoo 行情無本輪可核驗快照；僅官方 Treasury CSV 顯示 11/20 2 年期較前一市場日低 13bp。資料不足以把單一新聞歸因為美債、美元、美股、黃金或主要風險資產的當日價格因果。\n\n【來源觀點】CondorEdge 的 CME 期貨衍生讀值與 PredictionMarketsPicks 的預測市場讀值都偏向 12 月升息。兩者反映預期，並非 Fed 決定或完整即時價格面板。\n\n【情境分析】若 11/25 PCE 再度確認通膨黏著，短端利率與美元可能偏強，長久期美股、黃金及高波動風險資產可能面臨估值壓力；若資料顯示顯著降溫，市場可重新下修升息幅度或後續路徑預期。這是情境分析，而不是已證實的當日因果。"
+    },
+    {
+      "title": "Fed Watch｜未來重要日期",
+      "icon": "📅",
+      "type": "table",
+      "headers": [
+        "日期／時間（美東；台北）",
+        "事件",
+        "官方來源與意義"
+      ],
+      "rows": [
+        [
+          "11/25 08:30 EST；11/25 21:30",
+          "10 月 Personal Income and Outlays／PCE",
+          "BEA；https://www.bea.gov/news/schedule/full"
+        ],
+        [
+          "12/4 08:30 EST；12/4 21:30",
+          "11 月 Employment Situation／NFP",
+          "BLS；https://www.bls.gov/schedule/news_release/empsit.htm"
+        ],
+        [
+          "12/8–9（決策 12/9 14:00 EST；台北 12/10 03:00）",
+          "FOMC 例會與 SEP",
+          "Federal Reserve；https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        ],
+        [
+          "12/10 08:30 EST；12/10 21:30",
+          "11 月 CPI",
+          "BLS；https://www.bls.gov/schedule/news_release/cpi.htm"
+        ],
+        [
+          "12/11 08:30 EST；12/11 21:30",
+          "11 月 PPI",
+          "BLS；https://www.bls.gov/schedule/news_release/ppi.htm"
+        ],
+        [
+          "12/23 08:30 EST；12/23 21:30",
+          "11 月 Personal Income and Outlays／PCE",
+          "BEA；https://www.bea.gov/news/schedule/full"
+        ]
+      ],
+      "analysis": "11 月與 12 月美東均為 EST，台北較美東快 13 小時；12 月 FOMC 例會附 SEP。"
+    },
+    {
+      "title": "Fed Watch｜資料來源與取用規則",
+      "icon": "🔗",
+      "type": "news",
+      "items": [
+        {
+          "headline": "Federal Reserve｜Recent Postings 與 11 月行事曆",
+          "content": "最高優先官方來源；本窗口未見新 FOMC 政策文件或帶有近期利率訊號的演說。",
+          "url": "https://www.federalreserve.gov/recentpostings.htm",
+          "tags": "官方 政策事實"
+        },
+        {
+          "headline": "Federal Reserve｜FOMC 紀要與正式投票",
+          "content": "10/27–28 紀要記錄 10–2 維持利率；個人談話與不具名委員會集體文字分開處理。",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+          "tags": "官方 政策優先"
+        },
+        {
+          "headline": "BLS／BEA｜官方數據日程",
+          "content": "本窗口無指定 CPI、PPI、就業或 PCE 新發布；後續日期依官方日程。",
+          "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+          "tags": "官方 經濟數據"
+        },
+        {
+          "headline": "Yahoo Finance｜指定市場代號",
+          "content": "依規則查詢 ^IRX、^FVX（5 年，非 2 年）、^TNX、^TYX、DX-Y.NYB、^VIX、ZQ=F、ZQZ26.CBT、SR1=F、SR3=F；全數回傳 HTTP 404。",
+          "url": "https://finance.yahoo.com/quote/%5EIRX/",
+          "tags": "行情 Yahoo 限制揭露"
+        },
+        {
+          "headline": "U.S. Treasury｜官方 2 年期補充",
+          "content": "Daily Treasury Par Yield Curve CSV：11/20 2 年期 4.63%，較 11/19 低 13bp。",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates",
+          "tags": "官方 行情補充"
+        },
+        {
+          "headline": "CME Group｜FedWatch 方法",
+          "content": "CME 說明機率由 30-Day Fed Funds futures 隱含；即時嵌入表無法保存，故不捏造原始機率。",
+          "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool",
+          "tags": "方法 限制揭露"
+        },
+        {
+          "headline": "替代讀值｜CondorEdge",
+          "content": "11/22 12:48 UTC 自稱 CME futures snapshot：12/9 為 12% 維持／88% 升息 25bp；二手衍生讀值。",
+          "url": "https://condoredge.com/central-banks/fedwatch",
+          "tags": "市場輔助 非 CME 原始表"
+        },
+        {
+          "headline": "替代讀值｜PredictionMarketsPicks",
+          "content": "11/22 預測市場讀值為 90% 升息 25bp、2% 升息 50bp、7% 維持；與 CME 期貨衍生讀值只交叉驗證方向。",
+          "url": "https://predictionmarketspicks.com/tools/fed-rate-tracker/december-2026",
+          "tags": "預測市場 方向交叉參照"
+        }
+      ]
+    },
     {
       "title": "AI／Nvidia 評價風險：把看空投稿當作待驗證的風險清單",
       "category": "market",
