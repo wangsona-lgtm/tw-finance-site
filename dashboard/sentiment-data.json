@@ -1,27 +1,27 @@
 {
-  "updated": "2026-11-22T21:59:18.895568",
-  "today": "20261122",
+  "updated": "2026-11-24T19:31:08.601941",
+  "today": "20261124",
   "institution": {
-    "date": "20261120",
+    "date": "20261124",
     "dealer_self": {
-      "buy": 8278917111,
-      "sell": 13346755851,
-      "diff": -5067838740
+      "buy": 4095934519,
+      "sell": 2509518130,
+      "diff": 1586416389
     },
     "dealer_hedge": {
-      "buy": 54348015663,
-      "sell": 83363417043,
-      "diff": -29015401380
+      "buy": 8978523312,
+      "sell": 91590279925,
+      "diff": -82611756613
     },
     "trust": {
-      "buy": 24145010475,
-      "sell": 31492002478,
-      "diff": -7346992003
+      "buy": 20199707970,
+      "sell": 11795618843,
+      "diff": 8404089127
     },
     "foreign": {
-      "buy": 337268103086,
-      "sell": 346778646658,
-      "diff": -9510543572
+      "buy": 98157580905,
+      "sell": 148547493397,
+      "diff": -50389912492
     },
     "dealer": {
       "buy": 0,
@@ -29,55 +29,55 @@
       "diff": 0
     },
     "dealer_total": {
-      "buy": 62626932774,
-      "sell": 96710172894,
-      "diff": -34083240120
+      "buy": 13074457831,
+      "sell": 94099798055,
+      "diff": -81025340224
     }
   },
   "pc_ratio": {
-    "date": "2026/11/20",
-    "call_vol": 348206,
-    "put_vol": 440990,
-    "pc_vol_ratio": 78.96,
-    "call_oi": 28549,
-    "put_oi": 95013,
-    "pc_oi_ratio": 30.05
+    "date": "2026/11/24",
+    "call_vol": 116592,
+    "put_vol": 178544,
+    "pc_vol_ratio": 65.3,
+    "call_oi": 75094,
+    "put_oi": 163394,
+    "pc_oi_ratio": 45.96
   },
   "futures": {
     "note": "期貨(全部合約) Net OI per TAIFEX",
-    "last_seen_date": "2026/11/20",
-    "foreign_tx_net": "-295,510",
-    "total_inst_futures_net": "-335,566"
+    "last_seen_date": "2026/11/23",
+    "foreign_tx_net": "-305,335",
+    "total_inst_futures_net": "-330,392"
   },
   "institutional_oi": {
-    "date": "20261120",
+    "date": "20261123",
     "items": [
       {
         "name": "dealer",
-        "futures_long": 149176,
-        "futures_short": 292554,
-        "futures_net": -143378,
-        "options_long": 42130,
-        "options_short": 34276,
-        "options_net": 7854
+        "futures_long": 158708,
+        "futures_short": 293167,
+        "futures_net": -134459,
+        "options_long": 56944,
+        "options_short": 45168,
+        "options_net": 11776
       },
       {
         "name": "trust",
-        "futures_long": 107975,
-        "futures_short": 4653,
-        "futures_net": 103322,
+        "futures_long": 113713,
+        "futures_short": 4311,
+        "futures_net": 109402,
         "options_long": 13,
-        "options_short": 30518,
-        "options_net": -30505
+        "options_short": 29478,
+        "options_net": -29465
       },
       {
         "name": "foreign",
-        "futures_long": 291501,
-        "futures_short": 587011,
-        "futures_net": -295510,
-        "options_long": 44103,
-        "options_short": 29687,
-        "options_net": 14416
+        "futures_long": 305890,
+        "futures_short": 611225,
+        "futures_net": -305335,
+        "options_long": 51849,
+        "options_short": 39159,
+        "options_net": 12690
       }
     ]
   },
