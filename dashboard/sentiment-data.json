@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-24T19:31:08.601941",
-  "today": "20261124",
+  "updated": "2026-11-25T08:24:02.267581",
+  "today": "20261125",
   "institution": {
     "date": "20261124",
     "dealer_self": {
@@ -9,18 +9,18 @@
       "diff": 1586416389
     },
     "dealer_hedge": {
-      "buy": 8978523312,
-      "sell": 91590279925,
-      "diff": -82611756613
+      "buy": 8979331909,
+      "sell": 91590819132,
+      "diff": -82611487223
     },
     "trust": {
-      "buy": 20199707970,
-      "sell": 11795618843,
-      "diff": 8404089127
+      "buy": 21597398320,
+      "sell": 11834051511,
+      "diff": 9763346809
     },
     "foreign": {
-      "buy": 98157580905,
-      "sell": 148547493397,
+      "buy": 103742977655,
+      "sell": 154132890147,
       "diff": -50389912492
     },
     "dealer": {
@@ -29,9 +29,9 @@
       "diff": 0
     },
     "dealer_total": {
-      "buy": 13074457831,
-      "sell": 94099798055,
-      "diff": -81025340224
+      "buy": 13075266428,
+      "sell": 94100337262,
+      "diff": -81025070834
     }
   },
   "pc_ratio": {
@@ -45,39 +45,39 @@
   },
   "futures": {
     "note": "期貨(全部合約) Net OI per TAIFEX",
-    "last_seen_date": "2026/11/23",
-    "foreign_tx_net": "-305,335",
-    "total_inst_futures_net": "-330,392"
+    "last_seen_date": "2026/11/24",
+    "foreign_tx_net": "-331,525",
+    "total_inst_futures_net": "-337,688"
   },
   "institutional_oi": {
-    "date": "20261123",
+    "date": "20261124",
     "items": [
       {
         "name": "dealer",
-        "futures_long": 158708,
-        "futures_short": 293167,
-        "futures_net": -134459,
-        "options_long": 56944,
-        "options_short": 45168,
-        "options_net": 11776
+        "futures_long": 170834,
+        "futures_short": 290827,
+        "futures_net": -119993,
+        "options_long": 64530,
+        "options_short": 63839,
+        "options_net": 691
       },
       {
         "name": "trust",
-        "futures_long": 113713,
-        "futures_short": 4311,
-        "futures_net": 109402,
-        "options_long": 13,
-        "options_short": 29478,
-        "options_net": -29465
+        "futures_long": 117716,
+        "futures_short": 3886,
+        "futures_net": 113830,
+        "options_long": 213,
+        "options_short": 20984,
+        "options_net": -20771
       },
       {
         "name": "foreign",
-        "futures_long": 305890,
-        "futures_short": 611225,
-        "futures_net": -305335,
-        "options_long": 51849,
-        "options_short": 39159,
-        "options_net": 12690
+        "futures_long": 294991,
+        "futures_short": 626516,
+        "futures_net": -331525,
+        "options_long": 60966,
+        "options_short": 50489,
+        "options_net": 10477
       }
     ]
   },
