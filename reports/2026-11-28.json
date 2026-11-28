@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-28",
+  "title": "ZeroHedge 每日導讀 — 11月28日（六）",
+  "type": "daily-reports",
+  "source": "zerohedge",
+  "keyThemes": [
+    "美中半導體出口管制可能轉向設備維護與服務環節。",
+    "AI 資料中心的電力與 LNG 供應，成為日本擴充算力的約束與投資主題。",
+    "巴西財政人事變動引發當地資產重新定價，提醒留意新興市場政策風險。"
+  ],
+  "stats": {
+    "total": 3,
+    "premium": 1,
+    "market": 2,
+    "geopolitics": 1,
+    "withImages": 0,
+    "premarket": 0,
+    "fedWatch": 0
+  },
+  "sections": [
+    {
+      "title": "半導體出口管制升溫：焦點可能延伸至 ASML 設備維護",
+      "category": "geopolitics",
+      "summary": "【原文報導】ZeroHedge 報導稱，中國先前已採購大量 ASML 浸潤式微影設備；文中並稱美國國會的中國政策鷹派可能把數項新的晶片出口管制法案納入 FY2027 國防法案，關注重點包括 ASML 設備及其維護工程服務。這則文章標示為 Premium，本站僅依公開可讀的標題與導言整理。\n\n【來源觀點】原文以「科技戰升級」描述局勢，並將其與預計於 1 月到期的美中休戰安排連結；這是 ZeroHedge 的敘事與預期，法案內容、通過與實施時點仍未確定。\n\n【本報分析】若出口限制由設備銷售延伸至維修、零組件或服務，衝擊可能改由既有產能利用率與供應鏈合規成本傳導，而非只看新機出貨。對台灣而言，應區分中國成熟製程競爭、全球設備訂單與台灣供應商實際客戶曝險，不能由新聞標題直接推論單一公司業績。\n\n【可能影響】ASML 與全球半導體設備鏈、中國晶圓廠、成熟製程價格、台灣半導體與設備供應鏈，以及科技股風險偏好。\n\n【值得留意】美國國會最終法案文字、商務部出口管制規則、荷蘭／日本的執行立場、ASML 官方揭露與客戶資本支出；在正式政策出爐前，將此視為情境風險而非已生效措施。",
+      "url": "https://www.zerohedge.com/technology/chip-war-goes-nuclear-beijing-hoarded-340-asml-scanners-congress-targets-service-calls",
+      "timestamp": "2026-11-27",
+      "images": [],
+      "premium": true
+    },
+    {
+      "title": "日本 AI 資料中心靠近電廠：電力、LNG 與海外投資政策的交會",
+      "category": "market",
+      "summary": "【原文報導】ZeroHedge 引述日經資訊稱，日本電力公司 JERA 正與 Anthropic、Meta 等美國科技公司洽談在東京周邊電廠旁設置 AI 資料中心；JERA 也稱正與 Amazon、Microsoft、Google 討論，惟尚未宣布任何交易。報導指出，JERA 曾就千葉火力電廠專案簽署合作備忘錄，規模最多 400MW、各期合計逾 150 億美元，首批營運目標約在 2028 年。\n\n【來源觀點】原文將此解讀為 AI 算力需求尋找電網之外供電的案例，並提及美方近期對企業在海外興建資料中心的稅務威脅；這些談判與政治表述不等同已簽約或已實施政策。\n\n【本報分析】「電廠旁、表後取電」可縮短接電等待期，但會使資料中心投資更依賴發電燃料、許可、融資與電力可靠度。若專案推進，受益鏈不只晶片與伺服器，亦包括電力設備、冷卻、燃氣與輸電；但開支的時間、規模及承擔者仍有高度不確定性。\n\n【可能影響】日本電力與 LNG 採購、AI 資料中心資本支出、伺服器／網通／散熱供應鏈、天然氣與電力基礎設施類股。\n\n【值得留意】JERA、各科技公司與合作夥伴的正式公告、環評與併網／燃料安排、專案融資條件，以及美日對跨境 AI 基建投資的後續政策。",
+      "url": "https://www.zerohedge.com/ai/days-after-trumps-tremendous-tax-threat-anthropic-and-meta-are-talking-data-centers-japan",
+      "timestamp": "2026-11-27",
+      "images": [],
+      "premium": false
+    },
+    {
+      "title": "巴西財政人事觸發資產重估：政策可信度與短線擠壓風險並存",
+      "category": "market",
+      "summary": "【原文報導】The Market Ear／ZeroHedge 指出，巴西總統 Lula 提名 Bradesco 董事長 Luiz Carlos Trabuco 出任下任財政部長後，市場將此解讀為財政紀律可能轉向；原文並把低於預期的通膨、降息期待與巴西里拉走強，列為當地資產強勁反彈的背景。\n\n【來源觀點】「從巴西恐慌轉為 FOMO」及「大規模軋空」是 The Market Ear 的市場評論框架，並非對財政政策已落地或資產漲勢可持續的事實判定。\n\n【本報分析】新興市場資產常對財政人事的可信度快速重新定價；若後續政策、國會協商或通膨資料不支持市場預期，匯率、利率與股票的反向波動也可能很大。這類行情應以可驗證的任命、預算與央行訊號為主，而非將單日漲勢當作政策成果。\n\n【可能影響】巴西股票、巴西里拉、巴西國債與利率、拉丁美洲 ETF、新興市場資產及美元風險偏好。\n\n【值得留意】正式任命與財政團隊名單、預算／赤字目標、巴西央行的通膨與利率訊號、資金流向，以及美元和商品價格對巴西資產的外部影響。",
+      "url": "https://www.zerohedge.com/the-market-ear/lulas-surprise-gambit-unleashes-massive-brazil-squeeze",
+      "timestamp": "2026-11-27",
+      "images": [],
+      "premium": false
+    }
+  ]
+}
